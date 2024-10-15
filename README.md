@@ -8,14 +8,8 @@ Se desarrolla, en un caso real, la disciplina de requisitado, que es la puerta d
 
 | |Grupo|Estadísticas|
 |-|-|:-:|
-1|nombreGrupo|👁️ / 📒
-2|nombreGrupo|👁️ / 📒
-3|nombreGrupo|👁️ / 📒
-4|nombreGrupo|👁️ / 📒
-5|nombreGrupo|👁️ / 📒
-6|nombreGrupo|👁️ / 📒
-7|nombreGrupo|👁️ / 📒
-8|nombreGrupo|👁️ / 📒
+1|SistemaDeAutomatizaciónGuiasDocentes|[👁️](/SesionesDeRequisitado/Introduccion.md) / 📒
+
 
 </div>
 
