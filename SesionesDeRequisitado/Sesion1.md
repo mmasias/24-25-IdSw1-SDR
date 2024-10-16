@@ -1,90 +1,107 @@
 # Sesión de requisitado #1
 Fecha: 16 de octubre, 2024
 
-Antes de la reunion: 
-## Preguntas clave para la reunión:
-### Sobre el proceso actual:
+# Información General
+**Cliente**: Parte del departamento de calidad. Jorge Crespo Alvarez.
 
-¿Cómo es el proceso actual para crear, mantener y actualizar las guías docentes?
+**Proyecto**: Automatización de la actualización del contenido de las guías docentes.
 
-¿Quiénes son los responsables de esta tarea actualmente?
+**Problema principal**: Parte del contenido de las guías docentes debe actualizarse anualmente, y en el caso de asignaturas impartidas en varias titulaciones, el contenido puede variar, lo que hace ineficiente el uso del copiar y pegar, ya que son demasiadas guias docentes y el proceso manual se torna engorroso. 
 
-¿Qué herramientas o plataformas usan para gestionarlas?
+## Proceso Actual
+- Las guías docentes son creadas usando una plantilla en Word que contiene campos que deben rellenarse para cada asignatura.
+- Este proceso es repetitivo, manual y propenso a errores. Por ejemplo, al inicio de cada semestre, deben gestionarse las guías para todas las asignaturas de todas las titulaciones.
+- Esto implica gestionar alrededor de 900 guias docentes al año, sin contar los másteres.
 
-¿Con qué frecuencia se deben actualizar las guías? 
+## Problemas Identificados
+- **Contenido Estático y no estático**: Algunos contenidos no cambian y otros se deben actualizar manualmente cada año.
 
-¿Qué cambios se hacen típicamente cada año?
+- **Multiplicidad de Titulaciones**: Asignaturas impartidas en varias titulaciones requieren guías docentes distintas, ya que el contenido/objetivos/competencias,etc varían.
 
-### Sobre las necesidades del sistema:
+- **Errores y Compatibilidad**: El proceso actual utiliza Google Drive para almacenar guías en formato Word, lo que genera problemas de compatibilidad y errores al abrir los archivos en Google Docs. 
 
-¿Qué partes de la guía deben actualizarse automáticamente y cuáles necesitan intervención humana?
+## Necesidades del Cliente
 
-¿Existen reglas o plantillas comunes que se puedan automatizar?
+**Automatización**: Desean una aplicación que automatice el proceso de actualización de las guías, minimizando la intervención manual.
 
-¿Es necesario integrar el sistema con otras plataformas, como sistemas de gestión de aprendizaje (LMS), bases de datos de 
-currículos o sistemas de administración académica? Ejemplo, panal moodle. 
+**Roles y Permisos**: Es importante tener un sistema de usuarios con roles claramente definidos y permisos de edición limitados a ciertos campos.
 
-¿El sistema deberá enviar recordatorios o notificaciones cuando sea necesario realizar una actualización manual?
+- **Profesor**: Puede editar campos específicos como el nombre del profesor, su email, el contenido de la asignatura, las actividades de evaluación y bibliografía.
 
-### Usuarios del sistema:
+- **Director de Grado**: Aprueba o rechaza las propuestas de guías enviadas por los profesores.
 
-¿Quiénes interactuarán con el sistema? (Por ejemplo: coordinadores académicos, profesores, administrativos, directores de grado, etc.)
+- **Técnico de Calidad**: Tiene permisos para editar toda la guía, incluso los campos estáticos, ya que gestionan cambios a nivel de titulación.
 
-¿Habrá diferentes niveles de acceso para distintos tipos de usuarios?
+- **Dirección de Calidad**: Supervisa el trabajo del técnico y audita el trabajo del director de grado y los profesores.
 
-### Requisitos funcionales específicos:
+**Flexibilidad**: La aplicación debe ser flexible, permitiendo que una persona tenga varios roles, como un profesor que también sea director de grado.
 
-¿Cómo espera el cliente (Jorge Crespo) que se automatice la actualización anual de las guías? 
+**Control de Asignación**: Debe haber un control en la asignación de roles y privilegios, de manera que una misma persona no pueda aprobar su propio trabajo.
 
-¿Se basará en datos previos o será necesario agregar nuevas fuentes de información cada año?
+**Trazabilidad**: Se necesita un sistema que permita rastrear todo el proceso de creación, edición y aprobación de las guías.
 
-¿Desean incluir un proceso de aprobación para los cambios en las guías antes de que se publiquen?
+## Funcionalidades Deseadas
 
-¿Qué tan personalizables deben ser las guías para adaptarse a diferentes cursos o programas?
+**Automatización de Guías**: Que el sistema genere las guías docentes en formato PDF y las suba automáticamente al panel de la universidad.
 
-### Requisitos no funcionales:
+**Edición Controlada**: Los campos estáticos no deben poder editarse por los docentes, solamente por los del departamento de calidad (Tecnico y direccion) pero los campos específicos deben ser editables por los profesores.
 
-¿Existen requisitos específicos sobre la interfaz de usuario? 
+**Roles**: Control de permisos según el rol (profesor, director de grado, técnico de calidad, dirección de calidad).
 
-¿Qué tan intuitivo debe ser el sistema para usuarios con diferentes niveles de habilidad tecnológica?
+**Trazabilidad**: Registro de cada acción realizada por los usuarios para cumplir con auditorías futuras.
 
-¿Cuáles son las expectativas de tiempo de respuesta y rendimiento del sistema, especialmente en épocas de alta demanda (como el inicio de semestre)?
+**API de Verificación**: Uso de un sistema de IA para verificar que los cambios realizados por los profesores cumplan con la memoria verificada. 
+    - Proceso de memoria: La memoria es un contrato que se audita cada 6 años, asegurando que los contenidos y metodologías estén alineados con las exigencias de la agencia universitaria.
 
-¿Hay alguna limitación técnica o preferencia de tecnología que tenga en mente?
 
-### Alcance del proyecto:
 
-¿Este proyecto está enfocado solo en automatizar las guías docentes, o se prevén futuras funcionalidades adicionales (por ejemplo, generación de informes, análisis de uso)?
+## Requisitos No Funcionales
 
-¿Qué tan flexible debe ser el sistema para adaptarse a cambios en las regulaciones académicas o las políticas internas?
+**Interfaz de Usuario**: Debe ser simple, con pocos clicks, e incluir el estado de las guías (pendiente, enviado, aprobado)
 
-## Posibles clases conceptuales para el modelo de dominio:
-Con base en la problemática planteada, podemos comenzar a identificar algunas clases clave que representen los elementos más importantes del dominio. Estas clases podrían incluir:
+**Alto Rendimiento**: La aplicación debe ser rápida, incluso durante los periodos de alta demanda, como al inicio del semestre.
 
-- GuíaDocente:
-    - Atributos: nombre, año, estado, fechaUltimaActualización, contenido
-    - Métodos: actualizarContenido(), validarGuía(), publicar()
+**Auditoría**: La aplicación debe ser auditable, permitiendo a la dirección de calidad generar informes sobre el estado de las guías.
 
-- Usuario:
-    - Atributos: nombre, rol (profesor, coordinador, administrativo, directorDeGrado), email, contraseña
-    - Métodos: editarGuía(), aprobarGuía(), recibirNotificaciones()
+## Definicion especificade Roles
 
-- PlantillaGuía:
-    - Atributos: nombre, estructura, version
-    - Métodos: crearNuevaPlantilla(), actualizarPlantilla(), asociarConGuía()
+1. Profesor:
+- Permisos de edición: Solo puede modificar: 
+    - Nombre del profesor y su email.
+    - Contenidos de la asignatura, siempre en concordancia con los descriptores de contenido establecidos en la memoria verificada. No puede modificar los descriptores.
+    - Metodologias docentes y actividades formativas
+    - Tipos y porcentajes de las actividades de evaluación, que deben alinearse con la memoria verificada. Si los porcentajes no cumplen, no puede hacer cambios hasta que estos se ajusten.
+    - Bibliografía y recursos de referencia generales.
 
-- Curso:
-    - Atributos: nombreCurso, codigoCurso, coordinador, duración
-    - Métodos: asignarGuíaDocente(), actualizarDatosCurso()
+- IA para validación: Una inteligencia artificial, conectada mediante API revisará si los contenidos propuestos y los porcentajes de evaluación se ajustan a la memoria verificada. La IA puede emitir un preaprobado, pero la revisión final es realizada por el director de grado.
 
-- HistorialActualizaciones:
-    - Atributos: fechaActualización, usuarioResponsable, cambiosRealizados
-    - Métodos: registrarCambio(), consultarHistorial()
 
-- Notificación:
-    - Atributos: mensaje, destinatario, tipoNotificación, fechaEnvio
-    - Métodos: enviarNotificación(), programarNotificación()
+2. Director de Grado (Académico):
 
-- SistemaExterno (LMS, Sistema de Gestión Académica):
-    - Atributos: nombre, tipo, API
-    - Métodos: integrarConSistema(), actualizarDatos()
+- Responsabilidad: Es el supervisor del profesor y revisa las propuestas de guías docentes que este envía.
+- Notificaciones: Recibe una notificación cuando un profesor envía su propuesta de guía docente. Puede aprobar o rechazar las modificaciones.
+- Opciones de decisión:
+    - Botones de "notificar aceptación" y "notificar solicitud de modificacion", con un cuadro de texto para dar retroalimentación en caso de que sea necesaria una modificacion. El rechazo(solicitud de modificacion) se hace por módulos individuales, lo que permite un control más preciso sobre el contenido.
+- Trazabilidad: Cada cambio debe ser registrado, incluyendo cuándo el profesor envía la propuesta, cuándo el director la acepta o rechaza, y cuándo se genera el PDF final para su subida.
+- Generación de PDF y repositorio: Una vez aceptada la guía completa, se genera automáticamente un PDF que se almacena en un repositorio. Es posible realizar una subida masiva de PDFs (batch upload).
+- Publicación: Es responsable de que las guías estén publicadas a tiempo, lo que es crucial para auditorías y acreditaciones.
+
+3. Técnico de Calidad:
+
+- Permisos completos: Puede editar toda la guía docente, incluido el contenido estático que el profesor no tiene acceso a modificar. Esto es importante ya que el técnico puede hacer cambios a nivel de titulación.
+- Rol inicial: El técnico de calidad es el primero en intervenir, asegurándose de que cualquier modificación al contenido estático esté finalizada antes de que el profesor o el director de grado trabajen en la guía.
+- Revisión y corrección: Revisa, ajusta o rechaza cambios, y reenvía las propuestas para su revisión posterior.
+
+4. Dirección de Calidad:
+
+- Supervisión: Es el encargado de auditar el trabajo de todos los demás roles. Realiza auditorías aleatorias en las asignaturas para verificar que todo esté en conformidad.
+- API de ordenación académica: Tiene acceso a una API que sincroniza con la base de datos de ordenación académica, obteniendo un listado actualizado de asignaciones de profesores por asignatura, esto ultimo no requiere ser un usuario más dentro de la aplicación, ya que esta información se extrae automáticamente para validar que las asignaciones son correctas (profesor - asignatura).
+
+## Casos Especiales
+
+**Asignaturas Multititulación**: Debe ser posible importar contenido de una plantilla preexistente para aquellas asignaturas que se imparten en varias titulaciones.
+
+**Bajas de Profesores**: Si un profesor es dado de baja, no debe aparecer en la maqueta para el nuevo profesor a la hora de editar la maqueta. 
+
+**Conservación de Versiones Anteriores**: El sistema debe ser capaz de mantener versiones anteriores de las guías en PDF para futuras 
+referencias.

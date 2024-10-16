@@ -6,24 +6,18 @@ Se desarrolla, en un caso real, la disciplina de requisitado, que es la puerta d
 
 <div align=center>
 
-| |Grupo|Estadísticas|
+| |Indice|Enlace|
 |-|-|:-:|
-1|SistemaDeAutomatizaciónGuiasDocentes|[👁️](/SesionesDeRequisitado/Introduccion.md) / 📒
-
+1|Introduccion|[👁️](/SesionesDeRequisitado/Introduccion.md) 
+2|Sesion #1 de requisitado|[👁️](/SesionesDeRequisitado/Sesion1.md) 
 
 </div>
+
 
 > Se ha demostrado, empírica y académicamente, que un porcentaje no menor de proyectos de software que fracasan lo hacen porque está mal llevada esta fase.
 
-<div align=center>
 
-||
-|-|
-![](/images/modelosUML/modelosUML/trabajoRepos.svg)
-
-</div>
-
-## Algunas reglas
+### Algunas reglas
 
 - Reuniones oficiales (en horas de clase)
   - A estas debe asistir el 100% de los integrantes de los grupos.
