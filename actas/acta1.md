@@ -16,8 +16,8 @@ Hoy hemos tenido nuestra primera reunión con **Susana Gutiérrez**, quien nos h
 ---
 
 ## 👥 **Integrantes de la Reunión**  
-- Oscar Santamaría Sánchez  
-- Álvaro Lostal Sanz  
-- Raúl Pelayo Paraja  
-- Daniel Puente Sarañana  
-- David García Costa  
+- Oscar Santamaría ([@oscarsantasanchez](https://www.github.com/oscarsantasanchez))
+- Álvaro Lostal ([@lostal](https://www.github.com/lostal))
+- Raúl Pelayo ([@RaulPlayo](https://www.github.com/RaulPlayo))
+- Daniel Puente ([@danielpuentesaranana](https://www.github.com/danielpuentesaranana))
+- David García ([@DavidGarciaCosta](https://www.github.com/DavidGarciaCosta))
