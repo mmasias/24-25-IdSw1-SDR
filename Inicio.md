@@ -6,9 +6,9 @@ Este es el **repositorio de trabajo** para la asignatura de **Ingeniería de Sof
 
 - **Celia Becerril Riaño**
 - **Rubén Setién Fernández**
-- **Paula Quing Diestro Gutiérrez**
+- **Paula Qing Diestro Gutiérrez**
 - **Jorge Otero González**
-- **Mario del Rio Merino**
+- **Mario del Río Merino**
 
 ## 👨‍💼 Cliente
 - **Iván González**
