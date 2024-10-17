@@ -1,40 +1,47 @@
-# Sesiones de requisitado
-
-Este es el repositorio de las sesiones de requisitado de la asignatura de Ingeniería del Software I de UNEATLANTICO.
-
-Se desarrolla, en un caso real, la disciplina de requisitado, que es la puerta de entrada al desarrollo de una solución basada en software. 
-
-<div align=center>
-
-| |Grupo|Estadísticas|
-|-|-|:-:|
-1|nombreGrupo|👁️ / 📒
-2|nombreGrupo|👁️ / 📒
-3|nombreGrupo|👁️ / 📒
-4|nombreGrupo|👁️ / 📒
-5|nombreGrupo|👁️ / 📒
-6|nombreGrupo|👁️ / 📒
-7|nombreGrupo|👁️ / 📒
-8|nombreGrupo|👁️ / 📒
-
+<h1 align="center">Gestión de Datos UNEATLANTICO</h1>
+<div align="center">
+  <image src="images\logo.png" align="center">
 </div>
 
-> Se ha demostrado, empírica y académicamente, que un porcentaje no menor de proyectos de software que fracasan lo hacen porque está mal llevada esta fase.
+## 📖 Introducción
+Este proyecto consiste en la creación de un software de control de base de datos, actualmente gestionado en una hoja de Excel. Nuestro objetivo será optimizarla, automatizarla y crear una interfaz de acceso sencillo, que permita las siguientes funcionalidades:
 
-<div align=center>
+- **Asignación**: Asignación de asignaturas por curso.
+- **Profesores**: Posibilidad de modificar características (altas y títulos de profesores).
+- **Indicadores**: Filtros e indicadores por títulos de profesores.
+- **Histórico**: Guardar el histórico de cambios realizados.
+- **Informes**: Generación de informes de forma rápida y fácil.
 
-||
-|-|
-![](/images/modelosUML/modelosUML/trabajoRepos.svg)
+> [!NOTE]
+> Por la sensibilidad de los datos, no se incluye el excel original.
 
-</div>
+## 📋 Actas
 
-## Algunas reglas
+Aqui se irán registrando [**todas las actas**](/actas/README.md) de nuestras reuniones con el cliente. Cada acta contiene un **resumen detallado** de los puntos tratados, decisiones importantes y próximos pasos a seguir en el desarrollo del proyecto.
 
-- Reuniones oficiales (en horas de clase)
-  - A estas debe asistir el 100% de los integrantes de los grupos.
-  - Si a las reuniones asiste menos del 80% del grupo, la reunión se cancela y el grupo se da por cerrado. La evaluación se realiza de la forma tradicional (examen parcial, examen final).
-- Reuniones extra: de acuerdo a lo pautado con el cliente.
-- Se recomienda utilizar el repo del coordinador del grupo y las herramientas de GitHub para gestionar las reuniones y comunicaciones con el cliente, haciendo racional uso de la trazabilidad.
-- Las imágenes, en la medida de lo posible en formato plantUML. 
-  - Todas las fuentes en la carpeta modelosUML y las imágenes exportadas, en formato svg.
+| Fecha       | Enlace                      |
+|-------------|-----------------------------|
+| 16/10/2024  | [Acta 1](/actas/acta1.md)  |
+| ...         | ...                         |
+
+## 📊 Modelo de Dominio
+
+...
+
+## 🛠️ Casos de Uso
+
+...
+
+## 👥 Integrantes del Proyecto
+
+| Integrante                     | Commits                                      |
+|--------------------------------|----------------------------------------------|
+| Oscar Santamaría               | [💾 Mis Commits](https://github.com/DavidGarciaCosta/24-25-IdSw1-SDR/commits/main/?author=oscarsantasanchez)      |
+| Álvaro Lostal                  | [💾 Mis Commits](https://github.com/DavidGarciaCosta/24-25-IdSw1-SDR/commits/main/?author=lostal)                 |
+| Raúl Pelayo                    | [💾 Mis Commits](https://github.com/DavidGarciaCosta/24-25-IdSw1-SDR/commits/main/?author=RaulPlayo)              |
+| Daniel Puente                  | [💾 Mis Commits](https://github.com/DavidGarciaCosta/24-25-IdSw1-SDR/commits/main/?author=danielpuentesaranana)   |
+| David García                   | [💾 Mis Commits](https://github.com/DavidGarciaCosta/24-25-IdSw1-SDR/commits/main/?author=DavidGarciaCosta)       |
+
+### 🌐 Commits Globales
+
+[💾 Todos los Commits](https://github.com/DavidGarciaCosta/24-25-IdSw1-SDR/commits/main/)
