@@ -18,7 +18,7 @@ Este es el **repositorio de trabajo** para la asignatura de **Ingeniería de Sof
 ### 📚 Información del Proyecto
 
 - App desarrollo de estilo de vida y saludable. 
-- Uso objetivo: asignaura optativa de 2º de bachillerato **Estilo de Vida Activo y Saludable** **(EVAS)**
+- Uso objetivo: asignatura optativa de 2º de bachillerato **Estilo de Vida Activo y Saludable** **(EVAS)**
 
 
 
