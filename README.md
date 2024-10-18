@@ -21,7 +21,7 @@ Aqui se irán registrando [**todas las actas**](/actas/README.md) de nuestras re
 
 | Fecha       | Enlace                      |
 |-------------|-----------------------------|
-| 16/10/2024  | [Acta 1](/actas/acta1.md)  |
+| 16/10/2024  | [Acta 1](/actas/acta1.md)   |
 | ...         | ...                         |
 
 ## 📊 Modelo de Dominio
@@ -34,14 +34,14 @@ Aqui se irán registrando [**todas las actas**](/actas/README.md) de nuestras re
 
 ## 👥 Integrantes del Proyecto
 
-| Integrante                     | Commits                                      |
-|--------------------------------|----------------------------------------------|
-| Oscar Santamaría               | [💾 Mis Commits](https://github.com/DavidGarciaCosta/24-25-IdSw1-SDR/commits/main/?author=oscarsantasanchez)      |
-| Álvaro Lostal                  | [💾 Mis Commits](https://github.com/DavidGarciaCosta/24-25-IdSw1-SDR/commits/main/?author=lostal)                 |
-| Raúl Pelayo                    | [💾 Mis Commits](https://github.com/DavidGarciaCosta/24-25-IdSw1-SDR/commits/main/?author=RaulPlayo)              |
-| Daniel Puente                  | [💾 Mis Commits](https://github.com/DavidGarciaCosta/24-25-IdSw1-SDR/commits/main/?author=danielpuentesaranana)   |
-| David García                   | [💾 Mis Commits](https://github.com/DavidGarciaCosta/24-25-IdSw1-SDR/commits/main/?author=DavidGarciaCosta)       |
+| Integrante                                                   | Commits                                                                                                           |
+|--------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
+| [Oscar Santamaría](https://github.com/oscarsantasanchez)     | [💾 Ver Commits](https://github.com/DavidGarciaCosta/24-25-IdSw1-SDR/commits/main/?author=oscarsantasanchez)      |
+| [Álvaro Lostal](https://github.com/lostal)                   | [💾 Ver Commits](https://github.com/DavidGarciaCosta/24-25-IdSw1-SDR/commits/main/?author=lostal)                 |
+| [Raúl Pelayo](https://github.com/RaulPlayo)                  | [💾 Ver Commits](https://github.com/DavidGarciaCosta/24-25-IdSw1-SDR/commits/main/?author=RaulPlayo)              |
+| [Daniel Puente](https://www.github.com/danielpuentesaranana) | [💾 Ver Commits](https://github.com/DavidGarciaCosta/24-25-IdSw1-SDR/commits/main/?author=danielpuentesaranana)   |
+| [David García](https://www.github.com/DavidGarciaCosta)      | [💾 Ver Commits](https://github.com/DavidGarciaCosta/24-25-IdSw1-SDR/commits/main/?author=DavidGarciaCosta)       |
 
 ### 🌐 Commits Globales
 
-[💾 Todos los Commits](https://github.com/DavidGarciaCosta/24-25-IdSw1-SDR/commits/main/)
+[💾 Ver todos los Commits](https://github.com/DavidGarciaCosta/24-25-IdSw1-SDR/commits/main/)
