@@ -9,8 +9,10 @@ En esta carpeta se irán registrando **todas las actas** de nuestras reuniones c
 
 ## 📑 **Actas Disponibles**
 
-- **Acta 1:** 16/10/2024  
-   Primera reunión con **Susana Gutiérrez**. Introducción al plan de desarrollo del software para el **control de la base de datos**. [Ver Acta](/actas/acta1.md)
+| Fecha       | Enlace                      |
+|-------------|-----------------------------|
+| 16/10/2024  | [Acta 1](/documentos/actas/acta1.md)   |
+| ...         | ...                         |
 
 ---
 
