@@ -5,7 +5,9 @@
 
 </div>
 
-# DOCUTRACE 📄
+<p align="center">
+  <img src="docs/recursos/imagenes/docutraceLogo.png" alt="DOCUTRACE Logo" width="200">
+</p>
 
 ## 🔰 Descripción General
 
