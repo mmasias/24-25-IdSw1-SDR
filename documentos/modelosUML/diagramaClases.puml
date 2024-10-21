@@ -1,0 +1,36 @@
+@startuml
+
+class Profesor {
+    
+}
+
+class Titulacion {
+   
+}
+
+class Asignatura {
+    
+}
+
+class MemoriaAcademica {
+   
+}
+
+class Departamento {
+   
+}
+
+class PlanEstudios {
+}
+
+
+Profesor --> Titulacion : "imparte en"
+Profesor --> Asignatura : "enseña"
+Asignatura --> Titulacion : "pertenece a"
+MemoriaAcademica --> Asignatura : "reporta sobre"
+Profesor --> MemoriaAcademica : "elabora"
+Asignatura --> PlanEstudios : "forma parte de"
+Profesor --> Departamento : "pertenece a"
+Titulacion --> Departamento : "se ofrece en"
+
+@enduml
