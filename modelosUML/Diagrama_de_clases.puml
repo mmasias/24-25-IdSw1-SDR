@@ -1,0 +1,51 @@
+title Diagrama de Dominio
+
+class AdministradorDeHorarios {
+    - listaHorarios
+}
+
+class Profesor {
+    - nombre
+    - apellido
+}
+
+class Curso {
+    - id
+    - nombre
+}
+
+class Salon {
+    - numero
+}
+
+class Planificacion {
+    - dia
+    - horaInicio
+    - horaFin
+    - curso
+    - salon
+}
+
+class AsignarProfesorCurso {
+    - profesor
+    - curso
+}
+
+class AsignarCursoSalon {
+    - curso
+    - salon
+}
+
+AdministradorDeHorarios -- Profesor
+AdministradorDeHorarios -- Curso
+AdministradorDeHorarios -- Salon
+
+AdministradorDeHorarios -- AsignarProfesorCurso
+AsignarProfesorCurso -- AsignarCursoSalon
+AsignarCursoSalon -- Planificacion
+
+Profesor -- AsignarProfesorCurso
+Curso -- AsignarProfesorCurso
+Curso -- AsignarCursoSalon
+Salon -- AsignarCursoSalon
+@enduml
