@@ -1,0 +1,3 @@
+## Diagrama de Contexto
+
+Aquí irá el diagrama de contexto...

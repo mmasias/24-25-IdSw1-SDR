@@ -1,0 +1,3 @@
+## Actores
+
+Aquí irán los actores que interactuan con el sistema...

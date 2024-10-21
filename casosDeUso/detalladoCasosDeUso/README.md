@@ -1,0 +1,3 @@
+## Detallado de Casos de Uso
+
+Aquí irá el detallado de los casos de uso...
