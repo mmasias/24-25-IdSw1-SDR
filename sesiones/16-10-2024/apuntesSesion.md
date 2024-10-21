@@ -68,6 +68,6 @@ Aplicación para la gestión documental -- **DOCUTRACE**
 - El **Administrador general** puede crear usuarios de todo tipo.
 - El **Administrador de área** puede crear usuarios que solo reciben documentos.
 
-### 🔰 LENGUAJE:
+### 🔰 GLOSARIO:
 - **Usuario**: Persona que puede subir documentos.
 - **Destinatario**: Solo recibe documentos.
