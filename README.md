@@ -10,6 +10,6 @@ El modelo de dominio de **DOCUTRACE** define las entidades principales y sus rel
 
 Para describir el modelo del dominio se utilizan los siguientes artefactos:
 
-- [Diagrama de Clases](modeloDelDominio/diagramaDeClases)
-- [Diagrama de Objetos](modeloDelDominio/diagramaDeObjetos)
-- [Diagrama de Estados](modeloDelDominio/diagramaDeEstados)
+- [Diagrama de Clases](modeloDeDominio/diagramaDeClases)
+- [Diagrama de Objetos](modeloDeDominio/diagramaDeObjetos)
+- [Diagrama de Estados](modeloDeDominio/diagramaDeEstados)
