@@ -31,6 +31,7 @@ Se pueden ver más detalles sobre esto con las siguientes herramientas:
 - [Diagrama de Contexto](docs/casosDeUso/diagramaDeContexto/README.md)
 - [Diagrama de Casos de Uso](docs/casosDeUso/diagramaCasosDeUso/README.md)
 - [Detallado de Casos de Uso](docs/casosDeUso/detalladoCasosDeUso/README.md)
+- [Prototipos](docs/casosDeUso/detalladoCasosDeUso/README.md)
 
 
 ## 🔰 Sesiones de Requisitado
