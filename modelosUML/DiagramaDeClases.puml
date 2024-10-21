@@ -1,0 +1,18 @@
+@startuml
+class Titulacion
+class Asignatura
+class Profesor
+class CargaAcademica
+class MemoriaAcademica
+class Indicadores
+class Informe
+
+Titulacion  --> Asignatura : contiene
+Asignatura  --> Profesor : es impartida por
+Asignatura  --> CargaAcademica : genera
+Profesor  --> CargaAcademica : tiene
+Titulacion  -->  MemoriaAcademica : hereda de
+MemoriaAcademica  --> Indicadores : alimenta
+CargaAcademica --> Indicadores : calcula
+Indicadores  --> Informe : genera
+@enduml
