@@ -6,7 +6,7 @@
 </div>
 
 <p align="center">
-  <img src="docs/recursos/imagenes/docutraceLogoPNG.png" alt="DOCUTRACE Logo" width="200">
+  <img src="docs/recursos/imagenes/docutraceLogoNoBackground.png" alt="DOCUTRACE Logo" width="200">
 </p>
 
 ## 🔰 Descripción General
