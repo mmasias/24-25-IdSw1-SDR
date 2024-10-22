@@ -1,28 +1,51 @@
-# Sesiones de requisitado
+# Sistema de automatización de Guías Docentes
 
-Este es el repositorio de las sesiones de requisitado de la asignatura de Ingeniería del Software I de UNEATLANTICO.
+## Introducción 
+Este es el repositorio de las sesiones de requisitado de la asignatura de Ingeniería del Software I de UNEATLANTICO. Se desarrolla, en un caso real, la disciplina de requisitado, que es la puerta de entrada al desarrollo de una solución basada en software. 
 
-Se desarrolla, en un caso real, la disciplina de requisitado, que es la puerta de entrada al desarrollo de una solución basada en software. 
+**¿Qué es un guía docente?**
 
+La Guía Docente de una asignatura es un documento público dirigido, fundamentalmente, a los estudiantes y escrito con un lenguaje muy claro, en el que se concreta, para un determinado curso académico, la planificación docente de una asignatura y toda la información necesaria para su seguimiento.
+
+**Problemática Actual**
+
+El problema de la actualización anual de las guías docentes es un desafío significativo en el ámbito académico, ya que requiere un esfuerzo considerable por parte de los coordinadores y profesores. Algunos de los aspectos que hacen que este proceso sea tan demandante incluyen:
+
+- **Cambios en el contenido**: Los avances en el conocimiento y las nuevas tendencias en diversas disciplinas obligan a ajustar los contenidos de las asignaturas regularmente para mantener la relevancia. Estos cambios pueden incluir la incorporación de nuevas teorías, tecnologías, investigaciones, o enfoques pedagógicos.
+
+- **Modificaciones en los objetivos y competencias**: A menudo, los objetivos de aprendizaje y las competencias que se espera que los estudiantes adquieran deben ser ajustados para alinearse con las nuevas exigencias del mercado laboral o los estándares educativos.
+
+- **Evaluaciones y métodos de enseñanza**: Los métodos de evaluación y enseñanza también deben actualizarse para integrar nuevas herramientas, metodologías o enfoques educativos (como la enseñanza híbrida o el aprendizaje basado en proyectos). Además, algunos programas pueden modificar la ponderación de actividades o introducir nuevas formas de evaluación.
+
+- **Normativas institucionales**: Las instituciones educativas suelen cambiar sus reglamentos, normativas o formatos, lo que implica la necesidad de adaptar las guías docentes para cumplir con los nuevos requisitos.
+
+- **Revisión de bibliografía**: Los coordinadores también deben revisar la bibliografía cada año para incluir recursos actualizados y relevantes, lo cual puede requerir tiempo para investigar nuevas fuentes.
+
+- **Ajustes logísticos**: Cambios en la disponibilidad de aulas, horarios, o incluso en el personal docente, pueden afectar los aspectos logísticos que deben reflejarse en la guía.
+
+## Objetivo general del proyecto:
+El cliente quiere una solución para automatizar las guías docentes, con el fin de evitar tener que actualizarlas manualmente cada año. Esto sugiere que el sistema deberá facilitar la actualización de contenidos, reducir el esfuerzo humano y asegurar que la información se mantenga precisa y relevante.
+
+## Sesiones de Requisitado
 <div align=center>
 
 | |Indice|Enlace|
 |-|-|:-:|
-1|Introduccion|[👁️](/SesionesDeRequisitado/Introduccion.md) 
-2|Sesion #1 de requisitado|[👁️](/SesionesDeRequisitado/Sesion1.md) 
+1|Sesion #1 de requisitado|[👁️](/SesionesDeRequisitado/Sesion1.md) 
 
 </div>
 
+## Modelo del Dominio
+- [Diagrama de Clases](/SesionesDeRequisitado/Introduccion.md)
+- [Diagrama de Objetos](/SesionesDeRequisitado/Introduccion.md) 
+- [Diagrama de Estados](/SesionesDeRequisitado/Introduccion.md) 
 
-> Se ha demostrado, empírica y académicamente, que un porcentaje no menor de proyectos de software que fracasan lo hacen porque está mal llevada esta fase.
+## Actores y Casos de Uso
+
+- [Actores](/SesionesDeRequisitado/Introduccion.md)
+- [Diagrama de Contexto](/SesionesDeRequisitado/Introduccion.md) 
+- [Diagrama de Casos De Uso](/SesionesDeRequisitado/Introduccion.md)
+- [Prototipos](/SesionesDeRequisitado/Introduccion.md) 
 
 
-### Algunas reglas
 
-- Reuniones oficiales (en horas de clase)
-  - A estas debe asistir el 100% de los integrantes de los grupos.
-  - Si a las reuniones asiste menos del 80% del grupo, la reunión se cancela y el grupo se da por cerrado. La evaluación se realiza de la forma tradicional (examen parcial, examen final).
-- Reuniones extra: de acuerdo a lo pautado con el cliente.
-- Se recomienda utilizar el repo del coordinador del grupo y las herramientas de GitHub para gestionar las reuniones y comunicaciones con el cliente, haciendo racional uso de la trazabilidad.
-- Las imágenes, en la medida de lo posible en formato plantUML. 
-  - Todas las fuentes en la carpeta modelosUML y las imágenes exportadas, en formato svg.
