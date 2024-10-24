@@ -1,1 +1,1 @@
-Carpera con todas las imagenes
+Carpeta con todas las imagenes
