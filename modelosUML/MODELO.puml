@@ -1,0 +1,39 @@
+@startuml
+abstract class Usuario {
+}
+
+class Alumno {
+}
+
+class Exalumno {
+}
+
+class Profesor {
+}
+
+class Grado {
+}
+
+' Definición de otras entidades del sistema
+class Posts {
+}
+
+class Comunidades {
+}
+
+class Etiquetas {
+}
+
+Alumno --|> Usuario
+Exalumno --|> Usuario
+Profesor --|> Usuario
+Grado --|> Usuario
+
+' Relaciones entre entidades
+Usuario --> Posts : realiza
+Usuario --> Comunidades : participa
+Comunidades --> Posts : formadas por
+Posts --> "Pedir" : puede
+Posts --> "Ofrecer" : puede
+Posts <--> Etiquetas : "contiene >     \n< categorizan"
+@enduml
