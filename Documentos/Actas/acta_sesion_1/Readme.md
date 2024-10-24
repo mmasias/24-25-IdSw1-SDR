@@ -9,7 +9,10 @@
 - Lucía Teran  
 - Telmo Riofrio
 - Diego García  
-- Maura Martínez  
+- Maura Martínez 
+- Andrés Elias Alarcón
+- Lydia García
+- Daniel Lavín 
 
 ## Orden del Día
 1. Exlicación del contexto de trabajo
