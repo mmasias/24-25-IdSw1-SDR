@@ -1,0 +1,17 @@
+@startuml
+start
+:El estudiante recibe
+usuario y contraseña;
+:El estudiante accede
+al campus;
+:Realiza test inicial;
+
+if (¿Aceptado?) then (Sí)
+  :Accede a recursos;
+  :Realiza tests de seguimiento;
+else (No)
+  :Finaliza el proceso;
+endif
+
+stop
+@enduml
