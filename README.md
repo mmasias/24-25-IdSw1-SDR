@@ -2,5 +2,5 @@
 
 ### 📚 Información del Proyecto
 
-- App desarrollo de estilo de vida y saludable. 
+- App desarrollo de estilo de vida saludable. 
 - Uso objetivo: asignatura optativa de 2º de bachillerato **Estilo de Vida Activo y Saludable** **(EVAS)**
