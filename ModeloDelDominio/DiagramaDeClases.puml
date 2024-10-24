@@ -1,0 +1,38 @@
+@startuml Diagrama de Clases
+title Automatización de Guías Docentes - Refinado
+
+class Profesor
+class DirectorDeGrado
+class TécnicoDeCalidad
+class DirecciónDeCalidad
+class Guia
+class Contenido
+class Titulacion
+class Asignatura
+class PlantillaMultititulacion
+class SistemaIA
+class Version
+
+
+Guia -- DirecciónDeCalidad
+Guia <-- TécnicoDeCalidad
+Guia --* Titulacion
+Guia *-- Contenido
+Guia -right- PlantillaMultititulacion: usa_plantilla
+Guia -left-> SistemaIA: validada_por
+Guia *-up- Version: tiene_versiones
+
+
+DirecciónDeCalidad -- TécnicoDeCalidad: supervisa
+DirecciónDeCalidad -- Profesor: audita
+DirecciónDeCalidad -- DirectorDeGrado: audita
+
+Profesor o-- Titulacion
+DirectorDeGrado o-- Titulacion
+
+Contenido <-- DirectorDeGrado: aprueba/rechaza
+Contenido <-- Profesor: edita
+Asignatura <-- Contenido: pertenece_a
+Asignatura o-- Titulacion: forma_parte
+
+@enduml
