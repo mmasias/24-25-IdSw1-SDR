@@ -1,4 +1,4 @@
-⁠ @startuml Diagrama de Clases
+@startuml Diagrama de Clases
 title Automatización de Guías Docentes - Refinado
 
 class Profesor
@@ -34,7 +34,5 @@ Contenido <-- DirectorDeGrado: aprueba/rechaza
 Contenido <-- Profesor: edita
 Asignatura <-- Contenido: pertenece_a
 Asignatura o-- Titulacion: forma_parte
-
-@enduml
 
 @enduml
