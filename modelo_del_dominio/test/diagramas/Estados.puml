@@ -6,6 +6,7 @@ participant Sistema as "Campus"
 Estudiante -> Sistema: Acceder al campus
 Sistema -> Estudiante: Autenticación exitosa
 Estudiante -> Sistema: Realizar test inicial
+
 Sistema -> Administracion: Enviar test
 Administracion -> Sistema: Evaluar test
 Sistema -> Estudiante: Notificar aceptación/rechazo

@@ -9,8 +9,10 @@ entity "Estudiante" {
 entity "Test" {
   +ID: int
   +fecha: Date
+  
   +resultado: int
 }
+
 
 entity "Recurso" {
   +ID: int
