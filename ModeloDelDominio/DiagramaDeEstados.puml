@@ -1,0 +1,25 @@
+@startuml Diagrama de Estados
+title Ciclo de Vida de una Guía Docente
+
+[*] --> Creación
+Creación : La guía es creada por un Profesor.
+Creación --> Edición : El Profesor comienza a redactar la guía.
+Edición : La guía está en proceso de edición por parte del Profesor.
+
+Edición --> Revisión : El Profesor envía la guía para revisión.
+Revisión : El DirectorDeGrado revisa la guía.
+
+Revisión --> Aprobación : El DirectorDeGrado aprueba o rechaza la guía.
+Aprobación : La guía puede ser aprobada o rechazada.
+Aprobación --> Edición : Si la guía es rechazada, vuelve a la fase de edición.
+Aprobación --> Validación : Si la guía es aprobada, pasa a validación.
+
+Validación : El TécnicoDeCalidad y el SistemaIA validan la guía.
+Validación --> Publicación : Si la guía es validada con éxito.
+
+Publicación : La guía se publica y está disponible.
+Publicación --> VersiónArchivada : Se actualiza una nueva versión.
+VersiónArchivada : La versión anterior se archiva.
+
+VersiónArchivada --> [*] : Fin del proceso.
+@enduml
