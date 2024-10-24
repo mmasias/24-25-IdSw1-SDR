@@ -16,9 +16,9 @@ Este es el repositorio de las sesiones de requisitado de la asignatura de Ingeni
 </div>
 
 ## Modelo del Dominio
-- [Diagrama de Clases](/ModeloDelDominio/DiagramaDeClases/DiagramaDeClases.md)
-- [Diagrama de Objetos](/ModeloDelDominio/DiagramaDeObjetos/DiagramaDeObjetos.md) 
-- [Diagrama de Estados](/ModeloDelDominio/DiagramaDeEstados/DiagramaDeEstados.md) 
+- [Diagrama de Clases](/ModeloDelDominio/modeloDelDominio.md)
+- [Diagrama de Objetos](/ModeloDelDominio/modeloDelDominio.md)
+- [Diagrama de Estados](/ModeloDelDominio/modeloDelDominio.md) 
 
 ## Actores y Casos de Uso
 
