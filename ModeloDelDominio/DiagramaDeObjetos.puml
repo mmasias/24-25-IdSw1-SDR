@@ -1,0 +1,58 @@
+@startuml Diagrama de Objetos Mejorado
+title Automatización de Guías Docentes - Diagrama de Objetos
+
+object Guia1
+object Guia2
+object Contenido1
+object Contenido2
+object Titulacion1
+object Titulacion2
+object Profesor1
+object Profesor2
+object DirectorDeGrado1
+object TécnicoDeCalidad1
+object DirecciónDeCalidad1
+object PlantillaMultititulacion1
+object SistemaIA1
+object Version1
+object Asignatura1
+object Asignatura2
+
+' Relacionando objetos de forma más organizada
+Guia1 -- DirecciónDeCalidad1
+Guia1 <-- TécnicoDeCalidad1
+Guia1 --* Titulacion1
+Guia1 *-- Contenido1
+Guia1 -right- PlantillaMultititulacion1
+Guia1 -left-> SistemaIA1
+Guia1 *-up- Version1
+
+DirecciónDeCalidad1 -- TécnicoDeCalidad1
+DirecciónDeCalidad1 -- Profesor1
+DirecciónDeCalidad1 -- DirectorDeGrado1
+
+Profesor1 o-- Titulacion1
+DirectorDeGrado1 o-- Titulacion1
+
+Contenido1 <-- DirectorDeGrado1
+Contenido1 <-- Profesor1
+Asignatura1 <-- Contenido1
+Asignatura1 o-- Titulacion1
+
+Guia2 -- DirecciónDeCalidad1
+Guia2 <-- TécnicoDeCalidad1
+Guia2 --* Titulacion2
+Guia2 *-- Contenido2
+Guia2 -right- PlantillaMultititulacion1
+Guia2 -left-> SistemaIA1
+Guia2 *-up- Version1
+
+Profesor2 o-- Titulacion2
+DirectorDeGrado1 o-- Titulacion2
+
+Contenido2 <-- DirectorDeGrado1
+Contenido2 <-- Profesor2
+Asignatura2 <-- Contenido2
+Asignatura2 o-- Titulacion2
+
+@enduml
