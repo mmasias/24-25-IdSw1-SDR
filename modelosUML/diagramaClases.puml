@@ -1,15 +1,28 @@
 @startuml
 
 class Profesor {
-  
+- nombre : String
+- apellido : String
+- titulación : String
+- contrato : String
+- categoría : String
+- temporalidad : String
+- ECTS : double
+
 }
 
 class Titulacion {
-
+- nombre : String
+- curso: int
 }
 
 class Asignatura {
-    
+- nombre : String
+- curso : int 
+- semestre : int
+- codigoCampus : String
+- tipo : String
+- ECTS : double
 }
 
 class MemoriaAcademica {
