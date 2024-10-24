@@ -1,5 +1,5 @@
 @startuml
-title Diagrama de Objetos Complejo - Gestor de Horarios
+title Diagrama de Objetos - Gestor de Horarios
 
 entity gestorDeHorarios {
     rol = "Gestor de Horarios"
