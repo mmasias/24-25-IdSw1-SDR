@@ -13,10 +13,10 @@ Se desarrolla, en un caso real, la disciplina de requisitado, que es la puerta d
 3|Lucía Terán|[👁️](https://github.com/Dievex/24-25-IdSw1-SDR/graphs/contributors) / [📒](https://github.com/Dievex/24-25-IdSw1-SDR)
 4|Alicia Bustamante|[👁️](https://github.com/TheMoys/24-25-IdSw1-SDR/graphs/contributors) / [📒](https://github.com/TheMoys/24-25-IdSw1-SDR)
 5|Jesús Peña|[👁️](https://github.com/0xJVR/24-25-IdSw1-SDR/graphs/contributors) / [📒](https://github.com/0xJVR/24-25-IdSw1-SDR)
-6|Josep Alemany|🚩
+6|Josep Alemany|[👁️](https://github.com/miguelgomez75/24-25-IdSw1-SDR/graphs/contributors) / [📒](https://github.com/miguelgomez75/24-25-IdSw1-SDR)
 7|David García|[👁️](https://github.com/ikercelaya/24-25-IdSw1-SDR/graphs/contributors) / [📒](https://github.com/ikercelaya/24-25-IdSw1-SDR)
 8|Jorge Crespo|[👁️](https://github.com/natiicruuz/24-25-IdSw1-SDR/graphs/contributors) / [📒](https://github.com/natiicruuz/24-25-IdSw1-SDR)
-
+  
 </div>
 
 > Se ha demostrado, empírica y académicamente, que un porcentaje no menor de proyectos de software que fracasan lo hacen porque está mal llevada esta fase.
