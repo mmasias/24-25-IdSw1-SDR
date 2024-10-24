@@ -1,10 +1,15 @@
-# NOVUS
+<div align="center">
+<h1>NOVUS</h1>
+</div>
 
 ## Proyecto hacia Lucía Terán
 
-![Novus_Logo](/Documentos/imagenes/novusdef.jpg)
+<div align="center">
+  <image width="300" src="./Documentos/imagenes/novusdef.jpg" ">
+</div>
 
-  <img alt="Version" src="https://img.shields.io/badge/version-1.0-blue.svg?cacheSeconds=2592000" />
+
+  <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
 
 ## Descripción
 
@@ -24,6 +29,6 @@ Es una plataforma que se encarga de administrar y optimizar el proceso de selecc
   - [Diagrama de Contexto]()
   - [Prototipos]()
 
-## [Sesiones](/Sesiones/)
+## [Sesiones](documentos/actas/)
 
-  - [Sesión del 16/10/2024](/Documentos/Actas/Acta_sesion_1/)
+  - [Sesión del 16/10/2024](/documentos/actas/16-10-2024/README.md)
