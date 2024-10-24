@@ -36,16 +36,16 @@ El cliente quiere una solución para automatizar las guías docentes, con el fin
 </div>
 
 ## Modelo del Dominio
-- [Diagrama de Clases](/SesionesDeRequisitado/Introduccion.md)
-- [Diagrama de Objetos](/SesionesDeRequisitado/Introduccion.md) 
-- [Diagrama de Estados](/SesionesDeRequisitado/Introduccion.md) 
+- [Diagrama de Clases](/ModeloDelDominio/DiagramaDeClases/DiagramaDeClases.md)
+- [Diagrama de Objetos](/ModeloDelDominio/DiagramaDeObjetos/DiagramaDeObjetos.md) 
+- [Diagrama de Estados](/ModeloDelDominio/DiagramaDeEstados/DiagramaDeEstados.md) 
 
 ## Actores y Casos de Uso
 
-- [Actores](/SesionesDeRequisitado/Introduccion.md)
-- [Diagrama de Contexto](/SesionesDeRequisitado/Introduccion.md) 
-- [Diagrama de Casos De Uso](/SesionesDeRequisitado/Introduccion.md)
-- [Prototipos](/SesionesDeRequisitado/Introduccion.md) 
+- [Actores](/CasosDeUso/Actores/Actores.md)
+- [Diagrama de Contexto](/CasosDeUso/diagramaDeContexto/diagramaDeContexto.md) 
+- [Diagrama de Casos De Uso](/CasosDeUso/diagramaCasosDeUso/diagramaCasosDeUso.md)
+- [Prototipos](/CasosDeUso/prototipos/prototipos.md) 
 
 
 
