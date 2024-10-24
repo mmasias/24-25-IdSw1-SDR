@@ -1,6 +1,8 @@
-# Proyecto-IdSw1
+# NOVUS
 
 ## Proyecto hacia Lucía Terán
+
+  <img alt="Version" src="https://img.shields.io/badge/version-1.0-blue.svg?cacheSeconds=2592000" />
 
 ## Descripción
 
