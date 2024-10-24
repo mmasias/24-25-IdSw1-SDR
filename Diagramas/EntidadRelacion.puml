@@ -1,0 +1,31 @@
+@startuml
+entity "Estudiante" {
+  +ID: int
+  +nombre: String
+  +pais_origen: String
+  +estado_aceptacion: boolean
+}
+
+entity "Test" {
+  +ID: int
+  +fecha: Date
+  +resultado: int
+}
+
+entity "Recurso" {
+  +ID: int
+  +tipo: String
+  +descripcion: String
+  +nivel: String
+}
+
+entity "Administracion" {
+  +ID: int
+  +nombre: String
+  +rol: String
+}
+
+Estudiante ||--o{ Test : "realiza"
+Estudiante ||--o{ Recurso : "accede a"
+Administracion ||--|{ Test : "evalua"
+@enduml
