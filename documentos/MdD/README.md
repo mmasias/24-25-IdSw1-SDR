@@ -14,7 +14,7 @@ El diagrama de clases describe la estructura del sistema en términos de entidad
 
 ### Descripción:
 
-El Profesor es una entidad que tiene la responsabilidad de impartir Asignaturas y elaborar la MemoriaAcadémica correspondiente. Esta MemoriaAcadémica reporta información acerca de las Asignaturas que el profesor enseña. Las Asignaturas, a su vez, están relacionadas tanto con una Titulación, a la cual pertenecen, como con un PlanEstudios, del cual forman parte. La Titulación y el PlanEstudios tienen una relación cercana, donde la Titulación es un componente del PlanEstudios. Finalmente, tanto el PlanEstudios como la Titulación se ofrecen en un Departamento académico, lo que implica que el Departamento es la estructura organizativa que soporta tanto las titulaciones como los planes de estudio.
+El Profesor es una entidad que tiene la responsabilidad de impartir Asignaturas y elaborar la MemoriaAcadémica correspondiente. Esta MemoriaAcadémica reporta información acerca de las Asignaturas que el profesor enseña. Las Asignaturas, están relacionadas tanto con una Titulación y como con un PlanEstudios. Finalmente, tanto el PlanEstudios como la Titulación se ofrecen en un Departamento académico. 
 
 ---
 
@@ -28,9 +28,7 @@ El diagrama de objetos representa instancias específicas de las clases descrita
 
 ### Descripción:
 
-En este diagrama, se observa un sistema educativo en el que el objeto profesor1, cuyo nombre es "Juan Pérez", imparte la asignatura1, denominada "Programación". Además de impartirla, el profesor1 elabora la memoria1, cuya fecha está registrada como "2024-10-21". Esta memoria reporta sobre la misma asignatura1 que Juan Pérez enseña.
-
-La asignatura1 pertenece a la titulacion1, cuyo nombre es "Ingeniería Informática", y además forma parte del planEstudios1, llamado "Plan 2024". Tanto la titulacion1 como el planEstudios1 se ofrecen en el departamento1, que lleva el nombre de "Departamento de Ingeniería Informática".
+En este diagrama, se observa un sistema educativo en el que el profesor "Juan Pérez", imparte "Programación". Además de impartirla, el profesor elabora la memoria1, con fecha de "2024-10-21". Esta memoria reporta sobre la misma asignatura1 que Juan Pérez enseña. "Programación" pertenece a  "Ingeniería Informática", y además forma parte del "Plan 2024". Tanto la "Ingeniería Informática" como el "Plan 2024" se ofrecen en "Departamento de Ingeniería Informática".
 
 ---
 
@@ -43,11 +41,4 @@ El diagrama de estados detalla los diferentes estados por los que pasan las enti
 | ![Diagrama de Estados](/images/modelosUML/MdD/diagramaEstados.svg) | [Ver código](/modelosUML/diagramaEstados.puml) |
 
 ### Descripción:
-
-Este diagrama de estados representa el ciclo de vida de una Asignatura y su vinculación con el Profesor asignado. Todo comienza con la Creación de la Asignatura, lo que marca el inicio del proceso. Una vez creada, la asignatura entra en el estado de EnPreparacion, lo que indica que está en proceso de preparación y aún no puede ser impartida.
-
-Posteriormente, la asignatura pasa al estado AsignadaAProfesor, cuando se designa un profesor que será el encargado de impartirla. En este momento, la asignatura pasa al estado de EnImparticion, reflejando que el curso ha comenzado y que el profesor ya está enseñando. Tras la finalización del curso, se realiza la Evaluacion, donde se revisan los resultados de los estudiantes y del curso en general.
-
-Cuando la evaluación se completa, el proceso continúa en el estado InformeFinalizado, señalando que se ha generado una memoria académica o informe final que resume el curso. El ciclo de vida de la asignatura termina cuando esta memoria es generada, marcando el cierre del proceso.
-
-Por otro lado, el Profesor sigue su propio ciclo de vida dentro de este proceso. Comienza en el estado Asignado a Asignatura, indicando que ha sido designado para impartir un curso. Durante el estado de Impartiendo, el profesor está activo en la enseñanza de la asignatura. Una vez finaliza el curso, el profesor entra en el estado de ElaborandoMemoria, donde prepara el informe o memoria académica. Finalmente, cuando el informe está completado, el profesor se encuentra en el estado Disponible, lo que significa que ha concluido su tarea asociada a dicha asignatura.
+ ...   aqui como se va a cambiar el diagrama ya se hace la descripcion
