@@ -1,0 +1,45 @@
+@startuml Diagrama de Clases
+title Automatización de Guías Docentes
+
+class Usuario {
+}
+
+class Profesor {
+}
+
+class DirectorDeGrado {
+}
+
+class TécnicoDeCalidad {
+}
+
+class DirecciónDeCalidad {
+}
+
+class Guia {
+}
+
+class RegistroAcciones {
+}
+
+class Memoria {
+}
+
+class APIVerificación {
+}
+
+Usuario -- Profesor
+Usuario -- DirectorDeGrado
+Usuario -- TécnicoDeCalidad
+Usuario -- DirecciónDeCalidad
+
+Profesor -- Guia : "crea/edita"
+DirectorDeGrado -- Guia : "aprueba/rechaza"
+TécnicoDeCalidad -- Guia : "verifica"
+DirecciónDeCalidad -- Guia : "supervisa"
+
+Guia -- RegistroAcciones 
+Guia -- Memoria 
+Guia -- APIVerificación
+
+@enduml
