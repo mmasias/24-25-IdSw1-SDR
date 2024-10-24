@@ -5,7 +5,7 @@
 ## Proyecto hacia Lucía Terán
 
 <div align="center">
-  <image width="300" src="./Documentos/imagenes/novusdef.jpg" ">
+  <image width="300" src="./documentos/imagenes/novusdef.jpg" ">
 </div>
 
 
