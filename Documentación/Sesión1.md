@@ -2,7 +2,7 @@
 
 ## Proceso de la reunión y temas hablados
 
-La reunión comenzó conociendonos, tras lo cual entre Josep y nosotros hicimos una lluvia de ideas de posibles trabajos a realizar
+La reunión comenzó conociéndonos, tras lo cual entre Josep y nosotros hicimos una lluvia de ideas de posibles trabajos a realizar
 Finalmente se nos presentó como trabajo una aplicación de tablón de anuncios donde los alumnos de la universidad puedan solicitar servicios o prestarse a realizar dichos servicios, por ejemplo alojamiento, transporte, entre otras para también mejorar la relación entre alumnos de diferentes grados lo cual se ha ido perdiendo con el tiempo
 
 ## Glosario
