@@ -6,4 +6,4 @@ En el desarrollo de este Proyecto, tendremos una serie de sesiones con el client
 
 ## Actas
 
-- [Acta de la Primera Sesión](16-10-2024/Readme.md)
+- [Acta de la Primera Sesión](16-10-2024/README.md)
