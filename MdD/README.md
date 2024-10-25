@@ -7,7 +7,7 @@
 ## Diagrama de Objetos 
 | Diagrama | Código Fuente |
 |----------|---------------|
-| ![Diagrama de Objetos]()| [Ver código]() |
+| ![Diagrama de Objetos](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/diagramaclases.svg)| [Ver código]() |
 
 ## Diagrama de Estados 
 | Diagrama | Código Fuente |
