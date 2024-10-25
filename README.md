@@ -1,5 +1,10 @@
 # 💻 Grupo 1 - Ingeniería de Software I
 
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/7568ffd7-2b5a-4245-90ef-00c234720061" alt="Logo del Proyecto" width="150"/>
+    <img src="https://github.com/user-attachments/assets/a811f6f4-3660-434d-a824-f29a73d0023f" alt="Logo del Proyecto" width="150"/>
+</div>
+
 ### 📚 Información del Proyecto 
 [🔗 Página Principal del Proyecto](https://github.com/celiabecerril/24-25-IdSw1-SDR/tree/main)
 
