@@ -1,4 +1,6 @@
 @startuml
+hide empty members
+hide circle
 abstract Remitente{
 }
 
