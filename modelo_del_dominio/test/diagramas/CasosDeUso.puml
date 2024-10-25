@@ -5,7 +5,8 @@ actor SistemaDeCampus as Sistema
 
 Estudiante --> (Acceder al campus)
 Estudiante --> (Realizar test inicial)
-Estudiante --> (Acceder a recursos)
+Estudiante --> (Acc
+eder a recursos)
 Estudiante --> (Realizar tests de seguimiento)
 
 Administracion --> (Evaluar test inicial)

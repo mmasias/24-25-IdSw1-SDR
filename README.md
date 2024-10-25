@@ -1,10 +1,15 @@
-# NOVUS
+<div align="center">
+<h1>NOVUS</h1>
+</div>
 
 ## Proyecto hacia Lucía Terán
 
-![Novus_Logo](/Documentos/imagenes/novusdef.jpg)
+<div align="center">
+  <image width="300" src="./documentos/imagenes/novusdef.jpg" ">
+</div>
 
-  <img alt="Version" src="https://img.shields.io/badge/version-1.0-blue.svg?cacheSeconds=2592000" />
+
+  <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
 
 ## Descripción
 
@@ -12,18 +17,18 @@ Es una plataforma que se encarga de administrar y optimizar el proceso de selecc
 
 ## Modelo de Dominio
 
-  - [Diagramas de Clases]()
-  - [Diagramas de Estados]()
-  - [Diagaramas de Objetos]()
+  - [Diagramas de Clases](modelo_del_dominio/diagramas_de_clases)
+  - [Diagramas de Estados](modelo_del_dominio/diagramas_de_estados)
+  - [Diagaramas de Objetos](modelo_del_dominio/diagramas_de_objetos)
 
-## Casos de Uso
+<!-- ## Casos de Uso
 
   - [Actores]()
   - [Casos de Uso Detallados]()
   - [Diagrama Casos de Uso]()
   - [Diagrama de Contexto]()
   - [Prototipos]()
+ -->
+## [Sesiones](documentos/actas/)
 
-## [Sesiones](/Sesiones/)
-
-  - [Sesión del 16/10/2024](/Documentos/Actas/Acta_sesion_1/)
+  - [Sesión del 16/10/2024](/documentos/actas/16-10-2024/README.md)

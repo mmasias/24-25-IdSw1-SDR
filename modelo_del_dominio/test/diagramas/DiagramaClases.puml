@@ -9,10 +9,12 @@ class Estudiante {
 
 class Test {
   +puntuacion: int
+  
   +fecha: Date
   +tipo: String
   +realizar()
 }
+
 
 class Recurso {
   +tipo: String
