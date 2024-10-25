@@ -1,6 +1,6 @@
 # Gestión de Horarios - Sistema Integral de Gestión de Horarios Universitarios 🗓️
 
-**Gestión de Horarios** es una herramienta diseñada para optimizar la planificación y asignación de horarios en universidades. Esta solución centralizada está orientada a facilitar el trabajo del administrador de horarios, permitiéndole organizar materias, profesores, estudiantes y espacios de forma efectiva. Gracias a su interfaz intuitiva y su calendario interactivo, TimeGuardian ofrece una experiencia de usuario avanzada que asegura una gestión eficiente de los recursos académicos.
+**Gestión de Horarios** es una herramienta diseñada para optimizar la planificación y asignación de horarios en universidades. Esta solución centralizada está orientada a facilitar el trabajo del administrador de horarios, permitiéndole organizar materias, profesores, estudiantes y espacios de forma efectiva. Gracias a su interfaz intuitiva y su calendario interactivo, esta solución ofrece una experiencia de usuario avanzada que asegura una gestión eficiente de los recursos académicos.
 
 ### Modelo de Dominio
 Conjunto de diagramas y modelos conceptuales que representan las entidades y relaciones en TimeGuardian:
