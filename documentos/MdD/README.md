@@ -10,7 +10,7 @@ El diagrama de clases describe la estructura del sistema en términos de entidad
 
 | Diagrama | Código Fuente |
 |----------|---------------|
-| ![Diagrama de Clases](/images/modelosUML/MdD/DiagramaConAtributosCorregido.svg) | [Ver código](/modelosUML/diagramaClases.puml) |
+| ![Diagrama de Clases](/images/modelosUML/MdD/DiagramaDeClasesDani.svg) | [Ver código](/modelosUML/DiagramaDeClasesDani.puml) |
 
 ### Descripción:
 
@@ -24,7 +24,7 @@ El diagrama de objetos representa instancias específicas de las clases descrita
 
 | Diagrama | Código Fuente |
 |----------|---------------|
-| ![Diagrama de Objetos](/images/modelosUML/MdD/diagramaObjetos.svg) | [Ver código](/modelosUML/diagramaObjetos.puml) |
+| ![Diagrama de Objetos](/images/modelosUML/MdD/DiagramaDeObjetosDani.svg) | [Ver código](/modelosUML/DiagramaDeObjetosDani.puml) |
 
 ### Descripción:
 
