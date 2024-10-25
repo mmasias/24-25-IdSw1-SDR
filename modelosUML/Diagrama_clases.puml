@@ -1,0 +1,21 @@
+@startuml
+class Usuario {
+    +String nombre
+    +String correo
+    +String contraseña
+}
+class Post {
+    +Date fechaCreacion
+    +Date fechaResuelto
+    +int duracion
+    +String mensaje
+    +boolean resuelto
+    +Usuario usuarioPublico
+    +List<Etiqueta> etiquetas
+}
+class Etiqueta {
+    +String nombre
+}
+Usuario "1" --> "n" Post : "publica"
+Post "n" --> "n" Etiqueta : "caracterizado por"
+@enduml
