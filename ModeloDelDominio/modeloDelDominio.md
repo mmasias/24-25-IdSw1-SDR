@@ -16,4 +16,4 @@
 ## Diagrama de Estados
 | Diagrama | Código Fuente |
 |----------|---------------|
-| ![Diagrama de Clases]() | [Ver código]() |
+| ![Diagrama de Clases](/images/modelosUML/DiagramaEstados.svg) | [Ver código](/ModeloDelDominio/DiagramaDeEstados.puml) |
