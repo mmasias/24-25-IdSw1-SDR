@@ -1,0 +1,15 @@
+@startuml
+[*] --> Usuario
+Usuario : Estado del usuario
+Usuario --> Alta : Dado de alta
+Usuario --> NoAlta : No dado de alta
+Alta : Usuario activo
+NoAlta : Usuario inactivo
+[*] --> Post
+Alta --> Post: Crea
+Post : Estado del post
+Post --> Resuelto : Marcado como resuelto
+Post --> NoResuelto : Marcado como no resuelto
+Resuelto : Resuelto
+NoResuelto : No resuelto
+@enduml
