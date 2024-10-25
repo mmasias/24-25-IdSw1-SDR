@@ -15,11 +15,11 @@ Finalmente se nos presentó como trabajo una aplicación de tablón de anuncios 
 ## Diagramas
 
 ### Diagrama de Entidades
-![Diagrama de Entidades](../images/ModelosUML/modelosUML/Diagrama_Entidades.svg)
+![Diagrama de Entidades](../images/modelosUML/modelosUML/Diagrama_Entidades.svg)
 ### Diagrama de Estados
-![Diagrama de Estados](../images/ModelosUML/modelosUML/Diagrama_Estados.svg)
+![Diagrama de Estados](../images/modelosUML/modelosUML/Diagrama_Estados.svg)
 ### Diagrama de Clases
-![Diagrama de Entidades](../images/ModelosUML/modelosUML/Diagrama_clases.svg)
+![Diagrama de Entidades](../images/modelosUML/modelosUML/Diagrama_clases.svg)
 
 ## [Dibujos de la interfaz desarrollados tras la reunión](../Images)
 
