@@ -1,0 +1,36 @@
+@startuml
+
+actor "Usuario No Registrado" as UsuarioNoRegistrado
+actor Profesor
+actor Alumno
+actor Admin
+
+usecase "Registrarse" as UC_Registrarse
+usecase "Iniciar Sesión" as UC_IniciarSesion
+usecase "Ver Información de Asignaturas" as UC_VerInfoAsignaturas
+usecase "Matricularse en Asignatura" as UC_Matricularse
+usecase "Consultar Calificaciones" as UC_ConsultarCalificaciones
+usecase "Impartir Asignatura" as UC_ImpartirAsignatura
+usecase "Gestionar Alumnos" as UC_GestionarAlumnos
+usecase "Administrar Usuarios" as UC_AdministrarUsuarios
+usecase "Configurar Sistema" as UC_ConfigurarSistema
+
+UsuarioNoRegistrado --> UC_Registrarse
+UsuarioNoRegistrado --> UC_VerInfoAsignaturas
+UsuarioNoRegistrado --> UC_IniciarSesion
+
+Alumno --> UC_IniciarSesion
+Alumno --> UC_VerInfoAsignaturas
+Alumno --> UC_Matricularse
+Alumno --> UC_ConsultarCalificaciones
+
+Profesor --> UC_IniciarSesion
+Profesor --> UC_VerInfoAsignaturas
+Profesor --> UC_ImpartirAsignatura
+Profesor --> UC_GestionarAlumnos
+
+Admin --> UC_IniciarSesion
+Admin --> UC_AdministrarUsuarios
+Admin --> UC_ConfigurarSistema
+
+@enduml
