@@ -4,6 +4,8 @@
 
 - App de desarrollo de estilo de vida y saludable.
 - Uso objetivo: asignatura optativa de 2º de bachillerato **Estilo de Vida Activo y Saludable** **(EVAS)**
+### Modelo de Dominio
+[Diagrama de clases](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/reunion-001/modelosUML/evas.puml)
 
 [Enlace directo a la rama 1 - reunion-001](https://github.com/celiabecerril/24-25-IdSw1-SDR/tree/reunion-001)
 
