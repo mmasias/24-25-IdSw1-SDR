@@ -17,9 +17,9 @@ Es una plataforma que se encarga de administrar y optimizar el proceso de selecc
 
 ## Modelo de Dominio
 
-  - [Diagramas de Clases]()
-  - [Diagramas de Estados]()
-  - [Diagaramas de Objetos]()
+  - [Diagramas de Clases](modelo_del_dominio/diagramas_de_clases)
+  - [Diagramas de Estados](modelo_del_dominio/diagramas_de_estados)
+  - [Diagaramas de Objetos](modelo_del_dominio/diagramas_de_objetos)
 
 <!-- ## Casos de Uso
 
