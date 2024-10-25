@@ -11,6 +11,15 @@ Finalmente se nos presentó como trabajo una aplicación de tablón de anuncios 
   - Ofrecer: Referido a peticiones donde un alumno espera recibir un servicio de otro alumno
   - Pedir: Referido a peticiones donde un alumno espera conseguir un servicio
   - Etiquetas: Referido a los diferentes ambitos de los servicios ofrecidos y pedidos (ej Transporte, alojamiento, deportes...)
- 
+
+## Diagramas
+
+### Diagrama de Entidades
+![Diagrama de Entidades](../images/ModelosUML/modelosUML/Diagrama_Entidades.svg)
+### Diagrama de Estados
+![Diagrama de Estados](../images/ModelosUML/modelosUML/Diagrama_Estados.svg)
+### Diagrama de Clases
+![Diagrama de Entidades](../images/ModelosUML/modelosUML/Diagrama_clases.svg)
+
 ## [Dibujos de la interfaz desarrollados tras la reunión](../Images)
 
