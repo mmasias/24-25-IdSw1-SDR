@@ -1,18 +1,60 @@
 @startuml
-class Titulacion
-class Asignatura
-class Profesor
-class CargaAcademica
-class MemoriaAcademica
-class Indicadores
-class Informe
+package UNEATLANTICO{
 
-Titulacion  --> Asignatura : contiene
-Asignatura  --> Profesor : es impartida por
-Asignatura  --> CargaAcademica : genera
-Profesor  --> CargaAcademica : tiene
-Titulacion  -->  MemoriaAcademica : hereda de
-MemoriaAcademica  --> Indicadores : alimenta
-CargaAcademica --> Indicadores : calcula
-Indicadores  --> Informe : genera
+class Titulacion{
+curso
+}
+
+class Departamento{
+jefeDepartamento
+
+}
+
+class Profesor{
+titulación
+categoría
+experienciaDocente
+experienciaVirtual
+experienciaInvestigador
+experienciaProfesional 
+ECTS
+}
+
+Enum Contrato{
+Parcial Temporal
+Parcial Indefinido
+Parcial Obra
+Parcial Baja
+Completo Temporal
+Completo Indefinido
+Completo Obra
+Completo Baja
+}
+
+class Asignatura{ 
+semestre 
+codigoCampus
+tipo 
+ECTS 
+}
+
+class PlanEstudios{
+}
+
+class MemoriaAcademica{
+año
+}
+
+
+}
+
+Titulacion --> Asignatura : contiene
+Asignatura --> Profesor : impartida por
+Profesor --> Departamento : pertenece a
+Profesor --> Contrato : tiene un
+Profesor --> PlanEstudios : sigue un 
+MemoriaAcademica --> Titulacion : envia informacion a 
+Asignatura --> MemoriaAcademica : guarda datos en
+Profesor --> MemoriaAcademica : guarda datos en 
+
 @enduml
