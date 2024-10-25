@@ -1,28 +1,34 @@
 @startuml
 
 class Profesor {
-- nombre : String
-- apellido : String
-- titulación : String
-- contrato : String
-- categoría : String
-- temporalidad : String
-- ECTS : double
+titulación
+categoría 
+ECTS
 
+}
+
+Enum Contrato{
+Parcial Temporal
+Parcial Indefinido
+Parcial Obra
+Parcial Baja
+Completo Temporal
+Completo Indefinido
+Completo Obra
+Completo Baja
 }
 
 class Titulacion {
-- nombre : String
-- curso: int
+nombre 
+curso
 }
 
 class Asignatura {
-- nombre : String
-- curso : int 
-- semestre : int
-- codigoCampus : String
-- tipo : String
-- ECTS : double
+curso  
+semestre 
+codigoCampus
+tipo 
+ECTS 
 }
 
 class MemoriaAcademica {
@@ -45,5 +51,5 @@ Profesor --> MemoriaAcademica : "elabora"
 Asignatura --> PlanEstudios : "forma parte de"
 Profesor --> Departamento : "pertenece a"
 Titulacion --> Departamento : "se ofrece en"
-
+Profesor --> Contrato : "tiene un "
 @enduml
