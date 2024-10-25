@@ -10,7 +10,7 @@
 A continuación se muestra el diagrama de clases del proyecto
 
 <p align="center">
-  <img src="/docs/modeloDeDominio/diagramaDeClases/diagramaClasesDocutrace.jpeg">
+  <img src="/docs/modeloDeDominio/diagramaDeClases/diagramaClasesIteracion2.svg">
 </p>
 
 ## Diagrama de Objetos
