@@ -11,7 +11,7 @@ class Profesor {
 class Alumno {
     nombre = "Alejandro"
     apellido = "Higuera"
-  edad = "17"
+    edad = "17"
 }
 
 class Asignatura {
