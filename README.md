@@ -5,6 +5,6 @@
 ### Modelo de Dominio
 Conjunto de diagramas y modelos conceptuales que representan las entidades y relaciones en TimeGuardian:
 - **[Diagrama de Clases](/images/modelosUML/modelosUML/DiagramaDeClases.png)**: Muestra las relaciones y dependencias entre las diferentes clases y componentes del sistema.
-- **Diagrama de Estados**: Representa los diferentes estados en los que pueden encontrarse las entidades del sistema y sus transiciones.
-- **Diagrama de Objetos**: Representa las instancias específicas de las clases en un momento dado.
+- **[Diagrama de Estados](/images/modelosUML/modelosUML/DiagramaDeEstados.svg)**: Representa los diferentes estados en los que pueden encontrarse las entidades del sistema y sus transiciones.
+- **[Diagrama de Objetos](/images/modelosUML/modelosUML/diagramaObjetos.png)**: Representa las instancias específicas de las clases en un momento dado.
   
