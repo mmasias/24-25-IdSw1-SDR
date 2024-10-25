@@ -1,0 +1,41 @@
+@startuml
+hide empty members
+hide circle
+abstract "Admin1:Remitente"{
+    Name: "John"
+    Email: "john@doe.com"
+    Password: "password"
+    Status: "active"
+    SendMessage()
+    AttachDocs()
+    CheckInboxInfo()
+}
+
+class "Contenedor:ContenedorMensaje"{
+    Subject: "Subject"
+    Recipients: "ibuprofeno@uneatlantico.es"
+    Body: "Body"
+    Attachments: ContenedorDocumento()
+}
+
+class "Contenedor:ContenedorDocumento"{
+    Attachments: "Documents.pdf"
+    Status: "Sent"
+}
+
+abstract "User1:Receptor"{
+    Name: "Juan"
+    Email: "juan@perez.com"
+    Password: "contraseña"
+    Status: "active"
+    CheckInboxInfo()
+    SignDocuments()
+    ConfirmReadDocument()
+}
+
+"Admin1:Remitente" "1"--"*" "Contenedor:ContenedorMensaje" : genera
+
+"Contenedor:ContenedorMensaje" "1"--"*" "Contenedor:ContenedorDocumento" : contiene
+
+"Contenedor:ContenedorMensaje" "1"-r-"*" "User1:Receptor" : se envía
+@enduml
