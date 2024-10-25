@@ -1,9 +1,11 @@
 @startuml
-title Diagrama de Estados
+title Diagrama de Estados - Horario
 
-[*] --> EstadoInicial: Comenzar
-EstadoInicial --> EnProceso
-EnProceso --> EnProceso
-EnProceso --> EstadoFinalizado
-EstadoFinalizado --> [*]: Terminar
+[*] --> Inicio : Creación del Horario
+Inicio --> Configurando : Configurar detalles
+Configurando --> HorarioConfigurado : Detalles completados
+HorarioConfigurado --> HorarioConfirmado : Confirmación de configuración
+HorarioConfirmado --> HorarioFinalizado : Finalización alcanzada
+HorarioFinalizado --> [*] : Finalización del Horario
+
 @enduml
