@@ -1,0 +1,20 @@
+@startuml evas
+
+hide circle
+hide empty members
+
+class Profesor{}
+class Alumno{}
+class Asignatura{}
+class UnidadesDidacticas{}
+class ClasesPracticas{}
+class ClasesTeoricas{}
+
+Profesor -- Alumno : esTutorDe
+Profesor -- Asignatura : imparte
+Asignatura -- UnidadesDidacticas : tiene
+UnidadesDidacticas -- ClasesPracticas : tiene
+UnidadesDidacticas -- ClasesTeoricas : tiene
+Alumno -- Asignatura : cursa
+
+@enduml
