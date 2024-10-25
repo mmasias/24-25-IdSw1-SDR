@@ -14,6 +14,8 @@
 ### 🌐 Modelo de Dominio
 [🔗 Acceso al Modelo de Dominio](https://github.com/celiabecerril/24-25-IdSw1-SDR/tree/main/MdD)
 
+### Actores
+
 ### 📅 Reunión 1
 [🔗 Enlace a la Rama reunion-001](https://github.com/celiabecerril/24-25-IdSw1-SDR/tree/reunion-001)
 
