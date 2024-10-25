@@ -1,4 +1,4 @@
-title Diagrama de Clases
+title Diagrama de Clases - Horario
 
 class AdministradorDeHorarios {
     - listaHorarios
@@ -9,42 +9,42 @@ class Profesor {
     - apellido
 }
 
-class Curso {
+class Asignatura {
     - id
     - nombre
 }
 
-class Salon {
+class Aula {
     - numero
 }
 
-class Planificacion {
+class Horario {
     - dia
     - horaInicio
     - horaFin
-    - curso
-    - salon
+    - asignatura
+    - aula
 }
 
 class ProfesorImparte {
     - profesor
-    - curso
+    - asignatura
 }
 
-class SalonAsignadoACurso {
-    - curso
-    - salon
+class AsignacionAula {
+    - asignatura
+    - aula
 }
 
-AdministradorDeHorarios -- Profesor
-AdministradorDeHorarios -- Curso
-AdministradorDeHorarios -- Salon
+AdministradorDeHorarios -- Horario
 
-AdministradorDeHorarios -- ProfesorImparte
-SalonAsignadoACurso -- Planificacion
+Horario -- Profesor
+Horario -- Asignatura
+Horario -- Aula
 
 Profesor -- ProfesorImparte
-Curso -- ProfesorImparte
-Curso -- SalonAsignadoACurso
-Salon -- SalonAsignadoACurso
+Asignatura -- ProfesorImparte
+Asignatura -- AsignacionAula
+Aula -- AsignacionAula
+ProfesorImparte -- AsignacionAula
 @enduml
