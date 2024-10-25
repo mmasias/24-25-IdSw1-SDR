@@ -1,0 +1,38 @@
+@startuml
+abstract Remitente{
+}
+
+class ContenedorMensaje{
+}
+
+class Usuario{
+}
+
+class ContenedorDocumento{
+}
+
+abstract Receptor{
+}
+
+class Destinatario{
+}
+
+class Administrador{
+}
+
+class Categoria{
+}
+
+Remitente <|-- Administrador
+Remitente <|-- Usuario
+
+Receptor <|-- Destinatario
+Receptor <|-- Usuario
+Receptor -- Categoria : pertenece
+
+Remitente "1"--"*" ContenedorMensaje : genera
+
+ContenedorMensaje "1"--"*" ContenedorDocumento : contiene
+
+ContenedorMensaje "1"-r-"*" Receptor : se envía
+@enduml
