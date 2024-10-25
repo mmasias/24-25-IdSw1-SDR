@@ -1,4 +1,5 @@
-title Diagrama de Dominio
+@startuml
+title Diagrama de clases
 
 class AdministradorDeHorarios {
     - listaHorarios
@@ -18,7 +19,7 @@ class Salon {
     - numero
 }
 
-class Planificacion {
+class Horario {
     - dia
     - horaInicio
     - horaFin
@@ -26,7 +27,7 @@ class Planificacion {
     - salon
 }
 
-class AsignarProfesorCurso {
+class ProfesorImparte {
     - profesor
     - curso
 }
@@ -40,12 +41,12 @@ AdministradorDeHorarios -- Profesor
 AdministradorDeHorarios -- Curso
 AdministradorDeHorarios -- Salon
 
-AdministradorDeHorarios -- AsignarProfesorCurso
-AsignarProfesorCurso -- AsignarCursoSalon
-AsignarCursoSalon -- Planificacion
+AdministradorDeHorarios -- ProfesorImparte
+ProfesorImparte -- AsignarCursoSalon
+AsignarCursoSalon -- Horario
 
-Profesor -- AsignarProfesorCurso
-Curso -- AsignarProfesorCurso
+Profesor -- ProfesorImparte
+Curso -- ProfesorImparte
 Curso -- AsignarCursoSalon
 Salon -- AsignarCursoSalon
 @enduml
