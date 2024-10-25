@@ -10,7 +10,7 @@ El diagrama de clases describe la estructura del sistema en términos de entidad
 
 | Diagrama | Código Fuente |
 |----------|---------------|
-| ![Diagrama de Clases](/images/modelosUML/MdD/diagramaClases.svg) | [Ver código](/modelosUML/diagramaClases.puml) |
+| ![Diagrama de Clases](/images/modelosUML/MdD/DiagramaConAtributos.svg) | [Ver código](/modelosUML/diagramaClases.puml) |
 
 ### Descripción:
 
