@@ -15,6 +15,7 @@ class "Mensaje:Mensaje"{
     Asunto: "Asunto"
     Receptores: "ibuprofeno@uneatlantico.es"
     Cuerpo: "cuerpo"
+    FechaLimite: "01-01-2000"
     Adjuntos: RastreadorDocumento()
 }
 
