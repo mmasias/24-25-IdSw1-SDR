@@ -11,16 +11,20 @@ abstract "Admin1:Remitente"{
     CheckInboxInfo()
 }
 
-class "Contenedor:ContenedorMensaje"{
+class "Mensaje:Mensaje"{
     Subject: "Subject"
     Recipients: "ibuprofeno@uneatlantico.es"
     Body: "Body"
-    Attachments: ContenedorDocumento()
+    Attachments: RastreadorDocumento()
 }
 
-class "Contenedor:ContenedorDocumento"{
-    Attachments: "Documents.pdf"
+class "Rastreador:RastreadorDocumento"{
+    Documento()
     Status: "Sent"
+}
+
+class "Documento:Documento"{
+    Attachments: "Documents.pdf"
 }
 
 abstract "User1:Receptor"{
@@ -33,9 +37,13 @@ abstract "User1:Receptor"{
     ConfirmReadDocument()
 }
 
-"Admin1:Remitente" "1"--"*" "Contenedor:ContenedorMensaje" : genera
+"Admin1:Remitente" "1"--"*" "Mensaje:Mensaje" : genera
 
-"Contenedor:ContenedorMensaje" "1"--"*" "Contenedor:ContenedorDocumento" : contiene
+"Mensaje:Mensaje" "1"--"*" "Rastreador:RastreadorDocumento" : contiene
 
-"Contenedor:ContenedorMensaje" "1"-r-"*" "User1:Receptor" : se envía
+"Mensaje:Mensaje" "1"-r-"*" "User1:Receptor" : se envía
+
+"Rastreador:RastreadorDocumento" "1"--"1" "Documento:Documento" : adjunta
 @enduml
+
+// Tipo de mensaje es definido por el mensaje o por el documento (PENDIENTE)
