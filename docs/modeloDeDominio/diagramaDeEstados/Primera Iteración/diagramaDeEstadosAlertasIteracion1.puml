@@ -1,0 +1,13 @@
+@startuml diagramaDeEstados
+
+[*] --> VerEstadoMensaje: Abrir Mensaje
+
+state alertaDocumento <<choice>> 
+VerEstadoMensaje --> alertaDocumento: Abrir Alertas
+
+alertaDocumento --> VerEstadoMensaje: Enviar alerta de confirmacion/firma a receptores
+alertaDocumento --> VerEstadoMensaje: Configurar fecha de alerta de confirmacion/firma a receptores
+
+VerEstadoMensaje --> [*]: Cerrar Mensaje
+
+@enduml
