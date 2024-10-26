@@ -2,36 +2,36 @@
 hide empty members
 hide circle
 abstract "Admin1:Remitente"{
-    Name: "John"
-    Email: "john@doe.com"
-    Password: "password"
-    Status: "active"
+    Nombre: "Pedro"
+    Email: "pedro@perez.com"
+    Contraseña: "contraseña"
+    Estado: "activo"
     SendMessage()
     AttachDocs()
     CheckInboxInfo()
 }
 
 class "Mensaje:Mensaje"{
-    Subject: "Subject"
-    Recipients: "ibuprofeno@uneatlantico.es"
-    Body: "Body"
-    Attachments: RastreadorDocumento()
+    Asunto: "Asunto"
+    Receptores: "ibuprofeno@uneatlantico.es"
+    Cuerpo: "cuerpo"
+    Adjuntos: RastreadorDocumento()
 }
 
 class "Rastreador:RastreadorDocumento"{
     Documento()
-    Status: "Sent"
+    Estado: "Enviado"
 }
 
 class "Documento:Documento"{
-    Attachments: "Documents.pdf"
+    Adjuntos: "Documento.pdf"
 }
 
 abstract "User1:Receptor"{
-    Name: "Juan"
+    Nombre: "Juan"
     Email: "juan@perez.com"
-    Password: "contraseña"
-    Status: "active"
+    Contraseña: "contraseña123"
+    Estado: "activo"
     CheckInboxInfo()
     SignDocuments()
     ConfirmReadDocument()
