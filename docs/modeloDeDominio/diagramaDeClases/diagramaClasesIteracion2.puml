@@ -1,29 +1,24 @@
 @startuml
 hide empty members
 hide circle
-abstract Remitente{
-}
 
-class ContenedorMensaje{
-}
+abstract Remitente
 
-class Usuario{
-}
+class Mensaje
 
-class ContenedorDocumento{
-}
+class Usuario
 
-abstract Receptor{
-}
+class RastreadorDocumento
 
-class Destinatario{
-}
+abstract Receptor
 
-class Administrador{
-}
+class Destinatario
 
-class Categoria{
-}
+class Administrador
+
+class Categoria
+
+class Documento
 
 Remitente <|-- Administrador
 Remitente <|-- Usuario
@@ -32,9 +27,11 @@ Receptor <|-- Destinatario
 Receptor <|-- Usuario
 Receptor -- Categoria : pertenece
 
-Remitente "1"--"*" ContenedorMensaje : genera
+Remitente "1"--"*" Mensaje : genera
 
-ContenedorMensaje "1"--"*" ContenedorDocumento : contiene
+Mensaje  "1"--"*" RastreadorDocumento : contiene
 
-ContenedorMensaje "1"-r-"*" Receptor : se envía
+Mensaje  "1"-r-"*" Receptor : se envía
+
+RastreadorDocumento "1"--"1" Documento: adjunta
 @enduml
