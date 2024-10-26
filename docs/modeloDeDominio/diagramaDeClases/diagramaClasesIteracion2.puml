@@ -6,7 +6,7 @@ abstract Remitente
 
 class Mensaje
 
-class Usuario
+class Responsable
 
 class RastreadorDocumento
 
@@ -21,10 +21,10 @@ class Categoria
 class Documento
 
 Remitente <|-- Administrador
-Remitente <|-- Usuario
+Remitente <|-- Responsable
 
 Receptor <|-- Destinatario
-Receptor <|-- Usuario
+Receptor <|-- Responsable
 Receptor -- Categoria : pertenece
 
 Remitente "1"--"*" Mensaje : genera
