@@ -1,0 +1,18 @@
+@startuml diagramaDeEstados
+
+[*] --> LeerMensaje: Abrir Mensaje
+
+LeerMensaje --> LeerDocumento: Seleccionar documento
+
+
+state confirmandoDocumento <<choice>> 
+confirmandoDocumento --> LeerDocumento: - Confirmar vista del documento
+confirmandoDocumento --> LeerDocumento: - Confirmar vista y firma del documento
+
+LeerDocumento --> confirmandoDocumento : Seleccionar Confirmacion
+
+LeerDocumento --> LeerMensaje : Elegir documento
+
+LeerMensaje --> [*]: Cerrar Mensaje
+
+@enduml

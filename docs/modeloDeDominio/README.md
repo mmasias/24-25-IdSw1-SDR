@@ -24,3 +24,22 @@ A continuación se muestra el diagrama de objetos del proyecto
 ## Diagrama de Estados
 
 A continuación se muestra el diagrama de estados del proyecto
+
+### Diagrama de Estados del receptor
+
+<p align="center">
+  <img src="/docs/modeloDeDominio/diagramaDeEstados/PrimeraIteracion/diagramaDeEstadosReceptorIteracion1.svg">
+</p>
+
+### Diagrama de Estados del remitente
+
+<p align="center">
+  <img src="/docs/modeloDeDominio/diagramaDeEstados/PrimeraIteracion/diagramaDeEstadosRemitenteIteracion1.svg">
+</p>
+
+
+### Diagrama de Estados de la alerta
+
+<p align="center">
+  <img src="/docs/modeloDeDominio/diagramaDeEstados/PrimeraIteracion/diagramaDeEstadosAlertaIteracion1.svg">
+</p>

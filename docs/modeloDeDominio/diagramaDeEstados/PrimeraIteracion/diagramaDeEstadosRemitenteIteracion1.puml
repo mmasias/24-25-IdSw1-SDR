@@ -1,0 +1,19 @@
+@startuml diagramaDeEstados
+
+[*] --> Mensaje: Crear un nuevo mensaje
+
+Mensaje : - Añadir Destinatario
+Mensaje : - Añadir Asunto
+Mensaje : - Añadir Documentos
+
+Mensaje --> TipoDocumento: Seleccionar tipo de documento
+
+state TipoDocumento <<Choice>> {
+    TipoDocumento --> Mensaje: - Se requiere vista del documento
+    TipoDocumento --> Mensaje: - Se requiere vista y firma del documento
+}
+
+Mensaje --> EnProceso: Enviar Mensaje
+EnProceso --> Finalizado: Se finaliza el proceso
+
+@enduml
