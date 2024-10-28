@@ -1,0 +1,33 @@
+@startuml
+
+state Plataforma {
+  [*] -d-> Inicio
+
+  State Elección <<choice>>
+  State Inicio
+  State Evaluación
+  State Capacitación
+
+  State ProcesoEvaluacion {
+    EvaluarPruebas -d-> EnCurs
+    o
+    EnCurso -r-> Resultados
+    Resultados -u-> EvaluarPruebas
+  }
+
+  State ProcesoCapacitacion {
+    InicioCapacitacion -d-> EnCursoCapacitacion
+    EnCursoCapacitacion -r-> FinalizadoCapacitacion
+    FinalizadoCapacitacion -u-> InicioCapacitacion
+  }
+
+  Inicio -d-> ProcesoEvaluacion
+
+  ProcesoEvaluacion -r-> Elección : Evaluación completa
+  Elección -u-> ProcesoCapacitacion : Candidato aprueba
+  Elección -r-> [*] : Candidato no aprueba
+
+  ProcesoCapacitacion -l-> Inicio
+}
+
+@enduml
