@@ -9,6 +9,9 @@ class Asignatura{}
 class UnidadesDidacticas{}
 class ClasesPracticas{}
 class ClasesTeoricas{}
+class CentroDeportivo{}
+class Rutina{}
+class Actividades{}
 
 Profesor -- Alumno : esTutorDe
 Profesor -- Asignatura : imparte
@@ -16,5 +19,8 @@ Asignatura -- UnidadesDidacticas : tiene
 UnidadesDidacticas -- ClasesPracticas : tiene
 UnidadesDidacticas -- ClasesTeoricas : tiene
 Alumno -- Asignatura : cursa
+ClasesPracticas -- CentroDeportivo : seRealizaEn
+ClasesPracticas -- Rutina : enseña
+Rutina -- Actividades : contiene
 
 @enduml
