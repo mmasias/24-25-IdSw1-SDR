@@ -31,11 +31,34 @@ class ClasesTeoricas {
     fecha = "7-11-2024"
 }
 
+class CentroDeportivo {
+    nombre = "Instalaciones de Muriedas"
+}
+
+class Rutina {
+    titulo = "Atletismo"
+    nivel = "Iniciacion"
+}
+
+class Actividades {
+    nombre = "Test Course-Navette"
+}
+
+class Valoracion {
+    tiempo = "11 minutos"
+}
+
+
 Profesor -- Alumno : esTutorDe
 Profesor -- Asignatura : imparte
 Asignatura -- UnidadesDidacticas : tiene
 UnidadesDidacticas -- ClasesPracticas : tiene
 UnidadesDidacticas -- ClasesTeoricas : tiene
 Alumno -- Asignatura : cursa
+ClasesPracticas -- CentroDeportivo : seRealizaEn
+ClasesPracticas -- Rutina : enseña
+Rutina -- Actividades : contiene
+Rutina -- Valoracion: tiene
+Alumno -- Rutina: realiza
 
 @enduml
