@@ -2,40 +2,49 @@
 hide empty members
 hide circle
 abstract "Admin1:Remitente"{
-    Name: "John"
-    Email: "john@doe.com"
-    Password: "password"
-    Status: "active"
+    Nombre: "Pedro"
+    Email: "pedro@perez.com"
+    Contraseña: "contraseña"
+    Estado: "activo"
     SendMessage()
     AttachDocs()
     CheckInboxInfo()
 }
 
-class "Contenedor:ContenedorMensaje"{
-    Subject: "Subject"
-    Recipients: "ibuprofeno@uneatlantico.es"
-    Body: "Body"
-    Attachments: ContenedorDocumento()
+class "Mensaje:Mensaje"{
+    Asunto: "Asunto"
+    Receptores: "ibuprofeno@uneatlantico.es"
+    Cuerpo: "cuerpo"
+    FechaLimite: "01-01-2000"
+    Adjuntos: RastreadorDocumento()
 }
 
-class "Contenedor:ContenedorDocumento"{
-    Attachments: "Documents.pdf"
-    Status: "Sent"
+class "Rastreador:RastreadorDocumento"{
+    Documento()
+    Estado: "Enviado"
+}
+
+class "Documento:Documento"{
+    Adjuntos: "Documento.pdf"
 }
 
 abstract "User1:Receptor"{
-    Name: "Juan"
+    Nombre: "Juan"
     Email: "juan@perez.com"
-    Password: "contraseña"
-    Status: "active"
+    Contraseña: "contraseña123"
+    Estado: "activo"
     CheckInboxInfo()
     SignDocuments()
     ConfirmReadDocument()
 }
 
-"Admin1:Remitente" "1"--"*" "Contenedor:ContenedorMensaje" : genera
+"Admin1:Remitente" "1"--"*" "Mensaje:Mensaje" : genera
 
-"Contenedor:ContenedorMensaje" "1"--"*" "Contenedor:ContenedorDocumento" : contiene
+"Mensaje:Mensaje" "1"--"*" "Rastreador:RastreadorDocumento" : contiene
 
-"Contenedor:ContenedorMensaje" "1"-r-"*" "User1:Receptor" : se envía
+"Mensaje:Mensaje" "1"-r-"*" "User1:Receptor" : se envía
+
+"Rastreador:RastreadorDocumento" "1"--"1" "Documento:Documento" : adjunta
 @enduml
+
+// Tipo de mensaje es definido por el mensaje o por el documento (PENDIENTE)
