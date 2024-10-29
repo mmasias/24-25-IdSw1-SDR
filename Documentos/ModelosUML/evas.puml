@@ -12,6 +12,7 @@ class ClasesTeoricas{}
 class CentroDeportivo{}
 class Rutina{}
 class Actividades{}
+class Valoracion{}
 
 Profesor -- Alumno : esTutorDe
 Profesor -- Asignatura : imparte
@@ -22,5 +23,6 @@ Alumno -- Asignatura : cursa
 ClasesPracticas -- CentroDeportivo : seRealizaEn
 ClasesPracticas -- Rutina : enseña
 Rutina -- Actividades : contiene
-
+Rutina -- Valoracion: tiene
+Alumno -- Rutina: realiza
 @enduml
