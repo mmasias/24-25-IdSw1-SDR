@@ -16,8 +16,6 @@ usecase "Administrar Usuarios" as UC_AdministrarUsuarios
 usecase "Configurar Sistema" as UC_ConfigurarSistema
 
 UsuarioNoRegistrado --> UC_Registrarse
-UsuarioNoRegistrado --> UC_VerInfoAsignaturas
-UsuarioNoRegistrado --> UC_IniciarSesion
 
 Alumno --> UC_IniciarSesion
 Alumno --> UC_VerInfoAsignaturas
