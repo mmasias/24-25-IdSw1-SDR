@@ -6,7 +6,6 @@ Este documento presenta los diagramas principales del modelo de dominio: el **di
 
 ## 1. Diagrama de Clases
 
-El diagrama de clases muestra las entidades principales del sistema (como `Profesor`, `Asignatura`, `Titulacion`) y sus relaciones. Es una visión general de la estructura y conexiones del sistema académico de UNEATLANTICO.
 
 | **Diagrama** | **Código Fuente** |
 |--------------|--------------------|
@@ -21,7 +20,7 @@ El diagrama de clases muestra las entidades principales del sistema (como `Profe
 
 ## 2. Diagrama de Objetos
 
-Este diagrama representa instancias específicas de las clases, mostrando un escenario concreto en el que interactúan objetos relacionados con asignaturas, profesores y memorias académicas.
+
 
 | **Diagrama** | **Código Fuente** |
 |--------------|--------------------|
@@ -35,7 +34,6 @@ Este diagrama representa instancias específicas de las clases, mostrando un esc
 
 ## 3. Diagrama de Estados
 
-El diagrama de estados muestra el flujo de gestión de la carga de trabajo de los profesores, verificando compatibilidad con contrato y equivalencia en tiempo completo (EQ TC).
 
 | **Diagrama** | **Código Fuente** |
 |--------------|--------------------|
@@ -43,14 +41,10 @@ El diagrama de estados muestra el flujo de gestión de la carga de trabajo de lo
 
 - **Descripción**:
 
-  - **Sin_Asignacion**: Profesor sin carga asignada.
-  - **Propuesta_Carga**: Genera carga preliminar (docencia, investigación, gestión).
-  - **Verificar_Contrato**: Verifica si el contrato permite la carga.
-  - **No_Valido**: Estado final si el contrato o EQ TC no permiten la carga.
-  - **Revisión_EQ_TC**: Valida que EQ TC esté dentro de límites permitidos.
-  - **Revisión_Carga**: Revisa proporción de carga; pasa a `Aprobada` o `Ajuste_Carga`.
-  - **Ajuste_Carga**: Ajusta carga y regresa a `Revisión_EQ_TC`.
-  - **Aprobada**: La carga es revisada y aprobada.
-  - **Asignada**: Estado final; carga académica asignada y registrada.
+  - Sin_Asignacion: Profesor sin carga, se hace Propuesta_Carga: Genera carga inicial.
+  - Verificar_Contrato: Revisa compatibilidad con contrato o No_Valido: Rechazo por exceso de carga.
+  - Revisión_EQ_TC: Verifica límite EQ TC.
+  - Revisión_Carga: Valida carga; pasa a Aprobada(Carga validada) o Ajuste_Carga(Ajusta carga para cumplir límites).
+  - Asignada: Carga final asignada.
 
 --- 
