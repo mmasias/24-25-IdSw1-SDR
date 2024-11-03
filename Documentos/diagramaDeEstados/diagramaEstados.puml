@@ -1,17 +1,19 @@
 @startuml
+
 hide empty description
 
 [*] --> Inscrito : alumno se inscribe en la asignatura
-Inscrito --> EnClaseTeorica : estudia la teoría
-Inscrito --> EnClasePractica : realiza las prácticas
-EnClaseTeorica --> EvaluacionFinal : se evalúa su trabajo
-EnClasePractica --> EvaluacionFinal 
+Inscrito --> EnClaseTeorica : asiste a clases teóricas
+Inscrito --> EnClasePractica : asiste a clases prácticas
 
-EvaluacionFinal --> Aprobado : supera ambas partes
-EvaluacionFinal --> Suspendido : no supera ambas partes
+EnClaseTeorica --> ValoracionFinal : se le evalúa
+EnClasePractica --> RutinaAsignada : se le enseña una rutina
 
-Aprobado --> FinDelCurso : supera la asignatura
-Suspendido --> FinDelCurso : no supera la asignatura
+RutinaAsignada --> RutinaCompletada : completa la rutina
+RutinaCompletada --> ValoracionFinal : se le evalúa
+
+ValoracionFinal --> FinDelCurso : finaliza la asignatura
+
 FinDelCurso --> [*] : termina el curso
 
 @enduml
