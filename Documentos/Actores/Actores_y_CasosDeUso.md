@@ -45,3 +45,8 @@ Este rol garantiza el buen funcionamiento del sistema y asegura que solo usuario
 
 ### Interacciones y Flujos Principales
 El flujo del sistema comienza con el **Usuario No Registrado**, quien debe registrarse para obtener acceso a las funcionalidades. Una vez registrado, se convierte en **Alumno** y puede realizar tareas relacionadas con su aprendizaje. Los **Profesores**, por su parte, pueden monitorear y gestionar la experiencia educativa de los alumnos, ofreciendo una estructura guiada y personalizada. Finalmente, el **Admin** asegura que el sistema esté adecuadamente configurado y mantenido, permitiendo que todos los roles operen dentro de los límites de sus permisos.
+
+# Diagrama de Contexto
+| Diagrama | Código Fuente |
+|----------|---------------|
+| ![DDC](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/DiagramaDeContexto.svg) | [Ver codigo](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/ModelosUML/DiagramaDeContexto.puml) |
