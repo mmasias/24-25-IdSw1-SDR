@@ -12,4 +12,4 @@
 ## Diagrama de Estados 
 | Diagrama | Código Fuente |
 |----------|---------------|
-| ![Diagrama de Estados](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/diagramaEstados.png)| [Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/diagramaDeEstados/diagramaEstados.puml) |
+| ![Diagrama de Estados](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/diagramaDeEstados.png)| [Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/diagramaDeEstados/diagramaEstados.puml) |
