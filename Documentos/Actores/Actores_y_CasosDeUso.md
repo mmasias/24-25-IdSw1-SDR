@@ -8,4 +8,4 @@
 
 | Diagrama | Código Fuente |
 |----------|---------------|
-| ![Casos de uso](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/CasosDeUso.svg) | [Ver codigo](https://github.com/celiabecerril/24-25-IdSw1-SDR/tree/main/Documentos/CasosUso) |
+| ![Casos de uso](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/CasosDeUso.svg) | [Ver codigo](Documentos/CasosUso/CasosUso.puml) |
