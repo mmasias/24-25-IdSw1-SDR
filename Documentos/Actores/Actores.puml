@@ -5,30 +5,33 @@ actor Profesor
 actor Alumno
 actor Admin
 
-usecase "Registrarse" as UC_Registrarse
-usecase "Iniciar Sesión" as UC_IniciarSesion
-usecase "Ver Información de Asignaturas" as UC_VerInfoAsignaturas
-usecase "Matricularse en Asignatura" as UC_Matricularse
-usecase "Consultar Calificaciones" as UC_ConsultarCalificaciones
-usecase "Impartir Asignatura" as UC_ImpartirAsignatura
-usecase "Gestionar Alumnos" as UC_GestionarAlumnos
-usecase "Administrar Usuarios" as UC_AdministrarUsuarios
-usecase "Configurar Sistema" as UC_ConfigurarSistema
+UsuarioNoRegistrado <|-- Alumno : necesita registrarse para ser Alumno
+Admin <|-- Profesor : tiene permisos avanzados
+Admin <|-- Alumno : acceso limitado en comparación al Admin
 
-UsuarioNoRegistrado --> UC_Registrarse
+note right of UsuarioNoRegistrado
+  **Usuario No Registrado**: 
+  Debe registrarse para acceder a 
+  cualquier funcionalidad del sistema.
+end note
 
-Alumno --> UC_IniciarSesion
-Alumno --> UC_VerInfoAsignaturas
-Alumno --> UC_Matricularse
-Alumno --> UC_ConsultarCalificaciones
+note right of Alumno
+  **Alumno**: 
+  Puede usar la aplicación y 
+  seguir las rutinas asignadas.
+end note
 
-Profesor --> UC_IniciarSesion
-Profesor --> UC_VerInfoAsignaturas
-Profesor --> UC_ImpartirAsignatura
-Profesor --> UC_GestionarAlumnos
+note right of Profesor
+  **Profesor**: 
+  Puede controlar a sus alumnos 
+  y añadir rutinas y objetivos.
+end note
 
-Admin --> UC_IniciarSesion
-Admin --> UC_AdministrarUsuarios
-Admin --> UC_ConfigurarSistema
+note right of Admin
+  **Admin**: 
+  Tiene control total del sistema,
+  incluyendo la gestión de usuarios y 
+  la administración de contenidos.
+end note
 
 @enduml
