@@ -25,10 +25,14 @@ class UnidadesDidacticas {
 
 class ClasesPracticas {
     fecha = "12-11-2024"
+    duracion = "2 horas"
+    ubicacion = "Gimnasio"
 }
 
 class ClasesTeoricas {
-    fecha = "7-11-2024"
+    fecha = "07-11-2024"
+    duracion = "2 horas"
+    ubicacion = "Aula 101"
 }
 
 class CentroDeportivo {
@@ -38,14 +42,17 @@ class CentroDeportivo {
 class Rutina {
     titulo = "Atletismo"
     nivel = "Iniciacion"
+    objetivo = "Mejorar resistencia"
 }
 
 class Actividades {
     nombre = "Test Course-Navette"
+    tipo = "Cardio"
 }
 
 class Valoracion {
     tiempo = "11 minutos"
+    comentario = "Buen rendimiento"
 }
 
 
