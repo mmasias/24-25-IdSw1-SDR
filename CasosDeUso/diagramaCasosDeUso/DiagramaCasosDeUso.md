@@ -43,5 +43,15 @@ Este documento describe los principales casos de uso en el sistema de Automatiza
    - **Actor:** Sistema
    - **Descripción:** Asocia cada asignatura con su titulación correspondiente.
    - **Objetivo:** Mantener la estructura de programas académicos dentro del sistema.
+---
 
+<div align=center>
+
+||
+|-:|
+![](/images/modelosUML/diagramaCasosDeUso.svg)
+*Autor: Cayetano Castillo*
+
+
+</div>
 
