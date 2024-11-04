@@ -1,0 +1,27 @@
+@startuml
+class Usuario {
+}
+
+class Administrador {
+}
+
+class Alumni {
+}
+
+class Empresas {
+}
+
+class OfertaTrabajo {
+}
+
+class PlataformaAcceso {
+}
+
+Usuario <|-- Administrador : hereda
+Usuario <|-- Alumni : hereda
+PlataformaAcceso -- Usuario : autentica
+Empresas --> OfertaTrabajo : publican
+Administrador --> OfertaTrabajo : aprueba
+Alumni --> OfertaTrabajo : encuentra & postula
+EstaPlataforma --> OfertaTrabajo : expone
+@enduml
