@@ -1,1 +1,42 @@
+@startuml CasosDeUsoEncapsulados
+
+title Automatización de Guías Docentes - Diagrama de Casos de Uso
+
+actor Profesor
+actor DirectorDeGrado
+actor TécnicoDeCalidad
+actor DirecciónDeCalidad
+actor Sistema
+
+rectangle "Gestión de Contenidos" {
+    usecase "Editar Contenido de la Guía" as UC1
+    usecase "Aprobar o Rechazar Contenido" as UC2
+}
+
+rectangle "Control de Calidad" {
+    usecase "Supervisar Guías Docentes" as UC3
+    usecase "Auditar Guías Docentes" as UC4
+}
+
+rectangle "Automatización de Plantillas" {
+    usecase "Utilizar Plantilla Multititulación" as UC5
+}
+
+rectangle "Gestión de Versiones y Estructura" {
+    usecase "Generar Nueva Versión de la Guía" as UC6
+    usecase "Asignar Guía a Titulación" as UC7
+    usecase "Asignar Asignatura a Titulación" as UC8
+}
+
+Profesor --> UC1
+DirectorDeGrado --> UC2
+TécnicoDeCalidad --> UC3
+DirecciónDeCalidad --> UC4
+TécnicoDeCalidad --> UC5
+Sistema --> UC6
+Sistema --> UC7
+Sistema --> UC8
+
+@enduml
+
 
