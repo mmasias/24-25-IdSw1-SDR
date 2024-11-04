@@ -20,7 +20,7 @@ A continuacion se presentan los enlaces a los distintos diagramas realizados:
 ### Diagrama de Clases
 ![Diagrama de Entidades](../images/modelosUML/modelosUML/Diagrama_clases.svg)
 ### Diagrama de casos de uso del moderador
-|[Diagrama de Casos de Uso de Moderador](../images/modelosUML/modelosUML/Casos_de_uso_moderador.svg)
+![Diagrama de Casos de Uso de Moderador](../images/modelosUML/modelosUML/Diagrama_caso_uso_mod.svg)
 
 
 
