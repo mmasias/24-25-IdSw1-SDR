@@ -15,7 +15,7 @@
 
 ## 🔰 Modelo de Dominio
 
-El [modelo de dominio](docs/modeloDeDominio/) de *DOCUTRACE* define las entidades principales y sus relaciones dentro del sistema.
+El [modelo de dominio](docs/modeloDeDominio/README.md) de *DOCUTRACE* define las entidades principales y sus relaciones dentro del sistema.
 
 Para describir el modelo del dominio se utilizan los siguientes artefactos:
 
