@@ -13,7 +13,7 @@ class Post {
     +int duracion
     +String mensaje
     +boolean resuelto
-    +Usuario usuarioPublico
+    +Usuario usuarioOP
     +List<Etiqueta> etiquetas
 }
 class Etiqueta {
