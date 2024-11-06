@@ -18,7 +18,7 @@ A continuacion se presentan los enlaces a los distintos diagramas realizados:
 ### Diagrama de Entidades
 ![Diagrama de Entidades](https://github.com/miguelgomez75/24-25-IdSw1-SDR/blob/main/images/modelosUML/modelosUML/Diagrama_Entidades.svg)
 ### Diagrama de Estados
-![Diagrama de Estados](https://github.com/miguelgomez75/24-25-IdSw1-SDR/blob/main/images/modelosUML/modelosUML/Diagrama_Entidades.svg)
+![Diagrama de Estados](https://github.com/miguelgomez75/24-25-IdSw1-SDR/blob/main/images/modelosUML/modelosUML/Diagrama_Estados.svg)
 ### Diagrama de Clases
 ![Diagrama de Clases](https://github.com/miguelgomez75/24-25-IdSw1-SDR/blob/main/images/modelosUML/modelosUML/Diagrama_clases.svg)
 ### Diagrama de casos de uso del usuario
