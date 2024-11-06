@@ -1,4 +1,6 @@
-# Tablón de Anuncios Uneat
+# Tablón de Anuncios Uneat 
+
+## 📋[Seguimento del proyecto](https://github.com/users/miguelgomez75/projects/3/views/1)📋
 
 Grupo conformado por:
 
@@ -8,7 +10,7 @@ Grupo conformado por:
 - Adrián Perez
 - josé Salceda
 
-## [Documentación](Documentación)  
+## 🗃️[Documentación](Documentación)🗃️
 ## DIAGRAMAS
 
 A continuacion se presentan los enlaces a los distintos diagramas realizados:
