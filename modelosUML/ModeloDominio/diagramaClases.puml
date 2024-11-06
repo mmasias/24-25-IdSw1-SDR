@@ -8,21 +8,20 @@ class Administrador {
 class Alumni {
 }
 
-class Empresa {
+class Empresas {
 }
 
 class OfertaTrabajo {
 }
 
-class Plataforma_acceso {
+class PlataformaAcceso {
 }
-
 
 Usuario <|-- Administrador : hereda
 Usuario <|-- Alumni : hereda
-Empresa .. OfertaTrabajo : crea
-Plataforma_acceso -- Usuario : autentica
-Empresa --> Administrador : contacta
-Administrador -- OfertaTrabajo : valida
-Alumni -- OfertaTrabajo : busca
+PlataformaAcceso -- Usuario : autentica
+Empresas --> OfertaTrabajo : publican
+Administrador --> OfertaTrabajo : aprueba
+Alumni --> OfertaTrabajo : encuentra & postula
+EstaPlataforma --> OfertaTrabajo : expone
 @enduml
