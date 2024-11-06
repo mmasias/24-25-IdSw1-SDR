@@ -1,0 +1,18 @@
+@startuml
+actor "Destinatario" as Destinatario
+actor "Responsable" as Responsable
+actor "Administrador General" as AdminGeneral
+
+Destinatario <|-- Responsable : Puede crear destinatarios y enviar documentos
+Responsable <|-- AdminGeneral : Puede crear responsables y destinatarios, y enviar documentos
+
+note right of AdminGeneral
+    Puede hacer todo lo que hace un Responsable
+    más las acciones de administración de usuarios
+end note
+
+note right of Responsable
+    Puede hacer todo lo que hace un Destinatario
+    más las acciones de envío de documentos
+end note
+@enduml
