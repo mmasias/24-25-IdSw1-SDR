@@ -1,10 +1,13 @@
 @startuml
 class Usuario {
+    +String id
     +String nombre
     +String correo
     +String contraseña
+    +Date fechaRegistro
 }
 class Post {
+    +String id
     +Date fechaCreacion
     +Date fechaResuelto
     +int duracion
@@ -14,7 +17,13 @@ class Post {
     +List<Etiqueta> etiquetas
 }
 class Etiqueta {
-    +String nombre
+        +String id
+        +String nombre
+        +String descripcion
+        +String color
+        +crearEtiqueta()
+        +actualizarEtiqueta()
+        +obtenerPosts()
 }
 Usuario "1" --> "n" Post : "publica"
 Post "n" --> "n" Etiqueta : "caracterizado por"
