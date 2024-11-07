@@ -1,0 +1,30 @@
+@startuml
+!define RECTANGLE(x) rectangle x
+
+RECTANGLE(ADMINISTRADOR)
+RECTANGLE(MENU_PRINCIPAL)
+RECTANGLE(MENU_CLASE)
+RECTANGLE(MENU_RUTINAS)
+RECTANGLE(MENU_RETOS)
+RECTANGLE(ASIGNATURA)
+
+' Relación entre el Administrador y el Menú Principal
+ADMINISTRADOR --> MENU_PRINCIPAL : Iniciar Sesión
+
+' Funciones del Administrador desde el Menú Principal
+MENU_PRINCIPAL --> ADMINISTRADOR : Cerrar Sesión
+MENU_PRINCIPAL --> MENU_CLASE : Acceder a Clases
+MENU_PRINCIPAL --> MENU_RUTINAS : Usar Rutinas
+MENU_PRINCIPAL --> MENU_RETOS : Participar en Retos/Actividades
+MENU_PRINCIPAL --> ASIGNATURA : Ver Información de Asignaturas
+MENU_PRINCIPAL --> MENU_PRINCIPAL : Administrar Usuarios
+MENU_PRINCIPAL --> MENU_PRINCIPAL : Configurar Sistema
+
+' Funciones del Administrador dentro del Menú Clase
+MENU_CLASE --> ASIGNATURA : Impartir Asignatura
+MENU_CLASE --> ASIGNATURA : Calificar Alumnos
+MENU_CLASE --> ASIGNATURA : Evaluar Progreso
+MENU_CLASE --> ASIGNATURA : Asignar Rutinas
+MENU_CLASE --> MENU_CLASE : Gestionar Alumnos
+
+@enduml
