@@ -1,5 +1,7 @@
 @startuml
 
+left to right direction
+
 actor "Usuario No Registrado" as UsuarioNoRegistrado
 actor Profesor
 actor Alumno
