@@ -1,0 +1,18 @@
+@startuml EnvioDocumentos
+left to right direction
+actor "Administrador General" as AdminGeneral
+
+package "Envío de Documentos" {
+    usecase "Crear/Redactar Mensaje" as ED1
+    usecase "Adjuntar Documento" as ED2
+    usecase "Elegir Tipo de Confirmación" as ED3
+    usecase "Enviar Mensaje" as ED4
+    usecase "Descargar Resumen de Estados" as ED5
+}
+
+AdminGeneral --> ED1
+AdminGeneral --> ED2
+AdminGeneral --> ED3
+AdminGeneral --> ED4
+AdminGeneral --> ED5
+@enduml

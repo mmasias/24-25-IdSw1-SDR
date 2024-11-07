@@ -1,0 +1,18 @@
+@startuml EnvioDeDocumentos
+left to right direction
+actor "Responsable" as Responsable
+
+package "Envío de Documentos" {
+    usecase "Crear/Redactar Mensaje" as ED7
+    usecase "Adjuntar Documento" as ED6
+    usecase "Elegir Tipo de Confirmación" as ED9  
+    usecase "Enviar Mensaje" as ED8
+    usecase "Descargar Resumen de Estados" as ED10
+}
+
+Responsable --> ED6
+Responsable --> ED7
+Responsable --> ED8
+Responsable --> ED9
+Responsable --> ED10
+@enduml

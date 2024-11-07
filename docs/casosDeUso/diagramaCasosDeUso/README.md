@@ -5,6 +5,44 @@
 
 </div>
 
-## Diagrama Casos de Uso
+# Diagrama Casos de Uso
 
-Aquí irá el diagrama general de los casos de uso
+## Administrador General
+
+|                                 CRUD de Usuarios                                  |                                CRUD de Categorías                                |
+| :-------------------------------------------------------------------------------: | :------------------------------------------------------------------------------: |
+| ![](./administradorGeneral/manejoUsuario/manejoUsuarios.svg) | ![](./administradorGeneral/manejoCategorias/manejoCategorias.svg) |
+
+|                                Envío de Documentos                                 |
+| :--------------------------------------------------------------------------------: |
+| ![](./administradorGeneral/envioDocumentos/envioDocumentos.svg) |
+
+---
+
+## Responsable
+
+|                              CRUD de Destinatarios                               |                                CRUD de Categorías                                |
+| :-------------------------------------------------------------------------------: | :------------------------------------------------------------------------------: |
+| ![](./responsable/manejoDestinatarios/manejoDestinatarios.svg) | ![](./responsable/manejoCategorias/manejoCategorias.svg) |
+
+|                                Envío de Documentos                                 |                     Visualización y Confirmación de Documentos                    |
+| :--------------------------------------------------------------------------------: | :------------------------------------------------------------------------------: |
+| ![](./responsable/envioDocumentos/envioDocumentos.svg) | ![](./responsable/visualizacionConfirmacionDocumentos/visualizacionConfirmacionDocumentos.svg) |
+
+---
+
+## Destinatario
+
+|                          Visualización y Confirmación de Documentos                        |
+| :---------------------------------------------------------------------------------------: |
+| ![](./destinatario/visualizacionConfirmacionDocumentos/visualizacionConfirmacionDocumentos.svg) |
+
+---
+
+## Tiempo
+
+|                          Recordatorios                        |
+| :----------------------------------------------------------: |
+| ![](./tiempo/manejoNotificaciones/manejoNotificaciones.svg) |
+
+---
