@@ -1,4 +1,5 @@
 @startuml manejoCategoria
+left to right direction
 actor "Administrador General" as AdminGeneral
 
 package "CRUD de Categorías" {
@@ -8,8 +9,8 @@ package "CRUD de Categorías" {
     usecase "Borrar Categoría" as CC4
 }
 
-AdminGeneral -down-> CC1
-AdminGeneral -down-> CC2
-AdminGeneral -down-> CC3
-AdminGeneral -down-> CC4
+AdminGeneral --> CC1
+AdminGeneral --> CC2
+AdminGeneral --> CC3
+AdminGeneral --> CC4
 @enduml

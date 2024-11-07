@@ -1,4 +1,5 @@
-@startuml manejoUsuario
+@startuml ManejoUsuario
+left to right direction
 actor "Administrador General" as AdminGeneral
 
 package "CRUD de Usuarios" {
@@ -8,8 +9,8 @@ package "CRUD de Usuarios" {
     usecase "Borrar Usuario" as CU4
 }
 
-AdminGeneral -down-> CU1
-AdminGeneral -down-> CU2
-AdminGeneral -down-> CU3
-AdminGeneral -down-> CU4
+AdminGeneral --> CU1
+AdminGeneral --> CU2
+AdminGeneral --> CU3
+AdminGeneral --> CU4
 @enduml
