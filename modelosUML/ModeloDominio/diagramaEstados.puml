@@ -1,0 +1,23 @@
+@startuml
+[*] --> Creada : Empresa crea OfertaTrabajo
+
+Creada --> EnValidacion : Enviar a validación
+EnValidacion --> Publicada : Administrador publica oferta
+EnValidacion --> Invalidada : Administrador invalida oferta
+
+Publicada --> Aplicacion : Alumni pueden aplicar
+
+state "Proceso de Aplicación" as Aplicacion {
+    [*] --> Enviada : Alumni envía aplicación
+    Enviada --> EnRevision : Empresa revisa aplicación
+    EnRevision --> Aceptada : Alumni aceptado
+    EnRevision --> Rechazada : Alumni rechazado
+    Aceptada --> [*]
+    Rechazada --> [*]
+}
+
+Aplicacion --> Cerrada : Oferta cerrada
+Invalidada --> Cerrada : Oferta invalidada
+
+Cerrada --> [*]
+@enduml
