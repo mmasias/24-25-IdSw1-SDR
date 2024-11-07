@@ -1,0 +1,58 @@
+@startuml Diagrama_de_Clases_Beca
+
+title Diagrama de Clases de Plataforma de Gestión de Becas
+
+hide empty members
+
+class PLATAFORMA {
+  Novus
+}
+
+
+class ESTADÍSTICA {
+}
+
+abstract class USUARIO {
+}
+
+class ADMINISTRADOR {
+}
+
+class PRUEBAS {
+}
+
+class CAPACITACIÓN {
+}
+
+class CONTENIDO_CAPACITACIÓN {
+}
+
+class VIDEO_TUTORIAL {
+}
+
+class DOCUMENTACIÓN {
+}
+
+class BECARIO {
+}
+
+class REQUISITO
+{
+  Aprobar pruebas de selección
+}
+
+
+PLATAFORMA --> ESTADÍSTICA : "genera"
+PLATAFORMA --> USUARIO : "tiene acceso a"
+PLATAFORMA --> PRUEBAS : "incluye"
+PLATAFORMA --> CAPACITACIÓN : "ofrece"
+
+USUARIO <|-- ADMINISTRADOR
+ADMINISTRADOR --> PLATAFORMA : "administra"
+
+CAPACITACIÓN --> CONTENIDO_CAPACITACIÓN : "contiene"
+CONTENIDO_CAPACITACIÓN <|-- VIDEO_TUTORIAL
+CONTENIDO_CAPACITACIÓN <|-- DOCUMENTACIÓN
+BECARIO -- REQUISITO : cumple
+USUARIO <|-- BECARIO
+@enduml

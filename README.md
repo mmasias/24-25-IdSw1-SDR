@@ -21,14 +21,14 @@ Es una plataforma que se encarga de administrar y optimizar el proceso de selecc
   - [Diagramas de Estados](modelo_del_dominio/diagramas_de_estados)
   - [Diagaramas de Objetos](modelo_del_dominio/diagramas_de_objetos)
 
-<!-- ## Casos de Uso
+## Casos de Uso
 
-  - [Actores]()
-  - [Casos de Uso Detallados]()
-  - [Diagrama Casos de Uso]()
+  - [Actores](/casos_de_uso/actores/)
+   - [Casos de Uso Detallados](/casos_de_uso/casos_de_uso/)
+ <!-- - [Diagrama Casos de Uso]()
   - [Diagrama de Contexto]()
-  - [Prototipos]()
- -->
+  - [Prototipos]() -->
+
 ## [Sesiones](documentos/actas/)
 
   - [Sesión del 16/10/2024](/documentos/actas/16-10-2024/README.md)
