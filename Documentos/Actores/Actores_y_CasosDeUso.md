@@ -49,6 +49,7 @@ El flujo del sistema comienza con el **Usuario No Registrado**, quien debe regis
 # Diagrama de Contexto del Administrador
 | Diagrama | Código Fuente |
 |----------|---------------|
+| ![Modelo de Contexto Alumno](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/ModelodeContextoAdministrador.svg) | [Ver codigo](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/ModeloDeContexto/AdministradorContexto.puml) |
 
 # Diagrama de Contexto del Alumno
 | Diagrama | Código Fuente |
