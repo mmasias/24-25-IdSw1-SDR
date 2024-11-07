@@ -1,0 +1,50 @@
+@startuml
+hide empty members
+hide circle
+abstract "Admin1:Remitente"{
+    Nombre: "Pedro"
+    Email: "pedro@perez.com"
+    Contraseña: "contraseña"
+    Estado: "activo"
+    SendMessage()
+    AttachDocs()
+    CheckInboxInfo()
+}
+
+class "Mensaje:Mensaje"{
+    Asunto: "Asunto"
+    Receptores: "ibuprofeno@uneatlantico.es"
+    Cuerpo: "cuerpo"
+    FechaLimite: "01-01-2000"
+    Adjuntos: RastreadorDocumento()
+}
+
+class "Rastreador:RastreadorDocumento"{
+    Documento()
+    Estado: "Enviado"
+}
+
+class "Documento:Documento"{
+    Adjuntos: "Documento.pdf"
+}
+
+abstract "User1:Receptor"{
+    Nombre: "Juan"
+    Email: "juan@perez.com"
+    Contraseña: "contraseña123"
+    Estado: "activo"
+    CheckInboxInfo()
+    SignDocuments()
+    ConfirmReadDocument()
+}
+
+"Admin1:Remitente" "1"--"*" "Mensaje:Mensaje" : genera
+
+"Mensaje:Mensaje" "1"--"*" "Rastreador:RastreadorDocumento" : contiene
+
+"Mensaje:Mensaje" "1"-r-"*" "User1:Receptor" : se envía
+
+"Rastreador:RastreadorDocumento" "1"--"1" "Documento:Documento" : adjunta
+@enduml
+
+// Tipo de mensaje es definido por el mensaje o por el documento (PENDIENTE)

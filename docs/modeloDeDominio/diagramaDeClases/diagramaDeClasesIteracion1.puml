@@ -1,0 +1,36 @@
+@startuml
+class Usuario{
+}
+
+class Documento{
+}
+
+class Categoria{
+}
+
+class Destinatario{
+}
+
+class Administrador{
+}
+
+class Mensaje{
+}
+
+class Proceso{
+}
+
+Mensaje "1"-->"*"Documento : Se adjuntan
+Destinatario "1"-->"*" Mensaje : Recibe
+Destinatario "1"-->"*" Categoria : Tiene
+Usuario "1"-->"*" Mensaje : Envía
+Usuario "1"-->"*" Mensaje : Recibe
+Usuario "1"-->"*" Categoria : Tiene
+Usuario "1"-l->"*" Destinatario : Gestiona
+Administrador "1"-->"*" Mensaje : Envía
+Administrador "1"-->"*" Usuario : Gestiona
+Administrador "1"-->"*" Destinatario : Gestiona
+Administrador "1"-->"*" Categoria : Gestiona
+Documento "1"-->"1" Proceso : Pasa por
+
+@enduml

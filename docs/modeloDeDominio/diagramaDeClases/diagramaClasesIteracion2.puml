@@ -1,0 +1,37 @@
+@startuml
+hide empty members
+hide circle
+
+abstract Remitente
+
+class Mensaje
+
+class Responsable
+
+class RastreadorDocumento
+
+abstract Receptor
+
+class Destinatario
+
+class Administrador
+
+class Categoria
+
+class Documento
+
+Remitente <|-- Administrador
+Remitente <|-- Responsable
+
+Receptor <|-- Destinatario
+Receptor <|-- Responsable
+Receptor -- Categoria : pertenece
+
+Remitente "1"--"*" Mensaje : genera
+
+Mensaje  "1"--"*" RastreadorDocumento : contiene
+
+Mensaje  "1"-r-"*" Receptor : se envía
+
+RastreadorDocumento "1"--"1" Documento: adjunta
+@enduml
