@@ -14,8 +14,9 @@
 ### 🌐 Modelo de Dominio
 [🔗 Acceso al Modelo de Dominio](https://github.com/celiabecerril/24-25-IdSw1-SDR/tree/main/MdD)
 
-### 🎭 Actores 
-[🔗 Acceso a Actores](Documentos/Actores/Actores_y_CasosDeUso.md)
+### 🎭 Encontrar Actores y Casos de uso
+[🔗 Acceso Actores, Casos de Uso, Diagramas de Contexto](Documentos/Actores/Actores_y_CasosDeUso.md)
+
 
 
 
@@ -26,11 +27,3 @@ Dentro de la rama "reunion-001", puedes acceder a los siguientes documentos clav
 - 📄 [Acta de la Reunión](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/reunion-001/Reunion1.md)
 - 📖 [Glosario](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/reunion-001/Glosario.md)
 - 📂 [Carpeta de Modelos UML](https://github.com/celiabecerril/24-25-IdSw1-SDR/tree/reunion-001/modelosUML)
-
-### 📅 Reunión 2
-[🔗 Enlace a la Rama reunion-002](https://github.com/celiabecerril/24-25-IdSw1-SDR/tree/reunion-002)
-
-Dentro de la rama "reunion-002", puedes acceder a los siguientes documentos clave:
-- 📄 [Acta de la Reunión](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/reunion-002/Reunion2.md)
-- 📖 [Glosario](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/reunion-002/Glosario.md)
-
