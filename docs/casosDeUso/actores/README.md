@@ -7,4 +7,10 @@
 
 ## Actores
 
-Aquí irán los actores que interactuan con el sistema...
+- Administrador general
+- Responsable
+- Destinatario
+- Tiempo
+
+
+![Actores](./actores.svg)
