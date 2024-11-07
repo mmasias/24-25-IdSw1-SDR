@@ -1,0 +1,25 @@
+@startuml
+abstract class Usuario
+class Alumno
+class Exalumno
+class Profesor
+class Grado
+class Posts
+class Comunidades
+class Etiquetas
+class Comentario
+
+' Relaciones de herencia
+Alumno --|> Usuario
+Exalumno --|> Usuario
+Profesor --|> Usuario
+Grado --|> Usuario
+
+' Relaciones entre clases
+Usuario --> Posts : realiza
+Usuario --> Comunidades : participa
+Comunidades --> Posts : formadas por
+Posts --> Etiquetas : categorizado por
+Posts --> Comentario : tiene
+Comentario --> Usuario : escrito por
+@enduml
