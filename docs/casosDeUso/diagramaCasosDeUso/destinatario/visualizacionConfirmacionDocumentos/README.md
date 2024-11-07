@@ -6,6 +6,6 @@
 </div>
 
 
-## Visualización y Confirmación de Documentos por parte del Responsable
+## Visualización y Confirmación de Documentos por parte del Destinatario
 
 ![Diagrama de Manejo de Usuarios](./visualizacionConfirmacionDocumentos.svg)
