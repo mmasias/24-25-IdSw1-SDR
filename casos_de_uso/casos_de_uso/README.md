@@ -1,0 +1,1 @@
+![Casos de uso Generales](../../documentos/imagenes/casos_de_uso/Casos_de_Uso_General.svg)

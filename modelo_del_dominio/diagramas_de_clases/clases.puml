@@ -13,12 +13,6 @@ class ESTADÍSTICA {
 }
 
 abstract class USUARIO {
-  ID
-  Nombre
-  Apellido
-  Fecha de Nacimiento
-  Email
-  Foto de Perfil
 }
 
 class ADMINISTRADOR {
@@ -40,10 +34,6 @@ class DOCUMENTACIÓN {
 }
 
 class BECARIO {
-  DNI
-  Carnet de Estudiante
-  Dirección
-  Número de Teléfono
 }
 
 class REQUISITO

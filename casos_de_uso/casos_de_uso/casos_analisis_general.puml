@@ -1,0 +1,30 @@
+@startuml
+left to right direction
+
+actor "User" as User
+actor "Admin" as Admin
+actor "Time" as Time
+Admin -u-|> User
+
+
+package "Sistema Gestión de Usuarios" {
+    usecase "Crear Usuario" as UCU1
+    usecase "Activar Usuario" as UCU2
+    usecase "Suspender Usuario" as UCU3
+    usecase "Reactivar Usuario" as UCU4
+    usecase "Desactivar Usuario" as UCU5
+}
+
+package "Sistema Gestión Pruebas" {
+    usecase "Crear Prueba" as UCU6
+    usecase "Consultar Prueba" as UCU7
+    usecase "Revisar Estadisticas" as UCU8
+    usecase "Desactivar Prueba" as UCU9
+}
+
+package "Sistema de Capacitación" {
+    usecase "Crear Capacitacion" as UCU10
+    usecase "Consultar Capacitacion" as UCU11
+    usecase "Revisar Estadisticas" as UCU12
+}
+@enduml
