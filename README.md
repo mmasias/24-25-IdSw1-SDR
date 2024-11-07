@@ -28,9 +28,9 @@ Dentro de la rama "reunion-001", puedes acceder a los siguientes documentos clav
 - 📂 [Carpeta de Modelos UML](https://github.com/celiabecerril/24-25-IdSw1-SDR/tree/reunion-001/modelosUML)
 
 ### 📅 Reunión 2
-[🔗 Enlace a la Rama reunion-001](https://github.com/celiabecerril/24-25-IdSw1-SDR/tree/reunion-002)
+[🔗 Enlace a la Rama reunion-002](https://github.com/celiabecerril/24-25-IdSw1-SDR/tree/reunion-002)
 
 Dentro de la rama "reunion-002", puedes acceder a los siguientes documentos clave:
 - 📄 [Acta de la Reunión](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/reunion-002/Reunion2.md)
 - 📖 [Glosario](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/reunion-002/Glosario.md)
-- 📂 [Carpeta de Modelos UML](https://github.com/celiabecerril/24-25-IdSw1-SDR/tree/reunion-002/modelosUML)
+
