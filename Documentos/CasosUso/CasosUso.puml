@@ -9,6 +9,7 @@ actor Admin
 
 usecase "Registrarse" as UC_Registrarse
 usecase "Iniciar Sesión" as UC_IniciarSesion
+usecase "Cerrar Sesión" as UC_CerrarSesion
 usecase "Ver Información de Asignaturas" as UC_VerInfoAsignaturas
 usecase "Consultar Calificaciones" as UC_ConsultarCalificaciones
 usecase "Impartir Asignatura" as UC_ImpartirAsignatura
@@ -28,12 +29,14 @@ usecase "Participar en Retos/Actividades" as UC_ParticiparRetos
 UsuarioNoRegistrado --> UC_Registrarse
 
 Alumno --> UC_IniciarSesion
+Alumno --> UC_CerrarSesion
 Alumno --> UC_VerInfoAsignaturas
 Alumno --> UC_ConsultarCalificaciones
 Alumno --> UC_UsarRutinas
 Alumno --> UC_ParticiparRetos
 
 Profesor --> UC_IniciarSesion
+Profesor --> UC_CerrarSesion
 Profesor --> UC_VerInfoAsignaturas
 Profesor --> UC_ImpartirAsignatura
 Profesor --> UC_GestionarAlumnos
@@ -42,7 +45,9 @@ Profesor --> UC_AsignarRutinas
 Profesor --> UC_EvaluarProgreso
 
 Admin --> UC_IniciarSesion
+Admin --> UC_CerrarSesion
 Admin --> UC_AdministrarUsuarios
 Admin --> UC_ConfigurarSistema
 
 @enduml
+
