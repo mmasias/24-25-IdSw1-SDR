@@ -21,7 +21,7 @@
 
 ### 📅 Reunión 1
 [🔗 Enlace a la Rama reunion-001](https://github.com/celiabecerril/24-25-IdSw1-SDR/tree/reunion-001)
-*** 📅 Reunión 2
+### 📅 Reunión 2
 [🔗 Enlace a la Rama reunion-001](https://github.com/celiabecerril/24-25-IdSw1-SDR/tree/reunion-002)
 Dentro de la rama "reunion-001", puedes acceder a los siguientes documentos clave:
 - 📄 [Acta de la Reunión](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/reunion-001/Reunion1.md)
