@@ -39,4 +39,10 @@
 
 ---
 
+## Tiempo
 
+|                          Recordatorios                        |
+| :----------------------------------------------------------: |
+| ![](./tiempo/manejoNotificaciones/manejoNotificaciones.svg) |
+
+---
