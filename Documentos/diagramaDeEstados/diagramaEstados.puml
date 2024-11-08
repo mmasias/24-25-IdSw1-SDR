@@ -2,18 +2,27 @@
 
 hide empty description
 
-[*] --> Inscrito : alumno se inscribe en la asignatura
-Inscrito --> EnClaseTeorica : asiste a clases teóricas
-Inscrito --> EnClasePractica : asiste a clases prácticas
+[*] --> Inscrito : inscribir en la asignatura
+Inscrito --> EnClaseTeorica : asistir a clases teóricas
+Inscrito --> EnClasePractica : asistir a clases prácticas
 
-EnClaseTeorica --> ValoracionFinal : se le evalúa
-EnClasePractica --> RutinaAsignada : se le enseña una rutina
+EnClaseTeorica --> ValoracionFinal : evaluar
+EnClasePractica --> AsignarRutina : enseñar rutina
 
-RutinaAsignada --> RutinaCompletada : completa la rutina
-RutinaCompletada --> ValoracionFinal : se le evalúa
+State AsignarRutina {
+    Rutina --> RutinaNoAsignada : asignar rutina
+    Rutina --> RutinaAsignada : no asignar rutina
+    RutinaAsignada --> EjecutandoRutina : ejecutar rutina
+    EjecutandoRutina --> EjecutandoRutina
+    EjecutandoRutina --> Terminada : acabar rutina
+    
+  }
 
-ValoracionFinal --> FinDelCurso : finaliza la asignatura
+AsignarRutina --> ValoracionFinal
+AsignarRutina --> EnClaseTeorica : revisar
 
-FinDelCurso --> [*] : termina el curso
+ValoracionFinal --> FinDelCurso : finalizar la asignatura
+
+FinDelCurso --> [*] : terminar el curso
 
 @enduml
