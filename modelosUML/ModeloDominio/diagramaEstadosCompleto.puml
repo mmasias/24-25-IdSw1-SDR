@@ -1,46 +1,37 @@
 @startuml
-state OfertaTrabajo {
-    [*] --> Pendiente : Empresa crea oferta
-    Pendiente --> Disponible : Administrador valida la oferta
-    Pendiente --> Invalidada : Empresa cancela oferta
-    Disponible --> Cerrada : Empresa cierra la oferta
-    Disponible --> Invalidada : Empresa cancela oferta
-    Cerrada --> [*]
-    Invalidada --> [*]
-}
 
-state Alumni {
+state Alumni_Postula {
     [*] --> Postula : Envía postulación
     Postula --> EnRevision : Empresa revisa postulado
-    EnRevision --> Aceptada : Alumni aceptado
-    EnRevision --> Rechazada : Alumni rechazado
-    Aceptada --> [*]
+    EnRevision --> Aceptado : Alumni aceptado
+    EnRevision --> Rechazado : Alumni rechazado
+    Aceptado --> [*]
+    Rechazado --> [*]
+}
+
+state Empresa_Crea {
+    [*] --> Creada : Decide crear una oferta
+    Creada --> PendienteValidacion : Envía oferta para validación
+    PendienteValidacion --> Disponible : Administrador valida la oferta
+    PendienteValidacion --> Cancelada : Cancela oferta
+    Disponible --> Cerrada : Cierra oferta
+    Disponible --> Cancelada : Cancela oferta
+    Cerrada --> [*]
+    Cancelada --> [*]
+}
+
+state Administrador_Valida {
+    [*] --> Revisando : Recibe oferta
+    Revisando --> Validada : Valida la oferta
+    Revisando --> Rechazada : Invalida la oferta
+    Validada --> [*]
     Rechazada --> [*]
 }
 
-state Empresa {
-    [*] --> OfertaCreada : Decide crear una oferta
-    OfertaCreada --> OfertaPendienteValidacion : Envía oferta para validación
-    OfertaPendienteValidacion --> OfertaDisponible : Administrador valida la oferta
-    OfertaPendienteValidacion --> OfertaCancelada : Cancela oferta
-    OfertaDisponible --> OfertaCerrada : Cierra oferta
-    OfertaDisponible --> OfertaCancelada : Cancela oferta
-    OfertaCerrada --> [*]
-    OfertaCancelada --> [*]
-}
-
-state Administrador {
-    [*] --> RevisandoOferta : Recibe oferta
-    RevisandoOferta --> OfertaValidada : Valida la oferta
-    RevisandoOferta --> OfertaRechazada : Invalida la oferta
-    OfertaValidada --> [*]
-    OfertaRechazada --> [*]
-}
-
-state Plataforma_acceso {
+state Autenticacion_Plataforma_Acceso {
     [*] --> Autenticado : Usuario inicia sesión
     Autenticado --> NoAutenticado : Usuario cierra sesión
     NoAutenticado --> [*]
-
 }
+
 @enduml
