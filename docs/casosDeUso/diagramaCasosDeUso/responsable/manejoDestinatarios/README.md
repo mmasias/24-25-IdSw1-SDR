@@ -5,12 +5,7 @@
 
 </div>
 
-## Actores
 
-- Administrador general
-- Responsable
-- Destinatario
-- Tiempo
+## Manejo de Destinatarios por parte del Responsable
 
-
-![Actores](./actores.svg)
+![Diagrama de Manejo de Usuarios](./manejoDestinatarios.svg)

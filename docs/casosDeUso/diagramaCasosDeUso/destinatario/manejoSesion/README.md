@@ -5,12 +5,7 @@
 
 </div>
 
-## Actores
 
-- Administrador general
-- Responsable
-- Destinatario
-- Tiempo
+## Manejo de Sesión por parte del Destinatario
 
-
-![Actores](./actores.svg)
+![Diagrama de Manejo de Sesión](./manejoSesionDestinatario.svg)

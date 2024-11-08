@@ -5,12 +5,7 @@
 
 </div>
 
-## Actores
 
-- Administrador general
-- Responsable
-- Destinatario
-- Tiempo
+## Envío de documentos por parte del Administrador General
 
-
-![Actores](./actores.svg)
+![Diagrama de Manejo de Usuarios](./envioDocumentos.svg) 

@@ -1,0 +1,11 @@
+@startuml manejoNotificaciones
+actor "Tiempo" as Tiempo
+
+package "Recordatorios" {
+    usecase "Enviar recordatorio de confirmación de lectura al destinatario" as R1
+    usecase "Enviar recordatorio de firma al destinatario" as R2
+}
+
+Tiempo --> R1
+Tiempo --> R2
+@enduml
