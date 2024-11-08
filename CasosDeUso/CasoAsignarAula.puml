@@ -1,0 +1,11 @@
+@startuml
+title Caso de Uso - Asignar aula
+left to right direction
+actor Usuario as cust
+
+rectangle "Asignar aula" {
+    usecase "Configurar horario aula" as OP1
+}
+
+cust --> OP1
+@enduml

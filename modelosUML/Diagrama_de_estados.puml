@@ -1,9 +1,0 @@
-@startuml
-title Diagrama de Estados
-
-[*] --> EstadoInicial: Comenzar
-EstadoInicial --> EnProceso
-EnProceso --> EnProceso
-EnProceso --> EstadoFinalizado
-EstadoFinalizado --> [*]: Terminar
-@enduml

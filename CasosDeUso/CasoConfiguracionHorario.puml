@@ -1,0 +1,15 @@
+@startuml
+title Caso de Uso - Configuracion horario
+left to right direction
+actor Usuario as cust
+
+rectangle "Configuracion horario" {
+    usecase "Editar horario" as OP1
+usecase "Asignar horario" as OP2
+usecase "Confirmar horario" as OP3
+}
+
+cust --> OP1
+cust -->OP2
+cust -->OP3
+@enduml
