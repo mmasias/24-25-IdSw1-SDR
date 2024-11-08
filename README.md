@@ -7,11 +7,11 @@ Este es el repositorio de las sesiones de requisitado de la asignatura de Ingeni
 
 
 ## Sesiones de requisitado
-<div align=center>
+<div align="center">
 
-| Índice|Enlace|
-|-|-|:-:|
-1|Sesión #1 de requisitado|[👁️](/SesionesDeRequisitado/Sesion1.md) 
+| Índice | Enlace |
+|--------|--------|
+| 1      | [Sesión #1 de requisitado 👁️](/SesionesDeRequisitado/Sesion1.md) |
 
 </div>
 
