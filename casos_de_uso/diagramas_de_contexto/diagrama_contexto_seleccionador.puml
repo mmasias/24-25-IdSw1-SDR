@@ -1,7 +1,7 @@
 @startuml
 
 state "NO_AUTENTICADO" as NoAuth
-state "MENU_EDICIÓN_USUARIOS" as Menu
+state "MENU_USUARIOS" as Menu
 state "CREAR_USUARIO" as Crear_usuario
 state "VER_USUARIO" as Ver_usuario
 state "EDITAR_USUARIO" as Editar_usuario
