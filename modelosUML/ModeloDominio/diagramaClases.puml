@@ -23,5 +23,4 @@ PlataformaAcceso -- Usuario : autentica
 Empresas --> OfertaTrabajo : publican
 Administrador --> OfertaTrabajo : aprueba
 Alumni --> OfertaTrabajo : encuentra & postula
-EstaPlataforma --> OfertaTrabajo : expone
 @enduml
