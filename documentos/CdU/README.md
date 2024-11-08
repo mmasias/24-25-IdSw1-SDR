@@ -2,7 +2,7 @@
 Una forma rápida para generar los casos de uso es realizar el CRUD de las clases del modelo de dominio
 
 Los casos de usos son cinco:
-- Encontrar Actores y Casos de uso
+- [Encontrar Actores y Casos de uso](documentos\CdU\ActoresCasosDeUso.md)
 - Priorizar casos de uso
 - Detallar casos de uso
 - Prototipar casos de uso
