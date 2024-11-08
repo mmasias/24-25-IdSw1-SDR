@@ -1,42 +1,28 @@
-@startuml CasosDeUsoEncapsulados
-
-title Automatización de Guías Docentes - Diagrama de Casos de Uso
-
+@startuml
 actor Profesor
-actor DirectorDeGrado
-actor TécnicoDeCalidad
-actor DirecciónDeCalidad
-actor Sistema
+actor "Director de Grado" as DirectorGrado
+actor "Técnico de Calidad" as TecnicoCalidad
+actor "Dirección de Calidad" as DireccionCalidad
 
-rectangle "Gestión de Contenidos" {
-    usecase "Editar Contenido de la Guía" as UC1
-    usecase "Aprobar o Rechazar Contenido" as UC2
-}
+usecase "Editar Contenido de la Guía" as EditarGuia
+usecase "Aprobar o Rechazar Contenido" as AprobarContenido
+usecase "Supervisar Guías Docentes" as SupervisarGuias
+usecase "Auditar Guías Docentes" as AuditarGuias
+usecase "Utilizar Plantilla Multititulación" as UtilizarPlantilla
+usecase "Generar Nueva Versión de la Guía" as GenerarVersion
+usecase "Asignar Guía a Titulación" as AsignarGuiaTitulacion
+usecase "Asignar Asignatura a Titulación" as AsignarAsignaturaTitulacion
+usecase "Publicar Guía Docente" as PublicarGuia
+usecase "Verificar Cumplimiento con Memoria Verificada" as VerificarMemoria
 
-rectangle "Control de Calidad" {
-    usecase "Supervisar Guías Docentes" as UC3
-    usecase "Auditar Guías Docentes" as UC4
-}
-
-rectangle "Automatización de Plantillas" {
-    usecase "Utilizar Plantilla Multititulación" as UC5
-}
-
-rectangle "Gestión de Versiones y Estructura" {
-    usecase "Generar Nueva Versión de la Guía" as UC6
-    usecase "Asignar Guía a Titulación" as UC7
-    usecase "Asignar Asignatura a Titulación" as UC8
-}
-
-Profesor --> UC1
-DirectorDeGrado --> UC2
-TécnicoDeCalidad --> UC3
-DirecciónDeCalidad --> UC4
-TécnicoDeCalidad --> UC5
-Sistema --> UC6
-Sistema --> UC7
-Sistema --> UC8
-
+Profesor --> EditarGuia
+DirectorGrado --> AprobarContenido
+DirectorGrado --> PublicarGuia
+TecnicoCalidad --> SupervisarGuias
+TecnicoCalidad --> UtilizarPlantilla
+TecnicoCalidad --> GenerarVersion
+TecnicoCalidad --> AsignarGuiaTitulacion
+TecnicoCalidad --> AsignarAsignaturaTitulacion
+DireccionCalidad --> AuditarGuias
+DireccionCalidad --> VerificarMemoria
 @enduml
-
-

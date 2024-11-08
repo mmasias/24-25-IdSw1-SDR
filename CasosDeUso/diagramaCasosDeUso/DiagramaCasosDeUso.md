@@ -43,11 +43,23 @@ Este documento describe los principales casos de uso en el sistema de Automatiza
    - **Actor:** Sistema
    - **Descripción:** Asocia cada asignatura con su titulación correspondiente.
    - **Objetivo:** Mantener la estructura de programas académicos dentro del sistema.
+
+### 9. **Publicar Guía Docente** 
+
+- **Actor:**  Director de Grado
+- **Descripción:** Autoriza y finaliza la publicación de una guía docente para que esté disponible en el panel universitario.
+ - **Objetivo:** Permitir que los estudiantes accedan a la versión aprobada y oficial.
+
+### 10. ** Verificar Cumplimiento con Memoria Verificada**
+
+- **Actor:** Dirección de Calidad
+- **Descripción:** Revisión de las guías para confirmar la adherencia a la memoria verificada, utilizando una API de verificación.
+ - **Objetivo:** Asegurar que las guías se ajusten a los requisitos y lineamientos institucionales.
 ---
 
 ![](/images/modelosUML/diagramaCasosDeUso.svg) | [Ver código](/CasosDeUso/diagramaCasosDeUso/diagramaCasosDeUso.puml) 
 
-*Autor: Cayetano Castillo*
+
 
 
 
