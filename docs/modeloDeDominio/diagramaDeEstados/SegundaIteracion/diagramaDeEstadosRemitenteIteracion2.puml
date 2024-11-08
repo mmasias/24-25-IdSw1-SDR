@@ -1,0 +1,12 @@
+@startuml diagramaDeEstados
+[*] --> CrearMensaje
+CrearMensaje --> AñadirDocumento
+
+AñadirDocumento --> SeleccionarTipoDocumento
+
+SeleccionarTipoDocumento --> CrearMensaje
+
+CrearMensaje --> EnviarMensaje
+
+EnviarMensaje --> [*]
+@enduml

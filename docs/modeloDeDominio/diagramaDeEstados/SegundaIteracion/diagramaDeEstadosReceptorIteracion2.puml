@@ -1,0 +1,14 @@
+@startuml diagramaDeEstados
+
+[*] --> LeerMensaje
+
+LeerMensaje --> LeerDocumento
+
+LeerDocumento --> ConfirmarDocumento
+LeerDocumento --> LeerMensaje
+
+ConfirmarDocumento --> LeerMensaje
+LeerMensaje --> CerrarMensaje
+
+CerrarMensaje --> [*]
+@enduml
