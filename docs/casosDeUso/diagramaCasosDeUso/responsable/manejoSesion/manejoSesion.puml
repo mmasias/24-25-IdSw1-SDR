@@ -1,0 +1,12 @@
+@startuml EnvioDocumentos
+left to right direction
+actor "Responsable" as Responsable
+
+package "Manejo de Sesión" {
+    usecase "Iniciar Sesión" as MS1
+    usecase "Cerrar Sesión" as MS2
+}
+
+Responsable--> MS1
+Responsable--> MS2
+@enduml
