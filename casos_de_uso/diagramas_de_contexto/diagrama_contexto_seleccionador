@@ -1,0 +1,63 @@
+@startuml
+
+state "NO_AUTENTICADO" as NoAuth
+state "MENU_EDICIÓN_USUARIOS" as Menu
+state "CREAR_USUARIO" as Crear_usuario
+state "VER_USUARIO" as Ver_usuario
+state "EDITAR_USUARIO" as Editar_usuario
+state "ELIMINAR_USUARIO" as Eliminar_usuario
+
+[*] --> NoAuth
+
+NoAuth --> Menu
+    note on link
+        Iniciar sesión
+    end note
+
+Menu --> NoAuth
+    note on link
+        Cerrar sesión
+    end note
+
+Menu --> Crear_usuario
+    note on link
+        Insertar registro
+    end note
+
+Crear_usuario --> Menu
+    note on link
+        Guardar
+    end note
+
+Menu --> Editar_usuario
+    note on link
+        Actualizar registro
+    end note
+
+Editar_usuario --> Menu
+    note on link
+        Guardar
+    end note
+
+Menu --> Ver_usuario
+    note on link
+        Ver lista
+    end note
+
+Ver_usuario --> Menu
+    note on link
+        Salir
+    end note
+
+Menu --> Eliminar_usuario
+    note on link
+        Borrar usuario
+    end note
+
+Eliminar_usuario --> Menu
+    note on link
+        Guardar
+    end note
+
+
+@enduml
