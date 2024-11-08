@@ -1,0 +1,11 @@
+@startuml
+!define RECTANGLE(x) rectangle x
+
+' Definición del actor y el único módulo disponible para él
+RECTANGLE(USUARIO_NO_REGISTRADO)
+RECTANGLE(REGISTRO)
+
+' Relación entre el Usuario no registrado y el proceso de Registro
+USUARIO_NO_REGISTRADO --> REGISTRO : Registrarse
+
+@enduml
