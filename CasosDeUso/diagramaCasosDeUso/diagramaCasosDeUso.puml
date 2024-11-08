@@ -1,4 +1,9 @@
 @startuml
+
+title Automatización de Guías Docentes - Diagrama de Casos de Uso
+
+left to right direction
+
 actor Profesor
 actor "Director de Grado" as DirectorGrado
 actor "Técnico de Calidad" as TecnicoCalidad
