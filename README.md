@@ -1,17 +1,17 @@
 # Sistema de automatización de Guías Docentes
 
-## Introduccion
+## Introducción
 Este es el repositorio de las sesiones de requisitado de la asignatura de Ingeniería del Software I de UNEATLANTICO. Se desarrolla, en un caso real, la disciplina de requisitado, que es la puerta de entrada al desarrollo de una solución basada en software. 
-- [Qué es, problematica, propuesta](/introduccion/introduccion.md)
+- [Qué es, problemática, propuesta](/introduccion/introduccion.md)
 - [Objetivo General](/introduccion/objetivos.md)
 
 
-## Sesiones de Requisitado
+## Sesiones de requisitado
 <div align=center>
 
-| |Indice|Enlace|
+| Índice|Enlace|
 |-|-|:-:|
-1|Sesion #1 de requisitado|[👁️](/SesionesDeRequisitado/Sesion1.md) 
+1|Sesión #1 de requisitado|[👁️](/SesionesDeRequisitado/Sesion1.md) 
 
 </div>
 
