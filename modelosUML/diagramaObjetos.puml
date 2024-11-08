@@ -1,51 +1,91 @@
 @startuml
-title Diagrama de Objetos - Gestor de Horarios
-
-entity gestorDeHorarios {
-    rol = "Gestor de Horarios"
+object AdministradorDeHorarios {
+  listaHorarios = [horario1, horario2]
 }
 
-entity asignacionAulaAsignatura {
-    asignatura = "Programación I"
-    aula = "-2.6"
+object Profesor1 {
+  nombre = "Juan"
+  apellido = "Pérez"
 }
 
-entity asignacionDocenteAsignatura {
-    docente = "Manuel Masías"
-    asignatura = "Programación I"
+object Profesor2 {
+  nombre = "Ana"
+  apellido = "García"
 }
 
-entity horario {
-    dia = "Lunes"
-    horaInicio = "8:00"
-    horaFin = "10:00"
-    asignatura = "Programación I"
-    aula = "-2.6"
-    docente = "Manuel Masías"
+object Asignatura1 {
+  id = "MAT101"
+  nombre = "Matemáticas"
 }
 
-entity curso {
-    nombre = "Programación I"
-    codigo = "101"
+object Asignatura2 {
+  id = "PROG202"
+  nombre = "Programación"
 }
 
-entity docente {
-    nombre = "Manuel Masías"
-    departamento = "Informática"
+object Aula1 {
+  numero = "A101"
 }
 
-gestorDeHorarios --> asignacionAulaAsignatura : Asigna aula
-gestorDeHorarios --> asignacionDocenteAsignatura : Asigna docente
-asignacionAulaAsignatura --> curso : Pertenece a
-asignacionDocenteAsignatura --> curso : Enseña
-asignacionAulaAsignatura --> horario : Contribuye a
-asignacionDocenteAsignatura --> horario : Contribuye a
-curso --> horario : Se imparte en
+object Aula2 {
+  numero = "B202"
+}
 
-note right of gestorDeHorarios
-    Completar todas las
-    asignaciones para formar
-    el horario completo
-end note
+object Horario1 {
+  dia = "Lunes"
+  horaInicio = "08:00"
+  horaFin = "10:00"
+  asignatura = Asignatura1
+  aula = Aula1
+}
+
+object Horario2 {
+  dia = "Martes"
+  horaInicio = "10:00"
+  horaFin = "12:00"
+  asignatura = Asignatura2
+  aula = Aula2
+}
+
+object ProfesorImparte1 {
+  profesor = Profesor1
+  asignatura = Asignatura1
+}
+
+object ProfesorImparte2 {
+  profesor = Profesor2
+  asignatura = Asignatura2
+}
+
+object AsignacionAula1 {
+  asignatura = Asignatura1
+  aula = Aula1
+}
+
+object AsignacionAula2 {
+  asignatura = Asignatura2
+  aula = Aula2
+}
+
+AdministradorDeHorarios -> Horario1
+AdministradorDeHorarios -> Horario2
+
+ProfesorImparte1 -> Profesor1
+ProfesorImparte1 -> Asignatura1
+
+ProfesorImparte2 -> Profesor2
+ProfesorImparte2 -> Asignatura2
+
+AsignacionAula1 -> Asignatura1
+AsignacionAula1 -> Aula1
+
+AsignacionAula2 -> Asignatura2
+AsignacionAula2 -> Aula2
+
+Horario1 -> Asignatura1
+Horario1 -> Aula1
+
+Horario2 -> Asignatura2
+Horario2 -> Aula2
 
 @enduml
