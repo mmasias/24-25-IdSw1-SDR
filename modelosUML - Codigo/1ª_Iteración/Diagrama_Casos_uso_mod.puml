@@ -1,0 +1,24 @@
+@startuml
+left to right direction
+actor Moderador
+package Aplicacion{
+usecase "Revisar publicaciones" as UC1
+usecase "Eliminar publicaciones" as UC2
+usecase "Suspender usuarios" as UC3
+usecase "Responder a reportes de contenido" as UC4
+usecase "Enviar advertencias" as UC5
+usecase "Revisar comentarios" as UC6
+usecase "Comunicar cambios de política" as UC7
+usecase "Bloquear palabras o expresiones" as UC8
+usecase "Desbloquear usuarios/borrar sanciones" as UC9
+}
+Moderador --> UC1
+Moderador --> UC2
+Moderador --> UC3
+Moderador --> UC4
+Moderador --> UC5
+Moderador --> UC6
+Moderador --> UC7
+Moderador --> UC8
+Moderador --> UC9
+@enduml
