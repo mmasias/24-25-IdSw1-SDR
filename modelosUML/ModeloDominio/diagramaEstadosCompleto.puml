@@ -1,0 +1,46 @@
+@startuml
+state OfertaTrabajo {
+    [*] --> Pendiente : Empresa crea oferta
+    Pendiente --> Disponible : Administrador valida la oferta
+    Pendiente --> Invalidada : Empresa cancela oferta
+    Disponible --> Cerrada : Empresa cierra la oferta
+    Disponible --> Invalidada : Empresa cancela oferta
+    Cerrada --> [*]
+    Invalidada --> [*]
+}
+
+state Alumni {
+    [*] --> Postula : Envía postulación
+    Postula --> EnRevision : Empresa revisa postulado
+    EnRevision --> Aceptada : Alumni aceptado
+    EnRevision --> Rechazada : Alumni rechazado
+    Aceptada --> [*]
+    Rechazada --> [*]
+}
+
+state Empresa {
+    [*] --> OfertaCreada : Decide crear una oferta
+    OfertaCreada --> OfertaPendienteValidacion : Envía oferta para validación
+    OfertaPendienteValidacion --> OfertaDisponible : Administrador valida la oferta
+    OfertaPendienteValidacion --> OfertaCancelada : Cancela oferta
+    OfertaDisponible --> OfertaCerrada : Cierra oferta
+    OfertaDisponible --> OfertaCancelada : Cancela oferta
+    OfertaCerrada --> [*]
+    OfertaCancelada --> [*]
+}
+
+state Administrador {
+    [*] --> RevisandoOferta : Recibe oferta
+    RevisandoOferta --> OfertaValidada : Valida la oferta
+    RevisandoOferta --> OfertaRechazada : Invalida la oferta
+    OfertaValidada --> [*]
+    OfertaRechazada --> [*]
+}
+
+state Plataforma_acceso {
+    [*] --> Autenticado : Usuario inicia sesión
+    Autenticado --> NoAutenticado : Usuario cierra sesión
+    NoAutenticado --> [*]
+
+}
+@enduml
