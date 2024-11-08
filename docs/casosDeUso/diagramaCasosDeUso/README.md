@@ -13,11 +13,10 @@
 | :-------------------------------------------------------------------------------: | :------------------------------------------------------------------------------: |
 | ![](./administradorGeneral/manejoUsuario/manejoUsuarios.svg) | ![](./administradorGeneral/manejoCategorias/manejoCategorias.svg) |
 
-|                                Envío de Documentos                                 |
-| :--------------------------------------------------------------------------------: |
-| ![](./administradorGeneral/envioDocumentos/envioDocumentos.svg) |
+|                                Envío de Documentos                                 |                                Manejo de Sesión                                  |
+| :--------------------------------------------------------------------------------: | :------------------------------------------------------------------------------: |
+| ![](./administradorGeneral/envioDocumentos/envioDocumentos.svg) | ![](./administradorGeneral/manejoSesion/manejoSesionAdministradorGeneral.svg) |
 
----
 
 ## Responsable
 
@@ -25,19 +24,21 @@
 | :-------------------------------------------------------------------------------: | :------------------------------------------------------------------------------: |
 | ![](./responsable/manejoDestinatarios/manejoDestinatarios.svg) | ![](./responsable/manejoCategorias/manejoCategorias.svg) |
 
-|                                Envío de Documentos                                 |                     Visualización y Confirmación de Documentos                    |
+|                                Envío de Documentos                                 |                                Manejo de Sesión                                  |
 | :--------------------------------------------------------------------------------: | :------------------------------------------------------------------------------: |
-| ![](./responsable/envioDocumentos/envioDocumentos.svg) | ![](./responsable/visualizacionConfirmacionDocumentos/visualizacionConfirmacionDocumentos.svg) |
+| ![](./responsable/envioDocumentos/envioDocumentos.svg) | ![](./responsable/manejoSesion/manejoSesionResponsable.svg) |
+
+|                     Visualización y Confirmación de Documentos                    |
+| :------------------------------------------------------------------------------: |
+| ![](./responsable/visualizacionConfirmacionDocumentos/visualizacionConfirmacionDocumentos.svg) |
 
 ---
 
 ## Destinatario
 
-|                          Visualización y Confirmación de Documentos                        |
-| :---------------------------------------------------------------------------------------: |
-| ![](./destinatario/visualizacionConfirmacionDocumentos/visualizacionConfirmacionDocumentos.svg) |
-
----
+|                          Visualización y Confirmación de Documentos                        |                                Manejo de Sesión                                  |
+| :---------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------: |
+| ![](./destinatario/visualizacionConfirmacionDocumentos/visualizacionConfirmacionDocumentos.svg) | ![](./destinatario/manejoSesion/manejoSesionDestinatario.svg) |
 
 ## Tiempo
 
