@@ -1,11 +1,13 @@
-# 🛠️ Casos de Uso
-Una forma rápida para generar los casos de uso es realizar el CRUD de las clases del modelo de dominio
+## 🛠️ Casos de Uso
 
-Los casos de usos son cinco:
-- [Encontrar Actores y Casos de uso](ActoresCasosDeUso.md)
-- Priorizar casos de uso
-- Detallar casos de uso
-- Prototipar casos de uso
-- Estructurar el modelo de caso de uso
+Este documento describe los casos de uso del modelo de dominio, enfocados en la interacción de los actores con las clases del sistema. Los casos de uso se derivan de un enfoque CRUD sobre el modelo de dominio, asegurando una correcta identificación y especificación de las funcionalidades.
 
-DIAGRAMA DE CONTEXTO 1 por cada actor
+Los casos de uso incluyen los siguientes pasos:
+
+1. [Encontrar Actores y Casos de uso](ActoresCasosDeUso.md)
+2. Priorizar casos de uso
+3. Detallar casos de uso
+4. Prototipar casos de uso
+5. Estructurar el modelo de caso de uso
+
+Cada uno de estos procesos está acompañado de un diagrama de contexto que ilustra las interacciones entre los actores y el sistema, con un diagrama específico por cada actor.
