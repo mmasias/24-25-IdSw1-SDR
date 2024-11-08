@@ -1,0 +1,11 @@
+@startuml
+title Diagrama de Estados - Horario
+
+[*] --> Inicio : Creación del Horario
+Inicio --> Configurando : Configurar detalles
+Configurando --> HorarioConfigurado : Detalles completados
+HorarioConfigurado --> HorarioConfirmado : Confirmación de configuración
+HorarioConfirmado --> HorarioFinalizado : Finalización alcanzada
+HorarioFinalizado --> [*] : Finalización del Horario
+
+@enduml
