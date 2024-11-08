@@ -1,0 +1,51 @@
+@startuml
+title Diagrama de Objetos - Gestor de Horarios
+
+entity gestorDeHorarios {
+    rol = "Gestor de Horarios"
+}
+
+entity asignacionAulaAsignatura {
+    asignatura = "Programación I"
+    aula = "-2.6"
+}
+
+entity asignacionDocenteAsignatura {
+    docente = "Manuel Masías"
+    asignatura = "Programación I"
+}
+
+entity horario {
+    dia = "Lunes"
+    horaInicio = "8:00"
+    horaFin = "10:00"
+    asignatura = "Programación I"
+    aula = "-2.6"
+    docente = "Manuel Masías"
+}
+
+entity curso {
+    nombre = "Programación I"
+    codigo = "101"
+}
+
+entity docente {
+    nombre = "Manuel Masías"
+    departamento = "Informática"
+}
+
+gestorDeHorarios --> asignacionAulaAsignatura : Asigna aula
+gestorDeHorarios --> asignacionDocenteAsignatura : Asigna docente
+asignacionAulaAsignatura --> curso : Pertenece a
+asignacionDocenteAsignatura --> curso : Enseña
+asignacionAulaAsignatura --> horario : Contribuye a
+asignacionDocenteAsignatura --> horario : Contribuye a
+curso --> horario : Se imparte en
+
+note right of gestorDeHorarios
+    Completar todas las
+    asignaciones para formar
+    el horario completo
+end note
+
+@enduml

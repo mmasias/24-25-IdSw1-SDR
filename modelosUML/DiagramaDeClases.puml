@@ -1,0 +1,50 @@
+title Diagrama de Clases - Horario
+
+class AdministradorDeHorarios {
+    - listaHorarios
+}
+
+class Profesor {
+    - nombre
+    - apellido
+}
+
+class Asignatura {
+    - id
+    - nombre
+}
+
+class Aula {
+    - numero
+}
+
+class Horario {
+    - dia
+    - horaInicio
+    - horaFin
+    - asignatura
+    - aula
+}
+
+class ProfesorImparte {
+    - profesor
+    - asignatura
+}
+
+class AsignacionAula {
+    - asignatura
+    - aula
+}
+
+AdministradorDeHorarios -- Horario
+
+Horario -- Profesor
+Horario -- Asignatura
+Horario -- Aula
+
+Profesor -- ProfesorImparte
+Asignatura -- ProfesorImparte
+Asignatura -- AsignacionAula
+Aula -- AsignacionAula
+ProfesorImparte -- AsignacionAula
+@enduml
