@@ -45,13 +45,9 @@ Este documento describe los principales casos de uso en el sistema de Automatiza
    - **Objetivo:** Mantener la estructura de programas académicos dentro del sistema.
 ---
 
-<div align=center>
+![](/images/modelosUML/diagramaCasosDeUso.svg) | [Ver código](/CasosDeUso/diagramaCasosDeUso/diagramaCasosDeUso.puml) 
 
-||
-|-:|
-![](/images/modelosUML/diagramaCasosDeUso.svg)
 *Autor: Cayetano Castillo*
 
 
-</div>
 

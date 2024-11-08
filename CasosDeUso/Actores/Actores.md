@@ -39,3 +39,4 @@ Este documento describe los actores principales involucrados en el sistema de Au
 
 > **Nota:** Cada actor tiene un papel fundamental en el ciclo de vida de las guías docentes, asegurando que el contenido sea preciso, de alta calidad y uniforme en formato.
 
+
