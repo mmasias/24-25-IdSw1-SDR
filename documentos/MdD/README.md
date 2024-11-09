@@ -9,7 +9,7 @@ Este documento presenta los diagramas principales del modelo de dominio: el **di
 
 | **Diagrama** | **Código Fuente** |
 |--------------|--------------------|
-| ![Diagrama de Clases](/images/modelosUML/MdD/diagramaDeClases.svg) | [Ver código](/modelosUML/diagramaDeClases.puml) |
+| ![Diagrama de Clases](/images/modelosUML/MdD/diagramaDeClases.svg) | [Ver código](/modelosUML/MdD/diagramaDeClases.puml) |
 
 - **Descripción**: 
   - `Profesor` imparte `Asignatura` y elabora `MemoriaAcademica`.
@@ -24,7 +24,7 @@ Este documento presenta los diagramas principales del modelo de dominio: el **di
 
 | **Diagrama** | **Código Fuente** |
 |--------------|--------------------|
-| ![Diagrama de Objetos](/images/modelosUML/MdD/diagramaDeObjetos.svg) | [Ver código](/modelosUML/diagramaDeObjetos.puml) |
+| ![Diagrama de Objetos](/images/modelosUML/MdD/diagramaDeObjetos.svg) | [Ver código](/modelosUML/MdD/diagramaDeObjetos.puml) |
 
 - **Descripción**:
   - `Juan Pérez` imparte `Programación` y elabora `Memoria1`.
@@ -37,7 +37,7 @@ Este documento presenta los diagramas principales del modelo de dominio: el **di
 
 | **Diagrama** | **Código Fuente** |
 |--------------|--------------------|
-| ![Diagrama de Estados](/images/modelosUML/MdD/diagramaDeEstados.svg) | [Ver código](/modelosUML/diagramaDeEstados.puml) |
+| ![Diagrama de Estados](/images/modelosUML/MdD/diagramaDeEstados.svg) | [Ver código](/modelosUML/MdD/diagramaDeEstados.puml) |
 
 - **Descripción**:
 
