@@ -5,8 +5,8 @@ Este documento describe los casos de uso del modelo de dominio, enfocados en la 
 Los casos de uso incluyen los siguientes pasos:
 
 1. [Encontrar Actores y Casos de uso](ActoresCasosDeUso.md)
-2. Priorizar casos de uso
-3. Detallar casos de uso
+2. [Priorizar Casos de uso](PriorizarCasosDeUso.md)
+3. [Detallar Casos de uso](DetallarCasosDeUso.md)
 4. Prototipar casos de uso
 5. Estructurar el modelo de caso de uso
 
