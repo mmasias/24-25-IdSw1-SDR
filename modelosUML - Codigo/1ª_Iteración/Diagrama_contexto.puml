@@ -1,0 +1,89 @@
+@startuml
+left to right direction
+
+actor Usuario
+actor Moderador
+
+package Aplicacion {
+
+   
+
+    rectangle "Sistema de Publicaciones" {
+        usecase "Ver posts" as UC_U1
+        usecase "Crear posts" as UC_U2
+        usecase "Interactuar con posts" as UC_U3
+        usecase "Reportar Contenido" as UC_U4
+        usecase "Revisar publicaciones" as UC_M1
+        usecase "Eliminar publicaciones" as UC_M2
+    }
+
+
+    rectangle "Gestión de Usuarios" {
+        usecase "Registrarse" as UC_U5
+        usecase "Iniciar sesión" as UC_U6
+        usecase "Cerrar sesión" as UC_U7
+        usecase "Suspender usuarios" as UC_M3
+        usecase "Desbloquear usuarios/borrar sanciones" as UC_M4
+        usecase "Enviar advertencias" as UC_M5
+    }
+ 
+    
+
+    rectangle "Gestión de Contenido" {
+        usecase "Responder a reportes de contenido" as UC_M6
+        usecase "Revisar comentarios" as UC_M7
+        usecase "Bloquear palabras o expresiones" as UC_M8
+    }
+
+
+    
+
+    rectangle "Comunidad y Notificaciones" {
+        usecase "Entrar/Salir de grupos" as UC_U8
+        usecase "Recibir notificaciones de \nAnuncios o Eventos" as UC_U9
+        usecase "Comunicar cambios de política" as UC_M9
+    }
+
+note top of "Comunidad y Notificaciones"
+    Administración de membresía de grupos y
+    notificaciones importantes.
+    end note
+note top of "Gestión de Contenido"
+    Controles de revisión de contenido y
+    moderación de expresiones.
+    end note
+note top of "Gestión de Usuarios"
+    Funciones de registro y administración
+    de cuentas de usuario.
+    end note
+ note top of "Sistema de Publicaciones"
+    Sistema de gestión de publicaciones y 
+    contenido generado por los usuarios.
+    end note
+
+
+
+
+}
+
+Usuario --> UC_U1
+Usuario --> UC_U2
+Usuario --> UC_U3
+Usuario --> UC_U4
+Usuario --> UC_U5
+Usuario --> UC_U6
+Usuario --> UC_U7
+Usuario --> UC_U8
+Usuario --> UC_U9
+
+
+Moderador --> UC_M1
+Moderador --> UC_M2
+Moderador --> UC_M3
+Moderador --> UC_M4
+Moderador --> UC_M5
+Moderador --> UC_M6
+Moderador --> UC_M7
+Moderador --> UC_M8
+Moderador --> UC_M9
+@enduml
