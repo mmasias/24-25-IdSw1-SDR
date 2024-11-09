@@ -52,18 +52,18 @@ Los siguientes diagramas ilustran las interacciones entre los actores y los caso
 
 | **Diagrama** | **Código Fuente** |
    |--------------|--------------------|
-   | ![Departamento](/images/modelosUML/CdU/departamento.svg) |
+   | ![Departamento](/images/modelosUML/CdU/departamento.svg) | [Ver código](/modelosUML/CdU/Departamento.puml) |
 
 | **Diagrama** | **Código Fuente** |
    |--------------|--------------------|
-   | ![Profesor](/images/modelosUML/CdU/profesor.svg) |
+   | ![Profesor](/images/modelosUML/CdU/profesor.svg) | [Ver código](/modelosUML/CdU/Profesor.puml) |
 
 | **Diagrama** | **Código Fuente** |
    |--------------|--------------------|
-   | ![Memoria Académica](/images/modelosUML/CdU/memoriaAcademica.svg) |
+   | ![Memoria Académica](/images/modelosUML/CdU/memoriaAcademica.svg) | [Ver código](/modelosUML/CdU/MemoriaAcademica.puml) |
 
  **Diagrama** | **Código Fuente** |
    |--------------|--------------------|
-   | ![Sistemas](/images/modelosUML/CdU/Sistema.svg) |
+   | ![Sistemas](/images/modelosUML/CdU/Sistema.svg) | [Ver código](/modelosUML/CdU/Sistema.puml) |
 
 
