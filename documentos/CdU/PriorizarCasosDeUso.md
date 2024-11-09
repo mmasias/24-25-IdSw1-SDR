@@ -50,19 +50,19 @@ A continuación, se describen los casos de uso priorizados que forman parte del 
 
 Los siguientes diagramas ilustran las interacciones entre los actores y los casos de uso priorizados:
 
-| **Diagrama** | **Código Fuente** |
+| **Diagrama** |
    |--------------|--------------------|
    | ![Departamento](/images/modelosUML/CdU/departamento.svg) |
 
-| **Diagrama** | **Código Fuente** |
+| **Diagrama** |
    |--------------|--------------------|
    | ![Profesor](/images/modelosUML/CdU/profesor.svg) |
 
-| **Diagrama** | **Código Fuente** |
+| **Diagrama** |
    |--------------|--------------------|
    | ![Memoria Académica](/images/modelosUML/CdU/memoriaAcademica.svg) |
 
- **Diagrama** | **Código Fuente** |
+ **Diagrama** |
    |--------------|--------------------|
    | ![Sistemas](/images/modelosUML/CdU/Sistema.svg) |
 
