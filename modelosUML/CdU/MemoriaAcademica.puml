@@ -1,0 +1,7 @@
+
+@startuml
+
+actor MemoriaAcademica
+
+MemoriaAcademica --> (Generación de memoria académica)
+@enduml

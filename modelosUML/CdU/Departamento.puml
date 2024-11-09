@@ -1,0 +1,6 @@
+@startuml
+
+actor Departamento
+
+Departamento --> (Propuesta y ajuste de Carga Docente)
+@enduml
