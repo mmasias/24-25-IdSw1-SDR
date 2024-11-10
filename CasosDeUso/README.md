@@ -51,3 +51,10 @@
 - **Actor**: Dirección de Calidad
 - **Descripción**: Realiza una verificación de las guías docentes para confirmar su adherencia a la memoria verificada de la titulación, utilizando una API de verificación.
 - **Objetivo**: Asegurar que las guías cumplan con los lineamientos y requisitos establecidos por la institución.
+
+## Actividades
+- [Encontrar actores y casos de uso]()
+- [Priorizar casos de uso](/Actividades/Priorizar.md)
+- [Detallar casos de uso]()
+- [Prototipar casos de uso]()
+- [Estructurar el modelo de casos de uso]()
