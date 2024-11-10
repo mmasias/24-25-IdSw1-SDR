@@ -21,23 +21,23 @@ En este apartado se muestran los casos de uso en una lista donde el número 1 ti
 - **Objetivo**: Permitir que los estudiantes accedan a la versión oficial y aprobada de la guía.
 - **Prioridad**: Alta (Es el paso final para hacer la guía accesible a los estudiantes)
 
-### 4. Aprobar o Rechazar Contenido
+### 4. Editar Contenido de la Guía
+- **Actor**: Profesor
+- **Descripción**: El profesor realiza actualizaciones en el contenido de una guía docente para una asignatura específica.
+- **Objetivo**: Mantener el contenido actualizado y relevante para los estudiantes.
+- **Prioridad**: Media-Alta (Necesario para asegurar la actualidad del contenido)
+
+### 5. Aprobar o Rechazar Contenido
 - **Actor**: Director de Grado
 - **Descripción**: Revisión y decisión sobre la aprobación o rechazo del contenido de la guía docente.
 - **Objetivo**: Asegurar que el contenido cumple con los estándares académicos y es adecuado para su publicación.
 - **Prioridad**: Media-Alta (Fundamental para controlar la calidad del contenido)
 
-### 5. Supervisar Guías Docentes
+### 6. Supervisar Guías Docentes
 - **Actor**: Técnico de Calidad
 - **Descripción**: El técnico revisa las guías docentes para verificar el cumplimiento de los estándares de calidad.
 - **Objetivo**: Garantizar uniformidad en el formato y la calidad de las guías para que cumplan con los estándares institucionales.
 - **Prioridad**: Media (Proceso necesario para el control de calidad previo a la auditoría)
-
-### 6. Editar Contenido de la Guía
-- **Actor**: Profesor
-- **Descripción**: El profesor realiza actualizaciones en el contenido de una guía docente para una asignatura específica.
-- **Objetivo**: Mantener el contenido actualizado y relevante para los estudiantes.
-- **Prioridad**: Media (Necesario para asegurar la actualidad del contenido)
 
 ### 7. Generar Nueva Versión de la Guía
 - **Actor**: Técnico de Calidad
