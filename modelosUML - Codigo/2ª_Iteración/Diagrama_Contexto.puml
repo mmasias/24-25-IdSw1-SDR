@@ -1,0 +1,84 @@
+@startuml
+left to right direction
+
+actor Usuario as A_Usuario
+actor Moderador as A_Moderador
+
+package "Aplicación" {
+
+    package "Sistema de Publicaciones" {
+        usecase "Ver posts" as UC_U1
+        usecase "Crear posts" as UC_U2
+        usecase "Interactuar con posts" as UC_U3
+        usecase "Reportar Contenido" as UC_U4
+        usecase "Revisar publicaciones" as UC_M1
+        usecase "Eliminar publicaciones" as UC_M2
+    }
+
+    package "Gestión de Usuarios" {
+        usecase "Registrarse" as UC_U5
+        usecase "Iniciar sesión" as UC_U6
+        usecase "Cerrar sesión" as UC_U7
+        usecase "Suspender usuarios" as UC_M3
+        usecase "Desbloquear usuarios \n o borrar sanciones" as UC_M4
+        usecase "Enviar advertencias" as UC_M5
+    }
+
+    package "Gestión de Contenido" {
+        usecase "Responder a reportes \n de contenido" as UC_M6
+        usecase "Revisar comentarios" as UC_M7
+        usecase "Bloquear palabras \n o expresiones" as UC_M8
+    }
+
+    package "Comunidad y Notificaciones" {
+        usecase "Entrar/Salir de grupos" as UC_U8
+        usecase "Recibir notificaciones \n de Anuncios o Eventos" as UC_U9
+        usecase "Comunicar cambios \n de política" as UC_M9
+    }
+}
+
+A_Usuario --> UC_U1
+A_Usuario --> UC_U2
+A_Usuario --> UC_U3
+A_Usuario --> UC_U4
+A_Usuario --> UC_U5
+A_Usuario --> UC_U6
+A_Usuario --> UC_U7
+A_Usuario --> UC_U8
+A_Usuario --> UC_U9
+
+A_Moderador --> UC_M1
+A_Moderador --> UC_M2
+A_Moderador --> UC_M3
+A_Moderador --> UC_M4
+A_Moderador --> UC_M5
+A_Moderador --> UC_M6
+A_Moderador --> UC_M7
+A_Moderador --> UC_M8
+A_Moderador --> UC_M9
+
+note left of UC_U1
+Sistema de publicaciones: 
+Gestión e interacción
+de posts.
+end note
+
+note right of UC_M3
+Gestión de usuarios:
+Control y administración
+de cuentas.
+end note
+
+note left of UC_M6
+Gestión de contenido: 
+Moderación y revisión
+de reportes y comentarios.
+end note
+
+note right of UC_M9
+Comunidad y notificaciones:
+Administración de grupos
+y comunicaciones generales.
+end note
+
+@enduml
