@@ -1,6 +1,6 @@
 # Casos de Uso
 
-## [Usuarios](/casos_de_uso/casos_de_uso/usuarios)
+### [Usuarios](/casos_de_uso/casos_de_uso/usuarios)
 
   - [Actualizar Datos del Usuario]()
 
