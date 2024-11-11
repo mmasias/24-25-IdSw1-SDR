@@ -15,6 +15,8 @@ Grupo conformado por:
 
 A continuacion se presentan los enlaces a los distintos diagramas realizados:
 
+### Diagrama de Contexto
+![Diagrama de Contexto](https://github.com/miguelgomez75/24-25-IdSw1-SDR/blob/main/images/modelosUML%20-%20SVG/2ª_Iteración/Diagrama_Contexto.svg)
 ### Diagrama de Entidades
 ![Diagrama de Entidades](https://github.com/miguelgomez75/24-25-IdSw1-SDR/blob/main/images/modelosUML%20-%20SVG/2ª_Iteración/Diagrama_Entidades.svg)
 ### Diagrama de Estados
