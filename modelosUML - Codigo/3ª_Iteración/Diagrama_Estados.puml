@@ -20,4 +20,28 @@ Resuelto : Resuelto
 NoResuelto : No resuelto
 NoResuelto --> Resuelto : Marcar resuelto
 Resuelto --> NoResuelto : Reabrir
+
+[*] --> Comunidad
+Comunidad : Estado de la comunidad
+Comunidad --> Creada : Usuario crea
+Creada : Comunidad nueva
+
+state Creada {
+  [*] --> SinMiembros
+  SinMiembros --> ConMiembros : Usuarios se unen
+  ConMiembros --> SinMiembros : Usuarios salen
+  ConMiembros : Miembros > 0
+  ConMiembros --> ConPosts : Miembros publican
+  ConPosts --> ConMiembros : Posts eliminados
+  ConPosts --> Post : Genera nuevo post
+}
+
+Creada --> BaneadaTemporal : Infracción
+BaneadaTemporal : Comunidad suspendida
+BaneadaTemporal --> Creada : Fin del ban
+
+Creada --> BaneadaPermanente : Infracción grave
+BaneadaPermanente : Comunidad cerrada
+BaneadaPermanente --> [*] : Eliminación
+
 @enduml
