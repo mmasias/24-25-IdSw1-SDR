@@ -1,0 +1,30 @@
+@startuml
+[*] --> Inicio
+Inicio --> Usuario : Log in\nSign in
+Usuario --> Dashboard : ve las etiquetas a elegir
+Dashboard --> Perfil : Entra en Perfil
+Dashboard --> Comunidades : Ve las comunidades existentes
+Dashboard --> Ajustes : ve los ajustes de la Aplicacion
+Dashboard --> Etiqueta : Elegir etiqueta
+Etiqueta --> Etiqueta : Aplicar filtro\nEliminar Filtro\nBuscar\nOfrecer\nPublicar
+Dashboard --> Dashboard : Elegir etiqueta
+Perfil --> Perfil : modificar Perfil
+Comunidades --> Comunidades : Entrar en comunidad\nCrear Comunidad\nSalir de comunidad\nPublicar en comunidad
+Ajustes --> Ajustes : cambiar ajustes
+Ajustes --> Dashboard : Cambiar pestaña
+Ajustes --> Comunidades : Cambiar pestaña
+Ajustes --> Perfil : Cambiar pestaña
+Perfil --> Dashboard : Cambiar pestaña
+Perfil --> Comunidades : Cambiar pestaña
+Perfil --> Ajustes : Cambiar pestaña
+Comunidades --> Dashboard : Cambiar pestaña
+Comunidades --> Perfil : Cambiar pestaña
+Comunidades --> Ajustes : Cambiar pestaña
+Comunidades --> [*] : Log out
+Dashboard --> [*] : Log out
+Perfil --> [*] : Log out
+Ajustes --> [*] : Log out
+
+@enduml
+
+

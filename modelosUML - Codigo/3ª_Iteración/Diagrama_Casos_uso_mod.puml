@@ -14,7 +14,7 @@ usecase "Revisar comentarios" as UC6
 usecase "Comunicar cambios de política" as UC7
 usecase "Bloquear palabras o expresiones" as UC8
 usecase "Desbloquear usuarios/borrar sanciones" as UC9
-
+usecase "eliminar Comunidad" as UC10
 }
 
 Moderador --> UC1
@@ -26,6 +26,6 @@ Moderador --> UC6
 Moderador --> UC7
 Moderador --> UC8
 Moderador --> UC9
-
+Moderador --> UC10
 
 @enduml

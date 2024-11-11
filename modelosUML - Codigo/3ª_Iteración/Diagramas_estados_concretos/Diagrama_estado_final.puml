@@ -1,0 +1,28 @@
+@startuml
+[*] --> Usuario
+Usuario : Estado del usuario
+Usuario --> Alta : Dado de alta
+Usuario --> NoAlta : No dado de alta
+Alta : Usuario activo
+NoAlta : Usuario inactivo
+Alta --> Suspendido : Infracción
+Suspendido --> Alta : Fin suspensión
+Suspendido : Usuario temporalmente suspendido
+Usuario--> Etiqueta : asigna una etiqueta
+Etiqueta --> post : ordena
+Etiqueta : organiza
+
+[*] --> Post
+Alta --> Post: Crea
+Suspendido -[dashed]-> Post: No puede crear
+Post : Estado del post
+Post --> Borrador : Creación inicial
+Borrador --> Etiqueta : tiene
+Borrador --> Resuelto : Marcado como resuelto
+Borrador --> NoResuelto : Marcado como no resuelto
+Resuelto --> Post : se publica
+Resuelto : Resuelto
+NoResuelto : No resuelto
+NoResuelto --> Resuelto : Marcar resuelto
+Resuelto --> NoResuelto : Reabrir
+@enduml
