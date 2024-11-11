@@ -7,7 +7,7 @@ Alta : Usuario activo
 NoAlta : Usuario inactivo
 Alta --> Suspendido : Infracción
 Suspendido --> Alta : Fin suspensión
-Suspendido : Usuario temporalmente suspendido
+Suspendido : Usuario suspendido indefinidamente
 
 [*] --> Post
 Alta --> Post: Crea
