@@ -1,0 +1,18 @@
+@startuml Auditoria_DireccionCalidad
+title Proceso de Auditoría - Dirección de Calidad
+
+[*] --> EnAuditoria
+EnAuditoria : Revisión de calidad en progreso
+
+EnAuditoria --> AuditoriaCompleta : Auditoría finalizada
+AuditoriaCompleta : Se concluye el proceso de auditoría
+
+EnAuditoria --> RequiereCorreccion : Observaciones enviadas para corrección
+RequiereCorreccion : Retroalimentación para ajustes
+
+AuditoriaCompleta --> AprobacionParaValidacion : Listo para validación final
+
+AprobacionParaValidacion --> [*] : Fin de la auditoría
+RequiereCorreccion --> EnAuditoria : Correcciones hechas y reenviado
+
+@enduml

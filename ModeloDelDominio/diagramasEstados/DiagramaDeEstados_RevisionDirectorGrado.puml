@@ -1,0 +1,15 @@
+@startuml Revision_Contenido_DirectorDeGrado
+title Proceso de Revisión de Contenido - Director de Grado
+
+[*] --> EnRevision
+EnRevision : Contenido en revisión por el Director de Grado
+
+EnRevision --> SolicitudModificacion : Corrección necesaria
+SolicitudModificacion : Observaciones enviadas al profesor
+
+EnRevision --> Aprobado : Contenido aprobado
+
+SolicitudModificacion --> EnRevision : Contenido reenviado para revisión
+Aprobado --> [*] : Fin de la revisión
+
+@enduml
