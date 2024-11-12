@@ -1,0 +1,13 @@
+@startuml
+title Revisión y Corrección - Técnico de Calidad
+
+[*] --> RevisiónCorrecciones : Inicio de la revisión
+RevisiónCorrecciones : Técnico de Calidad revisa y ajusta cambios propuestos
+
+RevisiónCorrecciones --> AjustesNecesarios : Cambios adicionales necesarios
+AjustesNecesarios --> AjustesNecesarios
+RevisiónCorrecciones --> PreparadoParaAprobación : Listo para aprobación externa
+AjustesNecesarios --> RevisiónCorrecciones : Ajustes completados
+
+PreparadoParaAprobación --> [*] : Fin de revisión y corrección
+@enduml
