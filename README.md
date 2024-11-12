@@ -10,8 +10,8 @@ Grupo conformado por:
 - Adrián Perez
 - josé Salceda
 
-## 🗃️[Documentación](Documentación)🗃️
-## DIAGRAMAS
+## 🗃️[Documentación](Documentación)🗃️  
+## MODELO DEL DOMINIO
 
 A continuacion se presentan los enlaces a los distintos diagramas realizados:
 
