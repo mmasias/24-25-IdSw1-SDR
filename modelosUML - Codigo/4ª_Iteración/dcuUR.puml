@@ -22,16 +22,16 @@ rectangle "Aplicación" {
 
 }
 
-Usuario --> UC1
-Usuario --> UC2
-Usuario --> UC3
-Usuario --> UC4
-Usuario --> UC5
-Usuario --> UC6
-Usuario --> UC7
-Usuario --> UC8
-Usuario --> UC9
-Usuario --> UC10
-Usuario --> UC11
-Usuario --> UC12
+Usuario_Registrado --> UC1
+Usuario_Registrado --> UC2
+Usuario_Registrado --> UC3
+Usuario_Registrado --> UC4
+Usuario_Registrado --> UC5
+Usuario_Registrado --> UC6
+Usuario_Registrado --> UC7
+Usuario_Registrado --> UC8
+Usuario_Registrado --> UC9
+Usuario_Registrado --> UC10
+Usuario_Registrado --> UC11
+Usuario_Registrado --> UC12
 @enduml
