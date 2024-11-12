@@ -1,0 +1,34 @@
+@startuml
+class Usuario {
+}
+class Post {
+    +String id
+    +Date fechaCreacion
+    +Date fechaResuelto
+    +int duracion
+    +String mensaje
+    +boolean resuelto
+    +Usuario usuarioOP
+    +List<Etiqueta> etiquetas
+}
+class Etiqueta {
+        +crearEtiqueta()
+        +actualizarEtiqueta()
+        +obtenerPosts()
+}
+
+class Comunidad{
+}
+
+class Filtro{
+    +List<Etiqueta> Filtrar
+    +elegirEtiquetas()
+    +localizarPost
+}
+
+Usuario "1" --> "n" Post : "publica"
+Post "n" --> "n" Etiqueta : "tiene"
+Post --> Filtro : "localizado usando"
+Usuario --> Comunidad : "Forma"
+
+@enduml
