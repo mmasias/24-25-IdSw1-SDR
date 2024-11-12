@@ -11,22 +11,24 @@ Este es el repositorio de las sesiones de requisitado de la asignatura de Ingeni
 
 | Índice | Enlace |
 |--------|--------|
-| 1      | [Sesión #1 de requisitado 👁️](/SesionesDeRequisitado/Sesion1.md) |
+| 1      | [Sesión #1 de requisitado (oficial)👁️](/SesionesDeRequisitado/Sesion1.md) |
+| 2      | [Sesión #2 de requisitado (extra) 👁️](/SesionesDeRequisitado/Sesion2.md) |
+| 3      | [Sesión #3 de requisitado(oficial) 👁️](/SesionesDeRequisitado/Sesion3.md) |
+
 
 </div>
 
 ## [Modelo Del Dominio](/ModeloDelDominio/modeloDelDominio.md)
 
-## Actores y Casos de Uso
+## Actores y Casos de uso
 
-- [Encontrar actores y casos de uso](/CasosDeUso/Actores/Actores.md)
+- [Encontrar actores](/CasosDeUso/Actividades/Actores.md)
+- [Encontrar casos de uso](/CasosDeUso/Actividades/CasosDeUso.md)
+- [Priorizar casos de uso](/CasosDeUso/Actividades/Priorizar.md)
+- [Detallar casos de uso](/CasosDeUso/Actividades/Detallar.md)
+- [Prototipar casos de uso](/CasosDeUso/Actividades/prototipos.md)
+- [Estructurar el modelo de casos de uso](/CasosDeUso/Actividades/Estructurar.md)
 - [Diagrama de Casos De Uso](/CasosDeUso/diagramaCasosDeUso/DiagramaCasosDeUso.md)
-
-- [Priorizar casos de uso](/CasosDeUso/Actores/Priorizar.md)
-- [Detallar casos de uso](/CasosDeUso/Actores/Detallar.md)
-- [Prototipar casos de uso](/CasosDeUso/prototipos/prototipos.md)
-- [Estructurar el modelo de casos de uso](/CasosDeUso/Actores/Estructurar.md)
-
 
 - [Diagrama de Contexto](/CasosDeUso/diagramaDeContexto/diagramaDeContexto.md) 
 
