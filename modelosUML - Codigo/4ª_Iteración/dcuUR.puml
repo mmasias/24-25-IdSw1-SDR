@@ -1,6 +1,6 @@
 @startuml
 left to right direction
-actor Usuario
+actor Usuario_Registrado
 
 rectangle "Aplicación" {
     usecase "Cerrar sesión" as UC1
