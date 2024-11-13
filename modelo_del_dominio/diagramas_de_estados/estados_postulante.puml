@@ -1,6 +1,5 @@
-@startuml
-
-[*] --> UsuarioPostulante
+@startuml Diagrama_de_Estados_Postulante
+skinparam defaultTextAlignment center
 
 state UsuarioPostulante {
   [*] --> AjenoAlSistema
@@ -14,14 +13,16 @@ UsuarioPostulante --> NoBecario
 state NoBecario {
   [*] --> Logueado : se loguea
   Logueado --> RealizaPrueba : se ve su nivel
-  Logueado --> RealizaCapacitacion : se le prepara para el trabajo en PROFER
+  Logueado --> RealizaCapacitación : se le prepara para el trabajo en PROFER
   RealizaPrueba --> Resultados
-  RealizaCapacitacion --> Resultados
-  RealizaCapacitacion --> RealizaPrueba : se evalúa su desempeño / evolución
-  state accion <<choice>>
-  Resultados --> accion : pasa a ser becario
-  accion --> Becario : si
-  accion --> RealizaCapacitacion : no
-  Becario --> [*] 
+  RealizaCapacitación --> Resultados
+  RealizaCapacitación --> RealizaPrueba : se evalúa su desempeño / evolución
+  state acción <<choice>>
+  Resultados --> acción : pasa a ser becario
+  acción --> Becario : sí
+  acción --> RealizaCapacitación : no
+  Becario --> [*]
 }
 @enduml
+
+/'//TODO: Preguntar que sucede cuando no pasa a ser becario '/

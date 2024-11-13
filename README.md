@@ -13,7 +13,7 @@
 
 ## Descripción
 
-Es una plataforma que se encarga de administrar y optimizar el proceso de selección de becarios y capacitación
+Es una plataforma que se encarga de administrar y optimizar el proceso de selección y capacitación de becarios PROFER de la Universidad Europea del Atlántico.
 
 ## Modelo de Dominio
 
@@ -32,3 +32,4 @@ Es una plataforma que se encarga de administrar y optimizar el proceso de selecc
 ## [Sesiones](documentos/actas/)
 
   - [Sesión del 16/10/2024](/documentos/actas/16-10-2024/README.md)
+  - [Sesión del 12/11/2024](/documentos/actas/12-11-2024/README.md)
