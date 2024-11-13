@@ -1,4 +1,5 @@
 @startuml
+left to right direction
 actor Profesor as P
 actor Personal_RRHH as RH
 rectangle "Gestión de Datos de Profesorado" {

@@ -1,4 +1,5 @@
 @startuml
+left to right direction
 actor Administrador_Academico as AA
 rectangle "Gestión de Carga Docente" {
     usecase "Revisión de Carga Académica por Profesor" as UC1
