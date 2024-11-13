@@ -1,50 +1,66 @@
 @startuml
-package UNEATLANTICO {
+package "UNEATLANTICO" {
+    object Profesor {
+        titulacion = "Doctor"
+        institucion = "UNEATLANTICO"
+        validacion_movilidad = true
+        movilidad_destinos = 2
+        validar_movilidad = true
+        sexenios = 3
+    }
 
-object Ingenieria_Informatica {
-  curso = "2023-2024"
-}
+    object Contrato {
+        tipo = "Completo Indefinido"
+    }
+    
+    object Experiencia {
+        docente = 5
+        virtual = 2
+        investigador = 3
+        profesional = 7
+    }
 
-object deptoInformatica {
-  jefeDepartamento = "Masias"
-}
+    object Asignatura {
+        codigo = "IGPS"
+        semestre = "1º"
+        porcentaje_asignacion = 50
+        numero_grupos = 2
+    }
 
-object Alberto_Lopez {
-  titulación = "Doctor"
-  categoría = "Asociado"
-  experienciaDocente = 5
-  experienciaVirtual = 2
-  experienciaInvestigador = 3
-  experienciaProfesional = 7
-  ECTS = 20
-}
+    object Titulacion {
+        curso = "2024-2025"
+        estructura_base = "Grado en Ingeniería Informática"
+    }
 
-object contrato {
-  tipo = "Completo Indefinido"
-}
+    object MemoriaAcademica {
+        valores_comprometido = true
+        movilidad_destinos = 2
+        curso = "2023"
+        meta_sexenios = 3
+        meta_movilidad = true
+    }
 
-object Programacion {
-  semestre = "1º"
-  codigoCampus = "INF101"
-  tipo = "Obligatoria"
-  ECTS = 6
-}
+    object Indicador {
+        codigo = "IND-2024"
+        valor = 85
+        umbral_alerta = 70
+    }
 
-object planEstudios {
-}
+    object CargaAcademica {
+        creditos = 6
+        modalidad = "Presencial"
+        tipo = "Obligatoria"
+        facultad = "Informática"
+    }
 
-object memoriaAcademica {
-  año = 2023
-}
-
-Ingenieria_Informatica --> Programacion : contiene
-Programacion --> Alberto_Lopez : impartida por
-Alberto_Lopez --> deptoInformatica : pertenece a
-Alberto_Lopez --> contrato : tiene un
-Alberto_Lopez --> planEstudios : sigue un
-memoriaAcademica --> Ingenieria_Informatica : envia informacion a
-Programacion --> memoriaAcademica : guarda datos en
-Alberto_Lopez --> memoriaAcademica : guarda datos en
-
+    Profesor --> Contrato : tiene
+    Profesor --> Experiencia : tiene
+    Profesor --> CargaAcademica : dedicacion
+    Profesor .. Titulacion : asigna
+    Profesor --> Asignatura : imparte
+    Profesor --> MemoriaAcademica : cumple
+    MemoriaAcademica --> Indicador : meta y valores
+    Indicador --> Profesor : extrae datos
+    Titulacion --> Asignatura : define
 }
 @enduml
