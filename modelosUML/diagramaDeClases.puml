@@ -1,60 +1,60 @@
 @startuml
-package UNEATLANTICO{
+package "UNEATLANTICO" {
+    class Profesor {
+        - titulacion
+        - institucion
+        - validacion_movilidad
+        - movilidad_destinos
+        - validar_movilidad
+        - sexenios
+    }
 
-class Titulacion{
-curso
+    enum Contrato {
+    }
+    enum Experiencia {
+    }
+
+    class Asignatura {
+        - codigo
+        - semestre
+        - porcentaje_asignacion
+        - numero_grupos
+    }
+
+    class Titulacion {
+        - curso
+        - estructura_base
+    }
+
+    class MemoriaAcademica {
+        - valores_comprometido
+        - movilidad_destinos
+        - curso
+        - meta_sexenios
+        - meta_movilidad
+    }
+
+    class Indicador {
+        - codigo
+        - valor
+        - umbral_alerta
+    }
+
+    class CargaAcademica {
+        - creditos
+        - modalidad
+        - tipo
+        - facultad
+    }
+
+    Profesor -- Contrato : tiene
+    Profesor -- Experiencia : tiene
+    Profesor -- CargaAcademica : dedicacion
+    Profesor .. Titulacion : asigna
+    Profesor -- Asignatura : imparte
+    Profesor -- MemoriaAcademica : cumple
+    MemoriaAcademica -- Indicador : meta y valores
+    Indicador -- Profesor : extrae datos
+    Titulacion -- Asignatura : define
 }
-
-class Departamento{
-jefeDepartamento
-
-}
-
-class Profesor{
-titulación
-categoría
-experienciaDocente
-experienciaVirtual
-experienciaInvestigador
-experienciaProfesional 
-ECTS
-}
-
-Enum Contrato{
-Parcial Temporal
-Parcial Indefinido
-Parcial Obra
-Parcial Baja
-Completo Temporal
-Completo Indefinido
-Completo Obra
-Completo Baja
-}
-
-class Asignatura{ 
-semestre 
-codigoCampus
-tipo 
-ECTS 
-}
-
-class PlanEstudios{
-}
-
-class MemoriaAcademica{
-año
-}
-
-
-}
-
-Titulacion --> Asignatura : contiene
-Asignatura --> Profesor : impartida por
-Profesor --> Departamento : pertenece a
-Profesor --> Contrato : tiene un
-Profesor --> PlanEstudios : sigue un 
-MemoriaAcademica --> Titulacion : envia informacion a 
-Asignatura --> MemoriaAcademica : guarda datos en
-Profesor --> MemoriaAcademica : guarda datos en 
-
 @enduml
