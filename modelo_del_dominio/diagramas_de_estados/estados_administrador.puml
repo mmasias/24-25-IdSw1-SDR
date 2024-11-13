@@ -1,19 +1,17 @@
 @startuml
-state Administrador {
-  [*] -d-> Inicio
+[*] --> UsuarioAdministrador: se crea administrador
 
-  State GestionarBecarios {
-    VerSolicitudes -d-> EnRevisión
-    EnRevisión -r-> Aprobado : "Solicitud aprobada"
-    EnRevisión -r-> Rechazado : "Solicitud rechazada"
-  }
 
-  State GestionarCapacitaciones {
-    CrearCapacitacion -d-> EnCurso
-    EnCurso -r-> Finalizada
-  }
 
-  Inicio -d-> GestionarBecarios
-  Inicio -d-> GestionarCapacitaciones
+state UsuarioAdministrador{
+  Activo-->GestionandoAdministradores
+  Activo-->GestionandoEgresados
+  [*]-->Activo: necesita gestionar Alumni
+  Activo-->GestionandoServicio
+  Activo-->GestionandoPaquetes
+  Activo --> Inactivo
+  Inactivo --> Activo
 }
+
+
 @enduml
