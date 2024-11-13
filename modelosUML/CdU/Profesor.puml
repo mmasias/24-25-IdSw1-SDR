@@ -1,0 +1,7 @@
+
+@startuml
+
+actor Profesor
+
+Profesor --> (Verificación de contrato y estado de Carga)
+@enduml

@@ -1,0 +1,6 @@
+@startuml
+actor Sistema
+
+Sistema --> (Revisión del Equilibrio de Carga)
+Sistema --> (Asignación Final de Carga Docente)
+@enduml

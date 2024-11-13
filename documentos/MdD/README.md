@@ -9,7 +9,7 @@ Este documento presenta los diagramas principales del modelo de dominio: el **di
 
 | **Diagrama** | **Código Fuente** |
 |--------------|--------------------|
-| ![Diagrama de Clases](/images/modelosUML/MdD/diagramaDeClases.svg) | [Ver código](/modelosUML/diagramaDeClases.puml) |
+| ![Diagrama de Clases](/images/modelosUML/MdD/diagramaDeClases.svg) | [Ver código](/modelosUML/MdD/diagramaDeClases.puml) |
 
 - **Descripción**: 
   - `Profesor` imparte `Asignatura` y elabora `MemoriaAcademica`.
@@ -24,7 +24,7 @@ Este documento presenta los diagramas principales del modelo de dominio: el **di
 
 | **Diagrama** | **Código Fuente** |
 |--------------|--------------------|
-| ![Diagrama de Objetos](/images/modelosUML/MdD/diagramaDeObjetos.svg) | [Ver código](/modelosUML/diagramaDeObjetos.puml) |
+| ![Diagrama de Objetos](/images/modelosUML/MdD/diagramaDeObjetos.svg) | [Ver código](/modelosUML/MdD/diagramaDeObjetos.puml) |
 
 - **Descripción**:
   - `Juan Pérez` imparte `Programación` y elabora `Memoria1`.
@@ -37,14 +37,14 @@ Este documento presenta los diagramas principales del modelo de dominio: el **di
 
 | **Diagrama** | **Código Fuente** |
 |--------------|--------------------|
-| ![Diagrama de Estados](/images/modelosUML/MdD/diagramaDeEstados.svg) | [Ver código](/modelosUML/diagramaDeEstados.puml) |
+| ![Diagrama de Estados](/images/modelosUML/MdD/diagramaDeEstados.svg) | [Ver código](/modelosUML/MdD/diagramaDeEstados.puml) |
 
 - **Descripción**:
 
-  - `Sin_Asignacion`: Profesor sin carga, se hace `Propuesta_Carga`: Genera carga inicial.
-  - `Verificar_Contrato`: Revisa compatibilidad con contrato o `No_Valido`: Rechazo por exceso de carga.
-  - `Revisión_EQ_TC`: Verifica límite EQ TC.
-  - `Revisión_Carga`: Valida carga; pasa a `Aprobada`(Carga validada) o `Ajuste_Carga`(Ajusta carga para cumplir límites).
-  - `Asignada`: Carga final asignada.
+  - Profesor `Sin_Asignacion`. Se hace `Propuesta_Carga` y genera carga inicial.
+  - `Verificar_Contrato` revisa compatibilidad con contrato o `No_Valido` rechaza por exceso de carga.
+  - `Revisión_EQ_TC` verifica límite EQ TC.
+  - `Revisión_Carga` valida carga; pasa a `Aprobada` (Carga adecuada y validada) o `Ajuste_Carga` (Se requieren cambios).
+  - `Asignada` es la carga final asignada.
 
 --- 
