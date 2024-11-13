@@ -39,9 +39,23 @@
 ![](/images/modelosUML/PublicarGD.svg) 
 
 ### 4. Editar Contenido de la Guía
+| **Identificación de actores**      | Profesor |
+|------------------------------------|----------|
+| **Escenario**                      | El profesor accede al sistema para actualizar el contenido de la guía docente de una asignatura, con el fin de reflejar cambios en el temario, bibliografía, o metodologías de evaluación. |
+| **Flujo de eventos principal**     | 1. El profesor inicia sesión en el sistema de gestión de guías.<br> 2. El sistema muestra la lista de guías docentes asignadas al profesor.<br> 3. El profesor selecciona una guía para editar.<br> 4. El sistema despliega el contenido actual de la guía.<br> 5. El profesor realiza las modificaciones necesarias en el contenido.<br> 6. El sistema guarda los cambios realizados y actualiza la guía. |
+| **Flujos alternativos y excepciones** | Si el profesor desea descartar los cambios, el sistema permite cancelar la operación sin guardar.<br> Si se detecta un error en el contenido, el sistema muestra un mensaje indicando el problema antes de guardar. |
+| **Precondiciones**                | El profesor debe tener acceso al sistema y permisos para editar la guía asignada. |
+| **Postcondiciones**               | La guía queda actualizada con los cambios realizados, o se cancela la edición sin que se guarden modificaciones. |
 
 
 ### 5. Aprobar o Rechazar Contenido
+| **Identificación de actores**      | Director de Grado |
+|------------------------------------|-------------------|
+| **Escenario**                      | El Director de Grado revisa el contenido de una guía docente y decide si aprueba o rechaza su publicación, asegurando que el material cumple con los estándares académicos establecidos. |
+| **Flujo de eventos principal**     | 1. El Director de Grado inicia sesión en el sistema de gestión de guías.<br> 2. El sistema muestra la lista de guías docentes pendientes de aprobación.<br> 3. El Director de Grado selecciona una guía para revisar su contenido.<br> 4. El sistema despliega el contenido completo de la guía para su revisión.<br> 5. El Director de Grado elige aprobar el contenido.<br> 6. El sistema marca la guía como aprobada y la prepara para publicación. |
+| **Flujos alternativos y excepciones** | Si el Director de Grado decide rechazar el contenido, el sistema permite registrar comentarios de retroalimentación para el profesor y marca la guía como "Requiere Revisión".<br> Si ocurre un error en la carga del contenido, el sistema notifica al Director de Grado y cancela la operación. |
+| **Precondiciones**                | Acceso al sistema y a las guías pendientes de aprobación. El contenido debe estar completo y listo para revisión. |
+| **Postcondiciones**               | La guía queda aprobada y lista para publicación, o se marca como "Requiere Revisión" con comentarios para ajustes. |
 
 
 ### 6. Supervisar Guías Docentes
