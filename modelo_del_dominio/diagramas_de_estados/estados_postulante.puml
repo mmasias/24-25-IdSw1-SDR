@@ -1,0 +1,27 @@
+@startuml
+
+[*] --> UsuarioPostulante
+
+state UsuarioPostulante {
+  [*] --> AjenoAlSistema
+  AjenoAlSistema --> IdentificandoUsuario : quiere formar parte de PROFER
+  IdentificandoUsuario --> RegistroEnSede : se registra a través de la sede de su país
+  RegistroEnSede --> UsuarioNoBecario
+}
+
+UsuarioPostulante --> NoBecario
+
+state NoBecario {
+  [*] --> Logueado : se loguea
+  Logueado --> RealizaPrueba : se ve su nivel
+  Logueado --> RealizaCapacitacion : se le prepara para el trabajo en PROFER
+  RealizaPrueba --> Resultados
+  RealizaCapacitacion --> Resultados
+  RealizaCapacitacion --> RealizaPrueba : se evalúa su desempeño / evolución
+  state accion <<choice>>
+  Resultados --> accion : pasa a ser becario
+  accion --> Becario : si
+  accion --> RealizaCapacitacion : no
+  Becario --> [*] 
+}
+@enduml

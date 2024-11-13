@@ -11,7 +11,13 @@ object "Administrador : Diego" as administrador {
   Email = "diego.perez@ejemplo.com"
 }
 
-object "Becario : Samuel" as candidato {
+object "Postulante : Samuel" as candidato {
+  Nombre = "Samuel"
+  Apellido = "González"
+  Email = "Samuel.Gonzales@gmail.com"
+}
+
+object "Becario: Samuel" as becario {
   DNI = "12345678"
   Carnet de Estudiante = "BEC2024"
   Dirección = "Calle Falsa 123"
@@ -49,5 +55,8 @@ capacitacion  -d-- videoTutorial : "incluye"
 capacitacion  -d-- documentacion : "incluye"
 
 candidato -d-- requisito : "cumple"
+
+requisito -d-- becario : "se otorga beca
+"
 
 @enduml

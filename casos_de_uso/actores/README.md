@@ -2,5 +2,6 @@
 
 - Administradores de la plataforma
 - Seleccionadores de las sedes
-- Nuevos becarios de Uneatlantico
+- Nuevos postulantes a becarios de Uneatlantico
+- Becarios de Uneatlantico
 - Tiempo

@@ -3,11 +3,12 @@
 title Diagrama de Clases de Plataforma de Gestión de Becas
 
 hide empty members
+hide circle
+
 
 class PLATAFORMA {
   Novus
 }
-
 
 class ESTADÍSTICA {
 }
@@ -36,6 +37,9 @@ class DOCUMENTACIÓN {
 class BECARIO {
 }
 
+class NO_BECARIO {
+}
+
 class REQUISITO
 {
   Aprobar pruebas de selección
@@ -53,6 +57,7 @@ ADMINISTRADOR --> PLATAFORMA : "administra"
 CAPACITACIÓN --> CONTENIDO_CAPACITACIÓN : "contiene"
 CONTENIDO_CAPACITACIÓN <|-- VIDEO_TUTORIAL
 CONTENIDO_CAPACITACIÓN <|-- DOCUMENTACIÓN
-BECARIO -- REQUISITO : cumple
-USUARIO <|-- BECARIO
+NO_BECARIO -- REQUISITO : cumple
+REQUISITO <|-- BECARIO
+USUARIO <|-- NO_BECARIO
 @enduml
