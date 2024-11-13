@@ -28,9 +28,9 @@ Este documento presenta los diagramas principales del modelo de dominio: el **di
 
 - **Descripción**:
 
-- Profesor (Doctor, UNEATLANTICO) imparte Asignatura (IGPS, 1º semestre) y cumple MemoriaAcademica, usando Indicador (IND-2024,valor: 85).
-- Asignatura está vinculada a Titulación (2024-2025, Ingeniería Informática).
-- Profesor tiene Contrato (Indefinido), Experiencia y dedicación CargaAcademica.
+  - `Profesor` (Doctor, UNEATLANTICO) imparte `Asignatura` (IGPS, 1º semestre) y cumple `MemoriaAcademica`, usando `Indicador` (IND-2024,valor: 85).
+  - `Asignatura` está vinculada a `Titulación` (2024-2025, Ingeniería Informática).
+  - `Profesor` tiene `Contrato` (Indefinido), `Experiencia` y dedicación `CargaAcademica`.
 
 ---
 
