@@ -1,4 +1,4 @@
-# Modelo de Clases y Casos de Uso del Sistema de Gestión de Ofertas de Trabajo
+# Casos de Uso del Sistema de Gestión de Ofertas de Trabajo
 
 ## Actores
 - **Administrador**: Responsable de validar las ofertas de trabajo y gestionar la plataforma.
