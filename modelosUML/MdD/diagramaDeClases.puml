@@ -47,14 +47,15 @@ package "UNEATLANTICO" {
         - facultad
     }
 
-    Profesor -- Contrato : tiene
-    Profesor -- Experiencia : tiene
-    Profesor -- CargaAcademica : dedicacion
+    Profesor --> Contrato : tiene
+    Profesor --> Experiencia : tiene
+    Profesor --> CargaAcademica : dedicacion
     Profesor .. Titulacion : asigna
-    Profesor -- Asignatura : imparte
-    Profesor -- MemoriaAcademica : cumple
-    MemoriaAcademica -- Indicador : meta y valores
-    Indicador -- Profesor : extrae datos
-    Titulacion -- Asignatura : define
+    Profesor --> Asignatura : imparte
+    Profesor --> MemoriaAcademica : cumple
+    MemoriaAcademica --> Indicador : meta y valores
+    Indicador --> Profesor : extrae datos
+    Titulacion --> Asignatura : define
+
 }
 @enduml
