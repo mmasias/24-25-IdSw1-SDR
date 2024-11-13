@@ -12,9 +12,9 @@ Este documento presenta los diagramas principales del modelo de dominio: el **di
 | ![Diagrama de Clases](/images/modelosUML/MdD/diagramaDeClases.svg) | [Ver código](/modelosUML/MdD/diagramaDeClases.puml) |
 
 - **Descripción**: 
-  - `Profesor` imparte `Asignatura` y elabora `MemoriaAcademica`.
-  - `Asignatura` está vinculada a `Titulacion` y `PlanEstudios`.
-  - `PlanEstudios` y `Titulacion` pertenecen a un `Departamento`.
+  - `Profesor` imparte `Asignatura` y cumple `MemoriaAcademica`, usando `Indicadores` para metas.
+  - La `Asignatura` está vinculada a una `Titulación`.
+  - `Profesor` tiene `Contrato`, `Experiencia` y dedicación `CargaAcademica`.
 
 ---
 
@@ -27,8 +27,10 @@ Este documento presenta los diagramas principales del modelo de dominio: el **di
 | ![Diagrama de Objetos](/images/modelosUML/MdD/diagramaDeObjetos.svg) | [Ver código](/modelosUML/MdD/diagramaDeObjetos.puml) |
 
 - **Descripción**:
-  - `Juan Pérez` imparte `Programación` y elabora `Memoria1`.
-  - `Programación` pertenece a `Ingeniería Informática` y al `Plan 2024` dentro del `Departamento de Ingeniería Informática`.
+
+- Profesor (Doctor, UNEATLANTICO) imparte Asignatura (IGPS, 1º semestre) y cumple MemoriaAcademica, usando Indicador (IND-2024,valor: 85).
+- Asignatura está vinculada a Titulación (2024-2025, Ingeniería Informática).
+- Profesor tiene Contrato (Indefinido), Experiencia y dedicación CargaAcademica.
 
 ---
 
