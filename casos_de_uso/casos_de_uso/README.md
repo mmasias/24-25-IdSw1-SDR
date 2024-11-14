@@ -2,7 +2,7 @@
 
 ### [Usuarios](/casos_de_uso/casos_de_uso/usuarios)
 
-  - [Actualizar Datos del Usuario]()
+  - [Actualizar Datos del Usuario](/casos_de_uso/casos_de_uso/usuarios/actualizar_datos_usuario/)
 
   - [Listar Datos del Usuario]()
 
