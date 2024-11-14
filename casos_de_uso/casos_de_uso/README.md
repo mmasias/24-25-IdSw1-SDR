@@ -10,7 +10,7 @@
 
   - [Cerrar Sesión]()
 
-### [Becario]()
+### [Postulante]()
 
   - [Realizar test]()
 
@@ -45,15 +45,15 @@
 
   - [Eliminar Test]()
 
-#### [Gestión de Becarios]()
+#### [Gestión de Postulantes]()
 
-  - [Crear Becario]()
+  - [Crear Postulante]()
 
-  - [Editar Becario]()
+  - [Editar Postulante]()
 
-  - [Listar Becarios]()
+  - [Listar Postulantes]()
 
-  - [Eliminar Becario]()
+  - [Eliminar Postulante]()
 
 #### [Gestionar Administradores]()
 
@@ -67,6 +67,6 @@
 
 ## [Tiempo]()
 
-  - [Desactivar Becario]()
+  - [Desactivar Postulante]()
 
   - [Notificar?/Avisar?]()
