@@ -1,0 +1,20 @@
+@startuml visualizacionConfirmacionDocumentos
+left to right direction
+actor "Responsable" as Responsable
+actor "Destinatario" as Destinatario
+
+package "Visualización y Confirmación de Documentos" {
+    usecase "Abrir Mensaje" as VCD1
+    usecase "Abrir Documento" as VCD2
+    usecase "Confirmar Lectura/firmar Documento" as VCD3
+    usecase "Cerrar Visualización de Documento" as VCD4
+    usecase "Cerrar Mensaje" as VCD5
+}
+
+Responsable <|- Destinatario
+Responsable --> VCD1
+Responsable --> VCD2
+Responsable --> VCD3
+Responsable --> VCD4
+Responsable --> VCD5
+@enduml
