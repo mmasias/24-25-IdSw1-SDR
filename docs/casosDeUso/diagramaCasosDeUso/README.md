@@ -7,42 +7,27 @@
 
 # Diagrama Casos de Uso
 
-## Administrador General
+## CRUD de Usuarios
 
-|                                 CRUD de Usuarios                                  |                                CRUD de Categorías                                |
-| :-------------------------------------------------------------------------------: | :------------------------------------------------------------------------------: |
-| ![](./administradorGeneral/manejoUsuario/manejoUsuarios.svg) | ![](./administradorGeneral/manejoCategorias/manejoCategorias.svg) |
+![](./manejoUsuarios/manejoUsuarios.svg)
 
-|                                Envío de Documentos                                 |
-| :--------------------------------------------------------------------------------: |
-| ![](./administradorGeneral/envioDocumentos/envioDocumentos.svg) |
+## CRUD de Categorías
 
----
+![](./manejoCategorias/manejoCategorias.svg)
 
-## Responsable
+## Envío de Documentos
 
-|                              CRUD de Destinatarios                               |                                CRUD de Categorías                                |
-| :-------------------------------------------------------------------------------: | :------------------------------------------------------------------------------: |
-| ![](./responsable/manejoDestinatarios/manejoDestinatarios.svg) | ![](./responsable/manejoCategorias/manejoCategorias.svg) |
+![](./envioDocumentos/envioDocumentos.svg)
 
-|                                Envío de Documentos                                 |                     Visualización y Confirmación de Documentos                    |
-| :--------------------------------------------------------------------------------: | :------------------------------------------------------------------------------: |
-| ![](./responsable/envioDocumentos/envioDocumentos.svg) | ![](./responsable/visualizacionConfirmacionDocumentos/visualizacionConfirmacionDocumentos.svg) |
+## Visualización y Confirmación de Documentos
 
----
+![](./visualizacionConfirmacionDocumentos/visualizacionConfirmacionDocumentos.svg)
 
-## Destinatario
+## Manejo de sesión
 
-|                          Visualización y Confirmación de Documentos                        |
-| :---------------------------------------------------------------------------------------: |
-| ![](./destinatario/visualizacionConfirmacionDocumentos/visualizacionConfirmacionDocumentos.svg) |
+![](./manejoSesion/manejoSesion.svg)
 
----
+## Manejo de notificaciones
 
-## Tiempo
+![](./tiempo/manejoNotificaciones/manejoNotificaciones.svg)
 
-|                          Recordatorios                        |
-| :----------------------------------------------------------: |
-| ![](./tiempo/manejoNotificaciones/manejoNotificaciones.svg) |
-
----
