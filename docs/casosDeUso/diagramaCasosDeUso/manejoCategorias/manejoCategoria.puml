@@ -1,0 +1,18 @@
+@startuml manejoCategoria
+left to right direction
+actor "Responsable" as Responsable
+actor "Administrador General" as AdminGeneral
+
+package "CRUD de Categorías" {
+    usecase "Crear Categoría" as CC1
+    usecase "Ver Categoría" as CC2
+    usecase "Actualizar Categoría" as CC3
+    usecase "Borrar Categoría" as CC4
+}
+
+AdminGeneral --|> Responsable
+Responsable --> CC1
+Responsable --> CC2
+Responsable --> CC3
+Responsable --> CC4
+@enduml
