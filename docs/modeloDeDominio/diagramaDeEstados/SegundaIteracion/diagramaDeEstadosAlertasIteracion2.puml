@@ -1,0 +1,20 @@
+@startuml diagramaDeEstados
+
+[*] --> VerEstadoMensaje
+
+
+VerEstadoMensaje --> AbrirAlertas
+
+AbrirAlertas --> EnviarAlertaDeConfirmacion
+AbrirAlertas --> ConfigurarAlerta
+
+EnviarAlertaDeConfirmacion --> AbrirAlertas
+ConfigurarAlerta --> AbrirAlertas
+
+AbrirAlertas --> VerEstadoMensaje
+
+VerEstadoMensaje --> CerrarMensaje
+
+CerrarMensaje --> [*]
+
+@enduml
