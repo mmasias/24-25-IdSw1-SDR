@@ -6,6 +6,6 @@
 </div>
 
 
-## Manejo de Sesión por parte del Administrador General
+## Visualización y Confirmación de Documentos
 
-![Diagrama de Manejo de Sesión](./manejoSesionAdministradorGeneral.svg)
+![Diagrama de Manejo de Usuarios](./visualizacionConfirmacionDocumentos.svg)

@@ -6,6 +6,5 @@
 </div>
 
 
-## Manejo de Categorias por parte del Responsable
-
+## Manejo de Categorias
 ![Diagrama de Manejo de Usuarios](./manejoCategorias.svg)

@@ -6,6 +6,6 @@
 </div>
 
 
-## Manejo de Sesión por parte del Destinatario
+## Envío de documentos
 
-![Diagrama de Manejo de Sesión](./manejoSesionDestinatario.svg)
+![Diagrama de Manejo de Usuarios](./envioDocumentos.svg) 

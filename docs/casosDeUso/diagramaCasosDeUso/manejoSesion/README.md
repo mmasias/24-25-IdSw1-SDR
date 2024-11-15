@@ -6,6 +6,6 @@
 </div>
 
 
-## Manejo de Destinatarios por parte del Responsable
+## Manejo de Sesión
 
-![Diagrama de Manejo de Usuarios](./manejoDestinatarios.svg)
+![Diagrama de Manejo de Sesión](./manejoSesion.svg)
