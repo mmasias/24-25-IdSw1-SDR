@@ -17,6 +17,10 @@ MENU_PRINCIPAL --> MENU_RUTINAS : Usar Rutinas
 MENU_PRINCIPAL --> MENU_RETOS : Participar en Retos/Actividades
 MENU_PRINCIPAL --> MENU_PRINCIPAL : Administrar Usuarios
 MENU_PRINCIPAL --> MENU_PRINCIPAL : Configurar Sistema
+MENU_RETOS --> MENU_PRINCIPAL : Volver al inicio
+MENU_RUTINAS --> MENU_PRINCIPAL : Volver al inicio
+MENU_CLASE --> MENU_PRINCIPAL : Volver al inicio
+
 
 
 @enduml
