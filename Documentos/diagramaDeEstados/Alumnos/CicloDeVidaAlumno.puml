@@ -9,8 +9,9 @@ EnClaseTeorica --> EnEvaluacion : Completar teoría
 EnClasePractica --> Rutina : Recibir rutina
 
 state Rutina {
-    AsignandoRutina --> RutinaNoAsignada : Rutina no asignada
-    AsignandoRutina --> RutinaAsignada : Rutina asignada
+    EsperandoRutina --> RutinaNoAsignada : Rutina no asignada
+    EsperandoRutina --> RutinaAsignada : Rutina asignada
+    RutinaNoAsignada --> EsperandoRutina
     RutinaAsignada --> EjecutandoRutina : Comenzar rutina
     EjecutandoRutina --> EjecutandoRutina : Continuar rutina
     EjecutandoRutina --> RutinaTerminada : Rutina completada
@@ -19,7 +20,7 @@ state Rutina {
 Rutina --> EnEvaluacion : Completar prácticas
 Rutina --> EnClaseTeorica : Refuerzo teórico
 
-EnEvaluacion --> FinDelCurso : Cierre de asignatura
+EnEvaluacion --> FinDelCurso : Es evaluado
 FinDelCurso --> [*] : Terminar curso
 
 @enduml
