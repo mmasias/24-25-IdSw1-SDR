@@ -25,4 +25,4 @@
 ### Ciclo de Vida del Profesor
 | Diagrama | Código Fuente |
 |----------|---------------|
-| ![Ciclo de Vida del Profesor](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/c7c3e118a4d97d80a19f7ac6b6b112ca097afc91/Documentos/Imagenes/DiagramaEstados/cicloDeVidaProfesor.svg)| [Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/69c4a1398b4af19e9d88b2998174c6c785f520b7/Documentos/diagramaDeEstados/Profesor/cicloDeVidaProfesor.puml) |
+| ![Ciclo de Vida del Profesor](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/a9004d72dbf23a9df98b2a1ea573d06b7d2f797b/Documentos/Imagenes/DiagramaEstados/cicloDeVidaProfesor.svg)| [Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/69c4a1398b4af19e9d88b2998174c6c785f520b7/Documentos/diagramaDeEstados/Profesor/cicloDeVidaProfesor.puml) |
