@@ -20,7 +20,7 @@
 ### Proceso de inscripción Estudiante
 | Diagrama | Código Fuente |
 |----------|---------------|
-| ![Proceso de inscripción Estudiante](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/a0cf57c736578d4bc465faeb1510e5e1f0a3e1d1/Documentos/diagramaDeEstados/Alumnos/ProcesoDeInscripcionAlumno.puml)| [Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/a0cf57c736578d4bc465faeb1510e5e1f0a3e1d1/Documentos/Imagenes/DiagramaEstados/procesoDeInscripcionAlumno.svg) |
+| ![Proceso de inscripción Estudiante](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/a0cf57c736578d4bc465faeb1510e5e1f0a3e1d1/Documentos/Imagenes/DiagramaEstados/procesoDeInscripcionAlumno.svg)| [Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/a0cf57c736578d4bc465faeb1510e5e1f0a3e1d1/Documentos/diagramaDeEstados/Alumnos/ProcesoDeInscripcionAlumno.puml) |
 
 ### Ciclo de Vida del Profesor
 | Diagrama | Código Fuente |
