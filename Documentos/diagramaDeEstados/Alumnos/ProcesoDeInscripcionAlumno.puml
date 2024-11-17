@@ -1,0 +1,12 @@
+@startuml
+hide empty description
+
+[*] --> NoInscrito : no registrado
+NoInscrito --> InscripcionPendiente : solicitar inscripción
+InscripcionPendiente --> Inscrito : plazas disponibles
+InscripcionPendiente --> Rechazado : sin plazas disponibles
+Rechazado --> NoInscrito : reintentar inscripción
+
+Inscrito --> [*]
+
+@enduml
