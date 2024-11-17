@@ -49,17 +49,17 @@ El flujo del sistema comienza con el **Usuario No Registrado**, quien debe regis
 # Diagrama de Contexto del Administrador
 | Diagrama | Código Fuente |
 |----------|---------------|
-| ![Modelo de Contexto Alumno](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/ModeloContextoAdministrador.svg) | [Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/ModeloDeContexto/AdministradorContexto.puml) |
+| ![Modelo de Contexto Alumno](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/AdminContexto.svg) | [Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/ModeloDeContexto/AdministradorContexto.puml) |
 
 # Diagrama de Contexto del Alumno
 | Diagrama | Código Fuente |
 |----------|---------------|
-| ![Modelo de Contexto Alumno](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/ModeloContextoAlumno.svg) | [Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/ModeloDeContexto/AlumnosContexto.puml) |
+| ![Modelo de Contexto Alumno](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/AlumnoContexto.svg) | [Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/ModeloDeContexto/AlumnosContexto.puml) |
 
 # Diagrama de Contexto del Profesor
 | Diagrama | Código Fuente |
 |----------|---------------|
-| ![Profesores](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/ModeloContextoProfesor.png) | [Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/ModeloDeContexto/ProfesorContexto.puml) |
+| ![Profesores](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/ProfesorContexto.svg) | [Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/ModeloDeContexto/ProfesorContexto.puml) |
 
 # Diagrama de Contexto del Usuario No Registrado
 | Diagrama | Código Fuente |
