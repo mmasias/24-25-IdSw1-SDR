@@ -1,11 +1,15 @@
 @startuml
-
 left to right direction
 
 actor "Usuario No Registrado" as UsuarioNoRegistrado
-actor Profesor
+actor Usuario
 actor Alumno
+actor Profesor
 actor Admin
+
+Usuario <|-- Alumno
+Usuario <|-- Profesor
+Usuario <|-- Admin
 
 usecase "Registrarse" as UC_Registrarse
 usecase "Iniciar Sesión" as UC_IniciarSesion
@@ -16,6 +20,7 @@ usecase "Impartir Asignatura" as UC_ImpartirAsignatura
 usecase "Gestionar Alumnos" as UC_GestionarAlumnos
 usecase "Administrar Usuarios" as UC_AdministrarUsuarios
 usecase "Configurar Sistema" as UC_ConfigurarSistema
+usecase "Volver al inicio" as UC_VolverInicio
 
 ' Casos de uso adicionales para Profesores
 usecase "Calificar Alumnos" as UC_CalificarAlumnos
@@ -28,15 +33,15 @@ usecase "Participar en Retos/Actividades" as UC_ParticiparRetos
 
 UsuarioNoRegistrado --> UC_Registrarse
 
-Alumno --> UC_IniciarSesion
-Alumno --> UC_CerrarSesion
+Usuario --> UC_IniciarSesion
+Usuario --> UC_CerrarSesion
+Usuario --> UC_VolverInicio
+
 Alumno --> UC_VerInfoAsignaturas
 Alumno --> UC_ConsultarCalificaciones
 Alumno --> UC_UsarRutinas
 Alumno --> UC_ParticiparRetos
 
-Profesor --> UC_IniciarSesion
-Profesor --> UC_CerrarSesion
 Profesor --> UC_VerInfoAsignaturas
 Profesor --> UC_ImpartirAsignatura
 Profesor --> UC_GestionarAlumnos
@@ -44,10 +49,7 @@ Profesor --> UC_CalificarAlumnos
 Profesor --> UC_AsignarRutinas
 Profesor --> UC_EvaluarProgreso
 
-Admin --> UC_IniciarSesion
-Admin --> UC_CerrarSesion
 Admin --> UC_AdministrarUsuarios
 Admin --> UC_ConfigurarSistema
 
 @enduml
-
