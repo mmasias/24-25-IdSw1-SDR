@@ -1,28 +1,25 @@
 @startuml
-
 hide empty description
 
-[*] --> Inscrito : inscribir en la asignatura
-Inscrito --> EnClaseTeorica : asistir a clases teóricas
-Inscrito --> EnClasePractica : asistir a clases prácticas
+[*] --> Inscrito : Inscribirse en asignatura
+Inscrito --> EnClaseTeorica : Asistir a clases teóricas
+Inscrito --> EnClasePractica : Asistir a clases prácticas
 
-EnClaseTeorica --> ValoracionFinal : evaluar
-EnClasePractica --> AsignarRutina : enseñar rutina
+EnClaseTeorica --> EnEvaluacion : Completar teoría
+EnClasePractica --> Rutina : Recibir rutina
 
-State AsignarRutina {
-    Rutina --> RutinaNoAsignada : asignar rutina
-    Rutina --> RutinaAsignada : no asignar rutina
-    RutinaAsignada --> EjecutandoRutina : ejecutar rutina
-    EjecutandoRutina --> EjecutandoRutina
-    EjecutandoRutina --> Terminada : acabar rutina
-    
-  }
+state Rutina {
+    AsignandoRutina --> RutinaNoAsignada : Rutina no asignada
+    AsignandoRutina --> RutinaAsignada : Rutina asignada
+    RutinaAsignada --> EjecutandoRutina : Comenzar rutina
+    EjecutandoRutina --> EjecutandoRutina : Continuar rutina
+    EjecutandoRutina --> RutinaTerminada : Rutina completada
+}
 
-AsignarRutina --> ValoracionFinal
-AsignarRutina --> EnClaseTeorica : revisar
+Rutina --> EnEvaluacion : Completar prácticas
+Rutina --> EnClaseTeorica : Refuerzo teórico
 
-ValoracionFinal --> FinDelCurso : finalizar la asignatura
-
-FinDelCurso --> [*] : terminar el curso
+EnEvaluacion --> FinDelCurso : Cierre de asignatura
+FinDelCurso --> [*] : Terminar curso
 
 @enduml
