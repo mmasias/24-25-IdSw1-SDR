@@ -2,7 +2,7 @@
 
 | Diagrama | Código Fuente |
 |----------|---------------|
-| ![Actores](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/actores_evas.svg) | [Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Actores/Actores.puml) |
+| ![Actores](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/Actores.svg) | [Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Actores/Actores.puml) |
 
 # Encontrar casos de uso 
 
