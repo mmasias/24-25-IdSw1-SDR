@@ -5,26 +5,28 @@ RECTANGLE(PROFESOR)
 RECTANGLE(MENU_PRINCIPAL)
 RECTANGLE(MENU_CLASE)
 RECTANGLE(MENU_RUTINAS)
-RECTANGLE(ASIGNATURA)
+RECTANGLE(MENU_ASIGNATURA)
 RECTANGLE(MENU_RETOS)
 
-' Desde el Menú Principal 
 PROFESOR --> MENU_PRINCIPAL : Iniciar Sesión
 MENU_PRINCIPAL --> PROFESOR : Cerrar Sesión
-MENU_PRINCIPAL --> ASIGNATURA : Publicar Información de Asignatura
+MENU_PRINCIPAL --> MENU_ASIGNATURA : Publicar Información de Asignatura
 MENU_PRINCIPAL --> MENU_RUTINAS : Gestionar Rutinas
 MENU_PRINCIPAL --> MENU_RETOS : Publicar Retos/Actividades
 MENU_PRINCIPAL --> MENU_CLASE : Acceder a Clases
 MENU_PRINCIPAL --> MENU_PRINCIPAL : Administrar Alumnos/Rutias/Retos
 
-' Desde el Menú Clase
-MENU_CLASE --> ASIGNATURA : Impartir Asignatura
+MENU_CLASE --> MENU_ASIGNATURA : Impartir Asignatura
 MENU_CLASE --> MENU_CLASE : Gestionar Alumnos
-MENU_CLASE --> ASIGNATURA : Calificar Alumnos
+MENU_CLASE --> MENU_ASIGNATURA : Calificar Alumnos
 
-' Desde el Menú Rutinas
 MENU_RUTINAS --> MENU_RUTINAS : Asignar Rutinas
 
-' Desde el Menú Retos
 MENU_RETOS --> MENU_RETOS : Validar Retos
+
+MENU_RETOS --> MENU_PRINCIPAL : Volver al inicio
+MENU_RUTINAS --> MENU_PRINCIPAL : Volver al inicio
+MENU_CLASE --> MENU_PRINCIPAL : Volver al inicio
+MENU_ASIGNATURA --> MENU_PRINCIPAL : Volver al inicio
+
 @enduml
