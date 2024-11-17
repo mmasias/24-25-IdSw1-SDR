@@ -1,11 +1,16 @@
 @startuml
 
 actor "Usuario No Registrado" as UsuarioNoRegistrado
+actor Usuario
 actor Profesor
 actor Alumno
 actor Admin
 
-UsuarioNoRegistrado <|-- Alumno : necesita registrarse para ser Alumno
+UsuarioNoRegistrado <|-- Usuario : necesita registrarse para ser Usuario
+Usuario <|-- Alumno : rol de Alumno
+Usuario <|-- Profesor : rol de Profesor
+Usuario <|-- Admin : rol de Admin
+
 Admin <|-- Profesor : tiene permisos avanzados
 Admin <|-- Alumno : acceso limitado en comparación al Admin
 
@@ -13,6 +18,12 @@ note right of UsuarioNoRegistrado
   **Usuario No Registrado**: 
   Debe registrarse para acceder a 
   cualquier funcionalidad del sistema.
+end note
+
+note right of Usuario
+  **Usuario**: 
+  Representa a cualquier usuario del sistema
+  con roles específicos como Alumno, Profesor o Admin.
 end note
 
 note right of Alumno
