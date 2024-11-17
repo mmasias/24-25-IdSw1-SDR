@@ -2,13 +2,13 @@
 
 | Diagrama | Código Fuente |
 |----------|---------------|
-| ![Actores](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/Actores.svg) | [Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Actores/Actores.puml) |
+| ![Actores](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/Actores/Actores.svg) | [Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Actores/Actores.puml) |
 
 # Encontrar casos de uso 
 
 | Diagrama | Código Fuente |
 |----------|---------------|
-| ![Casos de uso](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/CasosDeUso.svg) | [Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/CasosUso/CasosUso.puml) |
+| ![Casos de uso](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/CasosDeUso/CasosDeUso.svg) | [Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/CasosUso/CasosUso.puml) |
 
 # Modelo de Casos de Uso como un Todo
 
@@ -49,20 +49,20 @@ El flujo del sistema comienza con el **Usuario No Registrado**, quien debe regis
 # Diagrama de Contexto del Administrador
 | Diagrama | Código Fuente |
 |----------|---------------|
-| ![Modelo de Contexto Alumno](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/AdminContexto.svg) | [Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/ModeloDeContexto/AdministradorContexto.puml) |
+| ![Modelo de Contexto Alumno](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/DiagramasContexto/AdminContexto.svg) | [Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/ModeloDeContexto/AdministradorContexto.puml) |
 
 # Diagrama de Contexto del Alumno
 | Diagrama | Código Fuente |
 |----------|---------------|
-| ![Modelo de Contexto Alumno](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/AlumnoContexto.svg) | [Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/ModeloDeContexto/AlumnosContexto.puml) |
+| ![Modelo de Contexto Alumno](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/DiagramasContexto/AlumnoContexto.svg) | [Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/ModeloDeContexto/AlumnosContexto.puml) |
 
 # Diagrama de Contexto del Profesor
 | Diagrama | Código Fuente |
 |----------|---------------|
-| ![Profesores](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/ProfesorContexto.svg) | [Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/ModeloDeContexto/ProfesorContexto.puml) |
+| ![Profesores](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/DiagramasContexto/ProfesorContexto.svg) | [Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/ModeloDeContexto/ProfesorContexto.puml) |
 
 # Diagrama de Contexto del Usuario No Registrado
 | Diagrama | Código Fuente |
 |----------|---------------|
-| ![Usuario No Registrado](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/UsuarioNoRegistradoContexto.svg) | [Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/ModeloDeContexto/UsuarioNoRegistradoContexto.puml) |
+| ![Usuario No Registrado](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/DiagramasContexto/UsuarioNoRegistradoContexto.svg) | [Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/ModeloDeContexto/UsuarioNoRegistradoContexto.puml) |
 
