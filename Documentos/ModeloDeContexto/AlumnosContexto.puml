@@ -1,22 +1,27 @@
 @startuml AlumnosCasosDeUso
 !define RECTANGLE(x) rectangle x
 
-RECTANGLE(REGISTRADO)
+RECTANGLE(ALUMNOS)
 RECTANGLE(MENU_PRINCIPAL)
 RECTANGLE(MENU_CLASE)
 RECTANGLE(MENU_RUTINAS)
-RECTANGLE(ASIGNATURA)
+RECTANGLE(MENU_ASIGNATURA)
 RECTANGLE(MENU_RETOS)
 
 
-REGISTRADO --> MENU_PRINCIPAL : Iniciar Sesión
-MENU_PRINCIPAL --> REGISTRADO : Cerrar Sesión
-MENU_PRINCIPAL --> ASIGNATURA : Ver Información de Asignatura
+ALUMNOS --> MENU_PRINCIPAL : Iniciar Sesión
+MENU_PRINCIPAL --> ALUMNOS : Cerrar Sesión
+MENU_PRINCIPAL --> MENU_ASIGNATURA : Ver Información de Asignatura
 MENU_PRINCIPAL --> MENU_RUTINAS : Usar Rutinas
 MENU_PRINCIPAL --> MENU_RETOS : Participar en Retos/Actividades
 
-' Desde el Menú Principal se puede ir al Menú Clase
 MENU_PRINCIPAL --> MENU_CLASE : Acceder a Clases
 MENU_CLASE --> MENU_CLASE : Consultar calificaciones
+
+MENU_CLASE --> MENU_PRINCIPAL : Volver incio
+MENU_ASIGNATURA --> MENU_PRINCIPAL : Volver incio
+MENU_RETOS --> MENU_PRINCIPAL : Volver incio
+MENU_RUTINAS --> MENU_PRINCIPAL : Volver incio
+
 
 @enduml
