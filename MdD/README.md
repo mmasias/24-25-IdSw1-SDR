@@ -30,4 +30,4 @@
 ### Ciclo de Vida del Administrador
 | Diagrama | Código Fuente |
 |----------|---------------|
-| ![Ciclo de Vida del Profesor](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/78a460c7def2fd1e68340a14dd52388535f0bc66/Documentos/Imagenes/DiagramaEstados/cicloDeVidaAdministrador.svg)| [Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/69c4a1398b4af19e9d88b2998174c6c785f520b7/Documentos/diagramaDeEstados/Profesor/cicloDeVidaAdministrador.puml) |
+| ![Ciclo de Vida del Profesor](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/78a460c7def2fd1e68340a14dd52388535f0bc66/Documentos/Imagenes/DiagramaEstados/cicloDeVidaAdministrador.svg)| [Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/diagramaDeEstados/Administrador/cicloDeVidaAdministrador.puml) |
