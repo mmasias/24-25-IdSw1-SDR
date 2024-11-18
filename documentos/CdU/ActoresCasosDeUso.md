@@ -10,7 +10,8 @@
 
 ## Casos de Uso
 
-   Note: Los diagramas ya se cambian con respecto a la confirmación de los casos de uso
+   > [!NOTE]
+   > Los diagramas ya se cambian con respecto a la confirmación de los casos de uso
 
 1. **CRUD con respecto al profesor**  
    - Corresponde a la creación de un profesor nuevo, actualizar a uno existente como podría ser la carga académica, eliminar un profesor si le han despedido y ver las estadísticas de un profesor (correspondiente al read)
