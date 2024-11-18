@@ -1,0 +1,34 @@
+@startuml
+hide empty description
+
+[*] --> InicioSesion : Administrador inicia sesión
+
+state "Gestión de Usuarios" as GestionUsuarios {
+    [*] --> CrearUsuario : Agregar un nuevo usuario
+    CrearUsuario --> ModificarUsuario : Editar información
+    ModificarUsuario --> EliminarUsuario : Eliminar usuario
+    EliminarUsuario --> [*] : Salir del módulo
+}
+
+state "Gestión de Asignaturas" as GestionAsignaturas {
+    [*] --> CrearAsignatura : Registrar nueva asignatura
+    CrearAsignatura --> ModificarAsignatura : Actualizar detalles
+    ModificarAsignatura --> EliminarAsignatura : Eliminar asignatura
+    EliminarAsignatura --> [*] : Salir del módulo
+}
+
+state "Gestión de Informes" as GestionInformes {
+    [*] --> GenerarInforme : Crear un nuevo informe
+    GenerarInforme --> [*] : Informe listo
+}
+
+InicioSesion --> GestionUsuarios : Administrar usuarios
+InicioSesion --> GestionAsignaturas : Administrar asignaturas
+InicioSesion --> GestionInformes : Consultar informes
+GestionUsuarios --> InicioSesion : Regresar al menú principal
+GestionAsignaturas --> InicioSesion : Regresar al menú principal
+GestionInformes --> InicioSesion : Regresar al menú principal
+
+InicioSesion --> CerrarSesion : Cerrar sesión
+CerrarSesion --> [*] : Finalizar
+@enduml
