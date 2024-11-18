@@ -1,8 +1,7 @@
 @startuml
 hide empty description
 
-[*] --> SinAsignar : inicio del periodo académico
-SinAsignar --> Asignado : asignar asignaturas
+[*] --> Asignado : inicio del periodo académico
 
 Asignado --> PreparandoClases : preparar materiales didácticos
 PreparandoClases --> ImpartiendoClasesTeoricas : iniciar clases teóricas
@@ -15,7 +14,6 @@ ImpartiendoClasesPracticas --> ImpartiendoClasesPracticas : continuar sesiones p
 ImpartiendoClasesPracticas --> Evaluando : finalizar clases prácticas y calificar
 
 Evaluando --> FinDePeriodo : consolidar calificaciones
-FinDePeriodo --> SinAsignar : concluir periodo académico
-SinAsignar --> [*] : cierre del sistema
+FinDePeriodo --> [*] : acaba el periodo escolar
 
 @enduml
