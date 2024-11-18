@@ -17,17 +17,17 @@ state "Gestión de Asignaturas" as GestionAsignaturas {
     EliminarAsignatura --> [*] : Salir del módulo
 }
 
-state "Gestión de Informes" as GestionInformes {
-    [*] --> GenerarInforme : Crear un nuevo informe
-    GenerarInforme --> [*] : Informe listo
+state "Gestión de Retos" as GestionRetos {
+    [*] --> GenerarRetos : Crear un nuevo Reto
+    GenerarRetos --> [*] : Reto listo
 }
 
 InicioSesion --> GestionUsuarios : Administrar usuarios
 InicioSesion --> GestionAsignaturas : Administrar asignaturas
-InicioSesion --> GestionInformes : Consultar informes
+InicioSesion --> GestionRetos : Consultar aplicacion
 GestionUsuarios --> InicioSesion : Regresar al menú principal
 GestionAsignaturas --> InicioSesion : Regresar al menú principal
-GestionInformes --> InicioSesion : Regresar al menú principal
+GestionRetos --> InicioSesion : Regresar al menú principal
 
 InicioSesion --> CerrarSesion : Cerrar sesión
 CerrarSesion --> [*] : Finalizar
