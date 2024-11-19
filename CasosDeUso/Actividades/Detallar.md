@@ -59,9 +59,23 @@
 
 
 ### 6. Supervisar Guías Docentes
+| **Identificación de actores**      | Técnico de Calidad |
+|------------------------------------|--------------------|
+| **Escenario**                      | El Técnico de Calidad revisa las guías docentes para confirmar que cumplen con los estándares de calidad y uniformidad de la institución antes de una auditoría. |
+| **Flujo de eventos principal**     | 1. El Técnico de Calidad inicia sesión en el sistema de supervisión de guías.<br> 2. El sistema muestra la lista de guías docentes activas para revisión.<br> 3. El Técnico de Calidad selecciona una guía para supervisar.<br> 4. El sistema despliega la guía y permite revisar el formato y el contenido.<br> 5. El Técnico de Calidad verifica que el contenido cumple con los estándares de calidad.<br> 6. El sistema marca la guía como “Revisada” en el registro de calidad. |
+| **Flujos alternativos y excepciones** | Si el Técnico de Calidad identifica un incumplimiento en los estándares, el sistema permite registrar observaciones y marcar la guía como "Requiere Correcciones". |
+| **Precondiciones**                | El técnico debe tener acceso al sistema y a las guías pendientes de supervisión. |
+| **Postcondiciones**               | La guía queda marcada como "Revisada" o "Requiere Correcciones", según corresponda. |
 
 
 ### 7. Generar Nueva Versión de la Guía
+| **Identificación de actores**      | Técnico de Calidad |
+|------------------------------------|--------------------|
+| **Escenario**                      | El Técnico de Calidad solicita al sistema la creación de una nueva versión de una guía docente para registrar cambios recientes en el contenido y mantener un historial de versiones. |
+| **Flujo de eventos principal**     | 1. El Técnico de Calidad accede al sistema de gestión de versiones de guías.<br> 2. El sistema muestra la lista de guías con opción de crear nueva versión.<br> 3. El Técnico de Calidad selecciona una guía y solicita generar una nueva versión.<br> 4. El sistema crea una nueva versión de la guía, basada en el contenido existente.<br> 5. El Técnico de Calidad confirma la creación de la nueva versión.<br> 6. El sistema guarda la nueva versión y la marca como la versión activa. |
+| **Flujos alternativos y excepciones** | Si ocurre un error durante la generación de la nueva versión, el sistema notifica al Técnico de Calidad y permite reintentar o cancelar la operación. |
+| **Precondiciones**                | El técnico debe tener acceso al sistema de gestión de versiones y permisos para generar nuevas versiones de las guías. |
+| **Postcondiciones**               | Una nueva versión de la guía queda registrada y disponible para futuras ediciones o revisiones. |
 
 
 ### 8. Utilizar Plantilla Multititulación
