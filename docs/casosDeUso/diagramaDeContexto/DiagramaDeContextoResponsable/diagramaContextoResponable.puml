@@ -1,0 +1,172 @@
+@startuml
+
+state "MENU_PRINCIPAL" as Menu
+state "LISTANDO_MENSAJES" as ListandoMensajes
+state "CREANDO_MENSAJE" as CreandoMensaje
+state "LEYENDO_MENSAJE" as LeyendoMensaje
+state "LEYENDO_DOCUMENTO" as LeyendoDocumento
+state "CREANDO_ENVIO" as CreandoEnvio
+state "CATEGORIAS" as Categorias
+state "CREANDO_CATEGORIA" as CreandoCategoria
+state "ACTUALIZANDO_CATEGORIA" as ActualizandoCategoria
+state "BORRARANDO_CATEGORIA" as BorrandoCategoria
+state "USUARIOS" as Usuarios
+state "ACTUALIZANDO_USUARIO" as ActualizandoUsuario
+state "CREANDO_USUARIO" as CreandoUsuario
+state "BORRANDO_USUARIO" as BorrandoUsuario
+
+[*] --> Menu
+    note on link
+        Responsable 
+        inicia sesión
+    end note
+
+Menu -> [*]
+    note on link
+        Responsable 
+        cierra sesión
+    end note
+
+Menu --> ListandoMensajes
+    note on link
+        Listar mensajes
+    end note
+
+ListandoMensajes --> LeyendoMensaje
+    note on link
+        Abrir mensaje
+    end note
+
+LeyendoMensaje --> LeyendoDocumento
+    note on link
+        Abrir documento
+    end note
+
+LeyendoDocumento --> LeyendoDocumento
+    note on link
+        Confirmar Lectura
+    end note
+
+LeyendoDocumento --> LeyendoMensaje
+    note on link
+        Cerrar visualización
+    end note
+
+LeyendoMensaje --> ListandoMensajes
+    note on link
+        Cerrar mensaje
+    end note
+
+ListandoMensajes --> CreandoMensaje
+    note on link
+        Crear mensaje
+    end note
+
+CreandoMensaje --> CreandoEnvio
+    note on link
+        Crear envio
+    end note
+
+CreandoEnvio --> CreandoMensaje
+    note on link
+        pending...
+    end note
+
+CreandoMensaje --> ListandoMensajes
+    note on link
+        listar mensajes
+    end note
+
+ListandoMensajes --> Categorias
+    note on link
+        Ver categorias
+    end note
+
+Categorias --> CreandoCategoria
+    note on link
+        Crear nueva 
+        categoria
+    end note
+
+CreandoCategoria --> Categorias
+    note on link
+        Listar 
+        categorias
+    end note
+
+Categorias --> ActualizandoCategoria
+    note on link
+        Actualizar una 
+        categoria
+    end note
+
+ActualizandoCategoria --> Categorias
+    note on link
+        Listar 
+        categorias
+    end note
+
+Categorias --> BorrandoCategoria
+    note on link
+        Borrar una 
+        categoria
+    end note
+
+BorrandoCategoria --> Categorias
+    note on link
+        Listar 
+        categorias
+    end note
+
+Categorias --> ListandoMensajes
+    note on link
+        Listar mensajes
+    end note
+
+ListandoMensajes --> Usuarios
+    note on link
+        Ver usuarios
+    end note
+
+Usuarios --> CreandoUsuario
+    note on link
+        Crear nuevo
+        usuario
+    end note
+
+CreandoUsuario --> Usuarios
+    note on link
+        Listar
+        usuarios
+    end note
+
+Usuarios --> ActualizandoUsuario
+    note on link
+        Actualizar un
+        usuario
+    end note
+
+ActualizandoUsuario --> Usuarios
+    note on link
+        Listar
+        usuarios
+    end note
+
+Usuarios --> BorrandoUsuario
+    note on link
+        Borrar un
+        usuario
+    end note
+
+BorrandoUsuario --> Usuarios
+    note on link
+        Listar
+        usuarios
+    end note
+
+Usuarios --> ListandoMensajes
+    note on link
+        Listar mensajes
+    end note
+
+@enduml
