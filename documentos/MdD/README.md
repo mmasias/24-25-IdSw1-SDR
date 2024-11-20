@@ -1,4 +1,8 @@
+<div align="center">
+
 # 📊 Modelo de Dominio
+
+</div>
 
 Este documento presenta los diagramas principales del modelo de dominio: el **diagrama de clases**, **diagrama de objetos**, y **diagrama de estados**. Para cada uno, se muestra una representación visual en SVG y un enlace al código fuente en formato `.puml`.
 
