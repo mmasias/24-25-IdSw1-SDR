@@ -1,11 +1,8 @@
 @startuml
 
 state "NO_AUTENTICADO" as NoAuth
-state "MENU_PRINCIPAL" as Menu
 state "MENU_USUARIOS" as Menu_usuarios
 state "MENU_ADMINISTRADOR" as Menu_administrador
-state "TEST" as Test
-state "CAPACITACIÓN" as Capacitación
 state "CREAR_USUARIO" as Crear_usuario
 state "VER_USUARIO" as Ver_usuario
 state "EDITAR_USUARIO" as Editar_usuario
@@ -23,41 +20,6 @@ state "CONSULTAR_ESTADÍSTICAS" as Consultar_estadísticas
 
 
 [*] --> NoAuth
-
-NoAuth --> Menu
-    note on link
-        Iniciar sesión
-    end note
-
-Menu --> NoAuth
-    note on link
-        Cerrar sesión
-    end note
-
-Menu --> Test
-    note on link
-        Realizar test
-    end note
-
-Menu --> Capacitación
-    note on link
-        Realizar capacitación
-    end note
-
-Capacitación --> Menu
-    note on link
-        Finalizar capacitación
-    end note
-
-Capacitación --> Capacitación
-    note on link
-        Realizar duda
-    end note
-
-Test --> Menu
-    note on link
-        Finalizar test
-    end note
 
 NoAuth --> Menu_usuarios
     note on link

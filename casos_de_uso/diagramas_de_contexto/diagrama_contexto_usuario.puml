@@ -32,11 +32,6 @@ Capacitación --> Menu
         Finalizar capacitación
     end note
 
-Capacitación --> Capacitación
-    note on link
-        Realizar duda
-    end note
-
 Test --> Menu
     note on link
         Finalizar test
