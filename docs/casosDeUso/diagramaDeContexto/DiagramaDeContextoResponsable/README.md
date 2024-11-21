@@ -3,5 +3,5 @@
 A continuación se muestra el diagrama de contexto del responsable
 
 <p align="center">
-  <img src="/docs/casosDeUso/diagramaDeContexto/DiagramaDeContextoResponsable/diagramaContextoResponable.svg">
+  <img src="/docs/casosDeUso/diagramaDeContexto/DiagramaDeContextoResponsable/diagramaContextoResponsable.svg">
 </p>
