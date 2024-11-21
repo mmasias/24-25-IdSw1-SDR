@@ -1,8 +1,8 @@
 @startuml
 
-state "MENU_PRINCIPAL" as Menu
 state "LISTANDO_MENSAJES" as ListandoMensajes
 state "CREANDO_MENSAJE" as CreandoMensaje
+state "DESCARGANDO_RESUMEN" as DescargandoResumen
 state "LEYENDO_MENSAJE" as LeyendoMensaje
 state "LEYENDO_DOCUMENTO" as LeyendoDocumento
 state "CREANDO_ENVIO" as CreandoEnvio
@@ -15,22 +15,18 @@ state "ACTUALIZANDO_USUARIO" as ActualizandoUsuario
 state "CREANDO_USUARIO" as CreandoUsuario
 state "BORRANDO_USUARIO" as BorrandoUsuario
 
-[*] --> Menu
+[*] --> ListandoMensajes
     note on link
         Responsable 
         inicia sesión
     end note
 
-Menu -> [*]
+ListandoMensajes -> [*]
     note on link
         Responsable 
         cierra sesión
     end note
 
-Menu --> ListandoMensajes
-    note on link
-        Listar mensajes
-    end note
 
 ListandoMensajes --> LeyendoMensaje
     note on link
@@ -68,6 +64,16 @@ CreandoMensaje --> CreandoEnvio
     end note
 
 CreandoEnvio --> CreandoMensaje
+    note on link
+        pending...
+    end note
+
+CreandoMensaje --> DescargandoResumen
+    note on link
+        Descargar resumen
+    end note
+
+DescargandoResumen --> CreandoMensaje
     note on link
         pending...
     end note
