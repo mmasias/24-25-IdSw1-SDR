@@ -7,6 +7,7 @@ state Administrador {
   [*]-->Activo: gestionar Docutrace
   
   Activo --> GestionandoUsuarios
+  GestionandoUsuarios --> GestionandoPermisos
   Activo --> GestionandoMensajes
   Activo --> GestionandoCategorias
   
