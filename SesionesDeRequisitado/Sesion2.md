@@ -8,22 +8,22 @@ Fecha: 13 de noviembre, 2024
 
 **Problema principal**: Parte del contenido de las guías docentes debe actualizarse anualmente, y en el caso de asignaturas impartidas en varias titulaciones, el contenido puede variar, lo que hace ineficiente el uso del copiar y pegar, ya que son demasiadas guias docentes y el proceso manual se torna engorroso. 
 
-# Introducción
+## Introducción
 En la primera parte de la reunión hubó un repaso del modelo del dominio y el problema que se quiere solucionar, un repaso de la primera sesión.
 
 # Aclaración de dudas
 
-## ¿El director de grado tiene la capacidad de editar el mismo contenido que el profesor para agilizar el proceso?
+### ¿El director de grado tiene la capacidad de editar el mismo contenido que el profesor para agilizar el proceso?
 
 No, ya que, aunque sea el director de grado, esto no implica que sea experto en la materia o asignatura asignada al profesor. Por ello, únicamente el profesor debería tener la capacidad de editar el contenido de la asignatura. Sin embargo, la modificación en el apartado de porcentajes en una guia docente sí podría ser posible como un extra ya que hay ciertas reglas establecidas que se deben cumplir.  Dicho esto, sería como una funcionalidad extra y no para la primera entrega.
 
-## ¿Supervisar sería un estado?
+### ¿Supervisar sería un estado?
 A nivel de caso de uso no debería de ser un estado por lo cual deberíamos de quitarlo de nuestros casos de uso
 
-## ¿El técnico de calidad puede editar la guía docente?
+### ¿El técnico de calidad puede editar la guía docente?
 Sí, puede editar la plantilla pero no el contenido.
 
-# Dudas Pendientes
+## Dudas Pendientes
 - ¿A partir de donde podemos agregar las compuertas lógicas?
 
 # Avances en el modelo de dominio
