@@ -41,7 +41,7 @@ Por otro lado, se sugiere un sistema de capacitación para aquellos alumnos que 
 Durante la sesión se establecieron las bases del proyecto, definiendo claramente el contexto de trabajo y los objetivos del producto solicitado. Se identificaron las necesidades de un sistema de evaluación y capacitación para los alumnos becados, y se acordaron las acciones a seguir para avanzar en el desarrollo del proyecto. La colaboración entre los asistentes fue fundamental para alinear las expectativas y planificar los próximos pasos.
 
 
-**Próxima reunión:** Aun por concretar
+**Próxima reunión:** 12/11/2024
 
 **Firma:**
 Diego García Niño

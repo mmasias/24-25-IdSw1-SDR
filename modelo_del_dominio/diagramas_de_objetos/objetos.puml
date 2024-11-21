@@ -1,62 +1,62 @@
 @startuml Diagrama_de_Objetos_Beca
 title Diagrama de Objetos - Ejemplo de Plataforma de Gestión de Becas
 
-object "plataforma : PLATAFORMA" as plataforma {
-  Nombre = "Plataforma de Gestión de Becas"
+object "Plataforma : Novus" as plataforma {
+  Objetivo = "Gestión de Becas"
 }
 
-object "estadistica : ESTADÍSTICA" as estadistica {
-  Datos = "Estadísticas de usuarios"
-}
-
-object "administrador : USUARIO" as administrador {
-  ID = 1
-  Nombre = "Juan"
+object "Administrador : Diego" as administrador {
+  Nombre = "Diego"
   Apellido = "Pérez"
-  Email = "juan.perez@ejemplo.com"
+  
+  Email = "diego.perez@ejemplo.com"
 }
 
-object "candidato : USUARIO" as candidato {
+object "Postulante : Samuel" as candidato {
+  Nombre = "Samuel"
+  Apellido = "González"
+  Email = "Samuel.Gonzales@gmail.com"
+}
+
+object "Becario: Samuel" as becario {
   DNI = "12345678"
   Carnet de Estudiante = "BEC2024"
   Dirección = "Calle Falsa 123"
+  Porcentaje de Beca = 100%
 }
 
-object "pruebas : PRUEBAS" as pruebas {
-  Descripción = "Pruebas de selección"
+object "Prueba : Aptitud" as pruebas {
+  Descripción = "Pruebas de conocimiento"
+}
+object "Prueba : Especialización" as pruebas1 {
+  Descripción = "Pruebas de control"
 }
 
-object "capacitacion : CAPACITACIÓN" as capacitacion {
-  Descripción = "Programa de capacitación"
-}
-
-object "contenidoCapacitacion : CONTENIDO_CAPACITACIÓN" as contenidoCapacitacion {
-  Tipo = "Video y Documentación"
+object "Capacitación : Programa de Capacitación" as capacitacion {
 }
 
 object "videoTutorial : VIDEO_TUTORIAL" as videoTutorial {
-  Título = "Tutorial de Capacitación"
 }
 
-object "documentacion : DOCUMENTACIÓN" as documentacion {
-  Título = "Guía del Becario"
+object "documentación : DOCUMENTACIÓN" as documentacion {
 }
 
-object "requisito : REQUISITO" as requisito {
+object "Requisito : Aprobar" as requisito {
   Descripción = "Aprobar pruebas de selección"
 }
 
-plataforma -d-- estadistica : "genera"
 plataforma -d-- administrador : "administra"
 plataforma -d-- candidato : "tiene acceso"
 
 plataforma -d-- pruebas : "incluye"
+plataforma -d-- pruebas1 : "incluye"
 plataforma -d-- capacitacion : "ofrece"
 
-capacitacion -d-- contenidoCapacitacion : "contiene"
-contenidoCapacitacion -d-- videoTutorial : "incluye"
-contenidoCapacitacion -d-- documentacion : "incluye"
+capacitacion  -d-- videoTutorial : "incluye"
+capacitacion  -d-- documentacion : "incluye"
 
-candidato -r-- requisito : "cumple"
+candidato -d-- requisito : "cumple"
+
+requisito -d-- becario : "se otorga beca"
 
 @enduml

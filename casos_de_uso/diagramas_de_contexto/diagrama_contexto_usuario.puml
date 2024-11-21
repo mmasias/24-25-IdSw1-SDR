@@ -1,0 +1,41 @@
+@startuml diagrama_contexto_usuario
+
+state "NO_AUTENTICADO" as NoAuth
+state "MENU_PRINCIPAL" as Menu
+state "TEST" as Test
+state "CAPACITACIÓN" as Capacitación
+
+[*] --> NoAuth
+
+NoAuth --> Menu
+    note on link
+        Iniciar sesión
+    end note
+
+Menu --> NoAuth
+    note on link
+        Cerrar sesión
+    end note
+
+Menu --> Test
+    note on link
+        Realizar test
+    end note
+
+Menu --> Capacitación
+    note on link
+        Realizar capacitación
+    end note
+
+Capacitación --> Menu
+    note on link
+        Finalizar capacitación
+    end note
+
+Test --> Menu
+    note on link
+        Finalizar test
+    end note
+
+
+@enduml

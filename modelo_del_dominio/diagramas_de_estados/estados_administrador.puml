@@ -1,19 +1,22 @@
-@startuml
-state Administrador {
-  [*] -d-> Inicio
+@startuml Diagrama_de_Estados_Administrador
+skinparam defaultTextAlignment center
 
-  State GestionarBecarios {
-    VerSolicitudes -d-> EnRevisión
-    EnRevisión -r-> Aprobado : "Solicitud aprobada"
-    EnRevisión -r-> Rechazado : "Solicitud rechazada"
-  }
+[*] --> UsuarioAdministrador: se crea administrador
 
-  State GestionarCapacitaciones {
-    CrearCapacitacion -d-> EnCurso
-    EnCurso -r-> Finalizada
-  }
-
-  Inicio -d-> GestionarBecarios
-  Inicio -d-> GestionarCapacitaciones
+state UsuarioAdministrador{
+  [*]-->Activo: necesita gestionar postulantes, ver estadísticas, gestionar pruebas y capacitaciones
+  Activo-->CreaPostulantes
+  Activo-->EliminaPostulantes
+  Activo-->DesactivaPostulantes
+  
+  Activo-->ActualizaPostulantes
+  state acción <<choice>> : cumple los requisitos
+  ActualizaPostulantes-->acción : pasa a ser becario
+  acción-->CreaBecario : si
+  acción-->EliminaPostulante : no
+  Activo-->RevisaEstadísticasFinales
+  Activo -r-> Inactivo
+  Inactivo -l-> Activo
 }
+
 @enduml

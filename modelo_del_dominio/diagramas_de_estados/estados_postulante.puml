@@ -1,0 +1,28 @@
+@startuml Diagrama_de_Estados_Postulante
+skinparam defaultTextAlignment center
+
+state UsuarioPostulante {
+  [*] --> AjenoAlSistema
+  AjenoAlSistema --> IdentificandoUsuario : quiere formar parte de PROFER
+  IdentificandoUsuario --> RegistroEnSede : se registra a través de la sede de su país
+  RegistroEnSede --> UsuarioNoBecario
+}
+
+UsuarioPostulante --> NoBecario
+
+state NoBecario {
+  [*] --> Logueado : se loguea
+  Logueado --> RealizaPrueba : se ve su nivel
+  Logueado --> RealizaCapacitación : se le prepara para el trabajo en PROFER
+  RealizaPrueba --> Resultados
+  RealizaCapacitación --> Resultados
+  RealizaCapacitación --> RealizaPrueba : se evalúa su desempeño / evolución
+  state acción <<choice>>
+  Resultados --> acción : pasa a ser becario
+  acción --> Becario : sí
+  acción --> RealizaCapacitación : no
+  Becario --> [*]
+}
+@enduml
+
+/'//TODO: Preguntar que sucede cuando no pasa a ser becario '/

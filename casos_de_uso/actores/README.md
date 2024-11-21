@@ -2,5 +2,6 @@
 
 - Administradores de la plataforma
 - Seleccionadores de las sedes
-- Nuevos becarios de Uneatlantico
+- Postulantes a beca PROFER
+- Becarios PROFER de Uneatlantico
 - Tiempo
