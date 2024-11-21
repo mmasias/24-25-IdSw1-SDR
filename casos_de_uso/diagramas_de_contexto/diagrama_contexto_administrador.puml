@@ -1,6 +1,7 @@
 @startuml diagrama_contexto_administrador
 
 state "NO_AUTENTICADO" as NoAuth
+state "MENU_PRINCIPAL" as Menu
 state "MENU_USUARIOS" as Menu_usuarios
 state "MENU_ADMINISTRADOR" as Menu_administrador
 state "CREAR_USUARIO" as Crear_usuario
@@ -21,14 +22,24 @@ state "CONSULTAR_ESTADÍSTICAS" as Consultar_estadísticas
 
 [*] --> NoAuth
 
-NoAuth --> Menu_usuarios
+NoAuth --> Menu
     note on link
         Iniciar sesión
     end note
 
-Menu_usuarios --> NoAuth
+Menu --> NoAuth
     note on link
         Cerrar sesión
+    end note
+
+Menu --> Menu_usuarios
+    note on link
+        Gestionar usuarios
+    end note
+
+Menu_usuarios --> Menu
+    note on link
+        Salir
     end note
 
 Menu_usuarios --> Crear_usuario
@@ -71,14 +82,14 @@ Eliminar_usuario --> Menu_usuarios
         Guardar
     end note
 
-NoAuth --> Menu_administrador
+Menu ----> Menu_administrador
     note on link
-        Iniciar sesión
+        Gestión de administrador
     end note
 
-Menu_administrador --> NoAuth
+Menu_administrador ----> Menu
     note on link
-        Cerrar sesión
+        Salir
     end note
 
 Menu_administrador --> Crear_test
