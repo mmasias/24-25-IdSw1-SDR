@@ -1,0 +1,28 @@
+@startuml
+
+[*] --> IniciarSesion
+
+state IniciarSesion {
+  [*]-d->UsuarioDesconocido
+  
+  UsuarioDesconocido -d-> IdentificandoUsuario : ingresando credenciales
+  
+  State validUser <<choice>>
+  
+  IdentificandoUsuario -r-> validUser : credenciales correctas
+  
+  validUser -l-> UsuarioDesconocido : no
+  validUser -d-> UsuarioActivo : si
+}
+
+UsuarioActivo --> Destinatario
+
+state Destinatario {
+  [*]--> Activo
+  Activo --> GestionandoMensajes
+  
+  Activo --> Inactivo
+  Inactivo --> [*] : se cierra sesión
+}
+
+@enduml
