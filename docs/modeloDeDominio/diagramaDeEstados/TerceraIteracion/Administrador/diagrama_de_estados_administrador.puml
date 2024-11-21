@@ -1,0 +1,18 @@
+@startuml
+
+[*] --> Administrador: inicia sesión administrador
+
+state Administrador {
+
+[*]-->Activo: gestionar Docutrace
+
+Activo --> GestionandoUsuarios
+Activo --> GestionandoMensajes
+Activo --> GestionandoCategorias
+
+Activo --> Inactivo
+Inactivo --> [*] : se cierra sesión
+
+}
+
+@enduml

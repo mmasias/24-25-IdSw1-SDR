@@ -1,0 +1,24 @@
+@startuml
+
+[*] --> UsuarioActivo
+
+UsuarioActivo -u-> GestionandoMensajes
+
+state GestionandoMensajes {
+  [*]--> UsuarioRemitente
+  
+  UsuarioRemitente --> CreandoMensaje
+  UsuarioRemitente --> AbriendoMensaje
+  UsuarioRemitente -d-> UsuarioActivo
+  
+  CreandoMensaje --> EnviandoMensaje
+  EnviandoMensaje --> UsuarioRemitente
+  
+  AbriendoMensaje -->  MesajePendiente
+  AbriendoMensaje --> MensajeAlDia
+  AbriendoMensaje --> UsuarioRemitente
+}
+
+UsuarioActivo -d-> [*]
+
+@enduml
