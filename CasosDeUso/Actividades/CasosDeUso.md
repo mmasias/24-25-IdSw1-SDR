@@ -59,3 +59,8 @@
 - **Actor**: Técnico de Calidad
 - **Descripción**: Pede visualizar los estados en los que se encuentran las guías docentes (aprobado o devuelto para modificación)
 - **Objetivo**: Revisar los estados de las guías docentes para mantener la trazabilidad en los procesos.
+
+## 13. Ver listado de los estados de las guías docentes de un grado
+- **Actor**: Director de Grado
+- **Descripción**: Pede visualizar los estados en los que se encuentran las guías docentes de su grado correspondiente (aprobado o devuelto para modificación)
+- **Objetivo**: Revisar los estados de las guías docentes de su grado para mantener la trazabilidad en los procesos.
