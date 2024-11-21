@@ -29,6 +29,10 @@ Es una plataforma que se encarga de administrar y optimizar el proceso de selecc
   - [Diagrama de Contexto]()
   - [Prototipos]() -->
 
+## Diagramas de contexto
+
+  - [Diagramas](/casos_de_uso/diagramas_de_contexto/README.md)
+
 ## [Sesiones](documentos/actas/)
 
   - [Sesión del 16/10/2024](/documentos/actas/16-10-2024/README.md)
