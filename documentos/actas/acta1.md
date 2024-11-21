@@ -17,6 +17,7 @@ Hoy hemos tenido nuestra primera reunión con **Susana Gutiérrez**, quien nos h
 ---
 
 ## 👥 **Integrantes del Acta**  
+- Susana Gutiérrez
 - Oscar Santamaría ([@oscarsantasanchez](https://www.github.com/oscarsantasanchez))
 - Álvaro Lostal ([@lostal](https://www.github.com/lostal))
 - Raúl Pelayo ([@RaulPlayo](https://www.github.com/RaulPlayo))

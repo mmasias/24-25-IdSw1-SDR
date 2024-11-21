@@ -16,6 +16,7 @@ Para concluir, podemos decir que de cara a próximos cambios debemos concretar c
 ---
 
 ## 👥 **Integrantes del Acta**  
+- Manuel Masías
 - Oscar Santamaría ([@oscarsantasanchez](https://www.github.com/oscarsantasanchez))
 - Álvaro Lostal ([@lostal](https://www.github.com/lostal))
 - Raúl Pelayo ([@RaulPlayo](https://www.github.com/RaulPlayo))
