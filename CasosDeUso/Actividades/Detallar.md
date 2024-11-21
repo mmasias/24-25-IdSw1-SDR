@@ -48,7 +48,7 @@
 | **Postcondiciones**               | La guía queda actualizada con los cambios realizados, o se cancela la edición sin que se guarden modificaciones. |
 
 
-### 5. Aprobar o Rechazar Contenido
+### 5. Revisar Contenido
 | **Identificación de actores**      | Director de Grado |
 |------------------------------------|-------------------|
 | **Escenario**                      | El Director de Grado revisa el contenido de una guía docente y decide si aprueba o rechaza su publicación, asegurando que el material cumple con los estándares académicos establecidos. |
