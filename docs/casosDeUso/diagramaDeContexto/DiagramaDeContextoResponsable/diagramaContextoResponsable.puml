@@ -1,43 +1,38 @@
 @startuml
 
-state "MENU_PRINCIPAL" as Menu
 state "LISTANDO_MENSAJES" as ListandoMensajes
 state "CREANDO_MENSAJE" as CreandoMensaje
+state "VER_RESUMEN" as VerResumen
 state "LEYENDO_MENSAJE" as LeyendoMensaje
 state "LEYENDO_DOCUMENTO" as LeyendoDocumento
-state "CREANDO_ENVIO" as CreandoEnvio
-state "CATEGORIAS" as Categorias
+state "LISTANDO_CATEGORIAS" as Categorias
 state "CREANDO_CATEGORIA" as CreandoCategoria
 state "ACTUALIZANDO_CATEGORIA" as ActualizandoCategoria
-state "BORRARANDO_CATEGORIA" as BorrandoCategoria
-state "USUARIOS" as Usuarios
+state "BORRANDO_CATEGORIA" as BorrandoCategoria
+state "LISTANDO_USUARIOS" as Usuarios
 state "ACTUALIZANDO_USUARIO" as ActualizandoUsuario
 state "CREANDO_USUARIO" as CreandoUsuario
 state "BORRANDO_USUARIO" as BorrandoUsuario
 
-[*] --> Menu
+[*] --> ListandoMensajes
     note on link
         Responsable 
         inicia sesión
     end note
 
-Menu -> [*]
+ListandoMensajes -> [*]
     note on link
         Responsable 
         cierra sesión
     end note
 
-Menu --> ListandoMensajes
-    note on link
-        Listar mensajes
-    end note
 
 ListandoMensajes --> LeyendoMensaje
     note on link
         Abrir mensaje
     end note
 
-LeyendoMensaje --> LeyendoDocumento
+LeyendoMensaje -> LeyendoDocumento
     note on link
         Abrir documento
     end note
@@ -62,24 +57,34 @@ ListandoMensajes --> CreandoMensaje
         Crear mensaje
     end note
 
-CreandoMensaje --> CreandoEnvio
+CreandoMensaje --> CreandoMensaje 
     note on link
         Crear envio
     end note
 
-CreandoEnvio --> CreandoMensaje
+ListandoMensajes--> VerResumen
     note on link
-        pending...
+        Ver resumen
+    end note
+
+VerResumen -l-> ListandoMensajes
+    note on link
+        Listar mensajes
+    end note
+
+VerResumen -l-> VerResumen 
+    note on link
+        Descargar resumen
     end note
 
 CreandoMensaje --> ListandoMensajes
     note on link
-        listar mensajes
+        Listar mensajes
     end note
 
 ListandoMensajes --> Categorias
     note on link
-        Ver categorias
+        Listar categorias
     end note
 
 Categorias --> CreandoCategoria
@@ -125,7 +130,7 @@ Categorias --> ListandoMensajes
 
 ListandoMensajes --> Usuarios
     note on link
-        Ver usuarios
+        Listar usuarios
     end note
 
 Usuarios --> CreandoUsuario
