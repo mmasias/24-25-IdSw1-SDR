@@ -27,7 +27,7 @@ En este apartado se muestran los casos de uso en una lista donde el número 1 ti
 - **Objetivo**: Mantener el contenido actualizado y relevante para los estudiantes.
 - **Prioridad**: Media-Alta (Necesario para asegurar la actualidad del contenido)
 
-### 5. Aprobar o Rechazar Contenido
+### 5. Revisar Contenido
 - **Actor**: Director de Grado
 - **Descripción**: Revisión y decisión sobre la aprobación o rechazo del contenido de la guía docente.
 - **Objetivo**: Asegurar que el contenido cumple con los estándares académicos y es adecuado para su publicación.
