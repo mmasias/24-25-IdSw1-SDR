@@ -1,4 +1,4 @@
-@startuml
+@startuml diagrama_contexto_administrador
 
 state "NO_AUTENTICADO" as NoAuth
 state "MENU_USUARIOS" as Menu_usuarios

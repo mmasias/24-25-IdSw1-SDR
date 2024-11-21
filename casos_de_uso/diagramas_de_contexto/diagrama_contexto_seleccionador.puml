@@ -1,4 +1,4 @@
-@startuml
+@startuml diagrama_contexto_seleccionador
 
 state "NO_AUTENTICADO" as NoAuth
 state "MENU_PRINCIPAL" as Menu
