@@ -58,17 +58,7 @@
 | **Postcondiciones**               | La guía queda aprobada y lista para publicación, o se marca como "Requiere Revisión" con comentarios para ajustes. |
 
 
-### 6. Supervisar Guías Docentes
-| **Identificación de actores**      | Técnico de Calidad |
-|------------------------------------|--------------------|
-| **Escenario**                      | El Técnico de Calidad revisa las guías docentes para confirmar que cumplen con los estándares de calidad y uniformidad de la institución antes de una auditoría. |
-| **Flujo de eventos principal**     | 1. El Técnico de Calidad inicia sesión en el sistema de supervisión de guías.<br> 2. El sistema muestra la lista de guías docentes activas para revisión.<br> 3. El Técnico de Calidad selecciona una guía para supervisar.<br> 4. El sistema despliega la guía y permite revisar el formato y el contenido.<br> 5. El Técnico de Calidad verifica que el contenido cumple con los estándares de calidad.<br> 6. El sistema marca la guía como “Revisada” en el registro de calidad. |
-| **Flujos alternativos y excepciones** | Si el Técnico de Calidad identifica un incumplimiento en los estándares, el sistema permite registrar observaciones y marcar la guía como "Requiere Correcciones". |
-| **Precondiciones**                | El técnico debe tener acceso al sistema y a las guías pendientes de supervisión. |
-| **Postcondiciones**               | La guía queda marcada como "Revisada" o "Requiere Correcciones", según corresponda. |
-
-
-### 7. Generar Nueva Versión de la Guía
+### 6. Generar Nueva Versión de la Guía
 | **Identificación de actores**      | Técnico de Calidad |
 |------------------------------------|--------------------|
 | **Escenario**                      | El Técnico de Calidad solicita al sistema la creación de una nueva versión de una guía docente para registrar cambios recientes en el contenido y mantener un historial de versiones. |
@@ -77,12 +67,18 @@
 | **Precondiciones**                | El técnico debe tener acceso al sistema de gestión de versiones y permisos para generar nuevas versiones de las guías. |
 | **Postcondiciones**               | Una nueva versión de la guía queda registrada y disponible para futuras ediciones o revisiones. |
 
+### 7. Ver listado de los estados de las guías docentes
 
-### 8. Utilizar Plantilla Multititulación
+### 8. Ver listado de los estados de las guías por grado
 
+### 9. Editar plantilla de la guía docente
 
-### 9. Asignar Guía a Titulación
+### 10. Utilizar Plantilla Multititulación
 
+### 11. Asignar Guía a Titulación
 
-### 10. Asignar Asignatura a Titulación
+### 12. Asignar Asignatura a Titulación
 
+### 12. Asignar Asignatura a Titulación
+
+### 13. Asignar Guías Docentes a Profesor
