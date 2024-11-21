@@ -1,0 +1,23 @@
+@startuml
+
+[*] --> RastreadorDocumento
+
+state Destinatario
+state startDestinatario  <<start>>
+startDestinatario --> Destinatario
+
+state RastreadorDocumento {
+  
+  Mensaje --> Documento
+  Documento --> Mensaje
+  
+  Documento --> Pendiente
+  Documento --> Leido
+  Documento --> Atrasado
+  Documento --> Firmado
+}
+
+Destinatario -r-> Mensaje
+
+RastreadorDocumento -d-> [*]
+@enduml
