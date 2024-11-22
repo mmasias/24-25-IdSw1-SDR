@@ -1,6 +1,5 @@
 @startuml
-
-state "LISTANDO_MENSAJES" as ListandoMensajes
+state "MENU_PRINCIPAL" as MenuPrincipal
 state "CREANDO_MENSAJE" as CreandoMensaje
 state "VER_RESUMEN" as VerResumen
 state "LEYENDO_MENSAJE" as LeyendoMensaje
@@ -14,20 +13,20 @@ state "ACTUALIZANDO_USUARIO" as ActualizandoUsuario
 state "CREANDO_USUARIO" as CreandoUsuario
 state "BORRANDO_USUARIO" as BorrandoUsuario
 
-[*] --> ListandoMensajes
+[*] --> MenuPrincipal
     note on link
         Responsable 
         inicia sesión
     end note
 
-ListandoMensajes -> [*]
+MenuPrincipal -> [*]
     note on link
         Responsable 
         cierra sesión
     end note
 
 
-ListandoMensajes --> LeyendoMensaje
+MenuPrincipal --> LeyendoMensaje
     note on link
         Abrir mensaje
     end note
@@ -47,12 +46,12 @@ LeyendoDocumento --> LeyendoMensaje
         Cerrar visualización
     end note
 
-LeyendoMensaje --> ListandoMensajes
+LeyendoMensaje --> MenuPrincipal
     note on link
         Cerrar mensaje
     end note
 
-ListandoMensajes --> CreandoMensaje
+MenuPrincipal --> CreandoMensaje
     note on link
         Crear mensaje
     end note
@@ -62,12 +61,12 @@ CreandoMensaje --> CreandoMensaje
         Crear envio
     end note
 
-ListandoMensajes--> VerResumen
+MenuPrincipal--> VerResumen
     note on link
         Ver resumen
     end note
 
-VerResumen -l-> ListandoMensajes
+VerResumen -l-> MenuPrincipal
     note on link
         Listar mensajes
     end note
@@ -77,12 +76,12 @@ VerResumen -l-> VerResumen
         Descargar resumen
     end note
 
-CreandoMensaje --> ListandoMensajes
+CreandoMensaje --> MenuPrincipal
     note on link
         Listar mensajes
     end note
 
-ListandoMensajes --> Categorias
+MenuPrincipal --> Categorias
     note on link
         Listar categorias
     end note
@@ -123,12 +122,12 @@ BorrandoCategoria --> Categorias
         categorias
     end note
 
-Categorias --> ListandoMensajes
+Categorias --> MenuPrincipal
     note on link
         Listar mensajes
     end note
 
-ListandoMensajes --> Usuarios
+MenuPrincipal --> Usuarios
     note on link
         Listar usuarios
     end note
@@ -169,9 +168,8 @@ BorrandoUsuario --> Usuarios
         usuarios
     end note
 
-Usuarios --> ListandoMensajes
+Usuarios --> MenuPrincipal
     note on link
         Listar mensajes
     end note
-
 @enduml
