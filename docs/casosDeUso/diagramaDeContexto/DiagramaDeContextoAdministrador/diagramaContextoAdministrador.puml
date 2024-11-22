@@ -1,0 +1,147 @@
+@startuml
+state "MENU_PRINCIPAL" as MenuPrincipal
+state "CREANDO_MENSAJE" as CreandoMensaje
+state "VIENDO_RESUMEN" as ViendoResumen
+state "LISTANDO_CATEGORIAS" as Categorias
+state "CREANDO_CATEGORIA" as CreandoCategoria
+state "ACTUALIZANDO_CATEGORIA" as ActualizandoCategoria
+state "BORRANDO_CATEGORIA" as BorrandoCategoria
+state "LISTANDO_USUARIOS" as Usuarios
+state "ACTUALIZANDO_USUARIO" as ActualizandoUsuario
+state "CREANDO_USUARIO" as CreandoUsuario
+state "BORRANDO_USUARIO" as BorrandoUsuario
+
+[*] --> MenuPrincipal
+    note on link
+        Responsable 
+        inicia sesión
+    end note
+
+MenuPrincipal -> [*]
+    note on link
+        Responsable 
+        cierra sesión
+    end note
+
+MenuPrincipal --> CreandoMensaje
+    note on link
+        Crear mensaje
+    end note
+
+CreandoMensaje --> CreandoMensaje 
+    note on link
+        Crear envio
+    end note
+
+MenuPrincipal--> ViendoResumen
+    note on link
+        Ver resumen
+    end note
+
+ViendoResumen -l-> MenuPrincipal
+    note on link
+        Listar mensajes
+    end note
+
+ViendoResumen -l-> ViendoResumen 
+    note on link
+        Descargar resumen
+    end note
+
+CreandoMensaje --> MenuPrincipal
+    note on link
+        Listar mensajes
+    end note
+
+MenuPrincipal --> Categorias
+    note on link
+        Listar categorias
+    end note
+
+Categorias --> CreandoCategoria
+    note on link
+        Crear nueva 
+        categoria
+    end note
+
+CreandoCategoria --> Categorias
+    note on link
+        Listar 
+        categorias
+    end note
+
+Categorias --> ActualizandoCategoria
+    note on link
+        Actualizar una 
+        categoria
+    end note
+
+ActualizandoCategoria --> Categorias
+    note on link
+        Listar 
+        categorias
+    end note
+
+Categorias --> BorrandoCategoria
+    note on link
+        Borrar una 
+        categoria
+    end note
+
+BorrandoCategoria --> Categorias
+    note on link
+        Listar 
+        categorias
+    end note
+
+Categorias --> MenuPrincipal
+    note on link
+        Listar mensajes
+    end note
+
+MenuPrincipal --> Usuarios
+    note on link
+        Listar usuarios
+    end note
+
+Usuarios --> CreandoUsuario
+    note on link
+        Crear nuevo
+        usuario
+    end note
+
+CreandoUsuario --> Usuarios
+    note on link
+        Listar
+        usuarios
+    end note
+
+Usuarios --> ActualizandoUsuario
+    note on link
+        Actualizar un
+        usuario
+    end note
+
+ActualizandoUsuario --> Usuarios
+    note on link
+        Listar
+        usuarios
+    end note
+
+Usuarios --> BorrandoUsuario
+    note on link
+        Borrar un
+        usuario
+    end note
+
+BorrandoUsuario --> Usuarios
+    note on link
+        Listar
+        usuarios
+    end note
+
+Usuarios --> MenuPrincipal
+    note on link
+        Listar mensajes
+    end note
+@enduml
