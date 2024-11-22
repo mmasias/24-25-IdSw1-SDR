@@ -1,7 +1,7 @@
 @startuml
 state "MENU_PRINCIPAL" as MenuPrincipal
 state "CREANDO_MENSAJE" as CreandoMensaje
-state "VER_RESUMEN" as VerResumen
+state "VIENDO_RESUMEN" as ViendoResumen
 state "LEYENDO_MENSAJE" as LeyendoMensaje
 state "LEYENDO_DOCUMENTO" as LeyendoDocumento
 state "LISTANDO_CATEGORIAS" as Categorias
@@ -61,12 +61,12 @@ CreandoMensaje --> CreandoMensaje
         Crear envio
     end note
 
-MenuPrincipal--> VerResumen
+MenuPrincipal--> ViendoResumen
     note on link
         Ver resumen
     end note
 
-VerResumen -l-> MenuPrincipal
+ViendoResumen -l-> MenuPrincipal
     note on link
         Listar mensajes
     end note
