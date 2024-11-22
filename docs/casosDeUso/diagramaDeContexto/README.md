@@ -5,6 +5,16 @@
 
 </div>
 
-## Diagrama de Contexto
+# Diagramas de Contexto
 
-Aquí irá el diagrama de contexto...
+## Diagrama de Contexto de Administrador
+
+![](./DiagramaDeContextoAdministrador/diagramaContextoAdministrador.svg)
+
+## Diagrama de Contexto de Responsable
+
+![](./DiagramaDeContextoResponsable/diagramaContextoResponsable.svg)
+
+## Diagrama de Contexto Destinatario
+![](./DiagramaDeContextoDestinatario/diagramaContextoDestinatario.svg)
+
