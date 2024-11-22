@@ -71,7 +71,7 @@ ViendoResumen -l-> MenuPrincipal
         Listar mensajes
     end note
 
-VerResumen -l-> VerResumen 
+ViendoResumen -l-> ViendoResumen 
     note on link
         Descargar resumen
     end note
