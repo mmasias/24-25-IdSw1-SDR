@@ -38,6 +38,6 @@ Dentro de la rama "reunion-002", puedes acceder a los siguientes documentos clav
 ### 📅 Reunión 3
 [🔗 Enlace a la Rama reunion-003](https://github.com/celiabecerril/24-25-IdSw1-SDR/tree/reunion-003)
 
-Dentro de la rama "reunion-002", puedes acceder a los siguientes documentos clave:
+Dentro de la rama "reunion-003", puedes acceder a los siguientes documentos clave:
 - 📄 [Acta de la Reunión](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/reunion-003/Reunion3.md)
 
