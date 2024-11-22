@@ -1,0 +1,45 @@
+@startuml
+state "MENU_PRINCIPAL" as MenuPrincipal
+state "LEYENDO_MENSAJE" as LeyendoMensaje
+state "LEYENDO_DOCUMENTO" as LeyendoDocumento
+
+[*] --> MenuPrincipal
+    note on link
+        Destinatario 
+        inicia sesión
+    end note
+
+MenuPrincipal -> [*]
+    note on link
+        Destinatario 
+        cierra sesión
+    end note
+
+
+MenuPrincipal --> LeyendoMensaje
+    note on link
+        Abrir mensaje
+    end note
+
+LeyendoMensaje -> LeyendoDocumento
+    note on link
+        Abrir documento
+    end note
+
+LeyendoDocumento --> LeyendoDocumento
+    note on link
+        -Confirmar Lectura
+        -Firmar Documento
+    end note
+
+LeyendoDocumento --> LeyendoMensaje
+    note on link
+        Cerrar visualización
+    end note
+
+LeyendoMensaje --> MenuPrincipal
+    note on link
+        Cerrar mensaje
+    end note
+
+@enduml
