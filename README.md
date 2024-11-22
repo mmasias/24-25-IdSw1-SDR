@@ -34,3 +34,10 @@ Dentro de la rama "reunion-001", puedes acceder a los siguientes documentos clav
 Dentro de la rama "reunion-002", puedes acceder a los siguientes documentos clave:
 - 📄 [Acta de la Reunión](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/reunion-002/Reunion2.md)
 - 📖 [Glosario](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/reunion-002/Glosario.md)
+
+### 📅 Reunión 3
+[🔗 Enlace a la Rama reunion-003](https://github.com/celiabecerril/24-25-IdSw1-SDR/tree/reunion-003)
+
+Dentro de la rama "reunion-002", puedes acceder a los siguientes documentos clave:
+- 📄 [Acta de la Reunión](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/reunion-003/Reunion3.md)
+
