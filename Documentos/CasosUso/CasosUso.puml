@@ -14,22 +14,31 @@ Usuario <|-- Admin
 usecase "Registrarse" as UC_Registrarse
 usecase "Iniciar Sesión" as UC_IniciarSesion
 usecase "Cerrar Sesión" as UC_CerrarSesion
-usecase "Ver Información de Asignaturas" as UC_VerInfoAsignaturas
-usecase "Consultar Calificaciones" as UC_ConsultarCalificaciones
-usecase "Impartir Asignatura" as UC_ImpartirAsignatura
-usecase "Gestionar Alumnos" as UC_GestionarAlumnos
-usecase "Administrar Usuarios" as UC_AdministrarUsuarios
-usecase "Configurar Sistema" as UC_ConfigurarSistema
-usecase "Volver al inicio" as UC_VolverInicio
+usecase "Volver al Inicio" as UC_VolverInicio
 
-' Casos de uso adicionales para Profesores
-usecase "Calificar Alumnos" as UC_CalificarAlumnos
-usecase "Asignar Rutinas" as UC_AsignarRutinas
-usecase "Evaluar Progreso" as UC_EvaluarProgreso
-
-' Casos de uso adicionales para Alumnos
+' Casos de uso de Alumno
+usecase "Ver Clasificaciones" as UC_VerClasificaciones
 usecase "Usar Rutinas" as UC_UsarRutinas
-usecase "Participar en Retos/Actividades" as UC_ParticiparRetos
+usecase "Completar Retos Obligatorios" as UC_CompletarRetosObligatorios
+usecase "Completar Retos Opcionales" as UC_CompletarRetosOpcionales
+usecase "Inscribirse en Clases" as UC_InscribirseClases
+usecase "Utilizar QR para Centros Deportivos" as UC_UsarQR
+
+' Casos de uso de Profesor
+usecase "Crear Nuevas Rutinas" as UC_CrearRutinas
+usecase "Crear Retos Obligatorios" as UC_CrearRetosObligatorios
+usecase "Crear Retos Opcionales" as UC_CrearRetosOpcionales
+usecase "Ver Clases y Alumnos" as UC_VerClasesAlumnos
+
+' Casos de uso de Administrador
+usecase "Administrar Usuarios" as UC_AdministrarUsuarios
+usecase "Gestionar Clases" as UC_GestionarClases
+usecase "Gestionar Rutinas" as UC_GestionarRutinas
+usecase "Gestionar Retos" as UC_GestionarRetos
+usecase "Administrar Asignaturas" as UC_AdministrarAsignaturas
+usecase "Configuración del Sistema" as UC_ConfigurarSistema
+usecase "Ver Reportes" as UC_VerReportes
+usecase "Descargar Estadísticas" as UC_DescargarEstadisticas
 
 UsuarioNoRegistrado --> UC_Registrarse
 
@@ -37,19 +46,25 @@ Usuario --> UC_IniciarSesion
 Usuario --> UC_CerrarSesion
 Usuario --> UC_VolverInicio
 
-Alumno --> UC_VerInfoAsignaturas
-Alumno --> UC_ConsultarCalificaciones
+Alumno --> UC_VerClasificaciones
 Alumno --> UC_UsarRutinas
-Alumno --> UC_ParticiparRetos
+Alumno --> UC_CompletarRetosObligatorios
+Alumno --> UC_CompletarRetosOpcionales
+Alumno --> UC_InscribirseClases
+Alumno --> UC_UsarQR
 
-Profesor --> UC_VerInfoAsignaturas
-Profesor --> UC_ImpartirAsignatura
-Profesor --> UC_GestionarAlumnos
-Profesor --> UC_CalificarAlumnos
-Profesor --> UC_AsignarRutinas
-Profesor --> UC_EvaluarProgreso
+Profesor --> UC_CrearRutinas
+Profesor --> UC_CrearRetosObligatorios
+Profesor --> UC_CrearRetosOpcionales
+Profesor --> UC_VerClasesAlumnos
 
 Admin --> UC_AdministrarUsuarios
+Admin --> UC_GestionarClases
+Admin --> UC_GestionarRutinas
+Admin --> UC_GestionarRetos
+Admin --> UC_AdministrarAsignaturas
 Admin --> UC_ConfigurarSistema
+Admin --> UC_VerReportes
+Admin --> UC_DescargarEstadisticas
 
 @enduml
