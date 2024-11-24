@@ -19,12 +19,14 @@ PAGINA_PRINCIPAL --> PROFESOR : Cerrar Sesión
 PAGINA_PRINCIPAL --> MENU_RUTINAS : Gestionar Rutinas
 PAGINA_PRINCIPAL --> MENU_RETOS : Gestionar Retos
 PAGINA_PRINCIPAL --> MENU_CLASIFICACION : Ver Clasificación de alumnos en clase
-PAGINA_PRINCIPAL --> MENU_PERFIL : Consultar Perfil
+PAGINA_PRINCIPAL ---> MENU_PERFIL : Consultar Perfil
 
 MENU_RUTINAS --> CREAR_RUTINAS : Crear Nuevas Rutinas
 CREAR_RUTINAS --> MENU_RUTINAS : Volver al Menú Rutinas
 
 MENU_RETOS --> RETOS_OBLIGATORIOS : Crear Retos Obligatorios
+RETOS_OBLIGATORIOS --> MENU_CLASIFICACION : Validar reto
+RETOS_OPCIONALES --> MENU_CLASIFICACION : Validar reto
 MENU_RETOS --> RETOS_OPCIONALES : Crear Retos Opcionales
 RETOS_OBLIGATORIOS --> MENU_RETOS : Volver al Menú Retos
 RETOS_OPCIONALES --> MENU_RETOS : Volver al Menú Retos
