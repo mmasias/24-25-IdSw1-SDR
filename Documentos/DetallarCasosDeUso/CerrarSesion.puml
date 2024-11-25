@@ -7,7 +7,7 @@ end note
 
 ProcesoDeCierreDeSesión --> ConfirmarCierreDeSesión
 note on link
-    Sistema pregunta si el usuario desea cerrar sesión
+    Sistema confirma que el usuario desea cerrar sesión
 end note
 
 state rombo <<choice>>
