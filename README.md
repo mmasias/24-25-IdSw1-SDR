@@ -10,7 +10,7 @@ A continuacion se presentan los enlaces a los distintos diagramas realizados:
 ### Diagrama de Contexto 
 ![Diagrama de Contexto](https://github.com/miguelgomez75/24-25-IdSw1-SDR/blob/main/images/modelosUML%20-%20SVG/4%C2%AA_Iteraci%C3%B3n/Diagrama_Contexto.svg)
 ### Diagrama de Entidades 
-![Diagrama de Entidades](https://github.com/miguelgomez75/24-25-IdSw1-SDR/blob/main/images/modelosUML%20-%20SVG/4%C2%AA_Iteraci%C3%B3n/Diagrama_Entidades.svg)
+![Diagrama de Entidades](https://github.com/miguelgomez75/24-25-IdSw1-SDR/blob/main/images/modelosUML%20-%20SVG/5%C2%AA_Iteraci%C3%B3n/Diagrama_Entidades.svg)
 ### Diagrama de Estados 
 ![Diagrama de Estados](https://github.com/miguelgomez75/24-25-IdSw1-SDR/blob/main/images/modelosUML%20-%20SVG/4%C2%AA_Iteraci%C3%B3n/Diagrama_Estados.svg)
 ### Diagrama de Clases 
