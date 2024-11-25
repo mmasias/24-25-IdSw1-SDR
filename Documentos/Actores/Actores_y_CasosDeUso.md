@@ -191,7 +191,7 @@
 # Diagrama de Contexto del Alumno
 | Diagrama | Código Fuente |
 |----------|---------------|
-| ![Modelo de Contexto Alumno](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/DiagramasContexto/AlumnosContexto.svg) | [Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/ModeloDeContexto/AlumnosContexto.puml) |
+| ![Modelo de Contexto Alumno](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/DiagramasContexto/AlumnoContexto.svg) | [Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/ModeloDeContexto/AlumnosContexto.puml) |
 
 # Diagrama de Contexto del Profesor
 | Diagrama | Código Fuente |
