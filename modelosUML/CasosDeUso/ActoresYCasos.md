@@ -1,14 +1,40 @@
-# Casos de Uso del Sistema de Gestión de Ofertas de Trabajo
+# Identificación y Priorización de Actores y Casos de Uso
 
-## Actores
-- **Administrador**: Responsable de validar las ofertas de trabajo y gestionar la plataforma.
-- **Alumni**: Puede buscar y postular a ofertas de trabajo.
-- **Empresa**: Crea ofertas de trabajo y contacta al Administrador para la validación de las mismas.
+## 1. Identificar Actores y Casos de Uso
 
-## Casos de Uso
-- **Crear oferta de trabajo**: Permite a la empresa solicitar crear una nueva oferta en la plataforma.
-- **Buscar oferta de trabajo**: Permite a un alumni buscar ofertas de trabajo disponibles.
-- **Aceptar oferta de trabajo**: Permite que el administrador valide la oferta de tranajo para que esté disponible.
-- **Postular para la oferta de trabajo**: Permite a un alumni aplicar a una oferta de trabajo disponible.
-- **Cerrar oferta de trabajo**: Permite que el administrador o la empresa finalicen una oferta cuando ya no está disponible.
-- **Cancelar oferta de trabajo**: Permite a la empresa cancelar una oferta creada previamente antes de su cierre.
+### Actores
+- **Administrador**: Actor clave para la gestión y validación de ofertas de trabajo.
+- **Alumni**: Usuario que interactúa con la plataforma para buscar y postular a ofertas.
+- **Empresa**: Protagonista en la creación, modificación y cierre de ofertas.
+
+### Casos de Uso
+1. **Crear oferta de trabajo** *(Empresa)*: La empresa solicita registrar una nueva oferta en el sistema.
+2. **Buscar oferta de trabajo** *(Alumni)*: Los alumni pueden buscar ofertas que coincidan con sus intereses.
+3. **Aceptar oferta de trabajo** *(Administrador)*: El administrador valida las ofertas creadas para que sean públicas.
+4. **Postular para la oferta de trabajo** *(Alumni)*: Los alumni pueden enviar su solicitud para una oferta de trabajo específica.
+5. **Cerrar oferta de trabajo** *(Administrador, Empresa)*: Una oferta se finaliza porque ya no está disponible.
+6. **Cancelar oferta de trabajo** *(Administrador)*: El administrador cancela una oferta de trabajo.
+
+---
+
+## 2. Priorizar Casos de Uso
+
+La prioridad debe basarse en su importancia estratégica, valor para el cliente, complejidad, riesgo... En este caso, se priorizan los casos de uso según su relevancia para el funcionamiento básico del sistema.
+
+1. **Crear oferta de trabajo** *(Alta prioridad)*  
+   Es el primer paso en el flujo de trabajo; sin ofertas, el sistema no tiene utilidad.
+
+2. **Buscar oferta de trabajo** *(Alta prioridad)*  
+   Es la función principal para los alumni y uno de los puntos más críticos de la plataforma.
+
+3. **Postular para la oferta de trabajo** *(Media/Alta prioridad)*  
+   Una vez que las ofertas están disponibles, esta funcionalidad permite que los alumni interactúen activamente con el sistema.
+
+4. **Aceptar oferta de trabajo** *(Media prioridad)*  
+   La validación de ofertas es importante, pero depende del flujo de creación de ofertas.
+
+5. **Cerrar oferta de trabajo** *(Media prioridad)*  
+   Su importancia varía dependiendo de la actividad en la plataforma.
+
+6. **Cancelar oferta de trabajo** *(Baja prioridad)*  
+   Este caso de uso se activa en escenarios específicos, pero no es central en el funcionamiento básico del sistema.
