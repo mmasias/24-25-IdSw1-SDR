@@ -13,14 +13,10 @@
 # Casos de uso detallados
 
 ## Usuario No Registrado
-### Registrarse (UC_Registrarse)
-- **Actor Principal**: Usuario No Registrado
-- **Descripción**: Permite crear una nueva cuenta en el sistema
-- **Flujo Principal**: 
-  1. El usuario accede al módulo de registro
-  2. Completa el proceso de registro
-- **Postcondición**: El usuario se convierte en un Usuario con un rol específico (Alumno, Profesor o Admin)
-
+### Registrarse 
+| Diagrama | Código Fuente |
+|----------|---------------|
+| ![Casos de uso](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/DetallarCasosDeUso/Registrarse.svg) | [Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/DetallarCasosDeUso/Registrarse.puml) |
 ## Funcionalidades Comunes (Alumno, Profesor, Admin)
 ### Iniciar Sesión (UC_IniciarSesion)
 - **Actores**: Alumno, Profesor, Admin
