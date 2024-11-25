@@ -1,46 +1,50 @@
 @startuml AlumnosCasosDeUso
 !define RECTANGLE(x) rectangle x
 
-RECTANGLE(ALUMNOS)
+RECTANGLE(ALUMNO)
+RECTANGLE(ESTADO_INTERMEDIO)
 RECTANGLE(PAGINA_PRINCIPAL)
 RECTANGLE(MENU_RUTINAS)
 RECTANGLE(MENU_RETOS)
 RECTANGLE(MENU_CLASIFICACION)
 RECTANGLE(MENU_PERFIL)
-RECTANGLE(INSIGNIAS)
+RECTANGLE(INSIGNIA)
 RECTANGLE(INSCRIPCION_CLASE)
-RECTANGLE(QR_CENTROS_DEPORTIVOS)
-RECTANGLE(RETOS_OBLIGATORIOS)
-RECTANGLE(RETOS_OPCIONALES)
-RECTANGLE(MI_RUTINA)
+RECTANGLE(QR_CENTRO_DEPORTIVO)
+RECTANGLE(RETO_OBLIGATORIO)
+RECTANGLE(RETO_OPCIONAL)
+RECTANGLE(CREANDO_RUTINA)
+RECTANGLE(ACTIVIDAD)
 
-ALUMNOS --> PAGINA_PRINCIPAL : Iniciar Sesión
-PAGINA_PRINCIPAL --> ALUMNOS : Cerrar Sesión
+ALUMNO --> ESTADO_INTERMEDIO : Autenticación
+ESTADO_INTERMEDIO --> PAGINA_PRINCIPAL : Ingresar al sistema
+PAGINA_PRINCIPAL --> ALUMNO : Cerrar Sesión
 
-PAGINA_PRINCIPAL --> MENU_RUTINAS : Usar Rutinas
-PAGINA_PRINCIPAL --> MENU_RETOS : Participar en Retos/Actividades
-PAGINA_PRINCIPAL --> MENU_CLASIFICACION : Ver Clasificaciones
-PAGINA_PRINCIPAL --> MENU_PERFIL : Consultar Perfil
+PAGINA_PRINCIPAL --> MENU_RUTINAS : Usando rutina
+PAGINA_PRINCIPAL --> MENU_RETOS : Participando en retos/actividades
+PAGINA_PRINCIPAL --> MENU_CLASIFICACION : Consultando clasificación
+PAGINA_PRINCIPAL --> MENU_PERFIL : Revisando perfil
 
-MENU_PERFIL --> INSIGNIAS : Ver Insignias Conseguida
-MENU_PERFIL --> INSCRIPCION_CLASE : Inscribirse en Clases
-MENU_PERFIL --> QR_CENTROS_DEPORTIVOS : Utilizar QR para Centros Deportivos
+MENU_PERFIL --> INSIGNIA : Observando insignia
+MENU_PERFIL --> INSCRIPCION_CLASE : Inscribiéndose en clase
+MENU_PERFIL --> QR_CENTRO_DEPORTIVO : Usando QR en centro deportivo
 
-MENU_RETOS --> RETOS_OBLIGATORIOS : Completar Retos Obligatorios
-MENU_RETOS --> RETOS_OPCIONALES : Completar Retos Opcionales
-RETOS_OBLIGATORIOS --> MENU_RETOS : Volver al Menú Retos
-RETOS_OPCIONALES --> MENU_RETOS : Volver al Menú Retos
+MENU_RETOS --> RETO_OBLIGATORIO : Completando reto obligatorio
+MENU_RETOS --> RETO_OPCIONAL : Completando reto opcional
+MENU_RETOS --> ACTIVIDAD : Realizando actividad
+RETO_OBLIGATORIO --> MENU_RETOS : Volviendo al menú retos
+RETO_OPCIONAL --> MENU_RETOS : Volviendo al menú retos
+ACTIVIDAD --> MENU_RETOS : Volviendo al menú retos
 
-MENU_RUTINAS --> MI_RUTINA : Crear mi rutina
-MI_RUTINA --> MENU_RUTINAS : Volver al Menú Rutinas
+MENU_RUTINAS --> CREANDO_RUTINA : Creando rutina
+CREANDO_RUTINA --> MENU_RUTINAS : Volviendo al menú rutinas
 
-MENU_RUTINAS --> PAGINA_PRINCIPAL : Volver página principal
-MENU_RETOS --> PAGINA_PRINCIPAL : Volver página principal
-MENU_CLASIFICACION --> PAGINA_PRINCIPAL : Volver página principal
-MENU_PERFIL --> PAGINA_PRINCIPAL : Volver página principal
+MENU_RUTINAS --> PAGINA_PRINCIPAL : Volviendo a página principal
+MENU_RETOS --> PAGINA_PRINCIPAL : Volviendo a página principal
+MENU_CLASIFICACION --> PAGINA_PRINCIPAL : Volviendo a página principal
+MENU_PERFIL --> PAGINA_PRINCIPAL : Volviendo a página principal
 
-INSIGNIAS --> MENU_PERFIL : Volver al Perfil
-INSCRIPCION_CLASE --> MENU_PERFIL : Volver al Perfil
-QR_CENTROS_DEPORTIVOS --> MENU_PERFIL : Volver al Perfil
-
+INSIGNIA --> MENU_PERFIL : Volviendo al perfil
+INSCRIPCION_CLASE --> MENU_PERFIL : Volviendo al perfil
+QR_CENTRO_DEPORTIVO --> MENU_PERFIL : Volviendo al perfil
 @enduml
