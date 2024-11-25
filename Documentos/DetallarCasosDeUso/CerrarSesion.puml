@@ -1,0 +1,43 @@
+@startuml
+[*] --> UsuarioRegistrado
+UsuarioRegistrado --> ProcesoDeCierreDeSesión
+note on link
+    Usuario desea salir del sistema
+end note
+
+ProcesoDeCierreDeSesión --> ConfirmarCierreDeSesión
+note on link
+    Sistema pregunta si el usuario desea cerrar sesión
+end note
+
+state rombo <<choice>>
+ConfirmarCierreDeSesión --> rombo
+note on link
+    ¿Desea cerrar sesión?
+end note
+
+rombo --> SesiónAbierta
+note on link
+    No
+end note
+
+rombo --> SesiónCerrada
+note on link
+    Sí
+end note
+
+SesiónCerrada --> CerrandoSesión
+note on link
+    Usuario sale del sistema
+end note
+
+SesiónAbierta --> SesiónAbierta
+note on link
+    Usuario se mantiene dentro del sistema
+end note
+
+CerrandoSesión --> [*]
+note on link
+    Cierre de Sesión correcto
+end note
+@enduml
