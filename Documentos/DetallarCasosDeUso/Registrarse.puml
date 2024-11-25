@@ -1,0 +1,77 @@
+@startuml
+
+  [*] --> UsuarioNoRegistrado
+  UsuarioNoRegistrado --> Registrandose
+  note on link
+    Usuario sin cuenta accede al sistema.
+  end note
+
+  UsuarioNoRegistrado --> UsuarioNoRegistrado
+  note on link
+    Usuario sin cuenta no quiere acceder al sistema.
+  end note
+
+  UsuarioNoRegistrado --> ProcesoDeInicioDeSesión
+  note on link
+    Usuario con cuenta accede al sistema.
+  end note
+
+  Registrandose --> RellenandoLogin
+  note on link
+    Ingresa los datos de Login:
+    - Nombre
+    - Apellido
+    - Correo Electrónico
+    - Contraseña
+    - Peso
+    - Altura
+    - Objetivo
+  end note
+  
+  state rombo <<choice>>
+  RellenandoLogin --> rombo
+  note on link
+    Usa correo @educantabria.es?
+  end note
+  
+  rombo --> EsProfesor
+  note on link
+    Sí
+  end note
+  
+  rombo --> EsAlumno
+  note on link
+    No
+  end note
+
+  EsAlumno --> RolEstablecido
+  note on link
+    Rol de Alumno asignado.
+  end note
+  
+  EsProfesor --> RolEstablecido
+  note on link
+    Rol de Profesor asignado.
+  end note
+  
+  RolEstablecido --> IniciandoSesión
+  note on link
+    Acepta condiciones y políticas.
+  end note
+  
+  ProcesoDeInicioDeSesión --> VerificarUsuario
+  note on link
+    Rellena con correo y contraseña.
+  end note
+  
+  VerificarUsuario --> IniciandoSesión
+  note on link
+    Correo y contraseña correctos.
+  end note
+  
+  IniciandoSesión --> [*]
+  note on link
+    Inicio de Sesión correcto
+  end note
+  
+@enduml
