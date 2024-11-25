@@ -17,6 +17,13 @@
 | Diagrama | Código Fuente |
 |----------|---------------|
 | ![Casos de uso](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/DetallarCasosDeUso/Registrarse.svg) | [Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/DetallarCasosDeUso/Registrarse.puml) |
+
+### Iniciar Sesión 
+| Diagrama | Código Fuente |
+|----------|---------------|
+| ![Casos de uso](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/DetallarCasosDeUso/IniciarSesion.svg) | [Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/DetallarCasosDeUso/IniciarSesion.puml) |
+
+
 ## Funcionalidades Comunes (Alumno, Profesor, Admin)
 ### Iniciar Sesión (UC_IniciarSesion)
 - **Actores**: Alumno, Profesor, Admin
