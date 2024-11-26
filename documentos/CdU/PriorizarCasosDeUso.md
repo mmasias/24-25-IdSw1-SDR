@@ -19,27 +19,33 @@ El objetivo de este caso de uso es **priorizar las funcionalidades** del sistema
 
 A continuación, se describen los casos de uso priorizados que forman parte del proceso de asignación de carga docente:
 
-#### 1. **Verificación de Contrato y Estado de Carga** (Alta prioridad)
+#### 1. **Propuesta de Carga Docente** (Alta prioridad)
+- **Descripción**: Proponer la carga que tiene cada profesor con la relación que presenta según sus horas de dedicación.
+- **Diagrama relacionado**: --
+- **Prioridad**: Alta. Este paso es obligatorio para proponer una estimación de la carga que tiene cada docente en relación con su tiempo de dedicación.
+
+
+#### 2. **Verificación de Contrato y Estado de Carga** (Alta prioridad)
 - **Descripción**: Verificar que el contrato del profesor (Parcial, Completo, Obra) sea compatible con la carga asignada.
 - **Diagrama relacionado**: Diagrama de Estados (`Verificar Contrato`).
 - **Prioridad**: Alta. Este paso es obligatorio para garantizar que la asignación cumpla con los requisitos legales y contractuales.
 
-#### 2. **Revisión del Equilibrio de Carga de Trabajo (EQ TC)** (Alta prioridad)
+#### 3. **Revisión del Equilibrio de Carga de Trabajo (EQ TC)** (Alta prioridad)
 - **Descripción**: Asegurarse de que la carga de trabajo del profesor esté equilibrada entre docencia, investigación y gestión, y que no exceda los límites establecidos en el contrato.
 - **Diagrama relacionado**: Diagrama de Estados (`Revisión EQ TC`).
 - **Prioridad**: Alta. Es crucial para evitar sobrecargar a los profesores y asegurar el cumplimiento de las condiciones laborales.
 
-#### 3. **Propuesta y Ajuste de Carga Docente** (Media prioridad)
+#### 4. **Ajuste de Carga Docente** (Media prioridad)
 - **Descripción**: Generar y ajustar la propuesta inicial de carga docente, asegurando que las proporciones entre docencia, investigación y gestión sean apropiadas.
 - **Diagrama relacionado**: Diagrama de Estados (`Propuesta Carga` y `Ajuste Carga`).
 - **Prioridad**: Media. Aunque importante, este paso es flexible y puede adaptarse dependiendo de las condiciones del contrato y la carga existente.
 
-#### 4. **Generación de Memoria Académica** (Media prioridad)
+#### 5. **Generación de Memoria Académica** (Media prioridad)
 - **Descripción**: Crear y almacenar la memoria académica que refleje las asignaciones de carga y el año académico correspondiente.
 - **Diagrama relacionado**: Diagrama de Objetos (`Memoria Académica`).
 - **Prioridad**: Media. No es urgente, pero es necesario para mantener un registro adecuado de las asignaciones.
 
-#### 5. **Asignación Final de Carga Docente** (Alta prioridad)
+#### 6. **Asignación Final de Carga Docente** (Alta prioridad)
 - **Descripción**: Asignar la carga final al profesor una vez que la verificación del contrato y la revisión de carga han sido completadas exitosamente.
 - **Diagrama relacionado**: Diagrama de Estados (`Asignada`).
 - **Prioridad**: Alta. Este paso finaliza el proceso de asignación y asegura que todo esté registrado correctamente.

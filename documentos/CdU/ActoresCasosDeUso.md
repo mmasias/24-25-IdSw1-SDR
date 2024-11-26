@@ -10,39 +10,37 @@
 
 ## Casos de Uso
 
-   > [!IMPORTANT]
-   > Los diagramas se cambiarán con respecto a la confirmación de los casos de uso
 
-### 1. CRUD con respecto al profesor 
-   - Corresponde a la creación de un profesor nuevo, actualizar a uno existente como podría ser la carga académica, eliminar un profesor si le han despedido y ver las estadísticas de un profesor (correspondiente al read)
+### **Revisión de Carga Académica por Profesor**  
+   - El Administrador Académico revisa y actualiza la carga de trabajo asignada a cada profesor para cada titulación. Esto incluye la verificación de horas semanales, contratos y dedicación a la docencia e investigación.
 
    | **Diagrama** | **Código Fuente** |
    |--------------|--------------------|
    | ![CasoDeUso1](/images/modelosUML/CdU/CasoDeUso1.svg) | [Ver código](/modelosUML/CdU/CasoDeUso1.puml) |
 
-### 2. Crear Informe Anual 
+### **Generación de Informe Anual de Mejora**  
    - El Coordinador de Titulación genera un informe anual que resume los indicadores de calidad académica, tales como porcentaje de profesorado permanente, doctores acreditados y profesores en programas de movilidad.
 
    | **Diagrama** | **Código Fuente** |
    |--------------|--------------------|
    | ![CasoDeUso2](/images/modelosUML/CdU/CasoDeUso2.svg) | [Ver código](/modelosUML/CdU/CasoDeUso2.puml) |
 
-### 3. CRUD con respecto a las titulaciones 
-   - Corresponde con la creación de una nueva titulación, eliminar una nueva titulación, actualizarla por ejemplo con asignaturas que puedan cambiar y leer la titulación completa.
+### 3. **Actualización de Datos de Profesorado**  
+   - Los Profesores o el Personal de Recursos Humanos pueden modificar los datos de los docentes, incluyendo experiencia profesional, experiencia docente virtual, acreditación, y asignación de carga académica.
 
    | **Diagrama** | **Código Fuente** |
    |--------------|--------------------|
    | ![CasoDeUso3](/images/modelosUML/CdU/CasoDeUso3.svg) | [Ver código](/modelosUML/CdU/CasoDeUso3.puml) |
 
-### 4. Actualizar indicadores académicos
-   - Proveer una funcionalidad para cargar datos actualizados en el sistema desde el Excel, ajustando indicadores clave relacionados con rendimiento académico, asignación docente y resultados por titulación
+### 4. **Análisis de Indicadores Académicos**  
+   - El Analista de Indicadores extrae datos para realizar análisis detallados, incluyendo indicadores como el porcentaje de profesorado permanente, número de doctores acreditados, y experiencia docente de los profesores.
 
    | **Diagrama** | **Código Fuente** |
    |--------------|--------------------|
    | ![CasoDeUso4](/images/modelosUML/CdU/CasoDeUso4.svg) | [Ver código](/modelosUML/CdU/CasoDeUso4.puml) |
 
-### 5. Notificar Cambios a los profesores
-   - Generar notificaciones automáticas a los profesores cuando se realicen cambios en su asignación de carga académica o en las titulaciones relacionadas.
+### 5. **Consulta de Carga Total por Titulación**  
+   - Los Coordinadores de Titulación pueden revisar y analizar la carga total asignada a cada titulación, permitiéndoles optimizar la distribución del personal docente en cada programa.
 
    | **Diagrama** | **Código Fuente** |
    |--------------|--------------------|
