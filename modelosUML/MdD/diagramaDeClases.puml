@@ -55,7 +55,7 @@ package "UNEATLANTICO" {
     Profesor --> MemoriaAcademica : cumple
     MemoriaAcademica --> Indicador : meta y valores
     Indicador --> Profesor : extrae datos
-    Titulacion --> Asignatura : define
+    Asignatura --> MemoriaAcademica : define
 
 }
 @enduml
