@@ -12,6 +12,6 @@ end note
 
 EnPáginaDeInicio --> [*]
 note on link
-    El usuario a regresado a la página de inicio correctamente
+    El usuario ha regresado a la página de inicio correctamente
 end note
 @enduml
