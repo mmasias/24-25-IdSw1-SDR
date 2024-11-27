@@ -1,7 +1,7 @@
 @startuml
 state "MENU_PRINCIPAL" as MenuPrincipal
 state "CREANDO_MENSAJE" as CreandoMensaje
-state "VIENDO_RESUMEN" as ViendoResumen
+state "LEYENDO_MENSAJE" as LeyendoMensaje
 state "LISTANDO_GRUPOS" as Grupos
 state "LISTANDO_USUARIOS" as Usuarios
 
@@ -17,6 +17,16 @@ MenuPrincipal -> [*]
         cierra sesión
     end note
 
+MenuPrincipal --> LeyendoMensaje
+    note on link
+        Abrir mensaje
+    end note
+
+LeyendoMensaje --> MenuPrincipal
+    note on link
+        Cerrar mensaje
+    end note
+
 MenuPrincipal --> CreandoMensaje
     note on link
         Crear mensaje
@@ -27,19 +37,9 @@ CreandoMensaje --> CreandoMensaje
         Crear envio
     end note
 
-MenuPrincipal--> ViendoResumen
+LeyendoMensaje --> LeyendoMensaje 
     note on link
-        Ver resumen
-    end note
-
-ViendoResumen -l-> MenuPrincipal
-    note on link
-        Listar mensajes
-    end note
-
-ViendoResumen -l-> ViendoResumen 
-    note on link
-        Descargar resumen
+        Descargar informe del envío
     end note
 
 CreandoMensaje --> MenuPrincipal
