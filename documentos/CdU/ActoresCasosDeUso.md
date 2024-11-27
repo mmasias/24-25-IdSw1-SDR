@@ -6,10 +6,13 @@ El objetivo es **encontrar los actores y casos de uso**
 
 ## 👥 **Actores**
 
-| **Actor**           |  
-|---------------------|  
-| 🧑‍🤝‍🧑 **Personas con acceso futuro** |  
-| 🧑‍💼 **Cliente**     |
+| **Actor**               |  
+|-------------------------|  
+| 👨‍🏫 **Profesor**        |  
+| 🏢 **Departamento**      |  
+| 💻 **Sistema de Planificación** |  
+| 📚 **Memoria Académica** |  
+
 
 ---
 

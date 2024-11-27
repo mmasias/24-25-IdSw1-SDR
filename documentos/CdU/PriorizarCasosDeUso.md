@@ -6,12 +6,13 @@ El objetivo de este caso de uso es **priorizar las funcionalidades**
 
 ### 👥 **Actores Involucrados**
 
-| **Actor**               | **Prioridad** |  
-|-------------------------|---------------|  
-| 👨‍🏫 **Profesor**        | 🔴 **Alta**      |  
-| 🏢 **Departamento**      | 🔴 **Alta**      |  
-| 💻 **Sistema de Planificación** | 🔴 **Alta**      |  
-| 📚 **Memoria Académica** | 🔴 **Alta**     |
+| **Actor**               |  
+|-------------------------|  
+| 👨‍🏫 **Profesor**        |  
+| 🏢 **Departamento**      |  
+| 💻 **Sistema de Planificación** |  
+| 📚 **Memoria Académica** |  
+
 
 
 ---
