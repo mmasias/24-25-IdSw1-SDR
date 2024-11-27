@@ -1,5 +1,7 @@
 # Gestión de Horarios - Sistema Integral de Gestión de Horarios Universitarios 🗓️
 
+# ![Gestión de Horarios](DALL·E 2024-11-27 19.31.15 - A modern and sleek logo for a university scheduling system, featuring a calendar icon integrated with academic elements like a graduation cap or books.webp) Gestión de Horarios Universitarios 🗓️
+
 **Gestión de Horarios** es una herramienta integral diseñada para optimizar la planificación y asignación de horarios en universidades. Este sistema facilita la organización de materias, profesores, estudiantes y espacios académicos, garantizando una gestión eficiente y centralizada.  
 
 Con una **interfaz intuitiva** y un **calendario interactivo**, la solución mejora la experiencia del usuario y asegura un uso óptimo de los recursos académicos disponibles.
