@@ -1,8 +1,0 @@
-
-@startuml
-left to right direction
-
-actor MemoriaAcademica
-
-MemoriaAcademica --> (Generación de memoria académica)
-@enduml

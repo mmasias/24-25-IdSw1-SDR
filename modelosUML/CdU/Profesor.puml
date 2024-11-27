@@ -1,8 +1,0 @@
-
-@startuml
-left to right direction
-
-actor Profesor
-
-Profesor --> (Verificación de contrato y estado de Carga)
-@enduml

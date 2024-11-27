@@ -1,7 +1,0 @@
-@startuml
-left to right direction
-
-actor Departamento
-
-Departamento --> (Propuesta y ajuste de Carga Docente)
-@enduml
