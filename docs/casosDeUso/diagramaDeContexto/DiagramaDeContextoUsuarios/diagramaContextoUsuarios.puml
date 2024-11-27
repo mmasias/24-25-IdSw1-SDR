@@ -1,0 +1,55 @@
+@startuml
+state "MENU_PRINCIPAL" as MenuPrincipal
+state "LISTANDO_USUARIOS" as Usuarios
+state "ACTUALIZANDO_USUARIO" as ActualizandoUsuario
+state "CREANDO_USUARIO" as CreandoUsuario
+state "BORRANDO_USUARIO" as BorrandoUsuario
+
+[*] --> MenuPrincipal
+
+MenuPrincipal --> Usuarios
+    note on link
+        Listar usuarios
+    end note
+
+Usuarios --> CreandoUsuario
+    note on link
+        Crear nuevo
+        usuario
+    end note
+
+CreandoUsuario --> Usuarios
+    note on link
+        Listar
+        usuarios
+    end note
+
+Usuarios --> ActualizandoUsuario
+    note on link
+        Actualizar un
+        usuario
+    end note
+
+ActualizandoUsuario --> Usuarios
+    note on link
+        Listar
+        usuarios
+    end note
+
+Usuarios --> BorrandoUsuario
+    note on link
+        Borrar un
+        usuario
+    end note
+
+BorrandoUsuario --> Usuarios
+    note on link
+        Listar
+        usuarios
+    end note
+
+Usuarios --> MenuPrincipal
+    note on link
+        Listar mensajes
+    end note
+@enduml
