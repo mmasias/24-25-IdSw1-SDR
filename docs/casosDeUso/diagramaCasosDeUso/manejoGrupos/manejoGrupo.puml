@@ -1,0 +1,18 @@
+@startuml manejoGrupo
+left to right direction
+actor "Usuario" as Usuario
+actor "Administrador General" as AdminGeneral
+
+package "CRUD de Grupos" {
+    usecase "Crear Grupo" as CC1
+    usecase "Ver Grupo" as CC2
+    usecase "Actualizar Grupo" as CC3
+    usecase "Borrar Grupo" as CC4
+}
+
+AdminGeneral --|> Usuario
+Usuario --> CC1
+Usuario --> CC2
+Usuario --> CC3
+Usuario --> CC4
+@enduml
