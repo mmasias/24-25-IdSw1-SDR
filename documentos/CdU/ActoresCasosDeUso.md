@@ -20,16 +20,17 @@ El objetivo de este paso es **encontrar actores y casos de uso** siguiendo las [
 
 ---
 
-## 📋 **Casos de Uso**  
+## 📋 **Casos de Uso y Actores Involucrados**
 
-| **#** | **Caso de Uso**                                           |
-|-------|-----------------------------------------------------------|
-| 1     | 🛠️ **Ajuste de Carga Docente**                            | 
-| 2     | 📊 **Propuesta de Carga Docente**                         |
-| 3     | 📑 **Generación de Memoria Académica**                    | 
-| 4     | ⚖️ **Revisión del Equilibrio de Carga de Trabajo (EQ TC)**|
-| 5     | ✔️ **Asignación Final de Carga Docente**                  |
-| 6     | 📜 **Verificación de Contrato y Estado de Carga**         | 
+| **Caso de Uso**                                           | **Actor(es)**                                           |
+|-----------------------------------------------------------|---------------------------------------------------------|
+| 🛠️ **Ajuste de Carga Docente**                            | [👨‍🏫], [💻]                                              |
+| 📊 **Propuesta de Carga Docente**                         | [👨‍🏫], [🏢]                                              |
+| 📑 **Generación de Memoria Académica**                    | [👨‍🏫], [📚]                                              |
+| ⚖️ **Revisión del Equilibrio de Carga de Trabajo (EQ TC)**| [👨‍🏫], [🏢]                                              |
+| ✔️ **Asignación Final de Carga Docente**                  | [👨‍🏫], [🏢]                                              |
+| 📜 **Verificación de Contrato y Estado de Carga**         | [💻]                                                     |
+
 
 
 ---
