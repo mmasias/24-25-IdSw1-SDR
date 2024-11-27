@@ -2,10 +2,7 @@
 state "MENU_PRINCIPAL" as MenuPrincipal
 state "CREANDO_MENSAJE" as CreandoMensaje
 state "VIENDO_RESUMEN" as ViendoResumen
-state "LISTANDO_CATEGORIAS" as Categorias
-state "CREANDO_CATEGORIA" as CreandoCategoria
-state "ACTUALIZANDO_CATEGORIA" as ActualizandoCategoria
-state "BORRANDO_CATEGORIA" as BorrandoCategoria
+state "LISTANDO_GRUPOS" as Grupos
 state "LISTANDO_USUARIOS" as Usuarios
 state "ACTUALIZANDO_USUARIO" as ActualizandoUsuario
 state "CREANDO_USUARIO" as CreandoUsuario
@@ -53,48 +50,12 @@ CreandoMensaje --> MenuPrincipal
         Listar mensajes
     end note
 
-MenuPrincipal --> Categorias
+MenuPrincipal --> Grupos
     note on link
         Listar categorias
     end note
 
-Categorias --> CreandoCategoria
-    note on link
-        Crear nueva 
-        categoria
-    end note
-
-CreandoCategoria --> Categorias
-    note on link
-        Listar 
-        categorias
-    end note
-
-Categorias --> ActualizandoCategoria
-    note on link
-        Actualizar una 
-        categoria
-    end note
-
-ActualizandoCategoria --> Categorias
-    note on link
-        Listar 
-        categorias
-    end note
-
-Categorias --> BorrandoCategoria
-    note on link
-        Borrar una 
-        categoria
-    end note
-
-BorrandoCategoria --> Categorias
-    note on link
-        Listar 
-        categorias
-    end note
-
-Categorias --> MenuPrincipal
+Grupos --> MenuPrincipal
     note on link
         Listar mensajes
     end note
