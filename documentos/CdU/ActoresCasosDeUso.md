@@ -1,7 +1,8 @@
 # 📝 Encontrar Actores y Casos de Uso
 <div align="right">
 
-Ir a [Priorizar Casos de Uso](PriorizarCasosDeUso.md) ➡️ 
+[Priorizar Casos de Uso ➡️](PriorizarCasosDeUso.md) |
+|--:|
 
 </div>
 

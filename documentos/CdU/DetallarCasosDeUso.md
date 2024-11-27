@@ -1,9 +1,7 @@
 # 📝 Detallar Casos de Uso
 
-<div style="display: flex; justify-content: space-between;">
-    <div align="left">⬅️ Ir a <a href="PriorizarCasosDeUso.md">Priorizar Casos de Uso</a></div>
-    <div align="right">Ir a Prototipar Casos de Uso ➡️</div>
-</div>
+| [⬅️ Priorizar Casos de Uso](PriorizarCasosDeUso.md) | Prototipar Casos de Uso ➡️ |
+|:--|--:|
 
 ---
 
