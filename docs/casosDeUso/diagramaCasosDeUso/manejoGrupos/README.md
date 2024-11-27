@@ -5,28 +5,6 @@
 
 </div>
 
-# Diagrama Casos de Uso
+## Manejo de Grupos
 
-## CRUD de Usuarios
-
-![](./manejoUsuarios/manejoUsuarios.svg)
-
-## CRUD de Grupos
-
-![](./manejoGrupos/manejoGrupo.svg)
-
-## Envío de Documentos
-
-![](./envioDocumentos/envioDocumentos.svg)
-
-## Visualización y Confirmación de Documentos
-
-![](./visualizacionConfirmacionDocumentos/visualizacionConfirmacionDocumentos.svg)
-
-## Manejo de sesión
-
-![](./manejoSesion/manejoSesion.svg)
-
-## Manejo de notificaciones
-
-![](./tiempo/manejoNotificaciones/manejoNotificaciones.svg)
+![Diagrama de Manejo de Usuarios](./manejoGrupo.svg)
