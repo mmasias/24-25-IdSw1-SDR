@@ -1,71 +1,28 @@
 # 📝 Detallar Casos de Uso
 
 ---
+### 🎯 **Objetivo**
+El objetivo es **detallar los actores y casos de uso** 
+---
 
-### 1. Crear un Profesor
+### 👥 **Actores Involucrados**  
 
-| **Actor Primario** | Departamento |
-|--------------------|--------------|
-| **Precondiciones** | El departamento tiene acceso al sistema. |
-| **Flujo Principal** | 1. 🔐 El departamento inicia sesión en el sistema.<br> 2. 📝 El sistema solicita la información del profesor (nombre, titulaciones, categoría, experiencia, etc.).<br> 3. ✍️ El departamento ingresa los datos y envía el formulario.<br> 4. ✅ El sistema valida los datos ingresados.<br> 5. 💾 El sistema registra al profesor en la base de datos.<br> 6. ✔️ El sistema confirma que el profesor ha sido creado correctamente. |
-| **Flujos Alternativos** | ⚠️ Si los datos ingresados son incorrectos, el sistema muestra un mensaje de error y permite corregir. |
+| **Actor**                          | **Prioridad** | **Descripción**                                                                                                                                  |  
+|-------------------------------------|---------------|--------------------------------------------------------------------------------------------------------------------------------------------------|  
+| 👨‍🏫 **Profesor**                   | 🔴 **Alta**   | El profesor es quien recibe la carga docente y debe interactuar con el sistema para revisar su carga de trabajo, asegurarse de que está equilibrada y recibir la asignación final de carga.                                                                 |  
+| 🏢 **Departamento**                 | 🔴 **Alta**   | El departamento gestiona las cargas docentes y verifica que se cumplan los requisitos de distribución de trabajo entre los profesores. Son responsables de revisar la propuesta de carga y asegurarse de que sea equitativa y cumpla con las normativas internas. |  
+| 💻 **Sistema de Planificación**     | 🔴 **Alta**   | El sistema es la plataforma que gestiona la propuesta, verificación y asignación de la carga docente. Es clave para automatizar y facilitar la distribución y la revisión de cargas de trabajo.                                  |  
+| 📚 **Memoria Académica**            | 🔴 **Alta**   | La memoria académica es el registro de las asignaciones y actividades académicas de los profesores. Se utiliza para generar informes y realizar seguimientos del trabajo realizado por los docentes.                                          |  
 
 ---
 
-### 2. Crear Asignatura
+### 📋 **Casos de Uso y Priorización**  
 
-| **Actor Primario** | Departamento |
-|--------------------|--------------|
-| **Precondiciones** | Acceso al sistema y datos necesarios para crear una asignatura. |
-| **Flujo Principal** | 1. 🔐 El departamento inicia sesión en el sistema.<br> 2. 📝 El sistema solicita la información de la asignatura (nombre, semestre, ECTS, tipo).<br> 3. ✍️ El departamento ingresa los datos y confirma.<br> 4. ✅ El sistema valida y registra la asignatura.<br> 5. ✔️ El sistema confirma que la asignatura ha sido creada. |
-| **Flujos Alternativos** | ⚠️ Si la asignatura ya existe, el sistema notifica y permite editarla. |
-
----
-
-### 3. Crear Contrato para un Profesor
-
-| **Actor Primario** | Departamento |
-|--------------------|--------------|
-| **Precondiciones** | Acceso al sistema y datos necesarios para crear un contrato. |
-| **Flujo Principal** | 1. 🔐 El departamento inicia sesión en el sistema.<br> 2. 📝 El sistema solicita los datos del contrato (tipo de contrato, duración, condiciones).<br> 3. ✍️ El departamento ingresa los datos y confirma.<br> 4. ✅ El sistema valida los datos y crea el contrato asociado al profesor.<br> 5. ✔️ El sistema confirma que el contrato ha sido creado correctamente. |
-| **Flujos Alternativos** | ⚠️ Si el tipo de contrato no es compatible con la carga docente, el sistema muestra un mensaje de error. |
-
----
-
-### 4. Registrar Memoria Académica
-
-| **Actor Primario** | Memoria Académica |
-|--------------------|-------------------|
-| **Precondiciones** | El sistema tiene acceso a los datos académicos de asignaturas y profesores. |
-| **Flujo Principal** | 1. 📤 El sistema recibe los datos académicos de las asignaturas y profesores.<br> 2. ✅ El sistema verifica la validez de los datos recibidos.<br> 3. 💾 El sistema registra la información en la memoria académica.<br> 4. ✔️ El sistema confirma que la memoria académica ha sido actualizada. |
-| **Flujos Alternativos** | ⚠️ Si los datos son incompletos o incorrectos, el sistema muestra un mensaje de error y solicita corrección. |
-
---- 
-
-### 5. Consultar Información de un Profesor
-
-| **Actor Primario** | Departamento |
-|--------------------|--------------|
-| **Precondiciones** | El departamento tiene acceso al sistema y a los datos del profesor. |
-| **Flujo Principal** | 1. 🔐 El departamento inicia sesión en el sistema.<br> 2. 📄 El sistema muestra una lista de los profesores registrados.<br> 3. 🔍 El departamento selecciona un profesor para consultar.<br> 4. ℹ️ El sistema muestra la información detallada del profesor (titulación, categoría, experiencia, asignaturas, etc.). |
-| **Flujos Alternativos** | ⚠️ Si no hay resultados para el profesor seleccionado, el sistema muestra un mensaje indicando que no se han encontrado coincidencias. |
-
---- 
-
-### 6. Modificar Información de una Asignatura
-
-| **Actor Primario** | Departamento |
-|--------------------|--------------|
-| **Precondiciones** | El departamento tiene acceso al sistema y los datos de la asignatura. |
-| **Flujo Principal** | 1. 🔐 El departamento inicia sesión en el sistema.<br> 2. 📄 El sistema muestra la lista de asignaturas registradas.<br> 3. ✍️ El departamento selecciona una asignatura para editar.<br> 4. ℹ️ El sistema muestra los datos actuales de la asignatura.<br> 5. 🔄 El departamento modifica la información (por ejemplo, semestre, ECTS) y confirma.<br> 6. ✔️ El sistema valida los cambios y actualiza la asignatura. |
-| **Flujos Alternativos** | ⚠️ Si los cambios no son válidos (por ejemplo, asignación incorrecta de ECTS), el sistema muestra un mensaje de error y permite corrección. |
-
---- 
-
-### 7. Eliminar un Profesor
-
-| **Actor Primario** | Departamento |
-|--------------------|--------------|
-| **Precondiciones** | El departamento tiene acceso al sistema y al registro del profesor. |
-| **Flujo Principal** | 1. 🔐 El departamento inicia sesión en el sistema.<br> 2. 📄 El sistema muestra la lista de profesores registrados.<br> 3. ❌ El departamento selecciona el profesor que desea eliminar.<br> 4. ⚠️ El sistema muestra una confirmación de eliminación.<br> 5. ✅ El departamento confirma la eliminación.<br> 6. 🗑️ El sistema elimina al profesor del registro. |
-| **Flujos Alternativos** | ⚠️ Si el profesor está asociado a asignaturas o contratos activos, el sistema muestra un mensaje de advertencia y requiere que el departamento revise dichas asociaciones antes de proceder con la eliminación. |
+| **#** | **Caso de Uso**                                         | **Prioridad** | **Descripción**                                                                                                                                               |  
+|-------|---------------------------------------------------------|---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|  
+| 1     | 📊 **Propuesta de Carga Docente**                       | 🔴 **Alta**   | El sistema presenta la propuesta de carga docente a los profesores y al departamento para su revisión. Los profesores pueden consultar la carga inicial antes de su asignación final.                        |  
+| 2     | 📜 **Verificación de Contrato y Estado de Carga**       | 🔴 **Alta**   | Este proceso permite verificar el contrato del profesor y su estado actual de carga docente, asegurando que no se exceda el número de horas estipulado o se incumplan los acuerdos contractuales.               |  
+| 3     | ⚖️ **Revisión del Equilibrio de Carga de Trabajo (EQ TC)** | 🔴 **Alta**   | Los departamentos revisan si la distribución de carga entre los docentes está equilibrada, considerando tanto la cantidad de horas como la intensidad de trabajo. Es crucial para evitar cargas excesivas. |  
+| 4     | 🛠️ **Ajuste de Carga Docente**                          | 🟡 **Media**  | Si se detectan desequilibrios o problemas en la distribución de las cargas, el sistema permite ajustar la asignación de horas de los profesores para mantener la equidad.                                         |  
+| 5     | 📑 **Generación de Memoria Académica**                  | 🟡 **Media**  | Genera el informe o memoria académica que resume la carga docente final y las actividades realizadas por los profesores. Este documento es utilizado para seguimiento y auditorías.                                 |  
+| 6     | ✔️ **Asignación Final de Carga Docente**                | 🔴 **Alta**   | Una vez revisada y ajustada la carga docente, el sistema realiza la asignación final, confirmando la carga que cada profesor debe asumir durante el periodo académico correspondiente.                                   |  
