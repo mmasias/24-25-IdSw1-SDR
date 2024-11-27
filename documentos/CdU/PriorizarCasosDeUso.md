@@ -42,7 +42,3 @@ A continuación, se muestran los diagramas que ilustran las interacciones entre 
 
 ---
 
-### 🎨 **Resumen Visual**
-
-Este es el resumen visual con los emoticonos integrados para hacerlo más atractivo y facilitar la comprensión de cada etapa del proceso de asignación de carga docente. ¡Espero que te guste este formato más bonito y visual!
-
