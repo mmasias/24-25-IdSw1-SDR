@@ -1,0 +1,61 @@
+@startuml
+
+[*] --> ProcesoDeInicioDeSesion
+ProcesoDeInicioDeSesion --> VerificarCredenciales
+note on link
+    Alumno ingresa correo y contraseña.
+end note
+
+state VerificarCredenciales <<choice>>
+VerificarCredenciales --> InicioSesionCorrecto : Credenciales válidas.
+VerificarCredenciales --> InicioSesionFallido : Credenciales inválidas.
+
+InicioSesionFallido --> ProcesoDeInicioDeSesion
+InicioSesionCorrecto --> MenuPrincipal
+note on link
+    Alumno accede al sistema correctamente.
+end note
+
+MenuPrincipal --> MenuRetos : Selecciona "Ver Retos"
+MenuRetos --> ListaDeRetos
+note on link
+    Muestra retos disponibles: obligatorios y opcionales.
+end note
+
+ListaDeRetos --> TipoDeReto
+note on link
+    Decide entre un reto obligatorio o opcional.
+end note
+
+state TipoDeReto <<choice>>
+TipoDeReto --> RetoObligatorio : Selecciona "Obligatorio"
+TipoDeReto --> RetoOpcional : Selecciona "Opcional"
+
+RetoObligatorio --> RealizarReto
+note on link
+    Inicia el reto obligatorio y sigue las instrucciones.
+end note
+
+RetoOpcional --> RealizarReto
+note on link
+    Inicia el reto opcional y sigue las instrucciones.
+end note
+
+RealizarReto --> SubirEvidencia
+note on link
+    Alumno sube una evidencia (foto o video).
+end note
+
+SubirEvidencia --> ConfirmarEnvio
+note on link
+    Revisa la evidencia y confirma el envío.
+end note
+
+ConfirmarEnvio --> MenuRetos
+note on link
+    Evidencia enviada. Regresa al menú de retos mientras espera la validación.
+end note
+
+MenuRetos --> [*]
+
+@enduml
