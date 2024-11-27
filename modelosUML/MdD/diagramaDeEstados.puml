@@ -5,16 +5,24 @@ state Sin_Asignacion {
     Sin_Asignacion : Estado inicial sin carga asignada.
 }
 
-Sin_Asignacion --> Propuesta_Carga : Proponer carga inicial
+Sin_Asignacion --> Propuesta_Carga : Generar propuesta inicial
 
 state Propuesta_Carga {
-    Propuesta_Carga : Generar propuesta basada en:
-    Propuesta_Carga : - Carga docencia
-    Propuesta_Carga : - Carga investigación
-    Propuesta_Carga : - Carga gestión
+    Propuesta_Carga : Proponer carga basada en:
+    Propuesta_Carga : - Docencia
+    Propuesta_Carga : - Gestión
+    Propuesta_Carga : - Investigación
 }
 
-Propuesta_Carga --> Verificar_Contrato : Validar contrato del profesor
+Propuesta_Carga --> Asignacion_Inicial : Validar y registrar asignación inicial
+
+state Asignacion_Inicial {
+    Asignacion_Inicial : Generar asignación inicial basada en:
+    Asignacion_Inicial : - Contrato
+    Asignacion_Inicial : - Necesidades del programa
+}
+
+Asignacion_Inicial --> Verificar_Contrato : Validar contrato del profesor
 
 state Verificar_Contrato {
     Verificar_Contrato : - Verificar tipo de contrato:
@@ -44,17 +52,20 @@ Revisión_EQ_TC --> Revisión_Carga : EQ TC adecuado
 state Revisión_Carga {
     Revisión_Carga : Revisar proporción de carga:
     Revisión_Carga : - Docencia, gestión, investigación
-    Revisión_Carga : - Validación final por asignaturas
+    Revisión_Carga : - Validación por asignaturas
+    Revisión_Carga : - Detectar subasignación
 }
 
-Revisión_Carga --> Aprobada : Carga adecuada y validada
-Revisión_Carga --> Ajuste_Carga : Se requieren cambios
+Revisión_Carga --> Verificar_Memoria : Validación preliminar completa
 
-state Ajuste_Carga {
-    Ajuste_Carga : Modificar carga según EQ TC:
-    Ajuste_Carga : - Ajustar docencia, gestión o investigación
-    Ajuste_Carga --> Revisión_EQ_TC : Reenviar a revisión
+state Verificar_Memoria {
+    Verificar_Memoria : Verificar memoria aprobada del programa:
+    Verificar_Memoria : - Carga vs compromisos oficiales
+    Verificar_Memoria : - Identificar desbalances
 }
+
+Verificar_Memoria --> No_Valido : Memoria incumplida
+Verificar_Memoria --> Aprobada : Memoria cumplida
 
 Aprobada --> Asignada : Carga aceptada y asignada
 
@@ -64,6 +75,22 @@ state Asignada {
     Asignada : - Estado final de gestión de carga
 }
 
-Asignada --> [*] : Proceso completado
+Asignada --> Cumplimiento_Legal : Revisión opcional de conformidad legal
 
+state Cumplimiento_Legal {
+    Cumplimiento_Legal : Validar normativas:
+    Cumplimiento_Legal : - Compatibilidad con marco legal
+}
+
+Cumplimiento_Legal --> Ajuste_Carga : No cumple con normativas legales
+Cumplimiento_Legal --> [*] : Cumple, proceso completado
+
+Aprobada --> Ajuste_Carga : Se requieren cambios
+
+state Ajuste_Carga {
+    Ajuste_Carga : Modificar carga según EQ TC:
+    Ajuste_Carga : - Ajustar docencia, gestión o investigación
+    Ajuste_Carga --> Revisión_EQ_TC : Reenviar a revisión
+    Ajuste_Carga --> No_Valido : Inviabilidad de ajustes
+}
 @enduml
