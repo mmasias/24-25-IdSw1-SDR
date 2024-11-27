@@ -12,7 +12,7 @@ package "UNEATLANTICO" {
     object Contrato {
         tipo = "Completo Indefinido"
     }
-    
+
     object Experiencia {
         docente = 5
         virtual = 2
@@ -53,14 +53,24 @@ package "UNEATLANTICO" {
         facultad = "Informática"
     }
 
+    object Asignacion {
+        id_asignacion = "A001"
+        porcentaje_asignado = 50
+        curso_academico = "2024-2025"
+        cumplido_en_memoria = true
+    }
+
     Profesor --> Contrato : tiene
     Profesor --> Experiencia : tiene
     Profesor --> CargaAcademica : dedicacion
+    Profesor --> Asignacion : participa
     Profesor .. Titulacion : asigna
     Profesor --> Asignatura : imparte
     Profesor --> MemoriaAcademica : cumple
     MemoriaAcademica --> Indicador : meta y valores
     Indicador --> Profesor : extrae datos
     Asignatura --> MemoriaAcademica : define
+    Asignacion --> Asignatura : corresponde
+    Asignacion --> MemoriaAcademica : cumple
 }
 @enduml
