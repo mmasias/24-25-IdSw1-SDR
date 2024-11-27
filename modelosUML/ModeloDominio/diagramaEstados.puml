@@ -1,23 +1,37 @@
 @startuml
-[*] --> Creada : Empresa crea OfertaTrabajo
 
-Creada --> EnValidacion : Enviar a validación
-EnValidacion --> Publicada : Administrador publica oferta
-EnValidacion --> Invalidada : Administrador invalida oferta
+state Alumni_Postula {
+    [*] --> Postula : Envía postulación
+    Postula --> EnRevision : Empresa revisa postulado
+    EnRevision --> Aceptado : Alumni aceptado
+    EnRevision --> Rechazado : Alumni rechazado
+    Aceptado --> [*]
+    Rechazado --> [*]
+}
 
-Publicada --> Aplicacion : Alumni pueden aplicar
+state Empresa_Crea {
+    [*] --> Creada : Decide crear una oferta
+    Creada --> PendienteValidacion : Envía oferta para validación
+    PendienteValidacion --> Disponible : Administrador valida la oferta
+    PendienteValidacion --> Cancelada : Cancela oferta
+    Disponible --> Cerrada : Cierra oferta
+    Disponible --> Cancelada : Cancela oferta
+    Cerrada --> [*]
+    Cancelada --> [*]
+}
 
-state "Proceso de Aplicación" as Aplicacion {
-    [*] --> Enviada : Alumni envía aplicación
-    Enviada --> EnRevision : Empresa revisa aplicación
-    EnRevision --> Aceptada : Alumni aceptado
-    EnRevision --> Rechazada : Alumni rechazado
-    Aceptada --> [*]
+state Administrador_Valida {
+    [*] --> Revisando : Recibe oferta
+    Revisando --> Validada : Valida la oferta
+    Revisando --> Rechazada : Invalida la oferta
+    Validada --> [*]
     Rechazada --> [*]
 }
 
-Aplicacion --> Cerrada : Oferta cerrada
-Invalidada --> Cerrada : Oferta invalidada
+state Autenticacion_Plataforma_Acceso {
+    [*] --> Autenticado : Usuario inicia sesión
+    Autenticado --> NoAutenticado : Usuario cierra sesión
+    NoAutenticado --> [*]
+}
 
-Cerrada --> [*]
 @enduml
