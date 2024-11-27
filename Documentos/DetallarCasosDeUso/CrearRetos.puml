@@ -1,0 +1,61 @@
+@startuml
+
+[*] --> ProcesoDeInicioDeSesion
+
+ProcesoDeInicioDeSesion --> VerificarCredenciales
+note on link
+    Profesor ingresa correo y contraseña.
+end note
+
+state VerificarCredenciales <<choice>>
+VerificarCredenciales --> InicioSesionCorrecto : Credenciales válidas.
+VerificarCredenciales --> InicioSesionFallido : Credenciales inválidas.
+
+InicioSesionFallido --> ProcesoDeInicioDeSesion
+InicioSesionCorrecto --> MenuPrincipal
+note on link
+    Profesor accede al sistema correctamente.
+end note
+
+MenuPrincipal --> MenuRetos : Selecciona "Menú Retos"
+MenuRetos --> CrearReto : Elige "Crear Reto"
+
+state TipoDeReto <<choice>>
+CrearReto --> TipoDeReto
+note on link
+    Decide el tipo de reto:
+    Obligatorio o Voluntario.
+end note
+
+TipoDeReto --> RetoObligatorio : Selecciona "Obligatorio"
+TipoDeReto --> RetoVoluntario : Selecciona "Voluntario"
+
+RetoObligatorio --> ConfigurarReto
+note on link
+    Configura:
+    - Nombre
+    - Descripción
+    - Fecha límite
+end note
+
+RetoVoluntario --> ConfigurarReto
+note on link
+    Configura:
+    - Nombre
+    - Descripción
+    - Fecha límite
+end note
+
+ConfigurarReto --> PublicarReto
+note on link
+    Confirma los detalles y publica el reto.
+end note
+
+PublicarReto --> MenuRetos
+note on link
+    Vuelve al menú retos tras publicar.
+end note
+
+MenuPrincipal --> [*]
+
+@enduml
