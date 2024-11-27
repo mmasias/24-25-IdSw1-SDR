@@ -1,35 +1,44 @@
 @startuml
 package "UNEATLANTICO" {
     class Profesor {
+        - id_profesor
+        - nombre
         - titulacion
         - institucion
         - validacion_movilidad
         - movilidad_destinos
         - validar_movilidad
         - sexenios
+        - curso_academico
     }
 
     enum Contrato {
+      - historial_contrato
+      
     }
     enum Experiencia {
+      - historial_experiencia
     }
 
     class Asignatura {
         - codigo
+        - nombre
         - semestre
         - porcentaje_asignacion
         - numero_grupos
+        - curso_academico
     }
 
     class Titulacion {
-        - curso
+        - nombre
         - estructura_base
+        - curso_academico
     }
 
     class MemoriaAcademica {
         - valores_comprometido
         - movilidad_destinos
-        - curso
+        - curso_academico
         - meta_sexenios
         - meta_movilidad
     }
@@ -45,17 +54,25 @@ package "UNEATLANTICO" {
         - modalidad
         - tipo
         - facultad
+        - curso_academico
+    }
+
+    class Asignacion {
+        - id_asignacion
+        - porcentaje_asignado
+        - curso_academico
+        - cumplido_en_memoria
     }
 
     Profesor --> Contrato : tiene
     Profesor --> Experiencia : tiene
     Profesor --> CargaAcademica : dedicacion
+    Profesor --> Asignacion : participa
     Profesor .. Titulacion : asigna
-    Profesor --> Asignatura : imparte
-    Profesor --> MemoriaAcademica : cumple
+    Asignacion --> Asignatura : corresponde
+    Asignacion --> MemoriaAcademica : cumple
     MemoriaAcademica --> Indicador : meta y valores
     Indicador --> Profesor : extrae datos
-    Asignatura --> MemoriaAcademica : define
-
 }
 @enduml
+
