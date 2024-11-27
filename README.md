@@ -15,15 +15,15 @@ Se desarrolla, en un caso real, la disciplina de requisitado, que es la puerta d
 
 <div align=center>
 
-## Diagrama de Clases:
+### Diagrama de Clases:
 
 ![Diagrama Clases](modelosUML/ModeloDominio/svg/diagramaClases.svg)
 
-## Diagrama de Objetos:
+### Diagrama de Objetos:
 
 ![Diagrama Objetos](modelosUML/ModeloDominio/svg/diagramaObjetos.svg)
 
-## Diagrama de Estados:
+### Diagrama de Estados:
 
 ![Diagrama Estados](modelosUML/ModeloDominio/svg/diagramaEstados.svg)
 
