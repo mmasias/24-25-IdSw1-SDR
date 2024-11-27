@@ -1,6 +1,6 @@
 # 📝 **Casos de Uso: Priorizar Casos de Uso**
 ---
-## 🎯 **Objetivo**
+### 🎯 **Objetivo**
 El objetivo de este caso de uso es **priorizar las funcionalidades** 
 ---
 

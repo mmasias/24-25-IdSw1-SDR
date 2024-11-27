@@ -4,7 +4,7 @@
 El objetivo es **encontrar los actores y casos de uso** 
 ---
 
-## 👥 **Actores**
+### 👥 **Actores**
 
 | **Actor**               |  
 |-------------------------|  
