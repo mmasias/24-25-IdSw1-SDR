@@ -1,14 +1,19 @@
 # 📝 Encontrar Actores y Casos de Uso
+<div align="right">
+
+Ir a [Priorizar Casos de Uso](PriorizarCasosDeUso.md) ➡️ 
+
+</div>
 
 ---
 
-### 🎯 **Objetivo**
+## 🎯 **Objetivo**
 
 El objetivo de este paso es **encontrar actores y casos de uso** siguiendo las [pautas teóricas](https://github.com/mmasias/IdSw1/blob/main/temario/contenidos/CdU.eAyCdU.md#c%C3%B3mo) de la asignatura.
 
 ---
 
-### 👥 **Actores**  
+## 👥 **Actores**  
 
 | **Actor**                       | **Descripción**                                                                                            |  
 |---------------------------------|------------------------------------------------------------------------------------------------------------|  
@@ -19,7 +24,7 @@ El objetivo de este paso es **encontrar actores y casos de uso** siguiendo las [
 
 ---
 
-### 📋 **Casos de Uso y Priorización**  
+## 📋 **Casos de Uso**  
 
 | **#** | **Caso de Uso**                                           |
 |-------|-----------------------------------------------------------|

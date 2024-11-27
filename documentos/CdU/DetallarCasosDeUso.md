@@ -1,15 +1,24 @@
 # 📝 Detallar Casos de Uso
 
+<div style="display: flex; justify-content: space-between; align-items: center;">
+    <div style="padding: 10px;">
+        ⬅️ Ir a <a href="PriorizarCasosDeUso.md">Priorizar Casos de Uso</a>
+    </div>
+    <div style="padding: 10px;">
+        Prototipar Casos de Uso ➡️
+    </div>
+</div>
+
 ---
 
-### 🎯 **Objetivo**
+## 🎯 **Objetivo**
 El objetivo de este paso es **detallar los casos de uso** siguiendo las [pautas teóricas](https://github.com/mmasias/IdSw1/blob/main/temario/contenidos/Cdu.dCdU.md#c%C3%B3mo) de la asignatura.
 
 ---
 
-### 📋 **Casos de Uso y Priorización**  
+## 📋 **Casos de Uso, Priorización y Detalle**  
 
-| **#** | **Caso de Uso**                                         | **Prioridad** | **Descripción**                                                                                                                                               |  
+| **#** | **Caso de Uso**                                         | **Prioridad** | **Detalle**                                                                                                                                               |  
 |-------|---------------------------------------------------------|---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|  
 | 1     | 📊 **Propuesta de Carga Docente**                       | 🔴 **Alta**   | El sistema presenta la propuesta de carga docente a los profesores y al departamento para su revisión. Los profesores pueden consultar la carga inicial antes de su asignación final.                        |  
 | 2     | 📜 **Verificación de Contrato y Estado de Carga**       | 🟡 **Media**   | Este proceso permite verificar el contrato del profesor y su estado actual de carga docente, asegurando que no se exceda el número de horas estipulado o se incumplan los acuerdos contractuales.               |  
