@@ -3,8 +3,6 @@
 | [⬅️ Priorizar Casos de Uso](PriorizarCasosDeUso.md) | Prototipar Casos de Uso ➡️ |
 |:--|--:|
 
----
-
 ## 🎯 **Objetivo**
 El objetivo de este paso es **detallar los casos de uso** siguiendo las [pautas teóricas](https://github.com/mmasias/IdSw1/blob/main/temario/contenidos/Cdu.dCdU.md#c%C3%B3mo) de la asignatura.
 

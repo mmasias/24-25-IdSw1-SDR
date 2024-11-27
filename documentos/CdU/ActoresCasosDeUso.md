@@ -3,8 +3,6 @@
 [Priorizar Casos de Uso ➡️](PriorizarCasosDeUso.md) |
 |--:|
 
----
-
 ## 🎯 **Objetivo**
 
 El objetivo de este paso es **encontrar actores y casos de uso** siguiendo las [pautas teóricas](https://github.com/mmasias/IdSw1/blob/main/temario/contenidos/CdU.eAyCdU.md#c%C3%B3mo) de la asignatura.
