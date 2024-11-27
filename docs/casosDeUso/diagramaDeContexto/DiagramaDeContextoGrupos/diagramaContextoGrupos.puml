@@ -1,0 +1,52 @@
+@startuml
+state "MENU_PRINCIPAL" as MenuPrincipal
+state "LISTANDO_GRUPOS" as Grupos
+state "CREANDO_GRUPOS" as CreandoGrupo
+state "ACTUALIZANDO_GRUPOS" as ActualizandoGrupo
+state "BORRANDO_GRUPOS" as BorrandoGrupo
+
+[*] --> MenuPrincipal
+
+MenuPrincipal --> Grupos
+    note on link
+        Listar grupos
+    end note
+
+Grupos --> CreandoGrupo
+    note on link
+        Crear nuevo grupo
+    end note
+
+CreandoGrupo --> Grupos
+    note on link
+        Listar grupos
+    end note
+
+Grupos --> ActualizandoGrupo
+    note on link
+        Actualizar un grupo
+    end note
+
+ActualizandoGrupo --> Grupos
+    note on link
+        Listar 
+        categorias
+    end note
+
+Grupos --> BorrandoGrupo
+    note on link
+        Borrar un
+        grupo
+    end note
+
+BorrandoGrupo --> Grupos
+    note on link
+        Listar 
+        grupos
+    end note
+
+Grupos --> MenuPrincipal
+    note on link
+        Listar mensajes
+    end note
+@enduml
