@@ -1,6 +1,6 @@
 @startuml manejoGrupo
 left to right direction
-actor "Responsable" as Responsable
+actor "Usuario" as Usuario
 actor "Administrador General" as AdminGeneral
 
 package "CRUD de Grupos" {
@@ -10,9 +10,9 @@ package "CRUD de Grupos" {
     usecase "Borrar Grupo" as CC4
 }
 
-AdminGeneral --|> Responsable
-Responsable --> CC1
-Responsable --> CC2
-Responsable --> CC3
-Responsable --> CC4
+AdminGeneral --|> Usuario
+Usuario --> CC1
+Usuario --> CC2
+Usuario --> CC3
+Usuario --> CC4
 @enduml

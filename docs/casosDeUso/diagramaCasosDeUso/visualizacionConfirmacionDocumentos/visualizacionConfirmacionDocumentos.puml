@@ -1,6 +1,6 @@
 @startuml visualizacionConfirmacionDocumentos
 left to right direction
-actor "Responsable" as Responsable
+actor "Usuario" as Usuario
 actor "Destinatario" as Destinatario
 
 package "Visualización y Confirmación de Documentos" {
@@ -11,10 +11,10 @@ package "Visualización y Confirmación de Documentos" {
     usecase "Cerrar Mensaje" as VCD5
 }
 
-Responsable <|- Destinatario
-Responsable --> VCD1
-Responsable --> VCD2
-Responsable --> VCD3
-Responsable --> VCD4
-Responsable --> VCD5
+Usuario <|- Destinatario
+Usuario --> VCD1
+Usuario --> VCD2
+Usuario --> VCD3
+Usuario --> VCD4
+Usuario --> VCD5
 @enduml

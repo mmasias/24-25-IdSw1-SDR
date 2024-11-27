@@ -1,7 +1,7 @@
 @startuml ManejoUsuario
 left to right direction
 actor "Administrador General" as AdminGeneral
-actor "Responsable" as Responsable
+actor "Usuario" as Usuario
 
 package "CRUD de Usuarios" {
     usecase "Crear Usuario" as CU1
@@ -10,9 +10,9 @@ package "CRUD de Usuarios" {
     usecase "Borrar Usuario" as CU4
 }
 
-AdminGeneral --|> Responsable
-Responsable --> CU1
-Responsable --> CU2
-Responsable --> CU3
-Responsable --> CU4
+AdminGeneral --|> Usuario
+Usuario --> CU1
+Usuario --> CU2
+Usuario --> CU3
+Usuario --> CU4
 @enduml
