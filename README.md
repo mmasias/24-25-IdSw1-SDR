@@ -2,7 +2,7 @@
 
 # ![Gestión de Horarios](logo.png) Gestión de Horarios Universitarios 🗓️
 
-**Gestión de Horarios** es una herramienta integral diseñada para optimizar la planificación y asignación de horarios en universidades. Este sistema facilita la organización de materias, profesores, estudiantes y espacios académicos, garantizando una gestión eficiente y centralizada.  
+**Gestión de Horarios** es una herramienta integral diseñada para optimizar la planificación y asignación de horarios en universidades. Este sistema facilita la organización de asignaturas, profesores, estudiantes y aulas, garantizando una gestión eficiente y centralizada.  
 
 Con una **interfaz intuitiva** y un **calendario interactivo**, la solución mejora la experiencia del usuario y asegura un uso óptimo de los recursos académicos disponibles.
 
@@ -10,10 +10,8 @@ Con una **interfaz intuitiva** y un **calendario interactivo**, la solución mej
 
 ## 🚀 **Características principales**
 - 📅 Planificación centralizada de horarios.
-- 👩‍🏫 Gestión de profesores, materias, estudiantes y aulas.
+- 👩‍🏫 Gestión de profesores, asignatura, estudiantes y aulas.
 - 🖥️ Interfaz de usuario intuitiva con visualización de calendarios interactivos.
-- 📊 Herramientas analíticas para identificar conflictos y optimizar recursos.
-- 🔒 Acceso seguro con roles definidos para administradores, profesores y estudiantes.
 
 ---
 
@@ -22,7 +20,7 @@ El sistema se basa en un modelo conceptual sólido que facilita la escalabilidad
 
 ### 📌 **Diagramas clave**:
 1. **Diagrama de Clases**  
-   Representa las relaciones y dependencias entre las entidades principales, como Materias, Profesores, Estudiantes y Espacios.
+   Representa las relaciones y dependencias entre las entidades principales, como Asignaturas, Profesores y Aulas.
    
    ![Diagrama de Clases](images/modelosUML/modelosUML/DiagramaDeClases.svg)
 
