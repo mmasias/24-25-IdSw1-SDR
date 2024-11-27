@@ -4,6 +4,13 @@ Este es el repositorio de las sesiones de requisitado de la asignatura de Ingeni
 
 Se desarrolla, en un caso real, la disciplina de requisitado, que es la puerta de entrada al desarrollo de una solución basada en software. 
 
+## Sesiones:
+
+- [10/16](sesiones/1016.md)
+
+- [11/13](sesiones/1113.md)
+
+
 ## Modelo del Dominio:
 
 <div align=center>
@@ -20,7 +27,8 @@ Se desarrolla, en un caso real, la disciplina de requisitado, que es la puerta d
 
 ![Diagrama Estados](modelosUML/ModeloDominio/svg/diagramaEstados.svg)
 
-
 </div>
 
+## Casos de Uso:
 
+[Actores y Casos](modelosUML/CasosDeUso/ActoresYCasos.md)
