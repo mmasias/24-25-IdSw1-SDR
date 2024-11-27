@@ -40,4 +40,4 @@ El sistema se basa en un modelo conceptual sólido que facilita la escalabilidad
 - **Sergio Moreno Vega**
 - **Iker Celaya Buezo**
 - **Adrián Garcia Arranz**
-- **Joaquin Rodriguez**
+- **Joaquin Rodriguez Figueroa**
