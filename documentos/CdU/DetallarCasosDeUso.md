@@ -1,12 +1,8 @@
 # 📝 Detallar Casos de Uso
 
-<div style="display: flex; justify-content: space-between; align-items: center;">
-    <div style="padding: 10px;">
-        ⬅️ Ir a <a href="PriorizarCasosDeUso.md">Priorizar Casos de Uso</a>
-    </div>
-    <div style="padding: 10px;">
-        Prototipar Casos de Uso ➡️
-    </div>
+<div style="display: flex; justify-content: space-between;">
+    <div align="left">⬅️ Ir a <a href="PriorizarCasosDeUso.md">Priorizar Casos de Uso</a></div>
+    <div align="right">Ir a Prototipar Casos de Uso ➡️</div>
 </div>
 
 ---
