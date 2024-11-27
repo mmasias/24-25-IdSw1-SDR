@@ -1,8 +1,0 @@
-@startuml
-left to right direction
-actor Coordinador_de_Titulacion as CT
-rectangle "Consulta de Carga Académica" {
-    usecase "Consulta de Carga Total por Titulación" as UC5
-    CT --> UC5
-}
-@enduml

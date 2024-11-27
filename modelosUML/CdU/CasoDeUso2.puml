@@ -1,8 +1,0 @@
-@startuml
-left to right direction
-actor Coordinador_de_Titulacion as CT
-rectangle "Generación de Informes Académicos" {
-    usecase "Generación de Informe Anual de Mejora" as UC2
-    CT --> UC2
-}
-@enduml

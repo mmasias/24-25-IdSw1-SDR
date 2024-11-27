@@ -29,3 +29,9 @@ El objetivo es **encontrar los actores y casos de uso**
 | 4     | ⚖️ **Revisión del Equilibrio de Carga de Trabajo (EQ TC)**|  
 | 5     | ✔️ **Asignación Final de Carga Docente**                  |  
 | 6     | 📜 **Verificación de Contrato y Estado de Carga**         |
+
+---
+
+| **Modelo** | **Código** |
+|--------------|--------------------|
+| ![Modelo](/images/modelosUML/CdU/EncontrarCasos.svg) | [Ver código](/modelosUML/CdU/encontrarCasos.puml) |

@@ -1,8 +1,0 @@
-@startuml
-left to right direction
-actor Analista_Indicadores as AI
-rectangle "Análisis Académico" {
-    usecase "Análisis de Indicadores Académicos" as UC4
-    AI --> UC4
-}
-@enduml
