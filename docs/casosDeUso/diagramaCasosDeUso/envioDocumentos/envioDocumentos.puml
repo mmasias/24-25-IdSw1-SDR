@@ -6,7 +6,7 @@ actor "Administrador General" as AdminGeneral
 package "Envío de Documentos" {
     usecase "Crear/Redactar Mensaje" as ED1
     usecase "Crear Envío" as ED2
-    usecase "Descargar Resumen de Estados" as ED3
+    usecase "Descargar Informe de Envío" as ED3
 }
 
 AdminGeneral --|> Responsable
