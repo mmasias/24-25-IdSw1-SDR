@@ -363,86 +363,122 @@ Para cada caso de uso, se completa una plantilla con la información esencial.
    El sistema debe permitir al administrador visualizar todos los detalles de la oferta antes de cancelarla.
 
 
-## 4. Prototipar casos de uso.
-  
-### Crear oferta de trabajo
- i. La empresa inicia sesión en la plataforma 
-![Inicio de sesión](https://images01.nicepagecdn.com/page/14/74/es/plantilla-web-preview-1474296.jpg)
- ii. Accede a la sección "Crear oferta de trabajo".
- Dentro de la plataforma se activará un botón que te reedirigira al formulario del siguiente apartado.
- iii. Llena los campos requeridos del formulario, que incluyen:
--Título de la oferta.
--Descripción.
--Requisitos.
--Duración o vigencia de la oferta.
--Ubicación (opcional).
--Presiona el botón "Guardar".
-![Captura de Oferta de Trabajo](modelosUML/CasosDeUso/imagenes/CapturaOfertaTrabajo.png)
-iv. El sistema valida que todos los campos obligatorios estén completos.
-v. El sistema guarda la oferta como "Pendiente de Validación".
-Se guardará en una base de datos, que se podra acceder en un botón que se habilitara como "pendiente de validación".
-vi. El administrador recibe una notificación para revisar la oferta.
-Se notifica al administrador de que tiene un oferta por validar, podra acceder a través del botón nombrado previamente.
+# **Prototipar Casos de Uso**
 
+Este documento describe los pasos detallados para cada caso de uso del sistema de gestión de ofertas de trabajo.
 
-### Buscar oferta de trabajo:
-i. El alumni inicia sesión en la plataforma.
-![Inicio de sesión](https://images01.nicepagecdn.com/page/14/74/es/plantilla-web-preview-1474296.jpg)
-ii. Accede a la sección "Buscar ofertas de trabajo".
-Se accederá mediante un botón habilitado solamente en el perfil del alumni, nombrado como "Buscar ofertas de trabajo". Reedirigira a todas las ofertas que estarán almacenadas en una base de datos.
-iii. Introduzca criterios de búsqueda, como: ubicación, tipo de jornada, salario, etc.
-Se podrá filtrar por ubicación, tipo de jornada, salario.
-![Captura de Oferta de Trabajo](modelosUML/CasosDeUso/imagenes/FiltroOfertaTrabajo.png)
-iv. El sistema procesa la consulta y muestra una lista de ofertas que cumplen con los criterios.
-Se filtra segun lo solicitado mediante consultas de bases de datos, se muestran el resultado de la filtración.
-v. El alumni selecciona una oferta para ver más detalles.
-Si el alumno está interesado podrá pinchar en la oferta, y se le mostrará la oferta con su descripción completa.
+---
 
-### Aceptar oferta de trabajo:
-i. El administrador inicia sesión en la plataforma.
-![Inicio de sesión](https://images01.nicepagecdn.com/page/14/74/es/plantilla-web-preview-1474296.jpg)
-ii. Accede a la sección "Ofertas Pendientes de Validación".
-El administrador accede a su propia interfaz, donde tendra un botón habilitado que será el de ofertas, que le reedirigira a el apartado de ofertas, y allí tendra un botón nombrado como "Pendiente de Validación".
-iii. Visualiza una lista de ofertas con estado "Pendiente de Validación".
-Se mostrará una lista con todas las ofertas que esten pendientes de validación.
-iv. Selecciona una oferta para revisarla en detalle.
-Se podrá seleccionar la oferta que queramos leer con mas detalles y decidir si validarla o no.
-v. Si la oferta es válida, presiona el botón "Aceptar".
-Si se considera que la opción es valida se pulsará el botón validar, y esa oferta pasará a estar pública para los alumnis y se quitarán de la lista que estan en "Pendiente de validación".
-De otra forma si se decide no validarla se pulsará el botón no validar y se borrará del sistema.
-vii. El sistema notifica a la empresa que su oferta ha sido aceptada.
+## **Crear Oferta de Trabajo**
 
-### Postular para la oferta de trabajo:
-i. El alumni inicia sesión en la plataforma.
-![Inicio de sesión](https://images01.nicepagecdn.com/page/14/74/es/plantilla-web-preview-1474296.jpg)
-ii. Busca y selecciona una oferta de trabajo publicada.
-El alumni podr´acceder a las ofertas de trabajo donde habrá ofertas publicadas, tambien tendrá la opción de buscar en el buscador, por palabra clave o nombre de la oferta.
-iii. Acceda al detalle de la oferta y presione el botón "Postular".
-Si al alumni le interesa la oferta podrá ver los detalles y la descripción de esta. Se le habilitará un boton que sera Postular, que le reedirigirá a un formulario.
-iv. El sistema muestra un formulario que incluye:
--Información del alumni 
-Campo para adjuntar su currículum vitae (en formato PDF, DOC o DOCX).
-Campo opcional para agregar un mensaje personalizado para la empresa.
-El alumni revisa los datos, adjunta su currículum y presiona el botón "Enviar".
-![Captura del Formulario de Empleo](modelosUML/CasosDeUso/imagenes/CapturaFormularioEmpleo.png)
-v. El sistema valida que toda la información requerida esté completa.
-Simplemente se valida internamente que toda la información este completa.
-vi. El sistema registra la postulación en la base de datos y notifica a la empresa sobre la nueva solicitud.
-Se registrá la postulación del alumni en una base de datos que la empresa podrá acceder mediante un apartado donde estarán todas sus ofertas de trabajo y dentro de cada oferta aparecerán las solicitudes. Tambien informará el sistema a la empresa de que hay una nueva postulación.
-vii. El alumni recibe una confirmación de que la postulación se ha enviado correctamente.
-El alumni recibirá si la informción se ha procesado correctamente un mensaje automáticamente por sistema de que todos los datos han sido procesados con éxito y a su vez recibirá un correo electrónico con la misma información
+1. **La empresa inicia sesión en la plataforma**  
+   ![Inicio de sesión](https://images01.nicepagecdn.com/page/14/74/es/plantilla-web-preview-1474296.jpg)
 
-### Cerrar oferta de trabajo:
-i. El administrador inicia sesión en la plataforma.
-![Inicio de sesión](https://images01.nicepagecdn.com/page/14/74/es/plantilla-web-preview-1474296.jpg)
-ii. Accede a la sección "Gestión de Ofertas".
-El administrador accede a la zona de gestión de ofertas.
-iii. Visualiza una lista de ofertas con estado "Publicada".
-Allí aparecerá una lista con las ofertas publicadas en ese instante, podrá pinchar en cada una de ellas para obtener información, tambien aparecerá un botón que será "Cerrar oferta".
-iv. Presiona el botón "Cerrar Oferta".
-Cuando se pulsa ese botón la oferta dejará de estar visible para los alumnis y el sistema actualizará el estado de la oferta como "Cerrada".
-v. El sistema notifica a la empresa.
-Le notifica a traves del sietma de que la oferta fue cerrada correctamente, y a traves de un correo electrónico a la cuenta del administrador donde se le pondrá la información de que x oferta ha sido cerrada correctamente. 
+2. **Accede a la sección "Crear oferta de trabajo"**  
+   - Un botón redirige al formulario correspondiente.
 
+3. **Llena los campos requeridos del formulario, que incluyen:**  
+   - Título de la oferta.  
+   - Descripción.  
+   - Requisitos.  
+   - Duración o vigencia de la oferta.  
+   - Ubicación (opcional).  
 
+   Una vez completado, se presiona el botón **"Guardar"**.  
+   ![Captura de Oferta de Trabajo](modelosUML/CasosDeUso/imagenes/CapturaOfertaTrabajo.png)
 
+4. **El sistema valida que todos los campos obligatorios estén completos.**
+
+5. **El sistema guarda la oferta como "Pendiente de Validación".**  
+   - La oferta se almacena en una base de datos.  
+   - Un botón **"Pendiente de Validación"** estará habilitado para acceder a estas ofertas.
+
+6. **El administrador recibe una notificación para revisar la oferta.**  
+   - El sistema notifica que hay una oferta pendiente y el administrador puede acceder desde el botón correspondiente.
+
+---
+
+## **Buscar Oferta de Trabajo**
+
+1. **El alumni inicia sesión en la plataforma**  
+   ![Inicio de sesión](https://images01.nicepagecdn.com/page/14/74/es/plantilla-web-preview-1474296.jpg)
+
+2. **Accede a la sección "Buscar ofertas de trabajo".**  
+   - Un botón habilitado en el perfil del alumni redirige a esta sección, mostrando todas las ofertas almacenadas en la base de datos.
+
+3. **Introduce criterios de búsqueda, como:**  
+   - Ubicación.  
+   - Tipo de jornada.  
+   - Salario.  
+   ![Captura de Filtro de Oferta de Trabajo](modelosUML/CasosDeUso/imagenes/FiltroOfertaTrabajo.png)
+
+4. **El sistema procesa la consulta y muestra una lista de ofertas que cumplen con los criterios.**
+
+5. **El alumni selecciona una oferta para ver más detalles.**  
+   - Al seleccionar una oferta, se muestra la descripción completa.
+
+---
+
+## **Aceptar Oferta de Trabajo**
+
+1. **El administrador inicia sesión en la plataforma**  
+   ![Inicio de sesión](https://images01.nicepagecdn.com/page/14/74/es/plantilla-web-preview-1474296.jpg)
+
+2. **Accede a la sección "Ofertas Pendientes de Validación".**  
+   - Desde su interfaz, un botón redirige al apartado de ofertas pendientes.
+
+3. **Visualiza una lista de ofertas con estado "Pendiente de Validación".**  
+
+4. **Selecciona una oferta para revisarla en detalle.**
+
+5. **Valida o rechaza la oferta:**  
+   - Si la oferta es válida, presiona el botón **"Aceptar"**, y la oferta se publica para los alumni.  
+   - Si la oferta no es válida, presiona el botón **"No validar"**, y la oferta se elimina del sistema.
+
+6. **El sistema notifica a la empresa que su oferta ha sido aceptada.**
+
+---
+
+## **Postular para la Oferta de Trabajo**
+
+1. **El alumni inicia sesión en la plataforma**  
+   ![Inicio de sesión](https://images01.nicepagecdn.com/page/14/74/es/plantilla-web-preview-1474296.jpg)
+
+2. **Busca y selecciona una oferta publicada.**  
+   - Puede buscar ofertas mediante palabras clave o explorar la lista de ofertas publicadas.
+
+3. **Accede al detalle de la oferta y presiona el botón "Postular".**  
+   - El sistema muestra un formulario con los siguientes campos:  
+     - **Información del alumni.**  
+     - **Adjuntar currículum vitae** (formatos permitidos: PDF, DOC, DOCX).  
+     - Campo opcional para agregar un mensaje personalizado a la empresa.  
+   ![Captura del Formulario de Empleo](modelosUML/CasosDeUso/imagenes/CapturaFormularioEmpleo.png)
+
+4. **El sistema valida que toda la información requerida esté completa.**
+
+5. **El sistema registra la postulación y notifica a la empresa.**  
+   - La postulación queda registrada en una base de datos accesible para la empresa.  
+   - La empresa recibe una notificación sobre la nueva solicitud.
+
+6. **El alumni recibe una confirmación.**  
+   - El sistema confirma que la postulación se ha enviado correctamente.  
+   - Además, se envía un correo electrónico con la misma información.
+
+---
+
+## **Cerrar Oferta de Trabajo**
+
+1. **El administrador inicia sesión en la plataforma**  
+   ![Inicio de sesión](https://images01.nicepagecdn.com/page/14/74/es/plantilla-web-preview-1474296.jpg)
+
+2. **Accede a la sección "Gestión de Ofertas".**  
+   - Desde esta sección, visualiza una lista de ofertas con estado **"Publicada"**.
+
+3. **Selecciona una oferta y presiona el botón "Cerrar Oferta".**  
+   - Al cerrar la oferta, esta deja de estar visible para los alumni.  
+   - El sistema actualiza el estado de la oferta como **"Cerrada"**.
+
+4. **El sistema notifica a la empresa.**  
+   - La empresa recibe una notificación interna y un correo electrónico informando que la oferta ha sido cerrada.
+
+---
