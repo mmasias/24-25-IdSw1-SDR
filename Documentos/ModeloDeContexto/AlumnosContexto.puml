@@ -14,7 +14,7 @@ RECTANGLE(ESCANEANDO_QR)
 
 RECTANGLE(ACTUALIZANDO_RETO)
 RECTANGLE(CREANDO_RUTINA)
-RECTANGLE(ACTIVIDAD)
+
 
 ALUMNO --> AUTENTICANDO : Autenticación
 AUTENTICANDO --> PAGINA_PRINCIPAL : Ingresar al sistema
@@ -34,7 +34,7 @@ MENU_RETOS --> ACTUALIZANDO_RETO : Cambiando estado reto
 
 
 ACTUALIZANDO_RETO --> MENU_RETOS : Volviendo al menú retos
-ACTIVIDAD --> MENU_RETOS : Volviendo al menú retos
+
 
 MENU_RUTINAS --> CREANDO_RUTINA : Creando rutina
 CREANDO_RUTINA --> MENU_RUTINAS : Volviendo al menú rutinas
