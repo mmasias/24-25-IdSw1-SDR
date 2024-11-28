@@ -1,0 +1,19 @@
+@startuml
+
+state " " as Estado1
+state " " as Estado2
+
+[*] --> Estado1
+    note on link
+        El usuario solicita ir a la página de inicio
+    end note
+Estado1 --> Estado2
+    note on link
+        El Sistema va a la página de inicio
+    end note
+Estado2 --> [*]
+    note on link
+        El usuario se encuentra en la página de inicio
+    end note
+
+@enduml
