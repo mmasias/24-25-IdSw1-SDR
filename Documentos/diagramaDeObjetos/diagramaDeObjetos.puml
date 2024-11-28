@@ -5,7 +5,7 @@ hide empty members
 
 class Profesor {
     nombre = "Ivan"
-    apellido ="Gonzalez"
+    apellido = "Gonzalez"
 }
 
 class Alumno {
@@ -45,9 +45,10 @@ class Rutina {
     objetivo = "Mejorar resistencia"
 }
 
-class Actividades {
-    nombre = "Test Course-Navette"
+class Reto {
+    nombre = "Completar 5km"
     tipo = "Cardio"
+    descripcion = "Correr 5km en menos de 30 minutos"
 }
 
 class Valoracion {
@@ -55,17 +56,19 @@ class Valoracion {
     comentario = "Buen rendimiento"
 }
 
-
 Profesor -- Alumno : esTutorDe
 Profesor -- Asignatura : imparte
 Asignatura -- UnidadesDidacticas : tiene
-UnidadesDidacticas -- ClasesPracticas : tiene
-UnidadesDidacticas -- ClasesTeoricas : tiene
+UnidadesDidacticas -- ClasesPracticas : incluye
+UnidadesDidacticas -- ClasesTeoricas : incluye
 Alumno -- Asignatura : cursa
 ClasesPracticas -- CentroDeportivo : seRealizaEn
 ClasesPracticas -- Rutina : enseña
-Rutina -- Actividades : contiene
+Rutina -- Reto : contiene
 Rutina -- Valoracion: tiene
 Alumno -- Rutina: realiza
 
+ClasesPracticas -- ClasesTeoricas : requiere
+
 @enduml
+
