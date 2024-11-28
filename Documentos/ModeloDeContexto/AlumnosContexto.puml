@@ -10,9 +10,9 @@ RECTANGLE(MENU_CLASIFICACION)
 RECTANGLE(MENU_PERFIL)
 RECTANGLE(INSIGNIA)
 RECTANGLE(INSCRIPCION_CLASE)
-RECTANGLE(QR_CENTRO_DEPORTIVO)
-RECTANGLE(RETO_OBLIGATORIO)
-RECTANGLE(RETO_OPCIONAL)
+RECTANGLE(ESCANEANDO_QR)
+
+RECTANGLE(ACTUALIZANDO_RETO)
 RECTANGLE(CREANDO_RUTINA)
 RECTANGLE(ACTIVIDAD)
 
@@ -27,13 +27,13 @@ PAGINA_PRINCIPAL --> MENU_PERFIL : Revisando perfil
 
 MENU_PERFIL --> INSIGNIA : Observando insignia
 MENU_PERFIL --> INSCRIPCION_CLASE : Inscribiéndose en clase
-MENU_PERFIL --> QR_CENTRO_DEPORTIVO : Usando QR en centro deportivo
+MENU_PERFIL --> ESCANEANDO_QR : Usando QR en centro deportivo
 
-MENU_RETOS --> RETO_OBLIGATORIO : Completando reto obligatorio
-MENU_RETOS --> RETO_OPCIONAL : Completando reto opcional
-MENU_RETOS --> ACTIVIDAD : Realizando actividad
-RETO_OBLIGATORIO --> MENU_RETOS : Volviendo al menú retos
-RETO_OPCIONAL --> MENU_RETOS : Volviendo al menú retos
+MENU_RETOS --> ACTUALIZANDO_RETO : Cambiando estado reto
+
+
+
+ACTUALIZANDO_RETO --> MENU_RETOS : Volviendo al menú retos
 ACTIVIDAD --> MENU_RETOS : Volviendo al menú retos
 
 MENU_RUTINAS --> CREANDO_RUTINA : Creando rutina
@@ -46,5 +46,5 @@ MENU_PERFIL --> PAGINA_PRINCIPAL : Volviendo a página principal
 
 INSIGNIA --> MENU_PERFIL : Volviendo al perfil
 INSCRIPCION_CLASE --> MENU_PERFIL : Volviendo al perfil
-QR_CENTRO_DEPORTIVO --> MENU_PERFIL : Volviendo al perfil
+ESCANEANDO_QR --> MENU_PERFIL : Volviendo al perfil
 @enduml
