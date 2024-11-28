@@ -363,16 +363,13 @@ Para cada caso de uso, se completa una plantilla con la información esencial.
    El sistema debe permitir al administrador visualizar todos los detalles de la oferta antes de cancelarla.
 
 
-# **Prototipar Casos de Uso**
-
-Este documento describe los pasos detallados para cada caso de uso del sistema de gestión de ofertas de trabajo.
+## **Prototipar Casos de Uso**
 
 ---
 
-## **Crear Oferta de Trabajo**
+### **Crear Oferta de Trabajo**
 
 1. **La empresa inicia sesión en la plataforma**  
-   ![Inicio de sesión](https://images01.nicepagecdn.com/page/14/74/es/plantilla-web-preview-1474296.jpg)
 
 2. **Accede a la sección "Crear oferta de trabajo"**  
    - Un botón redirige al formulario correspondiente.
@@ -385,7 +382,6 @@ Este documento describe los pasos detallados para cada caso de uso del sistema d
    - Ubicación (opcional).  
 
    Una vez completado, se presiona el botón **"Guardar"**.  
-   ![Captura de Oferta de Trabajo](modelosUML/CasosDeUso/imagenes/CapturaOfertaTrabajo.png)
 
 4. **El sistema valida que todos los campos obligatorios estén completos.**
 
@@ -398,7 +394,7 @@ Este documento describe los pasos detallados para cada caso de uso del sistema d
 
 ---
 
-## **Buscar Oferta de Trabajo**
+### **Buscar Oferta de Trabajo**
 
 1. **El alumni inicia sesión en la plataforma**  
    ![Inicio de sesión](https://images01.nicepagecdn.com/page/14/74/es/plantilla-web-preview-1474296.jpg)
@@ -410,7 +406,6 @@ Este documento describe los pasos detallados para cada caso de uso del sistema d
    - Ubicación.  
    - Tipo de jornada.  
    - Salario.  
-   ![Captura de Filtro de Oferta de Trabajo](modelosUML/CasosDeUso/imagenes/FiltroOfertaTrabajo.png)
 
 4. **El sistema procesa la consulta y muestra una lista de ofertas que cumplen con los criterios.**
 
@@ -419,10 +414,9 @@ Este documento describe los pasos detallados para cada caso de uso del sistema d
 
 ---
 
-## **Aceptar Oferta de Trabajo**
+### **Aceptar Oferta de Trabajo**
 
 1. **El administrador inicia sesión en la plataforma**  
-   ![Inicio de sesión](https://images01.nicepagecdn.com/page/14/74/es/plantilla-web-preview-1474296.jpg)
 
 2. **Accede a la sección "Ofertas Pendientes de Validación".**  
    - Desde su interfaz, un botón redirige al apartado de ofertas pendientes.
@@ -439,10 +433,9 @@ Este documento describe los pasos detallados para cada caso de uso del sistema d
 
 ---
 
-## **Postular para la Oferta de Trabajo**
+### **Postular para la Oferta de Trabajo**
 
 1. **El alumni inicia sesión en la plataforma**  
-   ![Inicio de sesión](https://images01.nicepagecdn.com/page/14/74/es/plantilla-web-preview-1474296.jpg)
 
 2. **Busca y selecciona una oferta publicada.**  
    - Puede buscar ofertas mediante palabras clave o explorar la lista de ofertas publicadas.
@@ -452,7 +445,6 @@ Este documento describe los pasos detallados para cada caso de uso del sistema d
      - **Información del alumni.**  
      - **Adjuntar currículum vitae** (formatos permitidos: PDF, DOC, DOCX).  
      - Campo opcional para agregar un mensaje personalizado a la empresa.  
-   ![Captura del Formulario de Empleo](modelosUML/CasosDeUso/imagenes/CapturaFormularioEmpleo.png)
 
 4. **El sistema valida que toda la información requerida esté completa.**
 
@@ -466,10 +458,9 @@ Este documento describe los pasos detallados para cada caso de uso del sistema d
 
 ---
 
-## **Cerrar Oferta de Trabajo**
+### **Cerrar Oferta de Trabajo**
 
 1. **El administrador inicia sesión en la plataforma**  
-   ![Inicio de sesión](https://images01.nicepagecdn.com/page/14/74/es/plantilla-web-preview-1474296.jpg)
 
 2. **Accede a la sección "Gestión de Ofertas".**  
    - Desde esta sección, visualiza una lista de ofertas con estado **"Publicada"**.
