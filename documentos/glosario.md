@@ -29,12 +29,12 @@ De esta manera, este concepto refleja la visión holística y dinámica necesari
 
 ---
 
-### PSI
-El acrónimo **PSI** hace referencia a...
+### Carga Académica
+El concepto de **Carga académica** hace referencia a...
 
 ---
 
-### Sexenio
+### Memoria Académica
 El término **Sexenio** se refiere a...
 
 ---
@@ -59,12 +59,7 @@ La **Titulación** hace referencia a...
 
 ---
 
-### Carga académica
-El concepto de **Carga académica** hace referencia a...
-
----
-
-
-
+### PSI
+El acrónimo **PSI** hace referencia a...
 
 ---
