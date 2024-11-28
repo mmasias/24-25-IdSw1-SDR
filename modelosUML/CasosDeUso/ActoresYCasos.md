@@ -397,7 +397,6 @@ Para cada caso de uso, se completa una plantilla con la información esencial.
 ### **Buscar Oferta de Trabajo**
 
 1. **El alumni inicia sesión en la plataforma**  
-   ![Inicio de sesión](https://images01.nicepagecdn.com/page/14/74/es/plantilla-web-preview-1474296.jpg)
 
 2. **Accede a la sección "Buscar ofertas de trabajo".**  
    - Un botón habilitado en el perfil del alumni redirige a esta sección, mostrando todas las ofertas almacenadas en la base de datos.
