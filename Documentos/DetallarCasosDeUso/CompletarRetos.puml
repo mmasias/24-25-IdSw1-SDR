@@ -1,61 +1,56 @@
 @startuml
 
-[*] --> ProcesoDeInicioDeSesion
-ProcesoDeInicioDeSesion --> VerificarCredenciales
-note on link
-    Alumno ingresa correo y contraseña.
-end note
+[*] --> MenuPrincipal 
 
-state VerificarCredenciales <<choice>>
-VerificarCredenciales --> InicioSesionCorrecto : Credenciales válidas.
-VerificarCredenciales --> InicioSesionFallido : Credenciales inválidas.
-
-InicioSesionFallido --> ProcesoDeInicioDeSesion
-InicioSesionCorrecto --> MenuPrincipal
+MenuPrincipal --> MenuRetos : Alumno selecciona "Menu Retos"
+MenuPrincipal --> [*] : "Finalizar desde Menú Principal"
 note on link
-    Alumno accede al sistema correctamente.
+    El sistema muestra los retos disponibles:
+    - Obligatorios: necesarios para completar la asignatura.
+    - Opcionales: para puntos extra.
 end note
+MenuRetos --> ListaDeRetos : Alumno accede a Lista de Retos disponibles
+MenuRetos --> [*] : "Finalizar desde Menú de Retos"
 
-MenuPrincipal --> MenuRetos : Selecciona "Ver Retos"
-MenuRetos --> ListaDeRetos
-note on link
-    Muestra retos disponibles: obligatorios y opcionales.
-end note
 
 ListaDeRetos --> TipoDeReto
 note on link
-    Decide entre un reto obligatorio o opcional.
+    El alumno decide realizar un reto obligatorio o opcional.
 end note
 
 state TipoDeReto <<choice>>
-TipoDeReto --> RetoObligatorio : Selecciona "Obligatorio"
-TipoDeReto --> RetoOpcional : Selecciona "Opcional"
+TipoDeReto --> RetoObligatorio : Alumno selecciona "Reto Obligatorio"
+TipoDeReto --> RetoOpcional : Alumno selecciona "Reto Opcional"
 
 RetoObligatorio --> RealizarReto
 note on link
-    Inicia el reto obligatorio y sigue las instrucciones.
+    El alumno comienza el reto obligatorio.
+    
 end note
 
 RetoOpcional --> RealizarReto
 note on link
-    Inicia el reto opcional y sigue las instrucciones.
+    El alumno comienza el reto opcional.
+    
 end note
 
 RealizarReto --> SubirEvidencia
 note on link
-    Alumno sube una evidencia (foto o video).
+    El alumno sube una evidencia (foto o video)
 end note
 
 SubirEvidencia --> ConfirmarEnvio
 note on link
-    Revisa la evidencia y confirma el envío.
+    El alumno revisa la evidencia y confirma su envío.
 end note
 
-ConfirmarEnvio --> MenuRetos
+ConfirmarEnvio --> MenuRetos : Alumno regresa al Menú de Retos
+ConfirmarEnvio --> [*] : Alumno finaliza después de enviar la evidencia
 note on link
-    Evidencia enviada. Regresa al menú de retos mientras espera la validación.
+    Evidencia enviada correctamente. 
+    Opción de finalizar o continuar con otros retos.
 end note
 
-MenuRetos --> [*]
+
 
 @enduml
