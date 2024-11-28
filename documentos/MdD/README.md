@@ -16,7 +16,7 @@ Este documento presenta los diagramas principales del modelo de dominio: el **di
 | ![Diagrama de Clases](/images/modelosUML/MdD/diagramaDeClases.svg) | [Ver código](/modelosUML/MdD/diagramaDeClases.puml) |
 
 - **Descripción**: 
-  - `Profesor` imparte `Asignatura` y cumple `MemoriaAcademica`, usando `Indicadores` para metas.
+  - [`Profesor`](/documentos/glosario.md#-glosario-de-términos) imparte `Asignatura` y cumple `MemoriaAcademica`, usando `Indicadores` para metas.
   - La `Asignatura` está vinculada a una `Titulación`.
   - `Profesor` tiene `Contrato`, `Experiencia` y dedicación `CargaAcademica`.
 
