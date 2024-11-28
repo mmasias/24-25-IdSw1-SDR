@@ -4,17 +4,16 @@ state "CREANDO_MENSAJE" as CreandoMensaje
 state "LEYENDO_MENSAJE" as LeyendoMensaje
 state "LISTANDO_GRUPOS" as Grupos
 state "LISTANDO_USUARIOS" as Usuarios
-state "LISTANDO_ACCIONES" as Auditoria
 
 [*] --> MenuPrincipal
     note on link
-        Administrador 
+        Usuario 
         inicia sesión
     end note
 
 MenuPrincipal -> [*]
     note on link
-        Administrador 
+        Usuario 
         cierra sesión
     end note
 
@@ -64,16 +63,6 @@ MenuPrincipal --> Usuarios
     end note
 
 Usuarios--> MenuPrincipal
-    note on link
-        Listar mensajes
-    end note
-
-MenuPrincipal --> Auditoria
-    note on link
-        Listar acciones
-    end note
-
-Auditoria --> MenuPrincipal
     note on link
         Listar mensajes
     end note
