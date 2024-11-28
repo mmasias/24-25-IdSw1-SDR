@@ -7,4 +7,4 @@
 
 ## Manejo de Sesión
 
-![Diagrama de Manejo de Auditoria](./manejoSesion.svg)
+![Diagrama de Manejo de Auditoria](./manejoAuditoria.svg)
