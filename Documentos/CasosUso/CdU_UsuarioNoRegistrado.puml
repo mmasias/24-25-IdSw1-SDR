@@ -1,0 +1,10 @@
+@startuml
+left to right direction
+
+actor "Usuario No Registrado" as UsuarioNoRegistrado
+
+package DEVAS{
+usecase "Registrarse" as UC_Registrarse
+UsuarioNoRegistrado --> UC_Registrarse
+}
+@enduml
