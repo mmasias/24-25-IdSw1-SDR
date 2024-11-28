@@ -12,6 +12,7 @@ package "Visualización y Confirmación de Documentos" {
 }
 
 Usuario <|- Destinatario
+Destinatario <|- Administrador
 Usuario --> VCD1
 Usuario --> VCD2
 Usuario --> VCD3
