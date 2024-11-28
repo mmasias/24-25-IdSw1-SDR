@@ -1,0 +1,23 @@
+@startuml
+left to right direction
+
+actor Profesor
+
+package DEVAS{
+usecase "Crear Nuevas Rutinas" as UC_CrearRutinas
+usecase "Crear Retos Obligatorios" as UC_CrearRetosObligatorios
+usecase "Crear Retos Opcionales" as UC_CrearRetosOpcionales
+usecase "Ver Clases y Alumnos" as UC_VerClasesAlumnos
+usecase "Iniciar Sesión" as UC_IniciarSesion
+usecase "Cerrar Sesión" as UC_CerrarSesion
+usecase "Volver al Inicio" as UC_VolverInicio
+
+Profesor --> UC_CrearRutinas
+Profesor --> UC_CrearRetosObligatorios
+Profesor --> UC_CrearRetosOpcionales
+Profesor --> UC_VerClasesAlumnos
+Profesor --> UC_IniciarSesion
+Profesor --> UC_CerrarSesion
+Profesor --> UC_VolverInicio
+}
+@enduml
