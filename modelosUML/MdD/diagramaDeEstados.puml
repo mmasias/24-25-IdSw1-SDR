@@ -1,6 +1,8 @@
 @startuml
 [*] --> Sin_Asignacion
 
+state choice <<choice>>
+
 state Sin_Asignacion {
     Sin_Asignacion : Estado inicial sin carga asignada.
 }
@@ -90,7 +92,8 @@ Aprobada --> Ajuste_Carga : Se requieren cambios
 state Ajuste_Carga {
     Ajuste_Carga : Modificar carga según EQ TC:
     Ajuste_Carga : - Ajustar docencia, gestión o investigación
-    Ajuste_Carga --> Revisión_EQ_TC : Reenviar a revisión
-    Ajuste_Carga --> No_Valido : Inviabilidad de ajustes
+    Ajuste_Carga --> choice
 }
+choice --> No_Valido : Inviabilidad de ajustes
+choice --> Revisión_EQ_TC : Reenviar a revisión
 @enduml
