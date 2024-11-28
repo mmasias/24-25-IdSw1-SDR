@@ -43,3 +43,18 @@ El término **Sexenio** se refiere a...
 El concepto **Ratio Ponderado** describe...
 
 ---
+
+### Dedicación
+El término **Dedicación** se refiere a...
+
+---
+
+### Doctor
+El concepto **Doctor** hace referencia a...
+
+---
+
+### Titulación
+La **Titulación** hace referencia a...
+
+---
