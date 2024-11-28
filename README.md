@@ -33,7 +33,7 @@ Este proyecto consiste en la mejora (y posible migración) de la base de datos d
 - 🎨 Artefactos
   - [📊 Modelo del Dominio](documentos/MdD/README.md)
   - [🛠️ Casos de Uso](documentos/CdU/README.md)
-  - [📖 Glosario](documentos/glosario.md)
+- [📖 Glosario](documentos/glosario.md)
 
 <div align="center">
 
