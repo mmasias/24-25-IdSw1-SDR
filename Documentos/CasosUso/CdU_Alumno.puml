@@ -3,25 +3,24 @@ left to right direction
 
 actor Alumno
 
-package DEVAS{
-usecase "Ver Clasificaciones" as UC_VerClasificaciones
-usecase "Usar Rutinas" as UC_UsarRutinas
-usecase "Completar Retos Obligatorios" as UC_CompletarRetosObligatorios
-usecase "Completar Retos Opcionales" as UC_CompletarRetosOpcionales
-usecase "Inscribirse en Clases" as UC_InscribirseClases
-usecase "Utilizar QR para Centros Deportivos" as UC_UsarQR
-usecase "Iniciar Sesión" as UC_IniciarSesion
-usecase "Cerrar Sesión" as UC_CerrarSesion
-usecase "Volver al Inicio" as UC_VolverInicio
+usecase "Ver Clasificaciones" as VerClasificaciones
+usecase "Usar Rutinas" as UsarRutinas
+usecase "Completar Retos Obligatorios" as CompletarRetosObligatorios
+usecase "Completar Retos Opcionales" as CompletarRetosOpcionales
+usecase "Inscribirse en Clases" as InscribirseClases
+usecase "Utilizar QR para Centros Deportivos" as UsarQR
+usecase "Iniciar Sesión" as IniciarSesion
+usecase "Cerrar Sesión" as CerrarSesion
+usecase "Volver al Inicio" as VolverInicio
 
-Alumno --> UC_VerClasificaciones
-Alumno --> UC_UsarRutinas
-Alumno --> UC_CompletarRetosObligatorios
-Alumno --> UC_CompletarRetosOpcionales
-Alumno --> UC_InscribirseClases
-Alumno --> UC_UsarQR
-Alumno --> UC_IniciarSesion
-Alumno --> UC_CerrarSesion
-Alumno --> UC_VolverInicio
-}
+Alumno --> VerClasificaciones
+Alumno --> UsarRutinas
+Alumno --> CompletarRetosObligatorios
+Alumno --> CompletarRetosOpcionales
+Alumno --> InscribirseClases
+Alumno --> UsarQR
+Alumno --> IniciarSesion
+Alumno --> CerrarSesion
+Alumno --> VolverInicio
+
 @enduml
