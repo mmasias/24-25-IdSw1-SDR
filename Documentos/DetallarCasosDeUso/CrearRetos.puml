@@ -3,7 +3,10 @@
 [*] --> MenuPrincipal
 
 MenuPrincipal --> MenuRetos : Profesor selecciona "Menú Retos"
+MenuPrincipal --> [*] : Profesor sale
+
 MenuRetos --> CrearReto : Profesor selecciona "Crear Reto"
+MenuRetos --> [*] : Profesor sale
 
 state TipoDeReto <<choice>>
 CrearReto --> TipoDeReto
@@ -31,17 +34,18 @@ note right of ConfigurarReto
     - Nombre del reto
     - Descripción
     - Fecha límite
-    - Puntos asignados
+
 end note
 
 ConfigurarReto --> PublicarReto : Profesor finaliza la configuración
+
+
 note top of PublicarReto
     El reto queda visible para los estudiantes
-    según el tipo definido.
 end note
 
 PublicarReto --> CrearReto : Profesor va a crear otro reto
-PublicarReto --> MenuRetos : Profesor quiere volver al menu retos
-PublicarReto --> [*] 
+PublicarReto --> MenuRetos : Profesor quiere volver al menú retos
+PublicarReto --> [*] : Profesor sale
 
 @enduml
