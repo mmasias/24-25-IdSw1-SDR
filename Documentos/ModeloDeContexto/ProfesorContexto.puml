@@ -9,11 +9,11 @@ RECTANGLE(MENU_RETOS)
 RECTANGLE(MENU_CLASIFICACION)
 RECTANGLE(MENU_PERFIL)
 RECTANGLE(CREANDO_RUTINA)
-RECTANGLE(RETO_OBLIGATORIO)
-RECTANGLE(RETO_OPCIONAL)
+RECTANGLE(MODIFICANDO_RETOS)
+
 RECTANGLE(CLASE)
-RECTANGLE(QR_CENTRO_DEPORTIVO)
-RECTANGLE(ACTIVIDAD)
+RECTANGLE(MOSTRANDO_QR)
+
 
 PROFESOR --> AUTENTICANDO : Autenticación
 AUTENTICANDO --> PAGINA_PRINCIPAL : Ingresar al sistema
@@ -27,18 +27,17 @@ PAGINA_PRINCIPAL --> MENU_PERFIL : Revisando perfil
 MENU_RUTINAS --> CREANDO_RUTINA : Creando rutina
 CREANDO_RUTINA --> MENU_RUTINAS : Volviendo al menú rutinas
 
-MENU_RETOS --> RETO_OBLIGATORIO : Creando reto obligatorio
-MENU_RETOS --> RETO_OPCIONAL : Creando reto opcional
-MENU_RETOS --> ACTIVIDAD : Planificando actividad
-RETO_OBLIGATORIO --> MENU_RETOS : Volviendo al menú retos
-RETO_OPCIONAL --> MENU_RETOS : Volviendo al menú retos
-ACTIVIDAD --> MENU_RETOS : Volviendo al menú retos
+MENU_RETOS --> MODIFICANDO_RETOS : Cambiado estado retos
+
+
+MODIFICANDO_RETOS --> MENU_RETOS : Volviendo al menú retos
+
 
 MENU_PERFIL --> CLASE : Observando clase/alumnos
-MENU_PERFIL --> QR_CENTRO_DEPORTIVO : Usando QR en centro deportivo
+MENU_PERFIL --> MOSTRANDO_QR : Usando QR en centro deportivo
 
 CLASE --> MENU_PERFIL : Volviendo al perfil
-QR_CENTRO_DEPORTIVO --> MENU_PERFIL : Volviendo al perfil
+MOSTRANDO_QR --> MENU_PERFIL : Volviendo al perfil
 
 MENU_RUTINAS --> PAGINA_PRINCIPAL : Volviendo a página principal
 MENU_RETOS --> PAGINA_PRINCIPAL : Volviendo a página principal
