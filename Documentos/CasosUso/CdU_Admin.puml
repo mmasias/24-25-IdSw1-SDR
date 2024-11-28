@@ -1,0 +1,25 @@
+@startuml
+left to right direction
+
+actor Admin
+
+package DEVAS{
+usecase "Administrar Usuarios" as UC_AdministrarUsuarios
+usecase "Gestionar Clases" as UC_GestionarClases
+usecase "Gestionar Rutinas" as UC_GestionarRutinas
+usecase "Gestionar Retos" as UC_GestionarRetos
+usecase "Administrar Asignaturas" as UC_AdministrarAsignaturas
+usecase "Configuración del Sistema" as UC_ConfigurarSistema
+usecase "Ver Reportes" as UC_VerReportes
+usecase "Descargar Estadísticas" as UC_DescargarEstadisticas
+
+Admin --> UC_AdministrarUsuarios
+Admin --> UC_GestionarClases
+Admin --> UC_GestionarRutinas
+Admin --> UC_GestionarRetos
+Admin --> UC_AdministrarAsignaturas
+Admin --> UC_ConfigurarSistema
+Admin --> UC_VerReportes
+Admin --> UC_DescargarEstadisticas
+}
+@enduml
