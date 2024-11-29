@@ -6,9 +6,9 @@
 
 # Encontrar casos de uso 
 ## Casos de Uso
-![Casos de uso generales](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/0bc389bf7c98edb2d5ebc0f62c32f02503b6c6c9/Documentos/Imagenes/CasosDeUso/CasosDeUso.svg)
+![Casos de uso](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/0bc389bf7c98edb2d5ebc0f62c32f02503b6c6c9/Documentos/Imagenes/CasosDeUso/CasosDeUso.svg)
 
-[Ver código fuente](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/0bc389bf7c98edb2d5ebc0f62c32f02503b6c6c9/Documentos/CasosUso/CasosUso.puml)
+[Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/0bc389bf7c98edb2d5ebc0f62c32f02503b6c6c9/Documentos/CasosUso/CasosUso.puml)
 
 ---
 
