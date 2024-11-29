@@ -38,7 +38,7 @@ Este documento presenta los diagramas principales del modelo de dominio: el **di
 
 ---
 
-## 3. Diagrama de Estados
+## 3. Diagrama de Flujo
 
 
 | **Diagrama** | **Código Fuente** |
