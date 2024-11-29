@@ -16,9 +16,10 @@ Este documento presenta los diagramas principales del modelo de dominio: el **di
 | ![Diagrama de Clases](/images/modelosUML/MdD/diagramaDeClases.svg) | [Ver código](/modelosUML/MdD/diagramaDeClases.puml) |
 
 - **Descripción**: 
-  - `Profesor` imparte `Asignatura` y cumple `MemoriaAcademica`, usando `Indicadores` para metas.
-  - La `Asignatura` está vinculada a una `Titulación`.
-  - `Profesor` tiene `Contrato`, `Experiencia` y dedicación `CargaAcademica`.
+  - `Asignación` asigna `Profesor`, quien imparte `Asignatura` y pertenece a una `Titulación`.
+  - La `Asignación` también corresponde a una `Asignatura`, cumple con la `MemoriaAcadémica` y gestiona la inclusión de la `CargaAcadémica`.
+  - La `MemoriaAcadémica` utiliza `Indicadores` como metas y valores, que extraen datos del `Profesor`.
+  - `Profesor` tiene un Contrato, acumula Experiencia y gestiona su `dedicación` con una `CargaAcadémica`.
 
 ---
 
@@ -31,10 +32,11 @@ Este documento presenta los diagramas principales del modelo de dominio: el **di
 | ![Diagrama de Objetos](/images/modelosUML/MdD/diagramaDeObjetos.svg) | [Ver código](/modelosUML/MdD/diagramaDeObjetos.puml) |
 
 - **Descripción**:
-
-  - `Profesor` (Doctor, UNEATLANTICO) imparte `Asignatura` (IGPS, 1º semestre) y cumple `MemoriaAcademica`, usando `Indicador` (IND-2024,valor: 85).
-  - `Asignatura` está vinculada a `Titulación` (2024-2025, Ingeniería Informática).
-  - `Profesor` tiene `Contrato` (Indefinido), `Experiencia` y dedicación `CargaAcademica`.
+  - La `Asignación` (#1001) asigna al `Profesor` (Dr. Juan Pérez), quien imparte la `Asignatura` (Programación I) vinculada al Grado en Ingeniería Informática.
+  - La `Asignación` corresponde a la `Asignatura` (INF101), cumple los objetivos establecidos en la `Memoria Académica` del curso 2023/2024 y gestiona una `Carga Académica` de 24 créditos en modalidad Presencial.
+  - La `Memoria Académica` utiliza el `Indicador` (IND001) con un valor de 75, superando el umbral de alerta establecido en 60, para monitorear metas como la movilidad académica y los sexenios del profesor.
+  - El `Profesor` (Dr. Juan Pérez) tiene un historial de Contrato que incluye periodos como Titular y Catedrático, así como Experiencia previa como Investigador y Profesor Asociado.
+  - El `Profesor` está validado para movilidad en instituciones como (Universidad A) y (Universidad B) y forma parte de la Facultad de Ingeniería en UNEATLANTICO
 
 ---
 
