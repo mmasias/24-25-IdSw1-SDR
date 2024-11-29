@@ -14,10 +14,10 @@ El orden ha sido establecido por el cliente según la importancia y necesidad de
 
 | **#** | **Caso de Uso**                                             | **Prioridad** |  
 |-------|-------------------------------------------------------------|---------------|  
-| 1     | 📊 **Proponer de Carga Docente**                           | 🔴 **Alta**   |  
+| 1     | 📊 **Proponer Carga Docente**                              | 🔴 **Alta**   |  
 | 2     | 📜 **Verificar Contratos de Memoria Académica**            | 🟡 **Media**  |  
 | 3     | ⚖️ **Revisar Carga Docente**                               | 🔴 **Alta**   |  
-| 4     | 🛠️ **Ajustar de Carga Docente**                            | 🟡 **Media**  |  
+| 4     | 🛠️ **Ajustar Carga Docente**                               | 🟡 **Media**  |  
 | 5     | 📑 **Generar Memoria Académica**                           | 🟢 **Baja**   |  
 | 6     | ✔️ **Asignar Carga Docente**                               | 🔴 **Alta**   | 
 | 7     | 👁️ **Ver Carga Docente**                                   | 🟢 **Baja**   | 
