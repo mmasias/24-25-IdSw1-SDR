@@ -1,0 +1,56 @@
+@startuml
+
+[*] --> MenuPrincipal
+
+MenuPrincipal --> MenuRutinas : Profesor selecciona "Menú Rutinas"
+MenuPrincipal --> [*] : Profesor sale
+
+MenuRutinas --> CrearRutina : Profesor selecciona "Crear Rutina"
+MenuRutinas --> [*] : Profesor sale
+
+state TipoDeRutina <<choice>>
+CrearRutina --> TipoDeRutina
+note on link
+    Profesor decide el tipo de rutina dependiendo de los grupos musculares a entrenar:
+    - Pecho
+    - Espalda
+    - Piernas
+end note
+
+TipoDeRutina --> RutinaPecho : Pecho
+note right of RutinaPecho
+    Profesor establece rutina de pecho.
+end note
+
+TipoDeRutina --> RutinaEspalda : Espalda
+note right of RutinaEspalda
+    Profesor establece rutina de espalda.
+end note
+
+TipoDeRutina --> RutinaPiernas : Piernas
+note right of RutinaPiernas
+    Profesor establece rutina de piernas.
+end note
+
+RutinaPecho --> ElegirEjercicios : Seleccionar ejercicios
+RutinaEspalda --> ElegirEjercicios : Seleccionar ejercicios
+RutinaPiernas --> ElegirEjercicios : Seleccionar ejercicios
+
+note bottom of ElegirEjercicios
+    El profesor define los detalles de la rutina, como:
+    - Nombre de la rutina
+    - Selección de ejercicios
+    - División por músculo
+end note
+
+ElegirEjercicios --> PublicarRutina : Finalizar configuración
+
+note top of PublicarRutina
+    La rutina queda visible para los estudiantes.
+end note
+
+PublicarRutina --> CrearRutina : Crear otra rutina
+PublicarRutina --> MenuRutinas : Volver al menú de rutinas
+PublicarRutina --> [*] : Salir
+
+@enduml
