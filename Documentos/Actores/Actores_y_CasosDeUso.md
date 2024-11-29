@@ -6,12 +6,42 @@
 
 # Encontrar casos de uso 
 
-| Diagrama | Código Fuente |
-|----------|---------------|
-| ![Casos de uso](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/CasosDeUso/CdU_UsuarioNoRegistrado.svg) | [Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/CasosUso/CdU_UsuarioNoRegistrado.puml) |
-| ![Casos de uso](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/CasosDeUso/CdU_Alumno.svg) | [Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/CasosUso/CdU_Alumno.puml) |
-| ![Casos de uso](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/CasosDeUso/CdU_Profesor.svg) | [Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/CasosUso/CdU_Profesor.puml) |
-| ![Casos de uso](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/CasosDeUso/CdU_Admin.svg) | [Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/CasosUso/CdU_Admin.puml) |
+## Diagramas de Casos de Uso
+
+### Usuario No Registrado y Alumno
+
+<table>
+  <tr>
+    <td align="center">
+      <img src="https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/CasosDeUso/CdU_UsuarioNoRegistrado.svg" alt="Casos de uso Usuario No Registrado" width="300"/>
+      <br/>
+      <a href="https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/CasosUso/CdU_UsuarioNoRegistrado.puml">Ver código</a>
+    </td>
+    <td align="center">
+      <img src="https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/CasosDeUso/CdU_Alumno.svg" alt="Casos de uso Alumno" width="300"/>
+      <br/>
+      <a href="https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/CasosUso/CdU_Alumno.puml">Ver código</a>
+    </td>
+  </tr>
+</table>
+
+### Profesor y Admin
+
+<table>
+  <tr>
+    <td align="center">
+      <img src="https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/CasosDeUso/CdU_Profesor.svg" alt="Casos de uso Profesor" width="300"/>
+      <br/>
+      <a href="https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/CasosUso/CdU_Profesor.puml">Ver código</a>
+    </td>
+    <td align="center">
+      <img src="https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/CasosDeUso/CdU_Admin.svg" alt="Casos de uso Admin" width="300"/>
+      <br/>
+      <a href="https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/CasosUso/CdU_Admin.puml">Ver código</a>
+    </td>
+  </tr>
+</table>
+
 
 # Casos de uso detallados
 
