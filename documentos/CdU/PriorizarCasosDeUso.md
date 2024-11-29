@@ -12,11 +12,13 @@ El orden ha sido establecido por el cliente según la importancia y necesidad de
 
 ## 📋 **Casos de Uso y Priorización**
 
-| **#** | **Caso de Uso**                                            | **Prioridad** |  
-|-------|------------------------------------------------------------|---------------|  
-| 1     | 📊 **Propuesta de Carga Docente**                          | 🔴 **Alta**   |  
-| 2     | 📜 **Verificación de Contrato y Estado de Carga**          | 🟡 **Media**  |  
-| 3     | ⚖️ **Revisión del Equilibrio de Carga de Trabajo (EQ TC)** | 🔴 **Alta**   |  
-| 4     | 🛠️ **Ajuste de Carga Docente**                             | 🟡 **Media**  |  
-| 5     | 📑 **Generación de Memoria Académica**                     | 🟢 **Baja**   |  
-| 6     | ✔️ **Asignación Final de Carga Docente**                   | 🔴 **Alta**   |  
+| **#** | **Caso de Uso**                                             | **Prioridad** |  
+|-------|-------------------------------------------------------------|---------------|  
+| 1     | 📊 **Proponer de Carga Docente**                           | 🔴 **Alta**   |  
+| 2     | 📜 **Verificar Contratos de Memoria Académica**            | 🟡 **Media**  |  
+| 3     | ⚖️ **Revisar Carga Docente**                               | 🔴 **Alta**   |  
+| 4     | 🛠️ **Ajustar de Carga Docente**                            | 🟡 **Media**  |  
+| 5     | 📑 **Generar Memoria Académica**                           | 🟢 **Baja**   |  
+| 6     | ✔️ **Asignar Carga Docente**                               | 🔴 **Alta**   | 
+| 7     | 👁️ **Ver Carga Docente**                                   | 🟢 **Baja**   | 
+
