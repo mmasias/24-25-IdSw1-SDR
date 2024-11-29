@@ -1,47 +1,28 @@
 @startuml
-[*] --> UsuarioRegistrado
-UsuarioRegistrado --> ProcesoDeInicioDeSesión
-note on link
-    Usuario quiere acceder al sistema
-end note
 
-ProcesoDeInicioDeSesión --> VerificarUsuario
-note on link
-    Rellena con correo y contraseña.
-end note
+state " " as Estado1
+state " " as Estado2
 
+[*] --> Estado1
+    note on link
+        El usuario solicita iniciar sesión
+    end note
+Estado1 --> Estado2
+    note on link
+        El Sistema requiere
+        - Correo
+        - Contraseña
+    end note
 state rombo <<choice>>
-VerificarUsuario --> rombo
+Estado2 --> rombo
 note on link
-    ¿Correo y contraseña correctos?
+    Usuario introcude
+    - Correo
+    - Contraseña
 end note
-
-rombo --> UsuarioNoIdentificado
-note on link
-    No
-end note
-
-rombo --> UsuarioIdentificado
-note on link
-    Sí
-end note
-
-UsuarioIdentificado --> IniciandoSesión
-note on link
-    Usuario accede al sistema
-end note
-
-UsuarioNoIdentificado --> UsuarioNoIdentificado
-note on link
-    El usuario comprueba si ha
-    rellenado los datos correctamente
-end note
-
-IniciandoSesión --> [*]
-note on link
-    Inicio de Sesión correcto
-end note
-
-
-
+rombo --> [*]
+rombo --> Estado1
+    note on link
+    Correo y contraseña inexistentes
+    end note
 @enduml
