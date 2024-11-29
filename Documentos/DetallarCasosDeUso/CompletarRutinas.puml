@@ -1,0 +1,55 @@
+@startuml
+
+[*] --> MenuPrincipal 
+
+MenuPrincipal --> MenuRutinas : Alumno selecciona "Menu Rutinas"
+MenuPrincipal --> [*] : "Finalizar desde Menú Principal"
+note on link
+    El sistema muestra las rutinas disponibles:
+    - Pecho.
+    - Espalda.
+    - Piernas
+end note
+MenuRutinas --> ListaDeRutinas : Alumno accede a Lista de Rutinas disponibles
+MenuRutinas --> [*] : "Finalizar desde Menú de Rutinas"
+
+
+ListaDeRutinas --> TipoDeRutina
+note on link
+    El alumno decide realizar una rutina de pecho, espalda o piernas.
+end note
+
+state TipoDeRutina <<choice>>
+TipoDeRutina --> RutinaDePecho : Alumno selecciona "Rutina de Pecho"
+TipoDeRutina --> RutinaDeEspalda : Alumno selecciona "Rutina de Espalda"
+TipoDeRutina --> RutinaDePiernas : Alumno selecciona "Rutina de Piernas"
+
+RutinaDePecho --> RealizarRutina
+note on link
+    El alumno comienza la rutina de pecho.
+    
+end note
+RutinaDeEspalda --> RealizarRutina
+note on link
+    El alumno comienza la rutina de espalda.
+    
+end note
+RutinaDePiernas --> RealizarRutina
+note on link
+    El alumno comienza la rutina de piernas.
+    
+end note
+
+RealizarRutina --> GuardarRegistro
+note on link
+    El sistema guarda el registro de la rutina utilizada y de la carga de cada ejercicio
+end note
+
+GuardarRegistro  --> MenuRutinas : Alumno regresa al Menú de Rutinas
+GuardarRegistro --> [*] : Alumno finaliza después de enviar la evidencia
+note on link
+    Registro guardado correctamente. 
+    Opción de finalizar o continuar con otras rutinas.
+end note
+
+@enduml
