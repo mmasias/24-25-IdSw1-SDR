@@ -5,8 +5,14 @@
 | ![Actores](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/Actores/Actores.svg) | [Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Actores/Actores.puml) |
 
 # Encontrar casos de uso 
+## Casos de Uso
+![Casos de uso generales](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/0bc389bf7c98edb2d5ebc0f62c32f02503b6c6c9/Documentos/Imagenes/CasosDeUso/CasosDeUso.svg)
 
-## Diagramas de Casos de Uso
+[Ver código fuente](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/0bc389bf7c98edb2d5ebc0f62c32f02503b6c6c9/Documentos/CasosUso/CasosUso.puml)
+
+---
+
+## Diagramas de Casos de Uso Específicos
 
 ### Usuario No Registrado y Alumno
 
@@ -41,7 +47,6 @@
     </td>
   </tr>
 </table>
-
 
 # Casos de uso detallados
 
