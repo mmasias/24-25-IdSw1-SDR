@@ -19,17 +19,17 @@ class Asignatura {
     codigo = "056"
 }
 
-class UnidadesDidacticas {
+class UnidadDidactica {
     titulo = "Cardio"
 }
 
-class ClasesPracticas {
+class ClasePractica {
     fecha = "12-11-2024"
     duracion = "2 horas"
     ubicacion = "Gimnasio"
 }
 
-class ClasesTeoricas {
+class ClaseTeorica {
     fecha = "07-11-2024"
     duracion = "2 horas"
     ubicacion = "Aula 101"
@@ -58,17 +58,17 @@ class Valoracion {
 
 Profesor -- Alumno : esTutorDe
 Profesor -- Asignatura : imparte
-Asignatura -- UnidadesDidacticas : tiene
-UnidadesDidacticas -- ClasesPracticas : incluye
-UnidadesDidacticas -- ClasesTeoricas : incluye
+Asignatura -- UnidadDidactica : tiene
+UnidadDidactica -- ClasePractica : incluye
+UnidadDidactica -- ClaseTeorica : incluye
 Alumno -- Asignatura : cursa
-ClasesPracticas -- CentroDeportivo : seRealizaEn
-ClasesPracticas -- Rutina : enseña
+ClasePractica -- CentroDeportivo : seRealizaEn
+ClasePractica -- Rutina : enseña
 Rutina -- Reto : contiene
 Rutina -- Valoracion: tiene
 Alumno -- Rutina: realiza
 
-ClasesPracticas -- ClasesTeoricas : requiere
+ClasePractica -- ClaseTeorica : requiere
 
 @enduml
 
