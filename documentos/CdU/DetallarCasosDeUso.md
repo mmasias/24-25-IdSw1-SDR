@@ -1,6 +1,6 @@
 # 📝 Detallar Casos de Uso
 
-| [⬅️ Priorizar Casos de Uso](PriorizarCasosDeUso.md) | Prototipar Casos de Uso ➡️ |
+| [⬅️ Priorizar Casos de Uso](PriorizarCasosDeUso.md) | [Prototipar Casos de Uso](PrototiparCasosDeUso.md) ➡️ |
 |:--|--:|
 
 ## 🎯 **Objetivo**
