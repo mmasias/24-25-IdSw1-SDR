@@ -4,36 +4,32 @@ left to right direction
 actor Profesor as A_Profesor
 actor Departamento as A_Departamento
 actor Sistema as A_Sistema
-actor Memoria as A_Memoria
 
 rectangle "Carga Docente" {
-    usecase "Ajuste de Carga Docente" as Caso1
-    usecase "Propuesta de Carga Docente" as Caso2
-    usecase "Revisión de Carga de Trabajo" as Caso4
-    usecase "Asignación Final de Carga" as Caso5
+    usecase "Ajustar" as Caso1
+    usecase "Proponer" as Caso2
+    usecase "Revisar" as Caso4
+    usecase "Asignar" as Caso5
+    usecase "Ver" as Caso7
 }
 
 rectangle "Memoria Académica" {
- usecase "Verificación de Contratos" as Caso6
- usecase "Generación de Memoria Académica" as Caso3
+ usecase "Verificar Contratos" as Caso6
+ usecase "Generar" as Caso3
     
    
 }
 
-A_Profesor --> Caso1
-A_Profesor --> Caso2
-A_Profesor --> Caso3
-A_Profesor --> Caso4
-A_Profesor --> Caso5
+A_Profesor --> Caso7
 
 A_Departamento --> Caso2
 A_Departamento --> Caso4
 A_Departamento --> Caso5
 
-A_Memoria --> Caso3
-
 A_Sistema --> Caso1
 A_Sistema --> Caso6
+A_Sistema --> Caso3
+
 
 
 
