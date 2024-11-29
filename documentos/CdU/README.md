@@ -19,4 +19,4 @@ Este documento describe los casos de uso del **modelo de dominio**, enfocados en
 
 --- 
 
-Cada uno de estos procesos está acompañado de un diagrama de contexto que ilustra las interacciones entre los actores y el sistema, con un diagrama específico por cada actor.
+Cada uno de estos pasos contiene la documentación necesaria para mostrar el **avance progresivo** del desarrollo de los casos de uso.

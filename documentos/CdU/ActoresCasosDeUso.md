@@ -11,26 +11,26 @@ El objetivo de este paso es **encontrar actores y casos de uso** siguiendo las [
 
 ## 👥 **Actores**  
 
-| **Actor**                       | **Descripción**                                                                                            |  
-|---------------------------------|------------------------------------------------------------------------------------------------------------|  
-| 👨‍🏫 **Profesor**                 | Responsable de consultar, ajustar y validar su carga docente en función de las asignaciones del sistema.   |  
-| 🏢 **Departamento**             | Supervisa las asignaciones y asegura el cumplimiento de normativas y distribución equitativa de cargas.    |  
-| 💻 **Sistema de Planificación** | Gestiona la asignación, validación y automatización de la carga docente y otros procesos académicos clave. |  
+| **Actor**                     | **Descripción**                                                                                                   |
+|-------------------------------|-------------------------------------------------------------------------------------------------------------------|
+| 👨‍🏫 **Profesor**               | Consulta y valida su carga docente asignada, participando en las revisiones y ajustes cuando sea necesario.       |
+| 🏢 **Departamento**           | Supervisa y revisa la asignación de cargas docentes, asegurando equidad y cumplimiento de normativas.             |
+| 💻 **Sistema**                | Automatiza la propuesta, ajuste y asignación final de la carga docente, además de gestionar la memoria académica. |
 
 
 ---
 
 ## 📋 **Casos de Uso y Actores Involucrados**
 
-| **Caso de Uso**                                           | **Actor**                                           |
-|-----------------------------------------------------------|---------------------------------------------------------|
-| 🛠️ **Ajustar Carga Docente**                              | [💻]                                                     |
-| 📊 **Proponer Carga Docente**                             | [🏢]                                                     |
-| 📑 **Generar Memoria Académica**                          | [💻]                                                     |
-| ⚖️ **Revisar Carga Docente**                              | [🏢]                                                     |
-| ✔️ **Asignar Carga Docente**                              | [🏢]                                                     |
-| 📜 **Verificar Contratos de Memoria Académica**           | [💻]                                                     |
-| 👁 **Ver Carga Docente**                                   | [👨‍🏫]                                                     |
+| **Caso de Uso**                                           | **Actor** |
+|-----------------------------------------------------------|-----------|
+| 🛠️ **Ajustar Carga Docente**                              | [💻]     |
+| 📊 **Proponer Carga Docente**                             | [🏢]     |
+| 📑 **Generar Memoria Académica**                          | [💻]     |
+| ⚖️ **Revisar Carga Docente**                              | [🏢]     |
+| ✔️ **Asignar Carga Docente**                              | [🏢]     |
+| 📜 **Verificar Contratos de Memoria Académica**           | [💻]     |
+| 👁 **Ver Carga Docente**                                   | [👨‍🏫]     |
 
 
 
