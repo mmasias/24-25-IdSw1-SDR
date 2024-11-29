@@ -6,11 +6,11 @@ hide empty members
 class Profesor {}
 class Alumno {}
 class Asignatura {}
-class UnidadesDidacticas {}
-class ClasesPracticas {
+class UnidadDidactica {}
+class ClasePractica {
    
 }
-class ClasesTeoricas {}
+class ClaseTeorica {}
 class CentroDeportivo {}
 class Rutina {}
 class Reto {}
@@ -18,15 +18,15 @@ class Valoracion {}
 
 Profesor -- Alumno : esTutorDe
 Profesor -- Asignatura : imparte
-Asignatura -- UnidadesDidacticas : tiene
-UnidadesDidacticas -- ClasesPracticas : incluye
-UnidadesDidacticas -- ClasesTeoricas : incluye
+Asignatura -- UnidadDidactica : tiene
+UnidadDidactica -- ClasePractica : incluye
+UnidadDidactica -- ClaseTeorica : incluye
 Alumno -- Asignatura : cursa
-ClasesPracticas -- CentroDeportivo : seRealizaEn
-ClasesPracticas -- Rutina : enseña
+ClasePractica -- CentroDeportivo : seRealizaEn
+ClasePractica -- Rutina : enseña
 Rutina -- Reto : contiene
 Rutina -- Valoracion: tiene
 Alumno -- Rutina: realiza
 
-ClasesPracticas -- ClasesTeoricas : requiere
+ClasePractica -- ClaseTeorica : requiere
 @enduml
