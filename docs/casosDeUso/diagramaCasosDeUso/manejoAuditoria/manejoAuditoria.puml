@@ -11,5 +11,4 @@ package "Manejo Auditorias" {
 AdminGeneral --|> Usuario
 Usuario --> CA1
 Usuario --> CA2
-Usuario --> CA3
-@enduml     
+@enduml
