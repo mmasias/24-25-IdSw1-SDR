@@ -4,13 +4,12 @@ actor "Usuario" as Usuario
 actor "Administrador General" as AdminGeneral
 
 package "Manejo Auditorias" {
-    usecase "Crear Auditoria" as CA1
-    usecase "Ver Auditoria" as CA2
-    usecase "Importar Informe de Audítoria" as CA3
+    usecase "Ver Auditoria" as CA1
+    usecase "Descargar Informe de Audítoria" as CA2
 }
 
 AdminGeneral --|> Usuario
 Usuario --> CA1
 Usuario --> CA2
 Usuario --> CA3
-@enduml
+@enduml     
