@@ -12,6 +12,8 @@ usecase "Utilizar QR para Centros Deportivos" as UsarQR
 usecase "Iniciar Sesión" as IniciarSesion
 usecase "Cerrar Sesión" as CerrarSesion
 usecase "Volver al Inicio" as VolverInicio
+usecase "Crear Rutina" as CrearRutinaPersonalizada
+usecase "Seleccionar Ejercicios" as SeleccionarEjercicios
 
 Alumno --> VerClasificaciones
 Alumno --> UsarRutinas
@@ -22,5 +24,8 @@ Alumno --> UsarQR
 Alumno --> IniciarSesion
 Alumno --> CerrarSesion
 Alumno --> VolverInicio
+Alumno --> CrearRutinaPersonalizada
+
+CrearRutinaPersonalizada --> SeleccionarEjercicios : <<include>>
 
 @enduml
