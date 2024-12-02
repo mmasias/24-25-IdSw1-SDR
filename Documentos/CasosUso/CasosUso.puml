@@ -13,7 +13,7 @@ usecase "Iniciar Sesión" as IniciarSesion
 usecase "Cerrar Sesión" as CerrarSesion
 usecase "Volver al Inicio" as VolverInicio
 
-usecase "Crear Nuevas Rutinas" as CrearRutinas
+usecase "Crear Rutinas" as CrearRutinas
 usecase "Crear Retos Obligatorios" as CrearRetosObligatorios
 usecase "Crear Retos Opcionales" as CrearRetosOpcionales
 usecase "Ver Clases y Alumnos" as VerClasesAlumnos
