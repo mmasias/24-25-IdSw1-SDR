@@ -7,15 +7,20 @@ usecase "Administrar Usuarios" as AdministrarUsuarios
 usecase "Gestionar Clases" as GestionarClases
 usecase "Gestionar Rutinas" as GestionarRutinas
 usecase "Gestionar Retos" as GestionarRetos
-usecase "Administrar Asignaturas" as AdministrarAsignaturas
+usecase "Supervisar Ejercicios" as SupervisarEjercicios
+
+usecase "Gestionar Permisos" as GestionarPermisos
 usecase "Configuración del Sistema" as ConfigurarSistema
 usecase "Ver Reportes" as VerReportes
 usecase "Descargar Estadísticas" as DescargarEstadisticas
+
 Admin --> AdministrarUsuarios
 Admin --> GestionarClases
 Admin --> GestionarRutinas
 Admin --> GestionarRetos
-Admin --> AdministrarAsignaturas
+
+Admin --> SupervisarEjercicios
+Admin --> GestionarPermisos
 Admin --> ConfigurarSistema
 Admin --> VerReportes
 Admin --> DescargarEstadisticas
