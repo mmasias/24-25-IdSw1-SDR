@@ -5,7 +5,7 @@ skinparam packageStyle rectangle
 actor "Administrador" as admin
 actor "Empresa" as empresa
 
-rectangle "Sistema de Ofertas de Trabajo" {
+rectangle "Cerrar Ofertas de Trabajo" {
   usecase "Iniciar Sesión" as UC1
   usecase "Gestionar Ofertas" as UC2
   usecase "Seleccionar Oferta" as UC3
