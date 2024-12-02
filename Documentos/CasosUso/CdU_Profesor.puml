@@ -3,7 +3,9 @@ left to right direction
 
 actor Profesor
 
-usecase "Crear Nuevas Rutinas" as CrearRutinas
+usecase "Crear Rutinas" as CrearRutinas
+usecase "Seleccionar Ejercicios" as SeleccionarEjercicios
+usecase "Subir Ejercicios" as SubirEjercicios
 usecase "Crear Retos Obligatorios" as CrearRetosObligatorios
 usecase "Crear Retos Opcionales" as CrearRetosOpcionales
 usecase "Ver Clases y Alumnos" as VerClasesAlumnos
@@ -12,11 +14,14 @@ usecase "Cerrar Sesión" as CerrarSesion
 usecase "Volver al Inicio" as VolverInicio
 
 Profesor --> CrearRutinas
+Profesor --> SubirEjercicios
 Profesor --> CrearRetosObligatorios
 Profesor --> CrearRetosOpcionales
 Profesor --> VerClasesAlumnos
 Profesor --> IniciarSesion
 Profesor --> CerrarSesion
 Profesor --> VolverInicio
+
+CrearRutinas --> SeleccionarEjercicios : <<include>>
 
 @enduml
