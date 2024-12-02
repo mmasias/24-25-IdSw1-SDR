@@ -1,4 +1,4 @@
-@startuml
+@startuml diagramaContextoGrupos
 state "MENU_PRINCIPAL" as MenuPrincipal
 state "LISTANDO_GRUPOS" as Grupos
 state "CREANDO_GRUPOS" as CreandoGrupo

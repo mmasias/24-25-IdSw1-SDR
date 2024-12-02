@@ -5,16 +5,32 @@
 
 </div>
 
-# Diagramas de Contexto
+# Diagramas de Contexto de los Actores
 
 ## Diagrama de Contexto de Administrador
 
 ![](./DiagramaDeContextoAdministrador/diagramaContextoAdministrador.svg)
 
-## Diagrama de Contexto de Responsable
+## Diagrama de Contexto de Usuario
 
-![](./DiagramaDeContextoResponsable/diagramaContextoResponsable.svg)
+![](./DiagramaDeContextoUsuario/diagramaContextoUsuario.svg)
 
 ## Diagrama de Contexto Destinatario
 ![](./DiagramaDeContextoDestinatario/diagramaContextoDestinatario.svg)
+
+----
+
+# Diagramas de contexto de los casos de uso
+
+## Diagrama de contexto de Manejo de Grupos
+
+![](./DiagramaDeContextoManejoGrupos/diagramaContextoGrupos.svg)
+
+## Diagrama de contexto de Manejo de Usuarios
+
+![](./DiagramaDeContextoManejoUsuarios/diagramaContextoUsuarios.svg)
+
+## Diagrama de contexto de Manejo de Acciones
+
+![](./DiagramadeContextoManejoAcciones/diagramaContextoManejoAcciones.svg)
 

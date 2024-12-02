@@ -1,4 +1,4 @@
-@startuml
+@startuml diagramaContextoUsuarios
 state "MENU_PRINCIPAL" as MenuPrincipal
 state "LISTANDO_USUARIOS" as Usuarios
 state "ACTUALIZANDO_USUARIO" as ActualizandoUsuario

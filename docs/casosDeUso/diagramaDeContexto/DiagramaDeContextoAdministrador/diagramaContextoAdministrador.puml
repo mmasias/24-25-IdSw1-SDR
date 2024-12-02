@@ -1,4 +1,4 @@
-@startuml
+@startuml diagramaContextoAdministrador
 state "MENU_PRINCIPAL" as MenuPrincipal
 state "CREANDO_MENSAJE" as CreandoMensaje
 state "LEYENDO_MENSAJE" as LeyendoMensaje

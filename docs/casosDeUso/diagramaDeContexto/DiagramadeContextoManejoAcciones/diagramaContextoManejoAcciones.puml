@@ -1,0 +1,28 @@
+@startuml diagramaContextoManejoAcciones
+state "MENU_PRINCIPAL" as MenuPrincipal
+state "LISTANDO_ACCIONES" as Acciones
+state "DETALLANDO_ACCION" as AccionDetallada
+
+[*] --> MenuPrincipal
+
+MenuPrincipal --> Acciones
+    note on link
+        Listar acciones
+    end note
+
+Acciones --> AccionDetallada
+    note on link
+        Ver detalle 
+    end note
+
+AccionDetallada --> Acciones
+    note on link
+        Listar
+        usuarios
+    end note
+
+Acciones --> MenuPrincipal
+    note on link
+        Listar mensajes
+    end note
+@enduml

@@ -1,4 +1,4 @@
-@startuml
+@startuml diagramaContextoDestinatario
 state "MENU_PRINCIPAL" as MenuPrincipal
 state "LEYENDO_MENSAJE" as LeyendoMensaje
 state "LEYENDO_DOCUMENTO" as LeyendoDocumento
