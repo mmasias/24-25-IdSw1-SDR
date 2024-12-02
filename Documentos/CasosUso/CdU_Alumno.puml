@@ -3,17 +3,17 @@ left to right direction
 
 actor Alumno
 
-usecase "Ver Clasificaciones" as VerClasificaciones
-usecase "Usar Rutinas" as UsarRutinas
-usecase "Completar Retos Obligatorios" as CompletarRetosObligatorios
-usecase "Completar Retos Opcionales" as CompletarRetosOpcionales
-usecase "Inscribirse en Clases" as InscribirseClases
-usecase "Utilizar QR para Centros Deportivos" as UsarQR
+usecase "Ver Clasificacion" as VerClasificaciones
+usecase "Usar Rutina" as UsarRutinas
+usecase "Completar Reto Obligatorio" as CompletarRetosObligatorios
+usecase "Completar Reto Opcional" as CompletarRetosOpcionales
+usecase "Inscribirse en Clase" as InscribirseClases
+usecase "Mostrar QR para Centros Deportivos" as UsarQR
 usecase "Iniciar Sesión" as IniciarSesion
 usecase "Cerrar Sesión" as CerrarSesion
 usecase "Volver al Inicio" as VolverInicio
 usecase "Crear Rutina" as CrearRutinaPersonalizada
-usecase "Seleccionar Ejercicios" as SeleccionarEjercicios
+usecase "Seleccionar Ejercicio" as SeleccionarEjercicios
 
 Alumno --> VerClasificaciones
 Alumno --> UsarRutinas
