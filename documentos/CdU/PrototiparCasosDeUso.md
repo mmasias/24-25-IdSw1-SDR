@@ -1,6 +1,6 @@
 # 📝 Prototipar Casos de Uso
 
-| [⬅️ Detallar Casos de Uso](DetallarCasosDeUso.md) | Estructurar el Modelo de Casos de Uso ➡️ |
+| [⬅️ Detallar Casos de Uso](DetallarCasosDeUso.md) | [Estructurar el Modelo de Casos de Uso ➡️](EstructurarCasosDeUso.md) |
 |:--|--:|
 
 ## 🎯 **Objetivo**
