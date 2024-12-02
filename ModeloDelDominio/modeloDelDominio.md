@@ -10,7 +10,8 @@
 ## Diagrama de Objetos
 | Diagrama | Código Fuente |
 |----------|---------------|
-| ![Diagrama de Objetos](/images/modelosUML/DiagramaDeObjetos.svg) | [Ver código](/ModeloDelDominio/DiagramaDeObjetos.puml) |
+| ![Diagrama de Objetos](/images/modelosUML/DiagramaObjetos.svg) | [Ver código](/ModeloDelDominio/DiagramaDeObjetos.puml) |
+
 
 
 ## Diagrama de Estados

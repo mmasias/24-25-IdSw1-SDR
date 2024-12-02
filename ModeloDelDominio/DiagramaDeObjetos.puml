@@ -9,28 +9,28 @@ object directorDeGrado1
 object contenido1
 object titulacion1
 object asignatura1
-object plantillaMultititulacion1
 object version1
 
-guia1 -- direccionCalidad1
-guia1 -- tecnicoCalidad1
-guia1 -- titulacion1
-guia1 *-- contenido1
-guia1 -- plantillaMultititulacion1 : usa_plantilla
-guia1 *-- version1 : tiene_versiones
+guia1 --* titulacion1 : forma_parte_de
+guia1 --* asignatura1 : incluye
 
-direccionCalidad1 -- tecnicoCalidad1 : supervisa
-direccionCalidad1 -- profesor1 : audita
-direccionCalidad1 -- directorDeGrado1 : audita
+asignatura1 <-down- contenido1 : pertenece_a
+asignatura1 o-down- titulacion1 : forma_parte
 
-profesor1 o-- titulacion1
-directorDeGrado1 o-- titulacion1
-version1 -- titulacion1
+guia1 -down- direccionCalidad1 : es_auditada_por
+guia1 <-down- tecnicoCalidad1 : es_editada_por
+guia1 *-down- version1 : tiene
 
-contenido1 <-- directorDeGrado1 : aprueba/rechaza
+contenido1 <-- titulacion1 : es_definido_por
+
+direccionCalidad1 -- tecnicoCalidad1 : supervisa_a
+direccionCalidad1 -- profesor1 : audita_a
+direccionCalidad1 -l-- directorDeGrado1 : audita_a
+
+profesor1 o-up-- titulacion1 : está_asociado_con
+directorDeGrado1 o-up-- titulacion1 : está_asociado_con
+
+contenido1 <- directorDeGrado1 : aprueba_o_rechaza
 contenido1 <-- profesor1 : edita
-
-contenido1 -- asignatura1 : pertenece_a
-asignatura1 o-- titulacion1 : forma_parte
 
 @enduml
