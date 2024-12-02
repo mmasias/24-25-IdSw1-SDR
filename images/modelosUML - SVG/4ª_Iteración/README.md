@@ -1,0 +1,1 @@
+Aquí se encuentran las imágenes svg de los diagramas en su cuarta iteración

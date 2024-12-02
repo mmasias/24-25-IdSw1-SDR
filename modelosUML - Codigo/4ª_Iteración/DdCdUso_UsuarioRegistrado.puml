@@ -1,0 +1,37 @@
+@startuml
+left to right direction
+actor Usuario_Registrado
+
+rectangle "Aplicación" {
+    usecase "Cerrar sesión" as UC1
+    rectangle "Post"{
+        usecase "Ver post" as UC2
+        usecase "Crear post" as UC3
+        usecase "Comentar en post" as UC4
+        usecase "Dar like a post" as UC5
+        usecase "Compartir un post" as UC6
+        usecase "Reportar un post" as UC7
+}
+    rectangle "Comunidad"{
+        usecase "Entrar a comunidad" as UC8
+        usecase "Salir de comunidad" as UC9
+        usecase "Crear Comunidad" as UC10
+}
+    usecase "Filtrar contenido" as UC11
+    usecase "Modificar datos de usuario" as UC12
+
+}
+
+Usuario_Registrado --> UC1
+Usuario_Registrado --> UC2
+Usuario_Registrado --> UC3
+Usuario_Registrado --> UC4
+Usuario_Registrado --> UC5
+Usuario_Registrado --> UC6
+Usuario_Registrado --> UC7
+Usuario_Registrado --> UC8
+Usuario_Registrado --> UC9
+Usuario_Registrado --> UC10
+Usuario_Registrado --> UC11
+Usuario_Registrado --> UC12
+@enduml

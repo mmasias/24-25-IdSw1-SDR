@@ -1,0 +1,16 @@
+@startuml
+left to right direction
+actor Usuario_NoRegistrado
+
+rectangle "Aplicación" {
+    usecase "Registrar" as UC1
+    usecase "Ver post" as UC2
+    usecase "Iniciar Sesion" as UC3
+
+}
+
+UsuarioRegistrado --> UC1
+UsuarioRegistrado --> UC2
+UsuarioRegistrado --> UC3
+
+@enduml
