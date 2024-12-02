@@ -1,0 +1,14 @@
+@startuml
+Actor Usuario
+
+Actor "Usuario invitado" as UsuarioInvitado
+Actor "Usuario registrado" as UsuarioRegistrado
+Actor Moderador
+
+Usuario <|-- UsuarioInvitado
+Usuario <|-- UsuarioRegistrado
+UsuarioRegistrado <|-- Moderador
+
+@enduml
+
+ 
