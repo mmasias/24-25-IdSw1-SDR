@@ -1,0 +1,19 @@
+@startuml
+
+left to right direction 
+
+Actor Usuario_Invitado as "Usuario invitado"
+
+Rectangle Aplicación {
+    usecase "Iniciar Sesión" as UC1
+    usecase "Ver Post" as UC2
+    usecase "Registrarse" as UC3
+    usecase "Compartir Post" as UC4
+}
+
+Usuario_Invitado --> UC1
+Usuario_Invitado --> UC2
+Usuario_Invitado --> UC3
+Usuario_Invitado --> UC4
+
+@enduml
