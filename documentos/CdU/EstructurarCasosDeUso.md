@@ -1,6 +1,7 @@
 # 📝 Estructurar el Modelo de Casos de Uso
 
-| [⬅️ Prototipar Casos de Uso](PrototiparCasosDeUso.md) | 
+| [⬅️ Prototipar Casos de Uso](PrototiparCasosDeUso.md) | Generar Diagramas UML ➡️ |
+|:--|--:|
 
 
 ## 🎯 **Objetivo**
