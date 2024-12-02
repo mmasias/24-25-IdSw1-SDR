@@ -3,16 +3,16 @@ left to right direction
 
 actor Admin
 
-usecase "Administrar Usuarios" as AdministrarUsuarios
-usecase "Gestionar Clases" as GestionarClases
-usecase "Gestionar Rutinas" as GestionarRutinas
-usecase "Gestionar Retos" as GestionarRetos
-usecase "Supervisar Ejercicios" as SupervisarEjercicios
+usecase "Administrar Usuario" as AdministrarUsuarios
+usecase "Gestionar Clase" as GestionarClases
+usecase "Gestionar Rutina" as GestionarRutinas
+usecase "Gestionar Reto" as GestionarRetos
+usecase "Supervisar Ejercicio" as SupervisarEjercicios
 
-usecase "Gestionar Permisos" as GestionarPermisos
-usecase "Configuración del Sistema" as ConfigurarSistema
-usecase "Ver Reportes" as VerReportes
-usecase "Descargar Estadísticas" as DescargarEstadisticas
+usecase "Gestionar Permiso" as GestionarPermisos
+usecase "Configurar el Sistema" as ConfigurarSistema
+usecase "Ver Reporte" as VerReportes
+usecase "Descargar Estadística" as DescargarEstadisticas
 
 Admin --> AdministrarUsuarios
 Admin --> GestionarClases
