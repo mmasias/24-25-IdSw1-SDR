@@ -9,28 +9,28 @@ class Guia
 class Contenido
 class Titulacion
 class Asignatura
-class PlantillaMultititulacion
 class Version
 
-Guia -- DirecciónDeCalidad
-Guia <-- TécnicoDeCalidad
-Guia --* Titulacion
-Guia *-- Contenido
-Guia -- PlantillaMultititulacion: usa_plantilla
-Guia *-- Version: tiene_versiones
+Guia --* Titulacion: forma_parte_de
+Guia --* Asignatura: incluye
 
-DirecciónDeCalidad -- TécnicoDeCalidad: supervisa
-DirecciónDeCalidad -- Profesor: audita
-DirecciónDeCalidad -- DirectorDeGrado: audita
+Asignatura <-down- Contenido: pertenece_a
+Asignatura o-down- Titulacion: forma_parte
 
-Profesor o-- Titulacion
-DirectorDeGrado o-- Titulacion
-Version -- Titulacion
+Guia -down- DirecciónDeCalidad: es_auditada_por
+Guia <-down- TécnicoDeCalidad: es_editada_por
+Guia *-down- Version: tiene
 
-Contenido <-- DirectorDeGrado: aprueba/rechaza
+Contenido <-- Titulacion: es_definido_por
+
+DirecciónDeCalidad -- TécnicoDeCalidad: supervisa_a
+DirecciónDeCalidad -- Profesor: audita_a
+DirecciónDeCalidad -l-- DirectorDeGrado: audita_a
+
+Profesor o-up-- Titulacion: está_asociado_con
+DirectorDeGrado o-up-- Titulacion: está_asociado_con
+
+Contenido <- DirectorDeGrado: aprueba_o_rechaza
 Contenido <-- Profesor: edita
-
-Asignatura <-up- Contenido: pertenece_a
-Asignatura o-- Titulacion: forma_parte
 
 @enduml
