@@ -18,7 +18,7 @@ Acciones --> AccionDetallada
 AccionDetallada --> Acciones
     note on link
         Listar
-        usuarios
+        acciones
     end note
 
 Acciones --> MenuPrincipal
