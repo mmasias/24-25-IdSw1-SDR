@@ -1,0 +1,38 @@
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+
+actor "Empresa" as empresa
+actor "Administrador" as admin
+
+rectangle "Sistema de Ofertas de Trabajo" {
+  usecase "Rellenar Formulario\nde Oferta" as UC1
+  usecase "Validar Campos" as UC2
+  usecase "Guardar Oferta\nPendiente" as UC3
+  usecase "Notificar\nAdministrador" as UC4
+  usecase "Revisar Oferta" as UC5
+  usecase "Aceptar/Rechazar\nOferta" as UC6
+}
+
+empresa --> UC1
+UC1 ..> UC2 : <<include>>
+UC2 ..> UC3 : <<include>>
+UC3 ..> UC4 : <<extends>>
+UC4 --> admin
+admin --> UC5
+admin --> UC6
+
+note right of UC1
+  Campos requeridos:
+  - Título
+  - Descripción
+  - Requisitos
+  - Vigencia (máx. 6 meses)
+  - Ubicación (opcional)
+end note
+
+note right of UC3
+  Estado inicial:
+  "Pendiente de Validación"
+end note
+@enduml

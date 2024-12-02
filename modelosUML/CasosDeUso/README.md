@@ -53,18 +53,18 @@ Para cada caso de uso, se completa una plantilla con la información esencial.
    La empresa desea publicar una nueva oferta de trabajo en la plataforma. Para ello, acceda al sistema, llene el formulario con los datos necesarios y envíe la solicitud. La oferta queda registrada en el sistema con el estado "Pendiente de Validación" y el administrador es notificado para revisarla.
 
 3. Documentación del flujo de eventos principales
-   1. La empresa inicia sesión en la plataforma.
-   2. Accede a la sección "Crear oferta de trabajo".
-   3. Llena los campos requeridos del formulario, que incluyen:
-   4. Título de la oferta.
-   5. Descripción.
-   6. Requisitos.
-   7. Duración o vigencia de la oferta.
-   8. Ubicación (opcional).
-   9. Presiona el botón "Guardar".
-   10. El sistema valida que todos los campos obligatorios estén completos.
-   11. El sistema guarda la oferta como "Pendiente de Validación".
-   12. El administrador recibe una notificación para revisar la oferta.
+    1. La empresa inicia sesión en la plataforma.
+    2. Accede a la sección "Crear oferta de trabajo".
+    3. Llena los campos requeridos del formulario, que incluyen:
+    4. Título de la oferta.
+    5. Descripción.
+    6. Requisitos.
+    7. Duración o vigencia de la oferta.
+    8. Ubicación (opcional).
+    9. Presiona el botón "Guardar".
+    10. El sistema valida que todos los campos obligatorios estén completos.
+    11. El sistema guarda la oferta como "Pendiente de Validación".
+    12. El administrador recibe una notificación para revisar la oferta.
 
 4. Especificación de flujos alternativos y excepciones
    Datos incompletos:
@@ -104,12 +104,12 @@ Para cada caso de uso, se completa una plantilla con la información esencial.
    Un alumni accede al sistema para buscar ofertas de trabajo, realiza una búsqueda, revisa los resultados y puede seleccionar una oferta.
 
 3. Documentación del flujo de eventos principales
-   1. El alumni inicia sesión en la plataforma.
-   2. Accede a la sección "Buscar ofertas de trabajo".
-   3. Introduzca criterios de búsqueda, como: ubicación, tipo de jornada, salario, etc.
-   4. El sistema procesa la consulta y muestra una lista de ofertas que cumplen con los criterios.
-   5. El alumni selecciona una oferta para ver más detalles.
-   6. El sistema muestra la información completa de la oferta.
+    1. El alumni inicia sesión en la plataforma.
+    2. Accede a la sección "Buscar ofertas de trabajo".
+    3. Introduzca criterios de búsqueda, como: ubicación, tipo de jornada, salario, etc.
+    4. El sistema procesa la consulta y muestra una lista de ofertas que cumplen con los criterios.
+    5. El alumni selecciona una oferta para ver más detalles.
+    6. El sistema muestra la información completa de la oferta.
 
 4. Especificación de flujos alternativos y excepciones
    Sin resultados:
@@ -147,14 +147,14 @@ Para cada caso de uso, se completa una plantilla con la información esencial.
    Un administrador revisa las ofertas de trabajo creadas para verificar que cumplen con las políticas de la plataforma. Si la oferta es válida, se aprueba y queda visible para los alumni.
 
 3. Documentación del flujo de eventos principales
-   1. El administrador inicia sesión en la plataforma.
-   2. Accede a la sección "Ofertas Pendientes de Validación".
-   3. Visualiza una lista de ofertas con estado "Pendiente de Validación".
-   4. Selecciona una oferta para revisarla en detalle.
-   5. Evalúa si la oferta cumple con los criterios establecidos.
-   6. Si la oferta es válida, presiona el botón "Aceptar".
-   7. El sistema actualiza el estado de la oferta a "Publicada" y la hace visible para los exalumnos.
-   8. El sistema notifica a la empresa que su oferta ha sido aceptada.
+    1. El administrador inicia sesión en la plataforma.
+    2. Accede a la sección "Ofertas Pendientes de Validación".
+    3. Visualiza una lista de ofertas con estado "Pendiente de Validación".
+    4. Selecciona una oferta para revisarla en detalle.
+    5. Evalúa si la oferta cumple con los criterios establecidos.
+    6. Si la oferta es válida, presiona el botón "Aceptar".
+    7. El sistema actualiza el estado de la oferta a "Publicada" y la hace visible para los exalumnos.
+    8. El sistema notifica a la empresa que su oferta ha sido aceptada.
 
 4. Especificación de flujos alternativos y excepciones
 
@@ -204,17 +204,17 @@ Para cada caso de uso, se completa una plantilla con la información esencial.
 
 3. Documentación del flujo de eventos principales
 
-   1. El alumni inicia sesión en la plataforma.
-   2. Busca y selecciona una oferta de trabajo publicada.
-   3. Acceda al detalle de la oferta y presione el botón "Postular".
-   4. El sistema muestra un formulario que incluye:
-   5. Información del alumni (prellenada desde su perfil, si está disponible).
-   6. Campo para adjuntar su currículum vitae (en formato PDF, DOC o DOCX).
-   7. Campo opcional para agregar un mensaje personalizado para la empresa.
-   8. El alumni revisa los datos, adjunta su currículum y presiona el botón "Enviar".
-   9. El sistema valida que toda la información requerida esté completa.
-   10. El sistema registra la postulación en la base de datos y notifica a la empresa sobre la nueva solicitud.
-   11. El alumni recibe una confirmación de que la postulación se ha enviado correctamente.
+    1. El alumni inicia sesión en la plataforma.
+    2. Busca y selecciona una oferta de trabajo publicada.
+    3. Acceda al detalle de la oferta y presione el botón "Postular".
+    4. El sistema muestra un formulario que incluye:
+    5. Información del alumni (prellenada desde su perfil, si está disponible).
+    6. Campo para adjuntar su currículum vitae (en formato PDF, DOC o DOCX).
+    7. Campo opcional para agregar un mensaje personalizado para la empresa.
+    8. El alumni revisa los datos, adjunta su currículum y presiona el botón "Enviar".
+    9. El sistema valida que toda la información requerida esté completa.
+    10. El sistema registra la postulación en la base de datos y notifica a la empresa sobre la nueva solicitud.
+    11. El alumni recibe una confirmación de que la postulación se ha enviado correctamente.
 
 4. Especificación de flujos alternativos y excepciones
 
@@ -262,14 +262,14 @@ Para cada caso de uso, se completa una plantilla con la información esencial.
 
 3. Documentación del flujo de eventos principales:
 
-   1. El administrador inicia sesión en la plataforma.
-   2. Accede a la sección "Gestión de Ofertas".
-   3. Visualiza una lista de ofertas con estado "Publicada".
-   4. Selecciona la oferta que deseas cerrar.
-   5. Presiona el botón "Cerrar Oferta".
-   7. El sistema actualiza el estado de la oferta a "Cerrada".
-   8. La oferta deja de ser visible para los alumni en la búsqueda.
-   9. El sistema notifica a la empresa.
+    1. El administrador inicia sesión en la plataforma.
+    2. Accede a la sección "Gestión de Ofertas".
+    3. Visualiza una lista de ofertas con estado "Publicada".
+    4. Selecciona la oferta que deseas cerrar.
+    5. Presiona el botón "Cerrar Oferta".
+    7. El sistema actualiza el estado de la oferta a "Cerrada".
+    8. La oferta deja de ser visible para los alumni en la búsqueda.
+    9. El sistema notifica a la empresa.
 
 4. Especificación de flujos alternativos y excepciones:
 
@@ -315,16 +315,16 @@ Para cada caso de uso, se completa una plantilla con la información esencial.
    El administrador detecta que una oferta de trabajo publicada no cumple con las políticas de la plataforma o contiene errores significativos y decide cancelarla para que no sea visible para los alumni ni accesible para la empresa.
 
 3. Documentación del flujo de eventos principales
-   1. El administrador inicia sesión en la plataforma.
-   2. Accede a la sección "Gestión de Ofertas" .
-   3. Visualiza una lista de ofertas con estado "Publicada".
-   4. Selecciona la oferta que desea cancelar.
-   5. Presiona el botón "Cancelar Oferta".
-   6. El sistema muestra un cuadro de diálogo solicitando al administrador que proporcione un motivo para la cancelación.
-   7. El administrador ingresa el motivo y confirma la acción.
-   8. El sistema actualiza el estado de la oferta a "Cancelada".
-   9. La oferta deja de ser visible tanto para los alumni como para la empresa que la creó.
-   10. El sistema notifica a la empresa creadora sobre la cancelación, incluyendo el motivo proporcionado por el administrador.
+    1. El administrador inicia sesión en la plataforma.
+    2. Accede a la sección "Gestión de Ofertas" .
+    3. Visualiza una lista de ofertas con estado "Publicada".
+    4. Selecciona la oferta que desea cancelar.
+    5. Presiona el botón "Cancelar Oferta".
+    6. El sistema muestra un cuadro de diálogo solicitando al administrador que proporcione un motivo para la cancelación.
+    7. El administrador ingresa el motivo y confirma la acción.
+    8. El sistema actualiza el estado de la oferta a "Cancelada".
+    9. La oferta deja de ser visible tanto para los alumni como para la empresa que la creó.
+    10. El sistema notifica a la empresa creadora sobre la cancelación, incluyendo el motivo proporcionado por el administrador.
 
 4. Especificación de flujos alternativos y excepciones
 
@@ -369,64 +369,64 @@ Para cada caso de uso, se completa una plantilla con la información esencial.
 
 ### **Crear Oferta de Trabajo**
 
-1. **La empresa inicia sesión en la plataforma**  
+1. **La empresa inicia sesión en la plataforma**
 
-2. **Accede a la sección "Crear oferta de trabajo"**  
-   - Un botón redirige al formulario correspondiente.
+2. **Accede a la sección "Crear oferta de trabajo"**
+    - Un botón redirige al formulario correspondiente.
 
-3. **Llena los campos requeridos del formulario, que incluyen:**  
-   - Título de la oferta.  
-   - Descripción.  
-   - Requisitos.  
-   - Duración o vigencia de la oferta.  
-   - Ubicación (opcional).  
+3. **Llena los campos requeridos del formulario, que incluyen:**
+    - Título de la oferta.
+    - Descripción.
+    - Requisitos.
+    - Duración o vigencia de la oferta.
+    - Ubicación (opcional).
 
-   Una vez completado, se presiona el botón **"Guardar"**.  
+   Una vez completado, se presiona el botón **"Guardar"**.
 
 4. **El sistema valida que todos los campos obligatorios estén completos.**
 
-5. **El sistema guarda la oferta como "Pendiente de Validación".**  
-   - La oferta se almacena en una base de datos.  
-   - Un botón **"Pendiente de Validación"** estará habilitado para acceder a estas ofertas.
+5. **El sistema guarda la oferta como "Pendiente de Validación".**
+    - La oferta se almacena en una base de datos.
+    - Un botón **"Pendiente de Validación"** estará habilitado para acceder a estas ofertas.
 
-6. **El administrador recibe una notificación para revisar la oferta.**  
-   - El sistema notifica que hay una oferta pendiente y el administrador puede acceder desde el botón correspondiente.
+6. **El administrador recibe una notificación para revisar la oferta.**
+    - El sistema notifica que hay una oferta pendiente y el administrador puede acceder desde el botón correspondiente.
 
 ---
 
 ### **Buscar Oferta de Trabajo**
 
-1. **El alumni inicia sesión en la plataforma**  
+1. **El alumni inicia sesión en la plataforma**
 
-2. **Accede a la sección "Buscar ofertas de trabajo".**  
-   - Un botón habilitado en el perfil del alumni redirige a esta sección, mostrando todas las ofertas almacenadas en la base de datos.
+2. **Accede a la sección "Buscar ofertas de trabajo".**
+    - Un botón habilitado en el perfil del alumni redirige a esta sección, mostrando todas las ofertas almacenadas en la base de datos.
 
-3. **Introduce criterios de búsqueda, como:**  
-   - Ubicación.  
-   - Tipo de jornada.  
-   - Salario.  
+3. **Introduce criterios de búsqueda, como:**
+    - Ubicación.
+    - Tipo de jornada.
+    - Salario.
 
 4. **El sistema procesa la consulta y muestra una lista de ofertas que cumplen con los criterios.**
 
-5. **El alumni selecciona una oferta para ver más detalles.**  
-   - Al seleccionar una oferta, se muestra la descripción completa.
+5. **El alumni selecciona una oferta para ver más detalles.**
+    - Al seleccionar una oferta, se muestra la descripción completa.
 
 ---
 
 ### **Aceptar Oferta de Trabajo**
 
-1. **El administrador inicia sesión en la plataforma**  
+1. **El administrador inicia sesión en la plataforma**
 
-2. **Accede a la sección "Ofertas Pendientes de Validación".**  
-   - Desde su interfaz, un botón redirige al apartado de ofertas pendientes.
+2. **Accede a la sección "Ofertas Pendientes de Validación".**
+    - Desde su interfaz, un botón redirige al apartado de ofertas pendientes.
 
-3. **Visualiza una lista de ofertas con estado "Pendiente de Validación".**  
+3. **Visualiza una lista de ofertas con estado "Pendiente de Validación".**
 
 4. **Selecciona una oferta para revisarla en detalle.**
 
-5. **Valida o rechaza la oferta:**  
-   - Si la oferta es válida, presiona el botón **"Aceptar"**, y la oferta se publica para los alumni.  
-   - Si la oferta no es válida, presiona el botón **"No validar"**, y la oferta se elimina del sistema.
+5. **Valida o rechaza la oferta:**
+    - Si la oferta es válida, presiona el botón **"Aceptar"**, y la oferta se publica para los alumni.
+    - Si la oferta no es válida, presiona el botón **"No validar"**, y la oferta se elimina del sistema.
 
 6. **El sistema notifica a la empresa que su oferta ha sido aceptada.**
 
@@ -434,41 +434,41 @@ Para cada caso de uso, se completa una plantilla con la información esencial.
 
 ### **Postular para la Oferta de Trabajo**
 
-1. **El alumni inicia sesión en la plataforma**  
+1. **El alumni inicia sesión en la plataforma**
 
-2. **Busca y selecciona una oferta publicada.**  
-   - Puede buscar ofertas mediante palabras clave o explorar la lista de ofertas publicadas.
+2. **Busca y selecciona una oferta publicada.**
+    - Puede buscar ofertas mediante palabras clave o explorar la lista de ofertas publicadas.
 
-3. **Accede al detalle de la oferta y presiona el botón "Postular".**  
-   - El sistema muestra un formulario con los siguientes campos:  
-     - **Información del alumni.**  
-     - **Adjuntar currículum vitae** (formatos permitidos: PDF, DOC, DOCX).  
-     - Campo opcional para agregar un mensaje personalizado a la empresa.  
+3. **Accede al detalle de la oferta y presiona el botón "Postular".**
+    - El sistema muestra un formulario con los siguientes campos:
+        - **Información del alumni.**
+        - **Adjuntar currículum vitae** (formatos permitidos: PDF, DOC, DOCX).
+        - Campo opcional para agregar un mensaje personalizado a la empresa.
 
 4. **El sistema valida que toda la información requerida esté completa.**
 
-5. **El sistema registra la postulación y notifica a la empresa.**  
-   - La postulación queda registrada en una base de datos accesible para la empresa.  
-   - La empresa recibe una notificación sobre la nueva solicitud.
+5. **El sistema registra la postulación y notifica a la empresa.**
+    - La postulación queda registrada en una base de datos accesible para la empresa.
+    - La empresa recibe una notificación sobre la nueva solicitud.
 
-6. **El alumni recibe una confirmación.**  
-   - El sistema confirma que la postulación se ha enviado correctamente.  
-   - Además, se envía un correo electrónico con la misma información.
+6. **El alumni recibe una confirmación.**
+    - El sistema confirma que la postulación se ha enviado correctamente.
+    - Además, se envía un correo electrónico con la misma información.
 
 ---
 
 ### **Cerrar Oferta de Trabajo**
 
-1. **El administrador inicia sesión en la plataforma**  
+1. **El administrador inicia sesión en la plataforma**
 
-2. **Accede a la sección "Gestión de Ofertas".**  
-   - Desde esta sección, visualiza una lista de ofertas con estado **"Publicada"**.
+2. **Accede a la sección "Gestión de Ofertas".**
+    - Desde esta sección, visualiza una lista de ofertas con estado **"Publicada"**.
 
-3. **Selecciona una oferta y presiona el botón "Cerrar Oferta".**  
-   - Al cerrar la oferta, esta deja de estar visible para los alumni.  
-   - El sistema actualiza el estado de la oferta como **"Cerrada"**.
+3. **Selecciona una oferta y presiona el botón "Cerrar Oferta".**
+    - Al cerrar la oferta, esta deja de estar visible para los alumni.
+    - El sistema actualiza el estado de la oferta como **"Cerrada"**.
 
-4. **El sistema notifica a la empresa.**  
-   - La empresa recibe una notificación interna y un correo electrónico informando que la oferta ha sido cerrada.
+4. **El sistema notifica a la empresa.**
+    - La empresa recibe una notificación interna y un correo electrónico informando que la oferta ha sido cerrada.
 
 ---
