@@ -4,7 +4,7 @@ skinparam packageStyle rectangle
 
 actor "Alumni" as alumni
 
-rectangle "Sistema de Ofertas de Trabajo" {
+rectangle "Busqueda de Ofertas de Trabajo" {
   usecase "Iniciar Sesión" as UC1
   usecase "Buscar Ofertas\nde Trabajo" as UC2
   usecase "Aplicar Filtros\nde Búsqueda" as UC3
