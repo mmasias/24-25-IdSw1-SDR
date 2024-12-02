@@ -1,7 +1,7 @@
 # 📝 Estructurar el Modelo de Casos de Uso
 
 | [⬅️ Prototipar Casos de Uso](PrototiparCasosDeUso.md) | 
-|:--|--:|
+
 
 ## 🎯 **Objetivo**
 El objetivo de este paso es **estructurar el modelo de casos de uso**, organizando las clases necesarias y estableciendo las relaciones entre ellas, según el diagrama conceptual previamente definido.
