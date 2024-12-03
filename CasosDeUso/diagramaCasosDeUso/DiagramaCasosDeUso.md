@@ -24,33 +24,28 @@ Este documento describe los principales casos de uso en el sistema de Automatiza
    - **Descripción:** Realiza auditorías sobre las guías docentes, revisando la calidad del contenido.
    - **Objetivo:** Asegurar la máxima calidad y adherencia a los objetivos institucionales.
 
-### 5. **Utilizar Plantilla Multititulación**
-   - **Actor:** Técnico de Calidad
-   - **Descripción:** Selección y aplicación de una plantilla común para varias titulaciones.
-   - **Objetivo:** Asegurar consistencia en el formato de las guías de diferentes titulaciones.
-
-### 6. **Generar Nueva Versión de la Guía**
+### 5. **Generar Nueva Versión de la Guía**
    - **Actor:** Sistema
    - **Descripción:** Crear y gestionar versiones de la guía docente para registrar cambios y ediciones.
    - **Objetivo:** Facilitar la trazabilidad de modificaciones en el tiempo.
 
-### 7. **Asignar Guía a Titulación**
+### 6. **Asignar Guía a Titulación**
    - **Actor:** Sistema
    - **Descripción:** Vincula una guía docente a una titulación específica.
    - **Objetivo:** Organizar las guías de acuerdo con cada titulación.
 
-### 8. **Asignar Asignatura a Titulación**
+### 7. **Asignar Asignatura a Titulación**
    - **Actor:** Sistema
    - **Descripción:** Asocia cada asignatura con su titulación correspondiente.
    - **Objetivo:** Mantener la estructura de programas académicos dentro del sistema.
 
-### 9. **Publicar Guía Docente** 
+### 8. **Publicar Guía Docente** 
 
 - **Actor:**  Director de Grado
 - **Descripción:** Autoriza y finaliza la publicación de una guía docente para que esté disponible en el panel universitario.
  - **Objetivo:** Permitir que los estudiantes accedan a la versión aprobada y oficial.
 
-### 10. ** Verificar Cumplimiento con Memoria Verificada**
+### 9. ** Verificar Cumplimiento con Memoria Verificada**
 
 - **Actor:** Dirección de Calidad
 - **Descripción:** Revisión de las guías para confirmar la adherencia a la memoria verificada, utilizando una API de verificación.
