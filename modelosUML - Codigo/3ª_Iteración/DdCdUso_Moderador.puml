@@ -29,3 +29,6 @@ Moderador --> UC9
 Moderador --> UC10
 
 @enduml
+Moderador --> UC10
+
+@enduml
