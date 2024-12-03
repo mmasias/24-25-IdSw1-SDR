@@ -22,7 +22,7 @@ A continuacion se presentan los enlaces a los distintos diagramas realizados:
 ![Jerarquía de actores, herencia](https://github.com/miguelgomez75/24-25-IdSw1-SDR/blob/main/images/modelosUML%20-%20SVG/1%C2%AA_Iteraci%C3%B3n/DdJerarqu%C3%ADaActores.svg)
 
 ### Diagrama de casos de uso del usuario
-![Diagrama de Casos de Uso de usuario reisgtrado](https://github.com/miguelgomez75/24-25-IdSw1-SDR/blob/main/images/modelosUML%20-%20SVG/3%C2%AA_Iteraci%C3%B3n/DdCdUso_Usuario.svg)
+![Diagrama de Casos de Uso de usuario registrado](https://github.com/miguelgomez75/24-25-IdSw1-SDR/blob/main/images/modelosUML%20-%20SVG/3%C2%AA_Iteraci%C3%B3n/DdCdUso_Usuario.svg)
 ### Diagrama de casos de uso del usuario invitado
 ![Diagrama de Casos de Uso de usuario invitado](https://github.com/miguelgomez75/24-25-IdSw1-SDR/blob/main/images/modelosUML%20-%20SVG/1%C2%AA_Iteraci%C3%B3n/DdCdUso_Invitado.svg)
 
