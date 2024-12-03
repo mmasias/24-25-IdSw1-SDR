@@ -4,16 +4,28 @@ title Diagrama de Contexto - Sistema de Automatización de Guías Docentes
 [*] --> Sistema
 Sistema : Automatización de Guías Docentes
 
+' Flujos principales
 Sistema --> Autenticación : Inicio de sesión
 Sistema --> Edición : Creación y edición de guías
-Sistema --> Revisión : Revisión por el Director de Grado
+Sistema --> Revisión : Revisión preliminar por el Director de Grado
 Sistema --> Validación : Validación técnica y de calidad
 Sistema --> Publicación : Publicación de guías
 Sistema --> Consulta : Consulta de guías por los estudiantes
 
-Edición --> Ajustes : Modificación del contenido
-Revisión --> Correcciones : Observaciones y correcciones requeridas
-Validación --> Aprobación : Listo para publicar
+' Subprocesos de Edición
+Edición --> Ajustes : Modificación del contenido estático
+Edición --> RevisiónInterna : Revisión interna por técnicos de calidad
+
+' Subprocesos de Revisión
+Revisión --> Correcciones : Observaciones enviadas al profesor
+Correcciones --> Ajustes : Ajustes realizados por el profesor
+Correcciones --> Revisión : Retroalimentación para ajustes
+
+' Validación final
+Validación --> Aprobación : Listo para publicación
+
+' Publicación y archivado
 Publicación --> Archivado : Versionado y archivado de guías
+Archivado --> Consulta : Acceso a guías archivadas
 
 @enduml
