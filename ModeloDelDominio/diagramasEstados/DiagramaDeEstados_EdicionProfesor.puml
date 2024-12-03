@@ -7,15 +7,10 @@ EdicionEnProgreso : El profesor actualiza y guarda cambios
 EdicionEnProgreso --> RevisionInterna : Finaliza cambios
 RevisionInterna : Revisión preliminar realizada por el profesor
 
-RevisionInterna --> EnviadoParaRevision : Enviar al Director de Grado
-EnviadoParaRevision : Envío para revisión
+RevisionInterna --> EnRevision : Enviar al Director de Grado
+EnRevision: Envío para revisión
 
-EnviadoParaRevision --> DevueltoParaModificaciones
-EnviadoParaRevision --> Aprobada 
-Aprobada : Aprobada por el Director de Grado
-DevueltoParaModificaciones --> EdicionEnProgreso
-
-Aprobada --> [*] : Fin de la edición
-
+EnRevision --> EdicionEnProgreso : Rechazada
+EnRevision --> [*] : Aprobada
 
 @enduml
