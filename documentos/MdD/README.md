@@ -54,5 +54,3 @@ Este documento presenta los diagramas principales del modelo de dominio: el **di
   - `Revisión_EQ_TC` verifica límite EQ TC.
   - `Revisión_Carga` valida carga; pasa a `Aprobada` (Carga adecuada y validada) o `Ajuste_Carga` (Se requieren cambios).
   - `Asignada` es la carga final asignada.
-
---- 

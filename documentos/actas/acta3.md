@@ -1,6 +1,6 @@
 # 📝 **Acta 3**  
 **Fecha**: 21/11/2024  
-**Hora**: 11:30 PM
+**Hora**: 11:30 PM  
 **[Presencial] 🟢**
 
 ---

@@ -12,7 +12,7 @@
 </div>
 
 ## 📖 Introducción
-Este proyecto consiste en la mejora (y posible migración) de la base de datos del Departamento de Calidad de la Universidad Europea del Atlántico, actualmente gestionada en una hoja de Excel. Nuestro objetivo será optimizarla, automatizarla y crear una interfaz de acceso sencillo, que permita las siguientes funcionalidades:
+Este proyecto consiste en la mejora (y posible migración) de la base de datos del Departamento de Calidad de la Universidad Europea del Atlántico, actualmente gestionada en una hoja de Excel. Nuestro objetivo será optimizarla, automatizarla y crear una interfaz de acceso sencilla, que permita las siguientes funcionalidades:
 
 | **Funcionalidad**           | **Descripción**                                                                                 | 
 |-----------------------------|-------------------------------------------------------------------------------------------------|
