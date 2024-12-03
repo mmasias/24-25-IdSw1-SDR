@@ -1,6 +1,5 @@
 @startuml manejoAuditoria
 left to right direction
-actor "Usuario" as Usuario
 actor "Administrador General" as AdminGeneral
 
 package "Manejo Auditorias" {
@@ -8,7 +7,6 @@ package "Manejo Auditorias" {
     usecase "Descargar Informe de Audítoria" as CA2
 }
 
-AdminGeneral --|> Usuario
-Usuario --> CA1
-Usuario --> CA2
+AdminGeneral --> CA1
+AdminGeneral --> CA2
 @enduml
