@@ -48,6 +48,8 @@
 | **Postcondiciones**               | La guía queda actualizada con los cambios realizados, o se cancela la edición sin que se guarden modificaciones. |
 
 
+![](images/modelosUML/EditarContenidoGD.svg)
+
 ### 5. Revisar Contenido
 | **Identificación de actores**      | Director de Grado |
 |------------------------------------|-------------------|
@@ -58,6 +60,8 @@
 | **Postcondiciones**               | La guía queda aprobada y lista para publicación, o se marca como "Requiere Revisión" con comentarios para ajustes. |
 
 
+![](images/modelosUML/RevisarContenidoGD.svg)
+
 ### 6. Generar Nueva Versión de la Guía
 | **Identificación de actores**      | Técnico de Calidad |
 |------------------------------------|--------------------|
@@ -66,6 +70,9 @@
 | **Flujos alternativos y excepciones** | Si ocurre un error durante la generación de la nueva versión, el sistema notifica al Técnico de Calidad y permite reintentar o cancelar la operación. |
 | **Precondiciones**                | El técnico debe tener acceso al sistema de gestión de versiones y permisos para generar nuevas versiones de las guías. |
 | **Postcondiciones**               | Una nueva versión de la guía queda registrada y disponible para futuras ediciones o revisiones. |
+
+
+![](images/modelosUML/GenerarVersiónGD.svg)
 
 ### 7. Ver listado de los estados de las guías docentes
 
