@@ -1,24 +1,19 @@
-@startuml DiagramaDeContexto
+@startuml Diagrama_de_Contexto
 title Diagrama de Contexto - Sistema de Automatización de Guías Docentes
 
-actor Profesor as prof
-actor DirectorDeGrado as dirGrado
-actor TécnicoDeCalidad as tecCalidad
-actor DirecciónDeCalidad as dirCalidad
+[*] --> Sistema
+Sistema : Automatización de Guías Docentes
 
-boundary "Sistema de Automatización de Guías Docentes" as Sistema
+Sistema --> Autenticación : Inicio de sesión
+Sistema --> Edición : Creación y edición de guías
+Sistema --> Revisión : Revisión por el Director de Grado
+Sistema --> Validación : Validación técnica y de calidad
+Sistema --> Publicación : Publicación de guías
+Sistema --> Consulta : Consulta de guías por los estudiantes
 
-prof --> Sistema : Edita y envía guías para revisión
-dirGrado --> Sistema : Revisa y aprueba/rechaza guías
-tecCalidad --> Sistema : Supervisa, valida y corrige guías
-dirCalidad --> Sistema : Audita guías y supervisa la calidad
-
-Sistema --> prof : Provee herramientas de edición y acceso a guías
-Sistema --> dirGrado : Solicita revisión y aprobación de guías
-Sistema --> tecCalidad : Facilita la supervisión y validación
-Sistema --> dirCalidad : Genera reportes de auditoría y supervisión
-
-Sistema --> Publicación : Publica guías validadas
-Sistema --> Archivado : Actualiza y archiva versiones anteriores
+Edición --> Ajustes : Modificación del contenido
+Revisión --> Correcciones : Observaciones y correcciones requeridas
+Validación --> Aprobación : Listo para publicar
+Publicación --> Archivado : Versionado y archivado de guías
 
 @enduml
