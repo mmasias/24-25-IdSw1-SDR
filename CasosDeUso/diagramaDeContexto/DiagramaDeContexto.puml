@@ -8,14 +8,17 @@ actor DirecciónDeCalidad as dirCalidad
 
 boundary "Sistema de Automatización de Guías Docentes" as Sistema
 
-prof --> Sistema : Edita contenido y revisa guías
-dirGrado --> Sistema : Aprueba o rechaza contenido
-tecCalidad --> Sistema : Supervisa y edita guías
-dirCalidad --> Sistema : Audita guías
+prof --> Sistema : Edita y envía guías para revisión
+dirGrado --> Sistema : Revisa y aprueba/rechaza guías
+tecCalidad --> Sistema : Supervisa, valida y corrige guías
+dirCalidad --> Sistema : Audita guías y supervisa la calidad
 
-Sistema --> prof : Provee acceso a guías y contenido
-Sistema --> dirGrado : Solicita aprobación de guías
-Sistema --> tecCalidad : Facilita supervisión de calidad
-Sistema --> dirCalidad : Genera reportes de auditoría
+Sistema --> prof : Provee herramientas de edición y acceso a guías
+Sistema --> dirGrado : Solicita revisión y aprobación de guías
+Sistema --> tecCalidad : Facilita la supervisión y validación
+Sistema --> dirCalidad : Genera reportes de auditoría y supervisión
+
+Sistema --> Publicación : Publica guías validadas
+Sistema --> Archivado : Actualiza y archiva versiones anteriores
 
 @enduml
