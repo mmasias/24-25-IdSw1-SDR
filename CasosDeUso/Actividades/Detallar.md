@@ -81,11 +81,33 @@
 ### 9. Editar plantilla de la guía docente
 
 ### 10. Utilizar Plantilla Multititulación
+| **Identificación de actores**      | Técnico de Calidad |
+|------------------------------------|--------------------|
+| **Escenario**                      | El Técnico de Calidad selecciona y aplica una plantilla común para las guías docentes de múltiples titulaciones, asegurando uniformidad en la estructura y formato. |
+| **Flujo de eventos principal**     | 1. El Técnico de Calidad inicia sesión en el sistema de gestión de plantillas.<br> 2. El sistema muestra una lista de plantillas disponibles.<br> 3. El Técnico de Calidad selecciona una plantilla multititulación.<br> 4. El sistema solicita confirmar las titulaciones a las que se aplicará la plantilla.<br> 5. El Técnico de Calidad confirma la selección.<br> 6. El sistema aplica la plantilla a las guías seleccionadas, actualizando la estructura y el formato de las mismas. |
+| **Flujos alternativos y excepciones** | Si el Técnico de Calidad detecta que la plantilla no es adecuada, puede cancelar la operación o seleccionar una nueva plantilla.<br> Si ocurre un error al aplicar la plantilla, el sistema muestra un mensaje de error y permite reintentar. |
+| **Precondiciones**                | Acceso al sistema de gestión de plantillas y permisos para editar guías. |
+| **Postcondiciones**               | Las guías seleccionadas adoptan el formato y la estructura de la plantilla multititulación. |
 
+---
 ### 11. Asignar Guía a Titulación
+| **Identificación de actores**      | Técnico de Calidad |
+|------------------------------------|--------------------|
+| **Escenario**                      | El Técnico de Calidad asigna una guía docente a una titulación específica para facilitar su organización en el sistema. |
+| **Flujo de eventos principal**     | 1. El Técnico de Calidad accede al sistema de gestión de guías.<br> 2. El sistema muestra una lista de guías disponibles.<br> 3. El Técnico de Calidad selecciona una guía para asignar a una titulación.<br> 4. El sistema muestra una lista de titulaciones disponibles.<br> 5. El Técnico de Calidad selecciona la titulación correspondiente.<br> 6. El sistema asocia la guía con la titulación seleccionada y guarda la relación. |
+| **Flujos alternativos y excepciones** | Si la guía ya está asignada a una titulación, el sistema notifica al Técnico de Calidad y solicita confirmación para cambiar la asignación.<br> Si ocurre un error, el sistema permite reintentar o cancelar la operación. |
+| **Precondiciones**                | Acceso al sistema de gestión de guías y titulaciones. |
+| **Postcondiciones**               | La guía queda asociada a la titulación seleccionada. |
 
+---
 ### 12. Asignar Asignatura a Titulación
+| **Identificación de actores**      | Técnico de Calidad |
+|------------------------------------|--------------------|
+| **Escenario**                      | El Técnico de Calidad asocia una asignatura con su titulación correspondiente en el sistema, asegurando una correcta organización del plan académico. |
+| **Flujo de eventos principal**     | 1. El Técnico de Calidad accede al sistema de gestión académica.<br> 2. El sistema muestra una lista de asignaturas registradas.<br> 3. El Técnico de Calidad selecciona una asignatura para asignarla a una titulación.<br> 4. El sistema muestra una lista de titulaciones disponibles.<br> 5. El Técnico de Calidad selecciona la titulación correspondiente.<br> 6. El sistema asocia la asignatura con la titulación seleccionada y guarda la relación. |
+| **Flujos alternativos y excepciones** | Si la asignatura ya está asociada a una titulación, el sistema notifica al Técnico de Calidad y solicita confirmación para actualizar la asignación.<br> Si ocurre un error, el sistema muestra un mensaje y permite reintentar o cancelar la operación. |
+| **Precondiciones**                | El Técnico de Calidad debe tener acceso al sistema de gestión académica y permisos para asignar asignaturas. |
+| **Postcondiciones**               | La asignatura queda correctamente asociada a la titulación seleccionada en el sistema. |
 
-### 12. Asignar Asignatura a Titulación
 
 ### 13. Asignar Guías Docentes a Profesor
