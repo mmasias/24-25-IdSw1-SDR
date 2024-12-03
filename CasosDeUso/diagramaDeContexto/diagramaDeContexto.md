@@ -60,7 +60,7 @@ El **Diagrama de Contexto** proporciona una visión global del sistema, organiza
 
 ![Diagrama de Contexto](/images/modelosUML/DiagramaDeContexto.svg)  
 
-| [Ver código fuente](/diagramaDeContexto/DiagramaDeContexto.puml)
+| [Ver código fuente](/CasosDeUso/diagramaDeContexto/DiagramaDeContexto.puml)
 
 ---
 
