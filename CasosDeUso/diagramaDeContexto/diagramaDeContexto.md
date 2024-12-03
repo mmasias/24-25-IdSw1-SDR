@@ -58,9 +58,9 @@ El **Diagrama de Contexto** proporciona una visión global del sistema, organiza
 
 ## 🌟 Representación Gráfica
 
-![Diagrama de Contexto](/images/modelosUML/DiaghramaDeContexto.svg)  
+![Diagrama de Contexto](/images/modelosUML/DiagramaDeContexto.svg)  
 
-| [Ver código fuente](/DiagramaDeContexto.puml)
+| [Ver código fuente](/diagramaDeContexto/DiagramaDeContexto.puml)
 
 ---
 
