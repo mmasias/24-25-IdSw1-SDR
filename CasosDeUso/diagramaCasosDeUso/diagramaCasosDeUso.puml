@@ -13,7 +13,6 @@ usecase "Editar Contenido de la Guía" as EditarGuia
 usecase "Aprobar o Rechazar Contenido" as AprobarContenido
 usecase "Supervisar Guías Docentes" as SupervisarGuias
 usecase "Auditar Guías Docentes" as AuditarGuias
-usecase "Utilizar Plantilla Multititulación" as UtilizarPlantilla
 usecase "Generar Nueva Versión de la Guía" as GenerarVersion
 usecase "Asignar Guía a Titulación" as AsignarGuiaTitulacion
 usecase "Asignar Asignatura a Titulación" as AsignarAsignaturaTitulacion
@@ -24,7 +23,6 @@ Profesor --> EditarGuia
 DirectorGrado --> AprobarContenido
 DirectorGrado --> PublicarGuia
 TecnicoCalidad --> SupervisarGuias
-TecnicoCalidad --> UtilizarPlantilla
 TecnicoCalidad --> GenerarVersion
 TecnicoCalidad --> AsignarGuiaTitulacion
 TecnicoCalidad --> AsignarAsignaturaTitulacion
