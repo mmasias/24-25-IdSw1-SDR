@@ -1,0 +1,21 @@
+@startuml DiagramaDeContexto
+title Diagrama de Contexto - Sistema de Automatización de Guías Docentes
+
+actor Profesor as prof
+actor DirectorDeGrado as dirGrado
+actor TécnicoDeCalidad as tecCalidad
+actor DirecciónDeCalidad as dirCalidad
+
+boundary "Sistema de Automatización de Guías Docentes" as Sistema
+
+prof --> Sistema : Edita contenido y revisa guías
+dirGrado --> Sistema : Aprueba o rechaza contenido
+tecCalidad --> Sistema : Supervisa y edita guías
+dirCalidad --> Sistema : Audita guías
+
+Sistema --> prof : Provee acceso a guías y contenido
+Sistema --> dirGrado : Solicita aprobación de guías
+Sistema --> tecCalidad : Facilita supervisión de calidad
+Sistema --> dirCalidad : Genera reportes de auditoría
+
+@enduml
