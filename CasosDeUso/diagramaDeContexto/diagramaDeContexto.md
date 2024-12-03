@@ -1,58 +1,74 @@
-# 📚 Diagrama de Contexto - Sistema de Automatización de Guías Docentes
+# 📚 Diagrama de Contexto - Sistema de Automatización de Guías Docentes  
 
-Este documento describe el **Diagrama de Contexto** del sistema de Automatización de Guías Docentes. El diagrama detalla las interacciones clave entre los actores externos y el sistema, así como los flujos principales de datos y actividades relevantes.
+Este documento describe el **Diagrama de Contexto** del sistema de Automatización de Guías Docentes. El diagrama ilustra los principales flujos de interacción entre los actores y el sistema, detallando los procesos esenciales y las actividades relevantes para garantizar la gestión eficaz de las guías.  
 
-## 📝 Descripción General
+## 📝 Descripción General  
 
-El **Diagrama de Contexto** proporciona una visión global del sistema, organizando sus principales componentes y procesos. Permite identificar de manera clara cómo los actores interactúan con el sistema y cómo se conectan los distintos subsistemas internos.
+El **Diagrama de Contexto** ofrece una representación general del sistema, organizando los componentes clave y destacando cómo los actores interactúan con las diferentes funcionalidades del sistema. Facilita la comprensión de las responsabilidades de cada actor y los flujos entre procesos.  
 
----
+---  
 
-## 🖇️ Componentes del Diagrama de Contexto
+## 🖇️ Componentes del Diagrama de Contexto  
 
-### 1. **Autenticación**
-   - **Descripción:** Proceso inicial donde los usuarios inician sesión en el sistema.
-   - **Actores involucrados:** Profesores, Técnicos de Calidad, Directores de Grado, Dirección de Calidad.
-   - **Objetivo:** Garantizar que solo usuarios autorizados accedan al sistema y sus funciones.
+### 1. **Acceso al Sistema**  
+   - **Descripción:** Proceso inicial donde los actores inician o cierran sesión en el sistema.  
+   - **Actores involucrados:** Profesores, Técnicos de Calidad, Directores de Grado, Dirección de Calidad.  
+   - **Objetivo:** Garantizar que los usuarios autenticados accedan a las funciones del sistema según sus roles.  
 
----
+---  
 
-### 2. **Edición de Guías Docentes**
-   - **Descripción:** Permite a los profesores crear, editar y ajustar guías docentes.
-   - **Actor principal:** Profesor.
-   - **Subprocesos relacionados:**
-     - Ajustes de contenido.
-     - Revisión interna por Técnicos de Calidad.
+### 2. **Edición de Contenido**  
+   - **Descripción:** Permite a los Técnicos de Calidad realizar ajustes en el contenido estático de las guías.  
+   - **Actor principal:** Técnico de Calidad.  
+   - **Subprocesos relacionados:**  
+     - Guardar cambios en las guías.  
+     - Preparar el documento para revisión.  
 
----
+---  
 
-### 3. **Revisión de Guías**
-   - **Descripción:** Proceso en el que el contenido es revisado y validado por el Director de Grado.
-   - **Actor principal:** Director de Grado.
-   - **Flujos relevantes:**
-     - Identificación de observaciones.
-     - Retroalimentación y reenvío a profesores.
+### 3. **Revisión y Aprobación de Contenido**  
+   - **Descripción:** Proceso de evaluación de las guías para su aprobación o rechazo.  
+   - **Actor principal:** Director de Grado.  
+   - **Flujos relevantes:**  
+     - Retroalimentación sobre cambios.  
+     - Confirmación de decisiones (aprobación o rechazo).  
 
----
+---  
 
-### 4. **Validación**
-   - **Descripción:** Validación técnica y de calidad realizada por los Técnicos de Calidad y el sistema automatizado.
-   - **Actores involucrados:** Técnico de Calidad, Sistema IA.
-   - **Objetivo:** Asegurar que las guías cumplan con estándares de calidad y formato.
+### 4. **Supervisión de Guías**  
+   - **Descripción:** Monitoreo y control de las guías en proceso por parte del Técnico de Calidad.  
+   - **Actor principal:** Técnico de Calidad.  
+   - **Objetivo:** Asegurar que las guías cumplan con los requisitos antes de la revisión formal.  
 
----
+---  
 
-### 5. **Publicación y Archivado**
-   - **Descripción:** Una vez aprobada, la guía se publica y versiones previas se archivan para su consulta.
-   - **Actores involucrados:** Director de Grado, Sistema.
-   - **Objetivo:** Hacer que las guías estén disponibles para los estudiantes mientras se preservan versiones anteriores.
+### 5. **Auditoría de Guías**  
+   - **Descripción:** Evaluación realizada por la Dirección de Calidad para verificar el cumplimiento con estándares establecidos.  
+   - **Actor principal:** Dirección de Calidad.  
+   - **Objetivo:** Garantizar la calidad final de las guías antes de su publicación.  
 
----
+---  
 
-### 6. **Consulta de Guías**
-   - **Descripción:** Acceso a guías publicadas y archivadas por estudiantes o administradores.
-   - **Actor principal:** Sistema.
-   - **Objetivo:** Proveer acceso rápido y eficiente a la información académica.
+### 6. **Asignación y Gestión**  
+   - **Descripción:** Permite asignar guías a titulaciones y asignaturas a titulaciones.  
+   - **Actor principal:** Técnico de Calidad.  
+   - **Flujos relevantes:**  
+     - Confirmar asignación de guías.  
+     - Vincular asignaturas correctamente.  
+
+---  
+
+### 7. **Publicación y Generación de Nuevas Versiones**  
+   - **Descripción:** Proceso final para publicar las guías aprobadas y crear nuevas versiones cuando sea necesario.  
+   - **Actores involucrados:** Director de Grado, Técnico de Calidad.  
+   - **Objetivo:** Hacer disponibles las guías aprobadas mientras se conserva el historial de versiones.  
+
+---  
+
+### 8. **Verificación con Memoria**  
+   - **Descripción:** Validación de que las guías cumplen con la memoria académica verificada.  
+   - **Actor principal:** Dirección de Calidad.  
+   - **Objetivo:** Confirmar que las guías se ajusten a los parámetros de la memoria académica aprobada.  
 
 ---
 
@@ -61,7 +77,3 @@ El **Diagrama de Contexto** proporciona una visión global del sistema, organiza
 ![Diagrama de Contexto](/images/modelosUML/DiagramaDeContexto.svg)  
 
 | [Ver código fuente](/CasosDeUso/diagramaDeContexto/DiagramaDeContexto.puml)
-
----
-
-Este diagrama de contexto es una herramienta clave para entender las dinámicas generales del sistema de Automatización de Guías Docentes, identificando a los actores y procesos críticos para el flujo de trabajo. ¿Hay algo más que quieras ajustar o añadir? 😊
