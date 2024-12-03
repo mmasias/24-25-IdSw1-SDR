@@ -52,7 +52,7 @@ Este documento describe los principales casos de uso en el sistema de Automatiza
  - **Objetivo:** Asegurar que las guías se ajusten a los requisitos y lineamientos institucionales.
 ---
 
-![](/images/modelosUML/diagramaCasosDeUso1.svg) 
+![](/images/modelosUML/diagramaCasosDeUso.svg) 
 
 | [Ver código](/CasosDeUso/diagramaCasosDeUso/diagramaCasosDeUso.puml) 
 
