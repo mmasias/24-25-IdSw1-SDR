@@ -1,0 +1,70 @@
+@startuml
+skinparam packageStyle rectangle
+actor Usuario
+
+rectangle "Aplicación" {
+    ' Primera fila de casos de uso
+    together {
+        usecase "Registrarse" as UC1
+        usecase "Iniciar sesión" as UC2
+        usecase "Cerrar sesión" as UC3
+        usecase "Ver posts" as UC4
+        usecase "Crear posts" as UC5
+        usecase "Interactuar con posts" as UC6
+    }
+    
+    ' Segunda fila de casos de uso
+    together {
+        usecase "Entrar/Salir de \ncomunidad" as UC7
+        usecase "Recibir notificaciones de \nAnuncios o Eventos" as UC8
+        usecase "Reportar Contenido" as UC9
+        usecase "Crear Comunidad" as UC10
+        usecase "Seleccionar etiqueta" as UC11
+        usecase "Filtrar" as UC12
+    }
+
+    ' Espaciado horizontal primera fila
+    UC1 -[hidden]right- UC2
+    UC2 -[hidden]right- UC3
+    UC3 -[hidden]right- UC4
+    UC4 -[hidden]right- UC5
+    UC5 -[hidden]right- UC6
+
+    ' Espaciado horizontal segunda fila
+    UC7 -[hidden]right- UC8
+    UC8 -[hidden]right- UC9
+    UC9 -[hidden]right- UC10
+    UC10 -[hidden]right- UC11
+    UC11 -[hidden]right- UC12
+
+    ' Espaciado vertical entre filas
+    UC1 -[hidden]down- UC7
+    UC2 -[hidden]down- UC8
+    UC3 -[hidden]down- UC9
+    UC4 -[hidden]down- UC10
+    UC5 -[hidden]down- UC11
+    UC6 -[hidden]down- UC12
+}
+
+' Conexiones con el usuario
+Usuario --> UC1
+Usuario --> UC2
+Usuario --> UC3
+Usuario --> UC4
+Usuario --> UC5
+Usuario --> UC6
+Usuario -down-> UC7
+Usuario -down-> UC8
+Usuario -down-> UC9
+Usuario -down-> UC10
+Usuario -down-> UC11
+Usuario -down-> UC12
+
+' Configuración de estilo
+skinparam usecase {
+    BackgroundColor white
+    BorderColor black
+    ArrowColor black
+}
+
+@enduml
