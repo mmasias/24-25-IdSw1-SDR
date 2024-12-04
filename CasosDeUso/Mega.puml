@@ -1,0 +1,31 @@
+@startuml
+actor Administrador
+
+usecase "Inicio de Sesión" as UC1
+usecase "Seleccionar Grado" as UC2
+usecase "Visualizar Asignaturas" as UC3
+usecase "Asignar Horario a una Asignatura" as UC4
+usecase "Actualizar Estado de Asignatura" as UC5
+usecase "Gestionar Aulas Disponibles" as UC6
+usecase "Editar Horario" as UC7
+usecase "Eliminar Asignación de una Asignatura" as UC8
+usecase "Guardar Cambios Automáticamente" as UC9
+usecase "Cerrar Sesión" as UC10
+
+' Relaciones entre actor y casos de uso
+Administrador --> UC1
+Administrador --> UC2
+Administrador --> UC3
+Administrador --> UC4
+Administrador --> UC7
+Administrador --> UC8
+Administrador --> UC10
+
+' Relaciones entre casos de uso
+UC2 --> UC3 : Extiende
+UC4 --> UC5 : Extiende
+UC4 --> UC6 : Usa
+UC4 --> UC9 : Usa
+UC8 --> UC5 : Usa
+UC7 --> UC9 : Usa
+@enduml

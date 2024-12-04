@@ -1,36 +1,35 @@
 @startuml
-title Diagrama de Objetos Simplificado - Time Guardian
-
-object "gestorDeHorarios" as gestorDeHorarios {
-    rol = "Gestor de Horarios"
+object Administrador {
+    nombre: "Admin1"
 }
 
-object "asignacionDocenteAsignatura" as asignacionDocenteAsignatura {
-    docente = "Manuel Masias"
-    asignatura = "Programación I"
-}
-gestorDeHorarios -r-> asignacionDocenteAsignatura : "Asigna >"
-
-object "asignacionAulaAsignatura" as asignacionAulaAsignatura {
-    asignatura = "Programación I"
-    aula = "-2.6"
+object Grado {
+    nombre: "Ingeniería Informática"
 }
 
-
-gestorDeHorarios -r-> asignacionAulaAsignatura : "Asigna >"
-
-object "horario : Horario" as horario {
-    dia = "Lunes"
-    horaInicio = "8:00"
-    horaFin = "10:00"
-    asignatura = "Programación I"
-    aula = "-2.6"
-    docente = "Manuel Masias"
+object Asignatura1 {
+    nombre: "Matemáticas"
+    estado: "No asignada"
 }
-asignacionDocenteAsignatura -d-> horario : "Contribuye a >"
-asignacionAulaAsignatura -d-> horario : "Contribuye a >"
 
-note "Completar todas las\nasignaciones para formar\nel horario completo" as nota
-gestorDeHorarios -u-> nota
-nota -d-> horario
+object Asignatura2 {
+    nombre: "Programación"
+    estado: "Asignada"
+}
+
+object Horario {
+    día: "Lunes"
+    hora: "10:15 - 12:15"
+}
+
+object Aula {
+    nombre: "Aula 101"
+    capacidad: 30
+}
+
+Administrador --> Grado : Selecciona grado
+Grado --> Asignatura1 : Contiene
+Grado --> Asignatura2 : Contiene
+Asignatura2 --> Horario : Asignada a
+Horario --> Aula : Ocupa
 @enduml

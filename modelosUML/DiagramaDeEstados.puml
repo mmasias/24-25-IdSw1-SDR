@@ -1,11 +1,13 @@
 @startuml
-title Diagrama de Estados - Horario
+[*] --> UI : Iniciar sesión
 
-[*] --> Inicio : Creación del Horario
-Inicio --> Configurando : Configurar detalles
-Configurando --> HorarioConfigurado : Detalles completados
-HorarioConfigurado --> HorarioConfirmado : Confirmación de configuración
-HorarioConfirmado --> HorarioFinalizado : Finalización alcanzada
-HorarioFinalizado --> [*] : Finalización del Horario
-
+state "UI" as UI {
+    [*] --> SeleccionarGrado : Seleccionar un grado
+    SeleccionarGrado --> CargarAsignaturas : Grado seleccionado
+    CargarAsignaturas --> VisualizarAsignaturas : Asignaturas cargadas
+    VisualizarAsignaturas --> ArrastrarAsignatura : Usuario selecciona asignatura
+    ArrastrarAsignatura --> AsignarHorario : Arrastra a horario
+    AsignarHorario --> ActualizarEstado : Soltar en horario
+    ActualizarEstado --> VisualizarAsignaturas : Estado actualizado
+}
 @enduml

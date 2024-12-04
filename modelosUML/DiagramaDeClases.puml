@@ -1,50 +1,36 @@
-title Diagrama de Clases - Horario
-
-class AdministradorDeHorarios {
-    - listaHorarios
+@startuml
+class Administrador {
+    - login: String
+    - contraseña: String
+    + autenticar(): Boolean
 }
 
-class Profesor {
-    - nombre
-    - apellido
+class Grado {
+    - nombre: String
+    - asignaturas: List<Asignatura>
+    + mostrarAsignaturas(): void
 }
 
 class Asignatura {
-    - id
-    - nombre
-}
-
-class Aula {
-    - numero
+    - nombre: String
+    - estado: String
+    + asignarHorario(Horario): void
 }
 
 class Horario {
-    - dia
-    - horaInicio
-    - horaFin
-    - asignatura
-    - aula
+    - día: String
+    - hora: String
+    + asignarAula(Aula): void
 }
 
-class ProfesorImparte {
-    - profesor
-    - asignatura
+class Aula {
+    - nombre: String
+    - capacidad: int
+    + verificarDisponibilidad(Horario): Boolean
 }
 
-class AsignacionAula {
-    - asignatura
-    - aula
-}
-
-AdministradorDeHorarios -- Horario
-
-Horario -- Profesor
-Horario -- Asignatura
-Horario -- Aula
-
-Profesor -- ProfesorImparte
-Asignatura -- ProfesorImparte
-Asignatura -- AsignacionAula
-Aula -- AsignacionAula
-ProfesorImparte -- AsignacionAula
+Administrador --> Grado
+Grado  -->  Asignatura
+Asignatura --> Horario
+Horario --> Aula
 @enduml
