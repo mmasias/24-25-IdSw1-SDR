@@ -1,4 +1,5 @@
 @startuml diagramaContextoGuiasDocentes
+left to right direction
 
 state "MENU_PRINCIPAL" as MenuPrincipal
 state "EDITAR_CONTENIDO" as EditarContenido
