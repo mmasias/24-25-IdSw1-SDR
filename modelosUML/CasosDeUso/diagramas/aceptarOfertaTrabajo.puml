@@ -1,0 +1,40 @@
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+
+actor "Administrador" as admin
+actor "Empresa" as empresa
+
+rectangle "Aceptar Ofertas de Trabajo" {
+  usecase "Iniciar Sesión" as UC1
+  usecase "Ver Ofertas\nPendientes" as UC2
+  usecase "Revisar Oferta" as UC3
+  usecase "Aceptar Oferta" as UC4
+  usecase "Rechazar Oferta" as UC5
+  usecase "Cambiar Estado" as UC6
+  usecase "Notificar Empresa" as UC7
+}
+
+admin --> UC1
+admin --> UC2
+UC2 ..> UC1 : <<include>>
+admin --> UC3
+admin --> UC4
+admin --> UC5
+UC4 ..> UC6 : <<include>>
+UC5 ..> UC6 : <<include>>
+UC6 ..> UC7 : <<extends>>
+UC7 --> empresa
+
+note right of UC3
+  Estados posibles:
+  - Publicada
+  - Rechazada
+end note
+
+note right of UC7
+  Notificaciones:
+  - Aceptación
+  - Rechazo + motivos
+end note
+@enduml

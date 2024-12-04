@@ -1,0 +1,36 @@
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+
+actor "Alumni" as alumni
+
+rectangle "Busqueda de Ofertas de Trabajo" {
+  usecase "Iniciar Sesión" as UC1
+  usecase "Buscar Ofertas\nde Trabajo" as UC2
+  usecase "Aplicar Filtros\nde Búsqueda" as UC3
+  usecase "Mostrar Resultados" as UC4
+  usecase "Ver Detalles\nde Oferta" as UC5
+  usecase "Registrar Actividad" as UC6
+}
+
+alumni --> UC1
+alumni --> UC2
+UC2 ..> UC1 : <<include>>
+UC2 ..> UC3 : <<include>>
+UC3 ..> UC4 : <<include>>
+alumni --> UC5
+UC5 ..> UC6 : <<extends>>
+
+note right of UC3
+  Filtros disponibles:
+  - Ubicación
+  - Tipo de jornada
+  - Salario
+end note
+
+note right of UC4
+  Si no hay resultados:
+  Mostrar mensaje y
+  sugerir ajustar filtros
+end note
+@enduml

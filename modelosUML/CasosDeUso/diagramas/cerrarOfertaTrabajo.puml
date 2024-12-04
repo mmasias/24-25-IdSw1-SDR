@@ -1,0 +1,31 @@
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+
+actor "Administrador" as admin
+actor "Empresa" as empresa
+
+rectangle "Cerrar Ofertas de Trabajo" {
+  usecase "Iniciar Sesión" as UC1
+  usecase "Gestionar Ofertas" as UC2
+  usecase "Seleccionar Oferta" as UC3
+  usecase "Cerrar Oferta" as UC4
+  usecase "Confirmar Cierre" as UC5
+  usecase "Actualizar Estado" as UC6
+  usecase "Notificar Empresa" as UC7
+}
+
+admin --> UC1
+UC1 --> UC2
+UC2 --> UC3
+UC3 --> UC4
+UC4 --> UC5
+UC5 --> UC6
+UC6 --> UC7
+UC7 --> empresa
+
+note right of UC6
+  Estado final:
+  "Cerrada"
+end note
+@enduml
