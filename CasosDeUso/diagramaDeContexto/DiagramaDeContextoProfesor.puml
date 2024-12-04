@@ -1,0 +1,45 @@
+@startuml diagramaContextoProfesor  
+state "MENU_PRINCIPAL" as MenuPrincipal  
+state "EDITANDO_GUÍA" as EditandoGuia  
+state "VISUALIZANDO_GUÍA" as VisualizandoGuia  
+
+[*] --> MenuPrincipal  
+    note on link  
+        Profesor  
+        inicia sesión  
+    end note  
+
+MenuPrincipal -> [*]  
+    note on link  
+        Profesor  
+        cierra sesión  
+    end note  
+
+MenuPrincipal --> VisualizandoGuia  
+    note on link  
+        Ver guías asignadas  
+        para consulta  
+    end note  
+
+VisualizandoGuia --> MenuPrincipal  
+    note on link  
+        Regresar al menú principal  
+    end note  
+
+MenuPrincipal --> EditandoGuia  
+    note on link  
+        Acceder a guías asignadas  
+        para edición  
+    end note  
+
+EditandoGuia --> EditandoGuia  
+    note on link  
+        Ajustar contenido editable  
+    end note  
+
+EditandoGuia --> MenuPrincipal  
+    note on link  
+        Guardar cambios y cerrar edición  
+    end note  
+
+@enduml  
