@@ -1,0 +1,28 @@
+@startuml
+
+state " " as Estado1
+state " " as Estado2
+
+[*] --> Estado1
+    note on link
+        El alumno solicita iniciar sesión
+    end note
+Estado1 --> Estado2
+    note on link
+        El Sistema requiere
+        - Correo
+        - Contraseña
+    end note
+state rombo <<choice>>
+Estado2 --> rombo
+note on link
+    Alumno introcude
+    - Correo
+    - Contraseña
+end note
+rombo --> [*]
+rombo --> Estado1
+    note on link
+    Correo y contraseña inexistentes
+    end note
+@enduml
