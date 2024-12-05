@@ -1,42 +1,14 @@
 @startuml
-package "UNEATLANTICO" {
-    class Profesor {
-    }
-
-    enum Contrato {
-    }
-    
-    enum Experiencia {
-    }
-
-    class Asignatura {
-    }
-
-    class Titulacion {
-    }
-
-    class MemoriaAcademica {
-    }
-
-    class Indicador {
-    }
-
-    class CargaAcademica {
-    }
-
-    class Asignacion {
-    }
-
+Package UNEATLANTICO{
+    hide circle
+    hide empty members
     
     Asignacion --> Profesor : asigna
     Asignacion --> Asignatura : corresponde
     Asignacion --> MemoriaAcademica : cumple
-    Asignacion --> CargaAcademica : incluye
     MemoriaAcademica --> Indicador : meta y valores
     Indicador --> Profesor : extrae datos
-    Profesor --> Contrato : tiene
-    Profesor --> Experiencia : tiene
-    Profesor --> Asignatura: imparte
-    Profesor .. Titulacion : pertenece
+    Asignatura .. Titulacion : pertenece
+    Profesor --> Asignatura : imparte
 }
 @enduml

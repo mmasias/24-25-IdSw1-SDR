@@ -16,10 +16,10 @@ Este documento presenta los diagramas principales del modelo de dominio: el **di
 | ![Diagrama de Clases](/images/modelosUML/MdD/diagramaDeClases.svg) | [Ver código](/modelosUML/MdD/diagramaDeClases.puml) |
 
 - **Descripción**: 
-  - `Asignación` asigna [`Profesor`](/documentos/glosario.md#-pdi-personal-docente-e-investigador), quien imparte `Asignatura` y pertenece a una `Titulación`.
-  - La `Asignación` también corresponde a una `Asignatura`, cumple con la [`MemoriaAcadémica`](/documentos/glosario.md#-memoria-académica) y gestiona la inclusión de la [`CargaAcadémica`](/documentos/glosario.md#-carga-académica).
-  - La [`MemoriaAcadémica`](/documentos/glosario.md#-memoria-académica) utiliza [`Indicadores`](/documentos/glosario.md#-indicador) como metas y valores, que extraen datos del [`Profesor`](/documentos/glosario.md#-pdi-personal-docente-e-investigador).
-  - [`Profesor`](/documentos/glosario.md#-pdi-personal-docente-e-investigador) tiene un Contrato, acumula Experiencia y gestiona su [`dedicación`](/documentos/glosario.md#-dedicación) con una [`CargaAcadémica`](/documentos/glosario.md#-carga-académica).
+  - `Asignación` asigna a un [`Profesor`](/documentos/glosario.md#-pdi-personal-docente-e-investigador), quien imparte una `Asignatura` que pertenece a una `Titulación`.  
+  - La `Asignación` también corresponde a una `Asignatura` y cumple con la [`Memoria Académica`](/documentos/glosario.md#-memoria-académica).  
+  - La [`Memoria Académica`](/documentos/glosario.md#-memoria-académica) establece metas y valores utilizando [`Indicadores`](/documentos/glosario.md#-indicador), que extraen datos del [`Profesor`](/documentos/glosario.md#-pdi-personal-docente-e-investigador).  
+  - [`Profesor`](/documentos/glosario.md#-pdi-personal-docente-e-investigador) imparte las `Asignaturas` relacionadas y contribuye a los datos que evalúan los [`Indicadores`](/documentos/glosario.md#-indicador).
 
 ---
 

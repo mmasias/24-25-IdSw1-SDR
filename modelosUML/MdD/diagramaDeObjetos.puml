@@ -1,14 +1,92 @@
 @startuml
-Package UNEATLANTICO{
+
     hide circle
     hide empty members
-    
     Asignacion --> Profesor : asigna
     Asignacion --> Asignatura : corresponde
     Asignacion --> MemoriaAcademica : cumple
+    Asignacion --> CargaAcademica : incluye
     MemoriaAcademica --> Indicador : meta y valores
     Indicador --> Profesor : extrae datos
-    Asignatura .. Titulacion : pertenece
-    Profesor --> Asignatura : imparte
+    Profesor --> Contrato : tiene
+    Profesor --> Experiencia : tiene
+    Profesor --> Asignatura: imparte
+    Profesor .. Titulacion : pertenece
+
+
+class Profesor {
+    id_profesor = 001
+    nombre = "Dr. Juan Pérez"
+    titulacion = "Ingeniería Informática"
+    institucion = "UNEATLANTICO"
+    validacion_movilidad = true
+    movilidad_destinos = ["Universidad A", "Universidad B"]
+    sexenios = 3
+    curso_academico = "2023/2024"
 }
+
+class Contrato {
+    historial_contrato = ["2020-2022: Titular", "2022-Actualidad: Catedrático"]
+}
+
+class Experiencia {
+    historial_experiencia = ["2015-2018: Investigador", "2018-2020: Profesor Asociado"]
+}
+
+class Asignatura {
+    codigo = "INF101"
+    nombre = "Programación I"
+    semestre = "1er semestre"
+    porcentaje_asignacion = 50
+    numero_grupos = 2
+    curso_academico = "2023/2024"
+}
+
+class Titulacion {
+    nombre = "Grado en Ingeniería Informática"
+    estructura_base = ["Primer año", "Segundo año", "Tercer año"]
+    curso_academico = "2023/2024"
+}
+
+class MemoriaAcademica {
+    valores_comprometido = ["Movilidad: 80%", "Sexenios: 3"]
+    movilidad_destinos = ["Universidad A"]
+    curso_academico = "2023/2024"
+    meta_sexenios = 4
+    meta_movilidad = 90
+}
+
+class Indicador {
+    codigo = "IND001"
+    valor = 75
+    umbral_alerta = 60
+}
+
+class CargaAcademica {
+    creditos = 24
+    modalidad = "Presencial"
+    tipo = "Obligatoria"
+    facultad = "Facultad de Ingeniería"
+    curso_academico = "2023/2024"
+}
+
+class Asignacion {
+    id_asignacion = 1001
+    porcentaje_asignado = 50
+    curso_academico = "2023/2024"
+    cumplido_en_memoria = true
+}
+
+
+Asignacion --> Profesor : asigna
+Asignacion --> Asignatura : corresponde
+Asignacion --> MemoriaAcademica : cumple
+Asignacion --> CargaAcademica : incluye
+MemoriaAcademica --> Indicador : meta y valores
+Indicador --> Profesor : extrae datos
+Profesor --> Contrato : tiene
+Profesor --> Experiencia : tiene
+Profesor --> Asignatura: imparte
+Profesor .. Titulacion : pertenece
+
 @enduml
