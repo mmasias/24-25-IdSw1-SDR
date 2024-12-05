@@ -1,51 +1,16 @@
 @startuml
 
-[*] --> MenuPrincipal
-
-MenuPrincipal --> MenuRetos : Profesor selecciona "Menú Retos"
-MenuPrincipal --> [*] : Profesor sale
-
-MenuRetos --> CrearReto : Profesor selecciona "Crear Reto"
-MenuRetos --> [*] : Profesor sale
-
-state TipoDeReto <<choice>>
-CrearReto --> TipoDeReto
-note on link
-    Profesor decide el tipo de reto:
-    Obligatorio o Voluntario.
-end note 
-
-TipoDeReto --> RetoObligatorio
-note on link
-    Profesor establece retos obligatorios
-    dentro de la unidad didáctica.
-end note 
-
-TipoDeReto --> RetoVoluntario
-note on link
-    Profesor establece retos voluntarios
-    para puntuación extra en la asignatura.
-end note 
-
-RetoObligatorio --> ConfigurarReto : Profesor realiza configuración
-RetoVoluntario --> ConfigurarReto : Profesor realiza configuración
-note right of ConfigurarReto
-    El profesor define los detalles del reto, como:
-    - Nombre del reto
-    - Descripción
-    - Fecha límite
-
-end note
-
-ConfigurarReto --> PublicarReto : Profesor finaliza la configuración
-
-
-note top of PublicarReto
-    El reto queda visible para los estudiantes
-end note
-
-PublicarReto --> CrearReto : Profesor va a crear otro reto
-PublicarReto --> MenuRetos : Profesor quiere volver al menú retos
-PublicarReto --> [*] : Profesor sale
+[*] --> CrearRetos : El profesor solicita CrearRetos
+CrearRetos --> UnidadesDidacticas : El sistema muestra las UnidadesDidacticas
+UnidadesDidacticas --> OpcionReto : El profesor ingresa la UnidadesDidacticas
+state reto <<choice>>
+OpcionReto --> reto : El sistema muestra las opciones de reto
+reto --> RetoObligatorio : El profesor ingresa RetoObligatorio
+reto --> RetoOpcional : El profesor ingresa RetoOpcional
+RetoObligatorio --> DescripcionReto : El profesor ingresa una descripcion del reto
+RetoOpcional --> DescripcionReto : El profesor ingresa una descripcion del reto
+DescripcionReto --> ResultadoReto : El sistema muestra como queda el reto
+ResultadoReto --> GuardarReto : El profesor ingresa guardar
+GuardarReto --> [*] : El sistema guarda el reto
 
 @enduml
