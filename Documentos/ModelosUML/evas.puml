@@ -24,9 +24,9 @@ UnidadDidactica -- ClaseTeorica : incluye
 Alumno -- Asignatura : cursa
 ClasePractica -- CentroDeportivo : seRealizaEn
 ClasePractica -- Rutina : enseña
-Rutina -- Reto : contiene
-Rutina -- Valoracion: tiene
+ClasePractica -- Reto : contiene
+ClasePractica -- Valoracion: tiene
+ClaseTeorica -- Valoracion: tiene
 Alumno -- Rutina: realiza
-
 ClasePractica -- ClaseTeorica : requiere
 @enduml
