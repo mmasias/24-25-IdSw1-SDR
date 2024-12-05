@@ -5,7 +5,7 @@ state " " as Estado2
 
 [*] --> Estado1
     note on link
-        El usuario solicita iniciar sesión
+        El profesor solicita iniciar sesión
     end note
 Estado1 --> Estado2
     note on link
@@ -16,7 +16,7 @@ Estado1 --> Estado2
 state rombo <<choice>>
 Estado2 --> rombo
 note on link
-    Usuario introcude
+    Profesor introcude
     - Correo
     - Contraseña
 end note
