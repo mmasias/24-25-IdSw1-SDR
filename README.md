@@ -15,8 +15,6 @@ A continuacion se presentan los enlaces a los distintos diagramas realizados:
 ![Diagrama de Clases](https://github.com/miguelgomez75/24-25-IdSw1-SDR/blob/main/images/modelosUML%20-%20SVG/4%C2%AA_Iteraci%C3%B3n/DdClases.svg)
 
 ## CASOS DE USO
-### Diagrama de Contexto 
-![Diagrama de Contexto](https://github.com/miguelgomez75/24-25-IdSw1-SDR/blob/main/images/modelosUML%20-%20SVG/3%C2%AA_Iteraci%C3%B3n/DdContexto.svg)
 
 ### Jerarquía de actores
 ![Jerarquía de actores, herencia](https://github.com/miguelgomez75/24-25-IdSw1-SDR/blob/main/images/modelosUML%20-%20SVG/1%C2%AA_Iteraci%C3%B3n/DdJerarqu%C3%ADaActores.svg)
@@ -31,6 +29,9 @@ A continuacion se presentan los enlaces a los distintos diagramas realizados:
 
 ### Diagrama de casos de uso del moderador
 ![Diagrama de Casos de Uso de Moderador](https://github.com/miguelgomez75/24-25-IdSw1-SDR/blob/main/images/modelosUML%20-%20SVG/4%C2%AA_Iteraci%C3%B3n/DdCdUso_Moderador.svg)
+
+### Diagrama de Contexto 
+![Diagrama de Contexto](https://github.com/miguelgomez75/24-25-IdSw1-SDR/blob/main/images/modelosUML%20-%20SVG/3%C2%AA_Iteraci%C3%B3n/DdContexto.svg)
 
 
 Grupo conformado por:
