@@ -1,0 +1,22 @@
+@startuml
+[*] --> Inicio
+Inicio --> Usuario : Log in\nSign in
+Usuario --> Dashboard : ve las etiquetas a elegir
+Dashboard --> Perfil : Entra en Perfil
+Dashboard --> Comunidades : Ve las comunidades existentes
+Dashboard --> Ajustes : ve los ajustes de la Aplicacion
+Dashboard --> Etiqueta : Elegir etiqueta
+
+
+
+
+
+
+Comunidades --> [*] : Log out
+Dashboard --> [*] : Log out
+Perfil --> [*] : Log out
+Ajustes --> [*] : Log out
+
+@enduml
+
+

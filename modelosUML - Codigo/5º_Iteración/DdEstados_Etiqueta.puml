@@ -1,0 +1,15 @@
+@startuml
+[*] --> SinFiltro
+
+SinFiltro --> FiltroSeleccionado : Seleccionar etiqueta
+FiltroSeleccionado --> FiltroAplicado : Confirmar selección
+FiltroSeleccionado --> SinFiltro : Quitar todas las etiquetas
+FiltroAplicado --> FiltroSeleccionado : Modificar filtros
+FiltroAplicado --> ErrorEnFiltro : Error al aplicar
+ErrorEnFiltro --> FiltroSeleccionado : Corregir error
+
+SinFiltro : Estado inicial sin filtros
+FiltroSeleccionado : Una o más etiquetas seleccionadas
+FiltroAplicado : Filtro aplicado exitosamente
+ErrorEnFiltro : Error al aplicar filtro
+@enduml

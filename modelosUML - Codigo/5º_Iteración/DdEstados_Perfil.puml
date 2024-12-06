@@ -1,0 +1,9 @@
+@startuml
+[*] --> VistaPerfil
+
+VistaPerfil --> EditarPerfil : Hacer clic en "Editar"
+EditarPerfil --> GuardarPerfil : Hacer clic en "Guardar"
+EditarPerfil --> CancelarEdicion : Hacer clic en "Cancelar"
+GuardarPerfil --> VistaPerfil : Guardado exitoso
+CancelarEdicion --> VistaPerfil : Volver sin guardar
+@enduml
