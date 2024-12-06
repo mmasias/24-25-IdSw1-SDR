@@ -1,0 +1,7 @@
+@startuml
+[*] --> Usuario_NO_registrado 
+Usuario_NO_registrado --> Inicio : Sign in
+Inicio --> Usuario_registrado
+Usuario_NO_registrado --> [*] : se va
+Usuario_registrado --> [*] : Usa la Aplicacion
+@enduml

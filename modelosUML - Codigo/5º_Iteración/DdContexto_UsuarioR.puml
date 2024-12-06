@@ -1,0 +1,15 @@
+@startuml
+[*] --> Usuario_registrado
+Usuario_registrado --> Inicio : Log in
+Inicio --> Dashboard : accede
+Dashboard --> Perfil : Entra en Perfil
+Dashboard --> Comunidades : Ve las comunidades existentes
+Dashboard --> Ajustes : ve los ajustes de la Aplicacion
+Dashboard --> Etiqueta : Elegir etiqueta
+Inicio --> [*] : log out
+Dashboard --> [*] : log out
+Perfil --> [*] : log out
+Comunidades --> [*] : log out
+Ajustes --> [*] : log out
+Etiqueta --> [*] : log out
+@enduml
