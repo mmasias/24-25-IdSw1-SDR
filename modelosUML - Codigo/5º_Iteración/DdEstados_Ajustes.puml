@@ -1,0 +1,9 @@
+@startuml
+[*] --> VistaAjustes
+
+VistaAjustes --> EditarPreferencias : Seleccionar preferencias
+EditarPreferencias --> GuardarAjustes : Hacer clic en "Guardar"
+EditarPreferencias --> CancelarCambios : Hacer clic en "Cancelar"
+GuardarAjustes --> VistaAjustes : Guardado exitoso
+CancelarCambios --> VistaAjustes : Volver sin guardar
+@enduml

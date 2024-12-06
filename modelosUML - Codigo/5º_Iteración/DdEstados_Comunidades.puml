@@ -1,0 +1,9 @@
+@startuml
+[*] --> ListaComunidades
+
+ListaComunidades --> DetalleComunidad : Seleccionar comunidad
+DetalleComunidad --> Miembro : Unirse a comunidad
+DetalleComunidad --> ListaComunidades : Volver al listado
+Miembro --> AbandonarComunidad : Hacer clic en "Salir"
+AbandonarComunidad --> DetalleComunidad : Salida confirmada
+@enduml
