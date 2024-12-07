@@ -7,6 +7,10 @@
 
 ## Detallado de Casos de Uso
 
+## Diagrama Detallado de Manejo de Sesión
+
+![](./detalladoManejoSesion/detalladoManejoSesion.svg)
+
 ## Diagrama Detallado de Grupos
 
 ### Detallado de Crear Grupo
