@@ -49,7 +49,7 @@ CreandoMensaje --> MenuPrincipal
 
 MenuPrincipal --> Grupos
     note on link
-        Listar categorias
+        Listar grupos
     end note
 
 Grupos --> MenuPrincipal

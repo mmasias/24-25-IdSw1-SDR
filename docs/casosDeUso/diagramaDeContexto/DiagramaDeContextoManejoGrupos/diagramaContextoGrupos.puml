@@ -30,7 +30,7 @@ Grupos --> ActualizandoGrupo
 ActualizandoGrupo --> Grupos
     note on link
         Listar 
-        categorias
+        grupos
     end note
 
 Grupos --> BorrandoGrupo
