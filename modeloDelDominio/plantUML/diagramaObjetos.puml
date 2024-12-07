@@ -67,23 +67,23 @@ object ProfesorImparte2 {
   asignatura = Asignatura2
 }
 
-Administrador -> Horario1
-Administrador -> Horario2
+Administrador --> Horario1
+Administrador --> Horario2
 
-Horario1 -> HoraClase1
-Horario2 -> HoraClase2
+Horario1 --> HoraClase1
+Horario2 --> HoraClase2
 
-HoraClase1 -> Asignatura1
-HoraClase1 -> Aula1
-HoraClase1 -> Profesor1
+HoraClase1 --> Asignatura1
+HoraClase1 --> Aula1
+HoraClase1 --> Profesor1
 
-HoraClase2 -> Asignatura2
-HoraClase2 -> Aula2
-HoraClase2 -> Profesor2
+HoraClase2 --> Asignatura2
+HoraClase2 --> Aula2
+HoraClase2 --> Profesor2
 
-ProfesorImparte1 -> Profesor1
-ProfesorImparte1 -> Asignatura1
+ProfesorImparte1 --> Profesor1
+ProfesorImparte1 --> Asignatura1
 
-ProfesorImparte2 -> Profesor2
-ProfesorImparte2 -> Asignatura2
+ProfesorImparte2 --> Profesor2
+ProfesorImparte2 --> Asignatura2
 @enduml
