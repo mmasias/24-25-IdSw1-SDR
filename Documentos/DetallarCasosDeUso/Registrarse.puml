@@ -3,22 +3,17 @@
   [*] --> UsuarioNoRegistrado
   UsuarioNoRegistrado --> Registrandose
   note on link
-    Usuario sin cuenta accede al sistema.
-  end note
-
-  UsuarioNoRegistrado --> UsuarioNoRegistrado
-  note on link
-    Usuario sin cuenta no quiere acceder al sistema.
+    Usuario sin cuenta se registra.
   end note
 
   UsuarioNoRegistrado --> ProcesoDeInicioDeSesión
   note on link
-    Usuario con cuenta accede al sistema.
+    Usuario con cuenta se registra.
   end note
 
   Registrandose --> RellenandoLogin
   note on link
-    Ingresa los datos de Login:
+    El usuario ingresa los datos de Login:
     - Nombre
     - Apellido
     - Correo Electrónico
@@ -31,47 +26,47 @@
   state rombo <<choice>>
   RellenandoLogin --> rombo
   note on link
-    Usa correo @educantabria.es?
+    El usuario usa correo @educantabria.es?
   end note
   
   rombo --> EsProfesor
   note on link
-    Sí
+    El usuario ingresa sí
   end note
   
   rombo --> EsAlumno
   note on link
-    No
+    El usuario ingresa no
   end note
 
   EsAlumno --> RolEstablecido
   note on link
-    Rol de Alumno asignado.
+    El sistema asigna rol de Alumno.
   end note
   
   EsProfesor --> RolEstablecido
   note on link
-    Rol de Profesor asignado.
+    El sistema asigna rol de Profesor.
   end note
   
   RolEstablecido --> IniciandoSesión
   note on link
-    Acepta condiciones y políticas.
+    El usuario cepta condiciones y políticas.
   end note
   
   ProcesoDeInicioDeSesión --> VerificarUsuario
   note on link
-    Rellena con correo y contraseña.
+    El usuario rellena con correo y contraseña.
   end note
   
   VerificarUsuario --> IniciandoSesión
   note on link
-    Correo y contraseña correctos.
+    El sistema verifica correo y contraseña correctos.
   end note
   
   IniciandoSesión --> [*]
   note on link
-    Inicio de Sesión correcto
+    El sistema verifica inicio de Sesión correcto
   end note
   
 @enduml
