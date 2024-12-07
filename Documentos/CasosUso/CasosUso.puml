@@ -3,28 +3,33 @@ left to right direction
 
 usecase "Registrarse" as Registrarse
 
-usecase "Ver Clasificaciones" as VerClasificaciones
-usecase "Usar Rutinas" as UsarRutinas
-usecase "Completar Retos Obligatorios" as CompletarRetosObligatorios
-usecase "Completar Retos Opcionales" as CompletarRetosOpcionales
-usecase "Inscribirse en Clases" as InscribirseClases
-usecase "Utilizar QR para Centros Deportivos" as UsarQR
 usecase "Iniciar Sesión" as IniciarSesion
 usecase "Cerrar Sesión" as CerrarSesion
 usecase "Volver al Inicio" as VolverInicio
 
-usecase "Crear Nuevas Rutinas" as CrearRutinas
-usecase "Crear Retos Obligatorios" as CrearRetosObligatorios
-usecase "Crear Retos Opcionales" as CrearRetosOpcionales
-usecase "Ver Clases y Alumnos" as VerClasesAlumnos
+usecase "Ver Clasificación" as VerClasificacion
+usecase "Usar Rutina" as UsarRutina
+usecase "Completar Reto Obligatorio" as CompletarRetoObligatorio
+usecase "Completar Reto Opcional" as CompletarRetoOpcional
+usecase "Inscribirse en Clase" as InscribirseClase
+usecase "Mostrar QR para Centro Deportivo" as UsarQR
+usecase "Crear Rutina" as CrearRutinaPersonalizada
+usecase "Seleccionar Ejercicio" as SeleccionarEjercicio
 
-usecase "Administrar Usuarios" as AdministrarUsuarios
-usecase "Gestionar Clases" as GestionarClases
-usecase "Gestionar Rutinas" as GestionarRutinas
-usecase "Gestionar Retos" as GestionarRetos
-usecase "Administrar Asignaturas" as AdministrarAsignaturas
-usecase "Configuración del Sistema" as ConfigurarSistema
-usecase "Ver Reportes" as VerReportes
-usecase "Descargar Estadísticas" as DescargarEstadisticas
+usecase "Subir Ejercicio" as SubirEjercicio
+usecase "Crear Reto Obligatorio" as CrearRetoObligatorio
+usecase "Crear Reto Opcional" as CrearRetoOpcional
+usecase "Ver Clase y Alumno" as VerClaseAlumno
+
+usecase "Administrar Usuario" as AdministrarUsuario
+usecase "Gestionar Clase" as GestionarClase
+usecase "Gestionar Rutina" as GestionarRutina
+usecase "Gestionar Reto" as GestionarReto
+usecase "Supervisar Ejercicio" as SupervisarEjercicio
+usecase "Gestionar Permiso" as GestionarPermiso
+usecase "Configurar el Sistema" as ConfigurarSistema
+usecase "Ver Reporte" as VerReporte
+usecase "Descargar Estadística" as DescargarEstadistica
+
 
 @enduml

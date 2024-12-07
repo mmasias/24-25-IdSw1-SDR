@@ -57,6 +57,11 @@
 | ![Casos de uso](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/DetallarCasosDeUso/Registrarse.svg) | [Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/DetallarCasosDeUso/Registrarse.puml) |
 
 ## Profesor
+### Iniciar Sesión 
+| Diagrama | Código Fuente |
+|----------|---------------|
+| ![Casos de uso](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/DetallarCasosDeUso/IniciarSesionProfesor.svg) | [Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/DetallarCasosDeUso/IniciarSesionProfesor.puml) |
+
 ### Crear Retos 
 | Diagrama | Código Fuente |
 |----------|---------------|
@@ -67,18 +72,31 @@
 |----------|---------------|
 | ![Casos de uso](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/DetallarCasosDeUso/CrearRutinas.svg) | [Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/DetallarCasosDeUso/CrearRutinas.puml) |
 
+### Cerrar Sesión 
+| Diagrama | Código Fuente |
+|----------|---------------|
+| ![Casos de uso](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/DetallarCasosDeUso/CerrarSesion.svg) | [Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/DetallarCasosDeUso/CerrarSesion.puml) |
+
+### Ir Al Inicio 
+| Diagrama | Código Fuente |
+|----------|---------------|
+| ![Casos de uso](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/DetallarCasosDeUso/IrAlInicio.svg) | [Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/DetallarCasosDeUso/IrAlInicio.puml) |
 
 ## Alumno
+### Iniciar Sesión 
+| Diagrama | Código Fuente |
+|----------|---------------|
+| ![Casos de uso](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/DetallarCasosDeUso/IniciarSesionAlumno.svg) | [Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/DetallarCasosDeUso/IniciarSesionAlumno.puml) |
+
 ### Completar Retos 
 | Diagrama | Código Fuente |
 |----------|---------------|
 | ![Casos de uso](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/DetallarCasosDeUso/CompletarRetos.svg) | [Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/DetallarCasosDeUso/CompletarRetos.puml) |
 
-## Usuario 
-### Iniciar Sesión 
+### Completar Rutinas 
 | Diagrama | Código Fuente |
 |----------|---------------|
-| ![Casos de uso](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/DetallarCasosDeUso/IniciarSesion.svg) | [Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/DetallarCasosDeUso/IniciarSesion.puml) |
+| ![Casos de uso](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/DetallarCasosDeUso/CompletarRutinas.svg) | [Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/DetallarCasosDeUso/CompletarRutinas.puml) |
 
 ### Cerrar Sesión 
 | Diagrama | Código Fuente |
@@ -93,22 +111,33 @@
 ---
 
 # Diagrama de Contexto del Administrador
-| Diagrama | Código Fuente |
-|----------|---------------|
-| ![Modelo de Contexto Alumno](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/DiagramasContexto/AdminContexto.svg) | [Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/ModeloDeContexto/AdministradorContexto.puml) |
+
+![Modelo de Contexto Administrador](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/DiagramasContexto/AdminContexto.svg)
+
+[Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/ModeloDeContexto/AdministradorContexto.puml)
+
+---
 
 # Diagrama de Contexto del Alumno
-| Diagrama | Código Fuente |
-|----------|---------------|
-| ![Modelo de Contexto Alumno](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/DiagramasContexto/AlumnoContexto.svg) | [Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/ModeloDeContexto/AlumnosContexto.puml) |
+
+![Modelo de Contexto Alumno](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/DiagramasContexto/AlumnoContexto.svg)
+
+[Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/ModeloDeContexto/AlumnosContexto.puml)
+
+---
 
 # Diagrama de Contexto del Profesor
-| Diagrama | Código Fuente |
-|----------|---------------|
-| ![Profesores](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/DiagramasContexto/ProfesorContexto.svg) | [Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/ModeloDeContexto/ProfesorContexto.puml) |
+
+![Modelo de Contexto Profesor](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/DiagramasContexto/ProfesorContexto.svg)
+
+[Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/ModeloDeContexto/ProfesorContexto.puml)
+
+---
 
 # Diagrama de Contexto del Usuario No Registrado
-| Diagrama | Código Fuente |
-|----------|---------------|
-| ![Usuario No Registrado](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/DiagramasContexto/UsuarioNoRegistradoContexto.svg) | [Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/ModeloDeContexto/UsuarioNoRegistradoContexto.puml) |
+
+![Modelo de Contexto Usuario No Registrado](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/DiagramasContexto/UsuarioNoRegistradoContexto.svg)
+
+[Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/ModeloDeContexto/UsuarioNoRegistradoContexto.puml)
+
 
