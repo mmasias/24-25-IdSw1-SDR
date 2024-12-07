@@ -1,50 +1,40 @@
+@startuml
 title Diagrama de Clases - Horario
 
-class AdministradorDeHorarios {
+class Administrador {
     - listaHorarios
 }
-
 class Profesor {
     - nombre
     - apellido
 }
-
 class Asignatura {
     - id
     - nombre
 }
-
 class Aula {
     - numero
 }
-
 class Horario {
     - dia
-    - horaInicio
-    - horaFin
+    - listaHoraClase
+}
+class HoraClase {
+    - hora
     - asignatura
     - aula
 }
-
 class ProfesorImparte {
     - profesor
     - asignatura
 }
 
-class AsignacionAula {
-    - asignatura
-    - aula
-}
-
-AdministradorDeHorarios -- Horario
-
-Horario -- Profesor
-Horario -- Asignatura
-Horario -- Aula
-
+Administrador -- Horario
+Horario -- HoraClase
+HoraClase -- Asignatura
+HoraClase -- Aula
+Profesor -- HoraClase
 Profesor -- ProfesorImparte
 Asignatura -- ProfesorImparte
-Asignatura -- AsignacionAula
-Aula -- AsignacionAula
-ProfesorImparte -- AsignacionAula
+
 @enduml
