@@ -1,0 +1,63 @@
+@startuml descargar_documento_auditoria
+skinparam {
+    NoteBackgroundColor #whiteSmoke
+    ArrowColor #green
+    NoteBorderColor #green
+    linetype polyline
+}
+
+skinparam state {
+  BackgroundColor #whiteSmoke
+}
+
+hide empty description
+
+state startState as "VISTA_ACCION"
+state endState as "VISTA_ACCION"
+
+startState --> DescargarDocumento
+note on link
+    <b>Usuario Solicita</b>
+    * Descargar documento de auditoría
+end note
+
+DescargarDocumento --> endState
+
+state DescargarDocumento {
+    state solicitudFiltros as " "
+    state envioFiltros as " "
+    state revisionFiltrosEnviados <<choice>>
+
+    solicitudFiltros --> envioFiltros
+    note on link
+        <b>Sistema Solicita</b>
+        * Id de la acción/es
+        * Fecha/s
+        * Usuario/s
+        <b>Sistema Permite</b>
+        * Descargar documento
+    end note
+
+    envioFiltros --> revisionFiltrosEnviados
+    note on link
+        <b>Usuario introduce</b>
+        * Id de la reserva
+        * Fecha
+        * Tipo de documento
+        * Idioma
+    end note
+
+    revisionFiltrosEnviados -[#red]-> solicitudFiltros
+    note on link
+        <b>Sistema Muestra</b>
+        Mensaje de error
+    end note
+
+    revisionFiltrosEnviados --> [*]
+    note on link
+        <b>Sistema Muestra</b>
+        Documento de auditoría
+    end note
+}
+
+@enduml

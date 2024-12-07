@@ -1,0 +1,55 @@
+@startuml listar_datos_reserva
+
+skinparam {
+    NoteBackgroundColor #whiteSmoke
+    ArrowColor #green
+    NoteBorderColor #green
+    linetype polyline
+}
+
+hide empty description
+
+state startState as "LISTANDO_ACCIONES"
+state endState as "LISTANDO_ACCION"
+
+startState --> ListarAccion 
+note on link
+    <b>Usuario Solicita</b>
+    * Listar acción
+end note
+
+ListarAccion --> endState
+
+state ListarAccion {
+    state solicitudFiltros as " "
+    state envioFiltros as " "
+    state revisionFiltrosEnviados <<choice>>
+
+    solicitudFiltros --> envioFiltros
+    note on link
+        <b>Sistema Solicita</b>
+        * Id de la acción
+        <b>Sistema Permite</b>
+        * Listar datos acción
+    end note
+
+    envioFiltros --> revisionFiltrosEnviados
+    note on link
+        <b>Usuario Introduce</b>
+        * Id de la acción
+    end note
+
+    revisionFiltrosEnviados -[#red]-> solicitudFiltros
+    note on link
+        <b>Sistema Muestra</b>
+        Mensaje de error
+    end note
+
+    revisionFiltrosEnviados --> [*]
+    note on link
+        <b>Sistema Muestra</b>
+        Datos de la acción
+    end note
+}
+
+@enduml
