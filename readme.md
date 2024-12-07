@@ -22,17 +22,17 @@ El sistema se basa en un modelo conceptual sólido que facilita la escalabilidad
 1. **Diagrama de Clases**  
    Representa las relaciones y dependencias entre las entidades principales, como Asignaturas, Profesores y Aulas.
    
-   ![Diagrama de Clases](images/modelosUML/modelosUML/DiagramaDeClases.svg)
+   ![Diagrama de Clases](/modeloDelDominio/imagenes/DiagramaDeClases.svg)
 
 2. **Diagrama de Estados**  
    Muestra los estados posibles de las entidades y las transiciones entre ellos.
 
-   ![Diagrama de Estados](images/modelosUML/modelosUML/DiagramaDeEstados.svg)
+   ![Diagrama de Estados](/modeloDelDominio/imagenes/DiagramaDeEstados.svg)
 
 3. **Diagrama de Objetos**  
    Representa ejemplos específicos de las entidades en acción.
 
-   ![Diagrama de Objetos](images/modelosUML/modelosUML/diagrama_objetos.png)
+   ![Diagrama de Objetos](/modeloDelDominio/imagenes/DiagramaDeObjetos.svg)
 
 ---
 
