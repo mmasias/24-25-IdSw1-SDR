@@ -1,6 +1,8 @@
 @startuml
-object AdministradorDeHorarios {
-  listaHorarios = [horario1, horario2]
+title Diagrama de Objetos - Horario
+
+object Administrador {
+  listaHorarios = [Horario1, Horario2]
 }
 
 object Profesor1 {
@@ -33,18 +35,26 @@ object Aula2 {
 
 object Horario1 {
   dia = "Lunes"
-  horaInicio = "08:00"
-  horaFin = "10:00"
-  asignatura = Asignatura1
-  aula = Aula1
+  listaHoraClase = [HoraClase1]
 }
 
 object Horario2 {
   dia = "Martes"
-  horaInicio = "10:00"
-  horaFin = "12:00"
+  listaHoraClase = [HoraClase2]
+}
+
+object HoraClase1 {
+  hora = "08:00"
+  asignatura = Asignatura1
+  aula = Aula1
+  profesor = Profesor1
+}
+
+object HoraClase2 {
+  hora = "10:00"
   asignatura = Asignatura2
   aula = Aula2
+  profesor = Profesor2
 }
 
 object ProfesorImparte1 {
@@ -57,35 +67,23 @@ object ProfesorImparte2 {
   asignatura = Asignatura2
 }
 
-object AsignacionAula1 {
-  asignatura = Asignatura1
-  aula = Aula1
-}
+Administrador -> Horario1
+Administrador -> Horario2
 
-object AsignacionAula2 {
-  asignatura = Asignatura2
-  aula = Aula2
-}
+Horario1 -> HoraClase1
+Horario2 -> HoraClase2
 
-AdministradorDeHorarios -> Horario1
-AdministradorDeHorarios -> Horario2
+HoraClase1 -> Asignatura1
+HoraClase1 -> Aula1
+HoraClase1 -> Profesor1
+
+HoraClase2 -> Asignatura2
+HoraClase2 -> Aula2
+HoraClase2 -> Profesor2
 
 ProfesorImparte1 -> Profesor1
 ProfesorImparte1 -> Asignatura1
 
 ProfesorImparte2 -> Profesor2
 ProfesorImparte2 -> Asignatura2
-
-AsignacionAula1 -> Asignatura1
-AsignacionAula1 -> Aula1
-
-AsignacionAula2 -> Asignatura2
-AsignacionAula2 -> Aula2
-
-Horario1 -> Asignatura1
-Horario1 -> Aula1
-
-Horario2 -> Asignatura2
-Horario2 -> Aula2
-
 @enduml
