@@ -25,4 +25,18 @@
 
 ![](./detalladoGrupos/detalladoBorrarGrupos.svg)
 
+## Diagrama Detallado de Auditoría
+
+### Detallado de Listar Acciones
+
+![](./detalladoAuditoria/detalladoListarAcciones.svg)
+
+### Detallado de Ver Acción
+
+![](./detalladoAuditoria/detalladoVerAccion.svg)
+
+### Detallado de Descargar Documento de Auditoría
+
+![](./detalladoAuditoria/detalladoDescargarDocumento.svg)
+
 ---
