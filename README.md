@@ -10,6 +10,9 @@
 
 - **Descripción**: Aplicación para promover un estilo de vida activo y saludable.
 - **Uso Objetivo**: Asignatura optativa de 2º de Bachillerato, **Estilo de Vida Activo y Saludable (EVAS)**.
+  
+### 📖 Glosario
+[🔗 Acceso al Glosario](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Glosario/Glosario.md)
 
 ### 🌐 Modelo de Dominio
 [🔗 Acceso al Modelo de Dominio](https://github.com/celiabecerril/24-25-IdSw1-SDR/tree/main/MdD)
