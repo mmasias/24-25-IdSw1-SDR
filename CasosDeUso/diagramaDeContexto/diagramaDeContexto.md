@@ -8,72 +8,17 @@ El **Diagrama de Contexto** ofrece una representación general del sistema, orga
 
 ---  
 
-## 🖇️ Componentes del Diagrama de Contexto  
+## 📘 Diagrama de Contexto - Profesor
+![Diagrama de Contexto Profesor](/images/modelosUML/DiagramasContexto/DiagramaDeContextoProfesor.svg) |[ver código](/CasosDeUso/diagramaDeContexto/DiagramaDeContextoProfesor.puml)
 
-### 1. **Acceso al Sistema**  
-   - **Descripción:** Proceso inicial donde los actores inician o cierran sesión en el sistema.  
-   - **Actores involucrados:** Profesores, Técnicos de Calidad, Directores de Grado, Dirección de Calidad.  
-   - **Objetivo:** Garantizar que los usuarios autenticados accedan a las funciones del sistema según sus roles.  
+## 📘 Diagrama de Contexto - Técnico de calidad
+![Diagrama de Contexto Profesor](/images/modelosUML/DiagramasContexto/DiagramaDeContextoTecnico.svg) |[ver código](/CasosDeUso/diagramaDeContexto/DiagramaDeContextoTecnico.puml)
 
----  
 
-### 2. **Edición de Contenido**  
-   - **Descripción:** Permite a los Técnicos de Calidad realizar ajustes en el contenido estático de las guías.  
-   - **Actor principal:** Técnico de Calidad.  
-   - **Subprocesos relacionados:**  
-     - Guardar cambios en las guías.  
-     - Preparar el documento para revisión.  
+## 📘 Diagrama de Contexto - Director de Grado
+![Diagrama de Contexto Profesor](/images/modelosUML/DiagramasContexto/DiagramaDeContextoDirectorGrado.svg) |[ver código](/CasosDeUso/diagramaDeContexto/DiagramaDeContextoDirectorGrado.puml)
 
----  
 
-### 3. **Revisión y Aprobación de Contenido**  
-   - **Descripción:** Proceso de evaluación de las guías para su aprobación o rechazo.  
-   - **Actor principal:** Director de Grado.  
-   - **Flujos relevantes:**  
-     - Retroalimentación sobre cambios.  
-     - Confirmación de decisiones (aprobación o rechazo).  
+## 📘 Diagrama de Contexto - Director de Calidad
+![Diagrama de Contexto Profesor](/images/modelosUML/DiagramasContexto/DiagramaDeContextoDirectorCalidad.svg) |[ver código](/CasosDeUso/diagramaDeContexto/DiagramaDeContextoDirectorCalidad.puml)
 
----  
-
-### 4. **Supervisión de Guías**  
-   - **Descripción:** Monitoreo y control de las guías en proceso por parte del Técnico de Calidad.  
-   - **Actor principal:** Técnico de Calidad.  
-   - **Objetivo:** Asegurar que las guías cumplan con los requisitos antes de la revisión formal.  
-
----  
-
-### 5. **Auditoría de Guías**  
-   - **Descripción:** Evaluación realizada por la Dirección de Calidad para verificar el cumplimiento con estándares establecidos.  
-   - **Actor principal:** Dirección de Calidad.  
-   - **Objetivo:** Garantizar la calidad final de las guías antes de su publicación.  
-
----  
-
-### 6. **Asignación y Gestión**  
-   - **Descripción:** Permite asignar guías a titulaciones y asignaturas a titulaciones.  
-   - **Actor principal:** Técnico de Calidad.  
-   - **Flujos relevantes:**  
-     - Confirmar asignación de guías.  
-     - Vincular asignaturas correctamente.  
-
----  
-
-### 7. **Publicación y Generación de Nuevas Versiones**  
-   - **Descripción:** Proceso final para publicar las guías aprobadas y crear nuevas versiones cuando sea necesario.  
-   - **Actores involucrados:** Director de Grado, Técnico de Calidad.  
-   - **Objetivo:** Hacer disponibles las guías aprobadas mientras se conserva el historial de versiones.  
-
----  
-
-### 8. **Verificación con Memoria**  
-   - **Descripción:** Validación de que las guías cumplen con la memoria académica verificada.  
-   - **Actor principal:** Dirección de Calidad.  
-   - **Objetivo:** Confirmar que las guías se ajusten a los parámetros de la memoria académica aprobada.  
-
----
-
-## 🌟 Representación Gráfica
-
-![Diagrama de Contexto](/images/modelosUML/DiagramaDeContexto.svg)  
-
-| [Ver código fuente](/CasosDeUso/diagramaDeContexto/DiagramaDeContexto.puml)
