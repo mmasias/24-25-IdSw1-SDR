@@ -18,24 +18,15 @@ BorrarGrupo --> endState
 
 state BorrarGrupo {
     state solicitudFiltros as " "
-    state envioFiltros as " "
     state revisionFiltrosEnviados <<choice>>
     state usuarioSolicita as "<b>Usuario Solicita:</b> \n Borrar grupo"
 
     usuarioSolicita --> solicitudFiltros
 
-    solicitudFiltros --> envioFiltros
+    solicitudFiltros --> revisionFiltrosEnviados
     note on link
-        <b>Sistema Solicita</b>
-        * Grupo a borrar
         <b>Sistema permite</b>
         * Borrar grupo
-    end note
-
-    envioFiltros --> revisionFiltrosEnviados
-    note on link
-        <b>Usuario Introduce</b>
-        * Grupo a borrar
     end note
 
     revisionFiltrosEnviados -[#red]-> solicitudFiltros
