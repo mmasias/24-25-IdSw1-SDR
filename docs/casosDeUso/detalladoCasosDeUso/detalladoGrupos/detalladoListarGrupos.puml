@@ -12,10 +12,6 @@ state startState as "LISTANDO_GRUPOS"
 state endState as "LISTANDO_GRUPOS"
 
 startState --> ListarGrupos
-note on link
-    <b>Usuario Solicita</b>
-    * Listar grupos
-end note
 
 ListarGrupos --> endState
 
@@ -23,7 +19,9 @@ state ListarGrupos {
     state solicitudFiltros as " "
     state envioFiltros as " "
     state revisionFiltrosEnviados <<choice>>
+    state usuarioSolicita as "<b>Usuario Solicita:</b> \n Listar grupos"
 
+    usuarioSolicita -> solicitudFiltros
     [*] --> solicitudFiltros
     note on link
         <b>Sistema Muestra</b>
