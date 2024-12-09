@@ -6,7 +6,7 @@ Este es el repositorio de las sesiones de requisitado de la asignatura de Ingeni
 
 | |Grupo|Rev|Estadísticas|
 |-|-|:-:|:-:|
-|1|Iván Gonzalez    ||[👁️](https://github.com/celiabecerril/24-25-IdSw1-SDR/graphs/contributors) / [📒](https://github.com/celiabecerril/24-25-IdSw1-SDR)|
+|1|Iván Gonzalez    |*Ene*|[👁️](https://github.com/celiabecerril/24-25-IdSw1-SDR/graphs/contributors) / [📒](https://github.com/celiabecerril/24-25-IdSw1-SDR)|
 |2|Susana Gutierrez ||[👁️](https://github.com/DavidGarciaCosta/24-25-IdSw1-SDR/graphs/contributors) / [📒](https://github.com/DavidGarciaCosta/24-25-IdSw1-SDR)|
 |3|Lucía Terán      ||[👁️](https://github.com/Dievex/24-25-IdSw1-SDR/graphs/contributors) / [📒](https://github.com/Dievex/24-25-IdSw1-SDR)|
 |4|Alicia Bustamante|20-Dic-24|[👁️](https://github.com/TheMoys/24-25-IdSw1-SDR/graphs/contributors) / [📒](https://github.com/TheMoys/24-25-IdSw1-SDR)|
