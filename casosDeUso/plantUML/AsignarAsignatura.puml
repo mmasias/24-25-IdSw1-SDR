@@ -1,0 +1,9 @@
+@startuml
+actor Administrador as A
+
+A -> Sistema : Arrastra asignatura a horario
+Sistema -> BaseDatos : Verifica disponibilidad de aula
+Sistema -> BaseDatos : Asigna asignatura al aula y horario
+BaseDatos --> Sistema : Confirmación de asignación
+Sistema --> A : Cambia estado de la asignatura a "Asignada" (verde)
+@enduml

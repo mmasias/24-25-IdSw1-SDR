@@ -1,0 +1,10 @@
+@startuml
+actor Administrador as A
+
+A -> Sistema : Selecciona una asignatura asignada
+Sistema -> A : Muestra detalles de la asignación
+A -> Sistema : Cambia día/hora de la asignación
+Sistema -> BaseDatos : Actualiza asignación con nueva aula y horario
+BaseDatos --> Sistema : Confirmación de actualización
+Sistema --> A : Actualización completada, asignatura mantiene estado verde
+@enduml

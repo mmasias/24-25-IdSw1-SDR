@@ -1,0 +1,8 @@
+@startuml
+actor Administrador as A
+
+A -> Sistema : Ingresa nombre del grado en la barra de búsqueda
+Sistema -> BaseDatos : Consulta grados disponibles
+BaseDatos --> Sistema : Devuelve lista de grados que coinciden
+Sistema --> A : Muestra lista de grados disponibles
+@enduml
