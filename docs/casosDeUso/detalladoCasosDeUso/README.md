@@ -9,7 +9,13 @@
 
 ## Diagrama Detallado de Manejo de Sesión
 
-![](./detalladoManejoSesion/detalladoManejoSesion.svg)
+### Detallado del Login
+
+![](./detalladoManejoSesion/detalladoLogin.svg)
+
+### Detallado del Logout
+
+![](./detalladoManejoSesion/detalladoLogout.svg)
 
 ## Diagrama Detallado de Grupos
 
