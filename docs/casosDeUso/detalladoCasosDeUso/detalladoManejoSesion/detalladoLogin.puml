@@ -1,4 +1,4 @@
-@startuml manejo_sesion
+@startuml manejo_sesion_login
 skinparam {
     NoteBackgroundColor #whiteSmoke
     ArrowColor #green
@@ -13,17 +13,14 @@ skinparam state {
 hide empty description
 
 state startState as "VISTA_LOGIN"
-state endState as "VISTA_LOGIN"
+state endState as "VISTA_PRINCIPAL"
 
-startState --> ManejoSesion
+startState --> ManejoLogin
 
-ManejoSesion --> endState
-
-state ManejoSesion {
+state ManejoLogin {
     state IngresoCredenciales as " "
     state ValidarCredenciales <<choice>>
     state InicioSesionCorrecto as " "
-    state Logout as " "
 
     IngresoCredenciales --> ValidarCredenciales
     note on link
@@ -43,19 +40,8 @@ state ManejoSesion {
         <b>Sistema redirige</b>
         * A la pantalla principal
     end note
-
-    InicioSesionCorrecto --> Logout
-    note on link
-        <b>Usuario solicita</b>
-        * Cerrar sesión
-    end note
-
-    Logout --> [*]
-    note on link
-        <b>Sistema finaliza</b>
-        * Sesión activa
-        <b>Redirige</b> a login
-    end note
 }
+
+ManejoLogin --> endState
 
 @enduml
