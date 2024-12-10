@@ -1,0 +1,35 @@
+@startuml manejo_sesion_logout
+skinparam {
+    NoteBackgroundColor #whiteSmoke
+    ArrowColor #green
+    NoteBorderColor #black
+    linetype polyline
+}
+
+skinparam state {
+    BackgroundColor #whiteSmoke
+}
+
+hide empty description
+
+state startState as "VISTA_PRINCIPAL"
+state endState as "VISTA_LOGIN"
+
+startState --> ManejoLogout
+
+state ManejoLogout {
+    state Logout as " "
+
+    Logout --> [*]
+    note on link
+        <b>Usuario solicita</b>
+        * Cerrar sesión
+        <b>Sistema finaliza</b>
+        * Sesión activa
+        <b>Redirige</b> a pantalla de login
+    end note
+}
+
+ManejoLogout --> endState
+
+@enduml
