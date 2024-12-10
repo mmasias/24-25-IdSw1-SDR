@@ -13,10 +13,6 @@ state startState as "LISTANDO_ACCIONES"
 state endState as "LISTANDO_ACCION"
 
 startState --> ListarAccion 
-note on link
-    <b>Usuario Solicita</b>
-    * Listar acción
-end note
 
 ListarAccion --> endState
 
@@ -24,7 +20,9 @@ state ListarAccion {
     state solicitudFiltros as " "
     state envioFiltros as " "
     state revisionFiltrosEnviados <<choice>>
+    state usuarioSolicita as "<b>Usuario Solicita:</b> \n Ver una acción"
 
+    usuarioSolicita --> solicitudFiltros
     solicitudFiltros --> envioFiltros
     note on link
         <b>Sistema Solicita</b>
