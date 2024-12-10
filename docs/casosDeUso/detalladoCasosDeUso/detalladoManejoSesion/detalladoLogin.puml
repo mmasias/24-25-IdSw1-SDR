@@ -1,0 +1,47 @@
+@startuml manejo_sesion_login
+skinparam {
+    NoteBackgroundColor #whiteSmoke
+    ArrowColor #green
+    NoteBorderColor #black
+    linetype polyline
+}
+
+skinparam state {
+    BackgroundColor #whiteSmoke
+}
+
+hide empty description
+
+state startState as "VISTA_LOGIN"
+state endState as "VISTA_PRINCIPAL"
+
+startState --> ManejoLogin
+
+state ManejoLogin {
+    state IngresoCredenciales as " "
+    state ValidarCredenciales <<choice>>
+    state InicioSesionCorrecto as " "
+
+    IngresoCredenciales --> ValidarCredenciales
+    note on link
+        <b>Usuario introduce</b>
+        * Nombre de usuario
+        * Contraseña
+    end note
+
+    ValidarCredenciales -[#red]-> IngresoCredenciales
+    note on link
+        <b>Sistema muestra</b>
+        * Error: "Credenciales inválidas"
+    end note
+
+    ValidarCredenciales --> InicioSesionCorrecto
+    note on link
+        <b>Sistema redirige</b>
+        * A la pantalla principal
+    end note
+}
+
+ManejoLogin --> endState
+
+@enduml
