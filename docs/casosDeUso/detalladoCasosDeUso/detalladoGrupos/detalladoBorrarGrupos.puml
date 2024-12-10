@@ -13,30 +13,20 @@ state startState as "LISTANDO_GRUPOS"
 state endState as "LISTANDO_GRUPOS"
 
 startState --> BorrarGrupo
-note on link
-    <b>Usuario Solicita</b>
-    * Borrar grupo
-end note
 
 BorrarGrupo --> endState
 
 state BorrarGrupo {
     state solicitudFiltros as " "
-    state envioFiltros as " "
     state revisionFiltrosEnviados <<choice>>
+    state usuarioSolicita as "<b>Usuario Solicita:</b> \n Borrar grupo"
 
-    solicitudFiltros --> envioFiltros
+    usuarioSolicita --> solicitudFiltros
+
+    solicitudFiltros --> revisionFiltrosEnviados
     note on link
-        <b>Sistema Solicita</b>
-        * Id del grupo
         <b>Sistema permite</b>
         * Borrar grupo
-    end note
-
-    envioFiltros --> revisionFiltrosEnviados
-    note on link
-        <b>Usuario Introduce</b>
-        * Id del grupo
     end note
 
     revisionFiltrosEnviados -[#red]-> solicitudFiltros
