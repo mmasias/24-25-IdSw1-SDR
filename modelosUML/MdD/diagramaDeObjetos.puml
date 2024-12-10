@@ -2,17 +2,14 @@
 
     hide circle
     hide empty members
-    Asignacion --> Profesor : asigna
+    
+   Asignacion --> Profesor : asigna
     Asignacion --> Asignatura : corresponde
     Asignacion --> MemoriaAcademica : cumple
-    Asignacion --> CargaAcademica : incluye
     MemoriaAcademica --> Indicador : meta y valores
     Indicador --> Profesor : extrae datos
-    Profesor --> Contrato : tiene
-    Profesor --> Experiencia : tiene
-    Profesor --> Asignatura: imparte
-    Profesor .. Titulacion : pertenece
-
+    Asignatura .. Titulacion : pertenece
+    Profesor --> Asignatura : imparte
 
 class Profesor {
     id_profesor = 001
@@ -25,13 +22,7 @@ class Profesor {
     curso_academico = "2023/2024"
 }
 
-class Contrato {
-    historial_contrato = ["2020-2022: Titular", "2022-Actualidad: Catedrático"]
-}
 
-class Experiencia {
-    historial_experiencia = ["2015-2018: Investigador", "2018-2020: Profesor Asociado"]
-}
 
 class Asignatura {
     codigo = "INF101"
@@ -62,14 +53,6 @@ class Indicador {
     umbral_alerta = 60
 }
 
-class CargaAcademica {
-    creditos = 24
-    modalidad = "Presencial"
-    tipo = "Obligatoria"
-    facultad = "Facultad de Ingeniería"
-    curso_academico = "2023/2024"
-}
-
 class Asignacion {
     id_asignacion = 1001
     porcentaje_asignado = 50
@@ -77,16 +60,5 @@ class Asignacion {
     cumplido_en_memoria = true
 }
 
-
-Asignacion --> Profesor : asigna
-Asignacion --> Asignatura : corresponde
-Asignacion --> MemoriaAcademica : cumple
-Asignacion --> CargaAcademica : incluye
-MemoriaAcademica --> Indicador : meta y valores
-Indicador --> Profesor : extrae datos
-Profesor --> Contrato : tiene
-Profesor --> Experiencia : tiene
-Profesor --> Asignatura: imparte
-Profesor .. Titulacion : pertenece
 
 @enduml
