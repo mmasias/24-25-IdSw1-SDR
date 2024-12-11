@@ -49,9 +49,9 @@
     El sistema asigna rol de Profesor.
   end note
   
-  RolEstablecido --> IniciandoSesión
+  RolEstablecido --> UsuarioRegistrado
   note on link
-    El usuario cepta condiciones y políticas.
+    El usuario queda registrado con su rol asignado.
   end note
   
   ProcesoDeInicioDeSesión --> VerificarUsuario
@@ -66,7 +66,13 @@
   
   IniciandoSesión --> [*]
   note on link
-    El sistema verifica inicio de Sesión correcto
+    El sistema verifica inicio de sesión correcto.
   end note
-  
+
+  UsuarioRegistrado --> [*]
+  note on link
+    El proceso de registro ha finalizado.
+  end note
+
 @enduml
+
