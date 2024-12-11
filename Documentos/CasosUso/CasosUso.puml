@@ -1,7 +1,7 @@
 @startuml
 left to right direction
 
-usecase "Registrarse" as Registrarse
+usecase "Registrar" as Registrarse
 
 usecase "Iniciar Sesión" as IniciarSesion
 usecase "Cerrar Sesión" as CerrarSesion
@@ -11,7 +11,7 @@ usecase "Ver Clasificación" as VerClasificacion
 usecase "Usar Rutina" as UsarRutina
 usecase "Completar Reto Obligatorio" as CompletarRetoObligatorio
 usecase "Completar Reto Opcional" as CompletarRetoOpcional
-usecase "Inscribirse en Clase" as InscribirseClase
+usecase "Inscribir en Clase" as InscribirseClase
 usecase "Mostrar QR para Centro Deportivo" as UsarQR
 usecase "Crear Rutina" as CrearRutinaPersonalizada
 usecase "Seleccionar Ejercicio" as SeleccionarEjercicio
