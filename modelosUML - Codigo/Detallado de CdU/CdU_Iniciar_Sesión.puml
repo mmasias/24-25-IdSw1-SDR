@@ -1,0 +1,18 @@
+@startuml
+title Caso de Uso: Iniciar sesión
+
+actor Usuario_Invitado as Usuario
+
+usecase "Iniciar sesión" as IniciarSesion
+usecase "Validar credenciales" as ValidarCredenciales
+usecase "Autenticar usuario" as AutenticarUsuario
+usecase "Registrar intento de inicio de sesión" as RegistrarIntento
+usecase "Mostrar mensaje de error o éxito" as MostrarMensaje
+
+Usuario --> IniciarSesion
+IniciarSesion --> ValidarCredenciales
+IniciarSesion --> RegistrarIntento
+ValidarCredenciales --> AutenticarUsuario
+AutenticarUsuario --> MostrarMensaje
+
+@enduml
