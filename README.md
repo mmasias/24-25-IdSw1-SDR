@@ -33,6 +33,8 @@ A continuacion se presentan los enlaces a los distintos diagramas realizados:
 ### Diagrama de Contexto 
 ![Diagrama de Contexto](https://github.com/miguelgomez75/24-25-IdSw1-SDR/blob/main/images/modelosUML%20-%20SVG/3%C2%AA_Iteraci%C3%B3n/DdContexto.svg)
 
+### [Detallado de casos de uso](https://github.com/miguelgomez75/24-25-IdSw1-SDR/blob/main/Documentación/Detallado%20de%20CdU/Detallado_de_CdU.md)
+
 
 Grupo conformado por:
 
