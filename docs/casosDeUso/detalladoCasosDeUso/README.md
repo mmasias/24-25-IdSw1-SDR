@@ -49,4 +49,8 @@
 
 ![](./detalladoAuditoria/detalladoDescargarDocumento.svg)
 
+
+## Diagrama Detallado de Lectura y Confirmación de Documentos
+
+![](./detalladoVisualizacionConfirmacion/detalladoVisualizacionConfirmacion.svg)
 ---
