@@ -5,11 +5,11 @@ state " " as Estado2
 
 [*] --> Estado1
     note on link
-        El profesor solicita iniciar sesión
+        El profesor introduce iniciar sesión
     end note
 Estado1 --> Estado2
     note on link
-        El Sistema requiere
+        El Sistema solicita
         - Correo
         - Contraseña
     end note
