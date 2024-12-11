@@ -53,4 +53,10 @@
 ## Diagrama Detallado de Lectura y Confirmación de Documentos
 
 ![](./detalladoVisualizacionConfirmacion/detalladoVisualizacionConfirmacion.svg)
+
+
+## Diagrama Detallado de Descargar Informe del Envío
+
+![](./detalladoDescargarInformeEnvio/detalladoDescargarInforme.svg)
+
 ---
