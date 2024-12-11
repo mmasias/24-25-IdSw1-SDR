@@ -1,4 +1,4 @@
-@startuml detalladoVisualizacionConfirmacion
+@startuml leer_confirmar_documento
 
 skinparam {
   NoteBackgroundColor #whiteSmoke
@@ -12,12 +12,8 @@ hide empty description
 state startState as "LEYENDO_MENSAJE"
 state endState as "LEYENDO_MENSAJE"
 
-startState --> LeerMensaje
-note on link
-    <b>Usuario Solicita</b>
-    * Leer mensaje
-end note
 
+startState --> LeerMensaje
 LeerMensaje --> endState
 
 state LeerMensaje {
@@ -25,13 +21,11 @@ state LeerMensaje {
     state solicitudAbrirDocumento as " "
     state solicitudConfirmacionLecturaFirma as " "
     state revisionConfirmacionLecturaFirma <<choice>>
+    state usuarioSolicita as "<b>Usuario Solicita:</b> \n Leer Mensaje"
     
-
+    usuarioSolicita --> solicitudAbrirMensaje
     solicitudAbrirMensaje --> solicitudAbrirDocumento
     note on link
-        <b>Usuario Solicita</b>
-        * Abrir Mensaje
-
         <b>Sistema Permite</b>
         * Abrir Mensaje
     end note
@@ -48,13 +42,15 @@ state LeerMensaje {
     
     solicitudConfirmacionLecturaFirma --> revisionConfirmacionLecturaFirma
     note on link
-        <b>Sistema Solicita</b>
-        * Confirmar Lectura
-        * Confirmar Firma
-        
-        <b>Usuario Marca</b>
-        * Confirmar Lectura
-        * Confirmar Firma
+      <b>Opcional</b>
+          <b>Sistema Solicita</b>
+          * Confirmar Lectura
+          * Confirmar Firma
+          
+      <b>Opcional</b>    
+          <b>Usuario Marca</b>
+          * Confirmar Lectura
+          * Confirmar Firma
     end note
     
     revisionConfirmacionLecturaFirma -[#red]-> solicitudAbrirMensaje
