@@ -9,8 +9,11 @@ reto --> RetoObligatorio : El profesor ingresa RetoObligatorio
 reto --> RetoOpcional : El profesor ingresa RetoOpcional
 RetoObligatorio --> DescripcionReto : El profesor ingresa una descripcion del reto
 RetoOpcional --> DescripcionReto : El profesor ingresa una descripcion del reto
-DescripcionReto --> ResultadoReto : El sistema muestra como queda el reto
-ResultadoReto --> GuardarReto : El profesor ingresa guardar
+DescripcionReto --> OpcionGuardarEditar : El sistema muestra las opciones de "Guardar" o "Editar"
+state OpcionGuardarEditar <<choice>>
+OpcionGuardarEditar --> GuardarReto : El profesor elige Guardar
+OpcionGuardarEditar --> EditarDescripcion : El profesor elige Editar
+EditarDescripcion --> DescripcionReto : El profesor edita la descripcion
 GuardarReto --> [*] : El sistema guarda el reto
 
 @enduml
