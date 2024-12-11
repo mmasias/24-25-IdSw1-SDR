@@ -1,0 +1,57 @@
+@startuml leer_confirmar_documento
+
+skinparam {
+  NoteBackgroundColor #whiteSmoke
+  ArrowColor #green
+  NoteBorderColor #green
+  linetype polyline
+}
+
+hide empty description
+
+state startState as "LEYENDO_MENSAJE"
+state endState as "LEYENDO_MENSAJE"
+
+
+startState --> DescargarInformeEnvio
+DescargarInformeEnvio --> endState
+
+state DescargarInformeEnvio {
+    state solicitudAbrirMensaje as " "
+    state solicitudDescargarInforme as " "
+    state descargarInforme <<choice>>
+    state usuarioSolicita as "<b>Usuario Solicita:</b> \n Abrir Mensaje"
+    
+    usuarioSolicita --> solicitudAbrirMensaje
+    solicitudAbrirMensaje --> solicitudDescargarInforme
+    note on link
+        <b>Sistema Permite</b>
+        * Abrir Mensaje
+    end note
+
+    solicitudDescargarInforme --> descargarInforme
+    note on link
+        <b>Usuario Solicita</b>
+        * Descargar informe 
+        
+        <b>Sistema Permite</b>
+        * Descargar informe
+  
+    end note
+    
+    
+    descargarInforme -[#red]-> solicitudAbrirMensaje
+    note on link
+        <b>Sistema Muestra</b>
+        Mensaje de error
+    end note
+    
+   descargarInforme --> [*]
+    note on link
+        <b>Sistema Muestra</b>
+        Informe descargado correctamente
+    end note
+
+}
+
+@enduml
