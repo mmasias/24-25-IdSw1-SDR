@@ -49,6 +49,16 @@
 
 ![](./detalladoAuditoria/detalladoDescargarDocumento.svg)
 
+## Diagrama Detallado de Envío de Mensajes
+
+### Detallado de Crear un Mensaje
+
+![](./detalladoEnvioMensajes/detalladoCreacionMensaje.svg)
+
+### Detallado de Envío de un Mensaje
+
+![](./detalladoEnvioMensajes/detalladoEnvioMensaje.svg)
+
 
 ## Diagrama Detallado de Lectura y Confirmación de Documentos
 
