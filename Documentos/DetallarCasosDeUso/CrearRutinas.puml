@@ -2,14 +2,14 @@
 
 [*] --> MenuPrincipal
 
-MenuPrincipal --> MenuRutinas : Profesor selecciona "Menú Rutinas"
+MenuPrincipal -d-> MenuRutinas : Profesor selecciona "Menú Rutinas"
 MenuPrincipal --> [*] : Profesor sale
 
-MenuRutinas --> CrearRutina : Profesor selecciona "Crear Rutina"
-MenuRutinas --> [*] : Profesor sale
+MenuRutinas -d-> CrearRutina : Profesor selecciona "Crear Rutina"
+MenuRutinas -d-> [*] : Profesor sale
 
 state TipoDeRutina <<choice>>
-CrearRutina --> TipoDeRutina
+CrearRutina -d-> TipoDeRutina
 note on link
     Profesor decide el tipo de rutina dependiendo de los grupos musculares a entrenar:
     - Pecho
@@ -17,17 +17,17 @@ note on link
     - Piernas
 end note
 
-TipoDeRutina --> RutinaPecho : Pecho
+TipoDeRutina -d-> RutinaPecho : Pecho
 note right of RutinaPecho
     Profesor establece rutina de pecho.
 end note
 
-TipoDeRutina --> RutinaEspalda : Espalda
+TipoDeRutina -d-> RutinaEspalda : Espalda
 note right of RutinaEspalda
     Profesor establece rutina de espalda.
 end note
 
-TipoDeRutina --> RutinaPiernas : Piernas
+TipoDeRutina -d-> RutinaPiernas : Piernas
 note right of RutinaPiernas
     Profesor establece rutina de piernas.
 end note
@@ -43,14 +43,14 @@ note bottom of ElegirEjercicios
     - División por músculo
 end note
 
-ElegirEjercicios --> PublicarRutina : Finalizar configuración
+ElegirEjercicios -d-> PublicarRutina : Finalizar configuración
 
 note top of PublicarRutina
     La rutina queda visible para los estudiantes.
 end note
 
-PublicarRutina --> CrearRutina : Crear otra rutina
-PublicarRutina --> MenuRutinas : Volver al menú de rutinas
-PublicarRutina --> [*] : Salir
+PublicarRutina -u-> CrearRutina : Crear otra rutina
+PublicarRutina -u-> MenuRutinas : Volver al menú de rutinas
+PublicarRutina -u-> [*] : Salir
 
 @enduml
