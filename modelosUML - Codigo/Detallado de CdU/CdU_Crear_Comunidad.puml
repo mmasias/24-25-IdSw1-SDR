@@ -14,14 +14,14 @@ usecase "Guardar Comunidad en la base de datos" as GuardarPost
 usecase "Registrar Fecha de creación" as FechaCreacion
 usecase "Notificar creación exitosa" as NotificarCreacion
 
-Usuario --> CrearPost
-CrearPost --> ValidarDatos
-CrearPost --> AsignarVariables
+Usuario --> CrearComunidad
+CrearComunidad --> ValidarDatos
+CrearComunidad --> AsignarVariables
 AsignarVariables --> Nombre
 AsignarVariables --> Descripcion
 AsignarVariables --> Miembros
 AsignarVariables --> UsuarioCreador
-CrearPost --> GuardarPost
+CrearComunidad --> GuardarPost
 GuardarPost --> FechaCreacion
 GuardarPost --> NotificarCreacion
 
