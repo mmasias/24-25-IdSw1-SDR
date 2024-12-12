@@ -1,0 +1,28 @@
+@startuml
+title Caso de Uso: Crear Post
+
+actor Usuario_Registrado as Usuario
+
+usecase "Crear Post" as CrearPost
+usecase "Validar datos del post" as ValidarDatos
+usecase "Asignar variables del post" as AsignarVariables
+usecase "Asignar Mensaje del post" as Mensaje
+usecase "Asignar Duración del post" as Duracion
+usecase "Asignar mínimo 1 etiqueta al post" as Etiquetas
+usecase "Asignar Usuario creador (datos de Usuario_Registrado)" as UsuarioCreador
+usecase "Guardar post en la base de datos" as GuardarPost
+usecase "Registrar Fecha de creación" as FechaCreacion
+usecase "Notificar creación exitosa" as NotificarCreacion
+
+Usuario --> CrearPost
+CrearPost --> ValidarDatos
+CrearPost --> AsignarVariables
+AsignarVariables --> Mensaje
+AsignarVariables --> Duracion
+AsignarVariables --> Etiquetas
+AsignarVariables --> UsuarioCreador
+CrearPost --> GuardarPost
+GuardarPost --> FechaCreacion
+GuardarPost --> NotificarCreacion
+
+@enduml
