@@ -72,7 +72,8 @@
   UsuarioRegistrado --> [*]
   note on link
     El proceso de registro ha finalizado.
+    El usuario iniciara sesión.
   end note
+  
 
 @enduml
-

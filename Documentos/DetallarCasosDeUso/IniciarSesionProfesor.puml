@@ -20,7 +20,7 @@ note on link
     - Correo
     - Contraseña
 end note
-rombo --> [*]
+rombo --> [*] : Profesor va al inicio
 rombo --> Estado1
     note on link
     Correo y contraseña inexistentes

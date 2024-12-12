@@ -3,7 +3,7 @@
 [*] --> MenuPrincipal 
 
 MenuPrincipal --> MenuRutinas : Alumno selecciona "Menu Rutinas"
-MenuPrincipal --> [*] : "Finalizar desde Menú Principal"
+MenuPrincipal --> [*] : "Finalizar desde Menú Principal". Alumno vuelve al menu inicial
 note on link
     El sistema muestra las rutinas disponibles:
     - Pecho.
@@ -11,7 +11,7 @@ note on link
     - Piernas
 end note
 MenuRutinas -u-> ListaDeRutinas : Alumno accede a Lista de Rutinas disponibles
-MenuRutinas -u-> [*] : "Finalizar desde Menú de Rutinas"
+MenuRutinas -u-> [*] : "Finalizar desde Menú de Rutinas". Alumno vuelve al menu inicial
 
 
 ListaDeRutinas -u-> TipoDeRutina
@@ -46,7 +46,7 @@ note on link
 end note
 
 GuardarRegistro  -u-> MenuRutinas : Alumno regresa al Menú de Rutinas
-GuardarRegistro -u-> [*] : Alumno finaliza después de enviar la evidencia
+GuardarRegistro -u-> [*] : Alumno finaliza después de enviar la evidencia. Alumno vuelve al menu inicial.
 note on link
     Registro guardado correctamente. 
     Opción de finalizar o continuar con otras rutinas.

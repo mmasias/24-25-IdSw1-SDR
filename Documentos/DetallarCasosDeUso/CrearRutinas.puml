@@ -51,6 +51,6 @@ end note
 
 PublicarRutina -u-> CrearRutina : Crear otra rutina
 PublicarRutina -u-> MenuRutinas : Volver al menú de rutinas
-PublicarRutina -u-> [*] : Salir
+PublicarRutina -u-> [*] : Salir. El profesor vuelve a ir al inicio
 
 @enduml
