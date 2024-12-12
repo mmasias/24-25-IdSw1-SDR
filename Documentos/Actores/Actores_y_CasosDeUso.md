@@ -80,7 +80,7 @@
 ### Ir Al Inicio 
 | Diagrama | Código Fuente |
 |----------|---------------|
-| ![Casos de uso](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/DetallarCasosDeUso/IrAlInicio.svg) | [Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/DetallarCasosDeUso/IrAlInicio.puml) |
+| ![Casos de uso](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/1d31982f3b1fee655b8026dd2d77fefc298e3240/Documentos/Imagenes/DetallarCasosDeUso/IrAlInicioProfesor.svg) | [Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/1d31982f3b1fee655b8026dd2d77fefc298e3240/Documentos/DetallarCasosDeUso/IniciarSesionProfesor.puml) |
 
 ## Alumno
 ### Iniciar Sesión 
