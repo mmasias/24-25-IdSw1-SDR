@@ -1,0 +1,28 @@
+@startuml
+title Caso de Uso: Crear Comunidad
+
+actor Usuario_Registrado as Usuario
+
+usecase "Crear Comunidad" as CrearComunidad
+usecase "Validar datos de la Comunidad" as ValidarDatos
+usecase "Asignar variables de la Comunidad" as AsignarVariables
+usecase "Asignar Nombre de la Comunidad" as Nombre
+usecase "Asignar Descripción" as Descripcion
+usecase "Asignar mínimo 1 miembro a la Comunidad" as Miembros
+usecase "Asignar Usuario creador (datos de Usuario_Registrado)" as UsuarioCreador
+usecase "Guardar Comunidad en la base de datos" as GuardarPost
+usecase "Registrar Fecha de creación" as FechaCreacion
+usecase "Notificar creación exitosa" as NotificarCreacion
+
+Usuario --> CrearPost
+CrearPost --> ValidarDatos
+CrearPost --> AsignarVariables
+AsignarVariables --> Nombre
+AsignarVariables --> Descripcion
+AsignarVariables --> Miembros
+AsignarVariables --> UsuarioCreador
+CrearPost --> GuardarPost
+GuardarPost --> FechaCreacion
+GuardarPost --> NotificarCreacion
+
+@enduml
