@@ -3,14 +3,14 @@
 [*] --> MenuPrincipal 
 
 MenuPrincipal --> MenuRetos : Alumno selecciona "Menu Retos"
-MenuPrincipal --> [*] : "Finalizar desde Menú Principal"
+MenuPrincipal --> [*] : Finalizar desde Menú Principal. Alumno vuelve al menu de inicio
 note on link
     El sistema muestra los retos disponibles:
     - Obligatorios: necesarios para completar la asignatura.
     - Opcionales: para puntos extra.
 end note
 MenuRetos --> ListaDeRetos : Alumno accede a Lista de Retos disponibles
-MenuRetos --> [*] : "Finalizar desde Menú de Retos"
+MenuRetos --> [*] : Finalizar desde Menú de Retos.  Alumno vuelve al menu de inicio
 
 
 ListaDeRetos --> TipoDeReto
@@ -45,12 +45,9 @@ note on link
 end note
 
 ConfirmarEnvio --> MenuRetos : Alumno regresa al Menú de Retos
-ConfirmarEnvio --> [*] : Alumno finaliza después de enviar la evidencia
+ConfirmarEnvio --> [*] : Alumno finaliza después de enviar la evidencia. Alumno vuelve al menu de inicio
 note on link
     Evidencia enviada correctamente. 
     Opción de finalizar o continuar con otros retos.
 end note
-
-
-
 @enduml
