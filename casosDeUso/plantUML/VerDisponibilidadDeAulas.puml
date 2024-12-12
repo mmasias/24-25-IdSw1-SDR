@@ -4,5 +4,6 @@ actor Administrador as A
 A -> Sistema : Selecciona "Ver disponibilidad de aulas"
 Sistema -> BaseDatos : Consulta aulas disponibles por día y hora
 BaseDatos --> Sistema : Lista de aulas disponibles
-Sistema --> A : Muestra disponibilidad de aulas
+Sistema --> A : Muestra disponibilidad de aulas(verde o rojo)
+Sistema --> A : Muestra tipo de aula(grande o con ordenadores)
 @enduml
