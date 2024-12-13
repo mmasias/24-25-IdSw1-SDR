@@ -1,0 +1,12 @@
+@startuml
+start
+:El usuario solicita editar una asignación existente;
+:Sistema solicita identificador de la asignación y nuevos datos;
+if (Datos válidos?) then (Sí)
+  :Sistema permite la edición;
+  :Sistema muestra confirmación: "Asignación actualizada correctamente";
+else (No)
+  :Sistema muestra mensaje de error: "Datos incorrectos o asignación no encontrada";
+endif
+stop
+@enduml
