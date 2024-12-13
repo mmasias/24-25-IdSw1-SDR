@@ -1,0 +1,62 @@
+@startuml
+[*] --> MENU_PRINCIPAL
+
+state MENU_PRINCIPAL {
+  MENU_PRINCIPAL --> ASIGNAR_ASIGNATURA
+  MENU_PRINCIPAL --> ASIGNAR_PROFESOR
+  MENU_PRINCIPAL --> BUSCAR_GRADO
+  MENU_PRINCIPAL --> CONSULTAR_HORARIO_PROFESOR
+  MENU_PRINCIPAL --> EDITAR_ASIGNACION
+  MENU_PRINCIPAL --> INICIO_SESION
+  MENU_PRINCIPAL --> MOSTRAR_ASIGNATURAS
+  MENU_PRINCIPAL --> REGISTRAR_ASIGNATURA
+  MENU_PRINCIPAL --> VER_DISPONIBILIDAD_AULAS
+}
+
+state ASIGNAR_ASIGNATURA
+note bottom of ASIGNAR_ASIGNATURA
+  Asignar una asignatura a un grado o profesor
+end note
+
+state ASIGNAR_PROFESOR
+note bottom of ASIGNAR_PROFESOR
+  Asignar un profesor a una asignatura
+end note
+
+state BUSCAR_GRADO
+note bottom of BUSCAR_GRADO
+  Buscar grados disponibles en el sistema
+end note
+
+state CONSULTAR_HORARIO_PROFESOR
+note bottom of CONSULTAR_HORARIO_PROFESOR
+  Consultar el horario de un profesor específico
+end note
+
+state EDITAR_ASIGNACION
+note bottom of EDITAR_ASIGNACION
+  Editar asignaciones de profesores y asignaturas
+end note
+
+state INICIO_SESION
+note bottom of INICIO_SESION
+  Inicio de sesión del administrador
+end note
+
+state MOSTRAR_ASIGNATURAS
+note bottom of MOSTRAR_ASIGNATURAS
+  Visualizar las asignaturas registradas
+end note
+
+state REGISTRAR_ASIGNATURA
+note bottom of REGISTRAR_ASIGNATURA
+  Registrar una nueva asignatura en el sistema
+end note
+
+state VER_DISPONIBILIDAD_AULAS
+note bottom of VER_DISPONIBILIDAD_AULAS
+  Ver la disponibilidad de las aulas
+end note
+
+MENU_PRINCIPAL --> [*] 
+@enduml
