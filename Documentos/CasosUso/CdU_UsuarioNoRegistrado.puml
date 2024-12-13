@@ -4,7 +4,7 @@ left to right direction
 actor "Usuario No Registrado" as UsuarioNoRegistrado
 
 
-usecase "Registrarse" as Registrarse
+usecase "Registrar" as Registrarse
 UsuarioNoRegistrado --> Registrarse
 
 @enduml
