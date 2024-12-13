@@ -1,0 +1,14 @@
+@startuml
+
+actor Administrador as A
+
+A -> Sistema : Selecciona "Asignar Profesor"
+A -> Sistema : Selecciona asignatura de la lista
+Sistema -> BaseDatos : Consulta lista de profesores disponibles
+BaseDatos --> Sistema : Devuelve lista de profesores
+A -> Sistema : Selecciona profesor de la lista
+Sistema -> BaseDatos : Vincula profesor con la asignatura seleccionada
+BaseDatos --> Sistema : Confirmación de asignación
+Sistema --> A : Notifica "Profesor asignado exitosamente"
+
+@enduml

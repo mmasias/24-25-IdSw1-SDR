@@ -1,0 +1,11 @@
+@startuml
+
+actor Administrador as A
+
+A -> Sistema : Selecciona "Consultar Horario de Profesor"
+A -> Sistema : Ingresa nombre o ID del profesor
+Sistema -> BaseDatos : Consulta horarios asignados al profesor
+BaseDatos --> Sistema : Devuelve lista de horarios, asignaturas y aulas
+Sistema --> A : Muestra horario del profesor con detalles (asignaturas, aulas, horas)
+
+@enduml

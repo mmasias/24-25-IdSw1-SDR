@@ -1,0 +1,17 @@
+@startuml
+
+actor Administrador as A
+
+A -> Sistema : Selecciona "Registrar Nueva Asignatura"
+A -> Sistema : Ingresa datos de la asignatura (ID, nombre, descripción opcional)
+Sistema -> BaseDatos : Verifica si el ID ya está registrado
+BaseDatos --> Sistema : Respuesta (No existe o Existe)
+alt Si no existe
+    Sistema -> BaseDatos : Guarda los datos de la nueva asignatura
+    BaseDatos --> Sistema : Confirmación de registro exitoso
+    Sistema --> A : Notifica "Asignatura registrada exitosamente"
+else Si existe
+    Sistema --> A : Notifica "Error: ID ya registrado"
+end
+
+@enduml
