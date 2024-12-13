@@ -12,7 +12,7 @@ Este es el repositorio de las sesiones de requisitado de la asignatura de Ingeni
 |4|Alicia Bustamante|20-Dic-24|[👁️](https://github.com/TheMoys/24-25-IdSw1-SDR/graphs/contributors) / [📒](https://github.com/TheMoys/24-25-IdSw1-SDR)|
 |5|Jesús Peña       |*Ene*|[👁️](https://github.com/0xJVR/24-25-IdSw1-SDR/graphs/contributors) / [📒](https://github.com/0xJVR/24-25-IdSw1-SDR)|
 |6|Josep Alemany    |*Ene*|[👁️](https://github.com/miguelgomez75/24-25-IdSw1-SDR/graphs/contributors) / [📒](https://github.com/miguelgomez75/24-25-IdSw1-SDR)|
-|7|David García     ||[👁️](https://github.com/srgiom/24-25-IdSw1-SDR/graphs/contributors) / [📒](https://github.com/srgiom/24-25-IdSw1-SDR)|
+|7|David García     |*Ene*|[👁️](https://github.com/srgiom/24-25-IdSw1-SDR/graphs/contributors) / [📒](https://github.com/srgiom/24-25-IdSw1-SDR)|
 |8|Jorge Crespo     |*Ene*|[👁️](https://github.com/natiicruuz/24-25-IdSw1-SDR/graphs/contributors) / [📒](https://github.com/natiicruuz/24-25-IdSw1-SDR)|
   
 </div>
