@@ -11,10 +11,13 @@ hide empty description
 
 state startState as "LISTANDO_GRUPOS"
 state endState as "LISTANDO_GRUPOS"
+state listarGrupos as "listarGrupos"
 
 startState --> ActualizarGrupo
 
-ActualizarGrupo --> endState
+ActualizarGrupo -[#red]-> endState
+ActualizarGrupo -[#green]-> listarGrupos
+listarGrupos -[#green]-> endState
 
 state ActualizarGrupo {
     state solicitudFiltros as " "
@@ -48,7 +51,7 @@ state ActualizarGrupo {
             - Estado del grupo
     end note
 
-    revisionFiltrosEnviados -[#red]-> solicitudFiltros
+    revisionFiltrosEnviados -[#red]-> [*]
 
     note on link
         <b>Sistema Muestra</b>
