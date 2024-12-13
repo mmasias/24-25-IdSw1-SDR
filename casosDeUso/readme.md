@@ -1,36 +1,36 @@
 ## 🛠️ **Actores y Diagrama de Contexto**
 
 ### Actores
-![Actores](casosDeUso/actores/actores.png)
+![Actores](https://github.com/srgiom/24-25-IdSw1-SDR/raw/main/casosDeUso/actores/actores.png)
 
 ### Diagrama de Contexto
-![Diagrama de Contexto](casosDeUso/diagramaDeContexto/DiagramaDeContexto.svg)
+![Diagrama de Contexto](https://github.com/srgiom/24-25-IdSw1-SDR/raw/main/casosDeUso/diagramaDeContexto/DiagramaDeContexto.svg)
 
-## Casos de Uso Representados mediante Diagramas
+## 🛠️ Casos de Uso Representados mediante Diagramas
 
 ### Asignar Asignatura
-![Asignar Asignatura]([casosDeUso/imagenes/AsignarAsignatura.svg](https://github.com/srgiom/24-25-IdSw1-SDR/blob/2d21fb0d6597e1fdb07abd07365fd95582bb7b99/casosDeUso/imagenes/AsignarAsignatura.svg))
+![Asignar Asignatura](https://github.com/srgiom/24-25-IdSw1-SDR/raw/main/casosDeUso/imagenes/AsignarAsignatura.svg)
 
 ### Asignar Profesor
-![Asignar Profesor]([casosDeUso/imagenes/AsignarProfesor.svg](https://github.com/srgiom/24-25-IdSw1-SDR/blob/2d21fb0d6597e1fdb07abd07365fd95582bb7b99/casosDeUso/imagenes/AsignarProfesor.svg))
+![Asignar Profesor](https://github.com/srgiom/24-25-IdSw1-SDR/raw/main/casosDeUso/imagenes/AsignarProfesor.svg)
 
 ### Buscar Grado
-![Buscar Grado]([casosDeUso/imagenes/BuscarGrado.svg](https://github.com/srgiom/24-25-IdSw1-SDR/blob/2d21fb0d6597e1fdb07abd07365fd95582bb7b99/casosDeUso/imagenes/BuscarGrado.svg))
+![Buscar Grado](https://github.com/srgiom/24-25-IdSw1-SDR/raw/main/casosDeUso/imagenes/BuscarGrado.svg)
 
 ### Consultar Horario de Profesor
-![Consultar Horario de Profesor](casosDeUso/imagenes/ConsultarHorarioProfesor.svg)
+![Consultar Horario de Profesor](https://github.com/srgiom/24-25-IdSw1-SDR/raw/main/casosDeUso/imagenes/ConsultarHorarioProfesor.svg)
 
 ### Editar Asignación
-![Editar Asignación](casosDeUso/imagenes/EditarAsignación.svg)
+![Editar Asignación](https://github.com/srgiom/24-25-IdSw1-SDR/raw/main/casosDeUso/imagenes/EditarAsignación.svg)
 
 ### Inicio de Sesión
-![Inicio de Sesión](casosDeUso/imagenes/InicioSesión.svg)
+![Inicio de Sesión](https://github.com/srgiom/24-25-IdSw1-SDR/raw/main/casosDeUso/imagenes/InicioSesión.svg)
 
 ### Mostrar Asignaturas
-![Mostrar Asignaturas](casosDeUso/imagenes/MostrarAsignaturas.svg)
+![Mostrar Asignaturas](https://github.com/srgiom/24-25-IdSw1-SDR/raw/main/casosDeUso/imagenes/MostrarAsignaturas.svg)
 
 ### Registrar Asignatura
-![Registrar Asignatura](casosDeUso/imagenes/RegistrarAsignatura.svg)
+![Registrar Asignatura](https://github.com/srgiom/24-25-IdSw1-SDR/raw/main/casosDeUso/imagenes/RegistrarAsignatura.svg)
 
 ### Ver Disponibilidad de Aulas
-![Ver Disponibilidad de Aulas](casosDeUso/imagenes/VerDisponibilidadAulas.svg)
+![Ver Disponibilidad de Aulas](https://github.com/srgiom/24-25-IdSw1-SDR/raw/main/casosDeUso/imagenes/VerDisponibilidadAulas.svg)
