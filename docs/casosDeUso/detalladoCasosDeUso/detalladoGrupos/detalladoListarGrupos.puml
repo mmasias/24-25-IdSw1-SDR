@@ -14,6 +14,7 @@ state endState as "LISTANDO_GRUPOS"
 startState --> ListarGrupos
 
 ListarGrupos --> endState
+ListarGrupos -[#red]-> endState
 
 state ListarGrupos {
     state solicitudFiltros as " "
@@ -50,7 +51,7 @@ state ListarGrupos {
             - Usuario del grupo
     end note
 
-    revisionFiltrosEnviados -[#red]-> solicitudFiltros
+    revisionFiltrosEnviados -[#red]-> [*]
     note on link
         <b>Sistema Muestra</b>
         Mensaje de error
