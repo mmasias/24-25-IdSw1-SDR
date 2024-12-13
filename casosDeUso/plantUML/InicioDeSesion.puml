@@ -1,8 +1,0 @@
-@startuml
-actor Administrador as A
-
-A -> Sistema : Inicia sesión
-Sistema -> BaseDatos : Valida credenciales
-BaseDatos --> Sistema : Respuesta (Correcta o Incorrecta)
-Sistema --> A : Acceso permitido o denegado
-@enduml
