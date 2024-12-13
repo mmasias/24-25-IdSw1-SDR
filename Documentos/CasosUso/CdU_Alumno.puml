@@ -7,7 +7,7 @@ usecase "Ver Clasificacion" as VerClasificaciones
 usecase "Usar Rutina" as UsarRutinas
 usecase "Completar Reto Obligatorio" as CompletarRetosObligatorios
 usecase "Completar Reto Opcional" as CompletarRetosOpcionales
-usecase "Inscribirse en Clase" as InscribirseClases
+usecase "Inscribir en Clase" as InscribirseClases
 usecase "Mostrar QR para Centros Deportivos" as UsarQR
 usecase "Iniciar Sesión" as IniciarSesion
 usecase "Cerrar Sesión" as CerrarSesion
