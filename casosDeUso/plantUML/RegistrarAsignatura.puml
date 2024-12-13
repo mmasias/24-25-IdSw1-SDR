@@ -1,17 +1,13 @@
 @startuml
-
-actor Administrador as A
-
-A -> Sistema : Selecciona "Registrar Nueva Asignatura"
-A -> Sistema : Ingresa datos de la asignatura (ID, nombre, descripción opcional)
-Sistema -> BaseDatos : Verifica si el ID ya está registrado
-BaseDatos --> Sistema : Respuesta (No existe o Existe)
-alt Si no existe
-    Sistema -> BaseDatos : Guarda los datos de la nueva asignatura
-    BaseDatos --> Sistema : Confirmación de registro exitoso
-    Sistema --> A : Notifica "Asignatura registrada exitosamente"
-else Si existe
-    Sistema --> A : Notifica "Error: ID ya registrado"
-end
-
+start
+:El usuario solicita registrar una nueva asignatura;
+:Sistema muestra formulario para registrar asignatura;
+:Sistema solicita datos de la asignatura (nombre, créditos);
+if (Datos válidos?) then (Sí)
+  :Sistema permite el registro;
+  :Sistema muestra confirmación: "Asignatura registrada exitosamente";
+else (No)
+  :Sistema muestra mensaje de error: "Faltan datos o son inválidos";
+endif
+stop
 @enduml
