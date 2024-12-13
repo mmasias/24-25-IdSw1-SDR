@@ -1,6 +1,6 @@
 [![Inicio](https://img.shields.io/badge/Inicio-blue)](#inicio)
 [![Modelo de Dominio](https://img.shields.io/badge/Modelo%20de%20Dominio-blue)](#modelo-de-dominio)
-[![Actores y Casos de Uso](https://img.shields.io/badge/Actores%20y%20Casos%20de%20Uso-blue)](#actores-y-casos-de-uso)
+[![Casos de Uso](https://img.shields.io/badge/Actores%20y%20Casos%20de%20Uso-blue)](#casosDeUso/imagenes)
 [![Sesiones de Requisitado](https://img.shields.io/badge/Sesiones%20de%20Requisitado-blue)](#sesiones-de-requisitado)
 
 
