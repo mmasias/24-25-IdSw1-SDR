@@ -1,53 +1,56 @@
 @startuml
 
-[*] --> MenuPrincipal 
+[*] --> MenuPrincipal
 
-MenuPrincipal --> MenuRetos : Alumno selecciona "Menu Retos"
-MenuPrincipal --> [*] : Finalizar desde Menú Principal. Alumno vuelve al menu de inicio
-note on link
-    El sistema muestra los retos disponibles:
+MenuPrincipal --> MenuRetos : Seleccionar "Menú Retos"
+MenuPrincipal --> [*] : Finalizar. Volver al menú de inicio
+note right of MenuPrincipal
+    Desde el menú principal, el alumno puede:
+    - Acceder al menú de retos.
+    - Finalizar y salir al inicio.
+end note
+
+MenuRetos --> ListaDeRetos : Ver lista de retos disponibles
+MenuRetos --> [*] : Finalizar. Volver al menú de inicio
+note right of MenuRetos
+    El sistema muestra retos:
     - Obligatorios: necesarios para completar la asignatura.
     - Opcionales: para puntos extra.
 end note
-MenuRetos --> ListaDeRetos : Alumno accede a Lista de Retos disponibles
-MenuRetos --> [*] : Finalizar desde Menú de Retos.  Alumno vuelve al menu de inicio
 
-
-ListaDeRetos --> TipoDeReto
-note on link
-    El alumno decide realizar un reto obligatorio o opcional.
+ListaDeRetos --> TipoDeReto : Seleccionar tipo de reto
+note right of ListaDeRetos
+    El alumno decide si realizar un reto:
+    - Obligatorio.
+    - Opcional.
 end note
 
 state TipoDeReto <<choice>>
-TipoDeReto --> RetoObligatorio : Alumno selecciona "Reto Obligatorio"
-TipoDeReto --> RetoOpcional : Alumno selecciona "Reto Opcional"
+TipoDeReto --> RetoObligatorio : Seleccionar "Reto Obligatorio"
+TipoDeReto --> RetoOpcional : Seleccionar "Reto Opcional"
 
-RetoObligatorio --> RealizarReto
-note on link
-    El alumno comienza el reto obligatorio.
-    
+RetoObligatorio --> RealizarReto : Comenzar reto obligatorio
+RetoOpcional --> RealizarReto : Comenzar reto opcional
+note right of TipoDeReto
+    La elección lleva al inicio del reto seleccionado.
 end note
 
-RetoOpcional --> RealizarReto
-note on link
-    El alumno comienza el reto opcional.
-    
+RealizarReto --> SubirEvidencia : Completar y subir evidencia
+note right of RealizarReto
+    El alumno realiza el reto y luego sube una evidencia 
+    (foto o video) como prueba.
 end note
 
-RealizarReto --> SubirEvidencia
-note on link
-    El alumno sube una evidencia (foto o video)
+SubirEvidencia --> ConfirmarEnvio : Revisar y confirmar envío
+note right of SubirEvidencia
+    El sistema permite revisar la evidencia antes de enviarla.
 end note
 
-SubirEvidencia --> ConfirmarEnvio
-note on link
-    El alumno revisa la evidencia y confirma su envío.
+ConfirmarEnvio --> MenuRetos : Volver al menú de retos
+ConfirmarEnvio --> [*] : Finalizar. Volver al menú de inicio
+note right of ConfirmarEnvio
+    El sistema confirma el envío exitoso de la evidencia.
+    El alumno puede elegir continuar o finalizar.
 end note
 
-ConfirmarEnvio --> MenuRetos : Alumno regresa al Menú de Retos
-ConfirmarEnvio --> [*] : Alumno finaliza después de enviar la evidencia. Alumno vuelve al menu de inicio
-note on link
-    Evidencia enviada correctamente. 
-    Opción de finalizar o continuar con otros retos.
-end note
 @enduml
