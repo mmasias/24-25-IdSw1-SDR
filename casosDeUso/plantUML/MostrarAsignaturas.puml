@@ -1,8 +1,11 @@
 @startuml
-actor Administrador as A
-
-A -> Sistema : Selecciona un grado de la lista
-Sistema -> BaseDatos : Consulta asignaturas relacionadas con el grado
-BaseDatos --> Sistema : Devuelve lista de asignaturas con sus estados
-Sistema --> A : Muestra asignaturas con puntos rojos (no asignadas) o verdes (asignadas)
+start
+:El usuario solicita listar las asignaturas registradas;
+:Sistema solicita filtros opcionales (grado, nombre);
+if (Filtros válidos?) then (Sí)
+  :Sistema muestra lista de asignaturas filtrada;
+else (No)
+  :Sistema muestra mensaje de error: "No se encontraron asignaturas";
+endif
+stop
 @enduml

@@ -1,11 +1,11 @@
 @startuml
-
-actor Administrador as A
-
-A -> Sistema : Selecciona "Consultar Horario de Profesor"
-A -> Sistema : Ingresa nombre o ID del profesor
-Sistema -> BaseDatos : Consulta horarios asignados al profesor
-BaseDatos --> Sistema : Devuelve lista de horarios, asignaturas y aulas
-Sistema --> A : Muestra horario del profesor con detalles (asignaturas, aulas, horas)
-
+start
+:El usuario solicita consultar el horario de un profesor específico;
+:Sistema solicita filtros (nombre del profesor, rango de fechas);
+if (Datos válidos?) then (Sí)
+  :Sistema muestra horario correspondiente;
+else (No)
+  :Sistema muestra mensaje de error: "No se encontraron horarios o datos inválidos";
+endif
+stop
 @enduml

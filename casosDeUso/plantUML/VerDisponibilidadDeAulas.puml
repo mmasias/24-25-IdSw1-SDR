@@ -1,9 +1,11 @@
 @startuml
-actor Administrador as A
-
-A -> Sistema : Selecciona "Ver disponibilidad de aulas"
-Sistema -> BaseDatos : Consulta aulas disponibles por día y hora
-BaseDatos --> Sistema : Lista de aulas disponibles
-Sistema --> A : Muestra disponibilidad de aulas(verde o rojo)
-Sistema --> A : Muestra tipo de aula(grande o con ordenadores)
+start
+:El usuario solicita ver la disponibilidad de aulas;
+:Sistema solicita fecha y rango horario;
+if (Datos válidos?) then (Sí)
+  :Sistema muestra aulas disponibles;
+else (No)
+  :Sistema muestra mensaje de error: "No se encontraron aulas disponibles";
+endif
+stop
 @enduml

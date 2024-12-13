@@ -1,9 +1,13 @@
 @startuml
-actor Administrador as A
-
-A -> Sistema : Arrastra asignatura a horario
-Sistema -> BaseDatos : Verifica disponibilidad de aula
-Sistema -> BaseDatos : Asigna asignatura al aula y horario
-BaseDatos --> Sistema : Confirmación de asignación
-Sistema --> A : Cambia estado de la asignatura a "Asignada" (verde)
+start
+:El usuario solicita asignar una asignatura a un grado o profesor;
+:Sistema muestra formulario para asignar asignatura;
+:Sistema solicita datos del grado/profesor y asignatura;
+if (Datos válidos?) then (Sí)
+  :Sistema realiza la asignación;
+  :Sistema muestra confirmación: "Asignatura asignada correctamente";
+else (No)
+  :Sistema muestra mensaje de error: "Datos inválidos o conflicto detectado";
+endif
+stop
 @enduml
