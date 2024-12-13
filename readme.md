@@ -1,3 +1,9 @@
+[![Inicio](https://img.shields.io/badge/Inicio-blue)](#inicio)
+[![Modelo de Dominio](https://img.shields.io/badge/Modelo%20de%20Dominio-blue)](#modelo-de-dominio)
+[![Actores y Casos de Uso](https://img.shields.io/badge/Actores%20y%20Casos%20de%20Uso-blue)](#actores-y-casos-de-uso)
+[![Sesiones de Requisitado](https://img.shields.io/badge/Sesiones%20de%20Requisitado-blue)](#sesiones-de-requisitado)
+
+
 # Gestión de Horarios - Sistema Integral de Gestión de Horarios Universitarios 🗓️
 
 # ![Gestión de Horarios](logo.png) Gestión de Horarios Universitarios 🗓️
