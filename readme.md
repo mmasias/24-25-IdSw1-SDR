@@ -23,9 +23,9 @@ Con una **interfaz intuitiva** y un **calendario interactivo**, la solución mej
 
 ## 🛠️ **Modelo de Dominio**
 Usamos las siguientes herramientas para definir las entidades principales de nuestro sistema:
-- [Diagrama de Clases](/modeloDelDominio/imagenes/DiagramaDeClases.svg)  
-- [Diagrama de Estados](/modeloDelDominio/imagenes/DiagramaDeEstados.svg)  
+- [Diagrama de Clases](/modeloDelDominio/imagenes/DiagramaDeClases.svg)
 - [Diagrama de Objetos](/modeloDelDominio/imagenes/DiagramaDeObjetos.svg)
+- [Diagrama de Estados](/modeloDelDominio/imagenes/DiagramaDeEstados.svg)  
 
 ---
 ## 🛠️ **Actores y Casos de Uso**
