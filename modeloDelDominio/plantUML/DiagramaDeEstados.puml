@@ -1,11 +1,28 @@
 @startuml
-title Diagrama de Estados - Horario
+[*] --> SinAsignar
 
-[*] --> Inicio : Creación del Horario
-Inicio --> Configurando : Configurar detalles
-Configurando --> HorarioConfigurado : Detalles completados
-HorarioConfigurado --> HorarioConfirmado : Confirmación de configuración
-HorarioConfirmado --> HorarioFinalizado : Finalización alcanzada
-HorarioFinalizado --> [*] : Finalización del Horario
+SinAsignar : La asignatura, profesor, horario y aula aún no están definidos.
 
+SinAsignar --> GrupoDefinido : Crear grupo en AsignaturaGrado
+GrupoDefinido : Grupo creado, pero aún sin profesor asignado.
+
+GrupoDefinido --> ProfesorAsignado : Asignar profesor a grupo (AsignaturaGradoProfesor)
+ProfesorAsignado : Profesor asignado, pero sin horario ni aula.
+
+ProfesorAsignado --> HorarioDefinido : Asignar horario (Horario)
+HorarioDefinido : Horario asignado, aula aún no asignada.
+
+HorarioDefinido --> AulaAsignada : Asignar aula (HorarioAsignaturaAula)
+AulaAsignada : Todo configurado: grupo, profesor, horario y aula listos.
+
+AulaAsignada --> Confirmado : Confirmar asignación final
+Confirmado : Configuración finalizada y lista para uso.
+
+SinAsignar --> Cancelado : Cancelar asignación
+GrupoDefinido --> Cancelado : Cancelar asignación
+ProfesorAsignado --> Cancelado : Cancelar asignación
+HorarioDefinido --> Cancelado : Cancelar asignación
+AulaAsignada --> Cancelado : Cancelar asignación
+Confirmado --> [*] : Operación completada
+Cancelado --> [*] : Asignación cancelada
 @enduml

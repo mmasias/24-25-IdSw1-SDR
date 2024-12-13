@@ -1,0 +1,61 @@
+@startuml
+object Grado {
+  idGrado = 1
+  nombre = "Ingeniería Informática"
+}
+
+object Asignatura {
+  idAsignatura = 101
+  nombre = "Programación Avanzada"
+  creditos = 6.0
+}
+
+object AsignaturaGrado {
+  idGrupo = 1
+  idAsignatura = 101
+  idGrado = 1
+  nombreGrupo = "Grupo A"
+}
+
+object Profesor {
+  idProfesor = 201
+  nombre = "María"
+  apellido = "López"
+  email = "maria.lopez@universidad.com"
+}
+
+object AsignaturaGradoProfesor {
+  idAsignaturaGrupoProfesor = 301
+  idAsignaturaGrupo = 1
+  idProfesor = 201
+}
+
+object Horario {
+  idHorario = 401
+  dia = "Lunes"
+  horaInicio = "10:00"
+  horaFin = "12:00"
+}
+
+object Aula {
+  idAula = 501
+  nombre = "Aula 101"
+  capacidad = 40
+}
+
+object HorarioAsignaturaAula {
+  idHorarioAsignaturaAula = 601
+  idAsignaturaGrupoProfesor = 301
+  idHorario = 401
+  idAula = 501
+}
+
+Grado --> AsignaturaGrado
+Asignatura --> AsignaturaGrado
+Asignatura --> Profesor
+AsignaturaGrado --> AsignaturaGradoProfesor
+Profesor --> AsignaturaGradoProfesor
+AsignaturaGradoProfesor --> Horario
+Horario *-- HorarioAsignaturaAula
+Aula --> HorarioAsignaturaAula
+@enduml
