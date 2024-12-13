@@ -16,26 +16,18 @@ Con una **interfaz intuitiva** y un **calendario interactivo**, la solución mej
 ---
 
 ## 🛠️ **Modelo de Dominio**
-El sistema se basa en un modelo conceptual sólido que facilita la escalabilidad y el mantenimiento:
-
-### 📌 **Diagramas clave**:
-1. **Diagrama de Clases**  
-   Representa las relaciones y dependencias entre las entidades principales, como Asignaturas, Profesores y Aulas.
-   
-   ![Diagrama de Clases](/modeloDelDominio/imagenes/DiagramaDeClases.svg)
-
-2. **Diagrama de Estados**  
-   Muestra los estados posibles de las entidades y las transiciones entre ellos.
-
-   ![Diagrama de Estados](/modeloDelDominio/imagenes/DiagramaDeEstados.svg)
-
-3. **Diagrama de Objetos**  
-   Representa ejemplos específicos de las entidades en acción.
-
-   ![Diagrama de Objetos](/modeloDelDominio/imagenes/DiagramaDeObjetos.svg)
+Usamos las siguientes herramientas para definir las entidades principales de nuestro sistema:
+- [Diagrama de Clases](/modeloDelDominio/imagenes/DiagramaDeClases.svg)  
+- [Diagrama de Estados](/modeloDelDominio/imagenes/DiagramaDeEstados.svg)  
+- [Diagrama de Objetos](/modeloDelDominio/imagenes/DiagramaDeObjetos.svg)
 
 ---
-
+## 🛠️ **Actores y Casos de Uso**
+Aqui se describen los principales actores que interactúan con el sistema y los casos de uso que se generan.
+- [Actores](/casosDeUso/actores/actores.png)  
+- [Casos de Uso](/casosDeUso/imagenes)
+- [Diagrama de Contexto](/casosDeUso/diagramaDeContexto/DiagramaDeContexto.svg)
+---
 ## 👥 **Miembros del proyecto**
 - **Sergio Moreno Vega**
 - **Iker Celaya Buezo**
