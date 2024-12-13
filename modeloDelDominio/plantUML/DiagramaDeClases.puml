@@ -1,40 +1,65 @@
 @startuml
-title Diagrama de Clases - Horario
+package "AGP" {
+  class Grado {
+    - idGrado : int
+    - nombre : String
+  }
 
-class Administrador {
-    - listaHorarios
+  class Asignatura {
+    - idAsignatura : int
+    - nombre : String
+    - creditos : float
+  }
+
+  class AsignaturaGrado {
+    - idGrupo : int
+    - idAsignatura : int
+    - idGrado : int
+    - nombreGrupo : String
+  }
+
+  class AsignaturaGradoProfesor {
+    - idAsignaturaGrupoProfesor : int
+    - idAsignaturaGrupo : int
+    - idProfesor : int
+  }
+
+  class Profesor {
+    - idProfesor : int
+    - nombre : String
+    - apellido : String
+    - email : String
+  }
+  
+  Asignatura --> Profesor
+  Grado --> AsignaturaGrado
+  Asignatura --> AsignaturaGrado
+  AsignaturaGrado --> AsignaturaGradoProfesor
+  Profesor --> AsignaturaGradoProfesor
 }
-class Profesor {
-    - nombre
-    - apellido
-}
-class Asignatura {
-    - id
-    - nombre
-}
-class Aula {
-    - numero
-}
+
 class Horario {
-    - dia
-    - listaHoraClase
-}
-class HoraClase {
-    - hora
-    - asignatura
-    - aula
-}
-class ProfesorImparte {
-    - profesor
-    - asignatura
+  - idHorario : int
+  - dia : String
+  - horaInicio : Time
+  - horaFin : Time
 }
 
-Administrador -- Horario
-Horario -- HoraClase
-HoraClase -- Asignatura
-HoraClase -- Aula
-Profesor -- HoraClase
-Profesor -- ProfesorImparte
-Asignatura -- ProfesorImparte
+class HorarioAsignaturaAula {
+  - idHorarioAsignaturaAula : int
+  - idAsignaturaGrupoProfesor : int
+  - idHorario : int
+  - idAula : int
+}
 
+class Aula {
+  - idAula : int
+  - nombre : String
+  - capacidad : int
+}
+
+AsignaturaGradoProfesor --> Horario
+Horario *-- HorarioAsignaturaAula
+Aula --> HorarioAsignaturaAula
+"AGP" --> HorarioAsignaturaAula
 @enduml
