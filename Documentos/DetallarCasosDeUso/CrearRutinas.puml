@@ -8,42 +8,33 @@ MenuPrincipal --> [*] : Profesor sale
 MenuRutinas -d-> CrearRutina : Profesor selecciona "Crear Rutina"
 MenuRutinas -d-> [*] : Profesor sale
 
-state TipoDeRutina <<choice>>
-CrearRutina -d-> TipoDeRutina
+state SeleccionarCategoria <<choice>>
+CrearRutina -d-> SeleccionarCategoria
 note on link
-    Profesor decide el tipo de rutina dependiendo de los grupos musculares a entrenar:
-    - Pecho
-    - Espalda
-    - Piernas
+    Profesor selecciona una categoría general para la rutina, como:
+    - Fuerza
+    - Resistencia
+    - Flexibilidad
 end note
 
-TipoDeRutina -d-> RutinaPecho : Pecho
-note right of RutinaPecho
-    Profesor establece rutina de pecho.
-end note
+SeleccionarCategoria -d-> ConfigurarRutina : Seleccionar "Fuerza"
+SeleccionarCategoria -d-> ConfigurarRutina : Seleccionar "Resistencia"
+SeleccionarCategoria -d-> ConfigurarRutina : Seleccionar "Flexibilidad"
 
-TipoDeRutina -d-> RutinaEspalda : Espalda
-note right of RutinaEspalda
-    Profesor establece rutina de espalda.
-end note
-
-TipoDeRutina -d-> RutinaPiernas : Piernas
-note right of RutinaPiernas
-    Profesor establece rutina de piernas.
-end note
-
-RutinaPecho --> ElegirEjercicios : Seleccionar ejercicios
-RutinaEspalda --> ElegirEjercicios : Seleccionar ejercicios
-RutinaPiernas --> ElegirEjercicios : Seleccionar ejercicios
-
-note bottom of ElegirEjercicios
-    El profesor define los detalles de la rutina, como:
+ConfigurarRutina --> ElegirEjercicios : Configurar detalles básicos
+note bottom of ConfigurarRutina
+    Detalles básicos incluyen:
     - Nombre de la rutina
-    - Selección de ejercicios
-    - División por músculo
+    - Objetivo de la rutina
 end note
 
-ElegirEjercicios -d-> PublicarRutina : Finalizar configuración
+ElegirEjercicios --> RevisarRutina : Seleccionar ejercicios
+note bottom of ElegirEjercicios
+    El profesor selecciona ejercicios específicos basados en la categoría elegida.
+end note
+
+RevisarRutina -d-> PublicarRutina : Confirmar y publicar
+RevisarRutina -u-> ElegirEjercicios : Volver a editar ejercicios
 
 note top of PublicarRutina
     La rutina queda visible para los estudiantes.
