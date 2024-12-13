@@ -6,16 +6,16 @@
 ### Diagrama de Contexto
 ![Diagrama de Contexto](casosDeUso/diagramaDeContexto/DiagramaDeContexto.svg)
 
-### Casos de Uso Representados mediante Diagramas
+## Casos de Uso Representados mediante Diagramas
 
 ### Asignar Asignatura
-![Asignar Asignatura](casosDeUso/imagenes/AsignarAsignatura.svg)
+![Asignar Asignatura]([casosDeUso/imagenes/AsignarAsignatura.svg](https://github.com/srgiom/24-25-IdSw1-SDR/blob/2d21fb0d6597e1fdb07abd07365fd95582bb7b99/casosDeUso/imagenes/AsignarAsignatura.svg))
 
 ### Asignar Profesor
-![Asignar Profesor](casosDeUso/imagenes/AsignarProfesor.svg)
+![Asignar Profesor]([casosDeUso/imagenes/AsignarProfesor.svg](https://github.com/srgiom/24-25-IdSw1-SDR/blob/2d21fb0d6597e1fdb07abd07365fd95582bb7b99/casosDeUso/imagenes/AsignarProfesor.svg))
 
 ### Buscar Grado
-![Buscar Grado](casosDeUso/imagenes/BuscarGrado.svg)
+![Buscar Grado]([casosDeUso/imagenes/BuscarGrado.svg](https://github.com/srgiom/24-25-IdSw1-SDR/blob/2d21fb0d6597e1fdb07abd07365fd95582bb7b99/casosDeUso/imagenes/BuscarGrado.svg))
 
 ### Consultar Horario de Profesor
 ![Consultar Horario de Profesor](casosDeUso/imagenes/ConsultarHorarioProfesor.svg)
