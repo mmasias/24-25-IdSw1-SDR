@@ -11,10 +11,13 @@ hide empty description
 
 state startState as "LISTANDO_GRUPOS"
 state endState as "LISTANDO_GRUPOS"
+state listarGrupos as "listarGrupos"
 
 startState --> BorrarGrupo
 
-BorrarGrupo --> endState
+BorrarGrupo -[#red]-> endState
+BorrarGrupo --> listarGrupos
+listarGrupos --> endState
 
 state BorrarGrupo {
     state solicitudFiltros as " "
@@ -29,7 +32,7 @@ state BorrarGrupo {
         * Borrar grupo
     end note
 
-    revisionFiltrosEnviados -[#red]-> solicitudFiltros
+    revisionFiltrosEnviados -[#red]-> [*]
     note on link
         <b>Sistema Muestra</b>
         Mensaje de error

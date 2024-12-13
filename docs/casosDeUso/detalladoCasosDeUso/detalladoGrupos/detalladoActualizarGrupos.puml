@@ -16,8 +16,8 @@ state listarGrupos as "listarGrupos"
 startState --> ActualizarGrupo
 
 ActualizarGrupo -[#red]-> endState
-ActualizarGrupo -[#green]-> listarGrupos
-listarGrupos -[#green]-> endState
+ActualizarGrupo --> listarGrupos
+listarGrupos --> endState
 
 state ActualizarGrupo {
     state solicitudFiltros as " "
