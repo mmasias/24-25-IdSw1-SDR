@@ -30,9 +30,9 @@ Usamos las siguientes herramientas para definir las entidades principales de nue
 ---
 ## 🛠️ **Actores y Casos de Uso**
 Aqui se describen los principales actores que interactúan con el sistema y los casos de uso que se generan.
-- [Actores](/casosDeUso/actores/actores.png)  
-- [Casos de Uso](/casosDeUso/imagenes)
+- [Actores](/casosDeUso/actores/actores.png)
 - [Diagrama de Contexto](/casosDeUso/diagramaDeContexto/DiagramaDeContexto.svg)
+- [Casos de Uso](/casosDeUso/imagenes)
 ---
 ## 👥 **Miembros del proyecto**
 - **Sergio Moreno Vega**
