@@ -1,14 +1,13 @@
 @startuml
-
-actor Administrador as A
-
-A -> Sistema : Selecciona "Asignar Profesor"
-A -> Sistema : Selecciona asignatura de la lista
-Sistema -> BaseDatos : Consulta lista de profesores disponibles
-BaseDatos --> Sistema : Devuelve lista de profesores
-A -> Sistema : Selecciona profesor de la lista
-Sistema -> BaseDatos : Vincula profesor con la asignatura seleccionada
-BaseDatos --> Sistema : Confirmación de asignación
-Sistema --> A : Notifica "Profesor asignado exitosamente"
-
+start
+:El usuario solicita asignar un profesor a una asignatura;
+:Sistema muestra formulario para asignar profesor;
+:Sistema solicita datos del profesor y asignatura;
+if (Datos válidos?) then (Sí)
+  :Sistema realiza la asignación;
+  :Sistema muestra confirmación: "Profesor asignado correctamente";
+else (No)
+  :Sistema muestra mensaje de error: "Datos inválidos o profesor no disponible";
+endif
+stop
 @enduml
