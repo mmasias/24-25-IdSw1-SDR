@@ -3,7 +3,7 @@
 <img src="./DiagramaDeContexto.svg" usemap="#contexto-map" alt="Diagrama de Contexto">
 
 <map name="contexto-map">
-  <area shape="rect" coords="175,185,391,261" href="../imagenes/AsignarAsignatura.svg" alt="Asignar Asignatura" title="Asignar Asignatura">
+  <area shape="rect" coords="24,8,2782,334" href="../imagenes/AsignarAsignatura.svg" alt="Asignar Asignatura" title="Asignar Asignatura">
   <area shape="rect" coords="110,10,200,50" href="../imagenes/AsignarProfesor.svg" alt="Asignar Profesor" title="Asignar Profesor">
   <area shape="rect" coords="210,10,300,50" href="../imagenes/BuscarGrado.svg" alt="Buscar Grado" title="Buscar Grado">
   <area shape="rect" coords="310,10,400,50" href="../imagenes/ConsultarHorarioProfesor.svg" alt="Consultar Horario Profesor" title="Consultar Horario Profesor">
