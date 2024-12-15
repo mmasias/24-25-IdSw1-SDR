@@ -1,42 +1,17 @@
 # Diagrama de Contexto
 
-![Diagrama de Contexto](./DiagramaDeContexto.svg)
+<img src="./DiagramaDeContexto.svg" usemap="#contexto-map" alt="Diagrama de Contexto">
 
-## Casos de Uso
+<map name="contexto-map">
+  <area shape="rect" coords="175,185,391,261" href="../imagenes/AsignarAsignatura.svg" alt="Asignar Asignatura" title="Asignar Asignatura">
+  <area shape="rect" coords="110,10,200,50" href="../imagenes/AsignarProfesor.svg" alt="Asignar Profesor" title="Asignar Profesor">
+  <area shape="rect" coords="210,10,300,50" href="../imagenes/BuscarGrado.svg" alt="Buscar Grado" title="Buscar Grado">
+  <area shape="rect" coords="310,10,400,50" href="../imagenes/ConsultarHorarioProfesor.svg" alt="Consultar Horario Profesor" title="Consultar Horario Profesor">
+  <area shape="rect" coords="410,10,500,50" href="../imagenes/EditarAsignacion.svg" alt="Editar Asignación" title="Editar Asignación">
+  <area shape="rect" coords="510,10,600,50" href="../imagenes/InicioSesion.svg" alt="Inicio Sesión" title="Inicio Sesión">
+  <area shape="rect" coords="610,10,700,50" href="../imagenes/MostrarAsignaturas.svg" alt="Mostrar Asignaturas" title="Mostrar Asignaturas">
+  <area shape="rect" coords="710,10,800,50" href="../imagenes/RegistrarAsignatura.svg" alt="Registrar Asignatura" title="Registrar Asignatura">
+  <area shape="rect" coords="810,10,900,50" href="../imagenes/VerDisponibilidadAulas.svg" alt="Ver Disponibilidad Aulas" title="Ver Disponibilidad Aulas">
+</map>
 
-1. **[Asignar Asignatura](../imagenes/AsignarAsignatura.svg)**
-   - [![Asignar Asignatura](../imagenes/AsignarAsignatura.svg)](../imagenes/AsignarAsignatura.svg)
-   - Asignar una asignatura a un grado o profesor.
-
-2. **[Asignar Profesor](../imagenes/AsignarProfesor.svg)**
-   - [![Asignar Profesor](../imagenes/AsignarProfesor.svg)](../imagenes/AsignarProfesor.svg)
-   - Asignar un profesor a una asignatura.
-
-3. **[Buscar Grado](../imagenes/BuscarGrado.svg)**
-   - [![Buscar Grado](../imagenes/BuscarGrado.svg)](../imagenes/BuscarGrado.svg)
-   - Buscar grados disponibles en el sistema.
-
-4. **[Consultar Horario Profesor](../imagenes/ConsultarHorarioProfesor.svg)**
-   - [![Consultar Horario Profesor](../imagenes/ConsultarHorarioProfesor.svg)](../imagenes/ConsultarHorarioProfesor.svg)
-   - Consultar el horario de un profesor específico.
-
-5. **[Editar Asignación](../imagenes/EditarAsignacion.svg)**
-   - [![Editar Asignación](../imagenes/EditarAsignación.svg)](../imagenes/EditarAsignación.svg)
-   - Editar asignaciones de profesores y asignaturas.
-
-6. **[Inicio de Sesión](../imagenes/InicioSesion.svg)**
-   - [![Inicio de Sesión](../imagenes/InicioSesión.svg)](../imagenes/InicioSesión.svg)
-   - Inicio de sesión del administrador.
-
-7. **[Mostrar Asignaturas](../imagenes/MostrarAsignaturas.svg)**
-   - [![Mostrar Asignaturas](../imagenes/MostrarAsignaturas.svg)](../imagenes/MostrarAsignaturas.svg)
-   - Visualizar las asignaturas registradas.
-
-8. **[Registrar Asignatura](../imagenes/RegistrarAsignatura.svg)**
-   - [![Registrar Asignatura](../imagenes/RegistrarAsignatura.svg)](../imagenes/RegistrarAsignatura.svg)
-   - Registrar una nueva asignatura en el sistema.
-
-9. **[Ver Disponibilidad Aulas](../imagenes/VerDisponibilidadAulas.svg)**
-   - [![Ver Disponibilidad Aulas](../imagenes/VerDisponibilidadAulas.svg)](../imagenes/VerDisponibilidadAulas.svg)
-   - Ver la disponibilidad de las aulas.
 
