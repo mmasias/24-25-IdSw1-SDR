@@ -1,10 +1,10 @@
 # Diagrama de Contexto
 
-<img src="./diagramaDeContexto/DiagramaDeContexto1.png" usemap="#contexto-map" alt="Diagrama de Contexto">
+<img src="/casosDeUso/diagramaDeContexto/DiagramaDeContexto1.png" usemap="#contexto-map" alt="Diagrama de Contexto">
 
 <map name="contexto-map">
   <!-- Coordenadas para cada caso de uso -->
-  <area shape="rect" coords="181,185,384,261" href="../imagenes/AsignarAsignatura.svg" alt="Asignar Asignatura" title="Asignar Asignatura">
+  <area shape="rect" coords="181,191,384,262" href="../imagenes/AsignarAsignatura.svg" alt="Asignar Asignatura" title="Asignar Asignatura">
   <area shape="rect" coords="400,185,600,261" href="../imagenes/AsignarProfesor.svg" alt="Asignar Profesor" title="Asignar Profesor">
   <area shape="rect" coords="620,185,800,261" href="../imagenes/BuscarGrado.svg" alt="Buscar Grado" title="Buscar Grado">
   <area shape="rect" coords="820,185,1000,261" href="../imagenes/ConsultarHorarioProfesor.svg" alt="Consultar Horario Profesor" title="Consultar Horario Profesor">
