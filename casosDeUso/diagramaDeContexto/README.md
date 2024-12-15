@@ -21,11 +21,11 @@
    - Consultar el horario de un profesor específico.
 
 5. **[Editar Asignación](../imagenes/EditarAsignacion.svg)**
-   - [![Editar Asignación](../imagenes/EditarAsignacion.svg)](../imagenes/EditarAsignacion.svg)
+   - [![Editar Asignación](../imagenes/EditarAsignación.svg)](../imagenes/EditarAsignación.svg)
    - Editar asignaciones de profesores y asignaturas.
 
 6. **[Inicio de Sesión](../imagenes/InicioSesion.svg)**
-   - [![Inicio de Sesión](../imagenes/InicioSesion.svg)](../imagenes/InicioSesion.svg)
+   - [![Inicio de Sesión](../imagenes/InicioSesión.svg)](../imagenes/InicioSesión.svg)
    - Inicio de sesión del administrador.
 
 7. **[Mostrar Asignaturas](../imagenes/MostrarAsignaturas.svg)**
