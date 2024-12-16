@@ -1,0 +1,62 @@
+@startuml leer_confirmar_documento
+
+skinparam {
+  NoteBackgroundColor #whiteSmoke
+  ArrowColor #green
+  NoteBorderColor #green
+  linetype polyline
+}
+
+hide empty description
+
+state startState as "LISTANDO_USUARIOS"
+state endState as "LISTANDO_USUARIOS"
+
+startState --> ActualizarUsuario
+ActualizarUsuario --> endState
+
+state ActualizarUsuario {
+    state solicitudActualizarUsuario as " "
+    state envioActualizarUsuario as " "
+    state revisionActualizarUsuario <<choice>>
+    state usuarioSolicita as "<b>Usuario Solicita:</b> \n Actualizar usuario"
+
+    usuarioSolicita --> solicitudActualizarUsuario
+    solicitudActualizarUsuario --> envioActualizarUsuario
+    note on link
+        <b>Sistema Solicita</b>
+        * Campos a actualizar
+        * <b>Campos:</b>
+            - Nombre del usuario
+            - Correo del usuario
+            - Contraseña del usuario
+
+        <b>Sistema Permite</b>
+        * Actualizar usuario
+    end note
+
+    envioActualizarUsuario --> revisionActualizarUsuario
+    note on link
+        <b>Usuario introduce</b>
+        * Campos a actualizar
+        * <b>Campos</b>
+            - Nombre del usuario
+            - Correo del usuario
+            - Generar contraseña del usuario
+    end note
+
+    revisionActualizarUsuario -[#red]-> solicitudActualizarUsuario
+    note on link
+        <b>Sistema Muestra</b>
+        Mensaje de confirmación
+    end note
+
+   revisionActualizarUsuario --> [*]
+    note on link
+        <b>Sistema Muestra</b>
+        Usuario actualizado correctamente
+    end note
+
+}
+
+@enduml
