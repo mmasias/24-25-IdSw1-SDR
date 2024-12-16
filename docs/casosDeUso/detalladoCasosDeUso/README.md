@@ -69,4 +69,22 @@
 
 ![](./detalladoDescargarInformeEnvio/detalladoDescargarInforme.svg)
 
+
+## Detallado de Usuarios
+
+### Detallado de Crear Usuario
+
+![](./detalladoUsuarios/detalladoCrearUsuario.svg)
+
+### Detallado de Actualizar Usuario
+
+![](./detalladoUsuarios/detalladoActualizarUsuario.svg)
+
+### Detallado de Borar Usuario
+
+![](./detalladoUsuarios/detalladoBorrarUsuario.svg)
+
+### Detallado de Listar Usuarios
+
+![](./detalladoUsuarios/detalladoListarUsuario.svg)
 ---
