@@ -1,4 +1,4 @@
-@startuml leer_confirmar_documento
+@startuml actualizar_usuario
 
 skinparam {
   NoteBackgroundColor #whiteSmoke
