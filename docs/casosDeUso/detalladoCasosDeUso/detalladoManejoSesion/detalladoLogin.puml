@@ -15,6 +15,7 @@ hide empty description
 state startState as "VISTA_LOGIN"
 state endState as "VISTA_PRINCIPAL"
 
+
 startState --> ManejoLogin
 
 state ManejoLogin {
@@ -43,5 +44,6 @@ state ManejoLogin {
 }
 
 ManejoLogin --> endState
+ManejoLogin -[#red]-> endState
 
 @enduml
