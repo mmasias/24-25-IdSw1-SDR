@@ -44,6 +44,5 @@ state ManejoLogin {
 }
 
 ManejoLogin --> endState
-ManejoLogin -[#red]-> endState
 
 @enduml
