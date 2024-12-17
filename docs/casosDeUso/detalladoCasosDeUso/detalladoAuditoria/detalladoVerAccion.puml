@@ -15,6 +15,7 @@ state endState as "LISTANDO_ACCION"
 startState --> ListarAccion 
 
 ListarAccion --> endState
+ListarAccion -[#red]> endState
 
 state ListarAccion {
     state solicitudFiltros as " "
@@ -37,7 +38,7 @@ state ListarAccion {
         * Id de la acción
     end note
 
-    revisionFiltrosEnviados -[#red]-> solicitudFiltros
+    revisionFiltrosEnviados -[#red]-> [*]
     note on link
         <b>Sistema Muestra</b>
         Mensaje de error
