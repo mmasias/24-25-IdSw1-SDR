@@ -15,6 +15,7 @@ state endState as "DASHBOARD"
 startState --> EnviarMensaje
 
 EnviarMensaje--> endState
+EnviarMensaje -[#red]-> endState
 
 state EnviarMensaje{
     state revisionFiltrosEnviados <<choice>>
@@ -32,6 +33,12 @@ state EnviarMensaje{
     note on link
         <b>Sistema Muestra</b>
         Mensaje de confirmación
+    end note
+
+    revisionFiltrosEnviados -[#red]-> [*]
+    note on link
+        <b>Sistema Muestra</b>
+        Mensaje de error
     end note
 }
 
