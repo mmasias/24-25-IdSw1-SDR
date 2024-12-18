@@ -17,6 +17,38 @@
 
 ## Mensajes
 
+### Ver Mensajes Recibidos
+
+![](./prototipoMensajes/prototipoMensajesRecibidos.png)
+
+#### Ver Mensaje
+
+![](./prototipoMensajes/prototipoVerMensaje.png)
+
+#### Ver Adjunto en un Mensaje
+
+![](./prototipoMensajes/prototipoAdjunto.png)
+
+#### Confirmar/Firmar un Mensaje
+
+![](./prototipoMensajes/prototipoConfirmarMensaje.png)
+
+### Ver Mensajes Enviados
+
+![](./prototipoMensajes/prototipoMensajesEnviados.png)
+
+### Crear Mensaje
+
+![](./prototipoMensajes/prototipoCrearMensaje.png)
+
+#### Ver Mensaje Enviado
+
+![](./prototipoMensajes/prototipoVerMensajeCreado.png)
+
+#### Descargar Informe de Envío
+
+![](./prototipoMensajes/prototipoInformeEnvio.png)
+
 ## Grupos
 
 ### Listar Grupos
