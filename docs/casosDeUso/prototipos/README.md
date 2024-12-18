@@ -9,6 +9,8 @@
 
 ## Login
 
+![](./prototipoLogin/prototipoLogin.png)
+
 ## Menú Principal
 
 ![](./prototipadoMenuPrincipal/prototipoMenuPrincipal.png)
@@ -44,3 +46,15 @@
 ### Borrar Grupo
 
 ![](./prototipadoGrupos/prototipoBorrarGrupo.png)
+
+## Acciones
+
+![](./prototipoAcciones/prototipoListarAcciones.png)
+
+### Detallar Acciones
+
+![](./prototipoAcciones/prototipoDetallarAccion.png)
+
+### Descargar PDF Informe de Acciones
+
+![](./prototipoAcciones/prototipoDescargaPDFAuditoria.png)
