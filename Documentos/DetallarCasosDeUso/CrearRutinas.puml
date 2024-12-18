@@ -1,15 +1,15 @@
 @startuml
 
+top to bottom direction
+
 [*] --> MenuPrincipal
 
-MenuPrincipal -d-> MenuRutinas : Profesor selecciona "Menú Rutinas"
-MenuPrincipal --> [*] : Profesor sale
+MenuPrincipal --> MenuRutinas : Profesor selecciona "Menú Rutinas"
 
-MenuRutinas -d-> CrearRutina : Profesor selecciona "Crear Rutina"
-MenuRutinas -d-> [*] : Profesor sale
+MenuRutinas --> CrearRutina : Profesor selecciona "Crear Rutina"
 
 state SeleccionarCategoria <<choice>>
-CrearRutina -d-> SeleccionarCategoria
+CrearRutina --> SeleccionarCategoria
 note on link
     Profesor selecciona una categoría general para la rutina, como:
     - Fuerza
@@ -17,9 +17,9 @@ note on link
     - Flexibilidad
 end note
 
-SeleccionarCategoria -d-> ConfigurarRutina : Seleccionar "Fuerza"
-SeleccionarCategoria -d-> ConfigurarRutina : Seleccionar "Resistencia"
-SeleccionarCategoria -d-> ConfigurarRutina : Seleccionar "Flexibilidad"
+SeleccionarCategoria --> ConfigurarRutina : Seleccionar "Fuerza"
+SeleccionarCategoria --> ConfigurarRutina : Seleccionar "Resistencia"
+SeleccionarCategoria --> ConfigurarRutina : Seleccionar "Flexibilidad"
 
 ConfigurarRutina --> ElegirEjercicios : Configurar detalles básicos
 note bottom of ConfigurarRutina
@@ -33,15 +33,15 @@ note bottom of ElegirEjercicios
     El profesor selecciona ejercicios específicos basados en la categoría elegida.
 end note
 
-RevisarRutina -d-> PublicarRutina : Confirmar y publicar
-RevisarRutina -u-> ElegirEjercicios : Volver a editar ejercicios
+RevisarRutina --> ElegirEjercicios : Volver a editar ejercicios
+RevisarRutina --> PublicarRutina : Confirmar y publicar
 
-note top of PublicarRutina
+note bottom of PublicarRutina
     La rutina queda visible para los estudiantes.
 end note
 
-PublicarRutina -u-> CrearRutina : Crear otra rutina
-PublicarRutina -u-> MenuRutinas : Volver al menú de rutinas
-PublicarRutina -u-> [*] : Salir. El profesor vuelve a ir al inicio
+PublicarRutina --> CrearRutina : Crear otra rutina
+PublicarRutina --> MenuRutinas : Volver al menú de rutinas
+PublicarRutina --> [*] : Salir. El profesor vuelve a ir al inicio
 
 @enduml
