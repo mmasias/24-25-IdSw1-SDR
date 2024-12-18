@@ -20,15 +20,24 @@ startState --> ManejoLogout
 state ManejoLogout {
     state Logout as " "
 
-    Logout --> [*]
+    Logout --> ValidarCierreSesion
     note on link
         <b>Usuario solicita</b>
         * Cerrar sesión
+    end note
+
+    ValidarCierreSesion --> [*]
+    note on link
         <b>Sistema finaliza</b>
         * Sesión activa
-        <b>Redirige</b> a pantalla de login
     end note
 }
+
+    ValidarCierreSesion -[#red]-> Logout
+    note on link
+        <b>Sistema muestra</b>
+        * Error: "Ocurrió un error al cerrar sesión"
+    end note
 
 ManejoLogout --> endState
 

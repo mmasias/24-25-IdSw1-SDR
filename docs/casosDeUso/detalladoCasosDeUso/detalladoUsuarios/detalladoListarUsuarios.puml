@@ -54,7 +54,7 @@ state ListarUsuarios {
             - Email del usuario
     end note
 
-    revisionFiltrosEnviados -[#red]-> solicitudFiltros
+    revisionFiltrosEnviados -[#red]-> [*]
     note on link
         <b>Sistema Muestra</b>
         Mensaje de error

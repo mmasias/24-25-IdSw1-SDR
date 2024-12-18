@@ -18,7 +18,8 @@ note on link
     * Crear mensaje
 end note
 
-CrearMensaje --> endState
+CrearMensaje --> abrirDashboard
+abrirDashboard --> endState
 CrearMensaje -[#red]-> endState
 
 state CrearMensaje{

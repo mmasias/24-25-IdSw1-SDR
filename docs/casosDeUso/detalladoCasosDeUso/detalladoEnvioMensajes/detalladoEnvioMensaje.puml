@@ -14,7 +14,8 @@ state endState as "DASHBOARD"
 
 startState --> EnviarMensaje
 
-EnviarMensaje--> endState
+EnviarMensaje--> abrirDashboard
+abrirDashboard--> endState
 EnviarMensaje -[#red]-> endState
 
 state EnviarMensaje{

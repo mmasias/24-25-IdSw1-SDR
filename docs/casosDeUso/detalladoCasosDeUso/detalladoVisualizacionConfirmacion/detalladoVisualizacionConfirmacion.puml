@@ -15,6 +15,7 @@ state endState as "LEYENDO_MENSAJE"
 
 startState --> LeerMensaje
 LeerMensaje --> endState
+LeerMensaje -[#red]-> endState
 
 state LeerMensaje {
     state solicitudAbrirMensaje as " "

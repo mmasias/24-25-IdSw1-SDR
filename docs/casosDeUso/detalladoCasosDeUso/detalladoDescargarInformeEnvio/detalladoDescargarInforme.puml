@@ -15,6 +15,7 @@ state endState as "LEYENDO_MENSAJE"
 
 startState --> DescargarInformeEnvio
 DescargarInformeEnvio --> endState
+DescargarInformeEnvio -[#red]-> endState
 
 state DescargarInformeEnvio {
     state solicitudAbrirMensaje as " "
@@ -40,7 +41,7 @@ state DescargarInformeEnvio {
     end note
     
     
-    descargarInforme -[#red]-> solicitudAbrirMensaje
+    descargarInforme -[#red]-> [*]
     note on link
         <b>Sistema Muestra</b>
         Mensaje de error
