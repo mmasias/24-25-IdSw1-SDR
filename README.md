@@ -35,16 +35,6 @@ Se pueden ver más detalles sobre esto con las siguientes herramientas:
 - [Detallado de Casos de Uso](docs/casosDeUso/detalladoCasosDeUso/README.md)
 - [Prototipos](docs/casosDeUso/prototipos/README.md)
 
-
-## 🔰 Sesiones de Requisitado
-
-| Sesión | Fecha | Miembros presentes | Temas Tratados | Observaciones |
-|--------|-------|--------------------|----------------|---------------|
-| 1      | [16-10-2024](docs/sesiones/16-10-2024/apuntesSesion.md)  | Diego Moys, Diego Jiménez, José Luis Rodriguez, Santiago Gómez | Introducción al proyecto, definición de objetivos.  | Se trataron generalidades del proyecto y dudas iniciales sobre el alcance y funcionalidad del proyecto.             |
-| 2      | [29-10-2024](docs/sesiones/29-10-2024/apuntesSesion.md)  | Diego Moys, Diego Jiménez, Santiago Gómez | Dudas generadas sobre la primera iteración de los avances.  | Se resolvieron las dudas generadas al momento de diagramar. La interesada también accedió a utilizar las Discussions de GitHub para mantener una comunicación fluida. |             |
-| 3      | [22-12-2024](docs/sesiones/22-11-2024/apuntesSesion.md)  | Diego Moys, Diego Jiménez, Santiago Gómez, José Luis Rodriguez | Avances obtenidos en los diagramas de contexto y casos de uso.  | La interesada revisó junto con el equipo los diagramas trabajados e hizo las observaciones pertinentes para corregir y ajustar los diagramas acorde a los intereces de la interesada. |
-| 4      | [5-12-2024](docs/sesiones/5-12-2024/apuntesSesion.md)  | Diego Moys, Diego Jiménez, José Luis Rodriguez, Santiago Gómez | Dudas sobre el detallado de los casos de uso, recolección de ideas y propuestas para mejorar la implementación del proyecto.           |             |
-
 ## 🔰 Recursos Adicionales
 
 [Aquí](docs/recursos/) podrás encontrar imágenes, documentos PDF y otros materiales que complementan la información presentada y proporcionan un entendimiento más profundo del proyecto.
