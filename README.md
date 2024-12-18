@@ -34,6 +34,7 @@
         <li><a href="docs/casosDeUso/diagramaDeContexto/README.md">Diagrama de Contexto</a></li>
         <li><a href="docs/casosDeUso/diagramaCasosDeUso/README.md">Diagrama de Casos de Uso</a></li>
         <li><a href="docs/casosDeUso/detalladoCasosDeUso/README.md">Detallado de Casos de Uso</a></li>
+        <li><a href="docs/casosDeUso/prototipos/README.md">Prototipos</a></li>
       </ul>
     </td>
   </tr>
