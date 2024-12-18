@@ -41,14 +41,14 @@ note right of RealizarReto
     (foto o video) como prueba.
 end note
 
-SubirEvidencia --> ConfirmarEnvio : Revisar y confirmar envío
+SubirEvidencia --> BotonSubirEvidencia : Revisar y confirmar envío
 note right of SubirEvidencia
     El sistema permite revisar la evidencia antes de enviarla.
 end note
 
-ConfirmarEnvio --> MenuRetos : Volver al menú de retos
-ConfirmarEnvio --> [*] : Finalizar. Volver al menú de inicio
-note right of ConfirmarEnvio
+BotonSubirEvidencia --> MenuRetos : Volver al menú de retos
+BotonSubirEvidencia --> [*] : Finalizar. Volver al menú de inicio
+note right of BotonSubirEvidencia
     El sistema confirma el envío exitoso de la evidencia.
     El alumno puede elegir continuar o finalizar.
 end note
