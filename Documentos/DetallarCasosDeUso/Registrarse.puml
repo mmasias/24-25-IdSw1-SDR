@@ -20,7 +20,6 @@
     - Contraseña
     - Peso
     - Altura
-    - Objetivo
   end note
   
   state rombo <<choice>>
