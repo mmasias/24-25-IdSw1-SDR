@@ -13,13 +13,15 @@ state endState as "LISTANDO_USUARIOS"
 
 startState --> ListarUsuarios
 
-ListarUsuarios --> endState
+ListarUsuarios --> listarUsuarios
+listarUsuarios --> endState
+
+ListarUsuarios -[#red]-> endState
 
 state ListarUsuarios {
     state solicitudFiltros as " "
     state envioFiltros as " "
     state revisionFiltrosEnviados <<choice>>
-    state revisionListaUsuarios <<choice>>
     state usuarioSolicita as "<b>Usuario Solicita:</b> \n Listar usuarios"
 
     usuarioSolicita -> solicitudFiltros
@@ -29,19 +31,8 @@ state ListarUsuarios {
         Lista de usuarios
     end note
 
-    solicitudFiltros -r-> revisionListaUsuarios
-    revisionListaUsuarios -[#red]-> solicitudFiltros
-    note on link
-        <b>Sistema Muestra</b>
-        Mensaje de error
-    end note
+    solicitudFiltros -r-> [*]
     
-    revisionListaUsuarios --> [*]
-    note on link
-        <b>Sistema Muestra</b>
-        Lista de usuarios
-
-    end note
 
     solicitudFiltros --> envioFiltros
     note on link
