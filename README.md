@@ -19,9 +19,9 @@ El [modelo de dominio](docs/modeloDeDominio/README.md) de *DOCUTRACE* define las
 
 Para describir el modelo del dominio se utilizan los siguientes artefactos:
 
-- [Diagrama de Clases](docs/modeloDeDominio/diagramaDeClases)
-- [Diagrama de Objetos](docs/modeloDeDominio/diagramaDeObjetos)
-- [Diagrama de Estados](docs/modeloDeDominio/diagramaDeEstados)
+- [Diagrama de Clases](docs/modeloDeDominio/README.md#diagrama-de-clases)
+- [Diagrama de Objetos](docs/modeloDeDominio/README.md#diagrama-de-objetos)
+- [Diagrama de Estados](docs/modeloDeDominio/README.md#diagrama-de-estados)
 
 ## 🔰 Actores y Casos de Uso
 
