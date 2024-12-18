@@ -23,7 +23,7 @@ Para describir el modelo del dominio se utilizan los siguientes artefactos:
 - [Diagrama de Objetos](docs/modeloDeDominio/README.md#diagrama-de-objetos)
 - [Diagrama de Estados](docs/modeloDeDominio/README.md#diagrama-de-estados)
 
-## 🔰 Actores y Casos de Uso
+## 🔰 Disciplina de Requisitos
 
 En esta sección se describen los actores principales que interactúan con el sistema y los casos de uso que representan las funcionalidades clave del proyecto.
 
