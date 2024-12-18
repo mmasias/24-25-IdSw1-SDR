@@ -7,4 +7,5 @@
 
 ## Prototipos
 
-Aquí irán los prototipos del proyecto...
+Documento PDF con los prototipos de las interfaces del sistema.<br>
+[Docutrace Interfaces.pdf](https://github.com/user-attachments/files/18182494/Docutrace.Interfaces.pdf)
