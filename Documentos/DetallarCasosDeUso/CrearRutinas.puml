@@ -4,24 +4,14 @@ top to bottom direction
 
 [*] --> MenuPrincipal
 
-MenuPrincipal --> MenuRutinas : Profesor selecciona "Menú Rutinas"
+MenuPrincipal --> MenuRutinasYEjercicios : Profesor selecciona "Menú Rutinas y Ejercicios"
 
-MenuRutinas --> CrearRutina : Profesor selecciona "Crear Rutina"
+MenuRutinasYEjercicios --> CrearRutina : Profesor selecciona "Crear Rutina"
 
-state SeleccionarCategoria <<choice>>
-CrearRutina --> SeleccionarCategoria
-note on link
-    Profesor selecciona una categoría general para la rutina, como:
-    - Fuerza
-    - Resistencia
-    - Flexibilidad
-end note
+CrearRutina --> ConfigurarRutina
 
-SeleccionarCategoria --> ConfigurarRutina : Seleccionar "Fuerza"
-SeleccionarCategoria --> ConfigurarRutina : Seleccionar "Resistencia"
-SeleccionarCategoria --> ConfigurarRutina : Seleccionar "Flexibilidad"
 
-ConfigurarRutina --> ElegirEjercicios : Configurar detalles básicos
+ConfigurarRutina --> ElegirEjercicios : Configurar detalles 
 note bottom of ConfigurarRutina
     Detalles básicos incluyen:
     - Nombre de la rutina
@@ -34,14 +24,14 @@ note bottom of ElegirEjercicios
 end note
 
 RevisarRutina --> ElegirEjercicios : Volver a editar ejercicios
-RevisarRutina --> PublicarRutina : Confirmar y publicar
+RevisarRutina --> BotonCrearRutina : Confirmar y publicar
 
-note bottom of PublicarRutina
+note bottom of BotonCrearRutina
     La rutina queda visible para los estudiantes.
 end note
 
-PublicarRutina --> CrearRutina : Crear otra rutina
-PublicarRutina --> MenuRutinas : Volver al menú de rutinas
-PublicarRutina --> [*] : Salir. El profesor vuelve a ir al inicio
+BotonCrearRutina --> CrearRutina : Crear otra rutina
+BotonCrearRutina --> MenuRutinasYEjercicios : Volver al menú de rutinas
+BotonCrearRutina --> [*] : Salir. 
 
 @enduml
