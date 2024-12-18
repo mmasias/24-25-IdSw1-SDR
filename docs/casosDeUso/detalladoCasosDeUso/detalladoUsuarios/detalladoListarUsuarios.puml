@@ -1,0 +1,70 @@
+@startuml listar_usuarios
+skinparam {
+    NoteBackgroundColor #whiteSmoke
+    ArrowColor #green
+    NoteBorderColor #green
+    linetype polyline
+}
+
+hide empty description
+
+state startState as "LISTANDO_USUARIOS"
+state endState as "LISTANDO_USUARIOS"
+
+startState --> ListarUsuarios
+
+ListarUsuarios --> listarUsuarios
+listarUsuarios --> endState
+
+ListarUsuarios -[#red]-> endState
+
+state ListarUsuarios {
+    state solicitudFiltros as " "
+    state envioFiltros as " "
+    state revisionFiltrosEnviados <<choice>>
+    state usuarioSolicita as "<b>Usuario Solicita:</b> \n Listar usuarios"
+
+    usuarioSolicita -> solicitudFiltros
+    [*] --> solicitudFiltros
+    note on link
+        <b>Sistema Muestra</b>
+        Lista de usuarios
+    end note
+
+    solicitudFiltros -r-> [*]
+    
+
+    solicitudFiltros --> envioFiltros
+    note on link
+        <b>Sistema Solicita</b>
+        * <b> Filtros opcionales </b>
+            - Términos de búsqueda
+            - Nombre del usuario
+            - Email del usuario
+        <b>Sistema Permite</b>
+        * Listar usuarios
+    end note
+
+    envioFiltros --> revisionFiltrosEnviados
+    note on link
+        <b>Usuario Introduce</b>
+        * <b> Filtros opcionales </b>
+            - Términos de búsqueda
+            - Nombre del usuario
+            - Email del usuario
+    end note
+
+    revisionFiltrosEnviados -[#red]-> solicitudFiltros
+    note on link
+        <b>Sistema Muestra</b>
+        Mensaje de error
+    end note
+
+    revisionFiltrosEnviados --> [*]
+    note on link
+        <b>Sistema Muestra</b>
+        Lista de usuarios filtrada
+
+    end note
+}
+@enduml
