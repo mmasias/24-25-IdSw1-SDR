@@ -1,55 +1,57 @@
 @startuml
 
-[*] --> MenuPrincipal 
+top to bottom direction
 
-MenuPrincipal --> MenuRutinas : Alumno selecciona "Menu Rutinas"
-MenuPrincipal --> [*] : "Finalizar desde Menú Principal". Alumno vuelve al menu inicial
+[*] --> MenuPrincipal
+
+MenuPrincipal --> MenuRutinas : Alumno selecciona "Menú Rutinas"
 note on link
     El sistema muestra las rutinas disponibles:
     - Pecho.
     - Espalda.
-    - Piernas
+    - Piernas.
 end note
-MenuRutinas -u-> ListaDeRutinas : Alumno accede a Lista de Rutinas disponibles
-MenuRutinas -u-> [*] : "Finalizar desde Menú de Rutinas". Alumno vuelve al menu inicial
 
+MenuRutinas --> ListaDeRutinas : Acceder a lista de rutinas
+MenuRutinas --> [*] : Alumno finaliza desde "Menú de Rutinas"
+note on link
+    El alumno puede regresar al Menú Principal desde aquí.
+end note
 
-ListaDeRutinas -u-> TipoDeRutina
+ListaDeRutinas --> TipoDeRutina : Alumno selecciona tipo de rutina
 note on link
     El alumno decide realizar una rutina de pecho, espalda o piernas.
 end note
 
 state TipoDeRutina <<choice>>
-TipoDeRutina -u-> RutinaDePecho : Alumno selecciona "Rutina de Pecho"
-TipoDeRutina -u-> RutinaDeEspalda : Alumno selecciona "Rutina de Espalda"
-TipoDeRutina -u-> RutinaDePiernas : Alumno selecciona "Rutina de Piernas"
+TipoDeRutina --> RutinaDePecho : "Rutina de Pecho"
+TipoDeRutina --> RutinaDeEspalda : "Rutina de Espalda"
+TipoDeRutina --> RutinaDePiernas : "Rutina de Piernas"
 
-RutinaDePecho -u-> RealizarRutina
+RutinaDePecho --> CompletarRutina : Comienza rutina de pecho
 note on link
-    El alumno comienza la rutina de pecho.
-    
+    El alumno comienza los ejercicios de la rutina de pecho.
 end note
-RutinaDeEspalda -u-> RealizarRutina
+RutinaDeEspalda --> CompletarRutina : Comienza rutina de espalda
 note on link
-    El alumno comienza la rutina de espalda.
-    
+    El alumno comienza los ejercicios de la rutina de espalda.
 end note
-RutinaDePiernas -u-> RealizarRutina
+RutinaDePiernas --> CompletarRutina : Comienza rutina de piernas
 note on link
-    El alumno comienza la rutina de piernas.
-    
+    El alumno comienza los ejercicios de la rutina de piernas.
 end note
 
-RealizarRutina -u-> GuardarRegistro
+CompletarRutina --> GuardarRegistro
 note on link
-    El sistema guarda el registro de la rutina utilizada y de la carga de cada ejercicio
+    El sistema guarda el registro de la rutina realizada,
+    incluyendo la carga de cada ejercicio.
 end note
 
-GuardarRegistro  -u-> MenuRutinas : Alumno regresa al Menú de Rutinas
-GuardarRegistro -u-> [*] : Alumno finaliza después de enviar la evidencia. Alumno vuelve al menu inicial.
+GuardarRegistro --> MenuRutinas : Regresar al Menú de Rutinas
+GuardarRegistro --> [*] : Finalizar y volver al Menú Principal
 note on link
-    Registro guardado correctamente. 
-    Opción de finalizar o continuar con otras rutinas.
+    Registro guardado correctamente. El alumno puede
+    elegir finalizar o continuar con otras rutinas.
 end note
 
 @enduml
