@@ -15,7 +15,7 @@
 
 <table>
   <tr>
-    <td>
+    <td style="vertical-align: top;">
       <h2>🔰 Modelo de Dominio</h2>
       <p>El <a href="docs/modeloDeDominio/README.md">modelo de dominio</a> de <em>DOCUTRACE</em> define las entidades principales y sus relaciones dentro del sistema.</p>
       <p>Para describir el modelo del dominio se utilizan los siguientes artefactos:</p>
@@ -25,7 +25,7 @@
         <li><a href="docs/modeloDeDominio/README.md#diagrama-de-estados">Diagrama de Estados</a></li>
       </ul>
     </td>
-    <td>
+    <td style="vertical-align: top;">
       <h2>🔰 Disciplina de Requisitos</h2>
       <p>En esta sección se describen los actores principales que interactúan con el sistema y los casos de uso que representan las funcionalidades clave del proyecto.</p>
       <p>Se pueden ver más detalles sobre esto con las siguientes herramientas:</p>
@@ -34,7 +34,6 @@
         <li><a href="docs/casosDeUso/diagramaDeContexto/README.md">Diagrama de Contexto</a></li>
         <li><a href="docs/casosDeUso/diagramaCasosDeUso/README.md">Diagrama de Casos de Uso</a></li>
         <li><a href="docs/casosDeUso/detalladoCasosDeUso/README.md">Detallado de Casos de Uso</a></li>
-        <li><a href="docs/casosDeUso/prototipos/README.md">Prototipos</a></li>
       </ul>
     </td>
   </tr>
