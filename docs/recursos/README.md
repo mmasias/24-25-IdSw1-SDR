@@ -5,28 +5,6 @@
 
 </div>
 
-# Diagrama Casos de Uso
+## 🔰 Recursos Adicionales
 
-## CRUD de Usuarios
-
-![](./manejoUsuarios/manejoUsuarios.svg)
-
-## CRUD de Grupos
-
-![](./manejoGrupos/manejoGrupo.svg)
-
-## Envío de Documentos
-
-![](./envioDocumentos/envioDocumentos.svg)
-
-## Visualización y Confirmación de Documentos
-
-![](./visualizacionConfirmacionDocumentos/visualizacionConfirmacionDocumentos.svg)
-
-## Manejo de sesión
-
-![](./manejoSesion/manejoSesion.svg)
-
-## Manejo de notificaciones
-
-![](./tiempo/manejoNotificaciones/manejoNotificaciones.svg)
+Aquí podrás encontrar imágenes, documentos PDF y otros materiales que complementan la información presentada y proporcionan un entendimiento más profundo del proyecto.
