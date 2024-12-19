@@ -7,6 +7,14 @@
 
 # Diagrama Casos de Uso
 
+## Manejo de sesión
+
+![](./manejoSesion/manejoSesion.svg)
+
+## Abrir Menú Principal
+
+![](./menuPrincipal/abrirMenuPrincipal.svg)
+
 ## CRUD de Usuarios
 
 ![](./manejoUsuarios/manejoUsuarios.svg)
@@ -22,10 +30,6 @@
 ## Visualización y Confirmación de Documentos
 
 ![](./visualizacionConfirmacionDocumentos/visualizacionConfirmacionDocumentos.svg)
-
-## Manejo de sesión
-
-![](./manejoSesion/manejoSesion.svg)
 
 ## Manejo de notificaciones
 
