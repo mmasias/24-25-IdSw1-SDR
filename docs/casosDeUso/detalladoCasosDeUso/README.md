@@ -87,4 +87,10 @@
 ### Detallado de Listar Usuarios
 
 ![](./detalladoUsuarios/detalladoListarUsuario.svg)
+
+## Detallado de Notificaciones
+
+### Detallado de Envío de Notificaciones
+
+![](./detalladoNotificaciones/detalladoEnvioNotificaciones.svg)
 ---
