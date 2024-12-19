@@ -94,3 +94,25 @@
 ## Notificaciones
 
 ![](./prototipadoNotificaciones/notificaciones.png)
+
+## Usuarios
+
+### Listar Usuarios
+
+![](./prototipadoUsuarios/listarUsuarios.png)
+
+### Crear Usuario
+
+![](./prototipadoUsuarios/crearUsuario.png)
+
+### Ver Usuario
+
+![](./prototipadoUsuarios/verUsuario.png)
+
+### Actualizar Usuario
+
+![](./prototipadoUsuarios/actualizarUsuario.png)
+
+### Borrar Usuario
+
+![](./prototipadoUsuarios/borrarUsuario.png)
