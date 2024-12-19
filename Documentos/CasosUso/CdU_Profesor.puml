@@ -1,24 +1,39 @@
 left to right direction
 actor Profesor
 
+package Rutinas{
+    usecase "Ver Rutina" as VerRutina
+    usecase "Usar Rutina" as UsarRutinas
+    usecase "Crear Rutina" as CrearRutinaPersonalizada
+}
+
+package Ejercicios{
+    usecase "Ver Ejercicio" as VerEjercicio
+    usecase "Crear Ejercicio" as CrearEjercicio
+    usecase "Editar Ejercicio" as EditarEjercicio
+    usecase "SeleccionarEjercicios" as SeleccionarEjercicios
+}
+
+package Retos{
+    usecase "Ver Reto Opcional" as RetoOpcional
+    usecase "Ver Reto Obligatorio" as RetoObligatorio
+    usecase "Editar Reto" as EditarReto
+    usecase "Crear Reto" as CrearReto
+}
+
+package Perfil {
+    usecase "Ver Perfil" as VerPerfil
+    usecase "Mostrar QR para Centros Deportivos " as MostrarQR
+}
+
+package Clases{
+    usecase "Crear Clase" as CrearClase
+    usecase "Ver Clasificacion Clases" as VerClasificacionClases
+    usecase "Ver Clasificacion alumnos" as VerClasificacionAlumnos
+}
+
 usecase "Iniciar Sesión" as IniciarSesion
-usecase "Ver Rutina" as VerRutina
-usecase "Usar Rutina" as UsarRutinas
-usecase "Crear Rutina" as CrearRutinaPersonalizada
-usecase "Ver Ejercicio" as VerEjercicio
-usecase "Crear Ejercicio" as CrearEjercicio
-usecase "Editar Ejercicio" as EditarEjercicio
-usecase "Ver Reto Opcional" as RetoOpcional
-usecase "Ver Reto Obligatorio" as RetoObligatorio
-usecase "Editar Reto" as EditarReto
-usecase "Crear Reto" as CrearReto
-usecase "Ver Clasificacion Clases" as VerClasificacionClases
-usecase "Ver perfil" as VerPerfil
-usecase "Ver Clasificacion alumnos" as VerClasificacionAlumnos
-usecase "Mostrar QR para Centros Deportivos " as MostrarQR
-usecase "CrearClase" as CrearClase
 usecase "CerrarSesion" as CerrarSesion
-usecase "SeleccionarEjercicios" as SeleccionarEjercicios
 
 Profesor --> IniciarSesion
 Profesor --> UsarRutinas
@@ -34,6 +49,6 @@ Profesor --> VerClasificacionClases
 Profesor --> VerPerfil
 Profesor --> MostrarQR
 Profesor --> CrearClase
-Profesor --> CerrarSesion 
+Profesor --> CerrarSesion
 Profesor --> VerRutina
 Profesor --> EditarEjercicio
