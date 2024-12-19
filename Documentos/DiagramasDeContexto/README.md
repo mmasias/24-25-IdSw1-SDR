@@ -1,6 +1,6 @@
 # Diagrama de Contexto
 
-# Diagrama de Contexto del Usuario No Registrado
+## Diagrama de Contexto del Usuario No Registrado
 
 ![Modelo de Contexto Usuario No Registrado](../Imagenes/DiagramasContexto/UsuarioNoRegistradoContexto.svg)
 
@@ -8,24 +8,24 @@
 
 ---
 
-# Diagrama de Contexto del Administrador
+## Diagrama de Contexto del Administrador
 
-![Modelo de Contexto Administrador](Documentos\Imagenes\DiagramasContexto\AdminContexto.svg)
+![Modelo de Contexto Administrador](../Imagenes/DiagramasContexto/AdminContexto.svg)
 
-[Ver código](Documentos\DiagramasDeContexto\AdministradorContexto.puml)
-
----
-
-# Diagrama de Contexto del Alumno
-
-![Modelo de Contexto Alumno](Documentos\Imagenes\DiagramasContexto\AlumnoContexto.svg)
-
-[Ver código](Documentos\DiagramasDeContexto\AlumnosContexto.puml)
+[Ver código](AdministradorContexto.puml)
 
 ---
 
-# Diagrama de Contexto del Profesor
+## Diagrama de Contexto del Alumno
 
-![Modelo de Contexto Profesor](Documentos\Imagenes\DiagramasContexto\ProfesorContexto.svg)
+![Modelo de Contexto Alumno](../Imagenes/DiagramasContexto/AlumnoContexto.svg)
 
-[Ver código](Documentos\DiagramasDeContexto\ProfesorContexto.puml)
+[Ver código](AlumnosContexto.puml)
+
+---
+
+## Diagrama de Contexto del Profesor
+
+![Modelo de Contexto Profesor](../Imagenes/DiagramasContexto/ProfesorContexto.svg)
+
+[Ver código](ProfesorContexto.puml)
