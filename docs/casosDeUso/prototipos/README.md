@@ -90,3 +90,7 @@
 ### Descargar PDF Informe de Acciones
 
 ![](./prototipoAcciones/prototipoDescargaPDFAuditoria.png)
+
+## Notificaciones
+
+![](./prototipadoNotificaciones/notificaciones.png)
