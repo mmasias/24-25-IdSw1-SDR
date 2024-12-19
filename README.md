@@ -18,7 +18,11 @@
 [🔗 Acceso al Modelo de Dominio](https://github.com/celiabecerril/24-25-IdSw1-SDR/tree/main/MdD)
 
 ### 🎭 Disciplina de Requisitos
-[🔗 Acceso Actores, Casos de Uso, Diagramas de Contexto](Documentos/Actores/Actores_y_CasosDeUso.md)
+| Enlaces |
+|-----------------------------------------------------------------------------|
+| [🔗 Actores, Casos de Uso](Documentos/Actores/Actores.md) |
+| [🔗 Casos de Uso](Documentos/CasosUso/README.md) |
+| [🔗 Diagramas de Contexto](Documentos/DiagramasDeContexto/README.md) |
 
 
 
