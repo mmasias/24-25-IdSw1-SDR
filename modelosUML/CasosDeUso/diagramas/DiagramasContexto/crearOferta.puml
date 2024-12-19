@@ -11,7 +11,7 @@ rectangle "Creación de Ofertas de Trabajo" {
 actor Empresa as E
 actor Administrador as A
 
-E --> RF : "Solicita Crear"
+RF <-- E : "Solicita Crear"
 RF --> VC : <<include>>
 VC --> GO : <<include>>
 GO --> NA : <<extend>>

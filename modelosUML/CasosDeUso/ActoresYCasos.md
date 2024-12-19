@@ -81,12 +81,42 @@ Este documento contiene los diagramas de contexto de los casos de uso para el si
 
 Este diagrama muestra cómo la **Empresa** solicita la creación de una oferta, la cual es validada y guardada como pendiente. Luego, el **Administrador** es notificado para revisarla.
 
-![Crear Oferta de Trabajo](svg/crearOfertaEmpresa.svg)
+<<<<<<< HEAD
+![Crear Oferta de Trabajo](crearOferta.png)
+=======
+![Crear Oferta de Trabajo](crearOferta.png)
+>>>>>>> a9df0a3b3fda7e4bdb3866a988cce048c047fc4e
 
 ### 2. Buscar Oferta de Trabajo
 
 El **Alumni** puede realizar búsquedas aplicando filtros y viendo los detalles de las ofertas. Las actividades también son registradas automáticamente.
 
-![Buscar Oferta de Trabajo](svg/alumniBuscaOferta.svg)
+<<<<<<< HEAD
+![Buscar Oferta de Trabajo](buscarOferta.png)
+=======
+![Buscar Oferta de Trabajo](buscarOferta.png)
+>>>>>>> a9df0a3b3fda7e4bdb3866a988cce048c047fc4e
 
+### 3. Aceptar Oferta de Trabajo
 
+El **Administrador** revisa las ofertas pendientes, puede aceptarlas o rechazarlas, y notifica a la **Empresa** sobre el resultado.
+
+![Aceptar Oferta de Trabajo](aceptarOferta.png)
+
+### 4. Postular a Oferta de Trabajo
+
+El **Alumni** inicia sesión, busca una oferta, rellena un formulario, adjunta su CV y envía su postulación. La **Empresa** es notificada tras el envío.
+
+![Postular a Oferta de Trabajo](postularOferta.png)
+
+### 5. Cerrar Oferta de Trabajo
+
+El **Administrador** puede cerrar ofertas activas tras gestionarlas y confirmar el cierre. La **Empresa** es notificada de este estado final.
+
+![Cerrar Oferta de Trabajo](cerrarOferta.png)
+
+### 6. Cancelar Oferta de Trabajo
+
+El **Administrador** tiene la opción de cancelar una oferta, ingresando un motivo, y notificando a la **Empresa** sobre la cancelación.
+
+![Cancelar Oferta de Trabajo](cancelarOferta.png)
