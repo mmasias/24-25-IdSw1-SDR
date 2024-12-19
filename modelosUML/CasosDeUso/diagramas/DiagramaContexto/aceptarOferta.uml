@@ -1,0 +1,25 @@
+@startuml
+
+' Diagrama de Contexto: Aceptar oferta de trabajo
+rectangle "Aceptar Ofertas de Trabajo" {
+    usecase "Revisar Oferta" as RO
+    usecase "Aceptar Oferta" as AO
+    usecase "Rechazar Oferta" as RE
+    usecase "Cambiar Estado" as CE
+    usecase "Notificar Empresa" as NE
+    usecase "Ver Ofertas Pendientes" as VP
+}
+
+actor Administrador as ADM
+actor Empresa as EMP
+
+ADM --> VP : "Consulta Pendientes"
+VP --> RO : <<include>>
+RO --> AO : "Realiza Aceptación"
+RO --> RE : "Realiza Rechazo"
+AO --> CE : <<include>>
+RE --> CE : <<include>>
+CE --> NE : <<extend>>
+NE --> EMP : "Recibe Notificación"
+
+@enduml
