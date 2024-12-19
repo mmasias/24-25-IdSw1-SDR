@@ -15,7 +15,7 @@ rectangle "Postular a Ofertas de Trabajo" {
 actor Alumni as AL
 actor Empresa as EMP
 
-AL --> IS : "Inicia Sesión"
+IS <-- AL : "Inicia Sesión"
 IS --> BU : "Busca Ofertas"
 BU --> VDO : <<include>>
 VDO --> RF : "Rellena Formulario"
