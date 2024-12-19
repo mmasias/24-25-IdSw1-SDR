@@ -1,6 +1,6 @@
-@startuml EnvioDocumentos
+@startuml ManejoSesion
 left to right direction
-actor "Administrador General" as AdminGeneral
+actor "Administrador" as Administrador
 actor "Usuario" as Usuario
 actor "Destinatario" as Destinatario
 
@@ -9,7 +9,7 @@ package "Manejo de Sesión" {
     usecase "Cerrar Sesión" as MS2
 }
 
-AdminGeneral --|> Usuario
+Administrador --|> Usuario
 Usuario <|- Destinatario
 Usuario --> MS1
 Usuario --> MS2
