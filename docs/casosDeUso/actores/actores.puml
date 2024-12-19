@@ -1,12 +1,12 @@
 @startuml
 actor "Destinatario" as Destinatario
 actor "Usuario" as Usuario
-actor "Administrador General" as AdminGeneral
+actor "Administrador" as Administrador
 
 Destinatario <|-- Usuario : Puede crear destinatarios y enviar documentos
-Usuario <|-- AdminGeneral : Puede crear usuarios y destinatarios, y enviar documentos
+Usuario <|-- Administrador : Puede crear usuarios y destinatarios, y enviar documentos
 
-note right of AdminGeneral
+note right of Administrador
     Puede hacer todo lo que hace un Usuario
     más las acciones de administración de usuarios
 end note
