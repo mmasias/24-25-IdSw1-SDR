@@ -1,30 +1,34 @@
-@startuml
 left to right direction
-
 actor Alumno
 
-usecase "Ver Clasificacion" as VerClasificaciones
-usecase "Usar Rutina" as UsarRutinas
-usecase "Completar Reto Obligatorio" as CompletarRetosObligatorios
-usecase "Completar Reto Opcional" as CompletarRetosOpcionales
-usecase "Inscribir en Clase" as InscribirseClases
-usecase "Mostrar QR para Centros Deportivos" as UsarQR
 usecase "Iniciar Sesión" as IniciarSesion
-usecase "Cerrar Sesión" as CerrarSesion
-usecase "Volver al Inicio" as VolverInicio
+usecase "Usar Rutina" as UsarRutinas
 usecase "Crear Rutina" as CrearRutinaPersonalizada
-usecase "Seleccionar Ejercicio" as SeleccionarEjercicios
+usecase "Ver Ejercicio" as VerEjercicio
+usecase "Ver Reto Opcional" as RetoOpcional
+usecase "Ver Reto Obligatorio" as RetoObligatorio
+usecase "Subir Evidencia" as SubirEvidencia
+usecase "Ver Clasificacion" as VerClasificaciones
+usecase "Ver perfil" as VerPerfil
+usecase "Ver insignias" as VerInsignias
+usecase "Mostrar QR para Centros Deportivos " as MostrarQR
+usecase "InscribirEnClase" as InscribirClase
+usecase "CerrarSesion" as CerrarSesion
+usecase "SeleccionarEjercicios" as SeleccionarEjercicios
 
-Alumno --> VerClasificaciones
-Alumno --> UsarRutinas
-Alumno --> CompletarRetosObligatorios
-Alumno --> CompletarRetosOpcionales
-Alumno --> InscribirseClases
-Alumno --> UsarQR
 Alumno --> IniciarSesion
-Alumno --> CerrarSesion
-Alumno --> VolverInicio
+Alumno --> UsarRutinas
 Alumno --> CrearRutinaPersonalizada
+Alumno --> VerEjercicio
+Alumno --> RetoOpcional
+Alumno --> RetoObligatorio
+Alumno --> SubirEvidencia
+Alumno --> VerClasificaciones
+Alumno --> VerPerfil
+Alumno --> VerInsignias
+Alumno --> MostrarQR
+Alumno --> InscribirClase
+Alumno --> CerrarSesion 
 
 CrearRutinaPersonalizada --> SeleccionarEjercicios : <<include>>
 
