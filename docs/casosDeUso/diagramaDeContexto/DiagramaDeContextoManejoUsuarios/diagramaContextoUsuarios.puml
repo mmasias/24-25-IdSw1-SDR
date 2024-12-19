@@ -50,6 +50,6 @@ BorrandoUsuario --> Usuarios
 
 Usuarios --> MenuPrincipal
     note on link
-        Listar mensajes
+        Abrir Menú Principal
     end note
 @enduml

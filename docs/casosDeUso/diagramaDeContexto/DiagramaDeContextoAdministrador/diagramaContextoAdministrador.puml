@@ -1,7 +1,6 @@
 @startuml diagramaContextoAdministrador
 state "MENU_PRINCIPAL" as MenuPrincipal
-state "CREANDO_MENSAJE" as CreandoMensaje
-state "LEYENDO_MENSAJE" as LeyendoMensaje
+state "LISTANDO_MENSAJES" as ListandoMensaje
 state "LISTANDO_GRUPOS" as Grupos
 state "LISTANDO_USUARIOS" as Usuarios
 state "LISTANDO_ACCIONES" as Auditoria
@@ -18,34 +17,14 @@ MenuPrincipal -> [*]
         cierra sesión
     end note
 
-MenuPrincipal --> LeyendoMensaje
-    note on link
-        Abrir mensaje
-    end note
-
-LeyendoMensaje --> MenuPrincipal
-    note on link
-        Cerrar mensaje
-    end note
-
-MenuPrincipal --> CreandoMensaje
-    note on link
-        Crear mensaje
-    end note
-
-CreandoMensaje --> CreandoMensaje 
-    note on link
-        Crear envio
-    end note
-
-LeyendoMensaje --> LeyendoMensaje 
-    note on link
-        Descargar informe del envío
-    end note
-
-CreandoMensaje --> MenuPrincipal
+MenuPrincipal --> ListandoMensaje
     note on link
         Listar mensajes
+    end note
+
+ListandoMensaje --> MenuPrincipal
+    note on link
+        Abrir Menú Principal
     end note
 
 MenuPrincipal --> Grupos
@@ -55,7 +34,7 @@ MenuPrincipal --> Grupos
 
 Grupos --> MenuPrincipal
     note on link
-        Listar mensajes
+        Abrir Menú Principal
     end note
 
 MenuPrincipal --> Usuarios
@@ -65,7 +44,7 @@ MenuPrincipal --> Usuarios
 
 Usuarios--> MenuPrincipal
     note on link
-        Listar mensajes
+        Abrir Menú Principal
     end note
 
 MenuPrincipal --> Auditoria
@@ -75,7 +54,7 @@ MenuPrincipal --> Auditoria
 
 Auditoria --> MenuPrincipal
     note on link
-        Listar mensajes
+        Abrir Menú Principal
     end note
 
 @enduml

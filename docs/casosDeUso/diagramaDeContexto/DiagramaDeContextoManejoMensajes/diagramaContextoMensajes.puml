@@ -1,0 +1,56 @@
+@startuml diagramaContextoMensajes
+state "MENU_PRINCIPAL" as MenuPrincipal
+state "LISTANDO_MENSAJES" as Mensajes
+state "CREANDO_MENSAJE" as CreandoMensaje
+state "VIENDO_MENSAJE" as ViendoMensaje
+state "ACTUALIZANDO_MENSAJE" as ActualizandoMensaje
+
+[*] --> MenuPrincipal
+
+MenuPrincipal --> Mensajes
+    note on link
+        Listar mensajes
+    end note
+
+Mensajes --> CreandoMensaje
+    note on link
+        Crear nuevo 
+        mensaje
+    end note
+
+CreandoMensaje --> CreandoMensaje
+    note on link
+        Crear envío
+    end note
+
+CreandoMensaje --> Mensajes
+    note on link
+        Listar mensajes
+    end note
+
+Mensajes --> ViendoMensaje
+    note on link
+        Ver mensaje
+    end note
+
+ViendoMensaje --> Mensajes
+    note on link
+        Listar mensajes
+    end note
+
+Mensajes --> ActualizandoMensaje
+    note on link
+        Actualizar un mensaje
+    end note
+
+ActualizandoMensaje --> Mensajes
+    note on link
+        Listar 
+        mensajes
+    end note
+
+Mensajes --> MenuPrincipal
+    note on link
+        Abrir Menú Principal
+    end note
+@enduml
