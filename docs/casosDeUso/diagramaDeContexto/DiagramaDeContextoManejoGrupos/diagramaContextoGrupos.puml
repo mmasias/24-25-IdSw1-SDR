@@ -1,9 +1,9 @@
 @startuml diagramaContextoGrupos
 state "MENU_PRINCIPAL" as MenuPrincipal
 state "LISTANDO_GRUPOS" as Grupos
-state "CREANDO_GRUPOS" as CreandoGrupo
-state "ACTUALIZANDO_GRUPOS" as ActualizandoGrupo
-state "BORRANDO_GRUPOS" as BorrandoGrupo
+state "CREANDO_GRUPO" as CreandoGrupo
+state "ACTUALIZANDO_GRUPO" as ActualizandoGrupo
+state "BORRANDO_GRUPO" as BorrandoGrupo
 
 [*] --> MenuPrincipal
 
@@ -29,8 +29,7 @@ Grupos --> ActualizandoGrupo
 
 ActualizandoGrupo --> Grupos
     note on link
-        Listar 
-        grupos
+        Listar grupos
     end note
 
 Grupos --> BorrandoGrupo
@@ -41,12 +40,11 @@ Grupos --> BorrandoGrupo
 
 BorrandoGrupo --> Grupos
     note on link
-        Listar 
-        grupos
+        Listar grupos
     end note
 
 Grupos --> MenuPrincipal
     note on link
-        Listar mensajes
+        Abrir Menú Principal
     end note
 @enduml

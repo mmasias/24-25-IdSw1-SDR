@@ -1,22 +1,22 @@
 @startuml diagramaContextoDestinatario
-state "MENU_PRINCIPAL" as MenuPrincipal
+state "LISTANDO_MENSAJES" as ListarMensajes
 state "LEYENDO_MENSAJE" as LeyendoMensaje
 state "LEYENDO_DOCUMENTO" as LeyendoDocumento
 
-[*] --> MenuPrincipal
+[*] --> ListarMensajes
     note on link
         Destinatario 
         inicia sesión
     end note
 
-MenuPrincipal -> [*]
+ListarMensajes -> [*]
     note on link
         Destinatario 
         cierra sesión
     end note
 
 
-MenuPrincipal --> LeyendoMensaje
+ListarMensajes --> LeyendoMensaje
     note on link
         Abrir mensaje
     end note
@@ -37,7 +37,7 @@ LeyendoDocumento --> LeyendoMensaje
         Cerrar visualización
     end note
 
-LeyendoMensaje --> MenuPrincipal
+LeyendoMensaje --> ListarMensajes
     note on link
         Cerrar mensaje
     end note
