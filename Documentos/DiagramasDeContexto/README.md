@@ -2,7 +2,7 @@
 
 # Diagrama de Contexto del Usuario No Registrado
 
-![Modelo de Contexto Usuario No Registrado](Documentos\Imagenes\DiagramasContexto\UsuarioNoRegistradoContexto.svg)
+![Modelo de Contexto Usuario No Registrado](Documentos/Imagenes/DiagramasContexto/UsuarioNoRegistradoContexto.svg)
 
 [Ver código](Documentos\DiagramasDeContexto\UsuarioNoRegistradoContexto.puml)
 
