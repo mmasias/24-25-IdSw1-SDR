@@ -12,15 +12,14 @@ package "AGP" {
   }
 
   class AsignaturaGrado {
-    - idGrupo : int
-    - idAsignatura : int
     - idGrado : int
-    - nombreGrupo : String
+    - idAsignatura : int
+    - nombreGrado : String
   }
 
   class AsignaturaGradoProfesor {
-    - idAsignaturaGrupoProfesor : int
-    - idAsignaturaGrupo : int
+    - idAsignaturaGradoProfesor : int
+    - idAsignaturaGrado : int
     - idProfesor : int
   }
 
@@ -47,7 +46,7 @@ class Horario {
 
 class HorarioAsignaturaAula {
   - idHorarioAsignaturaAula : int
-  - idAsignaturaGrupoProfesor : int
+  - idAsignaturaGradoProfesor : int
   - idHorario : int
   - idAula : int
 }
@@ -61,5 +60,4 @@ class Aula {
 AsignaturaGradoProfesor --> Horario
 Horario *-- HorarioAsignaturaAula
 Aula --> HorarioAsignaturaAula
-"AGP" --> HorarioAsignaturaAula
 @enduml
