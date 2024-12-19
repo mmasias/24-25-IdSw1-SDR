@@ -11,10 +11,9 @@ object Asignatura {
 }
 
 object AsignaturaGrado {
-  idGrupo = 1
-  idAsignatura = 101
   idGrado = 1
-  nombreGrupo = "Grupo A"
+  idAsignatura = 101
+  nombreGrado = "Grado A"
 }
 
 object Profesor {
@@ -25,8 +24,8 @@ object Profesor {
 }
 
 object AsignaturaGradoProfesor {
-  idAsignaturaGrupoProfesor = 301
-  idAsignaturaGrupo = 1
+  idAsignaturaGradoProfesor = 301
+  idAsignaturaGrado = 1
   idProfesor = 201
 }
 
@@ -45,7 +44,7 @@ object Aula {
 
 object HorarioAsignaturaAula {
   idHorarioAsignaturaAula = 601
-  idAsignaturaGrupoProfesor = 301
+  idAsignaturaGradoProfesor = 301
   idHorario = 401
   idAula = 501
 }
