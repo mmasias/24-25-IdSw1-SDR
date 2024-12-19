@@ -71,4 +71,6 @@ La prioridad debe basarse en su importancia estratégica, valor para el cliente,
 - **Actor**: Administrador
 - **Descripción**: Administrador cancela una oferta por incumplimiento
 
+## 5. Diagramas de contexto
 
+Este apartado contiene los diagramas de contexto de los casos de uso. Cada diagrama describe las interacciones clave entre los actores y los casos de uso involucrados.
