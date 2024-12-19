@@ -72,3 +72,4 @@ La prioridad debe basarse en su importancia estratégica, valor para el cliente,
 - **Descripción**: Administrador cancela una oferta por incumplimiento
 
 
+
