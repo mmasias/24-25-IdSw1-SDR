@@ -23,6 +23,7 @@
 | [🔗 Actores](Documentos/Actores/Actores.md) |
 | [🔗 Casos de Uso](Documentos/CasosUso/README.md) |
 | [🔗 Diagramas de Contexto](Documentos/DiagramasDeContexto/README.md) |
+| [🔗 Detallar Casos de Uso](Documentos/DetallarCasosDeUso/README.md) |
 
 
 
