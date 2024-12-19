@@ -20,7 +20,7 @@
 ### 🎭 Disciplina de Requisitos
 | Enlaces |
 |-----------------------------------------------------------------------------|
-| [🔗 Actores, Casos de Uso](Documentos/Actores/Actores.md) |
+| [🔗 Actores](Documentos/Actores/Actores.md) |
 | [🔗 Casos de Uso](Documentos/CasosUso/README.md) |
 | [🔗 Diagramas de Contexto](Documentos/DiagramasDeContexto/README.md) |
 
