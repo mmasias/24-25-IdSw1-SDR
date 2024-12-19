@@ -1,20 +1,36 @@
 left to right direction
 actor Alumno
 
+package Rutinas{
+  usecase "Usar Rutina" as UsarRutinas
+  usecase "Crear Rutina" as CrearRutinaPersonalizada
+}
+
+package Ejercicios{
+  usecase "SeleccionarEjercicios" as SeleccionarEjercicios
+  usecase "Ver Ejercicio" as VerEjercicio
+}
+
+package Retos{
+  usecase "Ver Reto Opcional" as RetoOpcional
+  usecase "Ver Reto Obligatorio" as RetoObligatorio
+  usecase "Subir Evidencia" as SubirEvidencia
+}
+
+package Perfil{
+  usecase "Ver perfil" as VerPerfil
+  usecase "Ver insignias" as VerInsignias
+  usecase "Mostrar QR para Centros Deportivos " as MostrarQR
+}
+
+package Clases{
+  usecase "Ver Clasificacion" as VerClasificaciones
+  usecase "InscribirEnClase" as InscribirClase
+}
+
 usecase "Iniciar Sesión" as IniciarSesion
-usecase "Usar Rutina" as UsarRutinas
-usecase "Crear Rutina" as CrearRutinaPersonalizada
-usecase "Ver Ejercicio" as VerEjercicio
-usecase "Ver Reto Opcional" as RetoOpcional
-usecase "Ver Reto Obligatorio" as RetoObligatorio
-usecase "Subir Evidencia" as SubirEvidencia
-usecase "Ver Clasificacion" as VerClasificaciones
-usecase "Ver perfil" as VerPerfil
-usecase "Ver insignias" as VerInsignias
-usecase "Mostrar QR para Centros Deportivos " as MostrarQR
-usecase "InscribirEnClase" as InscribirClase
 usecase "CerrarSesion" as CerrarSesion
-usecase "SeleccionarEjercicios" as SeleccionarEjercicios
+
 
 Alumno --> IniciarSesion
 Alumno --> UsarRutinas
