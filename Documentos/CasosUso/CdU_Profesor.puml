@@ -1,27 +1,39 @@
-@startuml
 left to right direction
-
 actor Profesor
 
-usecase "Crear Rutina" as CrearRutinas
-usecase "Seleccionar Ejercicio" as SeleccionarEjercicios
-usecase "Subir Ejercicio" as SubirEjercicios
-usecase "Crear Reto Obligatorio" as CrearRetosObligatorios
-usecase "Crear Reto Opcional" as CrearRetosOpcionales
-usecase "Ver Clase y Alumno" as VerClasesAlumnos
 usecase "Iniciar Sesión" as IniciarSesion
-usecase "Cerrar Sesión" as CerrarSesion
-usecase "Volver al Inicio" as VolverInicio
+usecase "Ver Rutina" as VerRutina
+usecase "Usar Rutina" as UsarRutinas
+usecase "Crear Rutina" as CrearRutinaPersonalizada
+usecase "Ver Ejercicio" as VerEjercicio
+usecase "Crear Ejercicio" as CrearEjercicio
+usecase "Editar Ejercicio" as EditarEjercicio
+usecase "Ver Reto Opcional" as RetoOpcional
+usecase "Ver Reto Obligatorio" as RetoObligatorio
+usecase "Editar Reto" as EditarReto
+usecase "Crear Reto" as CrearReto
+usecase "Ver Clasificacion Clases" as VerClasificacionClases
+usecase "Ver perfil" as VerPerfil
+usecase "Ver Clasificacion alumnos" as VerClasificacionAlumnos
+usecase "Mostrar QR para Centros Deportivos " as MostrarQR
+usecase "CrearClase" as CrearClase
+usecase "CerrarSesion" as CerrarSesion
+usecase "SeleccionarEjercicios" as SeleccionarEjercicios
 
-Profesor --> CrearRutinas
-Profesor --> SubirEjercicios
-Profesor --> CrearRetosObligatorios
-Profesor --> CrearRetosOpcionales
-Profesor --> VerClasesAlumnos
 Profesor --> IniciarSesion
-Profesor --> CerrarSesion
-Profesor --> VolverInicio
-
-CrearRutinas --> SeleccionarEjercicios : <<include>>
-
-@enduml
+Profesor --> UsarRutinas
+Profesor --> CrearRutinaPersonalizada
+Profesor --> VerEjercicio
+Profesor --> RetoOpcional
+Profesor --> RetoObligatorio
+Profesor --> CrearReto
+Profesor --> CrearEjercicio
+Profesor --> VerClasificacionAlumnos
+Profesor --> EditarReto
+Profesor --> VerClasificacionClases
+Profesor --> VerPerfil
+Profesor --> MostrarQR
+Profesor --> CrearClase
+Profesor --> CerrarSesion 
+Profesor --> VerRutina
+Profesor --> EditarEjercicio
