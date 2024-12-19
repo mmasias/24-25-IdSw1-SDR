@@ -1,0 +1,21 @@
+@startuml
+
+' Diagrama de Contexto: Crear oferta de trabajo
+rectangle "Creación de Ofertas de Trabajo" {
+    usecase "Rellenar Formulario de Oferta" as RF
+    usecase "Validar Campos" as VC
+    usecase "Guardar Oferta Pendiente" as GO
+    usecase "Notificar Administrador" as NA
+}
+
+actor Empresa as E
+actor Administrador as A
+
+E --> RF : "Solicita Crear"
+RF --> VC : <<include>>
+VC --> GO : <<include>>
+GO --> NA : <<extend>>
+A --> NA : "Recibe Notificación"
+
+@enduml
+

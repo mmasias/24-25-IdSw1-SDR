@@ -1,0 +1,21 @@
+@startuml
+
+' Diagrama de Contexto: Buscar oferta de trabajo
+rectangle "Busqueda de Ofertas de Trabajo" {
+    usecase "Buscar Ofertas de Trabajo" as BO
+    usecase "Aplicar Filtros de Búsqueda" as AF
+    usecase "Mostrar Resultados" as MR
+    usecase "Ver Detalles de Oferta" as VD
+    usecase "Registrar Actividad" as RA
+}
+
+actor Alumni as AL
+
+AL --> BO : "Realiza Búsqueda"
+BO --> AF : <<include>>
+AF --> MR : <<include>>
+MR --> VD : <<extend>>
+AL --> VD : "Consulta Detalles"
+VD --> RA : <<extend>>
+
+@enduml

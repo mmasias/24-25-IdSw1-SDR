@@ -1,0 +1,28 @@
+@startuml
+
+' Diagrama de Contexto: Postular a oferta de trabajo
+rectangle "Postular a Ofertas de Trabajo" {
+    usecase "Iniciar Sesión" as IS
+    usecase "Buscar Oferta" as BU
+    usecase "Ver Detalle Oferta" as VDO
+    usecase "Rellenar Formulario" as RF
+    usecase "Adjuntar CV" as ACV
+    usecase "Validar Datos" as VD
+    usecase "Enviar Postulación" as EP
+    usecase "Notificar Empresa" as NE
+}
+
+actor Alumni as AL
+actor Empresa as EMP
+
+AL --> IS : "Inicia Sesión"
+IS --> BU : "Busca Ofertas"
+BU --> VDO : <<include>>
+VDO --> RF : "Rellena Formulario"
+RF --> ACV : <<include>>
+RF --> VD : <<include>>
+VD --> EP : "Envía Postulación"
+EP --> NE : <<include>>
+NE --> EMP : "Recibe Notificación"
+
+@enduml

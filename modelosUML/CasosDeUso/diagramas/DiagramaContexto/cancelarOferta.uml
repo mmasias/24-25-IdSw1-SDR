@@ -1,0 +1,26 @@
+@startuml
+
+' Diagrama de Contexto: Cancelar oferta de trabajo
+rectangle "Cancelar Ofertas de Trabajo" {
+    usecase "Iniciar Sesión" as IS
+    usecase "Gestionar Ofertas" as GO
+    usecase "Seleccionar Oferta" as SO
+    usecase "Cancelar Oferta" as CO
+    usecase "Ingresar Motivo" as IM
+    usecase "Actualizar Estado" as AE
+    usecase "Notificar Empresa" as NE
+}
+
+actor Administrador as ADM
+actor Empresa as EMP
+
+ADM --> IS : "Inicia Sesión"
+IS --> GO : "Gestiona Ofertas"
+GO --> SO : "Selecciona Oferta"
+SO --> CO : "Cancela Oferta"
+CO --> IM : <<include>>
+IM --> AE : <<include>>
+AE --> NE : <<extend>>
+NE --> EMP : "Recibe Notificación"
+
+@enduml
