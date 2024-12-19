@@ -13,7 +13,7 @@ skinparam state {
 hide empty description
 
 state startState as "VISTA_LOGIN"
-state endState as "VISTA_PRINCIPAL"
+state endState as "MENU_PRINCIPAL"
 
 
 startState --> ManejoLogin

@@ -8,13 +8,12 @@ skinparam {
 
 hide empty description
 
-state startState as "LISTANDO_USUARIOS"
+state startState as "MENU_PRINCIPAL"
 state endState as "LISTANDO_USUARIOS"
 
 startState --> ListarUsuarios
 
-ListarUsuarios --> listarUsuarios
-listarUsuarios --> endState
+ListarUsuarios --> endState
 
 ListarUsuarios -[#red]-> endState
 

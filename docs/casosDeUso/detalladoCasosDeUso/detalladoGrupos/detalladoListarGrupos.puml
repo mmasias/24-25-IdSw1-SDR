@@ -8,7 +8,7 @@ skinparam {
 
 hide empty description
 
-state startState as "LISTANDO_GRUPOS"
+state startState as "MENU_PRINCIPAL"
 state endState as "LISTANDO_GRUPOS"
 
 startState --> ListarGrupos

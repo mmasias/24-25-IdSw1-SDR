@@ -10,12 +10,12 @@ skinparam {
 hide empty description
 
 state startState as "VER_MENSAJE"
-state endState as "DASHBOARD"
+state endState as "LISTANDO_MENSAJES"
 
 startState --> EnviarMensaje
 
-EnviarMensaje--> abrirDashboard
-abrirDashboard--> endState
+EnviarMensaje--> listarMensajes
+listarMensajes--> endState
 EnviarMensaje -[#red]-> endState
 
 state EnviarMensaje{

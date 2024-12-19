@@ -9,8 +9,8 @@ skinparam {
 
 hide empty description
 
-state startState as "DASHBOARD"
-state endState as "DASHBOARD"
+state startState as "LISTANDO_MENSAJES"
+state endState as "LISTANDO_MENSAJES"
 
 startState --> CrearMensaje
 note on link
@@ -18,8 +18,8 @@ note on link
     * Crear mensaje
 end note
 
-CrearMensaje --> abrirDashboard
-abrirDashboard --> endState
+CrearMensaje --> listarMensajes
+listarMensajes--> endState
 CrearMensaje -[#red]-> endState
 
 state CrearMensaje{
