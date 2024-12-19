@@ -14,7 +14,6 @@ rectangle "Cancelar Ofertas de Trabajo" {
 actor Administrador as ADM
 actor Empresa as EMP
 
-ADM --> IS : "Inicia Sesión"
 IS --> GO : "Gestiona Ofertas"
 GO --> SO : "Selecciona Oferta"
 SO --> CO : "Cancela Oferta"
@@ -22,5 +21,7 @@ CO --> IM : <<include>>
 IM --> AE : <<include>>
 AE --> NE : <<extend>>
 NE --> EMP : "Recibe Notificación"
+IS <-- ADM : "Inicia Sesión"
+
 
 @enduml

@@ -15,7 +15,7 @@ rectangle "Cerrar Ofertas de Trabajo" {
 actor Administrador as ADM
 actor Empresa as EMP
 
-ADM --> IS : "Inicia Sesión"
+IS <-- ADM : "Inicia Sesión"
 IS --> GO : "Gestiona Ofertas"
 GO --> SO : "Selecciona Oferta"
 SO --> CO : "Cierra Oferta"
