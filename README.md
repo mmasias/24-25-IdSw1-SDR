@@ -14,9 +14,20 @@
 *DOCUTRACE* es una aplicación en línea diseñada para la gestión documental dentro de una universidad. Su objetivo principal es permitir a los administradores y trabajadores gestionar y acceder a documentos de manera segura y trazable. La aplicación facilita el envío, recepción y firma electrónica de documentos, asegurando la integridad y validez legal de los mismos.
 
 <table>
+<tr>
+<th>
+
+### 🔰 Modelo de Dominio
+</th>
+<th>
+
+### 🔰 Disciplina de Requisitos
+
+</th>
+</tr>
+<tr></tr>
   <tr>
-    <td style="vertical-align: top;">
-      <h2>🔰 Modelo de Dominio</h2>
+    <td valign=top>
       <p>El <a href="docs/modeloDeDominio/README.md">modelo de dominio</a> de <em>DOCUTRACE</em> define las entidades principales y sus relaciones dentro del sistema.</p>
       <p>Para describir el modelo del dominio se utilizan los siguientes artefactos:</p>
       <ul>
@@ -25,8 +36,7 @@
         <li><a href="docs/modeloDeDominio/README.md#diagrama-de-estados">Diagrama de Estados</a></li>
       </ul>
     </td>
-    <td style="vertical-align: top;">
-      <h2>🔰 Disciplina de Requisitos</h2>
+<td valign=top>
       <p>En esta sección se describen los actores principales que interactúan con el sistema y los casos de uso que representan las funcionalidades clave del proyecto.</p>
       <p>Se pueden ver más detalles sobre esto con las siguientes herramientas:</p>
       <ul>
