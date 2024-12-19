@@ -1,35 +1,36 @@
 @startuml
 left to right direction
 
-usecase "Registrar" as Registrarse
-
 usecase "Iniciar Sesión" as IniciarSesion
 usecase "Cerrar Sesión" as CerrarSesion
-usecase "Volver al Inicio" as VolverInicio
-
-usecase "Ver Clasificación" as VerClasificacion
+usecase "Mostrar QR para Centros Deportivos" as MostrarQRCentros
 usecase "Usar Rutina" as UsarRutina
-usecase "Completar Reto Obligatorio" as CompletarRetoObligatorio
-usecase "Completar Reto Opcional" as CompletarRetoOpcional
-usecase "Inscribir en Clase" as InscribirseClase
-usecase "Mostrar QR para Centro Deportivo" as UsarQR
-usecase "Crear Rutina" as CrearRutinaPersonalizada
+usecase "Crear Rutina" as CrearRutina
 usecase "Seleccionar Ejercicio" as SeleccionarEjercicio
+usecase "Subir Evidencia" as SubirEvidencia
+usecase "Ver Clasificación" as VerClasificacion
+usecase "Ver Perfil" as VerPerfil
+usecase "Ver Insignia" as VerInsignia
+usecase "Inscribir en Clase" as InscribirseClase
+usecase "Ver Rutina" as VerRutina
+usecase "Ver Ejercicio" as VerEjercicio
+usecase "Editar Ejercicio" as EditarEjercicio
+usecase "Ver Reto Opcional" as VerRetoOpcional
+usecase "Ver Reto Obligatorio" as VerRetoObligatorio
+usecase "Editar Reto" as EditarReto
+usecase "Crear Reto" as CrearReto
+usecase "Ver Clasificación Clase" as VerClasificacionClase
+usecase "Ver Clasificación Alumno" as VerClasificacionAlumno
+usecase "Crear Clase" as CrearClase
 
-usecase "Subir Ejercicio" as SubirEjercicio
-usecase "Crear Reto Obligatorio" as CrearRetoObligatorio
-usecase "Crear Reto Opcional" as CrearRetoOpcional
-usecase "Ver Clase y Alumno" as VerClaseAlumno
-
-usecase "Administrar Usuario" as AdministrarUsuario
-usecase "Gestionar Clase" as GestionarClase
-usecase "Gestionar Rutina" as GestionarRutina
-usecase "Gestionar Reto" as GestionarReto
-usecase "Supervisar Ejercicio" as SupervisarEjercicio
-usecase "Gestionar Permiso" as GestionarPermiso
+usecase "Administrar Usuario" as AdministrarUsuarios
+usecase "Gestionar Clase" as GestionarClases
+usecase "Gestionar Rutina" as GestionarRutinas
+usecase "Gestionar Reto" as GestionarRetos
+usecase "Supervisar Ejercicio" as SupervisarEjercicios
+usecase "Gestionar Permiso" as GestionarPermisos
 usecase "Configurar el Sistema" as ConfigurarSistema
-usecase "Ver Reporte" as VerReporte
-usecase "Descargar Estadística" as DescargarEstadistica
-
+usecase "Ver Reporte" as VerReportes
+usecase "Descargar Estadística" as DescargarEstadisticas
 
 @enduml
