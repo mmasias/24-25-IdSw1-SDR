@@ -24,20 +24,20 @@ class Grupo
 
 class Documento
 
-Usuarios --|> Administrador
-Usuarios --|> Usuario
-Usuarios --|> Destinatario
+Usuarios -u-|> Administrador
+Usuarios -u-|> Usuario
+Usuarios -u-|> Destinatario
 
 Remitente <|-- Administrador
-Remitente <|-- Usuario
+Remitente <|----- Usuario
 
 Receptor <|-- Destinatario
 Receptor <|-- Usuario
-Receptor -- Grupo : pertenece
-
 Receptor <|-- Administrador
 
-Usuarios "1"--"*" Accion : maneja
+Receptor -r- Grupo : pertenece
+
+Usuarios "1"-r-"*" Accion : maneja
 
 Remitente "1"--"*" Mensaje : genera
 
