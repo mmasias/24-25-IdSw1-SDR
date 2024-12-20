@@ -1,0 +1,48 @@
+@startuml detalladoAbrirMenuPrincipal
+skinparam {
+    NoteBackgroundColor #whiteSmoke
+    ArrowColor #green
+    NoteBorderColor #black
+    linetype polyline
+}
+
+skinparam state {
+    BackgroundColor #whiteSmoke
+}
+
+hide empty description
+
+state startState as "MENU_PRINCIPAL"
+state endState as "MENU_PRINCIPAL"
+
+
+startState --> MenuPrincipal
+
+state MenuPrincipal {
+    state SolicitudAbrirMenu as " "
+    state BuscarMensajesEnviados <<choice>>
+    state MostrarMensajesEnviados as " "
+
+    SolicitudAbrirMenu --> BuscarMensajesEnviados
+    note on link
+        <b>Usuario solicita</b>
+        * Abrir menú principal
+    end note
+
+    BuscarMensajesEnviados -[#red]-> MostrarMensajesEnviados
+    note on link
+        <b>Sistema muestra</b>
+        * Error obteniendo los mensajes enviados
+    end note
+
+    BuscarMensajesEnviados --> MostrarMensajesEnviados
+    note on link
+        <b>Sistema muestra</b>
+        * Mensajes enviados
+    end note
+}
+
+MenuPrincipal -[#red]-> endState
+MenuPrincipal --> endState
+
+@enduml

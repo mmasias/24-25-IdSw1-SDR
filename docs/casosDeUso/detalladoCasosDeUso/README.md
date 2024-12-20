@@ -17,6 +17,12 @@
 
 ![](./detalladoManejoSesion/detalladoLogout.svg)
 
+## Diagrama Detallado de Abrir Menú Principal
+
+### Detallado de Abrir Menú Principal
+
+![](./detalladoAbrirMenuPrincipal/detalladoAbrirMenuPrincipal.svg)
+
 ## Diagrama Detallado de Grupos
 
 ### Detallado de Crear Grupo
