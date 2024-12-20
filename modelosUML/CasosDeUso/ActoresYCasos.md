@@ -42,32 +42,32 @@ La prioridad debe basarse en su importancia estratégica, valor para el cliente,
 ## 3. Detallar casos de uso
 
 ### Crear oferta de trabajo
-![Crear oferta](svg/crearOfertaTrabajo.svg)
+![Crear oferta](svg/Detallar/crearOfertaTrabajo.svg)
 - **Actor**: Empresa
 - **Descripción**: Empresa crea una nueva oferta laboral pendiente de validación
 
 ### Buscar oferta de trabajo
-![Buscar oferta](svg/buscarOfertaTrabajo.svg)
+![Buscar oferta](svg/Detallar/buscarOfertaTrabajo.svg)
 - **Actor**: Alumni
 - **Descripción**: Alumni busca y filtra ofertas laborales disponibles
 
 ### Aceptar oferta de trabajo
-![Aceptar oferta](svg/aceptarOfertaTrabajo.svg)
+![Aceptar oferta](svg/Detallar/aceptarOfertaTrabajo.svg)
 - **Actor**: Administrador
 - **Descripción**: Administrador revisa y aprueba ofertas pendientes
 
 ### Postular a oferta de trabajo
-![Postular oferta](svg/postularOfertaTrabajo.svg)
+![Postular oferta](svg/Detallar/postularOfertaTrabajo.svg)
 - **Actor**: Alumni
 - **Descripción**: Alumni postula a una oferta adjuntando CV y datos
 
 ### Cerrar oferta de trabajo
-![Cerrar oferta](svg/cerrarOfertaTrabajo.svg)
+![Cerrar oferta](svg/Detallar/cerrarOfertaTrabajo.svg)
 - **Actor**: Administrador
 - **Descripción**: Administrador cierra una oferta activa 
 
 ### Cancelar oferta de trabajo
-![Cancelar oferta](svg/cancelarOfertaTrabajo.svg)
+![Cancelar oferta](svg/Detallar/cancelarOfertaTrabajo.svg)
 - **Actor**: Administrador
 - **Descripción**: Administrador cancela una oferta por incumplimiento
 
