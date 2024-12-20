@@ -61,12 +61,22 @@
 
 ![](./detalladoEnvioMensajes/detalladoCreacionMensaje.svg)
 
+### Detallado de Actualizar un Mensaje
+
+![](./detalladoEnvioMensajes/detalladoActualizarMensaje.svg)
+
 ### Detallado de Envío de un Mensaje
 
 ![](./detalladoEnvioMensajes/detalladoEnvioMensaje.svg)
 
 
-## Diagrama Detallado de Lectura y Confirmación de Documentos
+## Detallado de Mensajes Recibidos
+
+### Diagrama Detallado de Listar Mensajes
+
+![](./detalladoVisualizacionConfirmacion/detalladoListarMensajes.svg)
+
+### Diagrama Detallado de Lectura y Confirmación de Documentos
 
 ![](./detalladoVisualizacionConfirmacion/detalladoVisualizacionConfirmacion.svg)
 

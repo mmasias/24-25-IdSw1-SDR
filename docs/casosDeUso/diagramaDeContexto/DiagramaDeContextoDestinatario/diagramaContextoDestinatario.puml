@@ -6,13 +6,14 @@ state "LEYENDO_DOCUMENTO" as LeyendoDocumento
 [*] --> ListarMensajes
     note on link
         Destinatario 
-        inicia sesión
+        - Iniciar sesión
+        - Listar mensajes
     end note
 
 ListarMensajes -> [*]
     note on link
         Destinatario 
-        cierra sesión
+        Cerrar sesión
     end note
 
 
@@ -28,18 +29,18 @@ LeyendoMensaje -> LeyendoDocumento
 
 LeyendoDocumento --> LeyendoDocumento
     note on link
-        -Confirmar Lectura
-        -Firmar Documento
+        - Confirmar Lectura
+        - Firmar Documento
     end note
 
 LeyendoDocumento --> LeyendoMensaje
     note on link
-        Cerrar visualización
+        Abrir mensaje
     end note
 
 LeyendoMensaje --> ListarMensajes
     note on link
-        Cerrar mensaje
+        Listar mensajes
     end note
 
 @enduml

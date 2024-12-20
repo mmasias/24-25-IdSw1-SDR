@@ -7,10 +7,12 @@ package "Envío de Documentos" {
     usecase "Crear Envío" as ED1
     usecase "Crear/Redactar Mensaje" as ED2
     usecase "Descargar Informe de Envío" as ED3
+    usecase "Actualizar Mensaje" as ED4
 }
 
 Administrador --|> Usuario
 Usuario --> ED1
 Usuario --> ED2
 Usuario --> ED3
+Usuario --> ED4
 @enduml

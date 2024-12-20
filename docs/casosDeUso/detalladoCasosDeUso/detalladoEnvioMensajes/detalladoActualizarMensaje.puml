@@ -1,0 +1,73 @@
+@startuml actualizar_mensaje
+
+skinparam {
+  NoteBackgroundColor #whiteSmoke
+  ArrowColor #green
+  NoteBorderColor #green
+  linetype polyline
+}
+
+hide empty description
+
+state startState as "LISTANDO_MENSAJES"
+state endState as "LISTANDO_MENSAJES"
+
+startState --> ActualizarMensaje
+
+ActualizarMensaje--> listarMensajes
+listarMensajes--> endState
+ActualizarMensaje-[#red]-> endState
+
+state ActualizarMensaje{
+    state solicitudFiltros as " "
+    state envioFiltros as " "
+    state revisionFiltrosEnviados <<choice>>
+    state usuarioSolicita as "<b>Usuario Solicita:</b> \n Actualizar mensaje"
+
+    usuarioSolicita --> solicitudFiltros
+    solicitudFiltros --> envioFiltros
+    note on link
+        <b>Sistema Solicita</b>
+        * Campos a actualizar
+        * <b>Campos</b>
+            - Destinatario/Grupo
+            - Asunto
+            - Título
+            - Cuerpo del mensaje
+            - Documento adjunto
+            - Solicitar confirmación de lectura
+            - Solicitar firma
+            - Fecha límite
+        <b>Sistema Permite</b>
+        * Actualizar mensaje
+    end note
+
+    envioFiltros --> revisionFiltrosEnviados
+    note on link
+        <b>Usuario introduce</b>
+        * Campos a actualizar
+        * <b>Campos</b>
+            - Destinatario/Grupo
+            - Asunto
+            - Título
+            - Cuerpo del mensaje
+            - Documento adjunto
+            - Solicitar confirmación de lectura
+            - Solicitar firma
+            - Fecha límite
+    end note
+
+    revisionFiltrosEnviados -[#red]-> [*]
+    note on link
+        <b>Sistema Muestra</b>
+        Mensaje de error
+    end note
+
+    revisionFiltrosEnviados --> [*]
+    note on link
+        <b>Sistema Muestra</b>
+        Mensaje de confirmación
+    end note
+}
+
+@enduml
