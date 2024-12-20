@@ -1,0 +1,69 @@
+@startuml
+skinparam {
+    NoteBackgroundColor #whiteSmoke
+    ArrowColor #green
+    NoteBorderColor #green
+    linetype polyline
+}
+
+hide empty description
+
+state startState as "MENU_PRINCIPAL"
+state endState as "LISTANDO_MENSAJES"
+
+startState --> ListarMensajes
+
+ListarMensajes--> endState
+ListarMensajes-[#red]-> endState
+
+state ListarMensajes{
+    state solicitudFiltros as " "
+    state envioFiltros as " "
+    state revisionFiltrosEnviados <<choice>>
+    state usuarioSolicita as "<b>Usuario Solicita:</b> \n Listar mensajes"
+
+    usuarioSolicita -> solicitudFiltros
+    [*] --> solicitudFiltros
+    note on link
+        <b>Sistema Muestra</b>
+        Lista de mensajes
+    end note
+
+    solicitudFiltros -r-> [*]
+
+    solicitudFiltros --> envioFiltros
+    note on link
+        <b>Sistema Solicita</b>
+        * <b> Filtros opcionales </b>
+            - Términos de búsqueda
+            - Rango de fechas
+            - Usuario
+            - Estado
+        <b>Sistema Permite</b>
+        * Listar mensajes
+    end note
+
+    envioFiltros --> revisionFiltrosEnviados
+    note on link
+        <b>Usuario Introduce</b>
+        * <b> Filtros opcionales </b>
+            - Términos de búsqueda
+            - Rango de fechas
+            - Usuario
+            - Estado
+    end note
+
+    revisionFiltrosEnviados -[#red]-> [*]
+    note on link
+        <b>Sistema Muestra</b>
+        Mensaje de error
+    end note
+
+    revisionFiltrosEnviados --> [*]
+    note on link
+        <b>Sistema Muestra</b>
+        Lista de mensajes filtrada
+
+    end note
+}
+@enduml
