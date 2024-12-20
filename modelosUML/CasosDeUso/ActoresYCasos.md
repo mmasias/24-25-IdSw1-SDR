@@ -42,73 +42,69 @@ La prioridad debe basarse en su importancia estratégica, valor para el cliente,
 ## 3. Detallar casos de uso
 
 ### Crear oferta de trabajo
-![Crear oferta](svg/crearOfertaTrabajo.svg)
+![Crear oferta](svg/Detallar/crearOfertaTrabajo.svg)
 - **Actor**: Empresa
 - **Descripción**: Empresa crea una nueva oferta laboral pendiente de validación
 
 ### Buscar oferta de trabajo
-![Buscar oferta](svg/buscarOfertaTrabajo.svg)
+![Buscar oferta](svg/Detallar/buscarOfertaTrabajo.svg)
 - **Actor**: Alumni
 - **Descripción**: Alumni busca y filtra ofertas laborales disponibles
 
 ### Aceptar oferta de trabajo
-![Aceptar oferta](svg/aceptarOfertaTrabajo.svg)
+![Aceptar oferta](svg/Detallar/aceptarOfertaTrabajo.svg)
 - **Actor**: Administrador
 - **Descripción**: Administrador revisa y aprueba ofertas pendientes
 
 ### Postular a oferta de trabajo
-![Postular oferta](svg/postularOfertaTrabajo.svg)
+![Postular oferta](svg/Detallar/postularOfertaTrabajo.svg)
 - **Actor**: Alumni
 - **Descripción**: Alumni postula a una oferta adjuntando CV y datos
 
 ### Cerrar oferta de trabajo
-![Cerrar oferta](svg/cerrarOfertaTrabajo.svg)
+![Cerrar oferta](svg/Detallar/cerrarOfertaTrabajo.svg)
 - **Actor**: Administrador
 - **Descripción**: Administrador cierra una oferta activa 
 
 ### Cancelar oferta de trabajo
-![Cancelar oferta](svg/cancelarOfertaTrabajo.svg)
+![Cancelar oferta](svg/Detallar/cancelarOfertaTrabajo.svg)
 - **Actor**: Administrador
 - **Descripción**: Administrador cancela una oferta por incumplimiento
 
-# 5. Diagramas de Contexto
-
-Este documento contiene los diagramas de contexto de los casos de uso para el sistema de gestión de ofertas de trabajo. Cada diagrama describe las interacciones clave entre los actores y los casos de uso involucrados.
-
-## Diagramas Generados
+# Diagramas de Contexto
 
 ### 1. Crear Oferta de Trabajo
 
 Este diagrama muestra cómo la **Empresa** solicita la creación de una oferta, la cual es validada y guardada como pendiente. Luego, el **Administrador** es notificado para revisarla.
 
-![Crear Oferta de Trabajo](svg/crearOfertaEmpresa.svg)
+![Crear Oferta de Trabajo](svg/Prototipar/crearOfertaEmpresa.svg)
 
 ### 2. Buscar Oferta de Trabajo
 
 El **Alumni** puede realizar búsquedas aplicando filtros y viendo los detalles de las ofertas. Las actividades también son registradas automáticamente.
 
-![Buscar Oferta de Trabajo](svg/alumniBuscaOferta.svg)
+![Buscar Oferta de Trabajo](svg/Prototipar/alumniBuscaOferta.svg)
 
 ### 3. Aceptar Oferta de Trabajo
 
 El **Administrador** revisa las ofertas pendientes, puede aceptarlas o rechazarlas, y notifica a la **Empresa** sobre el resultado.
 
-![Aceptar Oferta de Trabajo](svg/aceptarOferta.svg)
+![Aceptar Oferta de Trabajo](svg/Prototipar/aceptarOferta.svg)
 
 ### 4. Postular a Oferta de Trabajo
 
 El **Alumni** inicia sesión, busca una oferta, rellena un formulario, adjunta su CV y envía su postulación. La **Empresa** es notificada tras el envío.
 
-![Postular a Oferta de Trabajo](svg/postularOferta.svg)
+![Postular a Oferta de Trabajo](svg/Prototipar/postularOferta.svg)
 
 ### 5. Cerrar Oferta de Trabajo
 
 El **Administrador** puede cerrar ofertas activas tras gestionarlas y confirmar el cierre. La **Empresa** es notificada de este estado final.
 
-![Cerrar Oferta de Trabajo](svg/cerrarOferta.svg)
+![Cerrar Oferta de Trabajo](svg/Prototipar/cerrarOferta.svg)
 
 ### 6. Cancelar Oferta de Trabajo
 
 El **Administrador** tiene la opción de cancelar una oferta, ingresando un motivo, y notificando a la **Empresa** sobre la cancelación.
 
-![Cancelar Oferta de Trabajo](svg/cancelarOferta.svg)
+![Cancelar Oferta de Trabajo](svg/Prototipar/cancelarOferta.svg)
