@@ -10,7 +10,7 @@
 A continuación se muestra el diagrama de clases del proyecto
 
 <p align="center">
-  <img src="/docs/modeloDeDominio/diagramaDeClases/diagramaClasesIteracion2.svg">
+  <img src="/docs/modeloDeDominio/diagramaDeClases/diagramaClasesIteracion3.svg">
 </p>
 
 ## Diagrama de Objetos
@@ -35,11 +35,4 @@ A continuación se muestra el diagrama de estados del proyecto
 
 <p align="center">
   <img src="/docs/modeloDeDominio/diagramaDeEstados/PrimeraIteracion/diagramaDeEstadosRemitenteIteracion1.svg">
-</p>
-
-
-### Diagrama de Estados de la alerta
-
-<p align="center">
-  <img src="/docs/modeloDeDominio/diagramaDeEstados/PrimeraIteracion/diagramaDeEstadosAlertaIteracion1.svg">
 </p>
