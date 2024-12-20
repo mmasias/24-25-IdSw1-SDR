@@ -1,0 +1,47 @@
+@startuml
+hide empty members
+hide circle
+
+abstract Remitente
+
+class Accion
+
+abstract Usuario
+
+class Accion
+
+class Mensaje
+
+class RastreadorDocumento
+
+abstract Receptor
+
+class Destinatario
+
+class Administrador
+
+class Grupo
+
+class Documento
+
+Usuarios --|> Administrador
+Usuarios --|> Usuario
+Usuarios --|> Destinatario
+
+Remitente <|-- Administrador
+Remitente <|-- Usuario
+
+Receptor <|-- Destinatario
+Receptor <|-- Usuario
+Receptor -- Grupo : pertenece
+
+Usuarios "1"--"*" Accion : maneja
+
+Remitente "1"--"*" Mensaje : genera
+
+Mensaje  "1"--"*" RastreadorDocumento : contiene
+
+Mensaje  "1"-r-"*" Receptor : se envía
+
+RastreadorDocumento "1"--"1" Documento: adjunta
+@enduml
