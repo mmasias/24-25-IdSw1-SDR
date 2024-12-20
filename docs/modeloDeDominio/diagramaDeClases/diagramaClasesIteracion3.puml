@@ -35,6 +35,8 @@ Receptor <|-- Destinatario
 Receptor <|-- Usuario
 Receptor -- Grupo : pertenece
 
+Receptor <|-- Administrador
+
 Usuarios "1"--"*" Accion : maneja
 
 Remitente "1"--"*" Mensaje : genera
