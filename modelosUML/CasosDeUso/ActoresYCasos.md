@@ -73,10 +73,6 @@ La prioridad debe basarse en su importancia estratégica, valor para el cliente,
 
 # Diagramas de Contexto
 
-Este documento contiene los diagramas de contexto de los casos de uso para el sistema de gestión de ofertas de trabajo. Cada diagrama describe las interacciones clave entre los actores y los casos de uso involucrados.
-
-## Diagramas Generados
-
 ### 1. Crear Oferta de Trabajo
 
 Este diagrama muestra cómo la **Empresa** solicita la creación de una oferta, la cual es validada y guardada como pendiente. Luego, el **Administrador** es notificado para revisarla.

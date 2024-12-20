@@ -1,17 +1,16 @@
-# Sesiones de requisitado
+# Alumni 
+## 🎓 Sistema de gestion de ofertas de trabajo
+El Sistema Alumni es una plataforma que conecta a antiguos alumnos de la universidad con oportunidades laborales ofrecidas por empresas asociadas. Facilita la búsqueda de empleo para los egresados y permite a las empresas acceder a talentos cualificados de la universidad.
 
-Este es el repositorio de las sesiones de requisitado de la asignatura de Ingeniería del Software I de UNEATLANTICO.
+---
+## Características principales
 
-Se desarrolla, en un caso real, la disciplina de requisitado, que es la puerta de entrada al desarrollo de una solución basada en software. 
+- **Acceso a ofertas de empleo**: Los antiguos alumnos pueden explorar y postularse a las ofertas publicadas por empresas asociadas.
+- **Publicación de ofertas por empresas**: Las empresas tienen la capacidad de crear y gestionar sus ofertas de trabajo.
+- **Validación de ofertas**: El sistema incluye un proceso de aprobación por parte de un administrador para garantizar la calidad de las ofertas.
+---
 
-## Sesiones:
-
-- [10/16](sesiones/1016.md)
-
-- [11/13](sesiones/1113.md)
-
-
-## Modelo del Dominio:
+## 🧩 Modelo del Dominio:
 
 <div align=center>
 
@@ -29,6 +28,28 @@ Se desarrolla, en un caso real, la disciplina de requisitado, que es la puerta d
 
 </div>
 
-## Casos de Uso:
+## 📊 Casos de Uso
 
-[Actores y Casos](modelosUML/CasosDeUso/ActoresYCasos.md)
+- [Actores y casos de uso](/modelosUML/CasosDeUso/ActoresYCasos.md#actores)
+- [Priorizacion](/modelosUML/CasosDeUso/ActoresYCasos.md#2-priorizar-casos-de-uso)
+- [Detallar casos de uso](/modelosUML/CasosDeUso/ActoresYCasos.md#3-detallar-casos-de-uso)
+- [Prototipado](/modelosUML/CasosDeUso/Fotos/Fotos%20Prototipado/)
+- [Diagramas de Contexto](/modelosUML/CasosDeUso/ActoresYCasos.md#diagramas-de-contexto)
+
+---
+
+## 📅 Sesiones
+
+- [10/16](sesiones/1016.md)
+
+- [11/13](sesiones/1113.md)
+---
+
+## 👨‍💻 Equipo de Desarrollo
+
+- Anibal Bayas
+- Pablo Cantero
+- César García
+- Neco Martínez
+- Javier Salmerón
+
