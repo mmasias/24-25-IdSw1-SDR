@@ -1,0 +1,12 @@
+@startuml abrirMenuPrincipal
+left to right direction
+actor "Administrador" as Administrador
+actor "Usuario" as Usuario
+
+package "Menú Principal" {
+    usecase "Abrir Menú Principal" as MS1
+}
+
+Administrador --|> Usuario
+Usuario --> MS1
+@enduml
