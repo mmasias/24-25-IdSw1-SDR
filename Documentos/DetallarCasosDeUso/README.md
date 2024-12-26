@@ -7,10 +7,10 @@
 | ![Casos de uso](../Imagenes/DetallarCasosDeUso/Registrarse.svg) | [Ver código](Registrarse.puml) |
 
 ## Profesor
-### Iniciar Sesión 
+### Ir Al Inicio 
 | Diagrama | Código Fuente |
 |----------|---------------|
-| ![Casos de uso](../Imagenes/DetallarCasosDeUso/IniciarSesionProfesor.svg) | [Ver código](IniciarSesionProfesor.puml) |
+| ![Casos de uso](../Imagenes/DetallarCasosDeUso/IrAlInicioProfesor.svg) | [Ver código](IniciarSesionProfesor.puml) |
 
 ### Crear Retos 
 | Diagrama | Código Fuente |
@@ -27,16 +27,11 @@
 |----------|---------------|
 | ![Casos de uso](../Imagenes/DetallarCasosDeUso/CerrarSesion.svg) | [Ver código](CerrarSesion.puml) |
 
+## Alumno
 ### Ir Al Inicio 
 | Diagrama | Código Fuente |
 |----------|---------------|
-| ![Casos de uso](../Imagenes/DetallarCasosDeUso/IrAlInicioProfesor.svg) | [Ver código](IniciarSesionProfesor.puml) |
-
-## Alumno
-### Iniciar Sesión 
-| Diagrama | Código Fuente |
-|----------|---------------|
-| ![Casos de uso](../Imagenes/DetallarCasosDeUso/IniciarSesionAlumno.svg) | [Ver código](IniciarSesionAlumno.puml) |
+| ![Casos de uso](../Imagenes/DetallarCasosDeUso/IrAlInicio.svg) | [Ver código](IrAlInicio.puml) |
 
 ### Completar Retos 
 | Diagrama | Código Fuente |
@@ -53,7 +48,4 @@
 |----------|---------------|
 | ![Casos de uso](../Imagenes/DetallarCasosDeUso/CerrarSesion.svg) | [Ver código](CerrarSesion.puml) |
 
-### Ir Al Inicio 
-| Diagrama | Código Fuente |
-|----------|---------------|
-| ![Casos de uso](../Imagenes/DetallarCasosDeUso/IrAlInicio.svg) | [Ver código](IrAlInicio.puml) |
+
