@@ -15,7 +15,7 @@
 ### Ir Al Inicio 
 | Diagrama | Código Fuente |
 |----------|---------------|
-| ![Casos de uso](../Imagenes/DetallarCasosDeUso/IrAlInicioProfesor.svg) | [Ver código](IniciarSesionProfesor.puml) |
+| ![Casos de uso](../Imagenes/DetallarCasosDeUso/IrAlInicioProfesor.svg) | [Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/ab782815534b2b716338e5ab6e455755454c0d1a/Documentos/DetallarCasosDeUso/IrAlInicioProfesor.puml) |
 
 ### Crear Retos 
 | Diagrama | Código Fuente |
