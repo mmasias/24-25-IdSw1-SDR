@@ -18,8 +18,9 @@ note on link
     El usuario confirma la operación
 end note
 rombo --> [*] 
-rombo --> Estado1
-    note on link
+  note on link
     EL usuario cancela la operación
     end note
+rombo --> Registrarse
+    
 @enduml
