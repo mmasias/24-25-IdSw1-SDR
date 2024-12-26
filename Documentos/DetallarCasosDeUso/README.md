@@ -7,6 +7,11 @@
 | ![Casos de uso](../Imagenes/DetallarCasosDeUso/Registrarse.svg) | [Ver código](Registrarse.puml) |
 
 ## Profesor
+### Iniciar Sesión 
+| Diagrama | Código Fuente |
+|----------|---------------|
+| ![Casos de uso](../Imagenes/DetallarCasosDeUso/IniciarSesionProfesor.svg) | [Ver código](IniciarSesionProfesor.puml) |
+
 ### Ir Al Inicio 
 | Diagrama | Código Fuente |
 |----------|---------------|
@@ -28,6 +33,11 @@
 | ![Casos de uso](../Imagenes/DetallarCasosDeUso/CerrarSesion.svg) | [Ver código](CerrarSesion.puml) |
 
 ## Alumno
+### Iniciar Sesión 
+| Diagrama | Código Fuente |
+|----------|---------------|
+| ![Casos de uso](../Imagenes/DetallarCasosDeUso/IniciarSesionAlumno.svg) | [Ver código](IniciarSesionAlumno.puml) |
+
 ### Ir Al Inicio 
 | Diagrama | Código Fuente |
 |----------|---------------|
