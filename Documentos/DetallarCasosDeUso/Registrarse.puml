@@ -6,10 +6,6 @@
     Usuario sin cuenta se registra.
   end note
 
-  UsuarioNoRegistrado --> ProcesoDeInicioDeSesión
-  note on link
-    Usuario con cuenta se registra.
-  end note
 
   Registrandose --> RellenandoLogin
   note on link
@@ -21,18 +17,18 @@
     - Peso
     - Altura
   end note
-  
+
   state rombo <<choice>>
   RellenandoLogin --> rombo
   note on link
     El usuario usa correo @educantabria.es?
   end note
-  
+
   rombo --> EsProfesor
   note on link
     El usuario ingresa sí
   end note
-  
+
   rombo --> EsAlumno
   note on link
     El usuario ingresa no
@@ -42,28 +38,20 @@
   note on link
     El sistema asigna rol de Alumno.
   end note
-  
+
   EsProfesor --> RolEstablecido
   note on link
     El sistema asigna rol de Profesor.
   end note
-  
+
   RolEstablecido --> UsuarioRegistrado
   note on link
     El usuario queda registrado con su rol asignado.
   end note
-  
-  ProcesoDeInicioDeSesión --> VerificarUsuario
-  note on link
-    El usuario rellena con correo y contraseña.
-  end note
-  
-  VerificarUsuario --> IniciandoSesión
-  note on link
-    El sistema verifica correo y contraseña correctos.
-  end note
-  
-  IniciandoSesión --> [*]
+
+
+
+  UsuarioRegistrado --> Iniciar_Sesion
   note on link
     El sistema verifica inicio de sesión correcto.
   end note
@@ -71,8 +59,7 @@
   UsuarioRegistrado --> [*]
   note on link
     El proceso de registro ha finalizado.
-    El usuario iniciara sesión.
   end note
-  
+
 
 @enduml

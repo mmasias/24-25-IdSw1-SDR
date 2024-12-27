@@ -1,0 +1,37 @@
+@startuml
+
+state " " as Estado1
+state " " as Estado2
+state " " as Estado3
+
+[*] --> Estado1
+    note on link
+        El Usuario solicita iniciar sesión
+    end note
+Estado1 --> Estado2
+    note on link
+        El Sistema solicita
+        - Correo
+        - Contraseña
+    end note
+    Estado2 --> Estado3
+    note on link
+        Usuario introcude
+        - Correo
+        - Contraseña
+    end note
+state rombo <<choice>>
+        Estado3 --> rombo
+    note on link
+        El sistema identifica si es alumno o profesor
+    end note
+
+        Estado3 --> Estado1
+    note on link
+        Datos incorrectos
+    end note
+    rombo --> Pagina_Principal_Profesor
+    rombo --> [*]
+    rombo --> Pagina_Principal_Alumno
+
+@enduml
