@@ -1,6 +1,5 @@
 @startuml AlumnosCasosDeUso
 !define RECTANGLE(x, color) rectangle x #color
-
 ' === ACTORES Y ELEMENTOS PRINCIPALES ===
 RECTANGLE(ALUMNO, YellowGreen)
 RECTANGLE(PAGINA_PRINCIPAL, LightBlue)
@@ -21,53 +20,94 @@ RECTANGLE(SUBIR_EVIDENCIA_RETO, LightSalmon)
 RECTANGLE(VER_ALUMNOS_CLASE, Gold)
 
 ' === RELACIONES PRINCIPALES ===
-ALUMNO -[#Black]-> PAGINA_PRINCIPAL : Ingresar al sistema
+ALUMNO -[#YellowGreen]-> PAGINA_PRINCIPAL : Ingresar al sistema
+PAGINA_PRINCIPAL -[#PaleGreen]-> MENU_RUTINAS_EJERCICIOS : Usar rutinas y ejercicios
+PAGINA_PRINCIPAL -[#LightSalmon]-> MENU_RETOS : Participar en retos o actividades
+PAGINA_PRINCIPAL -[#Gold]-> MENU_CLASIFICACION : Consultar clasificación
+PAGINA_PRINCIPAL -[#LightCoral]-> MENU_PERFIL : Revisar perfil
 
-PAGINA_PRINCIPAL -[#Green]-> MENU_RUTINAS_EJERCICIOS : Usar rutinas y ejercicios
-PAGINA_PRINCIPAL -[#Orange]-> MENU_RETOS : Participar en retos o actividades
-PAGINA_PRINCIPAL -[#GoldenRod]-> MENU_CLASIFICACION : Consultar clasificación
-PAGINA_PRINCIPAL -[#Red]-> MENU_PERFIL : Revisar perfil
+' === CONEXIONES ENTRE MENÚS PRINCIPALES ===
+MENU_RUTINAS_EJERCICIOS -[#LightSalmon]-> MENU_RETOS : Ir a retos
+MENU_RUTINAS_EJERCICIOS -[#Gold]-> MENU_CLASIFICACION : Ir a clasificación
+MENU_RUTINAS_EJERCICIOS -[#LightCoral]-> MENU_PERFIL : Ir a perfil
+MENU_RUTINAS_EJERCICIOS -[#LightBlue]-> PAGINA_PRINCIPAL : Ir a inicio
+
+MENU_RETOS -[#PaleGreen]-> MENU_RUTINAS_EJERCICIOS : Ir a rutinas
+MENU_RETOS -[#Gold]-> MENU_CLASIFICACION : Ir a clasificación
+MENU_RETOS -[#LightCoral]-> MENU_PERFIL : Ir a perfil
+MENU_RETOS -[#LightBlue]-> PAGINA_PRINCIPAL : Ir a inicio
+
+MENU_CLASIFICACION -[#PaleGreen]-> MENU_RUTINAS_EJERCICIOS : Ir a rutinas
+MENU_CLASIFICACION -[#LightSalmon]-> MENU_RETOS : Ir a retos
+MENU_CLASIFICACION -[#LightCoral]-> MENU_PERFIL : Ir a perfil
+MENU_CLASIFICACION -[#LightBlue]-> PAGINA_PRINCIPAL : Ir a inicio
+
+MENU_PERFIL -[#PaleGreen]-> MENU_RUTINAS_EJERCICIOS : Ir a rutinas
+MENU_PERFIL -[#LightSalmon]-> MENU_RETOS : Ir a retos
+MENU_PERFIL -[#Gold]-> MENU_CLASIFICACION : Ir a clasificación
+MENU_PERFIL -[#LightBlue]-> PAGINA_PRINCIPAL : Ir a inicio
 
 ' === MENÚ RUTINAS Y EJERCICIOS ===
-MENU_RUTINAS_EJERCICIOS -[#DarkGreen]-> CREAR_RUTINA : Crear rutina
-MENU_RUTINAS_EJERCICIOS -[#DarkGreen]-> EDITAR_RUTINA : Editar rutina
-CREAR_RUTINA -[#DarkGreen]-> MENU_RUTINAS_EJERCICIOS : Volver al menú rutinas y ejercicios
-EDITAR_RUTINA -[#DarkGreen]-> MENU_RUTINAS_EJERCICIOS : Volver al menú rutinas y ejercicios
-
-MENU_RUTINAS_EJERCICIOS -[#Orange]-> MENU_RETOS : Cambiar de menú
-MENU_RUTINAS_EJERCICIOS -[#GoldenRod]-> MENU_CLASIFICACION : Cambiar de menú
-MENU_RUTINAS_EJERCICIOS -[#Red]-> MENU_PERFIL : Cambiar de menú
+MENU_RUTINAS_EJERCICIOS -[#PaleGreen]-> CREAR_RUTINA : Crear rutina
+MENU_RUTINAS_EJERCICIOS -[#PaleGreen]-> EDITAR_RUTINA : Editar rutina
+CREAR_RUTINA -[#PaleGreen]-> MENU_RUTINAS_EJERCICIOS : Volver al menú rutinas y ejercicios
+EDITAR_RUTINA -[#PaleGreen]-> MENU_RUTINAS_EJERCICIOS : Volver al menú rutinas y ejercicios
 
 ' === MENÚ RETOS ===
-MENU_RETOS -[#DarkOrange]-> SUBIR_EVIDENCIA_RETO : Subir evidencia de reto
-SUBIR_EVIDENCIA_RETO -[#DarkOrange]-> MENU_RETOS : Volver al menú retos
-
-MENU_RETOS -[#Red]-> MENU_PERFIL : Cambiar de menú
-MENU_RETOS -[#GoldenRod]-> MENU_CLASIFICACION : Cambiar de menú
-MENU_RETOS -[#Green]-> MENU_RUTINAS_EJERCICIOS : Cambiar de menú
+MENU_RETOS -[#LightSalmon]-> SUBIR_EVIDENCIA_RETO : Subir evidencia de reto
+SUBIR_EVIDENCIA_RETO -[#LightSalmon]-> MENU_RETOS : Volver al menú retos
 
 ' === MENÚ CLASIFICACIÓN ===
-MENU_CLASIFICACION -[#GoldenRod]-> VER_ALUMNOS_CLASE : Ver alumnos de la clase
-VER_ALUMNOS_CLASE -[#GoldenRod]-> MENU_CLASIFICACION : Volver al menú clasificación
+MENU_CLASIFICACION -[#Gold]-> VER_ALUMNOS_CLASE : Ver alumnos de la clase
+VER_ALUMNOS_CLASE -[#Gold]-> MENU_CLASIFICACION : Volver al menú clasificación
 
 ' === MENÚ PERFIL ===
-MENU_PERFIL -[#DarkRed]-> VER_INSIGNIAS : Ver insignias
-MENU_PERFIL -[#DarkRed]-> INSCRIBIR_CLASE : Inscribir en clase
-MENU_PERFIL -[#DarkRed]-> MOSTRAR_QR : Mostrar QR en centro deportivo
-MENU_PERFIL -[#DarkRed]-> ALUMNO : Cerrar sesión
+MENU_PERFIL -[#LightCoral]-> VER_INSIGNIAS : Ver insignias
+MENU_PERFIL -[#LightCoral]-> INSCRIBIR_CLASE : Inscribir en clase
+MENU_PERFIL -[#LightCoral]-> MOSTRAR_QR : Mostrar QR en centro deportivo
+MENU_PERFIL -[#YellowGreen]-> ALUMNO : Cerrar sesión
 
-MENU_PERFIL -[#Orange]-> MENU_RETOS : Cambiar de menú
-MENU_PERFIL -[#GoldenRod]-> MENU_CLASIFICACION : Cambiar de menú
-MENU_PERFIL -[#Green]-> MENU_RUTINAS_EJERCICIOS : Cambiar de menú
+' === CONEXIONES ENTRE SUBMENÚS Y MENÚS PRINCIPALES ===
+' Submenús conectados con todos los menús principales
+CREAR_RUTINA -[#LightBlue]-> PAGINA_PRINCIPAL
+CREAR_RUTINA -[#PaleGreen]-> MENU_RUTINAS_EJERCICIOS
+CREAR_RUTINA -[#LightSalmon]-> MENU_RETOS
+CREAR_RUTINA -[#Gold]-> MENU_CLASIFICACION
+CREAR_RUTINA -[#LightCoral]-> MENU_PERFIL
 
-VER_INSIGNIAS -[#DarkRed]-> MENU_PERFIL : Volver al perfil
-INSCRIBIR_CLASE -[#DarkRed]-> MENU_PERFIL : Volver al perfil
-MOSTRAR_QR -[#DarkRed]-> MENU_PERFIL : Volver al perfil
+EDITAR_RUTINA -[#LightBlue]-> PAGINA_PRINCIPAL
+EDITAR_RUTINA -[#PaleGreen]-> MENU_RUTINAS_EJERCICIOS
+EDITAR_RUTINA -[#LightSalmon]-> MENU_RETOS
+EDITAR_RUTINA -[#Gold]-> MENU_CLASIFICACION
+EDITAR_RUTINA -[#LightCoral]-> MENU_PERFIL
 
-' === RELACIONES ADICIONALES ===
-MENU_RUTINAS_EJERCICIOS -[#Green]-> PAGINA_PRINCIPAL : Volver a página principal
-MENU_RETOS -[#Orange]-> PAGINA_PRINCIPAL : Volver a página principal
-MENU_CLASIFICACION -[#GoldenRod]-> PAGINA_PRINCIPAL : Volver a página principal
-MENU_PERFIL -[#Red]-> PAGINA_PRINCIPAL : Volver a página principal
+SUBIR_EVIDENCIA_RETO -[#LightBlue]-> PAGINA_PRINCIPAL
+SUBIR_EVIDENCIA_RETO -[#PaleGreen]-> MENU_RUTINAS_EJERCICIOS
+SUBIR_EVIDENCIA_RETO -[#LightSalmon]-> MENU_RETOS
+SUBIR_EVIDENCIA_RETO -[#Gold]-> MENU_CLASIFICACION
+SUBIR_EVIDENCIA_RETO -[#LightCoral]-> MENU_PERFIL
 
+VER_ALUMNOS_CLASE -[#LightBlue]-> PAGINA_PRINCIPAL
+VER_ALUMNOS_CLASE -[#PaleGreen]-> MENU_RUTINAS_EJERCICIOS
+VER_ALUMNOS_CLASE -[#LightSalmon]-> MENU_RETOS
+VER_ALUMNOS_CLASE -[#Gold]-> MENU_CLASIFICACION
+VER_ALUMNOS_CLASE -[#LightCoral]-> MENU_PERFIL
+
+VER_INSIGNIAS -[#LightBlue]-> PAGINA_PRINCIPAL
+VER_INSIGNIAS -[#PaleGreen]-> MENU_RUTINAS_EJERCICIOS
+VER_INSIGNIAS -[#LightSalmon]-> MENU_RETOS
+VER_INSIGNIAS -[#Gold]-> MENU_CLASIFICACION
+VER_INSIGNIAS -[#LightCoral]-> MENU_PERFIL
+
+INSCRIBIR_CLASE -[#LightBlue]-> PAGINA_PRINCIPAL
+INSCRIBIR_CLASE -[#PaleGreen]-> MENU_RUTINAS_EJERCICIOS
+INSCRIBIR_CLASE -[#LightSalmon]-> MENU_RETOS
+INSCRIBIR_CLASE -[#Gold]-> MENU_CLASIFICACION
+INSCRIBIR_CLASE -[#LightCoral]-> MENU_PERFIL
+
+MOSTRAR_QR -[#LightBlue]-> PAGINA_PRINCIPAL
+MOSTRAR_QR -[#PaleGreen]-> MENU_RUTINAS_EJERCICIOS
+MOSTRAR_QR -[#LightSalmon]-> MENU_RETOS
+MOSTRAR_QR -[#Gold]-> MENU_CLASIFICACION
+MOSTRAR_QR -[#LightCoral]-> MENU_PERFIL
 @enduml
