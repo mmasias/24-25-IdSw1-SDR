@@ -6,12 +6,12 @@
 |----------|---------------|
 | ![Casos de uso](../Imagenes/DetallarCasosDeUso/Registrarse.svg) | [Ver código](Registrarse.puml) |
 
-## Profesor
 ### Iniciar Sesión 
 | Diagrama | Código Fuente |
 |----------|---------------|
-| ![Casos de uso](../Imagenes/DetallarCasosDeUso/IniciarSesionProfesor.svg) | [Ver código](IniciarSesionProfesor.puml) |
+| ![Casos de uso](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/0db27a83deee562f6b102843beed258f5352b1b6/Documentos/Imagenes/DetallarCasosDeUso/IniciarSesion.svg) | [Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/0db27a83deee562f6b102843beed258f5352b1b6/Documentos/DetallarCasosDeUso/IniciarSesion.puml) |
 
+## Profesor
 ### Ir Al Inicio 
 | Diagrama | Código Fuente |
 |----------|---------------|
@@ -33,11 +33,6 @@
 | ![Casos de uso](../Imagenes/DetallarCasosDeUso/CerrarSesion.svg) | [Ver código](CerrarSesion.puml) |
 
 ## Alumno
-### Iniciar Sesión 
-| Diagrama | Código Fuente |
-|----------|---------------|
-| ![Casos de uso](../Imagenes/DetallarCasosDeUso/IniciarSesionAlumno.svg) | [Ver código](IniciarSesionAlumno.puml) |
-
 ### Ir Al Inicio 
 | Diagrama | Código Fuente |
 |----------|---------------|
