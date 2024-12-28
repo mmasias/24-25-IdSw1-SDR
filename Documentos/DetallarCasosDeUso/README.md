@@ -21,15 +21,41 @@
 | Diagrama | Código Fuente |
 |----------|---------------|
 | ![Casos de uso](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/b9f86d7aa602fbb46aabfc80a5219690cf8eb45f/Documentos/Imagenes/DetallarCasosDeUso/Menu_Rutinas_Profesor.svg) | [Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/b9f86d7aa602fbb46aabfc80a5219690cf8eb45f/Documentos/DetallarCasosDeUso/Menu_Rutinas_Profesor.puml) |
+
+### Mostrar Rutina
+| Diagrama | Código Fuente |
+|----------|---------------|
+| ![Casos de uso](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/aeae0ddaaa824ed3ec5938795423bf7001b44606/Documentos/Imagenes/DetallarCasosDeUso/MostrarRutina.svg) | [Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/aeae0ddaaa824ed3ec5938795423bf7001b44606/Documentos/DetallarCasosDeUso/MostrarRutina.puml) |
+
+### Crear Rutina
+| Diagrama | Código Fuente |
+|----------|---------------|
+| ![Casos de uso](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/aeae0ddaaa824ed3ec5938795423bf7001b44606/Documentos/Imagenes/DetallarCasosDeUso/CrearRutina.svg) | [Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/aeae0ddaaa824ed3ec5938795423bf7001b44606/Documentos/DetallarCasosDeUso/CrearRutina.puml) |
+
+### Editar Rutina
+| Diagrama | Código Fuente |
+|----------|---------------|
+| ![Casos de uso](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/aeae0ddaaa824ed3ec5938795423bf7001b44606/Documentos/Imagenes/DetallarCasosDeUso/EditarRutina.svg) | [Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/aeae0ddaaa824ed3ec5938795423bf7001b44606/Documentos/DetallarCasosDeUso/EditarRutina.puml) |
+
+### Mostrar Ejercicio
+| Diagrama | Código Fuente |
+|----------|---------------|
+| ![Casos de uso](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/aeae0ddaaa824ed3ec5938795423bf7001b44606/Documentos/Imagenes/DetallarCasosDeUso/MostrarEjercicio.svg) | [Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/aeae0ddaaa824ed3ec5938795423bf7001b44606/Documentos/DetallarCasosDeUso/MostrarEjercicio.puml) |
+
+### Crear Ejercicio
+| Diagrama | Código Fuente |
+|----------|---------------|
+| ![Casos de uso](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/aeae0ddaaa824ed3ec5938795423bf7001b44606/Documentos/Imagenes/DetallarCasosDeUso/CrearEjercicio.svg) | [Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/aeae0ddaaa824ed3ec5938795423bf7001b44606/Documentos/DetallarCasosDeUso/CrearEjercicio.puml) |
+
+### Editar Ejercicio
+| Diagrama | Código Fuente |
+|----------|---------------|
+| ![Casos de uso](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/aeae0ddaaa824ed3ec5938795423bf7001b44606/Documentos/Imagenes/DetallarCasosDeUso/EditarEjercicio.svg) | [Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/aeae0ddaaa824ed3ec5938795423bf7001b44606/Documentos/DetallarCasosDeUso/EditarEjercicio.puml) |
+
 ### Crear Retos 
 | Diagrama | Código Fuente |
 |----------|---------------|
 | ![Casos de uso](../Imagenes/DetallarCasosDeUso/CrearRetos.svg) | [Ver código](CrearRetos.puml) |
-
-### Crear Rutinas 
-| Diagrama | Código Fuente |
-|----------|---------------|
-| ![Casos de uso](../Imagenes/DetallarCasosDeUso/CrearRutinas.svg) | [Ver código](CrearRutinas.puml) |
 
 ### Cerrar Sesión 
 | Diagrama | Código Fuente |
