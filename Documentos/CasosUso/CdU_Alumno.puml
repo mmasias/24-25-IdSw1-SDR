@@ -1,51 +1,62 @@
+@startuml
 left to right direction
 actor Alumno
 
-package Rutinas{
-  usecase "Usar Rutina" as UsarRutinas
-  usecase "Crear Rutina" as CrearRutinaPersonalizada
+package "Rutinas y Ejercicios" {
+    usecase "Ver Rutinas" as VerRutinas
+    usecase "Ver Ejercicios" as VerEjercicios
+
+    package "Rutinas" {
+        usecase "Editar Rutina" as EditarRutina
+        usecase "Buscar Ejercicio en Rutina" as BuscarEjercicioEnRutina
+        usecase "Ver Ejercicios en Rutina" as VerEjerciciosEnRutina
+    }
+
+    package "Ejercicios" {
+        usecase "Ver Video Explicativo" as VerVideoExplicativo
+        usecase "Ver Descripcion de Ejercicio" as VerDescripcionEjercicio
+    }
 }
 
-package Ejercicios{
-  usecase "SeleccionarEjercicios" as SeleccionarEjercicios
-  usecase "Ver Ejercicio" as VerEjercicio
+package Retos {
+    usecase "Ver Retos Obligatorios" as VerRetosObligatorios
+    usecase "Ver Retos Opcionales" as VerRetosOpcionales
+    usecase "Subir Evidencia" as SubirEvidencia
+    usecase "Ver Descripcion de Reto" as VerDescripcionReto
 }
 
-package Retos{
-  usecase "Ver Reto Opcional" as RetoOpcional
-  usecase "Ver Reto Obligatorio" as RetoObligatorio
-  usecase "Subir Evidencia" as SubirEvidencia
+package Clasificacion {
+    usecase "Ver Clasificacion" as VerClasificacion
 }
 
-package Perfil{
-  usecase "Ver perfil" as VerPerfil
-  usecase "Ver insignias" as VerInsignias
-  usecase "Mostrar QR para Centros Deportivos " as MostrarQR
+package Perfil {
+    usecase "Cerrar Sesion" as CerrarSesion
+    usecase "Inscribir en Clase" as InscribirEnClase
+    usecase "Mostrar QR Centros Deportivos" as MostrarQRCentros
+    usecase "Mostrar Insignias" as MostrarInsignias
 }
 
-package Clases{
-  usecase "Ver Clasificacion" as VerClasificaciones
-  usecase "InscribirEnClase" as InscribirClase
-}
-
-usecase "Iniciar Sesión" as IniciarSesion
-usecase "CerrarSesion" as CerrarSesion
-
+usecase "Iniciar Sesion" as IniciarSesion
 
 Alumno --> IniciarSesion
-Alumno --> UsarRutinas
-Alumno --> CrearRutinaPersonalizada
-Alumno --> VerEjercicio
-Alumno --> RetoOpcional
-Alumno --> RetoObligatorio
-Alumno --> SubirEvidencia
-Alumno --> VerClasificaciones
-Alumno --> VerPerfil
-Alumno --> VerInsignias
-Alumno --> MostrarQR
-Alumno --> InscribirClase
-Alumno --> CerrarSesion 
+Alumno --> VerRutinas
+Alumno --> VerEjercicios
+Alumno --> VerRetosObligatorios
+Alumno --> VerRetosOpcionales
+Alumno --> VerClasificacion
+Alumno --> CerrarSesion
+Alumno --> InscribirEnClase
+Alumno --> MostrarQRCentros
+Alumno --> MostrarInsignias
 
-CrearRutinaPersonalizada --> SeleccionarEjercicios : <<include>>
+VerRutinas --> EditarRutina : <<include>>
+VerRutinas --> BuscarEjercicioEnRutina : <<include>>
+VerRutinas --> VerEjerciciosEnRutina : <<include>>
 
+VerEjercicios --> VerVideoExplicativo : <<include>>
+VerEjercicios --> VerDescripcionEjercicio : <<include>>
+
+VerRetosObligatorios --> VerDescripcionReto : <<include>>
+VerRetosOpcionales --> VerDescripcionReto : <<include>>
+VerDescripcionReto --> SubirEvidencia : <<include>>
 @enduml
