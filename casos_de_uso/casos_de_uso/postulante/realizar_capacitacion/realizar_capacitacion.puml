@@ -1,0 +1,53 @@
+@startuml
+title Caso de uso: Realizar Capacitación
+
+skinparam {
+    NoteBackgroundColor #lightYellow
+    ArrowColor #blue
+    NoteBorderColor #blue
+    linetype polyline
+}
+
+state startState as "PÁGINA PRINCIPAL"
+state endState as "PÁGINA PRINCIPAL"
+
+startState --> AbrirCapacitacion
+note on link
+    <b>Usuario Accede</b>
+    * Selecciona una capacitación de la lista
+end note
+
+AbrirCapacitacion --> RealizarActividades
+note on link
+    <b>Sistema Muestra</b>
+    * Contenido de aprendizaje
+    * Tareas asignadas
+end note
+
+state RealizarActividades {
+    state "Completar Tarea" as CompletarTarea
+    state "Subir Material" as SubirMaterial
+
+    [*] --> CompletarTarea
+    CompletarTarea --> SubirMaterial : Usuario termina tarea
+    note on link
+        <b>Usuario Sube</b>
+        * Archivos requeridos
+    end note
+
+    SubirMaterial --> CompletarTarea : Usuario desea modificar
+    SubirMaterial --> [*] : Todas las actividades finalizadas
+}
+
+RealizarActividades --> NotificacionPendiente
+note on link
+    <b>Sistema Notifica</b>
+    * "Tu capacitación ha sido enviada con éxito"
+end note
+
+NotificacionPendiente --> endState
+note on link
+    <b>Sistema Redirige</b>
+    * Página principal
+end note
+@enduml

@@ -25,13 +25,9 @@ Es una plataforma que se encarga de administrar y optimizar el proceso de selecc
 
   - [Actores](/casos_de_uso/actores/)
   - [Casos de Uso Detallados](/casos_de_uso/casos_de_uso/)
-  - [Diagrama Casos de Uso]()
+  - [Diagrama Casos de Uso](casos_de_uso/diagramas_casos_de_uso)
   - [Diagrama de Contexto](casos_de_uso/diagramas_de_contexto)
   - [Prototipos](casos_de_uso/prototipos)
-
-## Diagramas de contexto
-
-  - [Diagramas](/casos_de_uso/diagramas_de_contexto/README.md)
 
 ## [Sesiones](documentos/actas/)
 

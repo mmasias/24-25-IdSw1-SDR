@@ -1,6 +1,6 @@
 # Casos de Uso
 
-### [Usuarios](/casos_de_uso/casos_de_uso/usuarios)
+## [Usuarios](/casos_de_uso/casos_de_uso/usuarios)
 
   - [Actualizar Datos del Usuario](/casos_de_uso/casos_de_uso/usuarios/actualizar_datos_usuario/)
 
@@ -10,7 +10,7 @@
 
   - [Cerrar Sesión](/casos_de_uso/casos_de_uso/usuarios/cerrar_sesion/)
 
-### [Postulante](/casos_de_uso/casos_de_uso/postulantes)
+## [Postulante](/casos_de_uso/casos_de_uso/postulantes)
 
   - [Realizar test](/casos_de_uso/casos_de_uso/postulantes/realizar_test/)
 
@@ -21,7 +21,7 @@
   - [Ver Progreso de Capacitación](/casos_de_uso/casos_de_uso/postulantes/ver_progreso_de_capacitacion/)
 
 
-### [Administrador](/casos_de_uso/casos_de_uso/administrador)
+## [Administrador](/casos_de_uso/casos_de_uso/administrador)
 
   - [Consultar Estadísticas](/casos_de_uso/casos_de_uso/administrador/consultar_estadisticas/)
 
