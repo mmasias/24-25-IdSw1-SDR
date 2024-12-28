@@ -1,0 +1,21 @@
+@startuml
+[*] --> Menu_Rutinas_y_Ejercicios : Inicio del proceso
+state rombo <<choice>>
+rombo --> Menu_Perfil
+rombo --> Menu_Retos
+rombo --> Clasificación
+rombo --> Menu_Rutinas_y_Ejercicios
+rombo --> Menu_Principal
+
+Menu_Rutinas_y_Ejercicios --> CrearRutina : Presionar botón "Crear Rutina"
+Menu_Rutinas_y_Ejercicios --> MostrarRutina
+MostrarRutina --> CrearRutina: Presionar botón "Crear Rutina"
+CrearRutina --> rombo
+
+state CrearRutina {
+  SolicitarDatosRutina : El sistema solicita nombre y objetivo de la rutina
+  SolicitarDatosRutina --> SeleccionarEjercicios : El profesor selecciona ejercicios de la lista
+  SeleccionarEjercicios --> ConfirmarCreacion : El profesor presiona "Crear"
+  ConfirmarCreacion --> [*] : Rutina creada con éxito
+}
+@enduml
