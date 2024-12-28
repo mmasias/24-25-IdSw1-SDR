@@ -1,24 +1,24 @@
 # Casos de Uso
 
-## [Usuarios](/casos_de_uso/casos_de_uso/usuarios)
+## [Usuario](/casos_de_uso/casos_de_uso/usuario)
 
-  - [Actualizar Datos del Usuario](/casos_de_uso/casos_de_uso/usuarios/actualizar_datos_usuario/)
+  - [Actualizar Datos del Usuario](/casos_de_uso/casos_de_uso/usuario/actualizar_datos_usuario/)
 
-  - [Listar Datos del Usuario](/casos_de_uso/casos_de_uso/usuarios/listar_datos_usuario/)
+  - [Listar Datos del Usuario](/casos_de_uso/casos_de_uso/usuario/listar_datos_usuario/)
 
-  - [Iniciar Sesión](/casos_de_uso/casos_de_uso/usuarios/iniciar_sesion/)
+  - [Iniciar Sesión](/casos_de_uso/casos_de_uso/usuario/iniciar_sesion/)
 
-  - [Cerrar Sesión](/casos_de_uso/casos_de_uso/usuarios/cerrar_sesion/)
+  - [Cerrar Sesión](/casos_de_uso/casos_de_uso/usuario/cerrar_sesion/)
 
-## [Postulante](/casos_de_uso/casos_de_uso/postulantes)
+## [Postulante](/casos_de_uso/casos_de_uso/postulante)
 
-  - [Realizar test](/casos_de_uso/casos_de_uso/postulantes/realizar_test/)
+  - [Realizar test](/casos_de_uso/casos_de_uso/postulante/realizar_test/)
 
-  - [Ver Test Corregido](/casos_de_uso/casos_de_uso/postulantes/ver_test_corregido/)
+  - [Ver Test Corregido](/casos_de_uso/casos_de_uso/postulante/ver_test_corregido/)
 
-  - [Realizar Capacitación](/casos_de_uso/casos_de_uso/postulantes/realizar_capacitacion/)
+  - [Realizar Capacitación](/casos_de_uso/casos_de_uso/postulante/realizar_capacitacion/)
 
-  - [Ver Progreso de Capacitación](/casos_de_uso/casos_de_uso/postulantes/ver_progreso_de_capacitacion/)
+  - [Ver Progreso de Capacitación](/casos_de_uso/casos_de_uso/postulante/ver_progreso_de_capacitacion/)
 
 
 ## [Administrador](/casos_de_uso/casos_de_uso/administrador)
@@ -45,7 +45,7 @@
 
   - [Editar Postulante](/casos_de_uso/casos_de_uso/administrador/editar_postulante/)
 
-  - [Listar Postulantes](/casos_de_uso/casos_de_uso/administrador/listar_postulantes/)
+  - [Listar Postulante](/casos_de_uso/casos_de_uso/administrador/listar_postulante/)
 
   - [Eliminar Postulante](/casos_de_uso/casos_de_uso/administrador/eliminar_postulante/)
 
