@@ -24,10 +24,10 @@ Es una plataforma que se encarga de administrar y optimizar el proceso de selecc
 ## Casos de Uso
 
   - [Actores](/casos_de_uso/actores/)
-   - [Casos de Uso Detallados](/casos_de_uso/casos_de_uso/)
- <!-- - [Diagrama Casos de Uso]()
-  - [Diagrama de Contexto]()
-  - [Prototipos]() -->
+  - [Casos de Uso Detallados](/casos_de_uso/casos_de_uso/)
+  - [Diagrama Casos de Uso]()
+  - [Diagrama de Contexto](casos_de_uso/diagramas_de_contexto)
+  - [Prototipos](casos_de_uso/prototipos)
 
 ## Diagramas de contexto
 
