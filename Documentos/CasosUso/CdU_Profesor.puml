@@ -3,26 +3,30 @@ left to right direction
 actor Profesor
 
 package "Rutinas y Ejercicios" {
-    usecase "Ver Rutinas" as VerRutinas
-    usecase "Buscar Rutina" as BuscarRutina
-    usecase "Crear Rutina" as CrearRutina
-    usecase "Ver Ejercicios" as VerEjercicios
-    usecase "Buscar Ejercicio" as BuscarEjercicio
-    usecase "Crear Ejercicio" as CrearEjercicio
 
     package "Rutinas" {
+        usecase "Ver Rutinas Disponibles" as VerRutinasDisponibles
+        usecase "Buscar Rutina" as BuscarRutina
+        usecase "Crear Rutina" as CrearRutina
+        usecase "Ver Rutina Específica" as VerRutinaEspecifica
+
         usecase "Editar Rutina" as EditarRutina
-        usecase "Seleccionar Ejercicios" as SeleccionarEjercicios
+        usecase "Ver Ejercicios en Rutina" as VerEjerciciosEnRutina
+        usecase "Buscar Ejercicio en Rutina" as BuscarEjercicioEnRutina
+        
     }
 
     package "Ejercicios" {
+        usecase "Buscar Ejercicio" as BuscarEjercicio
+        usecase "Ver Ejercicios Disponibles" as VerEjerciciosDisponibles
+        usecase "Crear Ejercicio" as CrearEjercicio
+
+        usecase "Ver Ejercicio Específico" as VerEjercicioEspecifico
         usecase "Editar Ejercicio" as EditarEjercicio
-        usecase "Ver Video Explicativo" as VerVideoExplicativo
-        usecase "Ver Descripcion de Ejercicio" as VerDescripcionEjercicio
     }
 }
 
-package Retos {
+package "Retos" {
     package "Obligatorios" {
         usecase "Ver Retos Obligatorios" as VerRetosObligatorios
         usecase "Crear Reto Obligatorio" as CrearRetoObligatorio
@@ -35,16 +39,17 @@ package Retos {
         usecase "Editar Reto Opcional" as EditarRetoOpcional
     }
 
-    usecase "Ver Descripcion de Reto" as VerDescripcionReto
     usecase "Asignar Reto a Clase" as AsignarRetoAClase
 }
 
-package Clasificacion {
-    usecase "Ver Clasificacion por Clases y Alumnos" as VerClasificacionPorClasesYAlumnos
+package "Clasificación" {
+    usecase "Ver Clasificación de Clases" as VerClasificacionClases
+    usecase "Ver Clasificación de Alumnos" as VerClasificacionAlumnos
+    VerClasificacionClases --> VerClasificacionAlumnos : <<include>>
 }
 
-package Perfil {
-    usecase "Cerrar Sesion" as CerrarSesion
+package "Perfil" {
+    usecase "Cerrar Sesión" as CerrarSesion
     usecase "Crear Clase" as CrearClase
     usecase "Mostrar QR Centros Deportivos" as MostrarQRCentros
     usecase "Ver Mis Clases" as VerMisClases
@@ -59,13 +64,13 @@ package Perfil {
     }
 }
 
-usecase "Iniciar Sesion" as IniciarSesion
+usecase "Iniciar Sesión" as IniciarSesion
 
 Profesor --> IniciarSesion
-Profesor --> VerRutinas
+Profesor --> VerRutinasDisponibles
 Profesor --> BuscarRutina
 Profesor --> CrearRutina
-Profesor --> VerEjercicios
+Profesor --> VerEjerciciosDisponibles
 Profesor --> BuscarEjercicio
 Profesor --> CrearEjercicio
 Profesor --> VerRetosObligatorios
@@ -74,27 +79,32 @@ Profesor --> EditarRetoObligatorio
 Profesor --> VerRetosOpcionales
 Profesor --> CrearRetoOpcional
 Profesor --> EditarRetoOpcional
-Profesor --> VerClasificacionPorClasesYAlumnos
+Profesor --> VerClasificacionClases
 Profesor --> CerrarSesion
 Profesor --> CrearClase
 Profesor --> MostrarQRCentros
 Profesor --> VerMisClases
 
-VerRutinas --> EditarRutina : <<include>>
-EditarRutina --> SeleccionarEjercicios : <<include>>
+VerRutinasDisponibles --> VerRutinaEspecifica : <<include>>
+VerRutinaEspecifica --> CrearEjercicio : <<include>>
+VerRutinaEspecifica --> VerEjerciciosEnRutina : <<include>>
+VerRutinaEspecifica --> EditarRutina : <<include>>
+VerRutinaEspecifica --> BuscarEjercicioEnRutina : <<include>>
 
-CrearRutina --> SeleccionarEjercicios : <<include>>
 
-VerEjercicios --> VerVideoExplicativo : <<include>>
-VerEjercicios --> VerDescripcionEjercicio : <<include>>
-CrearEjercicio --> EditarEjercicio : <<include>>
+VerEjerciciosEnRutina --> VerEjercicioEspecifico : <<include>> 
+VerEjercicioEspecifico --> EditarEjercicio : <<include>>       
 
-VerRetosObligatorios --> VerDescripcionReto : <<include>>
-VerRetosOpcionales --> VerDescripcionReto : <<include>>
+CrearRutina --> BuscarEjercicio : <<include>>
+
+
+VerEjerciciosDisponibles --> VerEjercicioEspecifico : <<include>>
+
 CrearRetoObligatorio --> AsignarRetoAClase : <<include>>
 CrearRetoOpcional --> AsignarRetoAClase : <<include>>
 
 VerMisClases --> VerAlumnosEnClase : <<include>>
 VerAlumnosEnClase --> VerRetosDelAlumno : <<include>>
 VerRetosDelAlumno --> EvaluarReto : <<include>>
+
 @enduml
