@@ -1,11 +1,21 @@
 @startuml
 start
 :El usuario solicita consultar el horario de un profesor específico;
-:Sistema solicita filtros (nombre del profesor, rango de fechas);
-if (Datos válidos?) then (Sí)
-  :Sistema muestra horario correspondiente;
+:Usuario selecciona al profesor;
+:Sistema solicita los datos de asignaturas y profesores;
+:Sistema muestra un calendario semanal;
+note right
+En formato de tabla:
+- Días como columnas
+- Horas como filas
+end note
+if (Bloques ocupados con asignaturas?) then (Sí)
+  :El sistema muestra en cada bloque ocupado:
+    - Asignatura
+    - Hora de inicio
+    - Aula;
 else (No)
-  :Sistema muestra mensaje de error: "No se encontraron horarios o datos inválidos";
+  :El sistema deja los bloques libres en blanco;
 endif
 stop
 @enduml

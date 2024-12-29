@@ -2,12 +2,8 @@
 start
 :El usuario solicita registrar una nueva asignatura;
 :Sistema muestra formulario para registrar asignatura;
-:Sistema solicita datos de la asignatura (nombre, créditos);
-if (Datos válidos?) then (Sí)
-  :Sistema permite el registro;
-  :Sistema muestra confirmación: "Asignatura registrada exitosamente";
-else (No)
-  :Sistema muestra mensaje de error: "Faltan datos o son inválidos";
-endif
+:Sistema solicita datos de la asignatura (grado, nombre);
+:Sistema permite el registro;
+:Sistema incorpora la asignatura;
 stop
 @enduml

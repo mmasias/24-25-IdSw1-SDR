@@ -1,12 +1,18 @@
 @startuml
 start
-:El usuario solicita editar una asignación existente;
-:Sistema solicita identificador de la asignación y nuevos datos;
-if (Datos válidos?) then (Sí)
-  :Sistema permite la edición;
-  :Sistema muestra confirmación: "Asignación actualizada correctamente";
+:El usuario solicita asignar una asignatura;
+:Sistema muestra formulario para asignar asignatura;
+:Sistema solicita datos del grado y asignatura;
+:Usuario selecciona el grado;
+:Sistema despliega las asignaturas disponibles para el grado;
+:Usuario selecciona la asignatura;
+:Usuario selecciona el día y la fecha;
+:Sistema chequea por aulas disponibles;
+if (¿Aulas disponibles?) then (Sí)
+  :Si la asignatura ya está asignada, el sistema actualiza los datos con los nuevos seleccionados;
+  :Sistema muestra confirmación: "Asignatura actualizada correctamente";
 else (No)
-  :Sistema muestra mensaje de error: "Datos incorrectos o asignación no encontrada";
+  :Sistema muestra mensaje de error: "No hay aulas disponibles";
 endif
 stop
 @enduml

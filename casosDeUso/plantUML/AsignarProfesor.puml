@@ -2,12 +2,10 @@
 start
 :El usuario solicita asignar un profesor a una asignatura;
 :Sistema muestra formulario para asignar profesor;
-:Sistema solicita datos del profesor y asignatura;
-if (Datos válidos?) then (Sí)
-  :Sistema realiza la asignación;
-  :Sistema muestra confirmación: "Profesor asignado correctamente";
-else (No)
-  :Sistema muestra mensaje de error: "Datos inválidos o profesor no disponible";
-endif
+:Sistema solicita datos del profesor y asignaturas;
+:Usuario selecciona al profesor;
+:Usuario selecciona una o múltiples asignaturas;
+:Sistema guarda los cambios;
+:Sistema actualiza el calendario del profesor con la información correspondiente;
 stop
 @enduml
