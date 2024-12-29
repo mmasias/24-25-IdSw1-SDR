@@ -45,7 +45,7 @@
 
   - [Editar Postulante](/casos_de_uso/casos_de_uso/administrador/editar_postulante/)
 
-  - [Listar Postulante](/casos_de_uso/casos_de_uso/administrador/listar_postulante/)
+  - [Listar Postulante](/casos_de_uso/casos_de_uso/administrador/listar_postulantes/)
 
   - [Eliminar Postulante](/casos_de_uso/casos_de_uso/administrador/eliminar_postulante/)
 
