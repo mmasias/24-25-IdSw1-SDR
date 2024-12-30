@@ -1,0 +1,31 @@
+@startuml
+state Menu_Rutinas_y_Ejercicios
+state rombo1 <<choice>>
+state rombo2 <<choice>>
+state Obligatorios
+state Opcionales
+state EditarReto
+state CrearReto
+state MostrarReto
+state Menu_Perfil
+state Menu_Retos
+state Clasificación
+state Menu_Principal
+
+[*] --> Menu_Retos : "El profesor solicita entrar a\nMenu Retos"
+Menu_Retos -->Obligatorios : El profesor escoge
+Menu_Retos --> Opcionales : El profesor escoge
+Obligatorios --> rombo1:El sistema permite
+Opcionales --> rombo1: El sistema permite
+rombo1 --> EditarReto
+rombo1 --> CrearReto
+rombo1 -->MostrarReto
+Menu_Retos --> rombo2 : "El profesor solicita a\nir a otra opción"
+rombo2 --> Menu_Perfil
+rombo2 --> Menu_Retos: "Volver al menú"
+rombo2 --> Clasificación
+rombo2 --> Menu_Principal
+rombo2 --> Menu_Rutinas_y_Ejercicios
+
+Menu_Retos --> [*]
+@enduml

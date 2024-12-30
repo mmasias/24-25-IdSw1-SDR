@@ -16,7 +16,7 @@ Estado1 --> Estado2
     end note
     Estado2 --> Estado3
     note on link
-        Usuario introduce
+        Usuario introcude
         - Correo
         - Contraseña
     end note

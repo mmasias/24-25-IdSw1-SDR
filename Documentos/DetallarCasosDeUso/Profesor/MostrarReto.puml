@@ -1,0 +1,26 @@
+@startuml
+state Menu_Rutinas_y_Ejercicios
+state rombo2 <<choice>>
+
+state EditarReto
+state MostrarReto
+state Menu_Perfil
+state Menu_Retos
+state Clasificación
+state Menu_Principal
+state " " as Estado1
+
+[*] --> MostrarReto : "El profesor solicita entrar a\nver un reto"
+
+MostrarReto --> Estado1 : El sistema muestra descripcion del reto
+Estado1 --> EditarReto : El sitema permite editar el reto a\nal profesor
+
+MostrarReto --> rombo2
+rombo2 --> Menu_Perfil
+rombo2 --> Menu_Retos
+rombo2 --> Clasificación
+rombo2 --> Menu_Principal
+rombo2 --> Menu_Rutinas_y_Ejercicios
+
+MostrarReto --> [*]
+@enduml

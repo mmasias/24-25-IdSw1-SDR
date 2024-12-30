@@ -1,0 +1,17 @@
+@startuml
+
+[*] --> MenuRetos : El profesor accede al menu Retos
+MenuRetos --> CrearRetos : El profesor accede a CrearRetos 
+CrearRetos --> NombreReto : El profesor nombra el reto
+NombreReto --> OpcionReto : El profesor debe establecer el tipo de reto 
+state reto <<choice>>
+OpcionReto --> reto : El sistema muestra las opciones de reto
+reto --> RetoObligatorio : El profesor ingresa RetoObligatorio
+reto --> RetoOpcional : El profesor ingresa RetoOpcional
+RetoObligatorio --> DescripcionReto : El profesor ingresa una descripcion del reto
+RetoOpcional --> DescripcionReto : El profesor ingresa una descripcion del reto
+DescripcionReto --> AsignarClases : El profesor asigna el reto a distintas clases
+AsignarClases --> CrearReto : El sistema muestra la opcion de "Crear"
+CrearReto --> [*] : El sistema crea el reto. El profesor vuelve al menuRetos
+
+@enduml

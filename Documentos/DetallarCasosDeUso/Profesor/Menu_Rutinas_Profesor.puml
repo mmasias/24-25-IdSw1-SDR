@@ -1,0 +1,34 @@
+@startuml
+state Menu_Rutinas_y_Ejercicios
+state rombo1 <<choice>>
+state rombo2 <<choice>>
+state Ejercicios
+state Rutinas
+state CrearRutina
+state CrearEjercicio
+state Menu_Perfil
+state Menu_Retos
+state Clasificación
+state Menu_Principal
+
+[*] --> Menu_Rutinas_y_Ejercicios : "El profesor solicita entrar a\nMenu Rutinas y Ejercicios"
+
+Menu_Rutinas_y_Ejercicios --> rombo1 : "El profesor solicita mostrar"
+rombo1 --> Ejercicios
+Ejercicios --> rombo1
+
+Ejercicios --> CrearEjercicio : "El sistema permite"
+Ejercicios --> MostrarEjercicio
+rombo1 --> Rutinas
+Rutinas --> CrearRutina: "El sistema permite"
+Rutinas --> MostrarRutina
+Rutinas --> rombo1
+Menu_Rutinas_y_Ejercicios --> rombo2 : "El profesor solicita ir a otra opción"
+rombo2 --> Menu_Perfil
+rombo2 --> Menu_Retos
+rombo2 --> Clasificación
+rombo2 --> Menu_Principal
+rombo2 --> Menu_Rutinas_y_Ejercicios : "Volver al menú"
+
+Menu_Rutinas_y_Ejercicios --> [*]
+@enduml

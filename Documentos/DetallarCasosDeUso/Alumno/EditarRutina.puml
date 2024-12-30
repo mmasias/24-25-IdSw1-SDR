@@ -1,0 +1,20 @@
+@startuml
+[*] --> Menu_Rutinas_y_Ejercicios : Inicio del proceso
+state rombo <<choice>>
+rombo --> Menu_Perfil
+rombo --> Menu_Retos
+rombo --> Clasificación
+rombo --> Menu_Rutinas_y_Ejercicios
+rombo --> Menu_Principal
+
+Menu_Rutinas_y_Ejercicios --> MostrarRutina
+MostrarRutina --> EditarRutina : Presionar botón "Editar Rutina"
+EditarRutina --> rombo
+
+state EditarRutina {
+  SolicitarDatosEdicion : El sistema muestra nombre y objetivo actuales para edición
+  SolicitarDatosEdicion --> ModificarEjercicios : El Alumno actualiza la lista de ejercicios
+  ModificarEjercicios --> ConfirmarEdicion : El Alumno presiona "Editar"
+  ConfirmarEdicion --> [*] : Cambios guardados con éxito
+}
+@enduml

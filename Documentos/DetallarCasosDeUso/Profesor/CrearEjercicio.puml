@@ -1,0 +1,20 @@
+@startuml
+[*] --> Menu_Rutinas_y_Ejercicios : Inicio del proceso
+state rombo <<choice>>
+ rombo --> Menu_Perfil
+ rombo --> Menu_Retos
+  rombo --> Clasificación 
+ rombo --> Menu_Rutinas_y_Ejercicios 
+rombo --> Menu_Principal
+
+Menu_Rutinas_y_Ejercicios --> CrearEjercicio : Seleccionar "Crear Ejercicio"
+CrearEjercicio --> rombo
+state CrearEjercicio {
+  SolicitarDatos : El sistema solicita nombre, video y descripción
+  SolicitarDatos --> AdjuntarDatos : El profesor adjunta video e ingresa nombre y descripción
+  AdjuntarDatos --> ConfirmarCreacion : El profesor presiona "Crear"
+  ConfirmarCreacion --> [*] : Ejercicio creado con éxito
+}
+
+
+@enduml

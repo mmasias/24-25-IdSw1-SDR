@@ -1,0 +1,20 @@
+@startuml
+top to bottom direction
+
+[*] --> Menu_Perfil : Inicio del proceso
+state rombo <<choice>>
+rombo -u-> Menu_Perfil
+rombo --> Menu_Retos
+rombo --> Menu_Clasificación
+rombo --> Menu_Rutinas_y_Ejercicios
+rombo --> Menu_Principal
+
+Menu_Perfil --> InscribirClase : Presionar "Incribirse en clase"
+InscribirClase --> rombo
+
+state InscribirClase {
+  IntroducirCódigo : El sistema solicita código correspondiente a una clase
+  IntroducirCódigo --> AceptarCódigo : El alumno pulsa "Aceptar"
+  AceptarCódigo --> [*] : Finaliza inscripción en una clase
+}
+@enduml
