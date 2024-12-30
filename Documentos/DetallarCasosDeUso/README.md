@@ -101,7 +101,7 @@
 ### Ver Alumnos Clase
 | Diagrama | Código Fuente |
 |----------|---------------|
-| ![Casos de uso](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/DetallarCasosDeUso/Ver_Alumnos_Clase_.svg) | [Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/DetallarCasosDeUso/VerAlumnosClase.puml) |
+| ![Casos de uso](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/DetallarCasosDeUso/VerAlumnosClase.svg) | [Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/DetallarCasosDeUso/Ver_Alumnos_Clase.puml) |
 
 ### Mostrar QR
 | Diagrama | Código Fuente |
