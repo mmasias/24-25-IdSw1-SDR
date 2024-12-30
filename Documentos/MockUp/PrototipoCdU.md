@@ -1,3 +1,9 @@
+# **Usuario No Registrado** 
+
+## Prototipo del CdU `Registrar` 
+![image](https://github.com/user-attachments/assets/17627ece-ac9f-427a-90bd-5368afbd5abb)
+
+
 # **Alumno**  
 
 ## Prototipo del CdU `IniciarSesion`  
@@ -37,6 +43,10 @@
 </div>
 
 ---
+## Prototipo del CdU `VerDescripcionYVideoEjercicio`
+
+![image](https://github.com/user-attachments/assets/29ed2f54-f72a-4e2d-ba89-01ba5e9c49ed)
+
 
 ## Prototipo del CdU `VerRetoOpcional`  
 ![image](https://github.com/user-attachments/assets/c21d4eb0-abb3-4710-9ec4-59259bf53f91)  
