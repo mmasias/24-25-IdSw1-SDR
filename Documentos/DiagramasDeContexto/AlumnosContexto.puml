@@ -1,8 +1,10 @@
 @startuml AlumnosCasosDeUso
 !define RECTANGLE(x, color) rectangle x #color
 ' === ACTORES Y ELEMENTOS PRINCIPALES ===
+RECTANGLE(USUARIO, YellowGreen)
 RECTANGLE(ALUMNO, YellowGreen)
 RECTANGLE(PAGINA_PRINCIPAL, LightBlue)
+RECTANGLE(NAVEGACION_MENUS, SkyBlue)
 
 ' === MENÚS ===
 RECTANGLE(MENU_RUTINAS_EJERCICIOS, PaleGreen)
@@ -20,32 +22,16 @@ RECTANGLE(SUBIR_EVIDENCIA_RETO, LightSalmon)
 RECTANGLE(VER_ALUMNOS_CLASE, Gold)
 
 ' === RELACIONES PRINCIPALES ===
+USUARIO -[#YellowGreen]-> ALUMNO: Incia sesión
 ALUMNO -[#YellowGreen]-> PAGINA_PRINCIPAL : Ingresar al sistema
-PAGINA_PRINCIPAL -[#PaleGreen]-> MENU_RUTINAS_EJERCICIOS : Usar rutinas y ejercicios
-PAGINA_PRINCIPAL -[#LightSalmon]-> MENU_RETOS : Participar en retos o actividades
-PAGINA_PRINCIPAL -[#Gold]-> MENU_CLASIFICACION : Consultar clasificación
-PAGINA_PRINCIPAL -[#LightCoral]-> MENU_PERFIL : Revisar perfil
+PAGINA_PRINCIPAL -[#SkyBlue]-> NAVEGACION_MENUS : Navegar por menús
 
-' === CONEXIONES ENTRE MENÚS PRINCIPALES ===
-MENU_RUTINAS_EJERCICIOS -[#LightSalmon]-> MENU_RETOS : Ir a retos
-MENU_RUTINAS_EJERCICIOS -[#Gold]-> MENU_CLASIFICACION : Ir a clasificación
-MENU_RUTINAS_EJERCICIOS -[#LightCoral]-> MENU_PERFIL : Ir a perfil
-MENU_RUTINAS_EJERCICIOS -[#LightBlue]-> PAGINA_PRINCIPAL : Ir a inicio
-
-MENU_RETOS -[#PaleGreen]-> MENU_RUTINAS_EJERCICIOS : Ir a rutinas
-MENU_RETOS -[#Gold]-> MENU_CLASIFICACION : Ir a clasificación
-MENU_RETOS -[#LightCoral]-> MENU_PERFIL : Ir a perfil
-MENU_RETOS -[#LightBlue]-> PAGINA_PRINCIPAL : Ir a inicio
-
-MENU_CLASIFICACION -[#PaleGreen]-> MENU_RUTINAS_EJERCICIOS : Ir a rutinas
-MENU_CLASIFICACION -[#LightSalmon]-> MENU_RETOS : Ir a retos
-MENU_CLASIFICACION -[#LightCoral]-> MENU_PERFIL : Ir a perfil
-MENU_CLASIFICACION -[#LightBlue]-> PAGINA_PRINCIPAL : Ir a inicio
-
-MENU_PERFIL -[#PaleGreen]-> MENU_RUTINAS_EJERCICIOS : Ir a rutinas
-MENU_PERFIL -[#LightSalmon]-> MENU_RETOS : Ir a retos
-MENU_PERFIL -[#Gold]-> MENU_CLASIFICACION : Ir a clasificación
-MENU_PERFIL -[#LightBlue]-> PAGINA_PRINCIPAL : Ir a inicio
+' === ESTADO INTERMEDIO: NAVEGACIÓN ENTRE MENÚS ===
+NAVEGACION_MENUS -[#PaleGreen]-> MENU_RUTINAS_EJERCICIOS : Ir a rutinas y ejercicios
+NAVEGACION_MENUS -[#LightSalmon]-> MENU_RETOS : Ir a retos
+NAVEGACION_MENUS -[#Gold]-> MENU_CLASIFICACION : Ir a clasificación
+NAVEGACION_MENUS -[#LightCoral]-> MENU_PERFIL : Ir a perfil
+NAVEGACION_MENUS -[#LightBlue]-> PAGINA_PRINCIPAL : Regresar al inicio
 
 ' === MENÚ RUTINAS Y EJERCICIOS ===
 MENU_RUTINAS_EJERCICIOS -[#PaleGreen]-> CREAR_RUTINA : Crear rutina
@@ -67,47 +53,22 @@ MENU_PERFIL -[#LightCoral]-> INSCRIBIR_CLASE : Inscribir en clase
 MENU_PERFIL -[#LightCoral]-> MOSTRAR_QR : Mostrar QR en centro deportivo
 MENU_PERFIL -[#YellowGreen]-> ALUMNO : Cerrar sesión
 
-' === CONEXIONES ENTRE SUBMENÚS Y MENÚS PRINCIPALES ===
-' Submenús conectados con todos los menús principales
-CREAR_RUTINA -[#LightBlue]-> PAGINA_PRINCIPAL
-CREAR_RUTINA -[#PaleGreen]-> MENU_RUTINAS_EJERCICIOS
-CREAR_RUTINA -[#LightSalmon]-> MENU_RETOS
-CREAR_RUTINA -[#Gold]-> MENU_CLASIFICACION
-CREAR_RUTINA -[#LightCoral]-> MENU_PERFIL
+' === CONEXIONES ENTRE ACCIONES Y MENÚS PRINCIPALES ===
+' Acciones conectadas con la navegación
+MENU_PERFIL -[#SkyBlue]-> NAVEGACION_MENUS: cambiar menu
+MENU_CLASIFICACION -[#SkyBlue]-> NAVEGACION_MENUS: cambiar menu
+MENU_RETOS -[#SkyBlue]-> NAVEGACION_MENUS: cambiar menu
+MENU_RUTINAS_EJERCICIOS -[#SkyBlue]-> NAVEGACION_MENUS: cambiar menu
 
-EDITAR_RUTINA -[#LightBlue]-> PAGINA_PRINCIPAL
-EDITAR_RUTINA -[#PaleGreen]-> MENU_RUTINAS_EJERCICIOS
-EDITAR_RUTINA -[#LightSalmon]-> MENU_RETOS
-EDITAR_RUTINA -[#Gold]-> MENU_CLASIFICACION
-EDITAR_RUTINA -[#LightCoral]-> MENU_PERFIL
+' === LEYENDA ===
+legend right
+Leyenda:
+- Color verde claro (#PaleGreen): Menús y acciones relacionadas con rutinas y ejercicios.
+- Color salmón claro (#LightSalmon): Menús y acciones relacionadas con retos.
+- Color dorado (#Gold): Menús y acciones relacionadas con clasificación.
+- Color coral claro (#LightCoral): Menús y acciones relacionadas con perfil.
+- Color azul claro (#LightBlue): Navegación general entre menús o regreso a la página principal.
+- Color amarillo verde (#YellowGreen): Acciones relacionadas con el inicio y cierre de sesión.
+end legend
 
-SUBIR_EVIDENCIA_RETO -[#LightBlue]-> PAGINA_PRINCIPAL
-SUBIR_EVIDENCIA_RETO -[#PaleGreen]-> MENU_RUTINAS_EJERCICIOS
-SUBIR_EVIDENCIA_RETO -[#LightSalmon]-> MENU_RETOS
-SUBIR_EVIDENCIA_RETO -[#Gold]-> MENU_CLASIFICACION
-SUBIR_EVIDENCIA_RETO -[#LightCoral]-> MENU_PERFIL
-
-VER_ALUMNOS_CLASE -[#LightBlue]-> PAGINA_PRINCIPAL
-VER_ALUMNOS_CLASE -[#PaleGreen]-> MENU_RUTINAS_EJERCICIOS
-VER_ALUMNOS_CLASE -[#LightSalmon]-> MENU_RETOS
-VER_ALUMNOS_CLASE -[#Gold]-> MENU_CLASIFICACION
-VER_ALUMNOS_CLASE -[#LightCoral]-> MENU_PERFIL
-
-VER_INSIGNIAS -[#LightBlue]-> PAGINA_PRINCIPAL
-VER_INSIGNIAS -[#PaleGreen]-> MENU_RUTINAS_EJERCICIOS
-VER_INSIGNIAS -[#LightSalmon]-> MENU_RETOS
-VER_INSIGNIAS -[#Gold]-> MENU_CLASIFICACION
-VER_INSIGNIAS -[#LightCoral]-> MENU_PERFIL
-
-INSCRIBIR_CLASE -[#LightBlue]-> PAGINA_PRINCIPAL
-INSCRIBIR_CLASE -[#PaleGreen]-> MENU_RUTINAS_EJERCICIOS
-INSCRIBIR_CLASE -[#LightSalmon]-> MENU_RETOS
-INSCRIBIR_CLASE -[#Gold]-> MENU_CLASIFICACION
-INSCRIBIR_CLASE -[#LightCoral]-> MENU_PERFIL
-
-MOSTRAR_QR -[#LightBlue]-> PAGINA_PRINCIPAL
-MOSTRAR_QR -[#PaleGreen]-> MENU_RUTINAS_EJERCICIOS
-MOSTRAR_QR -[#LightSalmon]-> MENU_RETOS
-MOSTRAR_QR -[#Gold]-> MENU_CLASIFICACION
-MOSTRAR_QR -[#LightCoral]-> MENU_PERFIL
 @enduml
