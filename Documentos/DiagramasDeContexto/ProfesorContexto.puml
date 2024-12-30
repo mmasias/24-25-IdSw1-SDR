@@ -62,8 +62,7 @@ MENU_RETOS -[#Orange]-> CREAR_RETOS : Crear retos
 MENU_RETOS -[#Orange]-> EDITAR_RETOS : Editar retos
 
 ' Menú "Clasificación"
-MENU_CLASIFICACION -[#GoldenRod]-> VER_CLASES : Ver clases
-VER_CLASES -[#GoldenRod]-> VER_ALUMNOS_CLASE : Ver alumnos dentro de clases
+MENU_CLASIFICACION -[#GoldenRod]->  VER_ALUMNOS_CLASE : Ver alumnos dentro de clases
 
 ' Menú "Perfil"
 MENU_PERFIL -[#Red]-> CREAR_CLASE : Crear clase
@@ -84,7 +83,7 @@ EDITAR_EJERCICIO -[#SkyBlue]-> NAVEGACION_MENUS : Cambiar menú
 CREAR_RETOS -[#SkyBlue]-> NAVEGACION_MENUS : Cambiar menú
 EDITAR_RETOS -[#SkyBlue]-> NAVEGACION_MENUS : Cambiar menú
 
-VER_CLASES -[#SkyBlue]-> NAVEGACION_MENUS : Cambiar menú
+
 VER_ALUMNOS_CLASE -[#SkyBlue]-> NAVEGACION_MENUS : Cambiar menú
 
 CREAR_CLASE -[#SkyBlue]-> NAVEGACION_MENUS : Cambiar menú
@@ -94,6 +93,11 @@ VER_ALUMNOS -[#SkyBlue]-> NAVEGACION_MENUS : Cambiar menú
 VER_RETOS_ALUMNOS -[#SkyBlue]-> NAVEGACION_MENUS : Cambiar menú
 EVALUAR_RETOS -[#SkyBlue]-> NAVEGACION_MENUS : Cambiar menú
 
+
+MENU_RUTINAS_EJERCICIOS -[#LightBlue]-> PAGINA_PRINCIPAL
+MENU_CLASIFICACION -[#LightBlue]-> PAGINA_PRINCIPAL
+MENU_PERFIL -[#LightBlue]-> PAGINA_PRINCIPAL
+MENU_RETOS -[#LightBlue]-> PAGINA_PRINCIPAL
 ' Leyenda
 legend right
   Leyenda:
