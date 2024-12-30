@@ -2,8 +2,10 @@
 !define RECTANGLE(x) rectangle x
 
 ' Definición de actores y elementos principales
+RECTANGLE(USUARIO) #YellowGreen
 RECTANGLE(PROFESOR) #YellowGreen
 RECTANGLE(PAGINA_PRINCIPAL) #LightBlue
+RECTANGLE(NAVEGACION_MENUS) #SkyBlue
 
 ' Menús principales
 RECTANGLE(MENU_RUTINAS_EJERCICIOS) #PaleGreen
@@ -36,12 +38,16 @@ RECTANGLE(VER_RETOS_ALUMNOS) #LightCoral
 RECTANGLE(EVALUAR_RETOS) #LightCoral
 
 ' Relaciones principales
+USUARIO -[#Black]-> PROFESOR : Iniciar sesión
 PROFESOR -[#Black]-> PAGINA_PRINCIPAL : Ingresar al sistema
+PAGINA_PRINCIPAL -[#SkyBlue]-> NAVEGACION_MENUS : Navegar por menús
 
-PAGINA_PRINCIPAL -[#Green]-> MENU_RUTINAS_EJERCICIOS : Gestionar rutinas y ejercicios
-PAGINA_PRINCIPAL -[#Orange]-> MENU_RETOS : Gestionar retos
-PAGINA_PRINCIPAL -[#GoldenRod]-> MENU_CLASIFICACION : Consultar clasificación
-PAGINA_PRINCIPAL -[#Red]-> MENU_PERFIL : Revisar perfil
+' Navegación entre menús
+NAVEGACION_MENUS -[#PaleGreen]-> MENU_RUTINAS_EJERCICIOS : Cambiar a Rutinas y Ejercicios
+NAVEGACION_MENUS -[#LightSalmon]-> MENU_RETOS : Cambiar a Retos
+NAVEGACION_MENUS -[#Gold]-> MENU_CLASIFICACION : Cambiar a Clasificación
+NAVEGACION_MENUS -[#LightCoral]-> MENU_PERFIL : Cambiar a Perfil
+NAVEGACION_MENUS -[#LightBlue]-> PAGINA_PRINCIPAL : Regresar al inicio
 
 ' Menú "Rutinas y Ejercicios"
 MENU_RUTINAS_EJERCICIOS -[#Green]-> CREAR_RUTINA : Crear rutina
@@ -67,101 +73,36 @@ VER_MIS_CLASES -[#Red]-> VER_ALUMNOS : Ver alumnos
 VER_ALUMNOS -[#Red]-> VER_RETOS_ALUMNOS : Ver retos alumnos
 VER_RETOS_ALUMNOS -[#Red]-> EVALUAR_RETOS : Evaluar retos
 
-' Conexiones universales desde cada submenú
-CREAR_RUTINA -[#Green]-> MENU_RUTINAS_EJERCICIOS
-CREAR_RUTINA -[#Orange]-> MENU_RETOS
-CREAR_RUTINA -[#GoldenRod]-> MENU_CLASIFICACION
-CREAR_RUTINA -[#Red]-> MENU_PERFIL
-CREAR_RUTINA -[#LightBlue]-> PAGINA_PRINCIPAL
+' Conexiones de los submenús a la navegación general con color SkyBlue y etiqueta "Cambiar menú"
+CREAR_RUTINA -[#SkyBlue]-> NAVEGACION_MENUS : Cambiar menú
+MOSTRAR_RUTINA -[#SkyBlue]-> NAVEGACION_MENUS : Cambiar menú
+EDITAR_RUTINA -[#SkyBlue]-> NAVEGACION_MENUS : Cambiar menú
+CREAR_EJERCICIO -[#SkyBlue]-> NAVEGACION_MENUS : Cambiar menú
+MOSTRAR_EJERCICIO -[#SkyBlue]-> NAVEGACION_MENUS : Cambiar menú
+EDITAR_EJERCICIO -[#SkyBlue]-> NAVEGACION_MENUS : Cambiar menú
 
-MOSTRAR_RUTINA -[#Green]-> MENU_RUTINAS_EJERCICIOS
-MOSTRAR_RUTINA -[#Orange]-> MENU_RETOS
-MOSTRAR_RUTINA -[#GoldenRod]-> MENU_CLASIFICACION
-MOSTRAR_RUTINA -[#Red]-> MENU_PERFIL
-MOSTRAR_RUTINA -[#LightBlue]-> PAGINA_PRINCIPAL
+CREAR_RETOS -[#SkyBlue]-> NAVEGACION_MENUS : Cambiar menú
+EDITAR_RETOS -[#SkyBlue]-> NAVEGACION_MENUS : Cambiar menú
 
-EDITAR_RUTINA -[#Green]-> MENU_RUTINAS_EJERCICIOS
-EDITAR_RUTINA -[#Orange]-> MENU_RETOS
-EDITAR_RUTINA -[#GoldenRod]-> MENU_CLASIFICACION
-EDITAR_RUTINA -[#Red]-> MENU_PERFIL
-EDITAR_RUTINA -[#LightBlue]-> PAGINA_PRINCIPAL
+VER_CLASES -[#SkyBlue]-> NAVEGACION_MENUS : Cambiar menú
+VER_ALUMNOS_CLASE -[#SkyBlue]-> NAVEGACION_MENUS : Cambiar menú
 
-CREAR_EJERCICIO -[#Green]-> MENU_RUTINAS_EJERCICIOS
-CREAR_EJERCICIO -[#Orange]-> MENU_RETOS
-CREAR_EJERCICIO -[#GoldenRod]-> MENU_CLASIFICACION
-CREAR_EJERCICIO -[#Red]-> MENU_PERFIL
-CREAR_EJERCICIO -[#LightBlue]-> PAGINA_PRINCIPAL
+CREAR_CLASE -[#SkyBlue]-> NAVEGACION_MENUS : Cambiar menú
+MOSTRAR_QR -[#SkyBlue]-> NAVEGACION_MENUS : Cambiar menú
+VER_MIS_CLASES -[#SkyBlue]-> NAVEGACION_MENUS : Cambiar menú
+VER_ALUMNOS -[#SkyBlue]-> NAVEGACION_MENUS : Cambiar menú
+VER_RETOS_ALUMNOS -[#SkyBlue]-> NAVEGACION_MENUS : Cambiar menú
+EVALUAR_RETOS -[#SkyBlue]-> NAVEGACION_MENUS : Cambiar menú
 
-MOSTRAR_EJERCICIO -[#Green]-> MENU_RUTINAS_EJERCICIOS
-MOSTRAR_EJERCICIO -[#Orange]-> MENU_RETOS
-MOSTRAR_EJERCICIO -[#GoldenRod]-> MENU_CLASIFICACION
-MOSTRAR_EJERCICIO -[#Red]-> MENU_PERFIL
-MOSTRAR_EJERCICIO -[#LightBlue]-> PAGINA_PRINCIPAL
-
-EDITAR_EJERCICIO -[#Green]-> MENU_RUTINAS_EJERCICIOS
-EDITAR_EJERCICIO -[#Orange]-> MENU_RETOS
-EDITAR_EJERCICIO -[#GoldenRod]-> MENU_CLASIFICACION
-EDITAR_EJERCICIO -[#Red]-> MENU_PERFIL
-EDITAR_EJERCICIO -[#LightBlue]-> PAGINA_PRINCIPAL
-
-CREAR_RETOS -[#Green]-> MENU_RUTINAS_EJERCICIOS
-CREAR_RETOS -[#Orange]-> MENU_RETOS
-CREAR_RETOS -[#GoldenRod]-> MENU_CLASIFICACION
-CREAR_RETOS -[#Red]-> MENU_PERFIL
-CREAR_RETOS -[#LightBlue]-> PAGINA_PRINCIPAL
-
-EDITAR_RETOS -[#Green]-> MENU_RUTINAS_EJERCICIOS
-EDITAR_RETOS -[#Orange]-> MENU_RETOS
-EDITAR_RETOS -[#GoldenRod]-> MENU_CLASIFICACION
-EDITAR_RETOS -[#Red]-> MENU_PERFIL
-EDITAR_RETOS -[#LightBlue]-> PAGINA_PRINCIPAL
-
-VER_CLASES -[#Green]-> MENU_RUTINAS_EJERCICIOS
-VER_CLASES -[#Orange]-> MENU_RETOS
-VER_CLASES -[#GoldenRod]-> MENU_CLASIFICACION
-VER_CLASES -[#Red]-> MENU_PERFIL
-VER_CLASES -[#LightBlue]-> PAGINA_PRINCIPAL
-
-VER_ALUMNOS_CLASE -[#Green]-> MENU_RUTINAS_EJERCICIOS
-VER_ALUMNOS_CLASE -[#Orange]-> MENU_RETOS
-VER_ALUMNOS_CLASE -[#GoldenRod]-> MENU_CLASIFICACION
-VER_ALUMNOS_CLASE -[#Red]-> MENU_PERFIL
-VER_ALUMNOS_CLASE -[#LightBlue]-> PAGINA_PRINCIPAL
-
-CREAR_CLASE -[#Green]-> MENU_RUTINAS_EJERCICIOS
-CREAR_CLASE -[#Orange]-> MENU_RETOS
-CREAR_CLASE -[#GoldenRod]-> MENU_CLASIFICACION
-CREAR_CLASE -[#Red]-> MENU_PERFIL
-CREAR_CLASE -[#LightBlue]-> PAGINA_PRINCIPAL
-
-MOSTRAR_QR -[#Green]-> MENU_RUTINAS_EJERCICIOS
-MOSTRAR_QR -[#Orange]-> MENU_RETOS
-MOSTRAR_QR -[#GoldenRod]-> MENU_CLASIFICACION
-MOSTRAR_QR -[#Red]-> MENU_PERFIL
-MOSTRAR_QR -[#LightBlue]-> PAGINA_PRINCIPAL
-
-VER_MIS_CLASES -[#Green]-> MENU_RUTINAS_EJERCICIOS
-VER_MIS_CLASES -[#Orange]-> MENU_RETOS
-VER_MIS_CLASES -[#GoldenRod]-> MENU_CLASIFICACION
-VER_MIS_CLASES -[#Red]-> MENU_PERFIL
-VER_MIS_CLASES -[#LightBlue]-> PAGINA_PRINCIPAL
-
-VER_ALUMNOS -[#Green]-> MENU_RUTINAS_EJERCICIOS
-VER_ALUMNOS -[#Orange]-> MENU_RETOS
-VER_ALUMNOS -[#GoldenRod]-> MENU_CLASIFICACION
-VER_ALUMNOS -[#Red]-> MENU_PERFIL
-VER_ALUMNOS -[#LightBlue]-> PAGINA_PRINCIPAL
-
-VER_RETOS_ALUMNOS -[#Green]-> MENU_RUTINAS_EJERCICIOS
-VER_RETOS_ALUMNOS -[#Orange]-> MENU_RETOS
-VER_RETOS_ALUMNOS -[#GoldenRod]-> MENU_CLASIFICACION
-VER_RETOS_ALUMNOS -[#Red]-> MENU_PERFIL
-VER_RETOS_ALUMNOS -[#LightBlue]-> PAGINA_PRINCIPAL
-
-EVALUAR_RETOS -[#Green]-> MENU_RUTINAS_EJERCICIOS
-EVALUAR_RETOS -[#Orange]-> MENU_RETOS
-EVALUAR_RETOS -[#GoldenRod]-> MENU_CLASIFICACION
-EVALUAR_RETOS -[#Red]-> MENU_PERFIL
-EVALUAR_RETOS -[#LightBlue]-> PAGINA_PRINCIPAL
+' Leyenda
+legend right
+  Leyenda:
+  - Color verde claro (#PaleGreen): Menús y acciones relacionadas con rutinas y ejercicios.
+  - Color salmón claro (#LightSalmon): Menús y acciones relacionadas con retos.
+  - Color dorado (#Gold): Menús y acciones relacionadas con clasificación.
+  - Color coral claro (#LightCoral): Menús y acciones relacionadas con perfil.
+  - Color azul claro (#SkyBlue): Navegación general entre menús o regreso a la página principal.
+  - Color amarillo verde (#YellowGreen): Acciones relacionadas con el inicio de sesión.
+end legend
 
 @enduml
