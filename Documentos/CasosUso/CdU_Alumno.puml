@@ -13,8 +13,8 @@ package "Rutinas y Ejercicios" {
     }
 
     package "Ejercicios" {
-        usecase "Ver Video Explicativo" as VerVideoExplicativo
-        usecase "Ver Descripcion de Ejercicio" as VerDescripcionEjercicio
+
+        usecase "Ver Descripcion Y Video de Ejercicio" as VerDescripcionYVideoEjercicio
     }
 }
 
@@ -53,8 +53,8 @@ VerRutinas --> EditarRutina : <<include>>
 VerRutinas --> BuscarEjercicioEnRutina : <<include>>
 VerRutinas --> VerEjerciciosEnRutina : <<include>>
 
-VerEjercicios --> VerVideoExplicativo : <<include>>
-VerEjercicios --> VerDescripcionEjercicio : <<include>>
+
+VerEjercicios --> VerDescripcionYVideoEjercicio : <<include>>
 
 VerRetosObligatorios --> VerDescripcionReto : <<include>>
 VerRetosOpcionales --> VerDescripcionReto : <<include>>
