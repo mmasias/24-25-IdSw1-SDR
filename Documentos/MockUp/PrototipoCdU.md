@@ -99,3 +99,62 @@
 ---
 
 # **Profesor**  
+
+## Prototipo del CdU `IniciarSesion`
+
+## Prototipo del CdU `VerRtuinasDisponibles`
+
+## Prototipo del CdU `BuscarRutina`
+
+## Prototipo del CdU `CrearRutina`
+
+## Prototipo del CdU `VerRutinaEspecífica`
+
+## Prototipo del CdU `BuscarEjercicioEnRutina`
+
+## Prototipo del CdU `VerEjerciciosEnRutina`
+
+## Prototipo del CdU `EditarRutina`
+
+## Prototipo del CdU `BuscarEjercicio`
+
+## Prototipo del CdU `CrearEjercicio`
+
+## Prototipo del CdU `VerEjerciciosDisponibles`
+
+## Prototipo del CdU `VerEjercicioEspecífico`
+
+## Prototipo del CdU `EditarEjercicio`
+
+## Prototipo del CdU `VerRetosObligatorios`
+
+## Prototipo del CdU `CrearRetoObligatorio`
+
+## Prototipo del CdU `EditarRetoObligatorio`
+
+## Prototipo del CdU `VerRetosOpcionales`
+
+## Prototipo del CdU `CrearRetoOpcional`
+
+## Prototipo del CdU `EditarRetoOpcional`
+
+## Prototipo del CdU `AsignarRetoAClase`
+
+## Prototipo del CdU `VerClasificacionDeClases`
+
+## Prototipo del CdU `VerClasificacionDeAlumnos`
+
+## Prototipo del CdU `CerrarSesion`
+
+## Prototipo del CdU `CrearClase`
+
+## Prototipo del CdU `MostrarQR`
+
+## Prototipo del CdU `VerMisClases`
+
+## Prototipo del CdU `VerAlumnos`
+
+## Prototipo del CdU `VerRetosAlumno`
+
+## Prototipo del CdU `EvaluarReto`
+
