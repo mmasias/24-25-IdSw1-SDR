@@ -1,5 +1,6 @@
 @startuml AlumnosCasosDeUso
 !define RECTANGLE(x, color) rectangle x #color
+
 ' === ACTORES Y ELEMENTOS PRINCIPALES ===
 RECTANGLE(USUARIO, YellowGreen)
 RECTANGLE(ALUMNO, YellowGreen)
@@ -22,7 +23,7 @@ RECTANGLE(SUBIR_EVIDENCIA_RETO, LightSalmon)
 RECTANGLE(VER_ALUMNOS_CLASE, Gold)
 
 ' === RELACIONES PRINCIPALES ===
-USUARIO -[#YellowGreen]-> ALUMNO: Incia sesión
+USUARIO -[#YellowGreen]-> ALUMNO: Iniciar sesión
 ALUMNO -[#YellowGreen]-> PAGINA_PRINCIPAL : Ingresar al sistema
 PAGINA_PRINCIPAL -[#SkyBlue]-> NAVEGACION_MENUS : Navegar por menús
 
@@ -36,29 +37,31 @@ NAVEGACION_MENUS -[#LightBlue]-> PAGINA_PRINCIPAL : Regresar al inicio
 ' === MENÚ RUTINAS Y EJERCICIOS ===
 MENU_RUTINAS_EJERCICIOS -[#PaleGreen]-> CREAR_RUTINA : Crear rutina
 MENU_RUTINAS_EJERCICIOS -[#PaleGreen]-> EDITAR_RUTINA : Editar rutina
-CREAR_RUTINA -[#PaleGreen]-> MENU_RUTINAS_EJERCICIOS : Volver al menú rutinas y ejercicios
-EDITAR_RUTINA -[#PaleGreen]-> MENU_RUTINAS_EJERCICIOS : Volver al menú rutinas y ejercicios
+CREAR_RUTINA -[#SkyBlue]-> NAVEGACION_MENUS : Cambiar menú
+EDITAR_RUTINA -[#SkyBlue]-> NAVEGACION_MENUS : Cambiar menú
 
 ' === MENÚ RETOS ===
 MENU_RETOS -[#LightSalmon]-> SUBIR_EVIDENCIA_RETO : Subir evidencia de reto
-SUBIR_EVIDENCIA_RETO -[#LightSalmon]-> MENU_RETOS : Volver al menú retos
+SUBIR_EVIDENCIA_RETO -[#SkyBlue]-> NAVEGACION_MENUS : Cambiar menú
 
 ' === MENÚ CLASIFICACIÓN ===
 MENU_CLASIFICACION -[#Gold]-> VER_ALUMNOS_CLASE : Ver alumnos de la clase
-VER_ALUMNOS_CLASE -[#Gold]-> MENU_CLASIFICACION : Volver al menú clasificación
+VER_ALUMNOS_CLASE -[#SkyBlue]-> NAVEGACION_MENUS : Cambiar menú
 
 ' === MENÚ PERFIL ===
 MENU_PERFIL -[#LightCoral]-> VER_INSIGNIAS : Ver insignias
 MENU_PERFIL -[#LightCoral]-> INSCRIBIR_CLASE : Inscribir en clase
 MENU_PERFIL -[#LightCoral]-> MOSTRAR_QR : Mostrar QR en centro deportivo
 MENU_PERFIL -[#YellowGreen]-> ALUMNO : Cerrar sesión
+VER_INSIGNIAS -[#SkyBlue]-> NAVEGACION_MENUS : Cambiar menú
+INSCRIBIR_CLASE -[#SkyBlue]-> NAVEGACION_MENUS : Cambiar menú
+MOSTRAR_QR -[#SkyBlue]-> NAVEGACION_MENUS : Cambiar menú
 
 ' === CONEXIONES ENTRE ACCIONES Y MENÚS PRINCIPALES ===
-' Acciones conectadas con la navegación
-MENU_PERFIL -[#SkyBlue]-> NAVEGACION_MENUS: cambiar menu
-MENU_CLASIFICACION -[#SkyBlue]-> NAVEGACION_MENUS: cambiar menu
-MENU_RETOS -[#SkyBlue]-> NAVEGACION_MENUS: cambiar menu
-MENU_RUTINAS_EJERCICIOS -[#SkyBlue]-> NAVEGACION_MENUS: cambiar menu
+MENU_PERFIL -[#SkyBlue]-> NAVEGACION_MENUS: Cambiar menú
+MENU_CLASIFICACION -[#SkyBlue]-> NAVEGACION_MENUS: Cambiar menú
+MENU_RETOS -[#SkyBlue]-> NAVEGACION_MENUS: Cambiar menú
+MENU_RUTINAS_EJERCICIOS -[#SkyBlue]-> NAVEGACION_MENUS: Cambiar menú
 
 ' === LEYENDA ===
 legend right
