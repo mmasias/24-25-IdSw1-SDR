@@ -9,7 +9,8 @@ PreparandoClases --> ImpartiendoClasesPracticas : iniciar clases prácticas
 
 ImpartiendoClasesTeoricas --> ImpartiendoClasesTeoricas : continuar sesiones teóricas
 ImpartiendoClasesTeoricas --> Evaluando : finalizar clases teóricas y calificar
-
+ImpartiendoClasesPracticas --> ImpartiendoClasesTeoricas : sesiones teóricas
+ImpartiendoClasesTeoricas --> ImpartiendoClasesPracticas : sesiones prácticas
 ImpartiendoClasesPracticas --> ImpartiendoClasesPracticas : continuar sesiones prácticas
 ImpartiendoClasesPracticas --> Evaluando : finalizar clases prácticas y calificar
 
