@@ -1,0 +1,19 @@
+@startuml
+top to bottom direction
+
+[*] --> Menu_Perfil : Inicio del proceso
+state rombo <<choice>>
+rombo -u-> Menu_Perfil
+rombo --> Menu_Retos
+rombo --> Menu_Clasificación
+rombo --> Menu_Rutinas_y_Ejercicios
+rombo --> Menu_Principal
+
+Menu_Perfil --> VerInsignias 
+VerInsignias --> rombo
+
+state VerInsignias {
+  MostrarInsignias --> MostrarInsignias : El sistema muestra todas las insignias
+  MostrarInsignias --> [*] : Finaliza visualización de insignias
+}
+@enduml
