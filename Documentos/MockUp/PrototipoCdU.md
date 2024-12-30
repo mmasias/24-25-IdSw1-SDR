@@ -194,15 +194,32 @@
 
 ## Prototipo del CdU `CerrarSesion`
 
+![image](https://github.com/user-attachments/assets/d458358f-ff8e-4ed2-8b51-bfcb92f9fa23)
+
+
 ## Prototipo del CdU `CrearClase`
+![image](https://github.com/user-attachments/assets/8668a186-995e-4dac-9de1-163307dbfae7)
+![image](https://github.com/user-attachments/assets/41c8c20f-0ee6-4d33-b030-d076612274f5)
+
 
 ## Prototipo del CdU `MostrarQR`
+![image](https://github.com/user-attachments/assets/5dcce221-0504-4f96-af18-708633266788)
+![image](https://github.com/user-attachments/assets/69c6a7fc-f15a-4efc-a4b6-78e975977039)
+
 
 ## Prototipo del CdU `VerMisClases`
+![image](https://github.com/user-attachments/assets/f72cbac7-03ee-42fc-a0ff-efbeef847fe8)
+![image](https://github.com/user-attachments/assets/5618458e-3714-481d-9439-d2c239b99c9d)
+
 
 ## Prototipo del CdU `VerAlumnos`
+![image](https://github.com/user-attachments/assets/f381fe6f-4860-4629-bf18-20a72721ba56)
+
 
 ## Prototipo del CdU `VerRetosAlumno`
+![image](https://github.com/user-attachments/assets/84ec3bbe-ff7e-4a2e-9043-0f0e35e7ba49)
+
 
 ## Prototipo del CdU `EvaluarReto`
+![image](https://github.com/user-attachments/assets/f1483579-8a1f-490e-b97c-bc972d7358cd)
 
