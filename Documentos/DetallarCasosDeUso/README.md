@@ -116,7 +116,7 @@
 ### Ver Insginias
 | Diagrama | Código Fuente |
 |----------|---------------|
-| ![Casos de uso](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/DetallarCasosDeUso/VerInsignias.svg) | [Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/DetallarCasosDeUso/VerInsignias.puml) |
+| ![Casos de uso](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/d3c4c4d7d5f7a92cd9d2ce3b2315a1be89050778/Documentos/Imagenes/DetallarCasosDeUso/Alumno/VerInsignias.svg) | [Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/d3c4c4d7d5f7a92cd9d2ce3b2315a1be89050778/Documentos/DetallarCasosDeUso/Alumno/VerInsignias.puml) |
 
 ### Mostrar QR
 | Diagrama | Código Fuente |
