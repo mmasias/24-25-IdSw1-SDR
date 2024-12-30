@@ -1,0 +1,59 @@
+@startuml diagramaDeEstados3
+[*] --> Entradas_Preparadas
+
+state Entradas_Preparadas {
+    Entradas_Preparadas : Verificar datos iniciales
+    Entradas_Preparadas : - Memorias
+    Entradas_Preparadas : - Asignaciones
+}
+
+Entradas_Preparadas --> Entradas_Validadas : Datos completos
+
+state Entradas_Validadas {
+    Entradas_Validadas : Validar consistencia
+    Entradas_Validadas : - Revisión de memoria
+    Entradas_Validadas : - Verificar datos
+}
+
+Entradas_Validadas --> Indicadores_Generados : Datos válidos
+Entradas_Validadas --> Entradas_Corrigidas : Errores detectados
+
+state Entradas_Corrigidas {
+    Entradas_Corrigidas : Corregir datos
+    Entradas_Corrigidas : - Ajustar asignaciones
+}
+
+Entradas_Corrigidas --> Entradas_Preparadas
+
+state Indicadores_Generados {
+    Indicadores_Generados : Calcular indicadores
+    Indicadores_Generados : - Memorias
+    Indicadores_Generados : - Carga académica
+}
+
+Indicadores_Generados --> Informe_Generado : Indicadores listos
+
+state Informe_Generado {
+    Informe_Generado : Crear informe
+    Informe_Generado : - Incluir indicadores
+    Informe_Generado : - Verificar cumplimiento legal
+}
+
+Informe_Generado --> Informe_Ajustado : Ajustes requeridos
+Informe_Generado --> Informe_Validado : Informe validado
+
+state Informe_Ajustado {
+    Informe_Ajustado : Modificar informe
+    Informe_Ajustado : - Ajustar datos
+}
+
+Informe_Ajustado --> Informe_Generado
+
+state Informe_Validado {
+    Informe_Validado : Informe final
+    Informe_Validado : - Validado
+    Informe_Validado : - Listo para uso
+}
+
+Informe_Validado --> [*]
+@enduml

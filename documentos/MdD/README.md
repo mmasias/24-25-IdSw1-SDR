@@ -17,8 +17,11 @@ Este documento presenta los diagramas principales del modelo de dominio: el **di
 
 - **Descripción**: 
   - `Asignación` asigna a un [`Profesor`](/documentos/glosario.md#-pdi-personal-docente-e-investigador), quien imparte una `Asignatura` que pertenece a una `Titulación`.  
+
   - La `Asignación` también corresponde a una `Asignatura` y cumple con la [`Memoria Académica`](/documentos/glosario.md#-memoria-académica).  
+
   - La [`Memoria Académica`](/documentos/glosario.md#-memoria-académica) establece metas y valores utilizando [`Indicadores`](/documentos/glosario.md#-indicador), que extraen datos del [`Profesor`](/documentos/glosario.md#-pdi-personal-docente-e-investigador).  
+
   - [`Profesor`](/documentos/glosario.md#-pdi-personal-docente-e-investigador) imparte las `Asignaturas` relacionadas y contribuye a los datos que evalúan los [`Indicadores`](/documentos/glosario.md#-indicador).
 
 ---
@@ -33,25 +36,57 @@ Este documento presenta los diagramas principales del modelo de dominio: el **di
 
 - **Descripción**:
   - La `Asignación` (#1001) asigna al [`Profesor`](documentos/glosario.md#-pdi-personal-docente-e-investigador) (Dr. Juan Pérez), quien imparte la `Asignatura` (Programación I) vinculada al Grado en Ingeniería Informática.
+
   - La `Asignación` corresponde a la `Asignatura` (INF101), cumple los objetivos establecidos en la [`Memoria Académica`](documentos/glosario.md#-memoria-académica) del curso 2023/2024 y gestiona una [`Carga Académica`](documentos/glosario.md#-carga-académica) de 24 créditos en modalidad Presencial.
+
   - La [`Memoria Académica`](documentos/glosario.md#-memoria-académica) establece un [`Indicador`](documentos/glosario.md#-indicador) (IND001) con un valor de 75, superando el umbral de alerta establecido en 60, para monitorear metas como la movilidad académica y los [sexenios](documentos/glosario.md#-sexenio) del profesor.
+
   - El [`Profesor`](documentos/glosario.md#-pdi-personal-docente-e-investigador) (Dr. Juan Pérez) tiene un historial de contrato que incluye períodos como Titular y Catedrático, así como experiencia previa como Investigador y Profesor Asociado.
+
   - El [`Profesor`](documentos/glosario.md#-pdi-personal-docente-e-investigador) está validado para movilidad en instituciones como (Universidad A) y (Universidad B) y forma parte de la Facultad de Ingeniería en UNEATLANTICO.
 
 
 ---
 
-## 3. Diagrama de Flujo
+## 3. Diagramas de Estados
 
+### 3.1 Diagrama de Estado para Gestión de Profesores
 
 | **Diagrama** | **Código Fuente** |
 |--------------|--------------------|
-| ![Diagrama de Estados](/images/modelosUML/MdD/diagramaDeEstados.svg) | [Ver código](/modelosUML/MdD/diagramaDeEstados.puml) |
+| ![Diagrama de Estados 1](/images/modelosUML/MdD/diagramaDeEstados1.svg) | [Ver código](/modelosUML/MdD/diagramaDeEstados1.puml) |
 
 - **Descripción**:
+  - Un `Profesor` es seleccionado, verificando su disponibilidad y carga actual. Se procede a asignarle una `Asignatura`, revisando compatibilidad contractual y los grupos disponibles.
 
-  - Profesor `Sin_Asignacion`. Se hace `Propuesta_Carga` y genera carga inicial.
-  - `Verificar_Contrato` revisa compatibilidad con contrato o `No_Valido` rechaza por exceso de carga.
-  - `Revisión_EQ_TC` verifica límite EQ TC.
-  - `Revisión_Carga` valida carga; pasa a `Aprobada` (Carga adecuada y validada) o `Ajuste_Carga` (Se requieren cambios).
-  - `Asignada` es la carga final asignada.
+  - La asignación genera una `Carga Validada`, donde se comparan las proporciones de trabajo (docencia, investigación, gestión) con los límites del contrato del profesor.  
+
+  - Si la carga asignada resulta incorrecta, se entra al estado de `Ajuste Necesario`, modificando las proporciones para corregir desbalances, antes de regresar a validar la carga. 
+
+  - Finalmente, una vez validada la carga, se verifica el `Cumplimiento Normativo`. Si no cumple, el proceso termina sin asignación; si cumple, se registra la `Asignación Completa`, concluyendo el flujo.
+
+### 3.2 Diagrama de Estado para Gestión de Asignaturas
+
+| **Diagrama** | **Código Fuente** |
+|--------------|--------------------|
+| ![Diagrama de Estados 2](/images/modelosUML/MdD/diagramaDeEstados2.svg) | [Ver código](/modelosUML/MdD/diagramaDeEstados2.puml) |
+
+- **Descripción**:
+  - El flujo inicia con la selección de una `Asignatura`, donde se revisan los grupos pendientes y los requisitos necesarios para impartirla. Luego, se asigna un `Profesor`, verificando su disponibilidad, compatibilidad con el contrato y adecuación al EQ TC.  
+
+  - Tras asignar al profesor, se valida la asignatura en el estado de `Asignatura Validada`, comprobando que todos los grupos están cubiertos y los balances de carga son correctos. Si existen desbalances, el sistema entra a `Ajuste Profesor`, donde se reasignan profesores o grupos antes de volver a validar.  
+
+  - Al concluir esta validación, se realiza una `Revisión Legal`. Si cumple con los requisitos normativos, se registra como una `Asignación Completada`. En caso contrario, el flujo finaliza sin asignación válida.
+
+### 3.3 Diagrama de Estado para Validación de Indicadores e Informes
+
+| **Diagrama** | **Código Fuente** |
+|--------------|--------------------|
+| ![Diagrama de Estados 3](/images/modelosUML/MdD/diagramaDeEstados3.svg) | [Ver código](/modelosUML/MdD/diagramaDeEstados3.puml) |
+
+- **Descripción**:
+  - El flujo comienza con la `Entradas Preparadas`, verificando las memorias y asignaciones iniciales. Una vez preparados, se validan los datos en `Entradas Validadas` para asegurar su consistencia. Si son correctos, se generan los indicadores necesarios en `Indicadores Generados` para la creación del informe.
+
+  - A continuación, se genera el informe en `Informe Generado` a partir de los indicadores y se valida su cumplimiento legal. Si es necesario, el informe se ajusta en `Informe Ajustado` antes de ser validado de nuevo en `Informe Validado`. Finalmente, una vez validado, el informe queda listo para su uso.
+
+  - Si en cualquier etapa se detectan errores en los datos, el flujo regresa a la corrección de entradas en `Entradas Corrigidas` antes de continuar.
