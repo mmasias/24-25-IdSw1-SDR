@@ -1,0 +1,33 @@
+@startuml
+state Ver_Alumnos_Clase
+state rombo2 <<choice>>
+state Clase_1
+state Clase_2
+state Clase_3
+state Clase_4
+state Menu_Perfil
+state Menu_Retos
+state Menu_Rutinas_y_Ejercicios
+state Menu_Principal
+
+[*] --> Ver_Alumnos_Clase : "El profesor solicita entrar a\nVer alumnos clase"
+
+Ver_Alumnos_Clase --> Ver_Alumnos_Clase : "El profesor solicita acceder a una  clase"
+Ver_Alumnos_Clase --> Clase_1
+Ver_Alumnos_Clase --> Clase_2
+Clase_1 --> Ver_Alumnos_Clase
+Clase_2 --> Ver_Alumnos_Clase
+Ver_Alumnos_Clase --> Clase_3
+Clase_3 --> Ver_Alumnos_Clase
+Ver_Alumnos_Clase --> Clase_4
+Clase_4 --> Ver_Alumnos_Clase
+
+
+Ver_Alumnos_Clase --> rombo2 : "El profesor solicita ir a otra opción"
+rombo2 --> Menu_Perfil
+rombo2 --> Menu_Retos
+rombo2 --> Menu_Rutinas_y_Ejercicios
+rombo2 --> Menu_Principal
+
+Ver_Alumnos_Clase --> [*]
+@enduml
