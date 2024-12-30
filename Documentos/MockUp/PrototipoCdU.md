@@ -102,47 +102,95 @@
 
 ## Prototipo del CdU `IniciarSesion`
 
+![image](https://github.com/user-attachments/assets/412beb22-6f7b-479b-b3cc-ec95630ef03a)
+
+
 ## Prototipo del CdU `VerRtuinasDisponibles`
+![image](https://github.com/user-attachments/assets/5c769750-ae90-4ee1-9760-4fa84c643920)
+
 
 ## Prototipo del CdU `BuscarRutina`
+![image](https://github.com/user-attachments/assets/992071da-e518-45f3-9585-ed178b09ebec)
+
 
 ## Prototipo del CdU `CrearRutina`
+![image](https://github.com/user-attachments/assets/d369b44f-18a6-4819-91ad-8e6eb9d97456)
+![image](https://github.com/user-attachments/assets/e64b1452-cf01-4374-9ae7-0b3f17fbd146)
+
+
 
 ## Prototipo del CdU `VerRutinaEspecífica`
+![image](https://github.com/user-attachments/assets/c33db118-b356-4441-88f7-27d9086cda69)
+
 
 ## Prototipo del CdU `BuscarEjercicioEnRutina`
+![image](https://github.com/user-attachments/assets/dec9e727-ebf1-4c4e-8c8f-b6dca10d94ed)
+
 
 ## Prototipo del CdU `VerEjerciciosEnRutina`
+![image](https://github.com/user-attachments/assets/95a5a782-f439-4eea-885c-c3d31452714b)
+
 
 ## Prototipo del CdU `EditarRutina`
+![image](https://github.com/user-attachments/assets/5e5eb5cd-067e-4266-a93b-a9cbe8452f0d)
+
 
 ## Prototipo del CdU `BuscarEjercicio`
+![image](https://github.com/user-attachments/assets/8d1daaec-879a-472a-856a-6ed13d270278)
 
 ## Prototipo del CdU `CrearEjercicio`
+![image](https://github.com/user-attachments/assets/129c9f02-bd82-49d4-ab2d-ad6a118293ac)
+
 
 ## Prototipo del CdU `VerEjerciciosDisponibles`
+![image](https://github.com/user-attachments/assets/624e23b8-da6c-427f-856c-33799421786d)
+
 
 ## Prototipo del CdU `VerEjercicioEspecífico`
+![image](https://github.com/user-attachments/assets/d361072b-bdc7-4f3c-8482-395915a87d21)
+
 
 ## Prototipo del CdU `EditarEjercicio`
+![image](https://github.com/user-attachments/assets/50e1a80a-0fa7-4471-ba3f-554205bde2b4)
+
 
 ## Prototipo del CdU `VerRetosObligatorios`
+![image](https://github.com/user-attachments/assets/b566fca9-57fa-4e15-b213-664366e4d335)
+
 
 ## Prototipo del CdU `CrearRetoObligatorio`
+![image](https://github.com/user-attachments/assets/ca58404e-8e00-4c15-9ad3-725eb2520fb5)
+![image](https://github.com/user-attachments/assets/a02c1e21-01bc-48f6-8fea-9a8a35b11eef)
+
 
 ## Prototipo del CdU `EditarRetoObligatorio`
+![image](https://github.com/user-attachments/assets/b2f9df66-cd74-4ded-a4c2-1307ea918fec)
+![image](https://github.com/user-attachments/assets/3703a652-1142-43ba-9d8e-4db6c3048507)
 
 ## Prototipo del CdU `VerRetosOpcionales`
+![image](https://github.com/user-attachments/assets/33da0968-57d9-4c25-80e8-50c6d4127814)
 
 ## Prototipo del CdU `CrearRetoOpcional`
+![image](https://github.com/user-attachments/assets/ae8c503c-4d81-43ec-b719-70c6d568a992)
+
+![image](https://github.com/user-attachments/assets/d9c00adb-3ecb-4876-9f4d-ea9b58da894d)
+
 
 ## Prototipo del CdU `EditarRetoOpcional`
+![image](https://github.com/user-attachments/assets/f2c01439-ca17-4a73-ac22-ccf8f2e94fb2)
+![image](https://github.com/user-attachments/assets/ff963f49-a93d-4e35-990a-9c9e0b4e1d31)
+
 
 ## Prototipo del CdU `AsignarRetoAClase`
+![image](https://github.com/user-attachments/assets/41b41278-08ea-4a60-bcfa-51be02a9f066)
+
 
 ## Prototipo del CdU `VerClasificacionDeClases`
+![image](https://github.com/user-attachments/assets/01aa73a6-b7d5-4e0b-8b18-c33eaaa25662)
+
 
 ## Prototipo del CdU `VerClasificacionDeAlumnos`
+![image](https://github.com/user-attachments/assets/003c64c0-cc13-4511-8471-f027e56f3ec8)
 
 ## Prototipo del CdU `CerrarSesion`
 
