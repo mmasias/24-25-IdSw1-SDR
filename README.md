@@ -27,7 +27,8 @@
 | [🔗 Prototipar Casos de Uso](Documentos/MockUp/PrototipoCdU.md) |
 
 
-
+### 📱 Mockup 
+[🔗 Mockup versión pdf](Documentos/MockUp/Mockup.pdf)
 
 ## Reuniones
 ### 📅 Reunión 1
