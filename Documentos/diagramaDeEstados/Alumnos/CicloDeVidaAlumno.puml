@@ -9,12 +9,14 @@ EnClaseTeorica --> EnEvaluacion : Completar teoría
 EnClasePractica --> Rutina : Recibir rutina
 
 state Rutina {
+    [*] --> EsperandoRutina : Esperar rutina
     EsperandoRutina --> RutinaNoAsignada : Rutina no asignada
     EsperandoRutina --> RutinaAsignada : Rutina asignada
     RutinaNoAsignada --> EsperandoRutina
     RutinaAsignada --> EjecutandoRutina : Comenzar rutina
     EjecutandoRutina --> EjecutandoRutina : Continuar rutina
     EjecutandoRutina --> RutinaTerminada : Rutina completada
+    RutinaTerminada --> [*] : Terminar rutina
 }
 
 Rutina --> EnEvaluacion : Completar prácticas
