@@ -92,6 +92,11 @@
 |----------|---------------|
 | ![Casos de uso](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/DetallarCasosDeUso/Profesor/Ver_Mis_Clases.svg) | [Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/DetallarCasosDeUso/Profesor/Ver_Mis_Clases.puml) |
 
+### Ver Alumnos
+| Diagrama | Código Fuente |
+|----------|---------------|
+| ![Casos de uso](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/DetallarCasosDeUso/Profesor/Ver_Alumnos.svg) | [Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/DetallarCasosDeUso/Profesor/Ver_Alumnos.puml) |
+
 ### Cerrar Sesión 
 | Diagrama | Código Fuente |
 |----------|---------------|
