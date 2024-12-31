@@ -1,5 +1,5 @@
 @startuml
-state Menu_Perfil_Profesor
+state MenuPerfilProfesor
 state rombo1 <<choice>>
 state rombo2 <<choice>>
 state Crear_Clase
@@ -10,20 +10,20 @@ state Menu_Retos
 state Menu_Rutinas_y_Ejercicios
 state Menu_Principal
 
-[*] --> Menu_Perfil_Profesor : "El profesor solicita entrar a\nMenu Perfil Profesor"
+[*] --> MenuPerfilProfesor : "El profesor solicita entrar a\nMenu Perfil Profesor"
 
-Menu_Perfil_Profesor --> rombo2 : "El profesor solicita acceder a las opciones del perfil"
+MenuPerfilProfesor --> rombo2 : "El profesor solicita acceder a las opciones del perfil"
 rombo2 --> Crear_Clase
 rombo2 --> Ver_Mis_Clases
 rombo2 --> Mostrar_QR 
 
 
-Menu_Perfil_Profesor --> rombo1 : "El profesor solicita ir a otra opción"
+MenuPerfilProfesor --> rombo1 : "El profesor solicita ir a otra opción"
 rombo1 --> Menu_Perfil
 rombo1 --> Menu_Retos
 rombo1 --> Menu_Rutinas_y_Ejercicios
 rombo1 --> Menu_Principal
-rombo1 --> Menu_Perfil_Profesor : "Volver al menú"
+rombo1 --> MenuPerfilProfesor : "Volver al menú"
 
-Menu_Perfil_Profesor --> [*]
+MenuPerfilProfesor --> [*]
 @enduml
