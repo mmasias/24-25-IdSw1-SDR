@@ -1,0 +1,24 @@
+@startuml
+state Ver_Mis_Clases
+state rombo1 <<choice>>
+state Ver_Alumnos
+state Menu_Perfil
+state Menu_Retos
+state Menu_Rutinas_y_Ejercicios
+state Menu_Principal
+
+[*] --> Ver_Mis_Clases : "El profesor solicita entrar a\nVer mis clases"
+
+Ver_Mis_Clases --> Ver_Alumnos : "El profesor solicita ver alumnos"
+
+
+
+Ver_Mis_Clases --> rombo1 : "El profesor solicita ir a otra opción"
+rombo1 --> Menu_Perfil
+rombo1 --> Menu_Retos
+rombo1 --> Menu_Rutinas_y_Ejercicios
+rombo1 --> Menu_Principal
+rombo1 --> Ver_Mis_Clases : "Volver al menú"
+
+Ver_Mis_Clases --> [*]
+@enduml
