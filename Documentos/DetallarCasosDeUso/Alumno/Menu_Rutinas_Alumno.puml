@@ -5,7 +5,7 @@ state rombo2 <<choice>>
 state Ejercicios
 state Rutinas
 state CrearRutina
-state CrearEjercicio
+state EditarRutina
 state Menu_Perfil
 state Menu_Retos
 state Clasificación
@@ -17,11 +17,12 @@ Menu_Rutinas_y_Ejercicios --> rombo1 : "El Alumno solicita mostrar"
 rombo1 --> Ejercicios
 Ejercicios --> rombo1
 
-Ejercicios --> CrearEjercicio : "El sistema permite"
+
 Ejercicios --> MostrarEjercicio
 rombo1 --> Rutinas
-Rutinas --> CrearRutina: "El sistema permite"
+Rutinas --> CrearRutina: El sistema \npermite
 Rutinas --> MostrarRutina
+Rutinas --> EditarRutina
 Rutinas --> rombo1
 Menu_Rutinas_y_Ejercicios --> rombo2 : "El Alumno solicita ir a otra opción"
 rombo2 --> Menu_Perfil
