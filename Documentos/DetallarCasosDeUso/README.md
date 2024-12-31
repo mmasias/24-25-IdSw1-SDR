@@ -98,6 +98,11 @@
 |----------|---------------|
 | ![Casos de uso](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/e1c95d91903ec2c37505da5668d561056825d9b6/Documentos/Imagenes/DetallarCasosDeUso/Alumno/Menu_Rutinas_Alumno.svg) | [Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/e1c95d91903ec2c37505da5668d561056825d9b6/Documentos/DetallarCasosDeUso/Alumno/Menu_Rutinas_Alumno.puml) |
 
+### Mostrar Rutina
+| Diagrama | Código Fuente |
+|----------|---------------|
+| ![Casos de uso](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/fce589aa54c40172d918059f331086cca66594cf/Documentos/Imagenes/DetallarCasosDeUso/Alumno/MostrarRutina.svg) | [Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/fce589aa54c40172d918059f331086cca66594cf/Documentos/DetallarCasosDeUso/Alumno/MostrarRutina.puml) |
+
 ### Crear Rutina
 | Diagrama | Código Fuente |
 |----------|---------------|
@@ -107,6 +112,11 @@
 | Diagrama | Código Fuente |
 |----------|---------------|
 | ![Casos de uso](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/e1c95d91903ec2c37505da5668d561056825d9b6/Documentos/Imagenes/DetallarCasosDeUso/Alumno/EditarRutina.svg) | [Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/e1c95d91903ec2c37505da5668d561056825d9b6/Documentos/DetallarCasosDeUso/Alumno/EditarRutina.puml) |
+
+### Mostrar Ejercicio
+| Diagrama | Código Fuente |
+|----------|---------------|
+| ![Casos de uso](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/fce589aa54c40172d918059f331086cca66594cf/Documentos/Imagenes/DetallarCasosDeUso/Alumno/MostrarEjercicio.svg) | [Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/fce589aa54c40172d918059f331086cca66594cf/Documentos/DetallarCasosDeUso/Alumno/MostrarEjercicio.puml) |
 
 ### Menu Perfil
 | Diagrama | Código Fuente |
