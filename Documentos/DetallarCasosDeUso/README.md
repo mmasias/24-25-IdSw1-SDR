@@ -82,6 +82,11 @@
 |----------|---------------|
 | ![Casos de uso](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/DetallarCasosDeUso/Profesor/Menu_Perfil_Profesor.svg) | [Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/DetallarCasosDeUso/Profesor/Menu_Perfil_Profesor.puml) |
 
+### Crear Clase
+| Diagrama | Código Fuente |
+|----------|---------------|
+| ![Casos de uso](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/DetallarCasosDeUso/Profesor/CrearClase.svg) | [Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/DetallarCasosDeUso/Profesor/CrearClase.puml) |
+
 ### Cerrar Sesión 
 | Diagrama | Código Fuente |
 |----------|---------------|
