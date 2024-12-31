@@ -80,7 +80,7 @@
 ### Menu Perfil Profesor
 | Diagrama | Código Fuente |
 |----------|---------------|
-| ![Casos de uso](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/e1c95d91903ec2c37505da5668d561056825d9b6/Documentos/Imagenes/DetallarCasosDeUso/Profesor/Menu_Perfil_Profesor.svg) | [Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/e1c95d91903ec2c37505da5668d561056825d9b6/Documentos/DetallarCasosDeUso/Profesor/Menu_Perfil_Profesor.puml) |
+| ![Casos de uso](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/DetallarCasosDeUso/Profesor/Menu_Perfil_Profesor.svg) | [Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/DetallarCasosDeUso/Profesor/Menu_Perfil_Profesor.puml) |
 
 ### Cerrar Sesión 
 | Diagrama | Código Fuente |
