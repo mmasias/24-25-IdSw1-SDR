@@ -1,0 +1,29 @@
+@startuml
+state CrearClase
+state rombo1 <<choice>>
+state rombo2 <<choice>>
+state NombreClase
+state DescripcionClase
+state CodigoClase
+state Menu_Retos
+state Menu_Rutinas_y_Ejercicios
+state Menu_Principal
+state Clasificación
+
+[*] --> CrearClase : "El profesor solicita entrar a\n crear clase"
+
+
+CrearClase --> rombo1 : "El sistema muestra menu para crear clase"
+rombo1 --> NombreClase
+rombo1 --> CodigoClase
+rombo1 --> DescripcionClase 
+
+
+CrearClase --> rombo2 : "El profesor solicita ir a otra opción"
+rombo2 --> Menu_Perfil
+rombo2 --> Menu_Retos
+rombo2 --> Menu_Rutinas_y_Ejercicios
+rombo2 --> Menu_Principal
+rombo2 --> Clasificación
+CrearClase-->[*]
+@enduml
