@@ -77,6 +77,11 @@
 |----------|---------------|
 | ![Casos de uso](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/e1c95d91903ec2c37505da5668d561056825d9b6/Documentos/Imagenes/DetallarCasosDeUso/Profesor/Ver_Alumnos_Clase.svg) | [Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/e1c95d91903ec2c37505da5668d561056825d9b6/Documentos/DetallarCasosDeUso/Profesor/Ver_Alumnos_Clase.puml) |
 
+### Menu Perfil Profesor
+| Diagrama | Código Fuente |
+|----------|---------------|
+| ![Casos de uso](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/e1c95d91903ec2c37505da5668d561056825d9b6/Documentos/Imagenes/DetallarCasosDeUso/Alumno/Menu_Perfil_Profesor.svg) | [Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/e1c95d91903ec2c37505da5668d561056825d9b6/Documentos/DetallarCasosDeUso/Alumno/Menu_Perfil_Profesor.puml) |
+
 ### Cerrar Sesión 
 | Diagrama | Código Fuente |
 |----------|---------------|
