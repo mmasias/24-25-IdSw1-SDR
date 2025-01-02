@@ -1,0 +1,29 @@
+@startuml
+state Ver_Retos_Alumnos
+state rombo1 <<choice>>
+state rombo2 <<choice>>
+state Retos_Obligatorios
+state Retos_Opcionales
+state Evaluar_Retos
+state Menu_Retos
+state Menu_Rutinas_y_Ejercicios
+state Menu_Principal
+
+[*] --> Ver_Retos_Alumnos : "El profesor solicita entrar a\nVer los retos de los alumnos"
+
+Ver_Retos_Alumnos --> rombo2 : "El profesor solicita acceder a las opciones del perfil"
+rombo2 --> Retos_Obligatorios
+rombo2 --> Retos_Opcionales
+Retos_Obligatorios --> Evaluar_Retos 
+Retos_Opcionales --> Evaluar_Retos
+
+
+Ver_Retos_Alumnos --> rombo1 : "El profesor solicita ir a otra opción"
+rombo1 --> Clasificacion
+rombo1 --> Menu_Retos
+rombo1 --> Menu_Rutinas_y_Ejercicios
+rombo1 --> Menu_Principal
+rombo1 --> Ver_Retos_Alumnos : "Volver al menú"
+
+Ver_Retos_Alumnos --> [*]
+@enduml
