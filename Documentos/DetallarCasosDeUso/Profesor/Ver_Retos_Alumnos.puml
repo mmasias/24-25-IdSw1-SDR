@@ -11,7 +11,7 @@ state Menu_Principal
 
 [*] --> Ver_Retos_Alumnos : "El profesor solicita entrar a\nVer los retos de los alumnos"
 
-Ver_Retos_Alumnos --> rombo2 : "El profesor solicita acceder a las opciones del perfil"
+Ver_Retos_Alumnos --> rombo2 : "El profesor solicita acceder a los tipos de retos del alumno"
 rombo2 --> Retos_Obligatorios
 rombo2 --> Retos_Opcionales
 Retos_Obligatorios --> Evaluar_Retos 
