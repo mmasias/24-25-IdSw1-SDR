@@ -3,8 +3,8 @@ left to right direction
 actor Alumno
 
 package "Rutinas y Ejercicios" {
-    usecase "Ver Rutinas" as VerRutinas
-    usecase "Ver Ejercicios" as VerEjercicios
+    usecase "Ver Rutina" as VerRutinas
+    usecase "Ver Ejercicio" as VerEjercicios
 
     package "Rutinas" {
         usecase "Editar Rutina" as EditarRutina
@@ -19,8 +19,8 @@ package "Rutinas y Ejercicios" {
 }
 
 package Retos {
-    usecase "Ver Retos Obligatorios" as VerRetosObligatorios
-    usecase "Ver Retos Opcionales" as VerRetosOpcionales
+    usecase "Ver Reto Obligatorio" as VerRetosObligatorios
+    usecase "Ver Reto Opcional" as VerRetosOpcionales
     usecase "Subir Evidencia" as SubirEvidencia
     usecase "Ver Descripcion de Reto" as VerDescripcionReto
 }
