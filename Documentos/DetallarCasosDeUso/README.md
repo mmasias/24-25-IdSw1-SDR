@@ -1,7 +1,7 @@
 # Detallar Casos De Uso
 
 ## Usuario No Registrado
-### Registrarse 
+### Registrar 
 | Diagrama | Código Fuente |
 |----------|---------------|
 | ![Casos de uso](../Imagenes/DetallarCasosDeUso/Registrarse.svg) | [Ver código](Registrarse.puml) |
