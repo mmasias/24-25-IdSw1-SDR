@@ -5,7 +5,7 @@ actor Profesor
 package "Rutinas y Ejercicios" {
 
     package "Rutinas" {
-        usecase "Ver Rutinas Disponibles" as VerRutinasDisponibles
+        usecase "Ver Rutina Disponible" as VerRutinasDisponibles
         usecase "Buscar Rutina" as BuscarRutina
         usecase "Crear Rutina" as CrearRutina
         usecase "Ver Rutina Específica" as VerRutinaEspecifica
@@ -18,7 +18,7 @@ package "Rutinas y Ejercicios" {
 
     package "Ejercicios" {
         usecase "Buscar Ejercicio" as BuscarEjercicio
-        usecase "Ver Ejercicios Disponibles" as VerEjerciciosDisponibles
+        usecase "Ver Ejercicio Disponible" as VerEjerciciosDisponibles
         usecase "Crear Ejercicio" as CrearEjercicio
 
         usecase "Ver Ejercicio Específico" as VerEjercicioEspecifico
@@ -28,13 +28,13 @@ package "Rutinas y Ejercicios" {
 
 package "Retos" {
     package "Obligatorios" {
-        usecase "Ver Retos Obligatorios" as VerRetosObligatorios
+        usecase "Ver Reto Obligatorio" as VerRetosObligatorios
         usecase "Crear Reto Obligatorio" as CrearRetoObligatorio
         usecase "Editar Reto Obligatorio" as EditarRetoObligatorio
     }
 
     package "Opcionales" {
-        usecase "Ver Retos Opcionales" as VerRetosOpcionales
+        usecase "Ver Reto Opcional" as VerRetosOpcionales
         usecase "Crear Reto Opcional" as CrearRetoOpcional
         usecase "Editar Reto Opcional" as EditarRetoOpcional
     }
@@ -43,22 +43,22 @@ package "Retos" {
 }
 
 package "Clasificación" {
-    usecase "Ver Clasificación de Clases" as VerClasificacionClases
-    usecase "Ver Clasificación de Alumnos" as VerClasificacionAlumnos
+    usecase "Ver Clasificación de Clase" as VerClasificacionClases
+    usecase "Ver Clasificación de Alumno" as VerClasificacionAlumnos
     VerClasificacionClases --> VerClasificacionAlumnos : <<include>>
 }
 
 package "Perfil" {
     usecase "Cerrar Sesión" as CerrarSesion
     usecase "Crear Clase" as CrearClase
-    usecase "Mostrar QR Centros Deportivos" as MostrarQRCentros
-    usecase "Ver Mis Clases" as VerMisClases
+    usecase "Mostrar QR Centro Deportivo" as MostrarQRCentros
+    usecase "Ver Mi Clase" as VerMisClases
 
     package "Mis Clases" {
-        usecase "Ver Alumnos" as VerAlumnosEnClase
+        usecase "Ver Alumno" as VerAlumnosEnClase
 
         package "Alumnos" {
-            usecase "Ver Retos del Alumno" as VerRetosDelAlumno
+            usecase "Ver Reto del Alumno" as VerRetosDelAlumno
             usecase "Evaluar Reto" as EvaluarReto
         }
     }
