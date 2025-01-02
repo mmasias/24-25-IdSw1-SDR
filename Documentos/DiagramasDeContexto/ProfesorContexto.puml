@@ -26,7 +26,6 @@ RECTANGLE(CREAR_RETOS) #LightSalmon
 RECTANGLE(EDITAR_RETOS) #LightSalmon
 
 ' Submenús de "Clasificación"
-RECTANGLE(VER_CLASES) #Gold
 RECTANGLE(VER_ALUMNOS_CLASE) #Gold
 
 ' Submenús de "Perfil"
