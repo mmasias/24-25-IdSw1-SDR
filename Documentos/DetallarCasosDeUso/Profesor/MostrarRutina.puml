@@ -12,7 +12,7 @@ ListaRutinas --> MostrarRutina : Seleccionar una rutina de la lista
 MostrarRutina --> rombo
 
 state MostrarRutina {
-  VerDetallesRutina : El sistema muestra la lista de ejercicios
+ [*] --> VerDetallesRutina : El sistema muestra la lista de ejercicios
   VerDetallesRutina --> MostrarEjercicio : Seleccionar un ejercicio de la lista
   VerDetallesRutina --> EditarRutina
   VerDetallesRutina --> CrearRutina
