@@ -151,12 +151,7 @@
 ### Menu Clasificación
 | Diagrama | Código Fuente |
 |----------|---------------|
-| ![Casos de uso]() | [Ver código]() |
-
-### Ver Clasificacion de una clase
-| Diagrama | Código Fuente |
-|----------|---------------|
-| ![Casos de uso]() | [Ver código]() |
+| ![Casos de uso](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/a1cc40157bc5f7ac7111f663dbfbb20451fc4702/Documentos/Imagenes/DetallarCasosDeUso/Alumno/MenuClasificacion.svg) | [Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/a1cc40157bc5f7ac7111f663dbfbb20451fc4702/Documentos/DetallarCasosDeUso/Alumno/MenuClasificacion.puml) |
 
 ### Menu Perfil
 | Diagrama | Código Fuente |
