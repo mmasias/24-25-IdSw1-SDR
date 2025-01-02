@@ -13,7 +13,7 @@ MostrarRutina --> CrearRutina: Presionar botón "Crear Rutina"
 CrearRutina --> rombo
 
 state CrearRutina {
-  SolicitarDatosRutina : El sistema solicita nombre y objetivo de la rutina
+  [*] -->SolicitarDatosRutina : El sistema solicita nombre y objetivo de la rutina
   SolicitarDatosRutina --> SeleccionarEjercicios : El profesor selecciona ejercicios de la lista
   SeleccionarEjercicios --> ConfirmarCreacion : El profesor presiona "Crear"
   ConfirmarCreacion --> [*] : Rutina creada con éxito
