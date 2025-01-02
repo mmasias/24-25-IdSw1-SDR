@@ -131,3 +131,233 @@
 </div>
 
 ---
+
+---
+
+### **Prototipo del CdU MostrarInsignia**  
+<p align="center">  
+  <img src="https://github.com/user-attachments/assets/60ebd7ee-be42-4b1b-a742-d10e3add85be" alt="MostrarInsignia"/>  
+</p>  
+
+---
+
+### **Prototipo del CdU InscribirClase**  
+<p align="center">  
+  <img src="https://github.com/user-attachments/assets/18a13dd0-98c2-4235-804e-aa49778d20bb" alt="InscribirClase"/>  
+</p>  
+
+---
+
+## **Profesor**  
+
+### **Prototipo del CdU IniciarSesion**  
+<p align="center">  
+  <img src="https://github.com/user-attachments/assets/412beb22-6f7b-479b-b3cc-ec95630ef03a" alt="IniciarSesion"/>  
+</p>  
+
+---
+
+### **Prototipo del CdU VerRutinasDisponibles**  
+<p align="center">  
+  <img src="https://github.com/user-attachments/assets/5c769750-ae90-4ee1-9760-4fa84c643920" alt="VerRutinasDisponibles"/>  
+</p>  
+
+---
+
+### **Prototipo del CdU BuscarRutina**  
+<p align="center">  
+  <img src="https://github.com/user-attachments/assets/992071da-e518-45f3-9585-ed178b09ebec" alt="BuscarRutina"/>  
+</p>  
+
+---
+
+### **Prototipo del CdU CrearRutina**  
+<p align="center">  
+  <img src="https://github.com/user-attachments/assets/d369b44f-18a6-4819-91ad-8e6eb9d97456" alt="CrearRutina_1"/>  
+  <img src="https://github.com/user-attachments/assets/e64b1452-cf01-4374-9ae7-0b3f17fbd146" alt="CrearRutina_2"/>  
+</p>  
+
+---
+
+### **Prototipo del CdU VerRutinaEspecífica**  
+<p align="center">  
+  <img src="https://github.com/user-attachments/assets/c33db118-b356-4441-88f7-27d9086cda69" alt="VerRutinaEspecífica"/>  
+</p>  
+
+---
+
+### **Prototipo del CdU BuscarEjercicioEnRutina**  
+<p align="center">  
+  <img src="https://github.com/user-attachments/assets/dec9e727-ebf1-4c4e-8c8f-b6dca10d94ed" alt="BuscarEjercicioEnRutina"/>  
+</p>  
+
+---
+
+### **Prototipo del CdU VerEjerciciosEnRutina**  
+<p align="center">  
+  <img src="https://github.com/user-attachments/assets/95a5a782-f439-4eea-885c-c3d31452714b" alt="VerEjerciciosEnRutina"/>  
+</p>  
+
+---
+
+### **Prototipo del CdU EditarRutina**  
+<p align="center">  
+  <img src="https://github.com/user-attachments/assets/5e5eb5cd-067e-4266-a93b-a9cbe8452f0d" alt="EditarRutina"/>  
+</p>  
+
+---
+
+### **Prototipo del CdU BuscarEjercicio**  
+<p align="center">  
+  <img src="https://github.com/user-attachments/assets/8d1daaec-879a-472a-856a-6ed13d270278" alt="BuscarEjercicio"/>  
+</p>  
+
+---
+
+### **Prototipo del CdU CrearEjercicio**  
+<p align="center">  
+  <img src="https://github.com/user-attachments/assets/129c9f02-bd82-49d4-ab2d-ad6a118293ac" alt="CrearEjercicio"/>  
+</p>  
+
+---
+
+### **Prototipo del CdU VerEjerciciosDisponibles**  
+<p align="center">  
+  <img src="https://github.com/user-attachments/assets/624e23b8-da6c-427f-856c-33799421786d" alt="VerEjerciciosDisponibles"/>  
+</p>  
+
+---
+
+### **Prototipo del CdU VerEjercicioEspecífico**  
+<p align="center">  
+  <img src="https://github.com/user-attachments/assets/d361072b-bdc7-4f3c-8482-395915a87d21" alt="VerEjercicioEspecífico"/>  
+</p>  
+
+---
+
+### **Prototipo del CdU EditarEjercicio**  
+<p align="center">  
+  <img src="https://github.com/user-attachments/assets/50e1a80a-0fa7-4471-ba3f-554205bde2b4" alt="EditarEjercicio"/>  
+</p>  
+
+---
+
+### **Prototipo del CdU VerRetosObligatorios**  
+<p align="center">  
+  <img src="https://github.com/user-attachments/assets/b566fca9-57fa-4e15-b213-664366e4d335" alt="VerRetosObligatorios"/>  
+</p>  
+
+---
+
+### **Prototipo del CdU CrearRetoObligatorio**  
+<p align="center">  
+  <img src="https://github.com/user-attachments/assets/ca58404e-8e00-4c15-9ad3-725eb2520fb5" alt="CrearRetoObligatorio_1"/>  
+  <img src="https://github.com/user-attachments/assets/a02c1e21-01bc-48f6-8fea-9a8a35b11eef" alt="CrearRetoObligatorio_2"/>  
+</p>  
+
+---
+
+### **Prototipo del CdU EditarRetoObligatorio**  
+<p align="center">  
+  <img src="https://github.com/user-attachments/assets/b2f9df66-cd74-4ded-a4c2-1307ea918fec" alt="EditarRetoObligatorio_1"/>  
+  <img src="https://github.com/user-attachments/assets/3703a652-1142-43ba-9d8e-4db6c3048507" alt="EditarRetoObligatorio_2"/>  
+</p>  
+
+---
+
+### **Prototipo del CdU VerRetosOpcionales**  
+<p align="center">  
+  <img src="https://github.com/user-attachments/assets/33da0968-57d9-4c25-80e8-50c6d4127814" alt="VerRetosOpcionales"/>  
+</p>  
+
+---
+
+### **Prototipo del CdU CrearRetoOpcional**  
+<p align="center">  
+  <img src="https://github.com/user-attachments/assets/ae8c503c-4d81-43ec-b719-70c6d568a992" alt="CrearRetoOpcional_1"/>  
+  <img src="https://github.com/user-attachments/assets/d9c00adb-3ecb-4876-9f4d-ea9b58da894d" alt="CrearRetoOpcional_2"/>  
+</p>  
+
+---
+
+### **Prototipo del CdU EditarRetoOpcional**  
+<p align="center">  
+  <img src="https://github.com/user-attachments/assets/f2c01439-ca17-4a73-ac22-ccf8f2e94fb2" alt="EditarRetoOpcional_1"/>  
+  <img src="https://github.com/user-attachments/assets/ff963f49-a93d-4e35-990a-9c9e0b4e1d31" alt="EditarRetoOpcional_2"/>  
+</p>  
+
+---
+
+### **Prototipo del CdU AsignarRetoAClase**  
+<p align="center">  
+  <img src="https://github.com/user-attachments/assets/41b41278-08ea-4a60-bcfa-51be02a9f066" alt="AsignarRetoAClase"/>  
+</p>  
+
+---
+
+### **Prototipo del CdU VerClasificacionDeClases**  
+<p align="center">  
+  <img src="https://github.com/user-attachments/assets/01aa73a6-b7d5-4e0b-8b18-c33eaaa25662" alt="VerClasificacionDeClases"/>  
+</p>  
+
+---
+
+### **Prototipo del CdU VerClasificacionDeAlumnos**  
+<p align="center">  
+  <img src="https://github.com/user-attachments/assets/003c64c0-cc13-4511-8471-f027e56f3ec8" alt="VerClasificacionDeAlumnos"/>  
+</p>  
+
+---
+
+### **Prototipo del CdU CerrarSesion**  
+<p align="center">  
+  <img src="https://github.com/user-attachments/assets/d458358f-ff8e-4ed2-8b51-bfcb92f9fa23" alt="CerrarSesion"/>  
+</p>  
+
+---
+
+### **Prototipo del CdU CrearClase**  
+<p align="center">  
+  <img src="https://github.com/user-attachments/assets/8668a186-995e-4dac-9de1-163307dbfae7" alt="CrearClase_1"/>  
+  <img src="https://github.com/user-attachments/assets/41c8c20f-0ee6-4d33-b030-d076612274f5" alt="CrearClase_2"/>  
+</p>  
+
+---
+
+### **Prototipo del CdU MostrarQR**  
+<p align="center">  
+  <img src="https://github.com/user-attachments/assets/5dcce221-0504-4f96-af18-708633266788" alt="MostrarQR_1"/>  
+  <img src="https://github.com/user-attachments/assets/69c6a7fc-f15a-4efc-a4b6-78e975977039" alt="MostrarQR_2"/>  
+</p>  
+
+---
+
+### **Prototipo del CdU VerMisClases**  
+<p align="center">  
+  <img src="https://github.com/user-attachments/assets/f72cbac7-03ee-42fc-a0ff-efbeef847fe8" alt="VerMisClases_1"/>  
+  <img src="https://github.com/user-attachments/assets/5618458e-3714-481d-9439-d2c239b99c9d" alt="VerMisClases_2"/>  
+</p>  
+
+---
+
+### **Prototipo del CdU VerAlumnos**  
+<p align="center">  
+  <img src="https://github.com/user-attachments/assets/f381fe6f-4860-4629-bf18-20a72721ba56" alt="VerAlumnos"/>  
+</p>  
+
+---
+
+### **Prototipo del CdU VerRetosAlumno**  
+<p align="center">  
+  <img src="https://github.com/user-attachments/assets/84ec3bbe-ff7e-4a2e-9043-0f0e35e7ba49" alt="VerRetosAlumno"/>  
+</p>  
+
+---
+
+### **Prototipo del CdU EvaluarReto**  
+<p align="center">  
+  <img src="https://github.com/user-attachments/assets/f1483579-8a1f-490e-b97c-bc972d7358cd" alt="EvaluarReto"/>  
+</p>  
+
+---
+
