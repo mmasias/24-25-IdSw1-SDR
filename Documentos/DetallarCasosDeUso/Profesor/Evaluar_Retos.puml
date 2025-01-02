@@ -2,7 +2,9 @@
 state Evaluar_Retos
 state rombo1 <<choice>>
 state rombo2 <<choice>>
-state Ver_Retos_Alumnos
+state Descripcion_Reto
+state Puntuacion_Reto
+state Evidencia_Reto
 state Menu_Perfil
 state Menu_Retos
 state Menu_Rutinas_y_Ejercicios
