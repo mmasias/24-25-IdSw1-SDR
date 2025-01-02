@@ -50,10 +50,6 @@ MOSTRAR_EJERCICIO -[#SkyBlue]-> NAVEGACION_MENUS : Cambiar menú
 MENU_RETOS -[#LightSalmon]-> SUBIR_EVIDENCIA_RETO : Subir evidencia de reto
 SUBIR_EVIDENCIA_RETO -[#SkyBlue]-> NAVEGACION_MENUS : Cambiar menú
 
-' === MENÚ CLASIFICACIÓN ===
-MENU_CLASIFICACION -[#Gold]-> VER_ALUMNOS_CLASE : Ver alumnos de la clase
-VER_ALUMNOS_CLASE -[#SkyBlue]-> NAVEGACION_MENUS : Cambiar menú
-
 ' === MENÚ PERFIL ===
 MENU_PERFIL -[#LightCoral]-> VER_INSIGNIAS : Ver insignias
 MENU_PERFIL -[#LightCoral]-> INSCRIBIR_CLASE : Inscribir en clase
