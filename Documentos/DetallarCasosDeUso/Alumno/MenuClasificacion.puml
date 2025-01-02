@@ -1,0 +1,24 @@
+@startuml
+state Menu_Clasificacion
+state rombo1 <<choice>>
+state Clasificacion
+state Menu_Perfil
+state Menu_Retos
+state Menu_Rutinas_y_Ejercicios
+state Menu_Principal
+
+[*] --> Menu_Clasificacion : "El Alumno solicita entrar a\nMenu Clasificacion"
+
+Menu_Clasificacion --> Clasificacion : "El sistema muestra clasificacion de la clase del alumno"
+
+
+
+Menu_Clasificacion --> rombo1 : "El alumno solicita ir a otra opción"
+rombo1 --> Menu_Perfil
+rombo1 --> Menu_Retos
+rombo1 --> Menu_Rutinas_y_Ejercicios
+rombo1 --> Menu_Principal
+rombo1 --> Menu_Clasificacion : "Volver al menú"
+
+Menu_Clasificacion --> [*]
+@enduml
