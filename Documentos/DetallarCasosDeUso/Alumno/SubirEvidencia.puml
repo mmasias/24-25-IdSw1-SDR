@@ -1,0 +1,24 @@
+@startuml
+state Menu_Rutinas_y_Ejercicios
+state rombo2 <<choice>>
+
+state SubirEvidencia
+state AdjuntarArchivo
+state BotonConfirmar
+state Menu_Perfil
+state Menu_Retos
+state Clasificación
+state Menu_Principal
+
+[*] --> SubirEvidencia : "El alumno solicita \n subir evidencia"
+SubirEvidencia --> AdjuntarArchivo : El sistema solicita \nadjuntar archivo
+AdjuntarArchivo --> BotonConfirmar : Para confirmar sistema solicita pulsar el boton
+SubirEvidencia --> rombo2
+rombo2 --> Menu_Perfil
+rombo2 --> Menu_Retos
+rombo2 --> Clasificación
+rombo2 --> Menu_Principal
+rombo2 --> Menu_Rutinas_y_Ejercicios
+
+SubirEvidencia --> [*]
+@enduml
