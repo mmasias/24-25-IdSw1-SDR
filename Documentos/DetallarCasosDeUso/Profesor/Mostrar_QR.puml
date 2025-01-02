@@ -1,0 +1,29 @@
+@startuml
+state Mostrar_QR
+state rombo1 <<choice>>
+
+state Menu_Perfil
+state Menu_Retos
+state Menu_Rutinas_y_Ejercicios
+state Menu_Principal
+state Clasificación
+
+[*] --> Mostrar_QR : "El profesor solicita entrar a\n ver QR"
+
+state " " as Estado1 
+
+Mostrar_QR --> Estado1 
+note on link
+El sistema muestra el QR
+end note
+
+
+
+Mostrar_QR --> rombo1 : "El profesor solicita ir a otra opción"
+rombo1 --> Menu_Perfil
+rombo1 --> Menu_Retos
+rombo1 --> Menu_Rutinas_y_Ejercicios
+rombo1 --> Menu_Principal
+rombo1 --> Clasificación
+Mostrar_QR-->[*]
+@enduml
