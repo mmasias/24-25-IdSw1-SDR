@@ -11,7 +11,7 @@ Menu_Rutinas_y_Ejercicios --> ListaEjercicios : Presionar botón "Ejercicios"
 ListaEjercicios --> MostrarEjercicio : Seleccionar un ejercicio de la lista
 MostrarEjercicio --> rombo
 state MostrarEjercicio {
-  VerDetalles : El sistema muestra los detalles del ejercicio
+  [*] --> VerDetalles : El sistema muestra los detalles del ejercicio
   VerDetalles --> EditarEjercicio : Presionar botón "Editar"
   VerDetalles --> [*] : Finaliza visualización
 }
