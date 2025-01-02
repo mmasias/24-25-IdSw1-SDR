@@ -12,7 +12,7 @@ MostrarRutina --> EditarRutina : Presionar botón "Editar Rutina"
 EditarRutina --> rombo
 
 state EditarRutina {
-  SolicitarDatosEdicion : El sistema muestra nombre y objetivo actuales para edición
+  [*] --> SolicitarDatosEdicion : El sistema muestra nombre y objetivo actuales para edición
   SolicitarDatosEdicion --> ModificarEjercicios : El profesor actualiza la lista de ejercicios
   ModificarEjercicios --> ConfirmarEdicion : El profesor presiona "Editar"
   ConfirmarEdicion --> [*] : Cambios guardados con éxito
