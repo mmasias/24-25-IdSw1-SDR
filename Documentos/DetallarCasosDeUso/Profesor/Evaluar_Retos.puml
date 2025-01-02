@@ -1,0 +1,27 @@
+@startuml
+state Evaluar_Retos
+state rombo1 <<choice>>
+state rombo2 <<choice>>
+state Ver_Retos_Alumnos
+state Menu_Perfil
+state Menu_Retos
+state Menu_Rutinas_y_Ejercicios
+state Menu_Principal
+state Clasificación
+
+[*] --> Evaluar_Retos : "El profesor solicita entrar a\n evaluar retos"
+
+Evaluar_Retos --> rombo1 : "El sistema muestra las partes \nde la valoracion del reto"
+rombo1 --> Descripcion_Reto
+rombo1 --> Puntuacion_Reto
+rombo1 --> Evidencia_Reto
+
+
+Evaluar_Retos --> rombo2 : "El profesor solicita ir a otra opción"
+rombo2 --> Menu_Perfil
+rombo2 --> Menu_Retos
+rombo2 --> Menu_Rutinas_y_Ejercicios
+rombo2 --> Menu_Principal
+rombo2 --> Clasificación
+Evaluar_Retos-->[*]
+@enduml
