@@ -14,27 +14,27 @@ RECTANGLE(MENU_CLASIFICACION) #Gold
 RECTANGLE(MENU_PERFIL) #LightCoral
 
 ' Submenús de "Rutinas y Ejercicios"
-RECTANGLE(CREAR_RUTINA) #PaleGreen
-RECTANGLE(MOSTRAR_RUTINA) #PaleGreen
-RECTANGLE(EDITAR_RUTINA) #PaleGreen
-RECTANGLE(CREAR_EJERCICIO) #PaleGreen
-RECTANGLE(MOSTRAR_EJERCICIO) #PaleGreen
-RECTANGLE(EDITAR_EJERCICIO) #PaleGreen
+RECTANGLE(CREANDO_RUTINA) #PaleGreen
+RECTANGLE(MOSTRANDO_RUTINA) #PaleGreen
+RECTANGLE(EDITANDO_RUTINA) #PaleGreen
+RECTANGLE(CREANDO_EJERCICIO) #PaleGreen
+RECTANGLE(MOSTRANDO_EJERCICIO) #PaleGreen
+RECTANGLE(EDITANDO_EJERCICIO) #PaleGreen
 
 ' Submenús de "Retos"
-RECTANGLE(CREAR_RETOS) #LightSalmon
-RECTANGLE(EDITAR_RETOS) #LightSalmon
+RECTANGLE(CREANDO_RETOS) #LightSalmon
+RECTANGLE(EDITANDO_RETOS) #LightSalmon
 
 ' Submenús de "Clasificación"
-RECTANGLE(VER_ALUMNOS_CLASE) #Gold
+RECTANGLE(VIENDO_ALUMNOS_CLASE) #Gold
 
 ' Submenús de "Perfil"
-RECTANGLE(CREAR_CLASE) #LightCoral
-RECTANGLE(MOSTRAR_QR) #LightCoral
-RECTANGLE(VER_MIS_CLASES) #LightCoral
-RECTANGLE(VER_ALUMNOS) #LightCoral
-RECTANGLE(VER_RETOS_ALUMNOS) #LightCoral
-RECTANGLE(EVALUAR_RETOS) #LightCoral
+RECTANGLE(CREANDO_CLASE) #LightCoral
+RECTANGLE(MOSTRANDO_QR) #LightCoral
+RECTANGLE(VIENDO_MIS_CLASES) #LightCoral
+RECTANGLE(VIENDO_ALUMNOS) #LightCoral
+RECTANGLE(VIENDO_RETOS_ALUMNOS) #LightCoral
+RECTANGLE(EVALUANDO_RETOS) #LightCoral
 
 ' Relaciones principales
 USUARIO -[#Black]-> PROFESOR : Iniciar sesión
@@ -49,48 +49,48 @@ NAVEGACION_MENUS -[#LightCoral]-> MENU_PERFIL : Cambiar a Perfil
 NAVEGACION_MENUS -[#LightBlue]-> PAGINA_PRINCIPAL : Regresar al inicio
 
 ' Menú "Rutinas y Ejercicios"
-MENU_RUTINAS_EJERCICIOS -[#Green]-> CREAR_RUTINA : Crear rutina
-MENU_RUTINAS_EJERCICIOS -[#Green]-> CREAR_EJERCICIO : Crear ejercicio
-MENU_RUTINAS_EJERCICIOS -[#Green]-> MOSTRAR_RUTINA : Mostrar rutina
-MENU_RUTINAS_EJERCICIOS -[#Green]-> MOSTRAR_EJERCICIO : Mostrar ejercicio
-MOSTRAR_RUTINA -[#Green]-> EDITAR_RUTINA : Editar rutina
-MOSTRAR_EJERCICIO -[#Green]-> EDITAR_EJERCICIO : Editar ejercicio
+MENU_RUTINAS_EJERCICIOS -[#Green]-> CREANDO_RUTINA : Crear rutina
+MENU_RUTINAS_EJERCICIOS -[#Green]-> CREANDO_EJERCICIO : Crear ejercicio
+MENU_RUTINAS_EJERCICIOS -[#Green]-> MOSTRANDO_RUTINA : Mostrar rutina
+MENU_RUTINAS_EJERCICIOS -[#Green]-> MOSTRANDO_EJERCICIO : Mostrar ejercicio
+MOSTRANDO_RUTINA -[#Green]-> EDITANDO_RUTINA : Editar rutina
+MOSTRANDO_EJERCICIO -[#Green]-> EDITANDO_EJERCICIO : Editar ejercicio
 
 ' Menú "Retos"
-MENU_RETOS -[#Orange]-> CREAR_RETOS : Crear retos
-MENU_RETOS -[#Orange]-> EDITAR_RETOS : Editar retos
+MENU_RETOS -[#Orange]-> CREANDO_RETOS : Crear retos
+MENU_RETOS -[#Orange]-> EDITANDO_RETOS : Editar retos
 
 ' Menú "Clasificación"
-MENU_CLASIFICACION -[#GoldenRod]->  VER_ALUMNOS_CLASE : Ver alumnos dentro de clases
+MENU_CLASIFICACION -[#GoldenRod]->  VIENDO_ALUMNOS_CLASE : Ver alumnos dentro de clases
 
 ' Menú "Perfil"
-MENU_PERFIL -[#Red]-> CREAR_CLASE : Crear clase
-MENU_PERFIL -[#Red]-> MOSTRAR_QR : Mostrar QR en centro deportivo
-MENU_PERFIL -[#Red]-> VER_MIS_CLASES : Ver mis clases
-VER_MIS_CLASES -[#Red]-> VER_ALUMNOS : Ver alumnos
-VER_ALUMNOS -[#Red]-> VER_RETOS_ALUMNOS : Ver retos alumnos
-VER_RETOS_ALUMNOS -[#Red]-> EVALUAR_RETOS : Evaluar retos
+MENU_PERFIL -[#Red]-> CREANDO_CLASE : Crear clase
+MENU_PERFIL -[#Red]-> MOSTRANDO_QR : Mostrar QR en centro deportivo
+MENU_PERFIL -[#Red]-> VIENDO_MIS_CLASES : Ver mis clases
+VIENDO_MIS_CLASES -[#Red]-> VIENDO_ALUMNOS : Ver alumnos
+VIENDO_ALUMNOS -[#Red]-> VIENDO_RETOS_ALUMNOS : Ver retos alumnos
+VIENDO_RETOS_ALUMNOS -[#Red]-> EVALUANDO_RETOS : Evaluar retos
 
 ' Conexiones de los submenús a la navegación general con color SkyBlue y etiqueta "Cambiar menú"
-CREAR_RUTINA -[#SkyBlue]-> NAVEGACION_MENUS : Cambiar menú
-MOSTRAR_RUTINA -[#SkyBlue]-> NAVEGACION_MENUS : Cambiar menú
-EDITAR_RUTINA -[#SkyBlue]-> NAVEGACION_MENUS : Cambiar menú
-CREAR_EJERCICIO -[#SkyBlue]-> NAVEGACION_MENUS : Cambiar menú
-MOSTRAR_EJERCICIO -[#SkyBlue]-> NAVEGACION_MENUS : Cambiar menú
-EDITAR_EJERCICIO -[#SkyBlue]-> NAVEGACION_MENUS : Cambiar menú
+CREANDO_RUTINA -[#SkyBlue]-> NAVEGACION_MENUS : Cambiar menú
+MOSTRANDO_RUTINA -[#SkyBlue]-> NAVEGACION_MENUS : Cambiar menú
+EDITANDO_RUTINA -[#SkyBlue]-> NAVEGACION_MENUS : Cambiar menú
+CREANDO_EJERCICIO -[#SkyBlue]-> NAVEGACION_MENUS : Cambiar menú
+MOSTRANDO_EJERCICIO -[#SkyBlue]-> NAVEGACION_MENUS : Cambiar menú
+EDITANDO_EJERCICIO -[#SkyBlue]-> NAVEGACION_MENUS : Cambiar menú
 
-CREAR_RETOS -[#SkyBlue]-> NAVEGACION_MENUS : Cambiar menú
-EDITAR_RETOS -[#SkyBlue]-> NAVEGACION_MENUS : Cambiar menú
+CREANDO_RETOS -[#SkyBlue]-> NAVEGACION_MENUS : Cambiar menú
+EDITANDO_RETOS -[#SkyBlue]-> NAVEGACION_MENUS : Cambiar menú
 
 
-VER_ALUMNOS_CLASE -[#SkyBlue]-> NAVEGACION_MENUS : Cambiar menú
+VIENDO_ALUMNOS_CLASE -[#SkyBlue]-> NAVEGACION_MENUS : Cambiar menú
 
-CREAR_CLASE -[#SkyBlue]-> NAVEGACION_MENUS : Cambiar menú
-MOSTRAR_QR -[#SkyBlue]-> NAVEGACION_MENUS : Cambiar menú
-VER_MIS_CLASES -[#SkyBlue]-> NAVEGACION_MENUS : Cambiar menú
-VER_ALUMNOS -[#SkyBlue]-> NAVEGACION_MENUS : Cambiar menú
-VER_RETOS_ALUMNOS -[#SkyBlue]-> NAVEGACION_MENUS : Cambiar menú
-EVALUAR_RETOS -[#SkyBlue]-> NAVEGACION_MENUS : Cambiar menú
+CREANDO_CLASE -[#SkyBlue]-> NAVEGACION_MENUS : Cambiar menú
+MOSTRANDO_QR -[#SkyBlue]-> NAVEGACION_MENUS : Cambiar menú
+VIENDO_MIS_CLASES -[#SkyBlue]-> NAVEGACION_MENUS : Cambiar menú
+VIENDO_ALUMNOS -[#SkyBlue]-> NAVEGACION_MENUS : Cambiar menú
+VIENDO_RETOS_ALUMNOS -[#SkyBlue]-> NAVEGACION_MENUS : Cambiar menú
+EVALUANDO_RETOS -[#SkyBlue]-> NAVEGACION_MENUS : Cambiar menú
 
 
 MENU_RUTINAS_EJERCICIOS -[#LightBlue]-> PAGINA_PRINCIPAL
