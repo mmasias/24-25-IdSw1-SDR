@@ -9,8 +9,6 @@
     MemoriaAcademica --> Indicador : meta y valores
     Indicador --> Profesor : extrae datos
     Asignatura .. Titulacion : pertenece
-    Titulacion --> Profesor : de
-    Profesor --> MemoriaAcademica : mira
     Profesor --> Asignatura : imparte
 
 class Profesor {
