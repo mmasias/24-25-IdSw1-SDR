@@ -17,8 +17,8 @@
 ### Asignar Profesor
 ![Asignar Profesor](https://github.com/srgiom/24-25-IdSw1-SDR/raw/main/casosDeUso/imagenes/AsignarProfesor.svg)
 
-### Buscar Grado
-![Buscar Grado](https://github.com/srgiom/24-25-IdSw1-SDR/raw/main/casosDeUso/imagenes/BuscarGrado.svg)
+### Registrar Asignatura
+![Registrar Asignatura](https://raw.githubusercontent.com/joaquin-codes/24-25-IdSw1-SDR-Joaquin/df2a9c319c91cfefe8ee826226410e20cf3d8f19/casosDeUso/imagenes/RegistrarAsignatura.svg)
 
 ### Consultar Horario de Profesor
 ![Consultar Horario de Profesor](https://github.com/srgiom/24-25-IdSw1-SDR/raw/main/casosDeUso/imagenes/ConsultarHorarioProfesor.svg)
@@ -27,7 +27,7 @@
 ![Editar Asignación](https://github.com/srgiom/24-25-IdSw1-SDR/raw/main/casosDeUso/imagenes/EditarAsignación.svg)
 
 ### Inicio de Sesión
-![Inicio de Sesión](https://github.com/srgiom/24-25-IdSw1-SDR/raw/main/casosDeUso/imagenes/InicioSesión.svg)
+![Inicio de Sesión](https://raw.githubusercontent.com/joaquin-codes/24-25-IdSw1-SDR-Joaquin/df2a9c319c91cfefe8ee826226410e20cf3d8f19/casosDeUso/imagenes/IniciarSesi%C3%B3n.svg)
 
 ### Mostrar Asignaturas
 ![Mostrar Asignaturas](https://github.com/srgiom/24-25-IdSw1-SDR/raw/main/casosDeUso/imagenes/MostrarAsignaturas.svg)
