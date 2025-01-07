@@ -1,0 +1,22 @@
+@startuml CambiarAClasificacion
+
+hide empty description
+
+state Navegacion_Menus
+state Menu_Clasificacion
+state CambiarAClasificacion{
+    state Cambiar as "Cambiar a Clasificación"
+    [*] --> Cambiar
+    note on link
+        El profesor introduce que quiere ir a Clasificación
+    end note
+    Cambiar --> [*]
+    note on link
+        El sistema muestra Clasificación
+    end note
+}
+
+Navegacion_Menus --> CambiarAClasificacion
+CambiarAClasificacion --> Menu_Clasificacion
+
+@enduml

@@ -67,10 +67,10 @@
 |----------|---------------|
 | ![Casos de uso](../Imagenes/DetallarCasosDeUso/Profesor/CrearRetos.svg) | [Ver código](Profesor/CrearRetos.puml) |
 
-### Menu Clasificación
+### Cambiar a Clasificación
 | Diagrama | Código Fuente |
 |----------|---------------|
-| ![Casos de uso](../Imagenes/DetallarCasosDeUso/Profesor/MenuClasificacion.svg) | [Ver código](Profesor/MenuClasificacion.puml) |
+| ![Casos de uso](../Imagenes/DetallarCasosDeUso/Profesor/MenuClasificacion.svg) | [Ver código](Profesor/CambiarAClasificacion.puml) |
 
 ### Ver Clasificacion de una clase
 | Diagrama | Código Fuente |
