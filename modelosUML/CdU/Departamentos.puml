@@ -4,6 +4,9 @@ left to right direction
 actor "RRHH" as RRHH
 actor "Ordenación" as Ordenacion
 actor "Técnico Calidad" as TecnicoCalidad
+actor "Administrador" as Admin
+
+note "El Administrador tiene acceso\na todos los casos de uso de Departamentos" as N1
 
 rectangle "Casos de Uso - Departamentos" {
   usecase "Validar datos introducidos por el profesorado y modificarlos" as CU4
@@ -38,4 +41,6 @@ TecnicoCalidad --> CU13
 TecnicoCalidad --> CU14
 TecnicoCalidad --> CU15
 
+Admin --> "Casos de Uso - Departamentos"
+Admin .. N1
 @enduml

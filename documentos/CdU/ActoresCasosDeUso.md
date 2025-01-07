@@ -11,28 +11,28 @@ El objetivo de este paso es **encontrar actores y casos de uso** siguiendo las [
 
 ## 👥 **Actores**  
 
-| **Actor**           | **Descripción**                                                                                           |
-|---------------------|-----------------------------------------------------------------------------------------------------------|
-| 👩‍🏫 **Profesores**   | Introducen y consultan información personal, académica, y asignaciones docentes.                          |
-| 🏢 **RRHH**          | Gestionan y validan datos de contratos, cargas docentes y categorías profesionales de los profesores.      |
-| 📚 **Ordenación**    | Asignan y revisan la carga docente, así como el cumplimiento de valores consignados en las memorias.       |
-| 📊 **Técnico Calidad** | Gestionan indicadores, asignan valores a sistemas externos y validan compromisos de memoria por titulación.| 
-| 🛠️ **Administrador** | Puede asumir las funciones de RRHH, Ordenación y Técnico de Calidad según sea necesario.                   |
+| **Actor**              | **Descripción**                                                                                                                             |
+|------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|
+| 👩‍🏫 **Profesores**      | Introducen y consultan información personal, académica, y asignaciones docentes.                                                            |
+| 🏢 **RRHH**            | Gestionan y validan datos de contratos, cargas docentes y categorías profesionales de los profesores.                                       |
+| 📚 **Ordenación**      | Asignan y revisan la carga docente, así como el cumplimiento de valores consignados en las memorias.                                        |
+| 📊 **Técnico Calidad** | Gestionan indicadores, asignan valores a sistemas externos y validan compromisos de memoria por titulación.                                 | 
+| 🛠️ **Administrador**   | Ha de pertenecer al departamento de calidad y debe poder asumir las funciones de RRHH, Ordenación y Técnico de Calidad según sea necesario. |
 
 ---
 
 ## 📋 **Casos de Uso y Actores Involucrados**
 
-| Caso de Uso                                                                                                                                 | Profesores | RRHH | Ordenación | Técnico Calidad | Administrador |
-|---------------------------------------------------------------------------------------------------------------------------------------------|------------|------|------------|-----------------|---------------|
+| Caso de Uso                                                                                                                                | Profesores | RRHH | Ordenación | Técnico Calidad | Administrador |
+|--------------------------------------------------------------------------------------------------------------------------------------------|------------|------|------------|-----------------|---------------|
 | **Introducir** datos de experiencia docente, profesional, investigadora, etc.                                                              | ✅         |      |            |                 |               |
 | **Consultar** valores asignados de contrato y otros datos personales                                                                       | ✅         |      |            |                 |               |
 | **Consultar** asignaciones docentes (por titulación, curso y semestre)                                                                     | ✅         |      |            |                 |               |
 | **Validar** datos introducidos por el profesorado y modificarlos                                                                           |            | ✅   |            |                 | ✅            |
 | **Introducir** datos de contrato, horas, temporalidad y categoría profesional                                                              |            | ✅   |            |                 | ✅            |
-| **Revisar** listado de profesores cuya carga docente no se ajusta al contrato                                                              |            | ✅   | ✅         |                 | ✅            |
-| **Consultar** claustro docente (listado PDI asociado a una titulación), anual en la titulación, por semestre...                            |            | ✅   | ✅         | ✅              | ✅            |
-| **Consultar** asignación docente por profesor (créditos y asignaturas)                                                                     |            | ✅   | ✅         | ✅              | ✅            |
+| **Revisar** listado de profesores cuya carga docente no se ajusta al contrato                                                              |            | ✅   | ✅         |                 | ✅           |
+| **Consultar** claustro docente (listado PDI asociado a una titulación), anual en la titulación, por semestre...                            |            | ✅   | ✅         | ✅              | ✅           |
+| **Consultar** asignación docente por profesor (créditos y asignaturas)                                                                     |            | ✅   | ✅         | ✅              | ✅           |
 | **Asignar** carga docente de asignaturas a profesores                                                                                      |            |      | ✅         |                 | ✅            |
 | **Revisar** cumplimiento de valores consignados en la memoria por titulación                                                               |            |      | ✅         |                 | ✅            |
 | **Asignar** valores consignados en memoria por titulación                                                                                  |            |      |            | ✅              | ✅            |

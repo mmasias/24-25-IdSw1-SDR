@@ -6,7 +6,6 @@
 
 Este documento describe los casos de uso del **modelo de dominio**, enfocados en la **interacción de los actores** con las **clases del sistema**. Los **casos de uso** se derivan de un enfoque **CRUD** sobre el **modelo de dominio**, asegurando una correcta **identificación** y **especificación de las funcionalidades**.
 
-
 ---
 
 ## 💡 Pasos:
@@ -21,10 +20,10 @@ Este documento describe los casos de uso del **modelo de dominio**, enfocados en
 
 ## 📊 **Diagramas de Casos de Uso**
 
-| **Profesor**                                     | **Departamentos**                                          | **Admin**                                  |
-|--------------------------------------------------|------------------------------------------------------------|--------------------------------------------|
-| ![Profesor](/images/modelosUML/CdU/Profesor.svg) | ![Departamentos](/images/modelosUML/CdU/Departamentos.svg) | ![Admin](/images/modelosUML/CdU/Admin.svg) |
-| [Ver código](/modelosUML/CdU/Profesor.puml)      | [Ver código](/modelosUML/CdU/Departamentos.puml)           | [Ver código](/modelosUML/CdU/Admin.puml)   |
+| **Profesor**                                     | **Departamentos y Administrador**                                                |
+|--------------------------------------------------|----------------------------------------------------------------------------------|
+| ![Profesor](/images/modelosUML/CdU/Profesor.svg) | ![Departamentos y Administrador](/images/modelosUML/CdU/Departamentos.svg)       |
+| [Ver código](/modelosUML/CdU/Profesor.puml)      | [Ver código](/modelosUML/CdU/Departamentos.puml)                                 |
 
 ### 📖 **Glosario**
 
