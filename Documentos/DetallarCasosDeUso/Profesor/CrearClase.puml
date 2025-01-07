@@ -1,29 +1,54 @@
-@startuml
-state CrearClase
-state rombo1 <<choice>>
-state rombo2 <<choice>>
-state NombreClase
-state DescripcionClase
-state CodigoClase
-state Menu_Retos
-state Menu_Rutinas_y_Ejercicios
-state Menu_Principal
-state Clasificación
+@startuml CrearClase
 
-[*] --> CrearClase : "El profesor solicita entrar a\n crear clase"
+hide empty description
+state CreandoClase
+state Menu_Perfil as "Menu Perfil"
 
+state CrearClase {
 
-CrearClase --> rombo1 : "El sistema muestra menu para crear clase"
-rombo1 --> NombreClase
-rombo1 --> CodigoClase
-rombo1 --> DescripcionClase 
+    state IniciarClase as "Crear Clase"
+    state Formulario as "Llenar Formulario"
+    state ValidarDatos as "Validar Datos"
+    state ConfirmarCreacion as "Confirmar Creación"
+    state ClaseCreada as "Clase Creada"
 
+    [*] --> IniciarClase
+    note on link
+        El profesor introduce: solicitud para crear clase.
+    end note
 
-CrearClase --> rombo2 : "El profesor solicita ir a otra opción"
-rombo2 --> Menu_Perfil
-rombo2 --> Menu_Retos
-rombo2 --> Menu_Rutinas_y_Ejercicios
-rombo2 --> Menu_Principal
-rombo2 --> Clasificación
-CrearClase-->[*]
+    IniciarClase --> Formulario
+    note on link
+        El sistema muestra: formulario para crear la clase con los campos: Nombre de la clase, Descripción de la clase, Código de la clase.
+    end note
+
+    Formulario --> ValidarDatos
+    note on link
+        El profesor introduce: datos de la clase.
+    end note
+
+    ValidarDatos --> ConfirmarCreacion
+    note on link
+        El sistema muestra: solicitud de confirmación para crear la clase.
+    end note
+
+    ValidarDatos --> Formulario
+    note on link
+        El sistema muestra: errores o datos incompletos en el formulario.
+    end note
+
+    ConfirmarCreacion --> ClaseCreada
+    note on link
+        El profesor introduce: confirmación para crear la clase.
+    end note
+
+    ClaseCreada --> [*]
+    note on link
+        El sistema muestra: mensaje de clase creada exitosamente. Código de la clase listo para compartir.
+    end note
+}
+
+Menu_Perfil --> CrearClase
+CrearClase --> CreandoClase
+
 @enduml
