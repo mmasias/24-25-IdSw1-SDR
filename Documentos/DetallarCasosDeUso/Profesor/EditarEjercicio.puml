@@ -1,18 +1,33 @@
-@startuml
-[*] --> MostrarEjercicio : Inicio del proceso
-state rombo <<choice>>
-rombo --> Menu_Perfil
-rombo --> Menu_Retos
-rombo --> Clasificación
-rombo --> Menu_Rutinas_y_Ejercicios
-rombo --> Menu_Principal
+@startuml EditarEjercicio
 
-MostrarEjercicio --> EditarEjercicio : Presionar botón "Editar"
-EditarEjercicio --> rombo
+hide empty description
+
+state Mostrando_Ejercicio
+state EditandoEjercicio
+
 state EditarEjercicio {
-  [*] --> SolicitarDatosEdicion : El sistema solicita los datos a editar
-  SolicitarDatosEdicion --> ModificarDatos : El profesor modifica nombre, video, descripción o ambos
-  ModificarDatos --> ConfirmarEdicion : El profesor presiona "Guardar cambios"
-  ConfirmarEdicion --> [*] : Cambios guardados con éxito
+  [*] --> SolicitarDatosEdicion
+  note on link
+      El sistema muestra: solicitud de los datos a editar.
+  end note
+
+  SolicitarDatosEdicion --> ModificarDatos
+  note on link
+      El profesor introduce: modificaciones al nombre, video, descripción o ambos.
+  end note
+
+  ModificarDatos --> ConfirmarEdicion
+  note on link
+      El profesor introduce: confirmación presionando "Guardar cambios".
+  end note
+
+  ConfirmarEdicion --> [*]
+  note on link
+      El sistema muestra: mensaje de cambios guardados con éxito.
+  end note
 }
+
+Mostrando_Ejercicio --> EditarEjercicio
+EditarEjercicio --> EditandoEjercicio
+
 @enduml
