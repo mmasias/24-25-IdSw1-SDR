@@ -1,18 +1,18 @@
-@startuml
+@startuml IniciarSesion
 
 hide empty description
 
 state Usuario
 state IniciarSesion{
     state " " as Estado1
-state " " as Estado2
-state " " as Estado3
+    state " " as Estado2
+    state " " as Estado3
 
-[*] --> Estado1
+    [*] --> Estado1
     note on link
         El Usuario solicita iniciar sesión
     end note
-Estado1 --> Estado2
+    Estado1 --> Estado2
     note on link
         El Sistema solicita
         - Correo
@@ -24,13 +24,12 @@ Estado1 --> Estado2
         - Correo
         - Contraseña
     end note
-state rombo <<choice>>
-        Estado3 --> [*]
+    Estado3 --> [*]
     note on link
         El sistema identifica si es alumno o profesor
     end note
 
-        Estado3 --> Estado1
+    Estado3 --> Estado1
     note on link
         Datos incorrectos
     end note
