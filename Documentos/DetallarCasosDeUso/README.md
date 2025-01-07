@@ -52,10 +52,10 @@
 |----------|---------------|
 | ![Casos de uso](../Imagenes/DetallarCasosDeUso/Profesor/EditarEjercicio.svg) | [Ver código](Profesor/EditarEjercicio.puml) |
 
-### Menu Retos
+### Cambiar a Retos
 | Diagrama | Código Fuente |
 |----------|---------------|
-| ![Casos de uso](../Imagenes/DetallarCasosDeUso/Profesor/MenuRetos.svg) | [Ver código](Profesor/MenuRetos.puml) |
+| ![Casos de uso](../Imagenes/DetallarCasosDeUso/Profesor/MenuRetos.svg) | [Ver código](Profesor/CambiarARetos.puml) |
 
 ### Mostrar Reto
 | Diagrama | Código Fuente |
