@@ -3,26 +3,52 @@ left to right direction
 
 actor Admin
 
-usecase "Administrar Usuario" as AdministrarUsuarios
-usecase "Gestionar Clase" as GestionarClases
-usecase "Gestionar Rutina" as GestionarRutinas
-usecase "Gestionar Reto" as GestionarRetos
-usecase "Supervisar Ejercicio" as SupervisarEjercicios
+package "Gestión de Usuarios" {
+    usecase "Crear Usuario" as CrearUsuario
+    usecase "Modificar Usuario" as ModificarUsuario
+    usecase "Eliminar Usuario" as EliminarUsuario
+}
 
-usecase "Gestionar Permiso" as GestionarPermisos
-usecase "Configurar el Sistema" as ConfigurarSistema
-usecase "Ver Reporte" as VerReportes
-usecase "Descargar Estadística" as DescargarEstadisticas
+package "Gestión de Rutinas" {
+    usecase "Crear Rutina" as CrearRutina
+    usecase "Modificar Rutina" as ModificarRutina
+    usecase "Batería de Ejercicios" as BateriaEjercicios
+}
 
-Admin --> AdministrarUsuarios
-Admin --> GestionarClases
-Admin --> GestionarRutinas
-Admin --> GestionarRetos
+package "Gestión de Retos" {
+    usecase "Crear Reto" as CrearReto
+    usecase "Modificar Reto" as ModificarReto
+    usecase "Eliminar Reto" as EliminarReto
+}
 
-Admin --> SupervisarEjercicios
-Admin --> GestionarPermisos
+package "Configuración del Sistema" {
+    usecase "Configurar Sistema" as ConfigurarSistema
+    usecase "Administrar Permisos" as AdministrarPermisos
+    usecase "Ajustes Generales" as AjustesGenerales
+}
+
+package "Reportes" {
+    usecase "Consultar Reportes Detallados" as ConsultarReportes
+    usecase "Descargar Estadísticas" as DescargarEstadisticas
+}
+
+Admin --> CrearUsuario
+Admin --> ModificarUsuario
+Admin --> EliminarUsuario
+
+Admin --> CrearRutina
+Admin --> ModificarRutina
+Admin --> BateriaEjercicios
+
+Admin --> CrearReto
+Admin --> ModificarReto
+Admin --> EliminarReto
+
 Admin --> ConfigurarSistema
-Admin --> VerReportes
+Admin --> AdministrarPermisos
+Admin --> AjustesGenerales
+
+Admin --> ConsultarReportes
 Admin --> DescargarEstadisticas
 
 @enduml
