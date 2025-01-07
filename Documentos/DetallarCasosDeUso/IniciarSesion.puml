@@ -1,6 +1,10 @@
 @startuml
 
-state " " as Estado1
+hide empty description
+
+state Usuario
+state IniciarSesion{
+    state " " as Estado1
 state " " as Estado2
 state " " as Estado3
 
@@ -21,7 +25,7 @@ Estado1 --> Estado2
         - Contraseña
     end note
 state rombo <<choice>>
-        Estado3 --> rombo
+        Estado3 --> [*]
     note on link
         El sistema identifica si es alumno o profesor
     end note
@@ -30,8 +34,13 @@ state rombo <<choice>>
     note on link
         Datos incorrectos
     end note
-    rombo --> Pagina_Principal_Profesor
-    rombo --> [*]
-    rombo --> Pagina_Principal_Alumno
+}
+state Profesor
+state Alumno
+
+
+Usuario --> IniciarSesion
+IniciarSesion --> Profesor
+IniciarSesion --> Alumno
 
 @enduml
