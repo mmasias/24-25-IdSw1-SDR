@@ -20,7 +20,7 @@
 ### Cambiar a Rutinas y Ejercicios
 | Diagrama | Código Fuente |
 |----------|---------------|
-| ![Casos de uso](../Imagenes/DetallarCasosDeUso/Profesor/Menu_Rutinas_Profesor.svg) | [Ver código](Profesor/Menu_Rutinas_Profesor.puml) |
+| ![Casos de uso](../Imagenes/DetallarCasosDeUso/Profesor/Menu_Rutinas_Profesor.svg) | [Ver código](Profesor/CambiarARutinasYEjercicios.puml) |
 
 ### Mostrar Rutina
 | Diagrama | Código Fuente |
