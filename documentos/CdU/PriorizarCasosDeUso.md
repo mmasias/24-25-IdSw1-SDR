@@ -14,20 +14,20 @@ El orden ha sido establecido por el cliente según la importancia y necesidad de
 
 | **Caso de Uso**                                                                                              | **Prioridad** |  
 |--------------------------------------------------------------------------------------------------------------|---------------|  
-| Introducir datos de experiencia docente, profesional, investigadora, etc.                                    |    🟢 Baja      |
-| Consultar valores asignados de contrato y otros datos personales                                             |    🟢 Baja      |
-| Consultar asignaciones docentes (por titulación, curso y semestre)                                           |    🟠 Media     |
-| Validar datos introducidos por el profesorado y modificarlos                                                 |    🟠 Media     |
-| Introducir datos de contrato, horas, temporalidad y categoría profesional                                    |    🔴 Alta      |
-| Revisar listado de profesores cuya carga docente no se ajusta al contrato                                    |    🔴 Alta      |
-| Consultar claustro docente (listado PDI asociado a una titulación), anual en la titulación, por semestre..   |    🟢 Baja      |
-| Consultar asignación docente por profesor (créditos y asignaturas)                                           |    🟢 Baja      |
-| Asignar carga docente de asignaturas a profesores                                                            |    🔴 Alta      |
-| Revisar cumplimiento de valores consignados en MEMORIA por titulación                                        |    🟢 Baja      |
-| Asignar valores consignados en memoria por titulación                                                        |    🟠 Media     |
-| Asignar valor de información a SIIU y DGU del PDI                                                            |    🟢 Baja      |
-| Validar los valores de titulación vs. compromisos de memoria                                                 |    🔴 Alta      |
-| Obtener indicadores para Sistema de Gestión                                                                  |    🟠 Media     |
-| Emitir informe del profesorado por titulación y global                                                       |    🔴 Alta      |
+| Introducir datos de experiencia docente, profesional, investigadora, etc.                                    |    🟢 Baja     |
+| Consultar valores asignados de contrato y otros datos personales                                             |    🟢 Baja     |
+| Consultar asignaciones docentes (por titulación, curso y semestre)                                           |    🟠 Media    |
+| Validar datos introducidos por el profesorado y modificarlos                                                 |    🟠 Media    |
+| Introducir datos de contrato, horas, temporalidad y categoría profesional                                    |    🔴 Alta     |
+| Revisar listado de profesores cuya carga docente no se ajusta al contrato                                    |    🔴 Alta     |
+| Consultar claustro docente (listado PDI asociado a una titulación), anual en la titulación, por semestre..   |    🟢 Baja     |
+| Consultar asignación docente por profesor (créditos y asignaturas)                                           |    🟢 Baja     |
+| Asignar carga docente de asignaturas a profesores                                                            |    🔴 Alta     |
+| Revisar cumplimiento de valores consignados en MEMORIA por titulación                                        |    🟢 Baja     |
+| Asignar valores consignados en memoria por titulación                                                        |    🟠 Media    |
+| Asignar valor de información a SIIU y DGU del PDI                                                            |    🟢 Baja     |
+| Validar los valores de titulación vs. compromisos de memoria                                                 |    🔴 Alta     |
+| Obtener indicadores para Sistema de Gestión                                                                  |    🟠 Media    |
+| Emitir informe del profesorado por titulación y global                                                       |    🔴 Alta     |
 
 
