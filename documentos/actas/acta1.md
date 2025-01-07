@@ -1,7 +1,7 @@
 # 📝 **Acta 1**  
 **Fecha**: 16/10/2024  
 **Hora**: 10:00 AM  
-**[Presencial] 🟢**
+**[Presencial] 🏢**
 
 ---
 
