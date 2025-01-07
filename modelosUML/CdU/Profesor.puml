@@ -1,16 +1,16 @@
 @startuml
 left to right direction
 
-actor "Profesor" as A_Profesor
+actor "Profesores" as Profesores
 
-rectangle "Gestión de Profesores" {
-    usecase "Introducir datos de experiencia y movilidad (herencia)" as UC1
-    usecase "Consultar valores de contrato y datos personales" as UC2
-    usecase "Consultar asignaciones docentes (titulación, curso, semestre)" as UC3
+rectangle "Casos de Uso - Profesor" {
+  usecase "Introducir datos de experiencia docente, profesional, investigadora, etc." as CU1
+  usecase "Consultar valores asignados de contrato y otros datos personales" as CU2
+  usecase "Consultar asignaciones docentes (por titulación, curso y semestre)" as CU3
 }
 
-A_Profesor --> UC1
-A_Profesor --> UC2
-A_Profesor --> UC3
+Profesores --> CU1
+Profesores --> CU2
+Profesores --> CU3
 
 @enduml
