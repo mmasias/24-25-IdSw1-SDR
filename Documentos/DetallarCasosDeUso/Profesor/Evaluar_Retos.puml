@@ -1,29 +1,51 @@
-@startuml
-state Evaluar_Retos
-state rombo1 <<choice>>
-state rombo2 <<choice>>
-state Descripcion_Reto
-state Puntuacion_Reto
-state Evidencia_Reto
-state Menu_Perfil
-state Menu_Retos
-state Menu_Rutinas_y_Ejercicios
-state Menu_Principal
-state Clasificación
+@startuml Evaluar_Retos
 
-[*] --> Evaluar_Retos : "El profesor solicita entrar a\n evaluar retos"
+hide empty description
+state Viendo_Retos_Alumnos
+state Evaluando_Reto
+state EvaluarReto {
+    [*] --> Evaluar_Reto
+    note on link
+        El sistema muestra: inicio de la evaluación del reto.
+    end note
 
-Evaluar_Retos --> rombo1 : "El sistema muestra las partes \nde la valoracion del reto"
-rombo1 --> Descripcion_Reto
-rombo1 --> Puntuacion_Reto
-rombo1 --> Evidencia_Reto
+    Evaluar_Reto --> DescripcionReto
+    note on link
+        El sistema muestra: la descripción del reto.
+    end note
 
+    DescripcionReto --> MostrarEvidencia
+    note on link
+        El sistema muestra: la evidencia del reto.
+    end note
 
-Evaluar_Retos --> rombo2 : "El profesor solicita ir a otra opción"
-rombo2 --> Menu_Perfil
-rombo2 --> Menu_Retos
-rombo2 --> Menu_Rutinas_y_Ejercicios
-rombo2 --> Menu_Principal
-rombo2 --> Clasificación
-Evaluar_Retos-->[*]
+    MostrarEvidencia --> ValidarEvidencia
+    note on link
+        El profesor introduce: calificación y comentarios sobre el reto.
+    end note
+
+    ValidarEvidencia --> Aprobado
+    note on link
+        El sistema muestra: confirmación de reto aprobado.
+    end note
+
+    ValidarEvidencia --> Rechazado
+    note on link
+        El sistema muestra: notificación de reto rechazado.
+    end note
+
+    Aprobado --> [*]
+    note on link
+        El sistema muestra: evaluación finalizada con éxito.
+    end note
+
+    Rechazado --> [*]
+    note on link
+        El sistema muestra: evaluación finalizada con rechazo.
+    end note
+}
+
+Viendo_Retos_Alumnos --> EvaluarReto
+EvaluarReto --> Evaluando_Reto
+
 @enduml
