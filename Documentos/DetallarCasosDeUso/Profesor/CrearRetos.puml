@@ -1,17 +1,71 @@
 @startuml
 
-[*] --> MenuRetos : El profesor accede al menu Retos
-MenuRetos --> CrearRetos : El profesor accede a CrearRetos 
-CrearRetos --> NombreReto : El profesor nombra el reto
-NombreReto --> OpcionReto : El profesor debe establecer el tipo de reto 
-state reto <<choice>>
-OpcionReto --> reto : El sistema muestra las opciones de reto
-reto --> RetoObligatorio : El profesor ingresa RetoObligatorio
-reto --> RetoOpcional : El profesor ingresa RetoOpcional
-RetoObligatorio --> DescripcionReto : El profesor ingresa una descripcion del reto
-RetoOpcional --> DescripcionReto : El profesor ingresa una descripcion del reto
-DescripcionReto --> AsignarClases : El profesor asigna el reto a distintas clases
-AsignarClases --> CrearReto : El sistema muestra la opcion de "Crear"
-CrearReto --> [*] : El sistema crea el reto. El profesor vuelve al menuRetos
+hide empty description
+
+state Menu_Retos
+state CreandoRetos
+
+state CrearRetos {
+
+    state IniciarRetos as "Crear Retos"
+    [*] --> IniciarRetos
+    note on link
+        El profesor introduce: acceso a CrearRetos.
+    end note
+
+    IniciarRetos --> NombreReto
+    note on link
+        El profesor introduce: nombre del reto.
+    end note
+
+    NombreReto --> OpcionReto
+    note on link
+        El profesor introduce: tipo de reto.
+    end note
+
+    state reto <<choice>>
+    OpcionReto --> reto
+    note on link
+        El sistema muestra: opciones de tipo de reto.
+    end note
+
+    reto --> RetoObligatorio
+    note on link
+        El profesor introduce: selección de RetoObligatorio.
+    end note
+
+    reto --> RetoOpcional
+    note on link
+        El profesor introduce: selección de RetoOpcional.
+    end note
+
+    RetoObligatorio --> DescripcionReto
+    note on link
+        El profesor introduce: descripción del reto.
+    end note
+
+    RetoOpcional --> DescripcionReto
+    note on link
+        El profesor introduce: descripción del reto.
+    end note
+
+    DescripcionReto --> AsignarClases
+    note on link
+        El profesor introduce: clases asignadas al reto.
+    end note
+
+    AsignarClases --> CrearReto
+    note on link
+        El sistema muestra: opción de "Crear".
+    end note
+
+    CrearReto --> [*]
+    note on link
+        El sistema muestra: confirmación de reto creado.
+    end note
+}
+
+Menu_Retos --> CrearRetos
+CrearRetos --> CreandoRetos
 
 @enduml
