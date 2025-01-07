@@ -1,0 +1,16 @@
+@startuml
+left to right direction
+
+actor "Profesor" as A_Profesor
+
+rectangle "Gestión de Profesores" {
+    usecase "Introducir datos de experiencia y movilidad (herencia)" as UC1
+    usecase "Consultar valores de contrato y datos personales" as UC2
+    usecase "Consultar asignaciones docentes (titulación, curso, semestre)" as UC3
+}
+
+A_Profesor --> UC1
+A_Profesor --> UC2
+A_Profesor --> UC3
+
+@enduml

@@ -1,0 +1,35 @@
+@startuml
+left to right direction
+
+actor "Administrador" as A_Administrador
+
+rectangle "Funciones Combinadas" {
+    usecase "Validar/modificar datos del profesorado" as UC1
+    usecase "Introducir datos de contrato y categoría (herencia)" as UC2
+    usecase "Revisar profesores con carga no ajustada al contrato" as UC3
+    usecase "Asignar carga docente (herencia)" as UC4
+    usecase "Revisar cumplimiento de memoria por titulación" as UC5
+    usecase "Asignar valores en memoria por titulación (herencia)" as UC6
+    usecase "Asignar datos a SIIU/DGU" as UC7
+    usecase "Validar memoria vs compromisos" as UC8
+    usecase "Obtener indicadores y emitir informes" as UC9
+}
+
+rectangle "Consultas Comunes" {
+    usecase "Consultar claustro docente" as UC10
+    usecase "Consultar asignación docente por profesor" as UC11
+}
+
+A_Administrador --> UC1
+A_Administrador --> UC2
+A_Administrador --> UC3
+A_Administrador --> UC4
+A_Administrador --> UC5
+A_Administrador --> UC6
+A_Administrador --> UC7
+A_Administrador --> UC8
+A_Administrador --> UC9
+A_Administrador --> UC10
+A_Administrador --> UC11
+
+@enduml

@@ -36,6 +36,10 @@ El objetivo de este paso es **encontrar actores y casos de uso** siguiendo las [
 
 ---
 
-| **Modelo** | **Código** |
-|--------------|--------------------|
-| ![Modelo](/images/modelosUML/CdU/EncontrarCasos.svg) | [Ver código](/modelosUML/CdU/encontrarCasos.puml) |
+| **Modelo**        | **Código**                 |
+|--------------------|----------------------------|
+| ![Profesor](/images/modelosUML/CdU/Profesor.svg) | [Ver código](/modelosUML/CdU/Profesor.puml) |
+| ![Ordenación](/images/modelosUML/CdU/Ordenacion.svg) | [Ver código](/modelosUML/CdU/Ordenacion.puml) |
+| ![RRHH](/images/modelosUML/CdU/RRHH.svg)         | [Ver código](/modelosUML/CdU/RRHH.puml) |
+| ![Técnico Calidad](/images/modelosUML/CdU/TecnicoCalidad.svg) | [Ver código](/modelosUML/CdU/TecnicoCalidad.puml) |
+| ![Administrador](/images/modelosUML/CdU/Admin.svg) | [Ver código](/modelosUML/CdU/Admin.puml) |
