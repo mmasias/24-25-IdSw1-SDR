@@ -12,22 +12,20 @@ El orden ha sido establecido por el cliente según la importancia y necesidad de
 
 ## 📋 **Casos de Uso y Priorización**
 
-| **Caso de Uso**                                                                                              | **Prioridad** |  
-|--------------------------------------------------------------------------------------------------------------|---------------|  
-| Introducir datos de experiencia docente, profesional, investigadora, etc.                                    |    🟢 Baja     |
-| Consultar valores asignados de contrato y otros datos personales                                             |    🟢 Baja     |
-| Consultar asignaciones docentes (por titulación, curso y semestre)                                           |    🟠 Media    |
-| Validar datos introducidos por el profesorado y modificarlos                                                 |    🟠 Media    |
-| Introducir datos de contrato, horas, temporalidad y categoría profesional                                    |    🔴 Alta     |
-| Revisar listado de profesores cuya carga docente no se ajusta al contrato                                    |    🔴 Alta     |
-| Consultar claustro docente (listado PDI asociado a una titulación), anual en la titulación, por semestre..   |    🟢 Baja     |
-| Consultar asignación docente por profesor (créditos y asignaturas)                                           |    🟢 Baja     |
-| Asignar carga docente de asignaturas a profesores                                                            |    🔴 Alta     |
-| Revisar cumplimiento de valores consignados en MEMORIA por titulación                                        |    🟢 Baja     |
-| Asignar valores consignados en memoria por titulación                                                        |    🟠 Media    |
-| Asignar valor de información a SIIU y DGU del PDI                                                            |    🟢 Baja     |
-| Validar los valores de titulación vs. compromisos de memoria                                                 |    🔴 Alta     |
-| Obtener indicadores para Sistema de Gestión                                                                  |    🟠 Media    |
-| Emitir informe del profesorado por titulación y global                                                       |    🔴 Alta     |
-
-
+| **#** | **Caso de Uso**                                                                                              | **Prioridad** |  
+|----|--------------------------------------------------------------------------------------------------------------|---------------|  
+| 1 | Introducir datos de contrato, horas, temporalidad y categoría profesional                  |    🔴 Alta     |
+| 2 | Asignar carga docente de asignaturas a profesores                                          |    🔴 Alta     |
+| 3 | Revisar listado de profesores cuya carga docente no se ajusta al contrato                  |    🔴 Alta     |
+| 4 | Validar los valores de titulación vs. compromisos de memoria                               |    🔴 Alta     |
+| 5 | Emitir informe del profesorado por titulación y global                                     |    🔴 Alta     |
+| 6 | Consultar asignaciones docentes (por titulación, curso y semestre)                                    |    🟠 Media    |
+| 7 | Asignar valores consignados en memoria por titulación                                                 |    🟠 Media    |
+| 8 | Obtener indicadores para Sistema de Gestión                                                           |    🟠 Media    |
+| 9 | Validar datos introducidos por el profesorado y modificarlos                                          |    🟠 Media    |
+| 10 | Introducir datos de experiencia docente, profesional, investigadora, etc.                                       |    🟢 Baja   |
+| 11 | Revisar cumplimiento de valores consignados en MEMORIA por titulación                                           |    🟢 Baja   |
+| 12 | Asignar valor de información a SIIU y DGU del PDI                                                               |    🟢 Baja   |
+| 13 | Consultar valores asignados de contrato y otros datos personales                                                |    🟢 Baja   |
+| 14 | Consultar claustro docente (listado PDI asociado a una titulación), anual en la titulación, por semestre..      |    🟢 Baja   |
+| 15 | Consultar asignación docente por profesor (créditos y asignaturas)                                              |    🟢 Baja   |
