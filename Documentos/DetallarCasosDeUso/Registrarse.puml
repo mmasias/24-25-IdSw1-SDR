@@ -1,11 +1,14 @@
 @startuml
 
-  [*] --> UsuarioNoRegistrado
-  UsuarioNoRegistrado --> Registrandose
+hide empty description
+
+state UsuarioNoRegistrado
+state Registro 
+state Registrar {
+  [*] --> Registrandose
   note on link
     Usuario sin cuenta se registra.
   end note
-
 
   Registrandose --> RellenandoLogin
   note on link
@@ -21,35 +24,33 @@
   state rombo <<choice>>
   RellenandoLogin --> rombo
   note on link
-    El usuario usa correo @educantabria.es?
+    ¿El usuario usa un correo @educantabria.es?
   end note
 
-  rombo --> EsProfesor
+  rombo --> EsProfesor : Sí
   note on link
-    El usuario ingresa sí
+    El usuario indica que es profesor.
   end note
 
-  rombo --> EsAlumno
+  rombo --> EsAlumno : No
   note on link
-    El usuario ingresa no
+    El usuario indica que es alumno.
   end note
 
   EsAlumno --> RolEstablecido
   note on link
-    El sistema asigna rol de Alumno.
+    El sistema asigna el rol de Alumno.
   end note
 
   EsProfesor --> RolEstablecido
   note on link
-    El sistema asigna rol de Profesor.
+    El sistema asigna el rol de Profesor.
   end note
 
   RolEstablecido --> UsuarioRegistrado
   note on link
     El usuario queda registrado con su rol asignado.
   end note
-
-
 
   UsuarioRegistrado --> Iniciar_Sesion
   note on link
@@ -60,6 +61,9 @@
   note on link
     El proceso de registro ha finalizado.
   end note
+}
 
+UsuarioNoRegistrado --> Registrar 
+Registrar --> Registro
 
 @enduml
