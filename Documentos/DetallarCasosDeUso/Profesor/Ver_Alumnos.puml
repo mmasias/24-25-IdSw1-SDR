@@ -1,24 +1,22 @@
-@startuml
-state Ver_Alumnos
-state rombo2 <<choice>>
-state Ver_Retos_Alumnos
-state Menu_Perfil
-state Menu_Retos
-state Menu_Rutinas_y_Ejercicios
-state Menu_Principal
-state Clasificación
+@startuml Ver_Alumnos
 
-[*] --> Ver_Alumnos : "El profesor solicita entrar a\n ver alumnos"
+hide empty description
 
-Ver_Alumnos --> Ver_Retos_Alumnos : "El sistema muestra los alumnos de la clase"
+state Viendo_Mis_Clases
+state Viendo_Alumnos
+state Ver_Alumnos {
+    state VerAlumnos as "Ver Alumnos"
+    [*] --> VerAlumnos
+    note on link
+        El profesor introduce ver los alumnos
+    end note
+    VerAlumnos --> [*]
+    note on link
+        El sistema muestra todos los alumnos
+    end note
+}
 
+Viendo_Mis_Clases --> Ver_Alumnos
+Ver_Alumnos --> Viendo_Alumnos
 
-
-Ver_Alumnos --> rombo2 : "El profesor solicita ir a otra opción"
-rombo2 --> Menu_Perfil
-rombo2 --> Menu_Retos
-rombo2 --> Menu_Rutinas_y_Ejercicios
-rombo2 --> Menu_Principal
-rombo2 --> Clasificación
-Ver_Alumnos-->[*]
 @enduml
