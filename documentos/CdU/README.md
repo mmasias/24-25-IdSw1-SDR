@@ -17,6 +17,20 @@ Este documento describe los casos de uso del **modelo de dominio**, enfocados en
 4. [Prototipar Casos de Uso](PrototiparCasosDeUso.md)
 5. [Estructurar el Modelo de Caso de Uso](EstructurarCasosDeUso.md)
 
---- 
+---
 
-Cada uno de estos pasos contiene la documentación necesaria para mostrar el **avance progresivo** del desarrollo de los casos de uso.
+## 📊 **Diagramas de Casos de Uso**
+
+| **Profesor**                                     | **Departamentos**                                          | **Admin**                                  |
+|--------------------------------------------------|------------------------------------------------------------|--------------------------------------------|
+| ![Profesor](/images/modelosUML/CdU/Profesor.svg) | ![Departamentos](/images/modelosUML/CdU/Departamentos.svg) | ![Admin](/images/modelosUML/CdU/Admin.svg) |
+| [Ver código](/modelosUML/CdU/Profesor.puml)      | [Ver código](/modelosUML/CdU/Departamentos.puml)           | [Ver código](/modelosUML/CdU/Admin.puml)   |
+
+### 📖 **Glosario**
+
+Estas palabras tienen definiciones en el [Glosario](/documentos/glosario.md):
+
+- [Carga Académica](/documentos/glosario.md#-carga-académica)
+- [PDI](/documentos/glosario.md#-pdi-personal-docente-e-investigador)
+- [Memoria](/documentos/glosario.md#-memoria-académica)
+- [Indicadores](/documentos/glosario.md#-indicador)
