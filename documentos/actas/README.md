@@ -9,12 +9,13 @@ En esta carpeta se irán registrando **todas las actas** de nuestras reuniones c
 
 ## 📑 **Actas Disponibles**
 
-| Fecha       | Enlace                      |
-|-------------|-----------------------------|
-| 16/10/2024  | [Acta 1](/documentos/actas/acta1.md)   |
+| Fecha       | Enlace                               |
+|-------------|--------------------------------------|
+| 16/10/2024  | [Acta 1](/documentos/actas/acta1.md) |
 | 12/11/2024  | [Acta 2](/documentos/actas/acta2.md) |
 | 21/11/2024  | [Acta 3](/documentos/actas/acta3.md) |
-| ...         | ...                         |
+| 7/1/2024    | [Acta 4](/documentos/actas/acta4.md) |
+| ...         | ...                                  |
 
 ---
 

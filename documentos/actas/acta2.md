@@ -1,7 +1,7 @@
 # 📝 **Acta 2**  
 **Fecha**: 12/11/2024  
 **Hora**: 16:30 PM  
-**[Presencial] 🟢**
+**[Presencial] 🏢**
 
 ---
 
