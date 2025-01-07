@@ -80,7 +80,7 @@
 ### Menu Perfil Profesor
 | Diagrama | Código Fuente |
 |----------|---------------|
-| ![Casos de uso](../Imagenes/DetallarCasosDeUso/Profesor/Menu_Perfil_Profesor.svg) | [Ver código](Profesor/Menu_Perfil_Profesor.puml) |
+| ![Casos de uso](../Imagenes/DetallarCasosDeUso/Profesor/Menu_Perfil_Profesor.svg) | [Ver código](Profesor/CambiarAPerfil.puml) |
 
 ### Crear Clase
 | Diagrama | Código Fuente |
