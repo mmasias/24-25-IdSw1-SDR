@@ -12,10 +12,10 @@
 | ![Casos de uso](../Imagenes/DetallarCasosDeUso/IniciarSesion.svg) | [Ver código](IniciarSesion.puml) |
 
 ## Profesor
-### Menu Principal 
+### Ingresar Al Sistema
 | Diagrama | Código Fuente |
 |----------|---------------|
-| ![Casos de uso](../Imagenes/DetallarCasosDeUso/Profesor/MenuPrincipalProfesor.svg) | [Ver código](Profesor/MenuPrincipalProfesor.puml) |
+| ![Casos de uso](../Imagenes/DetallarCasosDeUso/Profesor/MenuPrincipalProfesor.svg) | [Ver código](Profesor/IngresarAlSistema.puml) |
 
 ### Cambiar a Rutinas y Ejercicios
 | Diagrama | Código Fuente |

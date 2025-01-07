@@ -1,0 +1,17 @@
+@startuml IngresarAlSistema
+
+hide empty description
+
+state Profesor 
+state Pagina_Principal
+state IngresarAlSistema{
+    [*] --> [*]
+    note on link
+        El sistema muestra la página principal del profesor
+    end note
+}
+
+Profesor --> IngresarAlSistema
+IngresarAlSistema --> Pagina_Principal
+
+@enduml
