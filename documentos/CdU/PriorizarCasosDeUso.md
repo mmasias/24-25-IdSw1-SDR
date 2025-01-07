@@ -12,6 +12,7 @@ El orden ha sido establecido por el cliente según la importancia y necesidad de
 
 ## 📋 **Casos de Uso y Priorización**
 
+
 | **#** | **Caso de Uso**                                                                                              | **Prioridad** |  
 |----|--------------------------------------------------------------------------------------------------------------|---------------|  
 | 1 | Introducir datos de contrato, horas, temporalidad y categoría profesional                  |    🔴 Alta     |
