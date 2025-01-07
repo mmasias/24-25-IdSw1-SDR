@@ -6,24 +6,24 @@ state Mostrando_Ejercicio
 state EditandoEjercicio
 
 state EditarEjercicio {
-  [*] --> SolicitarDatosEdicion
+  [*] --> SolicitarEdicion
   note on link
-      El sistema muestra: solicitud de los datos a editar.
+      El sistema muestra: los datos actuales del ejercicio y solicita los cambios a realizar.
   end note
 
-  SolicitarDatosEdicion --> ModificarDatos
+  SolicitarEdicion --> EditarDatos
   note on link
-      El profesor introduce: modificaciones al nombre, video, descripción o ambos.
+      El profesor introduce: cambios en el nombre, video, descripción o ambos.
   end note
 
-  ModificarDatos --> ConfirmarEdicion
+  EditarDatos --> ConfirmarEdicion
   note on link
       El profesor introduce: confirmación presionando "Guardar cambios".
   end note
 
   ConfirmarEdicion --> [*]
   note on link
-      El sistema muestra: mensaje de cambios guardados con éxito.
+      El sistema muestra: confirmación de que los cambios fueron guardados correctamente.
   end note
 }
 
