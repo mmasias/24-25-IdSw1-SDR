@@ -10,5 +10,5 @@ Usamos las siguientes herramientas para definir las entidades principales de nue
 ### Diagrama de Objetos
 ![Diagrama de Objetos](/modeloDelDominio/imagenes/DiagramaDeObjetos.svg)
 
-### Diagrama de Estados
+### Estados de Asignatura
 ![Diagrama de Estados](/modeloDelDominio/imagenes/DiagramaDeEstados.svg)
