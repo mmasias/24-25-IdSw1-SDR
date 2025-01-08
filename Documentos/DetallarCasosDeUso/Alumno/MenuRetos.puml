@@ -1,26 +1,22 @@
-@startuml
-state Menu_Rutinas_y_Ejercicios
-state rombo2 <<choice>>
-state Obligatorios
-state Opcionales
-state MostrarReto
-state Menu_Perfil
+@startuml 
+
+hide empty description
+
+state Navegacion_Menus
 state Menu_Retos
-state Clasificación
-state Menu_Principal
+state CambiarARetos{
+    state Cambiar as "Cambiar a Retos"
+    [*] --> Cambiar
+    note on link
+        El alumno introduce ir a Retos
+    end note
+    Cambiar --> [*]
+    note on link
+        El sistema muestra el menu Retos
+    end note
+}
 
-[*] --> Menu_Retos : "El alumno solicita entrar a\nMenu Retos"
-Menu_Retos -->Obligatorios : El alumno escoge
-Menu_Retos --> Opcionales
-Opcionales --> MostrarReto
-Obligatorios -->MostrarReto : El alumno solicita
+Navegacion_Menus --> CambiarARetos
+CambiarARetos --> Menu_Retos
 
-Menu_Retos --> rombo2 : "El alumno solicita a\nir a otra opción"
-rombo2 --> Menu_Perfil
-rombo2 --> Menu_Retos: "Volver al menú"
-rombo2 --> Clasificación
-rombo2 --> Menu_Principal
-rombo2 --> Menu_Rutinas_y_Ejercicios
-
-Menu_Retos --> [*]
 @enduml

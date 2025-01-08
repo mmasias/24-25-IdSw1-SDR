@@ -1,19 +1,22 @@
-@startuml
-top to bottom direction
+@startuml Ver_Insignias
 
-[*] --> Menu_Perfil : Inicio del proceso
-state rombo <<choice>>
-rombo -u-> Menu_Perfil
-rombo --> Menu_Retos
-rombo --> Menu_Clasificación
-rombo --> Menu_Rutinas_y_Ejercicios
-rombo --> Menu_Principal
+hide empty description
 
-Menu_Perfil --> VerInsignias 
-VerInsignias --> rombo
-
-state VerInsignias {
-  MostrarInsignias --> MostrarInsignias : El sistema muestra todas las insignias
-  MostrarInsignias --> [*] : Finaliza visualización de insignias
+state Viendo_Mis_Insignias
+state Viendo_Insignias
+state Ver_Insignas {
+    state VerInsignias as "Ver Insignias"
+    [*] --> VerInsignias
+    note on link
+        El Alumno introduce ver las insignias
+    end note
+    VerInsignias --> [*]
+    note on link
+        El sistema muestra todas las insignias
+    end note
 }
+
+Viendo_Mis_Insignias --> Ver_Insignas
+Ver_Insignas --> Viendo_Insignias
+
 @enduml
