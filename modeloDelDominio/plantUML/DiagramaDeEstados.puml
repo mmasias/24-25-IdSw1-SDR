@@ -1,27 +1,23 @@
 @startuml
 [*] --> SinAsignar
 
-SinAsignar : La asignatura, profesor, horario y aula aún no están definidos.
+SinAsignar : La asignatura, profesor y aula aún no están definidos.
 
 SinAsignar --> GrupoDefinido : Crear grupo en AsignaturaGrado
 GrupoDefinido : Grupo creado, pero aún sin profesor asignado.
 
 GrupoDefinido --> ProfesorAsignado : Asignar profesor a grupo (AsignaturaGradoProfesor)
-ProfesorAsignado : Profesor asignado, pero sin horario ni aula.
+ProfesorAsignado : Profesor asignado, pero sin aula.
 
-ProfesorAsignado --> HorarioDefinido : Asignar horario (Horario)
-HorarioDefinido : Horario asignado, aula aún no asignada.
+ProfesorAsignado --> AulaAsignada : Asignar aula
 
-HorarioDefinido --> AulaAsignada : Asignar aula (HorarioAsignaturaAula)
-AulaAsignada : Todo configurado: grupo, profesor, horario y aula listos.
-
+AulaAsignada : Todo listo: grupo, profesor y aula asignados.
 AulaAsignada --> Confirmado : Confirmar asignación final
 Confirmado : Configuración finalizada y lista para uso.
 
 SinAsignar --> Cancelado : Cancelar asignación
 GrupoDefinido --> Cancelado : Cancelar asignación
 ProfesorAsignado --> Cancelado : Cancelar asignación
-HorarioDefinido --> Cancelado : Cancelar asignación
 AulaAsignada --> Cancelado : Cancelar asignación
 Confirmado --> [*] : Operación completada
 Cancelado --> [*] : Asignación cancelada

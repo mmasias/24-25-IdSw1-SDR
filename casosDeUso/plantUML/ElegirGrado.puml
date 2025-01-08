@@ -1,0 +1,7 @@
+@startuml
+start
+:El usuario solicita elegir un grado;
+:Sistema muestra todos los grados disponibles;
+:El usuario selecciona un grado;
+stop
+@enduml

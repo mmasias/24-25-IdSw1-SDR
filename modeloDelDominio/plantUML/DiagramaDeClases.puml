@@ -1,5 +1,5 @@
 @startuml
-package "AGP" {
+package "AsignaturaGradoPorfesor" {
   class Grado {
     - idGrado : int
     - nombre : String
@@ -30,11 +30,11 @@ package "AGP" {
     - email : String
   }
   
-  Asignatura --> Profesor
-  Grado --> AsignaturaGrado
-  Asignatura --> AsignaturaGrado
-  AsignaturaGrado --> AsignaturaGradoProfesor
-  Profesor --> AsignaturaGradoProfesor
+  Asignatura -- Profesor
+  Grado -- AsignaturaGrado
+  Asignatura -- AsignaturaGrado
+  AsignaturaGrado -- AsignaturaGradoProfesor
+  Profesor -- AsignaturaGradoProfesor
 }
 
 class Horario {
@@ -57,7 +57,7 @@ class Aula {
   - capacidad : int
 }
 
-AsignaturaGradoProfesor --> Horario
-Horario *-- HorarioAsignaturaAula
-Aula --> HorarioAsignaturaAula
+AsignaturaGradoProfesor -- Horario
+Horario -- HorarioAsignaturaAula
+Aula -- HorarioAsignaturaAula
 @enduml
