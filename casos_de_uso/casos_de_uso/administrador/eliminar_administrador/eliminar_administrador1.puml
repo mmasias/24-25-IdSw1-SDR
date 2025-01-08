@@ -1,0 +1,14 @@
+@startuml
+title Casos de Uso: Eliminar Administrador
+
+actor Administrador
+
+folder "Gestión de Usuarios" as Usuarios {
+    Administrador --> (Eliminar administrador)
+}
+
+note right of (Eliminar administrador)
+    Permite al administrador eliminar
+    un administrador registrado del sistema.
+end note
+@enduml

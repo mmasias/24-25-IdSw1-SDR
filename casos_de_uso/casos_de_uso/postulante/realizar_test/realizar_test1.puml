@@ -1,0 +1,24 @@
+@startuml
+title Casos de Uso (Postulante) - Realizar Capacitación y Test
+
+skinparam {
+    NoteBackgroundColor #whiteSmoke
+    NoteBorderColor #green
+    linetype polyline
+}
+
+left to right direction
+
+actor Postulante
+
+folder "Capacitación" as capacitacion {
+    Postulante --> (Realizar Capacitación)
+    Postulante --> (Consultar Disponibilidad de Capacitación)
+}
+
+folder "Test" as test {
+    Postulante --> (Realizar Test)
+    Postulante --> (Consultar Resultados del Test)
+}
+
+@enduml

@@ -1,0 +1,14 @@
+@startuml
+title Casos de Uso: Eliminar Postulante
+
+actor Administrador
+
+folder "Gestión de Postulantes" as Postulantes {
+    Administrador --> (Eliminar postulante)
+}
+
+note right of (Eliminar postulante)
+    Permite al administrador eliminar
+    un postulante registrado en el sistema.
+end note
+@enduml

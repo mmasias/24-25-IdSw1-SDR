@@ -1,0 +1,16 @@
+@startuml
+title Casos de Uso: Crear Administrador
+
+actor Administrador
+
+folder "Gestión de Administradores" as Administradores {
+    Administrador --> (Crear administrador)
+}
+
+note right of (Crear administrador)
+    Permite al administrador registrar
+    nuevos administradores en el sistema,
+    almacenando sus datos.
+end note
+@enduml
+
