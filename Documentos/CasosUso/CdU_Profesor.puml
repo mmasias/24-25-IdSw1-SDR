@@ -1,110 +1,78 @@
-@startuml
+@startuml CdU_Profesor
 left to right direction
 actor Profesor
 
 package "Rutinas y Ejercicios" {
+    usecase "Cambiar a Rutinas y Ejercicios" as CambiarARutinasYEjercicios
 
     package "Rutinas" {
-        usecase "Ver Rutina Disponible" as VerRutinasDisponibles
-        usecase "Buscar Rutina" as BuscarRutina
-        usecase "Crear Rutina" as CrearRutina
-        usecase "Ver Rutina Específica" as VerRutinaEspecifica
-
+        usecase "Mostrar Rutina" as MostrarRutina
         usecase "Editar Rutina" as EditarRutina
-        usecase "Ver Ejercicios en Rutina" as VerEjerciciosEnRutina
-        usecase "Buscar Ejercicio en Rutina" as BuscarEjercicioEnRutina
-        
+        usecase "Crear Rutina" as CrearRutina
     }
 
     package "Ejercicios" {
-        usecase "Buscar Ejercicio" as BuscarEjercicio
-        usecase "Ver Ejercicio Disponible" as VerEjerciciosDisponibles
-        usecase "Crear Ejercicio" as CrearEjercicio
-
-        usecase "Ver Ejercicio Específico" as VerEjercicioEspecifico
+        usecase "Mostrar Ejercicio" as MostrarEjercicio
         usecase "Editar Ejercicio" as EditarEjercicio
+        usecase "Crear Ejercicio" as CrearEjercicio
     }
 }
 
 package "Retos" {
-    package "Obligatorios" {
-        usecase "Ver Reto Obligatorio" as VerRetosObligatorios
-        usecase "Crear Reto Obligatorio" as CrearRetoObligatorio
-        usecase "Editar Reto Obligatorio" as EditarRetoObligatorio
-    }
-
-    package "Opcionales" {
-        usecase "Ver Reto Opcional" as VerRetosOpcionales
-        usecase "Crear Reto Opcional" as CrearRetoOpcional
-        usecase "Editar Reto Opcional" as EditarRetoOpcional
-    }
-
-    usecase "Asignar Reto a Clase" as AsignarRetoAClase
+    usecase "Cambiar a Retos" as CambiarARetos
+    usecase "Crear Reto" as CrearReto
+    usecase "Editar Reto" as EditarReto
 }
 
 package "Clasificación" {
-    usecase "Ver Clasificación de Clase" as VerClasificacionClases
-    usecase "Ver Clasificación de Alumno" as VerClasificacionAlumnos
-    VerClasificacionClases --> VerClasificacionAlumnos : <<include>>
+    usecase "Cambiar a Clasificación" as CambiarAClasificacion
+    usecase "Ver alumnos dentro  de clase" as VerAlumnosDentroDeClase
 }
 
 package "Perfil" {
-    usecase "Cerrar Sesión" as CerrarSesion
-    usecase "Crear Clase" as CrearClase
-    usecase "Mostrar QR Centro Deportivo" as MostrarQRCentros
-    usecase "Ver Mi Clase" as VerMisClases
+    usecase "Cambiar a Perfil" as CambiarAPerfil
+    usecase "Mostrar QR en centro deportivo" as MostrarQR
 
     package "Mis Clases" {
-        usecase "Ver Alumno" as VerAlumnosEnClase
-
-        package "Alumnos" {
-            usecase "Ver Reto del Alumno" as VerRetosDelAlumno
-            usecase "Evaluar Reto" as EvaluarReto
-        }
+        usecase "Crear Clase" as CrearClase
+        usecase "Ver mis clases" as VerMisClases
+        usecase "Ver alumnos" as VerAlumnos
+        usecase "Ver retos alumnos" as VerRetosAlumnos
+        usecase "Evaluar retos" as EvaluarRetos
     }
 }
 
+usecase "Cerrar Sesión" as CerrarSesion
 usecase "Iniciar Sesión" as IniciarSesion
+usecase "Ingresar al Sistema" as IngresarAlSistema
+usecase "Cambiar Menu" as CambiarMenu
 
+Profesor --> IngresarAlSistema
 Profesor --> IniciarSesion
-Profesor --> VerRutinasDisponibles
-Profesor --> BuscarRutina
-Profesor --> CrearRutina
-Profesor --> VerEjerciciosDisponibles
-Profesor --> BuscarEjercicio
-Profesor --> CrearEjercicio
-Profesor --> VerRetosObligatorios
-Profesor --> CrearRetoObligatorio
-Profesor --> EditarRetoObligatorio
-Profesor --> VerRetosOpcionales
-Profesor --> CrearRetoOpcional
-Profesor --> EditarRetoOpcional
-Profesor --> VerClasificacionClases
+Profesor --> CambiarMenu
 Profesor --> CerrarSesion
-Profesor --> CrearClase
-Profesor --> MostrarQRCentros
-Profesor --> VerMisClases
 
-VerRutinasDisponibles --> VerRutinaEspecifica : <<include>>
-VerRutinaEspecifica --> CrearEjercicio : <<include>>
-VerRutinaEspecifica --> VerEjerciciosEnRutina : <<include>>
-VerRutinaEspecifica --> EditarRutina : <<include>>
-VerRutinaEspecifica --> BuscarEjercicioEnRutina : <<include>>
+Profesor --> CambiarARutinasYEjercicios
+CambiarARutinasYEjercicios --> MostrarRutina
+CambiarARutinasYEjercicios --> EditarRutina
+CambiarARutinasYEjercicios --> CrearRutina
+CambiarARutinasYEjercicios --> MostrarEjercicio
+CambiarARutinasYEjercicios --> EditarEjercicio
+CambiarARutinasYEjercicios --> CrearEjercicio
 
+Profesor --> CambiarARetos
+CambiarARetos --> CrearReto
+CambiarARetos --> EditarReto
 
-VerEjerciciosEnRutina --> VerEjercicioEspecifico : <<include>> 
-VerEjercicioEspecifico --> EditarEjercicio : <<include>>       
+Profesor --> CambiarAClasificacion
+CambiarAClasificacion --> VerAlumnosDentroDeClase
 
-CrearRutina --> BuscarEjercicio : <<include>>
-
-
-VerEjerciciosDisponibles --> VerEjercicioEspecifico : <<include>>
-
-CrearRetoObligatorio --> AsignarRetoAClase : <<include>>
-CrearRetoOpcional --> AsignarRetoAClase : <<include>>
-
-VerMisClases --> VerAlumnosEnClase : <<include>>
-VerAlumnosEnClase --> VerRetosDelAlumno : <<include>>
-VerRetosDelAlumno --> EvaluarReto : <<include>>
+Profesor --> CambiarAPerfil
+CambiarAPerfil --> MostrarQR
+CambiarAPerfil --> CrearClase
+CambiarAPerfil --> VerMisClases
+CambiarAPerfil --> VerAlumnos
+CambiarAPerfil --> VerRetosAlumnos
+CambiarAPerfil --> EvaluarRetos
 
 @enduml
