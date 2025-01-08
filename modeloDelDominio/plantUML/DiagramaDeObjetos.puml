@@ -1,4 +1,5 @@
 @startuml
+package "AsignaturaGradoPorfesor" {
 object Grado {
   idGrado = 1
   nombre = "Ingeniería Informática"
@@ -28,7 +29,7 @@ object AsignaturaGradoProfesor {
   idAsignaturaGrado = 1
   idProfesor = 201
 }
-
+}
 object Horario {
   idHorario = 401
   dia = "Lunes"
@@ -49,12 +50,13 @@ object HorarioAsignaturaAula {
   idAula = 501
 }
 
-Grado --> AsignaturaGrado
-Asignatura --> AsignaturaGrado
-Asignatura --> Profesor
-AsignaturaGrado --> AsignaturaGradoProfesor
-Profesor --> AsignaturaGradoProfesor
-AsignaturaGradoProfesor --> Horario
-Horario *-- HorarioAsignaturaAula
-Aula --> HorarioAsignaturaAula
+Grado -- AsignaturaGrado
+Asignatura -- AsignaturaGrado
+Asignatura -- Profesor
+AsignaturaGrado -- AsignaturaGradoProfesor
+Profesor -- AsignaturaGradoProfesor
+AsignaturaGradoProfesor -- Horario
+Horario -- HorarioAsignaturaAula
+Aula -- HorarioAsignaturaAula
+
 @enduml
