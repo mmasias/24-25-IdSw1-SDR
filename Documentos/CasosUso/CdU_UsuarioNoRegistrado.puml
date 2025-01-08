@@ -1,4 +1,4 @@
-@startuml
+@startuml CdU_UsuarioNoRegistrado   
 left to right direction
 
 actor "Usuario No Registrado" as UsuarioNoRegistrado
