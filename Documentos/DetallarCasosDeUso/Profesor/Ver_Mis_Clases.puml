@@ -1,24 +1,34 @@
-@startuml
-state Ver_Mis_Clases
-state rombo1 <<choice>>
-state Ver_Alumnos
+@startuml Ver_Mis_Clases
+
+hide empty description
+
 state Menu_Perfil
-state Menu_Retos
-state Menu_Rutinas_y_Ejercicios
-state Menu_Principal
+state Viendo_Mis_Clases
+state Ver_Mis_Clases{
+    state VerMisClases as "Ver mis clases"
+    [*] --> VerMisClases
+    note on link
+        El profesor introduce ver mis clases
+    end note
+    VerMisClases --> ClasesDisponibles
+    note on link
+        El sistema muestra las clases disponibles
+    end note
+    ClasesDisponibles --> ClaseSeleccionada
+    note on link
+        El profesor introduce ver una clase
+    end note
+    ClaseSeleccionada --> [*]
+    note on link
+        El sistema muestra la clase seleccionada
+    end note
+    ClaseSeleccionada --> ClasesDisponibles
+    note on link
+        El profesor introduce ver las clases otra vez
+    end note
+}
 
-[*] --> Ver_Mis_Clases : "El profesor solicita entrar a\nVer mis clases"
+Menu_Perfil --> Ver_Mis_Clases
+Ver_Mis_Clases --> Viendo_Mis_Clases
 
-Ver_Mis_Clases --> Ver_Alumnos : "El profesor solicita ver alumnos"
-
-
-
-Ver_Mis_Clases --> rombo1 : "El profesor solicita ir a otra opción"
-rombo1 --> Menu_Perfil
-rombo1 --> Menu_Retos
-rombo1 --> Menu_Rutinas_y_Ejercicios
-rombo1 --> Menu_Principal
-rombo1 --> Ver_Mis_Clases : "Volver al menú"
-
-Ver_Mis_Clases --> [*]
 @enduml
