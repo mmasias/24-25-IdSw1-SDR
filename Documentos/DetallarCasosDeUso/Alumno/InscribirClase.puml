@@ -1,20 +1,48 @@
-@startuml
-top to bottom direction
+@startuml InscribirClase
 
-[*] --> Menu_Perfil : Inicio del proceso
-state rombo <<choice>>
-rombo -u-> Menu_Perfil
-rombo --> Menu_Retos
-rombo --> Menu_Clasificación
-rombo --> Menu_Rutinas_y_Ejercicios
-rombo --> Menu_Principal
-
-Menu_Perfil --> InscribirClase : Presionar "Incribirse en clase"
-InscribirClase --> rombo
+hide empty description
+state InscribiendoClase
+state Menu_Perfil as "Menu Perfil"
 
 state InscribirClase {
-  IntroducirCódigo : El sistema solicita código correspondiente a una clase
-  IntroducirCódigo --> AceptarCódigo : El alumno pulsa "Aceptar"
-  AceptarCódigo --> [*] : Finaliza inscripción en una clase
+
+    state Formulario as "Llenar Formulario"
+    state ValidarDatos as "Validar Datos"
+    state ConfirmarInscripcion as "Confirmar Inscripción"
+    state ClaseInscrita as "Clase inscrita"
+
+    [*] --> Formulario
+    note on link
+        El sistema muestra formulario para inscribir a la clase con el campos: Código de la clase.
+    end note
+
+    Formulario --> ValidarDatos
+    note on link
+        El alumno introduce: datos de la clase.
+    end note
+
+    ValidarDatos --> ConfirmarInscripcion
+    note on link
+        El sistema muestra: solicitud de confirmación para inscribir a la clase.
+    end note
+
+    ValidarDatos --> Formulario
+    note on link
+        El sistema muestra: errores o datos incompletos en el formulario.
+    end note
+
+    ConfirmarInscripcion --> ClaseInscrita
+    note on link
+        El alumno introduce: confirmación para inscribir a la clase.
+    end note
+
+    ClaseInscrita --> [*]
+    note on link
+        El sistema muestra: mensaje de clase creada exitosamente. Código de la clase listo para compartir.
+    end note
 }
+
+Menu_Perfil --> InscribirClase
+InscribirClase --> InscribiendoClase
+
 @enduml
