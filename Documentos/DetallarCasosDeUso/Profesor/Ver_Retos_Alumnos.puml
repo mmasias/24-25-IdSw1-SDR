@@ -1,29 +1,26 @@
-@startuml
-state Ver_Retos_Alumnos
-state rombo1 <<choice>>
-state rombo2 <<choice>>
-state Retos_Obligatorios
-state Retos_Opcionales
-state Evaluar_Retos
-state Menu_Retos
-state Menu_Rutinas_y_Ejercicios
-state Menu_Principal
+@startuml Ver_Retos_Alumnos
 
-[*] --> Ver_Retos_Alumnos : "El profesor solicita entrar a\nVer los retos de los alumnos"
+hide empty description
 
-Ver_Retos_Alumnos --> rombo2 : "El profesor solicita acceder a los tipos de retos del alumno"
-rombo2 --> Retos_Obligatorios
-rombo2 --> Retos_Opcionales
-Retos_Obligatorios --> Evaluar_Retos 
-Retos_Opcionales --> Evaluar_Retos
+state Viendo_Alumnos
+state Viendo_Retos_Alumnos
+state Ver_Retos_Alumnos {
+    [*] --> VerDetalles
+    note on link
+        El sistema muestra el estado del reto
+    end note
+    VerDetalles --> RevisarReto
+    note on link
+        El profesor introduce evaluar retos
+    end note
+    VerDetalles --> [*]
+    note on link
+        El profesor introduce salir
+    end note
 
+}
 
-Ver_Retos_Alumnos --> rombo1 : "El profesor solicita ir a otra opción"
-rombo1 --> Clasificacion
-rombo1 --> Menu_Retos
-rombo1 --> Menu_Rutinas_y_Ejercicios
-rombo1 --> Menu_Principal
-rombo1 --> Ver_Retos_Alumnos : "Volver al menú"
+Viendo_Alumnos --> Ver_Retos_Alumnos
+Ver_Retos_Alumnos --> Viendo_Retos_Alumnos
 
-Ver_Retos_Alumnos --> [*]
 @enduml
