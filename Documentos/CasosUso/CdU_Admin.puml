@@ -1,4 +1,4 @@
-@startuml
+@startuml CdU_Admin
 left to right direction
 
 actor Admin
