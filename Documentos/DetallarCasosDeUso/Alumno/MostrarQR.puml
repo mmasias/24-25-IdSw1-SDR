@@ -1,19 +1,22 @@
-@startuml
-top to bottom direction
+@startuml Mostrar_QR
 
-[*] --> Menu_Perfil : Inicio del proceso
-state rombo <<choice>>
-rombo -u-> Menu_Perfil
-rombo --> Menu_Retos
-rombo --> Menu_Clasificación
-rombo --> Menu_Rutinas_y_Ejercicios
-rombo --> Menu_Principal
+hide empty description
 
-Menu_Perfil --> MostrarQR : Presionar "Mostrar QR"
-MostrarQR --> rombo
-
-state MostrarQR {
-  VerQR --> VerQR : El sistema muestra el QR
-  VerQR --> [*] : Finaliza visualización del QR
+state Menu_Perfil
+state Mostrando_QR
+state Mostrar_QR{
+    state Mostrar as "Mostrar QR"
+    [*] --> Mostrar
+    note on link
+        El alumno introduce ver el QR
+    end note
+    Mostrar --> [*]
+    note on link
+        El sistema muestra el QR
+    end note
 }
+
+Menu_Perfil --> Mostrar_QR
+Mostrar_QR --> Mostrando_QR
+
 @enduml
