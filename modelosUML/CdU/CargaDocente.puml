@@ -1,0 +1,39 @@
+@startuml
+left to right direction
+package "Gestión de Carga Docente" {
+  
+  actor "Ordenación" as Ordenacion
+  actor "Técnico Calidad" as TecnicoCalidad
+  actor "RRHH" as RRHH
+  actor "Administrador" as Admin
+  
+  rectangle "Asignación de Carga Docente" {
+    usecase "Asignar carga docente de asignaturas a profesores." as CU1
+    usecase "Asignar valores consignados en memoria por titulación." as CU2
+    usecase "Asignar valor de información a SIIU y DGU del PDI." as CU3
+  }
+
+  rectangle "Revisión de Cumplimiento" {
+    usecase "Revisar listado de profesores cuya carga docente no se ajusta al contrato." as CU4
+  }
+
+  Ordenacion --> CU1
+  Ordenacion --> CU2
+  Ordenacion --> CU3
+
+  TecnicoCalidad --> CU2
+  TecnicoCalidad --> CU3
+
+  RRHH --> CU4
+
+  CU1 <-- Admin 
+  CU2 <-- Admin 
+  CU3 <-- Admin 
+  CU4 <-- Admin 
+
+  note right of Admin
+    El Administrador tiene acceso
+    a todos los casos de uso de Departamentos
+  end note
+}
+@enduml

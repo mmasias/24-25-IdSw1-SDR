@@ -1,0 +1,24 @@
+@startuml
+left to right direction
+package "Generación de Indicadores e Informes" {
+  
+  actor "Técnico Calidad" as TecnicoCalidad
+  actor "Administrador" as Admin
+  
+  rectangle "Generación de Indicadores e Informes" {
+    usecase "Obtener indicadores para Sistema de Gestión." as CU1
+    usecase "Emitir informe del profesorado por titulación y global." as CU2
+  }
+
+  TecnicoCalidad --> CU1
+  TecnicoCalidad --> CU2
+
+  CU1 <-- Admin
+  CU2 <-- Admin
+
+  note right of Admin
+    El Administrador tiene acceso
+    a todos los casos de uso de Departamentos
+  end note
+}
+@enduml

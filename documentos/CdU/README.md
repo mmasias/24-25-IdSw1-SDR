@@ -20,12 +20,13 @@ Este documento describe los casos de uso del **modelo de dominio**, enfocados en
 
 ## 📊 **Diagramas de Casos de Uso**
 
-| **Diagrama**                                                                                           | **Código Fuente**                                  |
-|--------------------------------------------------------------------------------------------------------|----------------------------------------------------|
-| ![Departamentos y Administrador](/images/modelosUML/CdU/Departamentos.svg)                              | [Ver código](/modelosUML/CdU/Departamentos.puml)  |
-| ![Profesor](/images/modelosUML/CdU/Profesor.svg)                                                       | [Ver código](/modelosUML/CdU/Profesor.puml)       |
+| **Diagrama**                                                                            | **Código Fuente**                                      |
+|-----------------------------------------------------------------------------------------|--------------------------------------------------------|
+| ![Gestión de Datos del Profesorado](/images/modelosUML/CdU/DatosProfesorado.svg)        | [Ver código](/modelosUML/CdU/DatosProfesorado.puml)    |
+| ![Gestión de Carga Docente](/images/modelosUML/CdU/CargaDocente.svg)                    | [Ver código](/modelosUML/CdU/CargaDocente.puml)        |
+| ![Generación de Indicadores e Informes](/images/modelosUML/CdU/IndicadoresInformes.svg) | [Ver código](/modelosUML/CdU/IndicadoresInformes.puml) |
 
-
+---
 
 ### 📖 **Glosario**
 

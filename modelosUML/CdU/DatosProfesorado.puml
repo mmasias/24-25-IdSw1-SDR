@@ -1,0 +1,53 @@
+@startuml
+left to right direction
+package "Gestión de Datos del Profesorado" {
+  
+  actor "Profesores" as Profesores
+  actor "Ordenación" as Ordenacion
+  actor "Técnico Calidad" as TecnicoCalidad
+  actor "RRHH" as RRHH
+  actor "Administrador" as Admin
+  
+  rectangle "Introducción de Datos" {
+    usecase "Introducir datos de experiencia docente, profesional, investigadora, etc." as CU1
+    usecase "Introducir datos de contrato, horas, temporalidad y categoría profesional." as CU2
+  }
+  rectangle "Consulta de Datos" {
+    usecase "Consultar valores asignados de contrato y otros datos personales." as CU3
+    usecase "Consultar asignaciones docentes (por titulación, curso y semestre)." as CU4
+    usecase "Consultar claustro docente (listado PDI asociado a una titulación, anual, por semestre)." as CU5
+    usecase "Consultar asignación docente por profesor (créditos y asignaturas)." as CU6
+  }
+  rectangle "Modificación y Validación de Datos" {
+    usecase "Validar datos introducidos por el profesorado y modificarlos." as CU7
+    usecase "Validar los valores de titulación vs. compromisos de memoria." as CU8
+    usecase "Revisar cumplimiento de valores consignados en la memoria por titulación." as CU9
+  }
+  
+  Profesores --> CU1
+  Profesores --> CU3
+  Profesores --> CU4
+  RRHH --> CU2
+  RRHH --> CU5
+  RRHH --> CU6
+  RRHH --> CU7
+  Ordenacion --> CU5
+  Ordenacion --> CU6
+  TecnicoCalidad --> CU5
+  TecnicoCalidad --> CU6
+  TecnicoCalidad --> CU8
+  TecnicoCalidad --> CU9
+  
+  CU2 <-- Admin
+  CU5 <-- Admin
+  CU6 <-- Admin
+  CU7 <-- Admin
+  CU8 <-- Admin
+  CU9 <-- Admin
+  
+  note right of Admin
+    El Administrador tiene acceso
+    a todos los casos de uso de Departamentos
+  end note
+}
+@enduml
