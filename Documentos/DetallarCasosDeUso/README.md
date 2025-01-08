@@ -67,6 +67,11 @@
 |----------|---------------|
 | ![Casos de uso](../Imagenes/DetallarCasosDeUso/Profesor/CrearRetos.svg) | [Ver código](Profesor/CrearRetos.puml) |
 
+### Editar Reto
+| Diagrama | Código Fuente |
+|----------|---------------|
+| ![Casos de uso](../Imagenes/DetallarCasosDeUso/Profesor/EditarReto.svg) | [Ver código](Profesor/EditarReto.puml) |
+
 ### Cambiar a Clasificación
 | Diagrama | Código Fuente |
 |----------|---------------|
