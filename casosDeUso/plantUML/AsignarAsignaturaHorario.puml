@@ -2,18 +2,12 @@
 start
 :El usuario solicita asignar una asignatura;
 :Sistema muestra todas las asignaturas disponibles;
-if (¿Aplicar filtros?) then (Sí)
-  :Usuario selecciona grado o profesor como filtro;
-  :Sistema filtra las asignaturas disponibles según los criterios seleccionados;
-else (No)
-  :Continúa con todas las asignaturas sin filtrar;
-endif
 :Usuario selecciona la asignatura;
 :Usuario selecciona el día y la fecha;
 :Usuario selecciona preferencias de aula (opcional): 
 - Aula grande 
 - Aula con computadora;
-:Sistema chequea por aulas disponibles;
+:Sistema verifica aulas disponibles;
 if (¿Aulas que cumplen las preferencias?) then (Sí)
   :Sistema asigna automáticamente un aula que cumple con las preferencias;
 else (No)

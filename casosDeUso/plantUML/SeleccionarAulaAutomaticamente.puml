@@ -1,6 +1,6 @@
 @startuml
 start
-:Sistema chequea aulas disponibles;
+:Sistema verifica aulas disponibles;
   if (¿Aulas que cumplen las preferencias?) then (Sí)
     :Sistema selecciona automáticamente la primera aula disponible que cumple las preferencias en orden numérico;
   else (No)
