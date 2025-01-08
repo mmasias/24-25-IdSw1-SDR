@@ -36,10 +36,12 @@ package Perfil {
 usecase "Ingresar al Sistema" as IngresarAlSistema
 usecase "Iniciar Sesion" as IniciarSesion
 usecase "Cerrar Sesion" as CerrarSesion
+usecase "Cambiar Menu" as CambiarMenu
 
 Alumno --> IngresarAlSistema
 Alumno --> IniciarSesion
 Alumno --> CerrarSesion
+Alumno --> CambiarMenu
 
 Alumno --> IrARutinasYEjercicios
 IrARutinasYEjercicios --> MostrarRutina
