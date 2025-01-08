@@ -7,9 +7,17 @@ INICIANDO_SESION --> MENU_PRINCIPAL
     note on link
         Ver menu
     end note
-MENU_PRINCIPAL --> ASIGNANDO_ASIGNATURA
+MENU_PRINCIPAL --> ELIGIENDO_GRADO
+    note on link
+        Elegir grado
+    end note
+ELIGIENDO_GRADO --> ASIGNANDO_ASIGNATURA
     note on link
         Asignar asignatura
+    end note
+ASIGNANDO_ASIGNATURA --> ELIGIENDO_GRADO
+    note on link
+        Elegir grado
     end note
 ASIGNANDO_ASIGNATURA --> MENU_PRINCIPAL
     note on link
@@ -83,6 +91,14 @@ VIENDO_DISPONIBILIDAD_AULAS --> MENU_PRINCIPAL
     note on link
         Ver menu
     end note
-
+MENU_PRINCIPAL --> SELECCIONANDO_AULA_AUTOMATICAMENTE
+    note on link
+        Seleccionar aula 
+        automáticamente
+    end note
+SELECCIONANDO_AULA_AUTOMATICAMENTE --> MENU_PRINCIPAL
+    note on link
+        Ver menu
+    end note
 MENU_PRINCIPAL --> [*] 
 @enduml
