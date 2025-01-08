@@ -20,7 +20,7 @@ state IniciarSesion{
     end note
     Estado2 --> Estado3
     note on link
-        Usuario introcude
+        El Usuario introduce
         - Correo
         - Contraseña
     end note
