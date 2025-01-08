@@ -32,7 +32,7 @@ package "Reportes" {
     usecase "Descargar Estadísticas" as DescargarEstadisticas
 }
 
-usecase "Página Principal" as PaginaPrincipal
+usecase "Ver Página Principal" as PaginaPrincipal
 usecase "Cerrar Sesión" as CerrarSesion
 
 Admin --> PaginaPrincipal
