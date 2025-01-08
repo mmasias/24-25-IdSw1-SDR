@@ -10,13 +10,20 @@ else (No)
 endif
 :Usuario selecciona la asignatura;
 :Usuario selecciona el día y la fecha;
+:Usuario selecciona preferencias de aula (opcional): 
+- Aula grande 
+- Aula con computadora;
 :Sistema chequea por aulas disponibles;
-if (¿Aulas disponibles?) then (Sí)
-  :Sistema asigna automáticamente un aula disponible;
-  :Sistema guarda la información y cambia el estatus de la asignatura a "Asignada";
-  :Sistema muestra confirmación: "Asignatura asignada correctamente";
+if (¿Aulas que cumplen las preferencias?) then (Sí)
+  :Sistema asigna automáticamente un aula que cumple con las preferencias;
 else (No)
-  :Sistema muestra mensaje de error: "No hay aulas disponibles";
+  if (¿Aulas disponibles sin preferencias?) then (Sí)
+    :Sistema asigna automáticamente un aula disponible;
+  else (No)
+    :Sistema muestra mensaje de error: "No hay aulas disponibles";
+  endif
 endif
+:Sistema guarda la información y cambia el estatus de la asignatura a "Asignada";
+:Sistema muestra confirmación: "Asignatura asignada correctamente";
 stop
 @enduml
