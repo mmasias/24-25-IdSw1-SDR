@@ -14,6 +14,9 @@
 ### Asignar Asignatura
 ![Asignar Asignatura](https://github.com/srgiom/24-25-IdSw1-SDR/raw/main/casosDeUso/imagenes/AsignarAsignatura.svg)
 
+### SeleccionarAulaAutomaticamente
+![Seleccionar Aula Automaticamente](**Poner url**)
+
 ### Asignar Profesor
 ![Asignar Profesor](https://github.com/srgiom/24-25-IdSw1-SDR/raw/main/casosDeUso/imagenes/AsignarProfesor.svg)
 
@@ -31,9 +34,6 @@
 
 ### Mostrar Asignaturas
 ![Mostrar Asignaturas](https://github.com/srgiom/24-25-IdSw1-SDR/raw/main/casosDeUso/imagenes/MostrarAsignaturas.svg)
-
-### Registrar Asignatura
-![Registrar Asignatura](https://github.com/srgiom/24-25-IdSw1-SDR/raw/main/casosDeUso/imagenes/RegistrarAsignatura.svg)
 
 ### Ver Disponibilidad de Aulas
 ![Ver Disponibilidad de Aulas](https://github.com/srgiom/24-25-IdSw1-SDR/raw/main/casosDeUso/imagenes/VerDisponibilidadAulas.svg)

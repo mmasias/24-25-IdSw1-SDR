@@ -5,7 +5,14 @@ start
 :Sistema solicita datos del profesor y asignaturas;
 :Usuario selecciona al profesor;
 :Usuario selecciona una o múltiples asignaturas;
-:Sistema guarda los cambios;
-:Sistema actualiza el calendario del profesor con la información correspondiente;
+:Sistema verifica el número de asignaturas actualmente asignadas al profesor;
+if (¿Excede el límite de 8 asignaturas?) then (Sí)
+  :Sistema muestra mensaje de error: "El profesor ya tiene asignadas el máximo de 8 asignaturas";
+  :Sistema cancela la operación de asignación;
+else (No)
+  :Sistema guarda los cambios;
+  :Sistema actualiza el calendario del profesor con la información correspondiente;
+  :Sistema muestra confirmación: "Profesor asignado correctamente a las asignaturas";
+endif
 stop
 @enduml
