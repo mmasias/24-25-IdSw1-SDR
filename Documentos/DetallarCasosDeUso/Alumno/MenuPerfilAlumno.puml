@@ -1,28 +1,21 @@
-@startuml
-state Menu_Perfil
-state rombo1 <<choice>>
-state rombo2 <<choice>>
-state Inscribir_Clase
-state Ver_Insignias
-state Mostrar_QR
-state Menu_Rutinas_Ejercicios
-state Menu_Retos
-state Menu_Clasificación
-state Menu_Principal
+@startuml CambiarAPerfil
 
-[*] --> Menu_Perfil : "El alumno solicita entrar a\nMenu Perfil"
+hide empty description
 
-Menu_Perfil --> rombo1 : "El alumno solicita"
-rombo1 --> Inscribir_Clase
-rombo1 --> Ver_Insignias
-rombo1 --> Mostrar_QR 
+state NavegacionMenus
+state MenuPerfil
+state CambiarAPerfil{
+    state Cambiar as "Cambiar a Perfil"
+    [*] --> Cambiar
+    note on link
+        El alumno introduce que quiere ir a su perfil
+    end note
+    Cambiar --> [*]
+    note on link
+        El sistema muestra el perfil del profesor
+    end note
+}
 
-Menu_Perfil --> rombo2 : "El alumno solicita ir a otro menú"
-rombo2 --> Menu_Rutinas_Ejercicios
-rombo2 --> Menu_Retos
-rombo2 --> Menu_Clasificación
-rombo2 --> Menu_Principal
-rombo2 --> Menu_Perfil : "Volver al menú"
-
-Menu_Perfil --> [*]
+NavegacionMenus --> CambiarAPerfil
+CambiarAPerfil --> MenuPerfil
 @enduml
