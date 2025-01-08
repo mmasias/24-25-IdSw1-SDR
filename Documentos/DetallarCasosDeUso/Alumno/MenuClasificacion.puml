@@ -1,24 +1,22 @@
 @startuml
+
+hide empty description
+
+state Navegacion_Menus
 state Menu_Clasificacion
-state rombo1 <<choice>>
-state Clasificacion
-state Menu_Perfil
-state Menu_Retos
-state Menu_Rutinas_y_Ejercicios
-state Menu_Principal
+state CambiarAClasificacion{
+    state Cambiar as "Cambiar a Clasificación"
+    [*] --> Cambiar
+    note on link
+        El alumno introduce que quiere ir a Clasificación
+    end note
+    Cambiar --> [*]
+    note on link
+        El sistema muestra Clasificación
+    end note
+}
 
-[*] --> Menu_Clasificacion : "El Alumno solicita entrar a\nMenu Clasificacion"
+Navegacion_Menus --> CambiarAClasificacion
+CambiarAClasificacion --> Menu_Clasificacion
 
-Menu_Clasificacion --> Clasificacion : "El sistema muestra clasificacion de la clase del alumno"
-
-
-
-Menu_Clasificacion --> rombo1 : "El alumno solicita ir a otra opción"
-rombo1 --> Menu_Perfil
-rombo1 --> Menu_Retos
-rombo1 --> Menu_Rutinas_y_Ejercicios
-rombo1 --> Menu_Principal
-rombo1 --> Menu_Clasificacion : "Volver al menú"
-
-Menu_Clasificacion --> [*]
 @enduml
