@@ -46,8 +46,9 @@ package "Gestión de Datos del Profesorado" {
   CU9 <-- Admin
   
   note right of Admin
-    El Administrador tiene acceso
-    a todos los casos de uso de Departamentos
+    El Administrador tiene
+    acceso a todos los casos
+    de uso de Departamentos
   end note
 }
 @enduml

@@ -32,8 +32,9 @@ package "Gestión de Carga Docente" {
   CU4 <-- Admin 
 
   note right of Admin
-    El Administrador tiene acceso
-    a todos los casos de uso de Departamentos
+    El Administrador tiene
+    acceso a todos los casos
+    de uso de Departamentos
   end note
 }
 @enduml
