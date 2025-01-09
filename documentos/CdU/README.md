@@ -44,5 +44,6 @@ Estas palabras tienen definiciones en el [Glosario](/documentos/glosario.md):
 
 - [Carga Académica](/documentos/glosario.md#-carga-académica)
 - [PDI](/documentos/glosario.md#-pdi-personal-docente-e-investigador)
-- [Memoria](/documentos/glosario.md#-memoria-académica)
-- [Indicadores](/documentos/glosario.md#-indicador)
+- [Memoria Académica](/documentos/glosario.md#-memoria-académica)
+- [Indicador](/documentos/glosario.md#-indicador)
+- [Sexenios](/documentos/glosario.md#-sexenio)

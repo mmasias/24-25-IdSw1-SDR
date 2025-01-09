@@ -13,29 +13,29 @@ El objetivo de este paso es **detallar los casos de uso** siguiendo las [pautas 
 ### Gestión de Datos del Profesorado
 
 | **#** | **Caso de Uso**                                                                                                | **Detalle** |  
-|-------|----------------------------------------------------------------------------------------------------------------|-------------| 
-| 1     | **Introducir** datos de contrato, horas, temporalidad y categoría profesional                                  |             |
-| 4     | **Validar** cumplimiento de compromisos de memoria con los valores de la titulación                            |             |
-| 6     | **Consultar** asignaciones docentes (por titulación, curso y semestre)                                         |             |
-| 9     | **Validar** datos introducidos por el profesorado y modificarlos                                               |             |
-| 10    | **Introducir** datos de experiencia docente, profesional, investigadora, etc.                                  |             |
-| 11    | **Revisar** cumplimiento de valores consignados en la memoria por titulación                                   |             |
-| 13    | **Consultar** valores asignados de contrato y otros datos personales                                           |             |
-| 14    | **Consultar** claustro docente (listado PDI asociado a una titulación), anual en la titulación, por semestre.. |             |
-| 15    | **Consultar** asignación docente por profesor (créditos y asignaturas)                                         |             |
+|-------|----------------------------------------------------------------------------------------------------------------|-------------|  
+| 1     | **Introducir** Datos Laborales (contrato, horas, temporalidad y categoría profesional)                         |             |
+| 4     | **Validar** cumplimiento de compromisos de Memoria con los valores de la Titulación                            |             |
+| 6     | **Consultar** asignaciones Docentes (por titulación, curso y semestre)                                         |             |
+| 9     | **Validar** y modificar los Datos introducidos por el Profesorado                                               |             |
+| 10    | **Introducir** Datos Académicos (experiencia docente, profesional, investigadora, sexenios, acreditaciones, movilidad y titulación profesional) |             |
+| 11    | **Revisar** cumplimiento de valores consignados en la Memoria por Titulación                                   |             |
+| 13    | **Consultar** valores asignados de Contrato y otros Datos Personales                                           |             |
+| 14    | **Consultar** Claustro Docente (listado PDI asociado a una titulación), anual en la titulación, por semestre.. |             |
+| 15    | **Consultar** Asignación Docente por Profesor (créditos y asignaturas)                                         |             |
 
 ### Gestión de Carga Docente
 
 | **#** | **Caso de Uso**                                                               | **Detalle** |  
-|-------|-------------------------------------------------------------------------------|-------------| 
-| 2     | **Asignar** carga docente de asignaturas a profesores                         |             |
-| 3     | **Revisar** listado de profesores cuya carga docente no se ajusta al contrato |             |
-| 7     | **Asignar** valores consignados en memoria por titulación                     |             |
-| 12    | **Asignar** valor de información a SIIU y DGU del PDI                         |             |
+|-------|-------------------------------------------------------------------------------|-------------|  
+| 2     | **Asignar** Carga Docente de Asignaturas a Profesores                         |             |
+| 3     | **Revisar** listado de Profesores cuya Carga Docente no se ajusta al Contrato |             |
+| 7     | **Asignar** valores consignados en Memoria por Titulación                     |             |
+| 12    | **Asignar** valor de Información a SIIU y DGU del PDI                         |             |
 
 ### Generación de Indicadores e Informes
 
 | **#** | **Caso de Uso**                                        | **Detalle**   |  
-|-------|--------------------------------------------------------|---------------| 
-| 5 | **Emitir** informe del profesorado por titulación y global |               |
-| 8 | **Obtener** indicadores para Sistema de Gestión            |               |
+|-------|--------------------------------------------------------|---------------|  
+| 5     | **Emitir** Informe del Profesorado (global o por titulación) |               |
+| 8     | **Obtener** Indicadores para Sistema de Gestión            |               |
