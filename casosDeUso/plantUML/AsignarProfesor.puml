@@ -1,18 +1,18 @@
-@startuml
+@startuml 
 start
-:El usuario solicita asignar un profesor a una asignatura;
-:Sistema muestra formulario para asignar profesor;
-:Sistema solicita datos del profesor y asignaturas;
-:Usuario selecciona al profesor;
-:Usuario selecciona una o múltiples asignaturas;
+:El usuario solicita introducir asignación de un profesor a una asignatura;
+:Sistema presenta formulario para asignar profesor;
+:Sistema solicita introducir datos del profesor y asignaturas;
+:Usuario introduce selección del profesor;
+:Usuario introduce selección de una o múltiples asignaturas;
 :Sistema verifica el número de asignaturas actualmente asignadas al profesor;
 if (¿Excede el límite de 8 asignaturas?) then (Sí)
-  :Sistema muestra mensaje de error: "El profesor ya tiene asignadas el máximo de 8 asignaturas";
+  :Sistema presenta mensaje de error: "El profesor ya tiene asignadas el máximo de 8 asignaturas";
   :Sistema cancela la operación de asignación;
 else (No)
   :Sistema guarda los cambios;
   :Sistema actualiza el calendario del profesor con la información correspondiente;
-  :Sistema muestra confirmación: "Profesor asignado correctamente a las asignaturas";
+  :Sistema presenta confirmación: "Profesor asignado correctamente a las asignaturas";
 endif
 stop
 @enduml

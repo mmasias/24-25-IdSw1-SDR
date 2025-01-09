@@ -1,12 +1,12 @@
 @startuml
 start
-:El usuario solicita iniciar sesión;
-:Sistema solicita credenciales (usuario y contraseña);
-if (Credenciales válidas?) then (Sí)
+:El usuario solicita introducir inicio de sesión;
+:Sistema permite introducir credenciales (usuario y contraseña);
+if (¿Credenciales válidas?) then (Sí)
   :Sistema permite el acceso;
-  :Sistema muestra mensaje de bienvenida;
+  :Sistema presenta mensaje de bienvenida;
 else (No)
-  :Sistema muestra mensaje de error: "Credenciales incorrectas";
+  :Sistema presenta mensaje de error: "Credenciales incorrectas";
 endif
 stop
 @enduml

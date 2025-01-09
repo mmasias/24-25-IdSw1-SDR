@@ -1,16 +1,16 @@
 @startuml
 start
 :El usuario solicita listar las asignaturas registradas;
-:Sistema solicita datos de grados, asignaturas y profesores;
-:Sistema muestra todas las asignaturas de todos los grados con los profesores asignados a cada asignatura;
-:Usuario selecciona filtros opcionales (grado, profesor, nombre);
-if (Filtros aplicados?) then (Sí)
-  :Sistema reduce las opciones mostrando:
+:Sistema solicita introducir datos de grados, asignaturas y profesores;
+:Sistema presenta todas las asignaturas de todos los grados con los profesores asignados a cada asignatura;
+:Usuario introduce selección de filtros opcionales (grado, profesor, nombre);
+if (¿Filtros aplicados?) then (Sí)
+  :Sistema presenta las opciones reducidas mostrando:
     - Asignaturas de un grado seleccionado,
     - Asignaturas asignadas a un profesor,
     - O asignaturas que coincidan con el nombre buscado;
 else (No)
-  :Sistema mantiene la lista completa sin filtrar;
+  :Sistema presenta la lista completa sin filtrar;
 endif
 stop
 @enduml

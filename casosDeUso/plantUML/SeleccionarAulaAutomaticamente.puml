@@ -1,12 +1,12 @@
 @startuml
 start
 :Sistema verifica aulas disponibles;
-  if (¿Aulas que cumplen las preferencias?) then (Sí)
-    :Sistema selecciona automáticamente la primera aula disponible que cumple las preferencias en orden numérico;
-  else (No)
-    :Sistema muestra mensaje de error: "No hay aulas disponibles para este horario";
-  endif
-:Sistema cambia el estado de la asignatura a "Con aula asignada";
+if (¿Existen aulas que cumplen las preferencias?) then (Sí)
+  :Sistema permite seleccionar automáticamente la primera aula disponible que cumple las preferencias en orden numérico;
+else (No)
+  :Sistema presenta mensaje de error: "No hay aulas disponibles para este horario";
+endif
+:Sistema visualiza el cambio del estado de la asignatura a "Con aula asignada";
 :Sistema actualiza la información del horario con el aula asignada;
 stop
 @enduml
