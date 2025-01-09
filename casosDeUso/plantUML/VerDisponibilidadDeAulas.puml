@@ -1,21 +1,20 @@
 @startuml
 start
-:El usuario solicita ver la disponibilidad de aulas;
-:Sistema solicita datos de aulas;
-  :Usuario selecciona filtros como:
-    - Día,
-    - Hora,
-    - Aula grande,
-    - Aulas con computadoras;
+:El usuario solicita introducir consulta de disponibilidad de aulas;
+:Sistema permite introducir datos de aulas;
+:Usuario introduce selección de filtros como:
+  - Día,
+  - Hora,
+  - Aula grande,
+  - Aulas con computadoras;
 if (¿Filtros aplicados?) then (No)
-  :Sistema muestra todas las aulas;
+  :Sistema presenta todas las aulas;
 else (Sí)
-
   :Sistema aplica los filtros;
-  if (¿Aulas disponibles con los filtros?) then (Sí)
-    :Sistema muestra las aulas disponibles entre los filtros seleccionados;
+  if (¿Existen aulas disponibles con los filtros?) then (Sí)
+    :Sistema presenta las aulas disponibles entre los filtros seleccionados;
   else (No)
-    :Sistema muestra mensaje de error: "No se encontraron aulas disponibles";
+    :Sistema presenta mensaje de error: "No se encontraron aulas disponibles";
   endif
 endif
 stop
