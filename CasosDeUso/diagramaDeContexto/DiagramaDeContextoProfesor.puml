@@ -1,23 +1,24 @@
 @startuml diagramaContextoProfesor  
+state "NO_AUTENTICADO" as NoAutenticado
 state "MENU_PRINCIPAL" as MenuPrincipal  
 state "EDITANDO_GUÍA" as EditandoGuia  
 state "VISUALIZANDO_GUÍA" as VisualizandoGuia  
 
-[*] --> MenuPrincipal  
-    note on link  
-        Profesor  
-        inicia sesión  
+[*] --> NoAutenticado   
+    
+NoAutenticado --> MenuPrincipal
+note on link  
+        iniciar sesión  
     end note  
 
 MenuPrincipal -> [*]  
     note on link  
-        Profesor  
-        cierra sesión  
+        cerrar sesión  
     end note  
 
 MenuPrincipal --> VisualizandoGuia  
     note on link  
-        Ver guías asignadas  
+        Visualizar guías asignadas  
         para consulta  
     end note  
 
