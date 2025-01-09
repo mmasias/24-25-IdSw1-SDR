@@ -33,6 +33,15 @@ Aqui se describen los principales actores que interactúan con el sistema y los 
 - [Diagrama de Contexto](/casosDeUso/diagramaDeContexto/DiagramaDeContexto.svg)
 - [Casos de Uso](/casosDeUso/imagenes)
 ---
+## 🛠️ **Prototipos**
+En este apartado se encuentran los prototipos diseñados para representar la interfaz del sistema:
+- [Prototipos](https://github.com/srgiom/24-25-IdSw1-SDR/tree/main/prototipos)
+
+---
+## 🛠️ **Reuniones**
+Se documentan las reuniones realizadas durante el desarrollo del proyecto:
+- [Reuniones](https://github.com/srgiom/24-25-IdSw1-SDR/tree/main/reuniones)
+---
 ## 👥 **Miembros del proyecto**
 - **Sergio Moreno Vega**
 - **Iker Celaya Buezo**
