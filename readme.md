@@ -39,7 +39,7 @@ En este apartado se encuentran los prototipos diseñados para representar la int
 
 ---
 ## 🛠️ **Reuniones**
-Se documentan las reuniones realizadas durante el desarrollo del proyecto:
+Explicación de cambios a realizar tras cada reunión con el cliente:
 - [Reuniones](https://github.com/srgiom/24-25-IdSw1-SDR/tree/main/reuniones)
 ---
 ## 👥 **Miembros del proyecto**
