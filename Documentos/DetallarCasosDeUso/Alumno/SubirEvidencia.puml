@@ -1,24 +1,36 @@
 @startuml
-state Menu_Rutinas_y_Ejercicios
-state rombo2 <<choice>>
 
-state SubirEvidencia
-state AdjuntarArchivo
-state BotonConfirmar
-state Menu_Perfil
-state Menu_Retos
-state Clasificación
-state Menu_Principal
+hide empty description
 
-[*] --> SubirEvidencia : "El alumno solicita \n subir evidencia"
-SubirEvidencia --> AdjuntarArchivo : El sistema solicita \nadjuntar archivo
-AdjuntarArchivo --> BotonConfirmar : Para confirmar sistema solicita pulsar el boton
-SubirEvidencia --> rombo2
-rombo2 --> Menu_Perfil
-rombo2 --> Menu_Retos
-rombo2 --> Clasificación
-rombo2 --> Menu_Principal
-rombo2 --> Menu_Rutinas_y_Ejercicios
+state MostrandoReto
+state SubiendoEvidencia
 
-SubirEvidencia --> [*]
+state SubirEvidencia {
+
+    state IniciarSubirEvidencia as "Subir Evidencia"
+    [*] --> IniciarSubirEvidencia
+    note on link
+        El alumno introduce: acceso a SubirEvidencia.
+    end note
+
+    IniciarSubirEvidencia --> Archivo
+    note on link
+        El alumno adjunta: archivo del reto.
+    end note
+
+
+    Archivo --> ConfirmarArchivo
+    note on link
+        El sistema muestra: opción de "Subir Evidencia"".
+    end note
+
+    ConfirmarArchivo --> [*]
+    note on link
+        El sistema muestra: confirmación de reto creado.
+    end note
+}
+
+MostrandoReto --> SubirEvidencia
+SubirEvidencia --> SubiendoEvidencia
+
 @enduml
