@@ -2,7 +2,7 @@
 start
 :El usuario solicita introducir consulta de disponibilidad de aulas;
 :Sistema permite introducir datos de aulas;
-:Usuario introduce selección de filtros como:
+:Usuario introduce especificación de filtros:
   - Día,
   - Hora,
   - Aula grande,
