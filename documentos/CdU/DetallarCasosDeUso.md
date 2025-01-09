@@ -8,34 +8,58 @@ El objetivo de este paso es **detallar los casos de uso** siguiendo las [pautas 
 
 ---
 
-## 📋 **Casos de Uso, Priorización y Detalle**  
+### 📂 Gestión de Datos del Profesorado
 
-### Gestión de Datos del Profesorado
+#### Modificación y Validación
 
-| **#** | **Caso de Uso**                                                                                                | **Detalle** |  
-|-------|----------------------------------------------------------------------------------------------------------------|-------------|  
-| 1     | **Introducir** Datos Laborales (contrato, horas, temporalidad y categoría profesional)                         |             |
-| 4     | **Validar** cumplimiento de compromisos de Memoria con los valores de la Titulación                            |             |
-| 6     | **Consultar** asignaciones Docentes (por titulación, curso y semestre)                                         |             |
-| 9     | **Validar** y modificar los Datos introducidos por el Profesorado                                               |             |
-| 10    | **Introducir** Datos Académicos (experiencia docente, profesional, investigadora, sexenios, acreditaciones, movilidad y titulación profesional) |             |
-| 11    | **Revisar** cumplimiento de valores consignados en la Memoria por Titulación                                   |             |
-| 13    | **Consultar** valores asignados de Contrato y otros Datos Personales                                           |             |
-| 14    | **Consultar** Claustro Docente (listado PDI asociado a una titulación), anual en la titulación, por semestre.. |             |
-| 15    | **Consultar** Asignación Docente por Profesor (créditos y asignaturas)                                         |             |
+| **Caso de Uso**                                                                     | **Diagrama** | **Código Fuente** |
+|-------------------------------------------------------------------------------------|--------------|-------------------|
+| **Modificar** los Datos introducidos por el Profesorado                             |              |                   |
+| **Validar** los Datos introducidos por el Profesorado                               |              |                   |
+| **Validar** cumplimiento de compromisos de Memoria con los valores de la Titulación |              |                   |
+| **Validar** cumplimiento de valores consignados en la Memoria por Titulación        |              |                   |
 
-### Gestión de Carga Docente
 
-| **#** | **Caso de Uso**                                                               | **Detalle** |  
-|-------|-------------------------------------------------------------------------------|-------------|  
-| 2     | **Asignar** Carga Docente de Asignaturas a Profesores                         |             |
-| 3     | **Revisar** listado de Profesores cuya Carga Docente no se ajusta al Contrato |             |
-| 7     | **Asignar** valores consignados en Memoria por Titulación                     |             |
-| 12    | **Asignar** valor de Información a SIIU y DGU del PDI                         |             |
+#### Consulta de Datos
 
-### Generación de Indicadores e Informes
+| **Caso de Uso**                                                                                                | **Diagrama** | **Código Fuente** |
+|----------------------------------------------------------------------------------------------------------------|--------------|-------------------|
+| **Consultar** Claustro Docente (listado PDI asociado a una titulación), anual en la titulación, por semestre.. |              |                   |
+| **Consultar** Asignación Docente por Profesor (créditos y asignaturas)                                         |              |                   |
+| **Consultar** Asignación Docente (por titulación, curso y semestre)                                            |              |                   |
+| **Consultar** valores asignados de Contrato y otros Datos Personales                                           |              |                   |
 
-| **#** | **Caso de Uso**                                        | **Detalle**   |  
-|-------|--------------------------------------------------------|---------------|  
-| 5     | **Emitir** Informe del Profesorado (global o por titulación) |               |
-| 8     | **Obtener** Indicadores para Sistema de Gestión            |               |
+
+#### Introducción de Datos
+
+| **Caso de Uso**                                                                                                                                 | **Diagrama** | **Código Fuente** |
+|-------------------------------------------------------------------------------------------------------------------------------------------------|--------------|-------------------|
+| **Introducir** Datos Laborales (contrato, horas, temporalidad y categoría profesional)                                                          |              |                   |
+| **Introducir** Datos Académicos (experiencia docente, profesional, investigadora, sexenios, acreditaciones, movilidad y titulación profesional) |              |                   |
+
+---
+
+### 📚 Gestión de Carga Docente
+
+#### Revisión de Cumplimiento
+
+| **Caso de Uso**                                                               | **Diagrama** | **Código Fuente** |
+|-------------------------------------------------------------------------------|--------------|-------------------|
+| **Revisar** listado de Profesores cuya Carga Docente no se ajusta al Contrato |              |                   |
+
+#### Asignaciones
+
+| **Caso de Uso**                                            | **Diagrama** | **Código Fuente** |
+|------------------------------------------------------------|--------------|-------------------|
+| **Asignar** Carga Docente de Asignaturas a Profesores      |              |                   |
+| **Asignar** valores consignados en Memoria por Titulación  |              |                   |
+| **Asignar** valor de Información a SIIU y DGU del PDI      |              |                   |
+
+---
+
+### 📊 Generación de Indicadores e Informes
+
+| **Caso de Uso**                                              | **Diagrama** | **Código Fuente** |
+|--------------------------------------------------------------|--------------|-------------------|
+| **Emitir** Informe del Profesorado (Global o por Titulación) |              |                   |
+| **Obtener** Indicadores para Sistema de Gestión              |              |                   |
