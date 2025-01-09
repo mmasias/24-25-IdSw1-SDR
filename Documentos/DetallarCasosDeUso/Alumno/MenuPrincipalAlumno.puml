@@ -1,22 +1,17 @@
-@startuml
-state " " as Estado1
-state " " as Estado2
-state rombo <<choice>>
-[*] --> Estado1
+@startuml IngresarAlSistema
+
+hide empty description
+
+state Alumno
+state Pagina_Principal
+state IngresarAlSistema{
+    [*] --> [*]
     note on link
-        El Alumno solicita ir a la página de inicio
+        El sistema muestra la página principal del Alumno
     end note
-Estado1 --> Estado2
-    note on link
-        El Sistema muestra la página de inicio.
-    end note
-Estado2 --> [*]
-Estado2 --> rombo
-note on link
-El profesor decide
-end note
-rombo --> Menu_Retos
-rombo --> Menu_Rutinas_Y_Ejercicios
-rombo --> Clasificacion
-rombo --> Perfil
+}
+
+Alumno --> IngresarAlSistema
+IngresarAlSistema --> Pagina_Principal
+
 @enduml
