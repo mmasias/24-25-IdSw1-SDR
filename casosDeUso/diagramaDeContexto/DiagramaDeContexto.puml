@@ -11,15 +11,15 @@ MENU_PRINCIPAL --> ELIGIENDO_GRADO
     note on link
         Elegir grado
     end note
-ELIGIENDO_GRADO --> ASIGNANDO_ASIGNATURA
+ELIGIENDO_GRADO --> VINCULANDO_ASIGNATURA_HORARIO
     note on link
-        Asignar asignatura
+        Vincular asignatura
     end note
-ASIGNANDO_ASIGNATURA --> ELIGIENDO_GRADO
+VINCULANDO_ASIGNATURA_HORARIO --> ELIGIENDO_GRADO
     note on link
         Elegir grado
     end note
-ASIGNANDO_ASIGNATURA --> MENU_PRINCIPAL
+VINCULANDO_ASIGNATURA_HORARIO --> MENU_PRINCIPAL
     note on link
         Ver menu
     end note
