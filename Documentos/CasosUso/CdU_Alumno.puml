@@ -6,15 +6,15 @@ actor Alumno
 package "Rutinas y Ejercicios" {
     usecase "Ir a rutinas y ejercicios" as IrARutinasYEjercicios
 
-    package "Rutinas" {
+   
         usecase "Mostar Rutina" as MostrarRutina
         usecase "Crear Rutina" as CrearRutina
         usecase "Editar Rutina" as EditarRutina
-    }
+    
 
-    package "Ejercicios" {
+   
         usecase "Mostrar Ejercicio" as MostrarEjercicio
-    }
+    
 }
 
 package Retos {
@@ -31,11 +31,12 @@ package Perfil {
     usecase "Inscribir en Clase" as InscribirEnClase
     usecase "Mostrar QR en Centro Deportivo" as MostrarQRCentros
     usecase "Ver Insignias" as VerInsignias
+    usecase "Cerrar Sesion" as CerrarSesion
 }
 
 usecase "Ingresar al Sistema" as IngresarAlSistema
 usecase "Iniciar Sesion" as IniciarSesion
-usecase "Cerrar Sesion" as CerrarSesion
+
 usecase "Cambiar Menu" as CambiarMenu
 
 Alumno --> IngresarAlSistema
@@ -44,19 +45,19 @@ Alumno --> CerrarSesion
 Alumno --> CambiarMenu
 
 Alumno --> IrARutinasYEjercicios
-IrARutinasYEjercicios --> MostrarRutina
-IrARutinasYEjercicios --> CrearRutina
-IrARutinasYEjercicios --> EditarRutina
-IrARutinasYEjercicios --> MostrarEjercicio
+Alumno --> MostrarRutina
+Alumno --> CrearRutina
+Alumno --> EditarRutina
+Alumno --> MostrarEjercicio
 
 Alumno --> IrARetos
-IrARetos --> SubirEvidencia
+Alumno --> SubirEvidencia
 
 Alumno --> IrAClasificacion
 
 Alumno --> IrAPerfil
-IrAPerfil --> InscribirEnClase
-IrAPerfil --> MostrarQRCentros
-IrAPerfil --> VerInsignias
+Alumno --> InscribirEnClase
+Alumno --> MostrarQRCentros
+Alumno --> VerInsignias
 
 @enduml
