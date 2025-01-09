@@ -1,35 +1,21 @@
-@startuml
+@startuml CambiarARutinasYEjercicios
+hide empty description
+
+state Navegacion_Menus
 state Menu_Rutinas_y_Ejercicios
-state rombo1 <<choice>>
-state rombo2 <<choice>>
-state Ejercicios
-state Rutinas
-state CrearRutina
-state EditarRutina
-state Menu_Perfil
-state Menu_Retos
-state Clasificación
-state Menu_Principal
 
-[*] --> Menu_Rutinas_y_Ejercicios : "El Alumno solicita entrar a\nMenu Rutinas y Ejercicios"
+state CambiarARutinasYEjercicios{
+    state Cambiar as "Cambiar a Rutinas y Ejercicios"
+    [*] --> Cambiar
+    note on link
+        El alumno introduce que quiere ir a Rutinas y Ejercicios
+    end note
+    Cambiar --> [*]
+    note on link
+        El sistema muestra Rutinas y Ejercicios
+    end note
+}
 
-Menu_Rutinas_y_Ejercicios --> rombo1 : "El Alumno solicita mostrar"
-rombo1 --> Ejercicios
-Ejercicios --> rombo1
-
-
-Ejercicios --> MostrarEjercicio
-rombo1 --> Rutinas
-Rutinas --> CrearRutina: El sistema \npermite
-Rutinas --> MostrarRutina
-Rutinas --> EditarRutina
-Rutinas --> rombo1
-Menu_Rutinas_y_Ejercicios --> rombo2 : "El Alumno solicita ir a otra opción"
-rombo2 --> Menu_Perfil
-rombo2 --> Menu_Retos
-rombo2 --> Clasificación
-rombo2 --> Menu_Principal
-rombo2 --> Menu_Rutinas_y_Ejercicios : "Volver al menú"
-
-Menu_Rutinas_y_Ejercicios --> [*]
+Navegacion_Menus --> CambiarARutinasYEjercicios
+CambiarARutinasYEjercicios --> Menu_Rutinas_y_Ejercicios
 @enduml
