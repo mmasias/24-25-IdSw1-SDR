@@ -1,23 +1,23 @@
 @startuml
 start
-:El usuario solicita asignar una asignatura;
-:Sistema muestra todas las asignaturas disponibles;
-:Usuario selecciona la asignatura;
-:Usuario selecciona el día y la fecha;
-:Usuario selecciona preferencias de aula (opcional): 
-- Aula grande 
-- Aula con computadora;
+:El usuario solicita introducir asignación de una asignatura;
+:Sistema presenta todas las asignaturas disponibles;
+:Usuario introduce selección de la asignatura;
+:Usuario introduce selección del día y la fecha;
+:Usuario introduce selección de preferencias de aula (opcional): 
+  - Aula grande 
+  - Aula con computadora;
 :Sistema verifica aulas disponibles;
-if (¿Aulas que cumplen las preferencias?) then (Sí)
-  :Sistema asigna automáticamente un aula que cumple con las preferencias;
+if (¿Existen aulas que cumplen las preferencias?) then (Sí)
+  :Sistema permite introducir asignación automática de un aula que cumple con las preferencias;
 else (No)
-  if (¿Aulas disponibles sin preferencias?) then (Sí)
-    :Sistema asigna automáticamente un aula disponible;
+  if (¿Existen aulas disponibles sin preferencias?) then (Sí)
+    :Sistema permite introducir asignación automática de un aula disponible;
   else (No)
-    :Sistema muestra mensaje de error: "No hay aulas disponibles";
+    :Sistema presenta mensaje de error: "No hay aulas disponibles";
   endif
 endif
-:Sistema guarda la información y cambia el estatus de la asignatura a "Asignada";
-:Sistema muestra confirmación: "Asignatura asignada correctamente";
+:Sistema guarda la información y visualiza el cambio de estatus de la asignatura a "Asignada";
+:Sistema presenta confirmación: "Asignatura asignada correctamente";
 stop
 @enduml
