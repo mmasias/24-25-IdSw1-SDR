@@ -23,13 +23,14 @@ El orden ha sido establecido por el cliente según la importancia y necesidad de
 | 6 | **Consultar** Asignación Docente (por titulación, curso y semestre)                                                                              |    🟠 Media   |
 | 7 | **Asignar** valores consignados en Memoria por Titulación                                                                                        |    🟠 Media   |
 | 8 | **Obtener** Indicadores para Sistema de Gestión                                                                                                  |    🟠 Media   |
-| 9 | **Validar** y modificar los Datos introducidos por el Profesorado                                                                                |    🟠 Media   |
-| 10 | **Introducir** Datos Académicos (experiencia docente, profesional, investigadora, sexenios, acreditaciones, movilidad y titulación profesional) |    🟢 Baja    |
-| 11 | **Validar** cumplimiento de valores consignados en la Memoria por Titulación                                                                    |    🟢 Baja    |
-| 12 | **Asignar** valor de Información a SIIU y DGU del PDI                                                                                           |    🟢 Baja    |
-| 13 | **Consultar** valores asignados de Contrato y otros Datos Personales                                                                            |    🟢 Baja    |
-| 14 | **Consultar** Claustro Docente (listado PDI asociado a una titulación)                                                                          |    🟢 Baja    |
-| 15 | **Consultar** Asignación Docente por Profesor (créditos y asignaturas)                                                                          |    🟢 Baja    |
+| 9 | **Modificar** los Datos introducidos por el Profesorado                                                                                          |    🟠 Media   |
+| 10 | **Validar** los Datos introducidos por el Profesorado                                                                                           |    🟠 Media   |
+| 11 | **Introducir** Datos Académicos (experiencia docente, profesional, investigadora, sexenios, acreditaciones, movilidad y titulación profesional) |    🟢 Baja    |
+| 12 | **Validar** cumplimiento de valores consignados en la Memoria por Titulación                                                                    |    🟢 Baja    |
+| 13 | **Asignar** valor de Información a SIIU y DGU del PDI                                                                                           |    🟢 Baja    |
+| 14 | **Consultar** valores asignados de Contrato y otros Datos Personales                                                                            |    🟢 Baja    |
+| 15 | **Consultar** Claustro Docente (listado PDI asociado a una titulación)                                                                          |    🟢 Baja    |
+| 16 | **Consultar** Asignación Docente por Profesor (créditos y asignaturas)                                                                          |    🟢 Baja    |
 
 ---
 
