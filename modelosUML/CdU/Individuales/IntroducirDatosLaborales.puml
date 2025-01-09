@@ -1,0 +1,26 @@
+@startuml
+left to right direction
+
+actor "RRHH" as rrhh
+actor "Administrador" as admin
+
+package "Datos Laborales" as datosLabPackage {
+    usecase "Introducir Datos Laborales" as datosLab
+
+    package "Tipos Laborales" {
+        usecase "de Contrato" as contrato
+        usecase "de Horas" as horas
+        usecase "de Temporalidad" as temp
+        usecase "de Categoría Profesional" as catProf
+    }
+    note "Permitir heredar datos\ndel año anterior" as notaDatosLab
+}
+
+datosLab ..> contrato
+datosLab ..> horas
+datosLab ..> temp
+datosLab ..> catProf
+
+rrhh --> datosLab
+admin --> datosLab
+@enduml

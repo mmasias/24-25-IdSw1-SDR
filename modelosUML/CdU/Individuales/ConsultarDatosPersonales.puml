@@ -1,0 +1,16 @@
+@startuml
+left to right direction
+
+actor "Profesor" as prof
+
+package "Datos Personales" as datosPersonalesPackage {
+    usecase "Consultar Valores" as consultaValores
+    note right of consultaValores
+        Consultar valores asignados
+        de contrato y otros datos
+        personales
+    end note
+}
+
+prof --> consultaValores
+@enduml

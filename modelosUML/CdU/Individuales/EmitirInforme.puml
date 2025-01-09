@@ -1,0 +1,20 @@
+@startuml
+left to right direction
+
+actor "Técnico Calidad" as tec
+actor "Administrador" as admin
+
+package "Informes" as informes {
+    usecase "Emitir informe del Profesorado" as emitirInforme
+    package "Tipos de Informes" {
+        usecase "por Titulación" as titulacion
+        usecase "Global" as global
+    }
+}
+
+emitirInforme ..> titulacion
+emitirInforme ..> global
+
+tec ---> emitirInforme
+admin ---> emitirInforme
+@enduml

@@ -1,0 +1,19 @@
+@startuml
+left to right direction
+
+actor "Ordenación" as ord
+actor "RRHH" as rrhh
+actor "Administrador" as admin
+
+package "Revision" as revisionPackage {
+    usecase "Revisar Listado de Profesores" as revisarCarga
+    note right of revisarCarga
+        Cuya Carga Docente no se ajusta
+        a carga supuesta por contrato
+    end note
+}
+
+ord ---> revisarCarga
+rrhh ---> revisarCarga
+admin ---> revisarCarga
+@enduml

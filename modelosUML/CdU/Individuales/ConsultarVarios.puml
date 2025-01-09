@@ -1,0 +1,18 @@
+@startuml
+left to right direction
+
+actor "Profesores" as prof
+
+package "Asignacion docente" as porVarPackage {
+    usecase "Consultar Asignación" as consAsig
+    usecase "por Titulación" as porTit
+    usecase "por Curso" as porCurso
+    usecase "por Semestre" as porSem
+}
+
+consAsig ..> porTit
+consAsig ..> porCurso
+consAsig ..> porSem
+
+prof --> consAsig
+@enduml

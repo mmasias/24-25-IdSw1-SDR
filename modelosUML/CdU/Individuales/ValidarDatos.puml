@@ -1,0 +1,14 @@
+@startuml
+left to right direction
+
+actor "RRHH" as rrhh
+actor "Administrador" as admin
+
+package "Gestión Datos" as gestDatosPackage {
+    usecase "Validar Datos" as valDatos
+    note "Datos introducidos previamente\npor el profesorado" as notaGestDatos
+}
+
+rrhh --> valDatos
+admin --> valDatos
+@enduml

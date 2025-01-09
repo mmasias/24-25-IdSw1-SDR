@@ -1,0 +1,30 @@
+@startuml
+left to right direction
+
+actor "Profesores" as prof
+
+package "Datos Académicos" as datosAcadPackage {
+    usecase "Introducir Datos Académicos" as datosAcad
+
+    package "Tipos Académicos" {
+        usecase "de Experiencia Docente" as expDoc
+        usecase "de Experiencia Profesional" as expProf
+        usecase "de Experiencia Investigadora" as expInv
+        usecase "de Sexenios" as sexenios
+        usecase "de Acreditaciones" as acred
+        usecase "de Movilidad" as mov
+        usecase "de Titulación Profesional" as titProf
+    }
+    note "Permitir heredar datos\ndel año anterior" as notaDatosAcad
+}
+
+datosAcad ..> expDoc
+datosAcad ..> expProf
+datosAcad ..> expInv
+datosAcad ..> sexenios
+datosAcad ..> acred
+datosAcad ..> mov
+datosAcad ..> titProf
+
+prof --> datosAcad
+@enduml

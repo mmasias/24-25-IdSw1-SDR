@@ -1,0 +1,27 @@
+@startuml
+left to right direction
+
+actor "Técnico Calidad" as tec
+actor "Administrador" as admin
+
+package "SIIU y DGU" as SIIUyDGUPackage {
+    usecase "Asignar Valor de Información" as asignarValor
+
+    package "Tipos" {
+        usecase "a SIIU" as SIIU
+        usecase "a DGU" as DGU
+    }
+
+    usecase "del PDI" as PDI
+
+    note "SIIU: Sistema de Información e Innovación Universitaria\nDGU: Dirección General de Universidades" as SIIUdef
+}
+
+asignarValor ..> SIIU
+asignarValor ..> DGU
+SIIU ..> PDI
+DGU ..> PDI
+
+tec ---> asignarValor
+admin ---> asignarValor
+@enduml

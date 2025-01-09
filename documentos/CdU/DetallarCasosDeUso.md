@@ -12,30 +12,30 @@ El objetivo de este paso es **detallar los casos de uso** siguiendo las [pautas 
 
 #### Modificación y Validación
 
-| **Caso de Uso**                                                                     | **Diagrama** | **Código Fuente** |
-|-------------------------------------------------------------------------------------|--------------|-------------------|
-| **Modificar** los Datos introducidos por el Profesorado                             |              |                   |
-| **Validar** los Datos introducidos por el Profesorado                               |              |                   |
-| **Validar** cumplimiento de compromisos de Memoria con los valores de la Titulación |              |                   |
-| **Validar** cumplimiento de valores consignados en la Memoria por Titulación        |              |                   |
+| **Caso de Uso**                                                                           | **Detalle** | **Código Fuente**                                                                                      |
+|-------------------------------------------------------------------------------------------|-------------|--------------------------------------------------------------------------------------------------------|
+| ![Modificar Datos](/images/modelosUML/CdU/Individuales/ModificarDatos.svg)                |             | [Ver código CdU](/modelosUML/CdU/Individuales/ModificarDatos.puml)<br>[Ver código Detalle]()           |
+| ![Validar Datos](/images/modelosUML/CdU/Individuales/ValidarDatos.svg)                    |             | [Ver código CdU](/modelosUML/CdU/Individuales/ValidarDatos.puml)<br>[Ver código Detalle]()             |
+| ![Validar Cumplimiento](/images/modelosUML/CdU/Individuales/ValidarValores.svg)           |             | [Ver código CdU](/modelosUML/CdU/Individuales/ValidarValores.puml)<br>[Ver código Detalle]()           |
+| ![Validar Cumplimiento](/images/modelosUML/CdU/Individuales/ValidarMemoriaTitulacion.svg) |             | [Ver código CdU](/modelosUML/CdU/Individuales/ValidarMemoriaTitulacion.puml)<br>[Ver código Detalle]() |
 
 
 #### Consulta de Datos
 
-| **Caso de Uso**                                                                                                | **Diagrama** | **Código Fuente** |
-|----------------------------------------------------------------------------------------------------------------|--------------|-------------------|
-| **Consultar** Claustro Docente (listado PDI asociado a una titulación), anual en la titulación, por semestre.. |              |                   |
-| **Consultar** Asignación Docente por Profesor (créditos y asignaturas)                                         |              |                   |
-| **Consultar** Asignación Docente (por titulación, curso y semestre)                                            |              |                   |
-| **Consultar** valores asignados de Contrato y otros Datos Personales                                           |              |                   |
+| **Caso de Uso**                                                                                 | **Detalle** | **Código Fuente**                                                                                      |
+|-------------------------------------------------------------------------------------------------|-------------|--------------------------------------------------------------------------------------------------------|
+| ![Claustro Docente](/images/modelosUML/CdU/Individuales/ClaustroDocente.svg)                    |             | [Ver código CdU](/modelosUML/CdU/Individuales/ClaustroDocente.puml)<br>[Ver código Detalle]()          |
+| ![Consultar Profesor](/images/modelosUML/CdU/Individuales/ConsultarProfesor.svg)                |             | [Ver código CdU](/modelosUML/CdU/Individuales/ConsultarProfesor.puml)<br>[Ver código Detalle]()        |
+| ![Consultar Varios](/images/modelosUML/CdU/Individuales/ConsultarVarios.svg)                    |             | [Ver código CdU](/modelosUML/CdU/Individuales/ConsultarVarios.puml)<br>[Ver código Detalle]()          |
+| ![Consultar Datos Personales](/images/modelosUML/CdU/Individuales/ConsultarDatosPersonales.svg) |             | [Ver código CdU](/modelosUML/CdU/Individuales/ConsultarDatosPersonales.puml)<br>[Ver código Detalle]() |
 
 
 #### Introducción de Datos
 
-| **Caso de Uso**                                                                                                                                 | **Diagrama** | **Código Fuente** |
-|-------------------------------------------------------------------------------------------------------------------------------------------------|--------------|-------------------|
-| **Introducir** Datos Laborales (contrato, horas, temporalidad y categoría profesional)                                                          |              |                   |
-| **Introducir** Datos Académicos (experiencia docente, profesional, investigadora, sexenios, acreditaciones, movilidad y titulación profesional) |              |                   |
+| **Caso de Uso**                                                                                   | **Detalle** | **Código Fuente**                                                                                       |
+|---------------------------------------------------------------------------------------------------|-------------|---------------------------------------------------------------------------------------------------------|
+| ![Introducir Datos Laborales](/images/modelosUML/CdU/Individuales/IntroducirDatosLaborales.svg)   |             | [Ver código CdU](/modelosUML/CdU/Individuales/IntroducirDatosLaborales.puml)<br>[Ver código Detalle]()  |
+| ![Introducir Datos Académicos](/images/modelosUML/CdU/Individuales/IntroducirDatosAcademicos.svg) |             | [Ver código CdU](/modelosUML/CdU/Individuales/IntroducirDatosAcademicos.puml)<br>[Ver código Detalle]() |
 
 ---
 
@@ -43,23 +43,23 @@ El objetivo de este paso es **detallar los casos de uso** siguiendo las [pautas 
 
 #### Revisión de Cumplimiento
 
-| **Caso de Uso**                                                               | **Diagrama** | **Código Fuente** |
-|-------------------------------------------------------------------------------|--------------|-------------------|
-| **Revisar** listado de Profesores cuya Carga Docente no se ajusta al Contrato |              |                   |
+| **Caso de Uso**                                                                                 | **Detalle** | **Código Fuente**                                                                                      |
+|-------------------------------------------------------------------------------------------------|-------------|--------------------------------------------------------------------------------------------------------|
+| ![Revisar Listado Profesores](/images/modelosUML/CdU/Individuales/RevisarListadoProfesores.svg) |             | [Ver código CdU](/modelosUML/CdU/Individuales/RevisarListadoProfesores.puml)<br>[Ver código Detalle]() |
 
 #### Asignaciones
 
-| **Caso de Uso**                                            | **Diagrama** | **Código Fuente** |
-|------------------------------------------------------------|--------------|-------------------|
-| **Asignar** Carga Docente de Asignaturas a Profesores      |              |                   |
-| **Asignar** valores consignados en Memoria por Titulación  |              |                   |
-| **Asignar** valor de Información a SIIU y DGU del PDI      |              |                   |
+| **Caso de Uso**                                                                | **Detalle** | **Código Fuente**                                                                                 |
+|--------------------------------------------------------------------------------|-------------|---------------------------------------------------------------------------------------------------|
+| ![Asignar Carga](/images/modelosUML/CdU/Individuales/AsignarCargaDocente.svg)  |             | [Ver código CdU](/modelosUML/CdU/Individuales/AsignarCargaDocente.puml)<br>[Ver código Detalle]() |
+| ![Asignar Valores](/images/modelosUML/CdU/Individuales/AsignarValores.svg)     |             | [Ver código CdU](/modelosUML/CdU/Individuales/AsignarValores.puml)<br>[Ver código Detalle]()      |
+| ![Asignar SIIU y DGU](/images/modelosUML/CdU/Individuales/AsignarSIIUyDGU.svg) |             | [Ver código CdU](/modelosUML/CdU/Individuales/AsignarSIIUyDGU.puml)<br>[Ver código Detalle]()     |
 
 ---
 
 ### 📊 Generación de Indicadores e Informes
 
-| **Caso de Uso**                                              | **Diagrama** | **Código Fuente** |
-|--------------------------------------------------------------|--------------|-------------------|
-| **Emitir** Informe del Profesorado (Global o por Titulación) |              |                   |
-| **Obtener** Indicadores para Sistema de Gestión              |              |                   |
+| **Caso de Uso**                                                                    | **Detalle** | **Código Fuente**                                                                                |
+|------------------------------------------------------------------------------------|-------------|--------------------------------------------------------------------------------------------------|
+| ![Emitir Informe](/images/modelosUML/CdU/Individuales/EmitirInforme.svg)           |             | [Ver código CdU](/modelosUML/CdU/Individuales/EmitirInforme.puml)<br>[Ver código Detalle]()      |
+| ![Obtener Indicadores](/images/modelosUML/CdU/Individuales/ObtenerIndicadores.svg) |             | [Ver código CdU](/modelosUML/CdU/Individuales/ObtenerIndicadores.puml)<br>[Ver código Detalle]() |
