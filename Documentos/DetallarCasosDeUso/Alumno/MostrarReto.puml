@@ -1,26 +1,20 @@
 @startuml
+
+hide empty description
+
 state Menu_Rutinas_y_Ejercicios
-state rombo2 <<choice>>
 
-state SubirEvidencia
-state MostrarReto
-state Menu_Perfil
-state Menu_Retos
-state Clasificación
-state Menu_Principal
-state " " as Estado1
-
-[*] --> MostrarReto : "El alumno solicita entrar a\nver un reto"
-
-MostrarReto --> Estado1 : El sistema muestra descripcion del reto
-Estado1 --> SubirEvidencia : El sitema permite subir \nevidencia al alumno
-
-MostrarReto --> rombo2
-rombo2 --> Menu_Perfil
-rombo2 --> Menu_Retos
-rombo2 --> Clasificación
-rombo2 --> Menu_Principal
-rombo2 --> Menu_Rutinas_y_Ejercicios
-
-MostrarReto --> [*]
+state MostrarReto{
+    state VerReto as "Mostrar Reto"
+    [*] --> VerReto
+    note on link
+        El alumno introduce que quiere ver el reto
+    end note
+    VerReto --> [*]
+    note on link
+        El sistema muestra el reto
+    end note
+}
+Menu_Rutinas_y_Ejercicios --> MostrarReto
+MostrarReto --> MostrandoReto
 @enduml
