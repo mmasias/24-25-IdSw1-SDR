@@ -15,7 +15,7 @@ El objetivo de este paso es **detallar los casos de uso** siguiendo las [pautas 
 | **#** | **Caso de Uso**                                                                                                | **Detalle** |  
 |-------|----------------------------------------------------------------------------------------------------------------|-------------| 
 | 1     | **Introducir** datos de contrato, horas, temporalidad y categoría profesional                                  |             |
-| 4     | **Validar** los valores de titulación vs. compromisos de memoria                                               |             |
+| 4     | **Validar** cumplimiento de compromisos de memoria con los valores de la titulación                            |             |
 | 6     | **Consultar** asignaciones docentes (por titulación, curso y semestre)                                         |             |
 | 9     | **Validar** datos introducidos por el profesorado y modificarlos                                               |             |
 | 10    | **Introducir** datos de experiencia docente, profesional, investigadora, etc.                                  |             |

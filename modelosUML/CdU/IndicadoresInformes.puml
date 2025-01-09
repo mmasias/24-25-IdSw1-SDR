@@ -1,25 +1,37 @@
 @startuml
 left to right direction
+
 package "Generación de Indicadores e Informes" {
+    actor "Técnico Calidad" as tec
+    actor "Administrador" as admin
   
-  actor "Técnico Calidad" as TecnicoCalidad
-  actor "Administrador" as Admin
-  
-  rectangle "Generación de Indicadores e Informes" {
-    usecase "Obtener indicadores para Sistema de Gestión." as CU1
-    usecase "Emitir informe del profesorado por titulación y global." as CU2
-  }
+    rectangle "Generación de Indicadores e Informes" {
+      package "Indicadores" as indicadores {
+        usecase "Obtener indicadores"
+        note right of "Obtener indicadores"
+           Para Sistema de Gestión
+        end note
+      }
+      
+      package "Informes" as informes {
+        usecase "Emitir informe del Profesorado" as emitirInforme
+        package "Tipos de Informes" {
+          usecase "por Titulación" as titulacion
+          usecase "Global" as global
+        }
+      }
+    }
 
-  TecnicoCalidad --> CU1
-  TecnicoCalidad --> CU2
+    emitirInforme ..> titulacion
+    emitirInforme ..> global
 
-  CU1 <-- Admin
-  CU2 <-- Admin
+    tec --> indicadores
+    tec --> informes
 
-  note right of Admin
-    El Administrador tiene
-    acceso a todos los casos
-    de uso de Departamentos
-  end note
+    note right of admin
+      El Administrador tiene
+      acceso a todos los casos
+      de uso de Departamentos
+    end note
 }
 @enduml

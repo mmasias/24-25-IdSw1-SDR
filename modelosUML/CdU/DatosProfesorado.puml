@@ -1,54 +1,149 @@
 @startuml
 left to right direction
+
 package "Gestión de Datos del Profesorado" {
-  
-  actor "Profesores" as Profesores
-  actor "Ordenación" as Ordenacion
-  actor "Técnico Calidad" as TecnicoCalidad
-  actor "RRHH" as RRHH
-  actor "Administrador" as Admin
-  
-  rectangle "Introducción de Datos" {
-    usecase "Introducir datos de experiencia docente, profesional, investigadora, etc." as CU1
-    usecase "Introducir datos de contrato, horas, temporalidad y categoría profesional." as CU2
-  }
-  rectangle "Consulta de Datos" {
-    usecase "Consultar valores asignados de contrato y otros datos personales." as CU3
-    usecase "Consultar asignaciones docentes (por titulación, curso y semestre)." as CU4
-    usecase "Consultar claustro docente (listado PDI asociado a una titulación, anual, por semestre)." as CU5
-    usecase "Consultar asignación docente por profesor (créditos y asignaturas)." as CU6
-  }
-  rectangle "Modificación y Validación de Datos" {
-    usecase "Validar datos introducidos por el profesorado y modificarlos." as CU7
-    usecase "Validar los valores de titulación vs. compromisos de memoria." as CU8
-    usecase "Revisar cumplimiento de valores consignados en la memoria por titulación." as CU9
-  }
-  
-  Profesores --> CU1
-  Profesores --> CU3
-  Profesores --> CU4
-  RRHH --> CU2
-  RRHH --> CU5
-  RRHH --> CU6
-  RRHH --> CU7
-  Ordenacion --> CU5
-  Ordenacion --> CU6
-  TecnicoCalidad --> CU5
-  TecnicoCalidad --> CU6
-  TecnicoCalidad --> CU8
-  TecnicoCalidad --> CU9
-  
-  CU2 <-- Admin
-  CU5 <-- Admin
-  CU6 <-- Admin
-  CU7 <-- Admin
-  CU8 <-- Admin
-  CU9 <-- Admin
-  
-  note right of Admin
-    El Administrador tiene
-    acceso a todos los casos
-    de uso de Departamentos
-  end note
+    actor "Profesores" as prof
+    actor "Ordenación" as ord
+    actor "Técnico Calidad" as tec
+    actor "RRHH" as rrhh
+    actor "Administrador" as admin
+    
+    together {
+        rectangle "Introducción de Datos" {
+            package "Datos Académicos" as datosAcadPackage {
+                usecase "Introducir Datos Académicos" as datosAcad
+                
+                package "Tipos Académicos" {
+                    usecase "de Experiencia Docente" as expDoc
+                    usecase "de Experiencia Profesional" as expProf
+                    usecase "de Experiencia Investigadora" as expInv
+                    usecase "de Sexenios" as sexenios
+                    usecase "de Acreditaciones" as acred
+                    usecase "de Movilidad" as mov
+                    usecase "de Titulación Profesional" as titProf
+                }
+                note "Permitir heredar datos\ndel año anterior" as notaDatosAcad
+            }
+            
+            package "Datos Laborales" as datosLabPackage {
+                usecase "Introducir Datos Laborales" as datosLab
+                
+                package "Tipos Laborales" {
+                    usecase "de Contrato" as contrato
+                    usecase "de Horas" as horas
+                    usecase "de Temporalidad" as temp
+                    usecase "de Categoría Profesional" as catProf
+                }
+                note "Permitir heredar datos\ndel año anterior" as notaDatosLab
+            }
+        }
+        
+        rectangle "Consulta de Datos" {
+            package "Datos Personales" as datosPersonalesPackage {
+                usecase "Consultar Valores" as consultaValores
+                note right of consultaValores
+                    Consultar valores asignados
+                    de contrato y otros datos
+                    personales
+                end note
+            }
+            
+            package "Asignacion Docente" as asignacionesDocentesPackage {
+                together {
+                    package "Por Varios" as porVarPackage {
+                        usecase "Consultar Asignación" as consAsig
+                        usecase "por Titulación" as porTit
+                        usecase "por Curso" as porCurso
+                        usecase "por Semestre" as porSem
+                    }
+
+                    package "Por Profesor" as porProfPackage {
+                        usecase "Consultar Asignación" as consProf
+                        note right of consProf
+                            Consultar asignación docente por
+                            profesor (créditos y asignaturas)
+                        end note
+                    }
+                }
+            }
+            
+            package "Claustro Docente" as claustroPackage {
+                usecase "Consultar" as consClaustro
+                note right of consClaustro
+                    Listado PDI asociado
+                    a una titulación, anual,
+                    por semestre
+                end note
+            }
+        }
+        
+        rectangle "Modificación y Validación" {
+            package "Gestión Datos" as gestDatosPackage {
+                usecase "Validar Datos"
+                usecase "Modificar Datos"
+                note "Datos introducidos previamente\npor el profesorado" as notaGestDatos
+            }
+            
+            package "Validación Memoria" as valMemPackage {
+                usecase "Validar Cumplimiento" as valCumpli1
+                note right 
+                    Validar cumplimiento de
+                    valores consignados en la
+                    memoria por titulacion
+                end note
+                usecase "Validar Cumplimiento" as valCumpli2
+                note right 
+                    Validar cumplimiento de
+                    compromisos de memoria con
+                    los valores de la titulación
+                end note
+            }
+        }
+    }
+    
+    ' Relaciones de datos académicos
+    datosAcad ..> expDoc
+    datosAcad ..> expProf
+    datosAcad ..> expInv
+    datosAcad ..> sexenios
+    datosAcad ..> acred
+    datosAcad ..> mov
+    datosAcad ..> titProf
+    
+    ' Relaciones de datos laborales
+    datosLab ..> contrato
+    datosLab ..> horas
+    datosLab ..> temp
+    datosLab ..> catProf
+    
+    ' Relaciones de asignación por asignatura
+    consAsig ..> porTit
+    consAsig ..> porCurso
+    consAsig ..> porSem
+    
+    ' Relaciones de actores
+    prof --> datosAcadPackage
+    prof --> datosPersonalesPackage
+    prof --> porVarPackage
+
+    rrhh ---> gestDatosPackage
+    rrhh ---> datosLabPackage
+    rrhh ---> claustroPackage
+    rrhh ---> porProfPackage
+
+    ord ---> claustroPackage
+    ord ---> porProfPackage
+    ord ---> valCumpli1
+
+    tec --> claustroPackage
+    tec --> porProfPackage
+    tec --> valCumpli2
+    
+    note right of admin
+        El Administrador tiene
+        acceso a todos los casos
+        de uso de Técnico de Calidad,
+        RRHH y Ordenación
+    end note
 }
 @enduml

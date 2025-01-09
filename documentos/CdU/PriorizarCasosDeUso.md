@@ -18,7 +18,7 @@ El orden ha sido establecido por el cliente según la importancia y necesidad de
 | 1 | **Introducir** datos de contrato, horas, temporalidad y categoría profesional                                   |    🔴 Alta    |
 | 2 | **Asignar** carga docente de asignaturas a profesores                                                           |    🔴 Alta    |
 | 3 | **Revisar** listado de profesores cuya carga docente no se ajusta al contrato                                   |    🔴 Alta    |
-| 4 | **Validar** los valores de titulación vs. compromisos de memoria                                                |    🔴 Alta    |
+| 4 | **Validar** cumplimiento de compromisos de memoria con los valores de la titulación                             |    🔴 Alta    |
 | 5 | **Emitir** informe del profesorado por titulación y global                                                      |    🔴 Alta    |
 | 6 | **Consultar** asignaciones docentes (por titulación, curso y semestre)                                          |    🟠 Media   |
 | 7 | **Asignar** valores consignados en memoria por titulación                                                       |    🟠 Media   |

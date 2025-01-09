@@ -37,6 +37,6 @@ El objetivo de este paso es **encontrar actores y casos de uso** siguiendo las [
 | **Revisar** cumplimiento de valores consignados en la memoria por titulación                                                               |            |      | ✅         |                 | ✅            |
 | **Asignar** valores consignados en memoria por titulación                                                                                  |            |      |            | ✅              | ✅            |
 | **Asignar** valor de información a SIIU y DGU del PDI                                                                                      |            |      |            | ✅              | ✅            |
-| **Validar** los valores de titulación vs. compromisos de memoria                                                                           |            |      |            | ✅              | ✅            |
+| **Validar** cumplimiento de compromisos de memoria con los valores de la titulación                                                        |            |      |            | ✅              | ✅            |
 | **Obtener** indicadores para Sistema de Gestión                                                                                            |            |      |            | ✅              | ✅            |
 | **Emitir** informe del profesorado por titulación y global                                                                                 |            |      |            | ✅              | ✅            |

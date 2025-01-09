@@ -1,40 +1,72 @@
 @startuml
 left to right direction
+
 package "Gestión de Carga Docente" {
-  
-  actor "Ordenación" as Ordenacion
-  actor "Técnico Calidad" as TecnicoCalidad
-  actor "RRHH" as RRHH
-  actor "Administrador" as Admin
-  
-  rectangle "Asignación de Carga Docente" {
-    usecase "Asignar carga docente de asignaturas a profesores." as CU1
-    usecase "Asignar valores consignados en memoria por titulación." as CU2
-    usecase "Asignar valor de información a SIIU y DGU del PDI." as CU3
-  }
+    actor "Ordenación" as ord
+    actor "Técnico Calidad" as tec
+    actor "RRHH" as rrhh
+    actor "Administrador" as admin
 
-  rectangle "Revisión de Cumplimiento" {
-    usecase "Revisar listado de profesores cuya carga docente no se ajusta al contrato." as CU4
-  }
+    rectangle "Asignaciones" {
+        package "Carga Docente" as cargaDocentePackage {
+            usecase "Asignar Carga" as asignarCarga
+            note right of asignarCarga
+                De asignaturas
+                a profesores
+            end note
+        }
+        
+        package "Valores" as valoresPackage {
+            usecase "Asignar Valores" as asignarValores
+            note right of asignarValores
+                Consignados en Memoria
+                por Titulación
+            end note
 
-  Ordenacion --> CU1
-  Ordenacion --> CU2
-  Ordenacion --> CU3
+            note "Permitir validar datos\ndel año anterior" as valoresDef
+        }
 
-  TecnicoCalidad --> CU2
-  TecnicoCalidad --> CU3
+        package "SIIU y DGU" as SIIUyDGUPackage {
+            usecase "Asignar Valor de Información" as asignarValor
 
-  RRHH --> CU4
+            package "Tipos" {
+                usecase "a SIIU" as SIIU
+                usecase "a DGU" as DGU
+            }
 
-  CU1 <-- Admin 
-  CU2 <-- Admin 
-  CU3 <-- Admin 
-  CU4 <-- Admin 
+            usecase "del PDI" as PDI
 
-  note right of Admin
-    El Administrador tiene
-    acceso a todos los casos
-    de uso de Departamentos
-  end note
+            note "SIIU: Sistema de Información e Innovación Universitaria\nDGU: Dirección General de Universidades" as SIIUdef
+        }
+    }
+
+    rectangle "Revisión de Cumplimiento" {
+        package "Revision" as revisionPackage {
+            usecase "Revisar Listado de Profesores" as revisarCarga
+            note right of revisarCarga
+                Cuya Carga Docente no se ajusta
+                a carga supuesta por contrato
+            end note
+        }
+    }
+
+    ord ---> cargaDocentePackage
+    ord ---> revisionPackage
+
+    rrhh ---> revisionPackage
+
+    tec ---> valoresPackage
+    tec ---> SIIUyDGUPackage
+
+    asignarValor ..> SIIU
+    asignarValor ..> DGU
+    SIIU ..> PDI
+    DGU ..> PDI
+
+    note right of admin
+        El Administrador tiene
+        acceso a todos los casos
+        de uso de Departamentos
+    end note
 }
 @enduml
