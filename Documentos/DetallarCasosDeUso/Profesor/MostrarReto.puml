@@ -1,4 +1,4 @@
-@startuml MostrarReto
+@startuml
 
 hide empty description
 
@@ -6,7 +6,7 @@ state Menu_Rutinas_y_Ejercicios
 
 state MostrarReto{
     state VerReto as "Mostrar Reto"
-    [*] --> VerReto 
+    [*] --> VerReto
     note on link
         El profesor introduce que quiere ver el reto
     end note
@@ -15,4 +15,6 @@ state MostrarReto{
         El sistema muestra el reto
     end note
 }
+Menu_Rutinas_y_Ejercicios --> MostrarReto
+MostrarReto --> MostrandoReto
 @enduml
