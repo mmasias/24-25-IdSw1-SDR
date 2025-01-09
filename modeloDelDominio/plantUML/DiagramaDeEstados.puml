@@ -1,4 +1,5 @@
 @startuml
+title Diagrama de Estados de Asignatura
 [*] --> SinAsignar
 
 SinAsignar : La asignatura, profesor y aula aún no están definidos.
