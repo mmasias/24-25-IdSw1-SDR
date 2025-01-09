@@ -12,7 +12,7 @@
 ## 🛠️ Casos de Uso Representados mediante Diagramas
 
 ### Asignar Asignatura
-![Asignar Asignatura](https://github.com/srgiom/24-25-IdSw1-SDR/raw/main/casosDeUso/imagenes/AsignarAsignatura.svg)
+![Asignar Asignatura](https://github.com/srgiom/24-25-IdSw1-SDR/raw/main/casosDeUso/imagenes/AsignarAsignaturaHorario.svg)
 
 ### Elegir Grado
 ![Elegir Grado](https://github.com/srgiom/24-25-IdSw1-SDR/raw/main/casosDeUso/imagenes/ElegirGrado.svg)
