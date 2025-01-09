@@ -6,16 +6,13 @@ start
   - Día,
   - Hora,
   - Aula grande,
-  - Aulas con computadoras;
-if (¿Filtros aplicados?) then (No)
-  :Sistema presenta todas las aulas;
-else (Sí)
-  :Sistema aplica los filtros;
+  - Aulas con computadoras,
+  - Ninguno;
+:Sistema aplica los filtros;
   if (¿Existen aulas disponibles con los filtros?) then (Sí)
     :Sistema presenta las aulas disponibles entre los filtros seleccionados;
   else (No)
     :Sistema presenta mensaje de error: "No se encontraron aulas disponibles";
   endif
-endif
 stop
 @enduml
