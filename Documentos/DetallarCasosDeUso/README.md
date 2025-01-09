@@ -123,12 +123,12 @@
 | ![Casos de uso](../Imagenes/DetallarCasosDeUso/CerrarSesion.svg) | [Ver código](CerrarSesion.puml) |
 
 ## Alumno
-### Menu Principal 
+### Ingresar Al Sistema
 | Diagrama | Código Fuente |
 |----------|---------------|
 | ![Casos de uso](../Imagenes/DetallarCasosDeUso/Alumno/MenuPrincipalAlumno.svg) | [Ver código](Alumno/MenuPrincipalAlumno.puml) |
 
-### Menu Rutinas y Ejercicios 
+### Cambiar a Rutinas y Ejercicios
 | Diagrama | Código Fuente |
 |----------|---------------|
 | ![Casos de uso](../Imagenes/DetallarCasosDeUso/Alumno/Menu_Rutinas_Alumno.svg) | [Ver código](Alumno/Menu_Rutinas_Alumno.puml) |
@@ -153,7 +153,7 @@
 |----------|---------------|
 | ![Casos de uso](../Imagenes/DetallarCasosDeUso/Alumno/MostrarEjercicio.svg) | [Ver código](Alumno/MostrarEjercicio.puml) |
 
-### Menu Retos
+### Cambiar a Retos
 | Diagrama | Código Fuente |
 |----------|---------------|
 | ![Casos de uso](../Imagenes/DetallarCasosDeUso/Alumno/MenuRetos.svg) | [Ver código](Alumno/MenuRetos.puml) |
@@ -168,12 +168,12 @@
 |----------|---------------|
 | ![Casos de uso](../Imagenes/DetallarCasosDeUso/Alumno/SubirEvidencia.svg) | [Ver código](Alumno/SubirEvidencia.puml) |
 
-### Menu Clasificación
+### Cambiar a Clasificación
 | Diagrama | Código Fuente |
 |----------|---------------|
 | ![Casos de uso](../Imagenes/DetallarCasosDeUso/Alumno/MenuClasificacion.svg) | [Ver código](Alumno/MenuClasificacion.puml) |
 
-### Menu Perfil
+### Cambiar a Perfil
 | Diagrama | Código Fuente |
 |----------|---------------|
 | ![Casos de uso](../Imagenes/DetallarCasosDeUso/Alumno/MenuPerfilAlumno.svg) | [Ver código](Alumno/MenuPerfilAlumno.puml) |
