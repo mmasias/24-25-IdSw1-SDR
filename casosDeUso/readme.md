@@ -12,7 +12,7 @@
 ## 🛠️ Casos de Uso Representados mediante Diagramas
 
 ### Vincular Asignatura Horario
-![Asignar Asignatura](/casosDeUso/imagenes/VincularAsignaturaHorario.svg)
+![Vincular Asignatura Horario](/casosDeUso/imagenes/VincularAsignaturaHorario.svg)
 
 ### Elegir Grado
 ![Elegir Grado](/casosDeUso/imagenes/ElegirGrado.svg)
