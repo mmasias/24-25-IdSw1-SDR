@@ -1,0 +1,24 @@
+@startuml
+start
+:Acceder al módulo "Validación Memoria";
+:Seleccionar opción "Validar Cumplimiento" para valores consignados;
+
+:Obtener lista de titulaciones con valores consignados;
+repeat
+  :Seleccionar una titulación de la lista;
+  :Revisar valores consignados en la memoria;
+  :Comparar con los estándares definidos;
+
+  if (¿Los valores cumplen con los estándares?) then (sí)
+    :Marcar titulación como validada;
+  else (no)
+    :Registrar incumplimientos detectados;
+    :Notificar necesidad de ajustes en la titulación;
+  endif
+
+  :Remover titulación de la lista pendiente;
+repeat while (¿Quedan titulaciones por validar? == sí)
+
+:Notificar finalización de la validación;
+stop
+@enduml

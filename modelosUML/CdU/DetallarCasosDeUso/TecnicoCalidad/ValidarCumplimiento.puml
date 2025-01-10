@@ -1,0 +1,24 @@
+@startuml
+start
+:Acceder al módulo "Validación Memoria";
+:Seleccionar opción "Validar Cumplimiento" para compromisos de memoria;
+
+:Obtener lista de titulaciones con compromisos de memoria;
+repeat
+  :Seleccionar una titulación de la lista;
+  :Revisar compromisos establecidos en la memoria;
+  :Comparar compromisos con los valores reales de la titulación;
+
+  if (¿Los compromisos se cumplen?) then (sí)
+    :Marcar titulación como validada;
+  else (no)
+    :Registrar incumplimientos detectados;
+    :Notificar necesidad de ajustes en los compromisos;
+  endif
+
+  :Remover titulación de la lista pendiente;
+repeat while (¿Quedan titulaciones por validar? == sí)
+
+:Notificar finalización de la validación;
+stop
+@enduml

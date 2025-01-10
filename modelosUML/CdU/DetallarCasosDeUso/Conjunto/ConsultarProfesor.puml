@@ -1,0 +1,20 @@
+@startuml
+start
+:Acceder al módulo "Asignación Docente";
+:Seleccionar opción "Consultar Asignación";
+
+:Solicitar identificación del profesor;
+:Buscar asignaciones asociadas al profesor;
+
+if (¿Asignación encontrada?) then (sí)
+  :Mostrar asignaturas y créditos asignados al profesor;
+else (no)
+  :Notificar que no hay asignaciones registradas;
+endif
+
+if (¿Realizar otra consulta?) then (sí)
+  -> restart
+else (no)
+  stop
+endif
+@enduml

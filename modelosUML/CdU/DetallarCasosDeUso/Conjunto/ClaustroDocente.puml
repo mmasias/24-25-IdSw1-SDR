@@ -1,0 +1,16 @@
+@startuml
+start
+:Acceder al módulo "Consulta de Datos";
+:Seleccionar opción "Consultar Claustro Docente";
+
+:Solicitar criterios de búsqueda;
+
+:Obtener listado del PDI asociado según criterios;
+:Mostrar resultados al usuario;
+
+if (¿Realizar otra consulta?) then (sí)
+  -> restart
+else (no)
+  stop
+endif
+@enduml
