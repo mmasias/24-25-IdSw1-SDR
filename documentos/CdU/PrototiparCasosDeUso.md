@@ -26,13 +26,13 @@ Debido a que este proyecto se divide en direfentes actores, en primer lugar se m
 | 1 | Inicio de sesión en la plataforma                                                                  | ![InicioSesion](/images/Prototipar/InicioSesion.svg) |  
 | 2 | **Introducir** Datos Laborales (contrato, horas, temporalidad y categoría profesional)             | ![IntroducirDatos](/images/Prototipar/PrototiparIntroducirDatos.svg)      |
 | 3 | **Asignar** Carga Docente de Asignaturas a Profesores                                              | ![AsignacionAsignaturasProfesor](/images/Prototipar/PrototiparAsignacionAsignaturasProfesor.svg)      |
-| 4 | **Revisar** listado de Profesores cuya Carga Docente no se ajusta al Contrato                      |       |
+| 4 | **Revisar** listado de Profesores cuya Carga Docente no se ajusta al Contrato                      | ![RevisarCargaProfesoresNoAjustada](/images/Prototipar/PrototiparRevisarProfesoresCargaNoAjustada.svg)      |
 | 5 | **Validar** cumplimiento de compromisos de Memoria con los valores de la Titulación                |       |
 | 6 | **Emitir** Informe del Profesorado (Global o por Titulación)                                       |       |
 | 7 | **Consultar** Asignación Docente (por titulación, curso y semestre)                                |       |
 | 8 | **Asignar** valores consignados en Memoria por Titulación                                          |       |
-| 9 | **Obtener** Indicadores para Sistema de Gestión                                                    |       |
-| 10 | **Modificar** los Datos introducidos por el Profesorado                                            |       |
+| 9 | **Obtener** Indicadores para Sistema de Gestión                                                    |  ![Obtener indicadores](/images/Prototipar/PrototiparObtenerIndicadores.svg)     |
+| 10 | **Modificar** los Datos introducidos por el Profesorado                                            |![ModificarDatosProfesorado](/images/Prototipar/PrototiparModificarDatosProfesorado.svg)       |
 | 11 | **Validar** los Datos introducidos por el Profesorado                                             | ![ValidarDatosProfesorado](/images/Prototipar/PrototiparValidarDatosProfesorado.svg)      |
 | 12 | **Introducir** Datos Académicos (experiencia docente, profesional, investigadora, sexenios, acreditaciones, movilidad y titulación profesional) |        |
 | 13 | **Validar** cumplimiento de valores consignados en la Memoria por Titulación                      |        |

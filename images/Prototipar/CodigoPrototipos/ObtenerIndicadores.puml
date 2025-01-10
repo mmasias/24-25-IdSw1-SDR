@@ -1,0 +1,56 @@
+@startuml
+
+    [*] --> InicioSesion
+    InicioSesion : Administrador/Técnico de calidad inicia sesión en el sistema
+
+    InicioSesion --> SeleccionarDatos
+    SeleccionarDatos : Seleccionar datos relevantes para indicadores
+
+    note right of SeleccionarDatos
+      Seleccion conjuntos de datos
+      necesarios para generar indicadores.
+    end note
+
+    SeleccionarDatos --> ProcesarDatos
+    ProcesarDatos : Procesar y analizar datos
+
+    note right of ProcesarDatos
+      Analisis datos para transformarlos en indicadores.
+    end note
+
+    ProcesarDatos --> GenerarIndicadores
+    GenerarIndicadores : Generar informes de indicadores
+
+    note right of GenerarIndicadores
+      Utilizar herramientas específicas
+      para crear informes basados en los datos procesados.
+    end note
+
+    GenerarIndicadores --> ValidarIndicadores
+    ValidarIndicadores : Validar la exactitud y relevancia de los indicadores
+
+    note right of ValidarIndicadores
+      Revisar y validar los indicadores
+      para asegurar que son correctos y pertinentes.
+    end note
+
+   
+    ValidarIndicadores --> ModificarIndicadores
+    ModificarIndicadores : Modificar indicadores según sea necesario
+    ModificarIndicadores --> ProcesarDatos : Re-procesar los datos modificados
+
+    ValidarIndicadores --> InformesFinalizados
+    InformesFinalizados : Informes de indicadores finalizados y validados
+
+    InformesFinalizados --> GuardarIndicadores
+    GuardarIndicadores : Guardar indicadores validados en el sistema
+
+  
+    ValidarIndicadores --> ProcesarDatos : Correcciones necesarias
+    GenerarIndicadores --> SeleccionarDatos : Seleccionar nuevos datos
+    GuardarIndicadores --> InicioSesion : Volver al Inicio
+ 
+
+    GuardarIndicadores --> [*]
+
+@enduml
