@@ -68,7 +68,7 @@ package "Gestión de Datos del Profesorado" {
             }
             
             package "Claustro Docente" as claustroPackage {
-                usecase "Consultar" as consClaustro
+                usecase "Consultar Claustro" as consClaustro
                 note right of consClaustro
                     Listado PDI asociado
                     a una titulación, anual,
