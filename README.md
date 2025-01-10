@@ -24,13 +24,12 @@ Este es el repositorio de las sesiones de requisitado de la asignatura de Ingeni
 
 - [Encontrar actores](/CasosDeUso/Actividades/Actores.md)
 - [Encontrar casos de uso](/CasosDeUso/Actividades/CasosDeUso.md)
+- [Diagrama de Contexto](/CasosDeUso/diagramaDeContexto/diagramaDeContexto.md) 
 - [Priorizar casos de uso](/CasosDeUso/Actividades/Priorizar.md)
 - [Detallar casos de uso](/CasosDeUso/Actividades/Detallar.md)
 - [Prototipar casos de uso](/CasosDeUso/Actividades/prototipos.md)
 - [Estructurar el modelo de casos de uso](/CasosDeUso/Actividades/Estructurar.md)
-- [Diagrama de Casos De Uso](/CasosDeUso/diagramaCasosDeUso/DiagramaCasosDeUso.md)
 
-- [Diagrama de Contexto](/CasosDeUso/diagramaDeContexto/diagramaDeContexto.md) 
 
 
 
