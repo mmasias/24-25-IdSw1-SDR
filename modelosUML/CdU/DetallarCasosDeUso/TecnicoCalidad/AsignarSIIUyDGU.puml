@@ -1,0 +1,44 @@
+@startuml
+start
+:Acceder al módulo;
+-> "Abrir menú de funcionalidades";
+:Seleccionar opción "Asignar Valor de Información";
+-> "Cargar opciones de asignación";
+
+split
+  :Seleccionar parámetros específicos para DGU;
+  -> "Preparar asignación para DGU";
+split again
+  :Seleccionar parámetros específicos para SIIU;
+  -> "Preparar asignación para SIIU";
+endsplit
+
+:Solicitar datos relevantes del PDI;
+:Asignar valor de información al tipo seleccionado;
+-> "Validar valores asignados";
+
+if (¿Validar información asignada?) then (sí)
+  :Realizar validación según reglas del sistema;
+  if (¿La información es válida?) then (sí)
+    :Guardar información asignada en el sistema;
+    -> "Confirmar asignación exitosa";
+  else (no)
+    :Detectar errores en los valores asignados;
+    -> "Notificar inconsistencias al usuario";
+    :Solicitar corrección de la información;
+    -> "Reintentar asignación";
+  endif
+else (no)
+  :Guardar valores sin validación previa (bajo responsabilidad del usuario);
+  -> "Confirmar asignación no validada";
+endif
+
+if (¿Asignar otro valor?) then (sí)
+  -> "Reiniciar proceso para otra asignación";
+  -> restart
+else (no)
+  :Confirmar finalización de las asignaciones;
+  -> "Guardar y salir del módulo";
+  stop
+endif
+@enduml

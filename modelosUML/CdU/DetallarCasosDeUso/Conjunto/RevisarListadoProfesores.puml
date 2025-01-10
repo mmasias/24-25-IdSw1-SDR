@@ -1,0 +1,22 @@
+@startuml
+start
+:Acceder al módulo "Revisión de Cumplimiento";
+:Seleccionar opción "Revisar Listado de Profesores";
+
+:Obtener listado de profesores con cargas docentes;
+:Comparar carga docente actual con la carga supuesta por contrato;
+
+if (¿Carga docente cumple con el contrato?) then (sí)
+  :Marcar como cumplido;
+else (no)
+  :Registrar incumplimiento;
+  :Notificar ajustes necesarios;
+endif
+
+if (¿Revisar otro profesor?) then (sí)
+  -> restart
+else (no)
+  :Finalizar revisión;
+  stop
+endif
+@enduml

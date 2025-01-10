@@ -1,0 +1,47 @@
+@startuml
+start
+:Acceder al módulo "Valores";
+-> "Abrir menú de funcionalidades";
+:Seleccionar opción "Asignar Valores";
+-> "Cargar datos consignados en la memoria";
+
+:Solicitar lista de titulaciones disponibles;
+:Seleccionar titulación específica para asignar valores;
+-> "Mostrar valores consignados en la memoria";
+
+if (¿Validar datos del año anterior?) then (sí)
+  :Cargar datos del año anterior para la titulación seleccionada;
+  :Comparar valores del año anterior con los actuales;
+  if (¿Los datos del año anterior son válidos?) then (sí)
+    :Confirmar validez de los datos previos;
+  else (no)
+    :Detectar inconsistencias en los datos anteriores;
+    :Notificar ajustes necesarios al usuario;
+  endif
+else (no)
+  :Omitir validación de datos del año anterior;
+endif
+-> "Continuar con la asignación de nuevos valores";
+
+:Asignar nuevos valores a la titulación;
+-> "Validar valores asignados";
+
+if (¿Los nuevos valores asignados son válidos?) then (sí)
+  :Guardar valores asignados en el sistema;
+  -> "Confirmar asignación exitosa";
+else (no)
+  :Detectar inconsistencias en los nuevos valores;
+  -> "Notificar errores al usuario";
+  :Solicitar corrección de los valores asignados;
+  -> "Reintentar asignación";
+endif
+
+if (¿Asignar valores a otra titulación?) then (sí)
+  -> "Reiniciar proceso para otra titulación";
+  -> restart
+else (no)
+  :Confirmar finalización de asignación;
+  -> "Guardar y salir del módulo";
+  stop
+endif
+@enduml

@@ -1,0 +1,28 @@
+@startuml
+start
+:Acceder al módulo "Asignaciones";
+-> "Abrir el menú de funcionalidades";
+:Seleccionar opción "Asignar Carga";
+-> "Cargar datos de asignaturas y profesores";
+
+:Solicitar asignaturas disponibles para asignación;
+:Seleccionar asignatura(s) a asignar;
+-> "Mostrar lista de profesores disponibles";
+
+:Seleccionar profesor para asignar la carga;
+-> "Asignar carga seleccionada";
+
+:Asignar carga docente (asignatura) al profesor seleccionado;
+:Actualizar información de la asignación en el sistema;
+
+if (¿Asignación válida?) then (sí)
+  :Confirmar asignación correcta;
+else (no)
+  :Notificar error en la asignación;
+  :Solicitar corrección de los datos;
+  -> "Reintentar asignación";
+endif
+
+if (¿Asignar otra carga?) then (sí)
+  -> "Reiniciar proceso";
+  -> restart
