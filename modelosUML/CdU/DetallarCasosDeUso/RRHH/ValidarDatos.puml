@@ -1,0 +1,23 @@
+@startuml
+start
+:Acceder al módulo "Gestión de Datos";
+:Seleccionar opción "Validar Datos";
+
+:Mostrar lista de datos introducidos por el profesorado;
+
+repeat
+  :Seleccionar un dato para revisión;
+  :Revisar detalle del dato seleccionado;
+
+  if (¿El dato es correcto?) then (sí)
+    :Marcar dato como validado;
+  else (no)
+    :Registrar incidencia o solicitar corrección;
+  endif
+
+  :Remover el dato de la lista pendiente;
+repeat while (¿Quedan datos por validar? == sí)
+
+:Confirmar finalización del proceso de validación;
+stop
+@enduml

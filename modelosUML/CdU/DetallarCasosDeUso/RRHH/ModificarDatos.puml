@@ -1,0 +1,21 @@
+@startuml
+start
+:Acceder al módulo "Gestión Datos";
+:Seleccionar opción "Modificar Datos";
+
+:Mostrar lista de datos previamente introducidos;
+:Seleccionar el dato que se desea modificar;
+
+:Editar datos seleccionados;
+
+if (¿Datos ingresados son válidos?) then (sí)
+  :Guardar modificaciones;
+else (no)
+  :Mostrar mensaje de error;
+  :Solicitar corrección de datos;
+  --> [Reintentar] :Editar datos seleccionados;
+endif
+
+:Confirmar que los datos han sido modificados exitosamente;
+stop
+@enduml

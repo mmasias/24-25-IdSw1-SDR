@@ -1,0 +1,46 @@
+@startuml
+start
+:Acceder al módulo "Introducir Datos Laborales";
+
+if (¿Hay datos del año anterior disponibles?) then (sí)
+  :Ofrecer opción de heredar datos previos;
+  if (¿Desea heredar?) then (sí)
+    :Cargar datos laborales del año anterior;
+  else (no)
+    :Iniciar entrada de datos en blanco;
+  endif
+else (no)
+  :Iniciar entrada de datos en blanco;
+endif
+
+:Seleccionar tipo de dato laboral a introducir;
+
+split
+  if (Selecciona "Contrato"?) then (sí)
+    :Introducir datos de Contrato;
+  else (no)
+    :Ignorar Contrato;
+  endif
+split again
+  if (Selecciona "Horas"?) then (sí)
+    :Introducir datos de Horas;
+  else (no)
+    :Ignorar Horas;
+  endif
+split again
+  if (Selecciona "Temporalidad"?) then (sí)
+    :Introducir datos de Temporalidad;
+  else (no)
+    :Ignorar Temporalidad;
+  endif
+split again
+  if (Selecciona "Categoría Profesional"?) then (sí)
+    :Introducir datos de Categoría Profesional;
+  else (no)
+    :Ignorar Categoría Profesional;
+  endif
+endsplit
+
+:Guardar datos laborales;
+stop
+@enduml
