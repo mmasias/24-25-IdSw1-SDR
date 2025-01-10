@@ -24,8 +24,8 @@ Debido a que este proyecto se divide en direfentes actores, en primer lugar se m
 | **#** | **Caso de Uso**                                      | **Prototipo** |  
 |-------|------------------------------------------------------|---------------|
 | 1 | Inicio de sesión en la plataforma                                                                  | ![InicioSesion](/images/Prototipar/InicioSesion.svg) |  
-| 2 | **Introducir** Datos Laborales (contrato, horas, temporalidad y categoría profesional)             |       |
-| 3 | **Asignar** Carga Docente de Asignaturas a Profesores                                              |       |
+| 2 | **Introducir** Datos Laborales (contrato, horas, temporalidad y categoría profesional)             | ![PrototiparIntroducirDatos](/images/Prototipar/PrototiparIntroducirDatos.svg)      |
+| 3 | **Asignar** Carga Docente de Asignaturas a Profesores                                              | ![PrototiparAsignaciónAsignaturasProfesor](/images/Prototipar/PrototiparAsignacionAsignaturasProfesor.svg)      |
 | 4 | **Revisar** listado de Profesores cuya Carga Docente no se ajusta al Contrato                      |       |
 | 5 | **Validar** cumplimiento de compromisos de Memoria con los valores de la Titulación                |       |
 | 6 | **Emitir** Informe del Profesorado (Global o por Titulación)                                       |       |
