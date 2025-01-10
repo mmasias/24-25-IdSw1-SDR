@@ -1,18 +1,22 @@
-@startuml
-[*] --> Menu_Rutinas_y_Ejercicios : Inicio del proceso
-state rombo <<choice>>
-rombo --> Menu_Perfil
-rombo --> Menu_Retos
-rombo --> Clasificación
-rombo --> Menu_Rutinas_y_Ejercicios
-rombo --> Menu_Principal
+@startuml 
 
-Menu_Rutinas_y_Ejercicios --> ListaEjercicios : Presionar botón "Ejercicios"
-ListaEjercicios --> MostrarEjercicio : Seleccionar un ejercicio de la lista
-MostrarEjercicio --> rombo
+hide empty description
+
+state Menu_Rutinas_y_Ejercicios
+state MostrandoEjercicio
 state MostrarEjercicio {
-  VerDetalles : El sistema muestra los detalles del ejercicio
-  VerDetalles --> EditarEjercicio : Presionar botón "Editar"
-  VerDetalles --> [*] : Finaliza visualización
+  [*] --> VerDetalles
+  note on link
+    El sistema muestra los detalles del ejercicio
+  end note
+ 
+  VerDetalles --> [*]
+  note on link
+    Finaliza visualización
+  end note
 }
+
+Menu_Rutinas_y_Ejercicios --> MostrarEjercicio
+MostrarEjercicio --> MostrandoEjercicio
+
 @enduml

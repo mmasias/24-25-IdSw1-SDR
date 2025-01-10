@@ -1,21 +1,22 @@
 @startuml
-[*] --> Menu_Rutinas_y_Ejercicios : Inicio del proceso
-state rombo <<choice>>
-rombo --> Menu_Perfil
-rombo --> Menu_Retos
-rombo --> Clasificación
-rombo --> Menu_Rutinas_y_Ejercicios
-rombo --> Menu_Principal
 
-Menu_Rutinas_y_Ejercicios --> ListaRutinas : Presionar botón "Rutinas"
-ListaRutinas --> MostrarRutina : Seleccionar una rutina de la lista
-MostrarRutina --> rombo
+hide empty description
+
+state Menu_Rutinas_y_Ejercicios
+state MostrandoRutina
 
 state MostrarRutina {
-  [*] -->VerDetallesRutina : El sistema muestra la lista de ejercicios
-  VerDetallesRutina --> MostrarEjercicio : Seleccionar un ejercicio de la lista
-  VerDetallesRutina --> EditarRutina
-  VerDetallesRutina --> CrearRutina
-  VerDetallesRutina --> [*] : Finaliza visualización de la rutina
+  state VerRutina as "Mostar Rutina"
+  [*] --> VerRutina
+  note on link
+    El alumno introduce ver la rutina
+  end note
+  VerRutina --> [*]
+  note on link
+    El sistema muestra la rutina
+  end note
 }
+
+Menu_Rutinas_y_Ejercicios --> MostrarRutina
+MostrarRutina --> MostrandoRutina
 @enduml

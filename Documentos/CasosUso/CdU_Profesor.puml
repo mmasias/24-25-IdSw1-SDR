@@ -5,17 +5,17 @@ actor Profesor
 package "Rutinas y Ejercicios" {
     usecase "Cambiar a Rutinas y Ejercicios" as CambiarARutinasYEjercicios
 
-    package "Rutinas" {
+   
         usecase "Mostrar Rutina" as MostrarRutina
         usecase "Editar Rutina" as EditarRutina
         usecase "Crear Rutina" as CrearRutina
-    }
+    
 
-    package "Ejercicios" {
+   
         usecase "Mostrar Ejercicio" as MostrarEjercicio
         usecase "Editar Ejercicio" as EditarEjercicio
         usecase "Crear Ejercicio" as CrearEjercicio
-    }
+    
 }
 
 package "Retos" {
@@ -33,16 +33,17 @@ package "Perfil" {
     usecase "Cambiar a Perfil" as CambiarAPerfil
     usecase "Mostrar QR en centro deportivo" as MostrarQR
 
-    package "Mis Clases" {
+  
         usecase "Crear Clase" as CrearClase
         usecase "Ver mis clases" as VerMisClases
         usecase "Ver alumnos" as VerAlumnos
         usecase "Ver retos alumnos" as VerRetosAlumnos
         usecase "Evaluar retos" as EvaluarRetos
-    }
+        usecase "Cerrar Sesión" as CerrarSesion
+    
 }
 
-usecase "Cerrar Sesión" as CerrarSesion
+
 usecase "Iniciar Sesión" as IniciarSesion
 usecase "Ingresar al Sistema" as IngresarAlSistema
 usecase "Cambiar Menu" as CambiarMenu
@@ -53,26 +54,26 @@ Profesor --> CambiarMenu
 Profesor --> CerrarSesion
 
 Profesor --> CambiarARutinasYEjercicios
-CambiarARutinasYEjercicios --> MostrarRutina
-CambiarARutinasYEjercicios --> EditarRutina
-CambiarARutinasYEjercicios --> CrearRutina
-CambiarARutinasYEjercicios --> MostrarEjercicio
-CambiarARutinasYEjercicios --> EditarEjercicio
-CambiarARutinasYEjercicios --> CrearEjercicio
+Profesor --> MostrarRutina
+Profesor --> EditarRutina
+Profesor --> CrearRutina
+Profesor --> MostrarEjercicio
+Profesor --> EditarEjercicio
+Profesor --> CrearEjercicio
 
 Profesor --> CambiarARetos
-CambiarARetos --> CrearReto
-CambiarARetos --> EditarReto
+Profesor --> CrearReto
+Profesor --> EditarReto
 
 Profesor --> CambiarAClasificacion
-CambiarAClasificacion --> VerAlumnosDentroDeClase
+Profesor --> VerAlumnosDentroDeClase
 
 Profesor --> CambiarAPerfil
-CambiarAPerfil --> MostrarQR
-CambiarAPerfil --> CrearClase
-CambiarAPerfil --> VerMisClases
-CambiarAPerfil --> VerAlumnos
-CambiarAPerfil --> VerRetosAlumnos
-CambiarAPerfil --> EvaluarRetos
+Profesor --> MostrarQR
+Profesor --> CrearClase
+Profesor --> VerMisClases
+Profesor --> VerAlumnos
+Profesor --> VerRetosAlumnos
+Profesor --> EvaluarRetos
 
 @enduml

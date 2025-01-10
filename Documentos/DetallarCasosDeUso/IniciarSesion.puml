@@ -12,13 +12,13 @@ state IniciarSesion{
     note on link
         El Usuario solicita iniciar sesión
     end note
-    Estado1 --> Estado2
+    Estado1 -[#green]-> Estado2
     note on link
         El Sistema solicita
         - Correo
         - Contraseña
     end note
-    Estado2 --> Estado3
+    Estado2 -[#green]-> Estado3
     note on link
         El Usuario introduce
         - Correo
@@ -29,17 +29,20 @@ state IniciarSesion{
         El sistema identifica si es alumno o profesor
     end note
 
-    Estado3 --> Estado1
+    Estado3 -[#red]-> Estado1
     note on link
         Datos incorrectos
     end note
 }
+state rombo <<choice>>
 state Profesor
 state Alumno
 
 
 Usuario --> IniciarSesion
-IniciarSesion --> Profesor
-IniciarSesion --> Alumno
+IniciarSesion --> rombo
+
+rombo --> Profesor
+rombo --> Alumno
 
 @enduml
