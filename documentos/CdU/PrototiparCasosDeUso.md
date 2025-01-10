@@ -22,20 +22,21 @@ Debido a que este proyecto se divide en direfentes actores, en primer lugar se m
 
 
 | **#** | **Caso de Uso**                                      | **Prototipo** |  
-|-------|------------------------------------------------------|---------------|  
-| 1 | **Introducir** Datos Laborales (contrato, horas, temporalidad y categoría profesional)             |       |
-| 2 | **Asignar** Carga Docente de Asignaturas a Profesores                                              |       |
-| 3 | **Revisar** listado de Profesores cuya Carga Docente no se ajusta al Contrato                      |       |
-| 4 | **Validar** cumplimiento de compromisos de Memoria con los valores de la Titulación                |       |
-| 5 | **Emitir** Informe del Profesorado (Global o por Titulación)                                       |       |
-| 6 | **Consultar** Asignación Docente (por titulación, curso y semestre)                                |       |
-| 7 | **Asignar** valores consignados en Memoria por Titulación                                          |       |
-| 8 | **Obtener** Indicadores para Sistema de Gestión                                                    |       |
-| 9 | **Modificar** los Datos introducidos por el Profesorado                                            |       |
-| 10 | **Validar** los Datos introducidos por el Profesorado                                             |       |
-| 11 | **Introducir** Datos Académicos (experiencia docente, profesional, investigadora, sexenios, acreditaciones, movilidad y titulación profesional) |        |
-| 12 | **Validar** cumplimiento de valores consignados en la Memoria por Titulación                      |        |
-| 13 | **Asignar** valor de Información a SIIU y DGU del PDI                                             |        |
-| 14 | **Consultar** valores asignados de Contrato y otros Datos Personales                              |        |
-| 15 | **Consultar** Claustro Docente (listado PDI asociado a una titulación)                            |        |
-| 16 | **Consultar** Asignación Docente por Profesor (créditos y asignaturas)                            |        |
+|-------|------------------------------------------------------|---------------|
+| 1 | Inicio de sesión en la plataforma                                                                  | ![InicioSesion](/images/Prototipar/InicioSesion.svg) |  
+| 2 | **Introducir** Datos Laborales (contrato, horas, temporalidad y categoría profesional)             |       |
+| 3 | **Asignar** Carga Docente de Asignaturas a Profesores                                              |       |
+| 4 | **Revisar** listado de Profesores cuya Carga Docente no se ajusta al Contrato                      |       |
+| 5 | **Validar** cumplimiento de compromisos de Memoria con los valores de la Titulación                |       |
+| 6 | **Emitir** Informe del Profesorado (Global o por Titulación)                                       |       |
+| 7 | **Consultar** Asignación Docente (por titulación, curso y semestre)                                |       |
+| 8 | **Asignar** valores consignados en Memoria por Titulación                                          |       |
+| 9 | **Obtener** Indicadores para Sistema de Gestión                                                    |       |
+| 10 | **Modificar** los Datos introducidos por el Profesorado                                            |       |
+| 11 | **Validar** los Datos introducidos por el Profesorado                                             |       |
+| 12 | **Introducir** Datos Académicos (experiencia docente, profesional, investigadora, sexenios, acreditaciones, movilidad y titulación profesional) |        |
+| 13 | **Validar** cumplimiento de valores consignados en la Memoria por Titulación                      |        |
+| 14 | **Asignar** valor de Información a SIIU y DGU del PDI                                             |        |
+| 15 | **Consultar** valores asignados de Contrato y otros Datos Personales                              |        |
+| 16 | **Consultar** Claustro Docente (listado PDI asociado a una titulación)                            |        |
+| 17 | **Consultar** Asignación Docente por Profesor (créditos y asignaturas)                            |        |
