@@ -25,6 +25,7 @@ El objetivo de este paso es **encontrar actores y casos de uso** siguiendo las [
 
 | Caso de Uso                                                                                                                                     | Profesores | RRHH | Ordenación | Técnico Calidad | Administrador |
 |-------------------------------------------------------------------------------------------------------------------------------------------------|------------|------|------------|-----------------|---------------|
+| **Inicio de sesion en la plataforma** | ✅    |   ✅   |    ✅    |    ✅    |    ✅    |
 | **Introducir** Datos Académicos (experiencia docente, profesional, investigadora, sexenios, acreditaciones, movilidad y titulación profesional) | ✅         |      |            |                 |               |
 | **Consultar** valores asignados de Contrato y otros Datos Personales                                                                            | ✅         |      |            |                 |               |
 | **Consultar** Asignación Docente (por titulación, curso y semestre)                                                                             | ✅         |      |            |                 |               |

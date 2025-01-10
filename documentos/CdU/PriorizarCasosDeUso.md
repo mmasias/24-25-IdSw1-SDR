@@ -25,7 +25,7 @@ El orden ha sido establecido por el cliente según la importancia y necesidad de
 | 8 | **Obtener** Indicadores para Sistema de Gestión                                                    |    🟠 Media   |
 | 9 | **Modificar** los Datos introducidos por el Profesorado                                            |    🟠 Media   |
 | 10 | **Validar** los Datos introducidos por el Profesorado                                             |    🟠 Media   |
-| 11 | Iniciar Sesión en la plataforma                                                                   | 🟠 Media      |
+| 11 | **Iniciar Sesion** en la plataforma                                                               |    🟠Media    |
 | 12 | **Introducir** Datos Académicos (experiencia docente, profesional, investigadora, sexenios, acreditaciones, movilidad y titulación profesional) |    🟢 Baja    |
 | 13 | **Validar** cumplimiento de valores consignados en la Memoria por Titulación                      |    🟢 Baja    |
 | 14 | **Asignar** valor de Información a SIIU y DGU del PDI                                             |    🟢 Baja    |
