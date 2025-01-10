@@ -1,0 +1,28 @@
+@startuml
+start
+:Acceder al módulo "Generación de Indicadores e Informes";
+-> "Abrir menú de funcionalidades";
+:Seleccionar opción "Emitir Informe del Profesorado";
+-> "Cargar opciones de informe";
+
+split
+  :Seleccionar: Global;
+  -> "Preparar datos para informe global";
+split again
+  :Seleccionar: Por Titulación;
+  ->"Solicitar"; 
+  :Titulación específica;
+  -> "Preparar datos para informe por titulación";
+endsplit
+
+:Generar informe con los datos recopilados;
+:Mostrar informe generado al usuario;
+
+if (¿Emitir otro informe?) then (sí)
+  -> "Reiniciar proceso";
+  -> restart
+else (no)
+  :Finalizar proceso de generación de informes;
+  stop
+endif
+@enduml

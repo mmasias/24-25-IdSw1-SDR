@@ -1,0 +1,31 @@
+@startuml
+start
+:Acceder al módulo "Generación de Indicadores e Informes";
+-> "Abrir menú de funcionalidades";
+:Seleccionar opción "Obtener Indicadores";
+-> "Cargar opciones del sistema de gestión";
+
+:Solicitar criterios de indicadores a generar;
+
+split
+  :Seleccionar criterios generales del sistema de gestión;
+  -> "Procesar datos globales desde el sistema de gestión";
+split again
+  :Seleccionar criterios específicos de una sección o área;
+  -> "Procesar datos específicos según criterios seleccionados";
+endsplit
+
+:Procesar información desde el sistema de gestión;
+:Generar indicadores con los datos recopilados;
+:Obtener indicadores finales generados;
+-> "Mostrar indicadores al usuario";
+
+if (¿Obtener otros indicadores?) then (sí)
+  -> "Reiniciar proceso de generación";
+  -> restart
+else (no)
+  :Confirmar finalización del proceso de indicadores;
+  -> "Guardar y salir del módulo";
+  stop
+endif
+@enduml
