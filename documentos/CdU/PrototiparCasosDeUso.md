@@ -21,20 +21,21 @@ Debido a que este proyecto se divide en direfentes actores, en primer lugar se m
 
 
 
-| **#** | **Caso de Uso**  | **Explicación**|**Imagen**  |  
-|-------|------------------|----------------|------------|  
-| 1     | 📊 **Proponer Carga Docente**                | | [Imagen](/images/BocetosPrototipos/)|
-| 2     | 📜 **Verificar Contratos Memoria Académica** | | [Imagen](/images/BocetosPrototipos/)|
-| 3     | ⚖️ **Revisar Carga Docente**                 | | [Imagen](/images/BocetosPrototipos/)| 
-| 4     | 🛠️ **Ajustar Carga Docente**                 | | [Imagen](/images/BocetosPrototipos/)|  
-| 5     | 📑 **Generar Memoria Académica**             | | [Imagen](/images/BocetosPrototipos/)| 
-| 6     | ✔️ **Asignar Carga Docente**                 | | [Imagen](/images/BocetosPrototipos/)|
-| 7     | 👁️ **Ver Carga Docente**                     | | [Imagen](/images/BocetosPrototipos/BocetoVerCarga.md)|
-| 8     | 👁️ **Ver Carga Docente**                     | | [Imagen](/images/BocetosPrototipos/BocetoVerCarga.md)|
-| 9     | 👁️ **Ver Carga Docente**                     | | [Imagen](/images/BocetosPrototipos/BocetoVerCarga.md)|
-| 10     | 👁️ **Ver Carga Docente**                     | | [Imagen](/images/BocetosPrototipos/BocetoVerCarga.md)|
-| 11     | 👁️ **Ver Carga Docente**                     | | [Imagen](/images/BocetosPrototipos/BocetoVerCarga.md)|
-| 12     | 👁️ **Ver Carga Docente**                     | | [Imagen](/images/BocetosPrototipos/BocetoVerCarga.md)|
-| 13     | 👁️ **Ver Carga Docente**                     | | [Imagen](/images/BocetosPrototipos/BocetoVerCarga.md)|
-| 14     | 👁️ **Ver Carga Docente**                     | | [Imagen](/images/BocetosPrototipos/BocetoVerCarga.md)|
-| 15    | 👁️ **Ver Carga Docente**                     | | [Imagen](/images/BocetosPrototipos/BocetoVerCarga.md)|
+| **#** | **Caso de Uso**                                      | **Prototipo** |  
+|-------|------------------------------------------------------|---------------|  
+| 1 | **Introducir** Datos Laborales (contrato, horas, temporalidad y categoría profesional)             |       |
+| 2 | **Asignar** Carga Docente de Asignaturas a Profesores                                              |       |
+| 3 | **Revisar** listado de Profesores cuya Carga Docente no se ajusta al Contrato                      |       |
+| 4 | **Validar** cumplimiento de compromisos de Memoria con los valores de la Titulación                |       |
+| 5 | **Emitir** Informe del Profesorado (Global o por Titulación)                                       |       |
+| 6 | **Consultar** Asignación Docente (por titulación, curso y semestre)                                |       |
+| 7 | **Asignar** valores consignados en Memoria por Titulación                                          |       |
+| 8 | **Obtener** Indicadores para Sistema de Gestión                                                    |       |
+| 9 | **Modificar** los Datos introducidos por el Profesorado                                            |       |
+| 10 | **Validar** los Datos introducidos por el Profesorado                                             |       |
+| 11 | **Introducir** Datos Académicos (experiencia docente, profesional, investigadora, sexenios, acreditaciones, movilidad y titulación profesional) |        |
+| 12 | **Validar** cumplimiento de valores consignados en la Memoria por Titulación                      |        |
+| 13 | **Asignar** valor de Información a SIIU y DGU del PDI                                             |        |
+| 14 | **Consultar** valores asignados de Contrato y otros Datos Personales                              |        |
+| 15 | **Consultar** Claustro Docente (listado PDI asociado a una titulación)                            |        |
+| 16 | **Consultar** Asignación Docente por Profesor (créditos y asignaturas)                            |        |
