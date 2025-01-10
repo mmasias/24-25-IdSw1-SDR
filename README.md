@@ -1,5 +1,13 @@
 # 💻 Grupo 1 - Ingeniería de Software I
 
+<div align=center>
+
+[![Static Badge](https://img.shields.io/badge/Inicio-e54d4c?style=flat-square&logo=kasasmart&logoColor=FFFFFF)](/README.md) [![Static Badge](https://img.shields.io/badge/Glosario-e54d4c?style=flat-square&logo=gitbook&logoColor=FFFFFF)](Documentos/Glosario/Glosario.md) [![Static Badge](https://img.shields.io/badge/Modelo%20del%20Dominio-e54d4c?style=flat-square&logo=stackshare&logoColor=FFFFFF)](/MdD/README.md) [![Static Badge](https://img.shields.io/badge/Actores-e54d4c?style=flat-square&logo=stackshare&logoColor=FFFFFF)](/Documentos/Actores/Actores.md) [![Static Badge](https://img.shields.io/badge/Casos%20de%20Uso-e54d4c?style=flat-square&logo=stackshare&logoColor=FFFFFF)](/Documentos/CasosUso/README.md) [![Static Badge](https://img.shields.io/badge/Diagramas%20de%20Contexto-e54d4c?style=flat-square&logo=stackshare&logoColor=FFFFFF)](/Documentos/DiagramasDeContexto/README.md) [![Static Badge](https://img.shields.io/badge/CdU%20Detallados-e54d4c?style=flat-square&logo=stackshare&logoColor=FFFFFF)](/Documentos/DetallarCasosDeUso/README.md) [![Static Badge](https://img.shields.io/badge/Prototipado-e54d4c?style=flat-square&logo=stackshare&logoColor=FFFFFF)](/Documentos/MockUp/PrototipoCdU.md) [![Static Badge](https://img.shields.io/badge/Mockup-e54d4c?style=flat-square&logo=quicklook&logoColor=FFFFFF)](Documentos/MockUp/Mockup.pdf) 
+
+[![Static Badge](https://img.shields.io/badge/Reuni%C3%B3n%201-e54d4c?style=flat-square&logo=norton&logoColor=FFFFFF)](https://github.com/celiabecerril/24-25-IdSw1-SDR/tree/reunion-001) [![Static Badge](https://img.shields.io/badge/Reuni%C3%B3n%202-e54d4c?style=flat-square&logo=norton&logoColor=FFFFFF)](https://github.com/celiabecerril/24-25-IdSw1-SDR/tree/reunion-002) [![Static Badge](https://img.shields.io/badge/Reuni%C3%B3n%203-e54d4c?style=flat-square&logo=norton&logoColor=FFFFFF)](https://github.com/celiabecerril/24-25-IdSw1-SDR/tree/reunion-003)
+
+</div>
+
 <div align="center">
     <img src="https://github.com/user-attachments/assets/7568ffd7-2b5a-4245-90ef-00c234720061" alt="Logo del Proyecto" width="150"/>
     <img src="https://github.com/user-attachments/assets/a811f6f4-3660-434d-a824-f29a73d0023f" alt="Logo del Proyecto" width="150"/>
