@@ -1,0 +1,33 @@
+@enduml
+    [*] --> Inicio
+    Inicio: Iniciar sesión en el sistema 
+    
+    Inicio --> SeleccionarProfesor
+    SeleccionarProfesor: Seleccionar Profesor
+    
+    SeleccionarProfesor --> SeleccionarAsignaturas
+    SeleccionarAsignaturas: Seleccionar Asignaturas
+    
+    SeleccionarAsignaturas --> RevisarAsignacion
+    RevisarAsignacion: Revisar Asignación
+    
+    RevisarAsignacion --> ConfirmarAsignacion
+    ConfirmarAsignacion: Confirmar Asignación
+    
+    ConfirmarAsignacion --> GuardarAsignacion
+    GuardarAsignacion: Guardar Asignación en el sistema
+    
+    ConfirmarAsignacion --> ModificarAsignacion
+    ModificarAsignacion: Modificar Asignación
+    
+    ModificarAsignacion --> SeleccionarAsignaturas
+    
+    GuardarAsignacion --> Finalizado
+    Finalizado: Asignación completada y registrada
+    
+    Finalizado --> [*]
+    
+    GuardarAsignacion --> SeleccionarProfesor: Volver a Seleccionar Profesor
+    
+    SeleccionarProfesor --> Inicio: Volver al Inicio
+@enduml
