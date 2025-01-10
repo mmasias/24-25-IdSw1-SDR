@@ -1,0 +1,28 @@
+@startuml
+
+start
+:Seleccionar 'de Movilidad';
+-> "Se abre el apartado de movilidad";
+:Mostrar formulario de movilidad;
+-> "Introducir datos";
+:Ingresar datos de programas, destinos, fechas, etc.;
+-> "El sistema comprueba la coherencia";
+:Validar informacion;
+
+if (Informacion valida) then (Si)
+  -> "Los datos son correctos";
+  :Guardar datos de movilidad;
+  :Confirmar registro;
+  stop
+else (No)
+  -> "Se detectan errores";
+  :Mostrar errores;
+  :Solicitar correccion;
+  -> "El usuario corrige y reenvía";
+  :Volver a ingresar informacion;
+  :Validar informacion;
+endif
+
+stop
+
+@enduml

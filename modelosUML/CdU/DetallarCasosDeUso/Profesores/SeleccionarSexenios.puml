@@ -1,0 +1,28 @@
+@startuml
+
+start
+:Seleccionar 'de Sexenios';
+-> "Se abre el apartado de sexenios";
+:Mostrar formulario de sexenios;
+-> "Ingresar datos";
+:Ingresar convocatorias, años reconocidos, etc.;
+-> "El sistema procede a validar la información";
+:Validar informacion;
+
+if (Informacion valida) then (Si)
+  -> "Los datos son correctos";
+  :Guardar datos de sexenios;
+  :Confirmar registro;
+  stop
+else (No)
+  -> "Se detectan inconsistencias";
+  :Mostrar errores;
+  :Solicitar correccion;
+  -> "Se corrige y se reenvía";
+  :Volver a ingresar informacion;
+  :Validar informacion;
+endif
+
+stop
+
+@enduml

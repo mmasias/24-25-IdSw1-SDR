@@ -1,0 +1,28 @@
+@startuml
+
+start
+:Seleccionar 'de Experiencia Profesional';
+-> "Se abre el apartado de experiencia profesional";
+:Mostrar formulario de experiencia profesional;
+-> "Se introducen datos";
+:Ingresar datos de empresas, cargos, fechas...;
+-> "El sistema valida la información ingresada";
+:Validar informacion;
+
+if (Informacion valida) then (Si)
+  -> "Los datos son correctos";
+  :Guardar experiencia profesional;
+  :Confirmar registro;
+  stop
+else (No)
+  -> "Existen inconsistencias";
+  :Mostrar errores;
+  :Solicitar correccion;
+  -> "Se corrige y se reenvía";
+  :Volver a ingresar informacion;
+  :Validar informacion;
+endif
+
+stop
+
+@enduml

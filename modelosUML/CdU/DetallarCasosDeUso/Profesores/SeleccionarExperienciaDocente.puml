@@ -1,0 +1,28 @@
+@startuml
+
+start
+:Seleccionar 'de Experiencia Docente';
+-> "Se abre la sección";
+:Mostrar formulario de experiencia docente;
+-> "Se introducen datos";
+:Ingresar centros, asignaturas, periodos...;
+-> "El sistema comprueba la coherencia";
+:Validar informacion;
+
+if (Informacion valida) then (Si)
+  -> "Datos correctos";
+  :Guardar experiencia docente;
+  :Confirmar registro;
+  stop
+else (No)
+  -> "Se detectan errores";
+  :Mostrar errores;
+  :Solicitar correccion;
+  -> "Se corrige y se reenvía";
+  :Volver a ingresar informacion;
+  :Validar informacion;
+endif
+
+stop
+
+@enduml

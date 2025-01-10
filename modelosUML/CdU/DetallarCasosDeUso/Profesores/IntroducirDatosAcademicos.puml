@@ -1,0 +1,61 @@
+@startuml
+
+start
+:Seleccionar 'año académico actual';
+-> "El usuario define el periodo";
+
+if (¿Existen datos de años anteriores?) then (Sí)
+  -> "Información previa disponible";
+  :Preguntar si se desea heredar datos;
+  if (¿Heredar datos?) then (Sí)
+    -> "Aprovechar datos guardados";
+    :Cargar datos heredados;
+  else (No)
+    -> "Iniciar desde cero";
+    :Iniciar con datos vacíos;
+  endif
+else (No)
+  -> "No hay datos históricos";
+  :Iniciar con datos vacíos;
+endif
+
+-> "El usuario procede a introducir detalles";
+:Ingresar o modificar datos académicos;
+-> "Seleccionar los tipos de datos académicos a rellenar";
+
+fork
+  :de Sexenios;
+fork again
+  :de Experiencia Investigadora;
+fork again
+  :de Experiencia Profesional;
+fork again
+  :de Experiencia Docente;
+fork again
+  :de Titulación Profesional;
+fork again
+  :de Movilidad;
+fork again
+  :de Acreditaciones;
+end fork
+
+-> "Sistema valida la información completa";
+:Validar datos ingresados;
+
+if (¿Datos válidos?) then (Sí)
+  -> "Todo correcto";
+  :Guardar datos académicos;
+  :Confirmar registro exitoso;
+  stop
+else (No)
+  -> "Hallamos errores";
+  :Mostrar errores en los datos;
+  :Solicitar corrección de datos;
+  -> "El usuario corrige y reintenta";
+  :Volver a ingresar datos académicos;
+  :Validar datos ingresados;
+endif
+
+stop
+
+@enduml

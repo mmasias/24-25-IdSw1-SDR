@@ -1,0 +1,28 @@
+@startuml
+
+start
+:Seleccionar 'de Acreditaciones';
+-> "El usuario elige el apartado de acreditaciones";
+:Mostrar formulario de acreditaciones;
+-> "Se rellenan los detalles de acreditacion";
+:Ingresar tipo de acreditacion, fecha, organismo, etc.;
+-> "El sistema procede a verificar la consistencia";
+:Validar informacion;
+
+if (Informacion valida) then (Si)
+  -> "Datos correctos";
+  :Guardar acreditaciones;
+  :Confirmar registro;
+  stop
+else (No)
+  -> "Existen errores detectados";
+  :Mostrar errores;
+  :Solicitar correccion;
+  -> "El usuario corrige y reintenta";
+  :Volver a ingresar informacion;
+  :Validar informacion;
+endif
+
+stop
+
+@enduml

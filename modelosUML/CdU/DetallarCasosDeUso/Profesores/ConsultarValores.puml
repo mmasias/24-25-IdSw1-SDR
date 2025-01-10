@@ -1,0 +1,21 @@
+@startuml
+
+start
+-> "Seleccionar 'Consultar Valores'";
+:Seleccionar "Consultar Valores";
+
+-> "El sistema despliega la pantalla de consulta";
+:Mostrar pantalla de consulta de datos personales/laborales;
+
+-> "El usuario ingresa criterios de búsqueda (si aplica)";
+:Ingresar criterios de busqueda;
+
+-> "El sistema obtiene los valores solicitados";
+:Obtener valores del sistema;
+
+-> "El sistema muestra los valores consultados";
+:Mostrar valores consultados;
+
+stop
+
+@enduml

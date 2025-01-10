@@ -1,0 +1,39 @@
+@startuml
+
+start
+-> "Seleccionar 'de Titulación Profesional'";
+:Seleccionar "de Titulación Profesional";
+
+-> "Sistema presenta formulario";
+:Mostrar formulario de Titulación Profesional;
+
+-> "Usuario ingresa la información solicitada";
+:Ingresar nombre de la titulación, institución, fecha, etc.;
+
+-> "El sistema procede a validar la información";
+:Validar información;
+
+if (Información válida) then (Sí)
+  -> "La información es correcta";
+  :Guardar Titulación Profesional;
+
+  -> "Se confirma el registro satisfactoriamente";
+  :Confirmar registro;
+  stop
+else (No)
+  -> "La información presenta errores";
+  :Mostrar errores;
+
+  -> "Se solicita corrección de datos";
+  :Solicitar corrección;
+
+  -> "El usuario vuelve a ingresar la información";
+  :Volver a ingresar información;
+
+  -> "El sistema valida de nuevo";
+  :Validar información;
+endif
+
+stop
+
+@enduml

@@ -1,0 +1,42 @@
+@startuml
+start
+:Profesor;
+:Seleccionar la opción "Consultar Asignación Por Varios";
+
+:Seleccionar criterios de filtrado;
+
+split
+  if (¿Filtrar por Titulación?) then (sí)
+    :Solicitar selección de titulación;
+    :Ingresar parámetro de titulación;
+    :Buscar asignaciones relacionadas con la titulación;
+  else (no)
+    :Ignorar filtro de titulación;
+  endif
+split again
+  if (¿Filtrar por Curso?) then (sí)
+    :Solicitar selección de curso;
+    :Ingresar parámetro de curso;
+    :Buscar asignaciones relacionadas con el curso;
+  else (no)
+    :Ignorar filtro de curso;
+  endif
+split again
+  if (¿Filtrar por Semestre?) then (sí)
+    :Solicitar selección de semestre;
+    :Ingresar parámetro de semestre;
+    :Buscar asignaciones relacionadas con el semestre;
+  else (no)
+    :Ignorar filtro de semestre;
+  endif
+endsplit
+
+:Combinar resultados de los filtros aplicados;
+:Mostrar resultados al usuario;
+
+if (¿Desea realizar otra consulta?) then (sí)
+  -> restart
+else (no)
+  stop
+endif
+@enduml
