@@ -1,0 +1,14 @@
+@startuml
+title Casos de Uso: Listar Test
+
+actor Administrador
+
+folder "Gestión de Pruebas" as Pruebas {
+    Administrador --> (Listar test)
+}
+
+note right of (Listar test)
+    Permite al administrador visualizar
+    la lista de los test registrados.
+end note
+@enduml

@@ -1,0 +1,15 @@
+@startuml
+title Casos de Uso: Listar Administradores
+
+actor Administrador
+
+folder "Gestión de Usuarios" as Usuarios {
+    Administrador --> (Listar administradores)
+}
+
+note right of (Listar administradores)
+    Permite al administrador visualizar
+    la lista de administradores registrados.
+end note
+@enduml
+

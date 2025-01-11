@@ -1,72 +1,64 @@
 # Casos de Uso
 
-### [Usuarios](/casos_de_uso/casos_de_uso/usuarios)
+## [Usuario](/casos_de_uso/casos_de_uso/usuario)
 
-  - [Actualizar Datos del Usuario](/casos_de_uso/casos_de_uso/usuarios/actualizar_datos_usuario/)
+  - [Actualizar Datos del Usuario](/casos_de_uso/casos_de_uso/usuario/actualizar_datos_usuario/)
 
-  - [Listar Datos del Usuario]()
+  - [Listar Datos del Usuario](/casos_de_uso/casos_de_uso/usuario/listar_datos_usuario/)
 
-  - [Iniciar Sesión]()
+  - [Iniciar Sesión](/casos_de_uso/casos_de_uso/usuario/iniciar_sesion/)
 
-  - [Cerrar Sesión]()
+  - [Cerrar Sesión](/casos_de_uso/casos_de_uso/usuario/cerrar_sesion/)
 
-### [Postulante]()
+## [Postulante](/casos_de_uso/casos_de_uso/postulante)
 
-  - [Realizar test]()
+  - [Realizar test](/casos_de_uso/casos_de_uso/postulante/realizar_test/)
 
-  - [Ver test corregido]()
+  - [Ver Test Corregido](/casos_de_uso/casos_de_uso/postulante/ver_test_corregido/)
 
-  - [Realizar capacictación]()
+  - [Realizar Capacitación](/casos_de_uso/casos_de_uso/postulante/realizar_capacitacion/)
 
-  - [Ver progreso de capacitación]()
+  - [Ver Progreso de Capacitación](/casos_de_uso/casos_de_uso/postulante/ver_progreso_de_capacitacion/)
 
 
-### [Administrador]()
+## [Administrador](/casos_de_uso/casos_de_uso/administrador)
 
-  - [Consultar Estadísticas]()
+  - [Consultar Estadísticas](/casos_de_uso/casos_de_uso/administrador/consultar_estadisticas/)
 
-#### [Gestión Capacitaciones]()
+  - [Crear Capacitación](/casos_de_uso/casos_de_uso/administrador/crear_capacitacion/)
 
-  - [Crear Capacitacion]()
+  - [Editar Capacitación](/casos_de_uso/casos_de_uso/administrador/editar_capacitacion/)
 
-  - [Editar Capacitacion]()
+  - [Listar Capacitaciones](/casos_de_uso/casos_de_uso/administrador/listar_capacitaciones/)
 
-  - [Listar Capacitaciones]()
+  - [Eliminar Capacitación](/casos_de_uso/casos_de_uso/administrador/eliminar_capacitacion/)
 
-  - [Eliminar Capacitación]()
+  - [Crear Test](/casos_de_uso/casos_de_uso/administrador/crear_test/)
 
-#### [Gestión de Test]()
+  - [Editar Test](/casos_de_uso/casos_de_uso/administrador/editar_test/)
 
-  - [Crear Test]()
+  - [Listar Tests](/casos_de_uso/casos_de_uso/administrador/listar_tests/)
 
-  - [Editar Test]()
+  - [Eliminar Test](/casos_de_uso/casos_de_uso/administrador/eliminar_test/)
 
-  - [Listar Test]()
+  - [Crear Postulante](/casos_de_uso/casos_de_uso/administrador/crear_postulante/)
 
-  - [Eliminar Test]()
+  - [Editar Postulante](/casos_de_uso/casos_de_uso/administrador/editar_postulante/)
 
-#### [Gestión de Postulantes]()
+  - [Listar Postulante](/casos_de_uso/casos_de_uso/administrador/listar_postulantes/)
 
-  - [Crear Postulante]()
+  - [Eliminar Postulante](/casos_de_uso/casos_de_uso/administrador/eliminar_postulante/)
 
-  - [Editar Postulante]()
+  - [Crear Administrador](/casos_de_uso/casos_de_uso/administrador/crear_administrador/)
 
-  - [Listar Postulantes]()
+  - [Editar Administrador](/casos_de_uso/casos_de_uso/administrador/editar_administrador/)
 
-  - [Eliminar Postulante]()
+  - [Listar Administradores](/casos_de_uso/casos_de_uso/administrador/listar_administradores/)
 
-#### [Gestionar Administradores]()
+  - [Eliminar Administrador](/casos_de_uso/casos_de_uso/administrador/eliminar_administrador/)
 
-  - [Crear Administrador]()
+## [Tiempo](/casos_de_uso/casos_de_uso/tiempo)
 
-  - [Editar Administrador]()
+  - [Desactivar Postulante](/casos_de_uso/casos_de_uso/tiempo/desactivar_postulante/)
 
-  - [Listar Administradores]()
-
-  - [Eliminar Administrador]()
-
-## [Tiempo]()
-
-  - [Desactivar Postulante]()
-
-  - [Notificar?/Avisar?]()
+  - [Notificar?/Avisar?](/casos_de_uso/casos_de_uso/tiempo/)
