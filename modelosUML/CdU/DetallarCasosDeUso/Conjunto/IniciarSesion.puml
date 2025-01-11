@@ -1,20 +1,54 @@
-@startuml
-left to right direction
+startuml IniciarSesion
 
-actor "Ordenación" as ord
-actor "Administrador" as admin
-actor "RRHH" as RRHH
-actor "Calidad" as calidad
-actor "Profesor" as profesor
+hide empty description
 
-package "Iniciar Sesion" as inicioSesionPackage {
-    usecase "Iniciar Sesion" as inicioSesion
+state Usuario
+state IniciarSesion{
+    state " " as Estado1
+    state " " as Estado2
+    state " " as Estado3
+
+    [*] --> Estado1
+    note on link
+        El Usuario solicita iniciar sesión
+    end note
+    Estado1 -[#green]-> Estado2
+    note on link
+        El Sistema solicita
+        - Correo
+        - Contraseña
+    end note
+    Estado2 -[#green]-> Estado3
+    note on link
+        El Usuario introduce
+        - Correo
+        - Contraseña
+    end note
+    Estado3 --> [*]
+    note on link
+        El sistema identifica el rol
+    end note
+
+    Estado3 -[#red]-> Estado1
+    note on link
+        Datos incorrectos
+    end note
 }
+state rombo <<choice>>
+state Profesor
+state Admin
+state Ordenación
+state Calidad
+state RRHH
 
-ord ---> inicioSesion
-admin ---> inicioSesion
-RRHH ---> inicioSesion
-calidad --> inicioSesion
-profesor --> inicioSesion
+
+Usuario --> IniciarSesion
+IniciarSesion --> rombo
+
+rombo --> Profesor
+rombo --> Admin
+rombo --> Ordenación
+rombo --> Calidad
+rombo --> RRHH
 
 @enduml

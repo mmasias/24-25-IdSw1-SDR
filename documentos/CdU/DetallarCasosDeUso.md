@@ -12,8 +12,7 @@ El objetivo de este paso es **detallar los casos de uso** siguiendo las [pautas 
 
 | **Caso de Uso** | **Detalle** | **Codigo Fuente** |
 |-----------------|-------------|-------------------|
-| ![Iniciar Sesion](/images/modelosUML/CdU/Individuales/IniciarSesion.svg) | ![InicioSesion](/images/Prototipar/InicioSesion.svg) | [Código del detalle](/modelosUML/CdU/DetallarCasosDeUso/Conjunto/IniciarSesion.puml) <br>  [Código del CdU](/modelosUML/CdU/Individuales/InicioSesion.puml) |
-
+| ![Iniciar Sesion](/images/modelosUML/CdU/Individuales/IniciarSesion.svg) | ![InicioSesion](/images/modelosUML/CdU/DetallarCasosDeUso/Conjunto/InicioSesion.svg) | [Código del detalle](/modelosUML/CdU/DetallarCasosDeUso/Conjunto/IniciarSesion.puml) <br>  [Código del CdU](/modelosUML/CdU/Individuales/InicioSesion.puml) |
 
 
 ### 📂 Gestión de Datos del Profesorado
