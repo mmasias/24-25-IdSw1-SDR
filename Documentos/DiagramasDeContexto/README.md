@@ -66,8 +66,26 @@
 
 [Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/DiagramasDeContexto/DiagramaDeContextoProfesor.puml/ProfesorContexto.puml)
 
-### Diagrama de Contexto Consultar Reportes
+### Diagrama de Contexto Menu Rutinas y Ejercicios
 
 ![Modelo de Contexto Consultar Usuarios](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/DiagramasContexto/DiagramasDeContextoProfesor/DiagramaDeContextoMenuRutinasyEjerciciosProfesor.svg)
 
 [Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/DiagramasDeContexto/DiagramaDeContextoProfesor.puml/DiagramaDeContextoMenuRutinasyEjerciciosProfesor.puml)
+
+### Diagrama de Contexto Menu Retos
+
+![Modelo de Contexto Consultar Usuarios](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/DiagramasContexto/DiagramasDeContextoProfesor/DiagramaDeContextoMenuRetosProfesor.svg)
+
+[Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/DiagramasDeContexto/DiagramaDeContextoProfesor.puml/DiagramaDeContextoMenuRetosProfesor.puml)
+
+### Diagrama de Contexto Menu Perfil
+
+![Modelo de Contexto Consultar Usuarios](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/DiagramasContexto/DiagramasDeContextoProfesor/DiagramaDeContextoMenuPerfilProfesor.svg)
+
+[Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/DiagramasDeContexto/DiagramaDeContextoProfesor.puml/DiagramaDeContextoMenuPerfilProfesor.puml)
+
+### Diagrama de Contexto Menu Clasificacion
+
+![Modelo de Contexto Consultar Usuarios](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/DiagramasContexto/DiagramasDeContextoProfesor/DiagramaDeContextoMenuClasificacionProfesor.svg)
+
+[Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/DiagramasDeContexto/DiagramaDeContextoProfesor.puml/DiagramaDeContextoMenuClasificacionProfesor.puml)
