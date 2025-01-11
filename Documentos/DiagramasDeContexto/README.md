@@ -16,7 +16,7 @@
 
 ## Diagrama de Contexto del Administrador
 
-![Modelo de Contexto Administrador](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/47057da8a9598e8ad76d7e81a644e3e3da104b4e/Documentos/Imagenes/DiagramasContexto/DiagramasDeContextoAdministrador/AdministradorContexto.svg)
+![Modelo de Contexto Administrador](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/DiagramasContexto/DiagramasDeContextoAdministrador/ContextoAdministrador.svg)
 
 [Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/DiagramasDeContexto/DiagramasDeContextoAdministrador/AdministradorContexto.puml)
 
@@ -38,6 +38,18 @@
 ![Modelo de Contexto Consultar Usuarios](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/DiagramasContexto/DiagramasDeContextoAdministrador/DiagramaDeContextoConsultarRetosAdministrador.svg)
 
 [Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/DiagramasDeContexto/DiagramasDeContextoAdministrador/DiagramaDeContextoConsultarRetosAdministrador.puml)
+
+### Diagrama de Contexto Consultar Configuracion
+
+![Modelo de Contexto Consultar Usuarios](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/DiagramasContexto/DiagramasDeContextoAdministrador/DiagramaDeContextoConsultarConfiguracionAdministrador.svg)
+
+[Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/DiagramasDeContexto/DiagramasDeContextoAdministrador/DiagramaDeContextoConsultarConfiguracionAdministrador.puml)
+
+### Diagrama de Contexto Consultar Reportes
+
+![Modelo de Contexto Consultar Usuarios](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/DiagramasContexto/DiagramasDeContextoAdministrador/DiagramaDeContextoConsultarReportesAdministrador.svg)
+
+[Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/DiagramasDeContexto/DiagramasDeContextoAdministrador/DiagramaDeContextoConsultarReportesAdministrador.puml)
 ---
 
 ## Diagrama de Contexto del Alumno
