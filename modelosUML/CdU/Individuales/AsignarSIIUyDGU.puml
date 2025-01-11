@@ -1,6 +1,12 @@
 @startuml
 left to right direction
 
+skinparam usecase {
+    FontSize 20
+}
+
+skinparam nodesep 300
+
 actor "Técnico Calidad" as tec
 actor "Administrador" as admin
 
@@ -14,7 +20,6 @@ package "SIIU y DGU" as SIIUyDGUPackage {
 
     usecase "del PDI" as PDI
 
-    note "SIIU: Sistema de Información e Innovación Universitaria\nDGU: Dirección General de Universidades" as SIIUdef
 }
 
 asignarValor ..> SIIU
@@ -22,6 +27,6 @@ asignarValor ..> DGU
 SIIU ..> PDI
 DGU ..> PDI
 
-tec ---> asignarValor
-admin ---> asignarValor
+tec --> asignarValor
+admin --> asignarValor
 @enduml

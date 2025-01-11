@@ -1,6 +1,10 @@
 @startuml
 left to right direction
 
+skinparam usecase {
+    FontSize 20
+}
+
 actor "RRHH" as rrhh
 actor "Administrador" as admin
 

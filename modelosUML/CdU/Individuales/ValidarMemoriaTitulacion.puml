@@ -6,7 +6,7 @@ actor "Administrador" as admin
 
 package "Validación Memoria" as valMemPackage {
     usecase "Validar Cumplimiento" as valCumpli1
-    note right
+    note top
         Validar cumplimiento de
         compromisos de memoria con
         los valores de la titulación

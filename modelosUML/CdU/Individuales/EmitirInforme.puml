@@ -1,6 +1,20 @@
 @startuml
 left to right direction
 
+skinparam actor {
+    FontSize 20
+}
+
+skinparam usecase {
+    FontSize 28
+}
+
+skinparam package {
+    FontSize 20
+}
+
+skinparam nodesep 350
+
 actor "Técnico Calidad" as tec
 actor "Administrador" as admin
 

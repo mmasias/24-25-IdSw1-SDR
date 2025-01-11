@@ -1,6 +1,10 @@
 @startuml
 left to right direction
 
+skinparam usecase {
+    FontSize 20
+}
+
 actor "Profesores" as prof
 
 package "Datos Académicos" as datosAcadPackage {

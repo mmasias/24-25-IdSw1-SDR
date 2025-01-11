@@ -6,11 +6,11 @@ actor "Administrador" as admin
 
 package "Indicadores" as indicadores {
     usecase "Obtener indicadores" as obtenerIndicadores
-    note right of obtenerIndicadores
+    note top of obtenerIndicadores
     Para Sistema de Gestión
     end note
 }
 
-tec ---> obtenerIndicadores
-admin ---> obtenerIndicadores
+tec --> obtenerIndicadores
+admin --> obtenerIndicadores
 @enduml

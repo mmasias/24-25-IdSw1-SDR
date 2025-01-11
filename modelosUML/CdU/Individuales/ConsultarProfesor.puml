@@ -8,7 +8,7 @@ actor "Técnico Calidad" as tec
 
 package "Asignacion Docente" as porProfPackage {
     usecase "Consultar Asignación" as consProf
-    note right of consProf
+    note top of consProf
         Consultar asignación docente por
         profesor (créditos y asignaturas)
     end note

@@ -8,7 +8,7 @@ actor "Técnico Calidad" as tec
 
 package "Claustro Docente" as claustroPackage {
     usecase "Consultar Claustro" as consClaustro
-    note right of consClaustro
+    note top of consClaustro
         Listado PDI asociado
         a una titulación, anual,
         por semestre

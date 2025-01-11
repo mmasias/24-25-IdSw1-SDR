@@ -6,7 +6,7 @@ actor "Administrador" as admin
 
 package "Carga Docente" as cargaDocentePackage {
     usecase "Asignar Carga" as asignarCarga
-    note right of asignarCarga
+    note top of asignarCarga
         De asignaturas
         a profesores
     end note

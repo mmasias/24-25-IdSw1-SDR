@@ -6,7 +6,7 @@ actor "Administrador" as admin
 
 package "Valores" as valoresPackage {
     usecase "Asignar Valores" as asignarValores
-    note right of asignarValores
+    note top of asignarValores
         Consignados en Memoria
         por Titulación
     end note
