@@ -43,7 +43,7 @@ El objetivo de este paso es **detallar los casos de uso** siguiendo las [pautas 
 
 | **Caso de Uso**    | **Detalle**  | **Código Fuente**    |
 |--------------------|--------------|----------------------|
-| ![Introducir Datos Laborales](/images/modelosUML/CdU/Individuales/IntroducirDatosLaborales.svg)   | ![Introducir Datos Laborales](/images/modelosUML/CdU/DetallarCasosDeUso/RRHH/IntroducirDatosLaborales.svg)         | [Ver código CdU](/modelosUML/CdU/Individuales/IntroducirDatosLaborales.puml)<br>[Ver código Detalle](/modelosUML/CdU/DetallarCasosDeUso/RRHH/IntroducirDatosLaborales.puml)  |
+| ![Introducir Datos Laborales](/images/modelosUML/CdU/Individuales/IntroducirDatosLaborales.svg)   | ![Introducir Datos Laborales](/images/modelosUML/CdU/DetallarCasosDeUso/RRHH/IntroducirDatosLaborales.svg)         | [Ver código CdU](/modelosUML/CdU/Individuales/IntroducirDatosLaborales.puml)<br>[Ver código Detalle](/modelosUML/CdU/DetallarCasosDeUso/RRHH/IntroducirDatosLaborales.puml)         |
 | ![Introducir Datos Académicos](/images/modelosUML/CdU/Individuales/IntroducirDatosAcademicos.svg) | ![Introducir Datos Académicos](/images/modelosUML/CdU/DetallarCasosDeUso/Profesores/IntroducirDatosAcademicos.svg) | [Ver código CdU](/modelosUML/CdU/Individuales/IntroducirDatosAcademicos.puml)<br>[Ver código Detalle](/modelosUML/CdU/DetallarCasosDeUso/Profesores/IntroducirDatosAcademicos.puml) |
 
 ---
