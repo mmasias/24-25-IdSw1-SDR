@@ -20,6 +20,24 @@
 
 [Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/DiagramasDeContexto/DiagramasDeContextoAdministrador/AdministradorContexto.puml)
 
+
+### Diagrama de Contexto Consultar Usuarios
+
+![Modelo de Contexto Consultar Usuarios](../Imagenes/DiagramasContexto/DiagramasDeContextoAdminsitrador/DiagramaDeContextoConsultarUsuariosAdministrador.svg)
+
+[Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/DiagramasDeContexto/DiagramasDeContextoAdministrador/DiagramaDeContextoConsultarUsuariosAdministrador.puml)
+
+### Diagrama de Contexto Consultar Rutinas
+
+![Modelo de Contexto Consultar Usuarios](../Imagenes/DiagramasContexto/DiagramasDeContextoAdminsitrador/DiagramaDeContextoConsultarRutinasAdministrador.svg)
+
+[Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/DiagramasDeContexto/DiagramasDeContextoAdministrador/DiagramaDeContextoConsultarRutinasAdministrador.puml)
+
+### Diagrama de Contexto Consultar Retos
+
+![Modelo de Contexto Consultar Usuarios](../Imagenes/DiagramasContexto/DiagramasDeContextoAdminsitrador/DiagramaDeContextoConsultarRetosAdministrador.svg)
+
+[Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/DiagramasDeContexto/DiagramasDeContextoAdministrador/DiagramaDeContextoConsultarRetosAdministrador.puml)
 ---
 
 ## Diagrama de Contexto del Alumno
