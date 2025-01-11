@@ -1,0 +1,13 @@
+@startuml AlumnosCasosDeUso
+!define RECTANGLE(x) rectangle x
+
+RECTANGLE(NAVEGACION_MENUS)
+RECTANGLE(MENU_RETOS)
+
+RECTANGLE(SUBIENDO_EVIDENCIA_RETO)
+
+' === MENÚ RETOS ===
+MENU_RETOS --> SUBIENDO_EVIDENCIA_RETO : Subir evidencia de reto
+SUBIENDO_EVIDENCIA_RETO --> NAVEGACION_MENUS : Cambiar menú
+
+@enduml
