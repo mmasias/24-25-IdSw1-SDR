@@ -82,6 +82,8 @@
 | **Flujos alternativos y excepciones** | Si no hay guías registradas, el sistema muestra un mensaje indicando que no hay datos disponibles.<br> Si ocurre un error técnico al intentar cargar la información, el sistema notifica al Técnico de Calidad y permite reintentar la operación. |
 | **Precondiciones**                | El Técnico de Calidad debe tener acceso al sistema y permisos para visualizar el listado de estados de las guías docentes. |
 | **Postcondiciones**               | El Técnico de Calidad obtiene información actualizada sobre el estado de las guías docentes para realizar un seguimiento adecuado. |
+![](/images/modelosUML/VerListadoEstadosGD.svg)
+
 
 ### 8. Ver listado de los estados de las guías por grado
 | **Identificación de actores**      | Director de Grado |
@@ -91,6 +93,8 @@
 | **Flujos alternativos y excepciones** | Si no hay guías registradas para el grado, el sistema muestra un mensaje indicando que no hay datos disponibles.<br> Si ocurre un error técnico al intentar cargar la información, el sistema notifica al Director de Grado y permite reintentar la operación. |
 | **Precondiciones**                | El Director de Grado debe tener acceso al sistema y permisos para visualizar el listado de estados de las guías docentes de su grado correspondiente. |
 | **Postcondiciones**               | El Director de Grado obtiene información actualizada sobre el estado de las guías docentes de su grado para realizar un seguimiento adecuado. |
+![](/images/modelosUML/VerListadoEstadosGradoGD.svg)
+
 
 ### 9. Editar plantilla de la guía docente
 | **Identificación de actores**      | Técnico de Calidad |
@@ -100,6 +104,7 @@
 | **Flujos alternativos y excepciones** | Si el Técnico de Calidad intenta guardar cambios con un formato inválido, el sistema muestra un mensaje de error indicando el problema y permite corregirlo antes de guardar.<br> Si ocurre un error técnico durante el guardado, el sistema notifica al Técnico de Calidad y permite reintentar o cancelar la operación. |
 | **Precondiciones**                | El Técnico de Calidad debe tener acceso al sistema y permisos para editar plantillas de guías docentes. La plantilla seleccionada debe existir en el sistema. |
 | **Postcondiciones**               | La plantilla queda actualizada en el sistema y disponible para su uso en la creación de nuevas guías docentes. |
+![](/images/modelosUML/EditarPlantillaGD.svg)
 
 
 ### 10. Asignar Guía a Titulación
@@ -110,6 +115,7 @@
 | **Flujos alternativos y excepciones** | Si la guía ya está asignada a una titulación, el sistema notifica al Técnico de Calidad y solicita confirmación para cambiar la asignación.<br> Si ocurre un error, el sistema permite reintentar o cancelar la operación. |
 | **Precondiciones**                | Acceso al sistema de gestión de guías y titulaciones. |
 | **Postcondiciones**               | La guía queda asociada a la titulación seleccionada. |
+![](/images/modelosUML/AsignarATitulacionGD.svg)
 
 ---
 ### 11. Asignar Asignatura a Titulación
@@ -120,6 +126,7 @@
 | **Flujos alternativos y excepciones** | Si la asignatura ya está asociada a una titulación, el sistema notifica al Técnico de Calidad y solicita confirmación para actualizar la asignación.<br> Si ocurre un error, el sistema muestra un mensaje y permite reintentar o cancelar la operación. |
 | **Precondiciones**                | El Técnico de Calidad debe tener acceso al sistema de gestión académica y permisos para asignar asignaturas. |
 | **Postcondiciones**               | La asignatura queda correctamente asociada a la titulación seleccionada en el sistema. |
+![](/images/modelosUML/AsignarAsignaturaTitulacionGD.svg)
 
 
 ### 12. Asignar Guías Docentes a Profesor
@@ -130,3 +137,4 @@
 | **Flujos alternativos y excepciones** | Si la guía docente ya está asignada a otro profesor, el sistema muestra un mensaje de error indicando que la guía no está disponible para una nueva asignación.<br> Si no hay profesores disponibles, el sistema notifica al Técnico de Calidad y permite buscar o registrar un nuevo profesor antes de proceder. |
 | **Precondiciones**                | El Técnico de Calidad debe tener acceso al sistema y permisos para asignar guías docentes. Debe existir al menos un profesor registrado y una guía docente disponible en el sistema. |
 | **Postcondiciones**               | La guía docente queda asignada al profesor seleccionado, quien puede comenzar a trabajar en ella. |
+![](/images/modelosUML/AsignarProfesorGD.svg)
