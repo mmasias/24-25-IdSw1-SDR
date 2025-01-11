@@ -41,7 +41,7 @@ package "Gestión de Datos del Profesorado" {
         rectangle "Consulta de Datos" {
             package "Datos Personales" as datosPersonalesPackage {
                 usecase "Consultar Valores" as consultaValores
-                note right of consultaValores
+                note top of consultaValores
                     Consultar valores asignados
                     de contrato y otros datos
                     personales
@@ -59,7 +59,7 @@ package "Gestión de Datos del Profesorado" {
 
                     package "Por Profesor" as porProfPackage {
                         usecase "Consultar Asignación" as consProf
-                        note right of consProf
+                        note top of consProf
                             Consultar asignación docente por
                             profesor (créditos y asignaturas)
                         end note
@@ -69,7 +69,7 @@ package "Gestión de Datos del Profesorado" {
             
             package "Claustro Docente" as claustroPackage {
                 usecase "Consultar Claustro" as consClaustro
-                note right of consClaustro
+                note top of consClaustro
                     Listado PDI asociado
                     a una titulación, anual,
                     por semestre
@@ -139,7 +139,7 @@ package "Gestión de Datos del Profesorado" {
     tec --> porProfPackage
     tec --> valCumpli2
     
-    note right of admin
+    note top of admin
         El Administrador tiene
         acceso a todos los casos
         de uso de Técnico de Calidad,

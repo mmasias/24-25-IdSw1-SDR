@@ -8,7 +8,7 @@ package "Generación de Indicadores e Informes" {
     rectangle "Generación de Indicadores e Informes" {
       package "Indicadores" as indicadores {
         usecase "Obtener indicadores"
-        note right of "Obtener indicadores"
+        note top of "Obtener indicadores"
            Para Sistema de Gestión
         end note
       }
@@ -28,7 +28,7 @@ package "Generación de Indicadores e Informes" {
     tec --> indicadores
     tec --> informes
 
-    note right of admin
+    note top of admin
       El Administrador tiene
       acceso a todos los casos
       de uso de Departamentos
