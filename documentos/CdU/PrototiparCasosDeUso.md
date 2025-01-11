@@ -6,9 +6,11 @@
 ## 🎯 **Objetivo**
 El objetivo de este paso es **prototipar los casos de uso** siguiendo las [pautas teóricas](https://github.com/mmasias/IdSw1/blob/main/temario/contenidos/CdU.ICdU.md) de la asignatura.
 
-## 📋 **Casos de Uso y Prototipación**  
+---
 
-Debido a que este proyecto se divide en direfentes actores, en primer lugar se mostrara las pantallas de inicio correspondientes a cada actor, lo que reflejará las acciones que puede hacer cada uno de ellos.
+### Vista General por Actores
+
+Debido a que este proyecto tiene direfentes actores, en primer lugar se mostrara las pantallas de inicio correspondientes a cada actor, lo que reflejará las acciones que puede hacer cada uno de ellos.
 
 | **Actor**                | **Prototipo**                                      |
 |--------------------------|----------------------------------------------------|
@@ -19,6 +21,11 @@ Debido a que este proyecto se divide en direfentes actores, en primer lugar se m
 | Técnico de Calidad       | ![UsuarioCalidad](/images/modelosUML/MockUp/Calidad.png)  |
 | Ordenación Académica     | ![UsuarioOrdenacion](/images/modelosUML/MockUp/Ordenacion.png) |
 
+---
+
+### Casos de Uso
+
+A continuación se presentan los casos de uso prototipados.
 
 | **#** | **Caso de Uso**                                      | **Prototipo** |  
 |-------|------------------------------------------------------|---------------|
