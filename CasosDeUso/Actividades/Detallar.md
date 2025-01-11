@@ -82,6 +82,7 @@
 | **Flujos alternativos y excepciones** | Si no hay guías registradas, el sistema muestra un mensaje indicando que no hay datos disponibles.<br> Si ocurre un error técnico al intentar cargar la información, el sistema notifica al Técnico de Calidad y permite reintentar la operación. |
 | **Precondiciones**                | El Técnico de Calidad debe tener acceso al sistema y permisos para visualizar el listado de estados de las guías docentes. |
 | **Postcondiciones**               | El Técnico de Calidad obtiene información actualizada sobre el estado de las guías docentes para realizar un seguimiento adecuado. |
+
 ![](/images/modelosUML/VerListadoEstadosGD.svg)
 
 
