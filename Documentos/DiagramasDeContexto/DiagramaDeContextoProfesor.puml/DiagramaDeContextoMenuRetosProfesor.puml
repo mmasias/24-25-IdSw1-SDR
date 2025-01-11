@@ -1,0 +1,18 @@
+@startuml 
+!define RECTANGLE(x) rectangle x
+
+RECTANGLE(NAVEGACION_MENUS)
+RECTANGLE(MENU_RETOS) 
+
+' Submenús de "Retos"
+RECTANGLE(CREANDO_RETOS) 
+RECTANGLE(EDITANDO_RETOS) 
+
+CREANDO_RETOS --> NAVEGACION_MENUS : Cambiar menú
+EDITANDO_RETOS --> NAVEGACION_MENUS : Cambiar menú
+
+' Menú "Retos"
+MENU_RETOS --> CREANDO_RETOS : Crear retos
+MENU_RETOS --> EDITANDO_RETOS : Editar retos
+
+@enduml

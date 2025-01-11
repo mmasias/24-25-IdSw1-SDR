@@ -1,0 +1,43 @@
+@startuml ProfesorCasosDeUso
+!define RECTANGLE(x) rectangle x
+
+' Definición de actores y elementos principales
+RECTANGLE(USUARIO) #YellowGreen
+RECTANGLE(PROFESOR) #YellowGreen
+RECTANGLE(PAGINA_PRINCIPAL) #LightBlue
+RECTANGLE(NAVEGACION_MENUS) #SkyBlue
+
+' Menús principales
+RECTANGLE(MENU_RUTINAS_y_EJERCICIOS) #PaleGreen
+RECTANGLE(MENU_RETOS) #LightSalmon
+RECTANGLE(MENU_CLASIFICACION) #Gold
+RECTANGLE(MENU_PERFIL) #LightCoral
+
+' Relaciones principales
+USUARIO -[#Black]-> PROFESOR : Iniciar sesión
+PROFESOR -[#Black]-> PAGINA_PRINCIPAL : Ingresar al sistema
+PAGINA_PRINCIPAL -[#SkyBlue]-> NAVEGACION_MENUS : Navegar por menús
+
+' Navegación entre menús
+NAVEGACION_MENUS -[#PaleGreen]-> MENU_RUTINAS_y_EJERCICIOS : Cambiar a Rutinas y Ejercicios
+NAVEGACION_MENUS -[#LightSalmon]-> MENU_RETOS : Cambiar a Retos
+NAVEGACION_MENUS -[#Gold]-> MENU_CLASIFICACION : Cambiar a Clasificación
+NAVEGACION_MENUS -[#LightCoral]-> MENU_PERFIL : Cambiar a Perfil
+NAVEGACION_MENUS -[#LightBlue]-> PAGINA_PRINCIPAL : Regresar al inicio
+
+MENU_RUTINAS_y_EJERCICIOS -[#LightBlue]-> PAGINA_PRINCIPAL
+MENU_CLASIFICACION -[#LightBlue]-> PAGINA_PRINCIPAL
+MENU_PERFIL -[#LightBlue]-> PAGINA_PRINCIPAL
+MENU_RETOS -[#LightBlue]-> PAGINA_PRINCIPAL
+' Leyenda
+legend right
+  Leyenda:
+  - Color verde claro (#PaleGreen): Menús y acciones relacionadas con rutinas y ejercicios.
+  - Color salmón claro (#LightSalmon): Menús y acciones relacionadas con retos.
+  - Color dorado (#Gold): Menús y acciones relacionadas con clasificación.
+  - Color coral claro (#LightCoral): Menús y acciones relacionadas con perfil.
+  - Color azul claro (#SkyBlue): Navegación general entre menús o regreso a la página principal.
+  - Color amarillo verde (#YellowGreen): Acciones relacionadas con el inicio de sesión.
+end legend
+
+@enduml

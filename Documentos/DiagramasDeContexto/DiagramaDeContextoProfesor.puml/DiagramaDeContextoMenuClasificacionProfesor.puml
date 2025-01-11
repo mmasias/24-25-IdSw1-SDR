@@ -1,0 +1,15 @@
+@startuml
+!define RECTANGLE(x) rectangle x
+
+RECTANGLE(NAVEGACION_MENUS)
+RECTANGLE(MENU_CLASIFICACION)
+
+' Submenús de "Clasificación"
+RECTANGLE(VIENDO_ALUMNOS_CLASE)
+
+VIENDO_ALUMNOS_CLASE --> NAVEGACION_MENUS : Cambiar menú
+
+' Menú "Clasificación"
+MENU_CLASIFICACION -->  VIENDO_ALUMNOS_CLASE : Ver alumnos dentro de clases
+
+@enduml
