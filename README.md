@@ -9,8 +9,18 @@ A continuacion se presentan los enlaces a los distintos diagramas realizados:
 
 ### Diagrama de Entidades 
 ![Diagrama de Entidades](https://github.com/miguelgomez75/24-25-IdSw1-SDR/blob/main/images/modelosUML%20-%20SVG/4%C2%AA_Iteraci%C3%B3n/DdEntidades.svg)
-### Diagrama de Estados 
-![Diagrama de Estados](https://github.com/miguelgomez75/24-25-IdSw1-SDR/blob/main/images/modelosUML%20-%20SVG/3%C2%AA_Iteraci%C3%B3n/DdEstados.svg)
+### Diagrama de Estados de los Ajustes
+![Diagrama de Estado de los Ajustes](https://github.com/miguelgomez75/24-25-IdSw1-SDR/blob/main/images/modelosUML%20-%20SVG/5%C2%AA_Iteracion/DdEstados_Ajustes.svg)
+
+### Diagrama de Estados de las Comunidades
+![Diagrama de Estados de las Comunidades](https://github.com/miguelgomez75/24-25-IdSw1-SDR/blob/main/images/modelosUML%20-%20SVG/5%C2%AA_Iteracion/DdEstados_Comunidades.svg)
+
+### Diagrama de Estados de las Etiquetas
+![Diagrama de Estados de las Etiquetas](https://github.com/miguelgomez75/24-25-IdSw1-SDR/blob/main/images/modelosUML%20-%20SVG/5%C2%AA_Iteracion/DdEstados_Etiquetas.svg)
+
+### Diagrama de Estados del Perfil
+![Diagrama de Estados del Perfil](https://github.com/miguelgomez75/24-25-IdSw1-SDR/blob/main/images/modelosUML%20-%20SVG/5%C2%AA_Iteracion/DdEstados_Perfil.svg)
+
 ### Diagrama de Clases (Reemplazar por un diagrama de objetos?)
 ![Diagrama de Clases](https://github.com/miguelgomez75/24-25-IdSw1-SDR/blob/main/images/modelosUML%20-%20SVG/4%C2%AA_Iteraci%C3%B3n/DdClases.svg)
 
@@ -30,8 +40,17 @@ A continuacion se presentan los enlaces a los distintos diagramas realizados:
 ### Diagrama de casos de uso del moderador
 ![Diagrama de Casos de Uso de Moderador](https://github.com/miguelgomez75/24-25-IdSw1-SDR/blob/main/images/modelosUML%20-%20SVG/4%C2%AA_Iteraci%C3%B3n/DdCdUso_Moderador.svg)
 
-### Diagrama de Contexto 
-![Diagrama de Contexto](https://github.com/miguelgomez75/24-25-IdSw1-SDR/blob/main/images/modelosUML%20-%20SVG/3%C2%AA_Iteraci%C3%B3n/DdContexto.svg)
+### Diagrama de Contexto del Moderador
+![Diagrama de Contexto del Moderador](https://github.com/miguelgomez75/24-25-IdSw1-SDR/blob/main/images/modelosUML%20-%20SVG/5%C2%AA_Iteracion/DdContexto_Mod.svg)
+
+### Diagrama de Contexto de la APP
+![Diagrama de Contexto de la APP](https://github.com/miguelgomez75/24-25-IdSw1-SDR/blob/main/images/modelosUML%20-%20SVG/5%C2%AA_Iteracion/DdContexto_App.svg)
+
+### Diagrama de Contexto del Usuario No Registrado
+![Diagrama de Contesto del Usuario No Registrado](https://github.com/miguelgomez75/24-25-IdSw1-SDR/blob/main/images/modelosUML%20-%20SVG/5%C2%AA_Iteracion/DdContexto_UsuarioNR.svg)
+
+### Diagrama de Contexto del Usuario Registrado
+![Diagrama de Contexto del Usuario Registrado](https://github.com/miguelgomez75/24-25-IdSw1-SDR/blob/main/images/modelosUML%20-%20SVG/5%C2%AA_Iteracion/DdContexto_UsuarioR.svg)
 
 ### [Detallado de casos de uso](https://github.com/miguelgomez75/24-25-IdSw1-SDR/blob/main/Documentación/Detallado%20de%20CdU/Detallado_de_CdU.md)
 
