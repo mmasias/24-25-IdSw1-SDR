@@ -6,7 +6,7 @@
 ## 🎯 **Objetivo**
 El objetivo de este paso es **detallar los casos de uso** siguiendo las [pautas teóricas](https://github.com/mmasias/IdSw1/blob/main/temario/contenidos/Cdu.dCdU.md#c%C3%B3mo) de la asignatura.
 
-### 🗝️ Inicio de Sesión
+## 🗝️ Inicio de Sesión
 
 | **Caso de Uso** | **Detalle** |
 |-----------------|-------------|
@@ -14,9 +14,9 @@ El objetivo de este paso es **detallar los casos de uso** siguiendo las [pautas 
 
 ---
 
-### 📂 Gestión de Datos del Profesorado
+## 📂 Gestión de Datos del Profesorado
 
-#### Modificación y Validación
+### Modificación y Validación
 
 | **Caso de Uso**  | **Detalle**        |
 |------------------|--------------------|
@@ -25,7 +25,7 @@ El objetivo de este paso es **detallar los casos de uso** siguiendo las [pautas 
 | ![Validar Cumplimiento](/images/modelosUML/CdU/Individuales/ValidarValores.svg) | ![Validar Cumplimiento](/images/modelosUML/CdU/DetallarCasosDeUso/Ordenacion/ValidarCumplimiento.svg) |
 | ![Validar Cumplimiento](/images/modelosUML/CdU/Individuales/ValidarMemoriaTitulacion.svg) | ![Validar Cumplimiento](/images/modelosUML/CdU/DetallarCasosDeUso/TecnicoCalidad/ValidarCumplimiento.svg) |
 
-#### Consulta de Datos
+### Consulta de Datos
 
 | **Caso de Uso**   | **Detalle**    |                                      
 |-------------------|----------------|
@@ -34,7 +34,7 @@ El objetivo de este paso es **detallar los casos de uso** siguiendo las [pautas 
 | ![Consultar Varios](/images/modelosUML/CdU/Individuales/ConsultarVarios.svg) | ![Consultar Varios](/images/modelosUML/CdU/DetallarCasosDeUso/Profesores/ConsultarAsignacionVarios.svg) |
 | ![Consultar Datos Personales](/images/modelosUML/CdU/Individuales/ConsultarDatosPersonales.svg) | ![Consultar Datos Personales](/images/modelosUML/CdU/DetallarCasosDeUso/Profesores/ConsultarValores.svg) |
 
-#### Introducción de Datos
+### Introducción de Datos
 
 | **Caso de Uso**    | **Detalle**  |
 |--------------------|--------------|
@@ -43,15 +43,15 @@ El objetivo de este paso es **detallar los casos de uso** siguiendo las [pautas 
 
 ---
 
-### 📚 Gestión de Carga Docente
+## 📚 Gestión de Carga Docente
 
-#### Revisión de Cumplimiento
+### Revisión de Cumplimiento
 
 | **Caso de Uso**     | **Detalle**   |   
 |---------------------|---------------|
 | ![Revisar Listado Profesores](/images/modelosUML/CdU/Individuales/RevisarListadoProfesores.svg) | ![Revisar Listado Profesores](/images/modelosUML/CdU/DetallarCasosDeUso/Conjunto/RevisarListadoProfesores.svg) |
 
-#### Asignaciones
+### Asignaciones
 
 | **Caso de Uso**    | **Detalle**   |
 |--------------------|---------------|
@@ -61,7 +61,7 @@ El objetivo de este paso es **detallar los casos de uso** siguiendo las [pautas 
 
 ---
 
-### 📊 Generación de Indicadores e Informes
+## 📊 Generación de Indicadores e Informes
 
 | **Caso de Uso**        | **Detalle**    |
 |------------------------|----------------|
