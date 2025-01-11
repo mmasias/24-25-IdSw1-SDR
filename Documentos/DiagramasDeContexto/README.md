@@ -54,7 +54,7 @@
 
 ## Diagrama de Contexto del Alumno
 
-![Modelo de Contexto Alumno](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/DiagramasContexto/DiagramasDeContextoAlumno/AlumnosContexto.svg)
+![Modelo de Contexto Alumno](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/DiagramasContexto/DiagramasDeContextoAlumno/AlumnoContexto.svg)
 
 [Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/DiagramasDeContexto/DiagramasDeContextoAlumnos/AlumnosContexto.puml)
 
