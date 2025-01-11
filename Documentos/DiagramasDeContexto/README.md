@@ -16,7 +16,7 @@
 
 ## Diagrama de Contexto del Administrador
 
-![Modelo de Contexto Administrador](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/DiagramasContexto/DiagramasDeContextoAdministrador/ContextoAdministrador.svg)
+![Modelo de Contexto Administrador](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/DiagramasContexto/DiagramasDeContextoAdministrador/AdministradorContexto.svg)
 
 [Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/DiagramasDeContexto/DiagramasDeContextoAdministrador/AdministradorContexto.puml)
 
