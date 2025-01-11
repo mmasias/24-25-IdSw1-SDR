@@ -51,14 +51,14 @@
 ![](/images/modelosUML/EditarContenidoGD.svg)
 
 ### 5. Revisar Contenido
-| **Identificación de actores**      | Director de Grado |
-|------------------------------------|-------------------|
-| **Escenario**                      | El Director de Grado revisa el contenido de una guía docente y decide si aprueba o rechaza su publicación, asegurando que el material cumple con los estándares académicos establecidos. |
-| **Flujo de eventos principal**     | 1. El Director de Grado inicia sesión en el sistema de gestión de guías.<br> 2. El sistema muestra la lista de guías docentes pendientes de aprobación.<br> 3. El Director de Grado selecciona una guía para revisar su contenido.<br> 4. El sistema despliega el contenido completo de la guía para su revisión.<br> 5. El Director de Grado elige aprobar el contenido.<br> 6. El sistema marca la guía como aprobada y la prepara para publicación. |
-| **Flujos alternativos y excepciones** | Si el Director de Grado decide rechazar el contenido, el sistema permite registrar comentarios de retroalimentación para el profesor y marca la guía como "Requiere Revisión".<br> Si ocurre un error en la carga del contenido, el sistema notifica al Director de Grado y cancela la operación. |
-| **Precondiciones**                | Acceso al sistema y a las guías pendientes de aprobación. El contenido debe estar completo y listo para revisión. |
-| **Postcondiciones**               | La guía queda aprobada y lista para publicación, o se marca como "Requiere Revisión" con comentarios para ajustes. |
 
+| **Identificación de actores**                          | **Director de Grado**                                                                 |
+|--------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Escenario**                        | El Director de Grado revisa el contenido de una guía docente y decide si aprueba o rechaza su publicación, asegurando que cumple estándares académicos. |
+| **Flujo de eventos principal**       | 1. El Director de Grado inicia sesión en el sistema de gestión de guías.<br> 2. El sistema muestra la lista de guías pendientes de aprobación.<br> 3. Selecciona una guía para revisar su contenido.<br> 4. El sistema despliega el contenido completo de la guía.<br> 5. Decide aprobar el contenido.<br> 6. El sistema marca la guía como aprobada y la prepara para publicación. |
+| **Flujos alternativos y excepciones**| - Si el Director de Grado decide rechazar el contenido, el sistema permite registrar comentarios de retroalimentación y marca la guía como "Requiere Revisión".<br> - Si ocurre un error en la carga del contenido, el sistema notifica al Director de Grado y cancela la operación. |
+| **Precondiciones**                   | - Acceso al sistema y a las guías pendientes de aprobación.<br> - El contenido debe estar completo y listo para revisión.                      |
+| **Postcondiciones**                  | - La guía queda aprobada y lista para publicación.<br> - O se marca como "Requiere Revisión" con comentarios para ajustes.                      |
 
 ![](/images/modelosUML/RevisarContenidoGD.svg)
 
@@ -75,10 +75,32 @@
 ![](/images/modelosUML/GenerarVersiónGD.svg)
 
 ### 7. Ver listado de los estados de las guías docentes
+| **Identificación de actores**      | Técnico de Calidad |
+|------------------------------------|--------------------|
+| **Escenario**                      | El Técnico de Calidad solicita al sistema visualizar los estados en los que se encuentran las guías docentes, para mantener la trazabilidad de los procesos y tomar decisiones informadas. |
+| **Flujo de eventos principal**     | 1. El Técnico de Calidad accede al sistema de gestión de guías.<br> 2. El sistema presenta el menú principal con las opciones disponibles.<br> 3. El Técnico de Calidad selecciona la opción "Ver listado de estados de las guías docentes".<br> 4. El sistema visualiza una tabla con los siguientes datos para cada guía docente:<br>&nbsp;&nbsp;&nbsp;&nbsp;- Título de la guía<br>&nbsp;&nbsp;&nbsp;&nbsp;- Estado actual (aprobado, devuelto para modificación, pendiente, etc.)<br>&nbsp;&nbsp;&nbsp;&nbsp;- Responsable actual<br>&nbsp;&nbsp;&nbsp;&nbsp;- Fecha de última modificación.<br> 5. El Técnico de Calidad filtra o ordena la información según sea necesario. |
+| **Flujos alternativos y excepciones** | Si no hay guías registradas, el sistema muestra un mensaje indicando que no hay datos disponibles.<br> Si ocurre un error técnico al intentar cargar la información, el sistema notifica al Técnico de Calidad y permite reintentar la operación. |
+| **Precondiciones**                | El Técnico de Calidad debe tener acceso al sistema y permisos para visualizar el listado de estados de las guías docentes. |
+| **Postcondiciones**               | El Técnico de Calidad obtiene información actualizada sobre el estado de las guías docentes para realizar un seguimiento adecuado. |
 
 ### 8. Ver listado de los estados de las guías por grado
+| **Identificación de actores**      | Director de Grado |
+|------------------------------------|--------------------|
+| **Escenario**                      | El Director de Grado solicita al sistema visualizar los estados en los que se encuentran las guías docentes de su grado, para asegurar la trazabilidad y gestionar adecuadamente el proceso de aprobación. |
+| **Flujo de eventos principal**     | 1. El Director de Grado accede al sistema de gestión de guías.<br> 2. El sistema presenta el menú principal con las opciones disponibles.<br> 3. El Director de Grado selecciona la opción "Ver listado de estados de las guías de mi grado".<br> 4. El sistema visualiza una tabla con los siguientes datos para cada guía docente del grado:<br>&nbsp;&nbsp;&nbsp;&nbsp;- Título de la guía<br>&nbsp;&nbsp;&nbsp;&nbsp;- Estado actual (aprobado, devuelto para modificación, pendiente, etc.)<br>&nbsp;&nbsp;&nbsp;&nbsp;- Responsable actual<br>&nbsp;&nbsp;&nbsp;&nbsp;- Fecha de última modificación.<br> 5. El Director de Grado filtra o ordena la información según los criterios necesarios. |
+| **Flujos alternativos y excepciones** | Si no hay guías registradas para el grado, el sistema muestra un mensaje indicando que no hay datos disponibles.<br> Si ocurre un error técnico al intentar cargar la información, el sistema notifica al Director de Grado y permite reintentar la operación. |
+| **Precondiciones**                | El Director de Grado debe tener acceso al sistema y permisos para visualizar el listado de estados de las guías docentes de su grado correspondiente. |
+| **Postcondiciones**               | El Director de Grado obtiene información actualizada sobre el estado de las guías docentes de su grado para realizar un seguimiento adecuado. |
 
 ### 9. Editar plantilla de la guía docente
+| **Identificación de actores**      | Técnico de Calidad |
+|------------------------------------|--------------------|
+| **Escenario**                      | El Técnico de Calidad solicita al sistema realizar modificaciones en el formato de la plantilla de una guía docente para garantizar que se ajusta a las normas académicas y organizativas. |
+| **Flujo de eventos principal**     | 1. El Técnico de Calidad accede al sistema de gestión de plantillas.<br> 2. El sistema presenta una lista de plantillas disponibles para las guías docentes.<br> 3. El Técnico de Calidad selecciona la plantilla que desea editar.<br> 4. El sistema muestra el contenido editable de la plantilla, incluyendo secciones como introducción, objetivos, metodología, etc.<br> 5. El Técnico de Calidad realiza las modificaciones necesarias en las secciones de la plantilla.<br> 6. El sistema valida los cambios realizados para garantizar que cumplen con los formatos requeridos.<br> 7. El Técnico de Calidad guarda los cambios realizados en la plantilla.<br> 8. El sistema actualiza la plantilla y notifica al Técnico de Calidad que los cambios se han guardado correctamente. |
+| **Flujos alternativos y excepciones** | Si el Técnico de Calidad intenta guardar cambios con un formato inválido, el sistema muestra un mensaje de error indicando el problema y permite corregirlo antes de guardar.<br> Si ocurre un error técnico durante el guardado, el sistema notifica al Técnico de Calidad y permite reintentar o cancelar la operación. |
+| **Precondiciones**                | El Técnico de Calidad debe tener acceso al sistema y permisos para editar plantillas de guías docentes. La plantilla seleccionada debe existir en el sistema. |
+| **Postcondiciones**               | La plantilla queda actualizada en el sistema y disponible para su uso en la creación de nuevas guías docentes. |
+
 
 ### 10. Asignar Guía a Titulación
 | **Identificación de actores**      | Técnico de Calidad |
@@ -101,3 +123,10 @@
 
 
 ### 12. Asignar Guías Docentes a Profesor
+| **Identificación de actores**      | Técnico de Calidad |
+|------------------------------------|--------------------|
+| **Escenario**                      | El Técnico de Calidad solicita al sistema asignar una guía docente a un profesor para garantizar que este pueda trabajar en su contenido. |
+| **Flujo de eventos principal**     | 1. El Técnico de Calidad accede al sistema de gestión de guías docentes.<br> 2. El sistema presenta una lista de guías docentes disponibles para asignar.<br> 3. El Técnico de Calidad selecciona una guía docente de la lista.<br> 4. El sistema muestra una lista de profesores disponibles.<br> 5. El Técnico de Calidad selecciona un profesor al cual asignar la guía.<br> 6. El sistema valida la asignación y registra la relación entre el profesor y la guía.<br> 7. El sistema notifica al Técnico de Calidad que la asignación se ha realizado exitosamente. |
+| **Flujos alternativos y excepciones** | Si la guía docente ya está asignada a otro profesor, el sistema muestra un mensaje de error indicando que la guía no está disponible para una nueva asignación.<br> Si no hay profesores disponibles, el sistema notifica al Técnico de Calidad y permite buscar o registrar un nuevo profesor antes de proceder. |
+| **Precondiciones**                | El Técnico de Calidad debe tener acceso al sistema y permisos para asignar guías docentes. Debe existir al menos un profesor registrado y una guía docente disponible en el sistema. |
+| **Postcondiciones**               | La guía docente queda asignada al profesor seleccionado, quien puede comenzar a trabajar en ella. |
