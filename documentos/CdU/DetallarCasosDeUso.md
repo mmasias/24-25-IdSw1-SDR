@@ -12,7 +12,6 @@ El objetivo de este paso es **detallar los casos de uso** siguiendo las [pautas 
 |-----------------|-------------|
 | ![Iniciar Sesion](/images/modelosUML/CdU/Individuales/IniciarSesion.svg) | ![Iniciar Sesion](/images/modelosUML/CdU/DetallarCasosDeUso/Conjunto/IniciarSesion.svg) |
 
----
 
 ## 📂 Gestión de Datos del Profesorado
 
@@ -41,7 +40,6 @@ El objetivo de este paso es **detallar los casos de uso** siguiendo las [pautas 
 | ![Introducir Datos Laborales](/images/modelosUML/CdU/Individuales/IntroducirDatosLaborales.svg) | ![Introducir Datos Laborales](/images/modelosUML/CdU/DetallarCasosDeUso/RRHH/IntroducirDatosLaborales.svg) |
 | ![Introducir Datos Académicos](/images/modelosUML/CdU/Individuales/IntroducirDatosAcademicos.svg) | ![Introducir Datos Académicos](/images/modelosUML/CdU/DetallarCasosDeUso/Profesores/IntroducirDatosAcademicos.svg) |
 
----
 
 ## 📚 Gestión de Carga Docente
 
@@ -59,7 +57,6 @@ El objetivo de este paso es **detallar los casos de uso** siguiendo las [pautas 
 | ![Asignar Valores](/images/modelosUML/CdU/Individuales/AsignarValores.svg) | ![Asignar Valores](/images/modelosUML/CdU/DetallarCasosDeUso/TecnicoCalidad/AsignarValores.svg) |
 | ![Asignar SIIU y DGU](/images/modelosUML/CdU/Individuales/AsignarSIIUyDGU.svg) | ![Asignar SIIU y DGU](/images/modelosUML/CdU/DetallarCasosDeUso/TecnicoCalidad/AsignarSIIUyDGU.svg) |
 
----
 
 ## 📊 Generación de Indicadores e Informes
 
