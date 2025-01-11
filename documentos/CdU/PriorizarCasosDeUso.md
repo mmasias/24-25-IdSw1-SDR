@@ -13,25 +13,25 @@ El orden ha sido establecido por el cliente según la importancia y necesidad de
 ## 📋 **Casos de Uso y Priorización**
 
 
-| **#** | **Caso de Uso**                                      | **Prioridad** |  
-|-------|------------------------------------------------------|---------------|  
-| 1 | **Introducir** Datos Laborales (contrato, horas, temporalidad y categoría profesional)             |    🔴 Alta    |
-| 2 | **Asignar** Carga Docente de Asignaturas a Profesores                                              |    🔴 Alta    |
-| 3 | **Revisar** listado de Profesores cuya Carga Docente no se ajusta al Contrato                      |    🔴 Alta    |
-| 4 | **Validar** cumplimiento de compromisos de Memoria con los valores de la Titulación                |    🔴 Alta    |
-| 5 | **Emitir** Informe del Profesorado (Global o por Titulación)                                       |    🔴 Alta    |
-| 6 | **Consultar** Asignación Docente (por titulación, curso y semestre)                                |    🟠 Media   |
-| 7 | **Asignar** valores consignados en Memoria por Titulación                                          |    🟠 Media   |
-| 8 | **Obtener** Indicadores para Sistema de Gestión                                                    |    🟠 Media   |
-| 9 | **Modificar** los Datos introducidos por el Profesorado                                            |    🟠 Media   |
-| 10 | **Validar** los Datos introducidos por el Profesorado                                             |    🟠 Media   |
-| 11 | **Iniciar Sesion** en la plataforma                                                               |    🟠Media    |
-| 12 | **Introducir** Datos Académicos (experiencia docente, profesional, investigadora, sexenios, acreditaciones, movilidad y titulación profesional) |    🟢 Baja    |
-| 13 | **Validar** cumplimiento de valores consignados en la Memoria por Titulación                      |    🟢 Baja    |
-| 14 | **Asignar** valor de Información a SIIU y DGU del PDI                                             |    🟢 Baja    |
-| 15 | **Consultar** valores asignados de Contrato y otros Datos Personales                              |    🟢 Baja    |
-| 16 | **Consultar** Claustro Docente (listado PDI asociado a una titulación)                            |    🟢 Baja    |
-| 17 | **Consultar** Asignación Docente por Profesor (créditos y asignaturas)                            |    🟢 Baja    |
+| **#** | **Caso de Uso**                                                                 | **Prioridad** |  
+|-------|---------------------------------------------------------------------------------|---------------|  
+| 1 | **Introducir** Datos Laborales                                                      |    🔴 Alta    |
+| 2 | **Asignar** Carga Docente de Asignaturas a Profesores                               |    🔴 Alta    |
+| 3 | **Revisar** listado de Profesores cuya Carga Docente no se ajusta al Contrato       |    🔴 Alta    |
+| 4 | **Validar** cumplimiento de compromisos de Memoria con los valores de la Titulación |    🔴 Alta    |
+| 5 | **Emitir** Informe del Profesorado (Global o por Titulación)                        |    🔴 Alta    |
+| 6 | **Consultar** Asignación Docente (por titulación, curso y semestre)                 |    🟠 Media   |
+| 7 | **Asignar** valores consignados en Memoria por Titulación                           |    🟠 Media   |
+| 8 | **Obtener** Indicadores para Sistema de Gestión                                     |    🟠 Media   |
+| 9 | **Modificar** los Datos introducidos por el Profesorado                             |    🟠 Media   |
+| 10 | **Validar** los Datos introducidos por el Profesorado                              |    🟠 Media   |
+| 11 | **Iniciar Sesión** en la plataforma                                                |    🟠Media    |
+| 12 | **Introducir** Datos Académicos                                                    |    🟢 Baja    |
+| 13 | **Validar** cumplimiento de valores consignados en la Memoria por Titulación       |    🟢 Baja    |
+| 14 | **Asignar** valor de Información a SIIU y DGU del PDI                              |    🟢 Baja    |
+| 15 | **Consultar** valores asignados de Contrato y otros Datos Personales               |    🟢 Baja    |
+| 16 | **Consultar** Claustro Docente (listado PDI asociado a una titulación)             |    🟢 Baja    |
+| 17 | **Consultar** Asignación Docente por Profesor (créditos y asignaturas)             |    🟢 Baja    |
  
 
 ---

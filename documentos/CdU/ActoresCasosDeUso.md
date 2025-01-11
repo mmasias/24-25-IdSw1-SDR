@@ -23,22 +23,22 @@ El objetivo de este paso es **encontrar actores y casos de uso** siguiendo las [
 
 ## 📋 **Casos de Uso y Actores Involucrados**
 
-| Caso de Uso                                                                                                                                     | Profesores | RRHH | Ordenación | Técnico Calidad | Administrador |
-|-------------------------------------------------------------------------------------------------------------------------------------------------|------------|------|------------|-----------------|---------------|
-| **Inicio de sesion en la plataforma** | ✅    |   ✅   |    ✅    |    ✅    |    ✅    |
-| **Introducir** Datos Académicos (experiencia docente, profesional, investigadora, sexenios, acreditaciones, movilidad y titulación profesional) | ✅         |      |            |                 |               |
-| **Consultar** valores asignados de Contrato y otros Datos Personales                                                                            | ✅         |      |            |                 |               |
-| **Consultar** Asignación Docente (por titulación, curso y semestre)                                                                             | ✅         |      |            |                 |               |
-| **Validar** los Datos introducidos por el Profesorado                                                                                           |            | ✅   |            |                 | ✅            |
-| **Modificar** los Datos introducidos por el Profesorado                                                                                         |            | ✅   |            |                 | ✅            |
-| **Introducir** Datos Laborales (contrato, horas, temporalidad y categoría profesional)                                                          |            | ✅   |            |                 | ✅            |
-| **Revisar** listado de Profesores cuya Carga Docente no se ajusta al Contrato                                                                   |            | ✅   | ✅         |                 | ✅           |
-| **Consultar** Claustro Docente (listado PDI asociado a una titulación)                                                                          |            | ✅   | ✅         | ✅              | ✅           |
-| **Consultar** Asignación Docente por Profesor (créditos y asignaturas)                                                                          |            | ✅   | ✅         | ✅              | ✅           |
-| **Asignar** Carga Docente de Asignaturas a Profesores                                                                                           |            |      | ✅         |                 | ✅            |
-| **Validar** cumplimiento de valores consignados en la Memoria por Titulación                                                                    |            |      | ✅         |                 | ✅            |
-| **Asignar** valores consignados en Memoria por Titulación                                                                                       |            |      |            | ✅              | ✅            |
-| **Asignar** valor de Información a SIIU y DGU del PDI                                                                                           |            |      |            | ✅              | ✅            |
-| **Validar** cumplimiento de compromisos de Memoria con los valores de la Titulación                                                             |            |      |            | ✅              | ✅            |
-| **Obtener** Indicadores para Sistema de Gestión                                                                                                 |            |      |            | ✅              | ✅            |
-| **Emitir** Informe del Profesorado (Global o por Titulación)                                                                                    |            |      |            | ✅              | ✅            |
+| Caso de Uso                                                                         | Profesores | RRHH | Ordenación | Técnico Calidad | Administrador |
+|-------------------------------------------------------------------------------------|------------|------|------------|-----------------|---------------|
+| **Iniciar Sesión** en la plataforma                                                 | ✅         | ✅  | ✅         | ✅              | ✅           |
+| **Introducir** Datos Académicos                                                     | ✅         |      |            |                 |               |
+| **Consultar** valores asignados de Contrato y otros Datos Personales                | ✅         |      |            |                 |               |
+| **Consultar** Asignación Docente (por titulación, curso y semestre)                 | ✅         |      |            |                 |               |
+| **Validar** los Datos introducidos por el Profesorado                               |            | ✅   |            |                 | ✅            |
+| **Modificar** los Datos introducidos por el Profesorado                             |            | ✅   |            |                 | ✅            |
+| **Introducir** Datos Laborales                                                      |            | ✅   |            |                 | ✅            |
+| **Revisar** listado de Profesores cuya Carga Docente no se ajusta al Contrato       |            | ✅   | ✅         |                 | ✅           |
+| **Consultar** Claustro Docente (listado PDI asociado a una titulación)              |            | ✅   | ✅         | ✅              | ✅           |
+| **Consultar** Asignación Docente por Profesor (créditos y asignaturas)              |            | ✅   | ✅         | ✅              | ✅           |
+| **Asignar** Carga Docente de Asignaturas a Profesores                               |            |      | ✅         |                 | ✅            |
+| **Validar** cumplimiento de valores consignados en la Memoria por Titulación        |            |      | ✅         |                 | ✅            |
+| **Asignar** valores consignados en Memoria por Titulación                           |            |      |            | ✅              | ✅            |
+| **Asignar** valor de Información a SIIU y DGU del PDI                               |            |      |            | ✅              | ✅            |
+| **Validar** cumplimiento de compromisos de Memoria con los valores de la Titulación |            |      |            | ✅              | ✅            |
+| **Obtener** Indicadores para Sistema de Gestión                                     |            |      |            | ✅              | ✅            |
+| **Emitir** Informe del Profesorado (Global o por Titulación)                        |            |      |            | ✅              | ✅            |

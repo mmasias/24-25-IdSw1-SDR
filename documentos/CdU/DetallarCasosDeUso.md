@@ -8,11 +8,13 @@ El objetivo de este paso es **detallar los casos de uso** siguiendo las [pautas 
 
 ---
 
-### 🗝️ Caso de uso para todos los actores
+### 🗝️ Inicio de Sesión
 
 | **Caso de Uso** | **Detalle** | **Codigo Fuente** |
 |-----------------|-------------|-------------------|
 | ![Iniciar Sesion](/images/modelosUML/CdU/Individuales/IniciarSesion.svg) | ![InicioSesion](/images/modelosUML/CdU/DetallarCasosDeUso/Conjunto/InicioSesion.svg) | [Código del detalle](/modelosUML/CdU/DetallarCasosDeUso/Conjunto/IniciarSesion.puml) <br>  [Código del CdU](/modelosUML/CdU/Individuales/InicioSesion.puml) |
+
+---
 
 
 ### 📂 Gestión de Datos del Profesorado
