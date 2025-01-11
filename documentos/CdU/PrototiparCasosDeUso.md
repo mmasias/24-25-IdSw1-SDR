@@ -6,19 +6,33 @@
 ## 🎯 **Objetivo**
 El objetivo de este paso es **prototipar los casos de uso** siguiendo las [pautas teóricas](https://github.com/mmasias/IdSw1/blob/main/temario/contenidos/CdU.ICdU.md) de la asignatura.
 
-## 📋 **Casos de Uso, Prototipación y Explicación**  
+## 📋 **Casos de Uso y Prototipación**  
 
 Debido a que este proyecto se divide en direfentes actores, en primer lugar se mostrara las pantallas de inicio correspondientes a cada actor, lo que reflejará las acciones que puede hacer cada uno de ellos.
 
-| **Descripción** | **MockUP** |
-|-----------------|------------|
-| Inicio de sesión para todos los roles | ![InicioSesion](/images/modelosUML/MockUp/Login.svg) |
-| Pantalla de inicio para el usuario Admin | ![UsuarioAdmin](/images/modelosUML/MockUp/UsuarioAdmin.svg) |
-| Pantalla de inicio para el usuario RRHH | ![UsuarioRRHH](/images/modelosUML/MockUp/UsuarioRRHH.svg) |
-| Pantalla de inicio para el usuario Profesor | ![UsuarioProfesor](/images/modelosUML/MockUp/UsuarioProfesor.svg) |
-| Pantalla de inicio para el usuario Calidad | ![UsuarioCalidad](/images/modelosUML/MockUp/UsuarioCalidad.svg) |
-| Pantalla de inicio para el usuario Ordenación | ![UsuarioOrdenacion](/images/modelosUML/MockUp/UsuarioOrdenacion.svg) |
+| **Inicio de Sesión** |
+|------------|
+| ![InicioSesion](/images/modelosUML/MockUp/Inicio.png) |
 
+| **Admin** |
+|------------|
+| ![UsuarioAdmin](/images/modelosUML/MockUp/Admin.png) |
+
+| **Recursos Humanos** |
+|------------|
+| ![UsuarioRRHH](/images/modelosUML/MockUp/RRHH.png) |
+
+| **Profesor** |
+|------------|
+| ![UsuarioProfesor](/images/modelosUML/MockUp/Profesor.png) |
+
+| **Técnico de Calidad** |
+|------------|
+| ![UsuarioCalidad](/images/modelosUML/MockUp/Calidad.png) |
+
+| **Ordenación Académica** |
+|------------|
+| ![UsuarioOrdenacion](/images/modelosUML/MockUp/Ordenacion.png) |
 
 
 | **#** | **Caso de Uso**                                      | **Prototipo** |  
