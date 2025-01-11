@@ -8,7 +8,7 @@ El objetivo de este paso es **detallar los casos de uso** siguiendo las [pautas 
 
 ---
 
-### 🗝️ Inicio de Sesión
+## 🗝️ Inicio de Sesión
 
 | **Caso de Uso** | **Detalle** |
 |-----------------|-------------|
@@ -20,9 +20,9 @@ El objetivo de este paso es **detallar los casos de uso** siguiendo las [pautas 
 
 ---
 
-### 📂 Gestión de Datos del Profesorado
+## 📂 Gestión de Datos del Profesorado
 
-#### Modificación y Validación
+### Modificación y Validación
 
 | **Caso de Uso** | **Detalle** |
 |-----------------|-------------|
@@ -47,7 +47,7 @@ El objetivo de este paso es **detallar los casos de uso** siguiendo las [pautas 
   - [Código del Caso de Uso](/modelosUML/CdU/Individuales/ValidarMemoriaTitulacion.puml)  
   - [Código del Detalle](/modelosUML/CdU/DetallarCasosDeUso/TecnicoCalidad/ValidarCumplimiento.puml)
 
-#### Consulta de Datos
+### Consulta de Datos
 
 | **Caso de Uso** | **Detalle** |
 |-----------------|-------------|
@@ -72,7 +72,7 @@ El objetivo de este paso es **detallar los casos de uso** siguiendo las [pautas 
   - [Código del Caso de Uso](/modelosUML/CdU/Individuales/ConsultarDatosPersonales.puml)  
   - [Código del Detalle](/modelosUML/CdU/DetallarCasosDeUso/Profesores/ConsultarValores.puml)
 
-#### Introducción de Datos
+### Introducción de Datos
 
 | **Caso de Uso** | **Detalle** |
 |-----------------|-------------|
@@ -89,9 +89,9 @@ El objetivo de este paso es **detallar los casos de uso** siguiendo las [pautas 
 
 ---
 
-### 📚 Gestión de Carga Docente
+## 📚 Gestión de Carga Docente
 
-#### Revisión de Cumplimiento
+### Revisión de Cumplimiento
 
 | **Caso de Uso** | **Detalle** |
 |-----------------|-------------|
@@ -101,7 +101,7 @@ El objetivo de este paso es **detallar los casos de uso** siguiendo las [pautas 
   - [Código del Caso de Uso](/modelosUML/CdU/Individuales/RevisarListadoProfesores.puml)  
   - [Código del Detalle](/modelosUML/CdU/DetallarCasosDeUso/Conjunto/RevisarListadoProfesores.puml)
 
-#### Asignaciones
+### Asignaciones
 
 | **Caso de Uso** | **Detalle** |
 |-----------------|-------------|
@@ -123,7 +123,7 @@ El objetivo de este paso es **detallar los casos de uso** siguiendo las [pautas 
 
 ---
 
-### 📊 Generación de Indicadores e Informes
+## 📊 Generación de Indicadores e Informes
 
 | **Caso de Uso** | **Detalle** |
 |-----------------|-------------|
