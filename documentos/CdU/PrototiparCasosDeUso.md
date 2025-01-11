@@ -32,7 +32,7 @@ A continuación se presentan los casos de uso prototipados.
 | 1     | ![](/images/modelosUML/CdU/Individuales/IntroducirDatosLaborales.svg)   | ![IntroducirDatos](/images/Prototipar/DatosLaborales.png)                                      |
 | 2     | ![](/images/modelosUML/CdU/Individuales/AsignarCargaDocente.svg)        | ![AsignacionAsignaturasProfesor](/images/Prototipar/AsignacióndeCargaDocente.png)              |
 | 3     | ![](/images/modelosUML/CdU/Individuales/RevisarListadoProfesores.svg)   | ![RevisarCargaProfesoresNoAjustada](/images/Prototipar/RevisionCargaDocente.png)               |
-| 4     | ![](/images/modelosUML/CdU/Individuales/ValidarMemoriaTitulacion.svg)   |  ![ValidaciónMemoria](/images/Prototipar/ValidacionDatosProfesorado.png)   |                                                                                          |
+| 4     | ![](/images/modelosUML/CdU/Individuales/ValidarMemoriaTitulacion.svg)   |  ![ValidaciónMemoria](/images/Prototipar/ValidaciónMemoria.png)   |                                                                                          |
 | 5     | ![](/images/modelosUML/CdU/Individuales/EmitirInforme.svg)              | ![Emitir Informe](/images/Prototipar/EmitirInformeProfesorado.png)                             |
 | 6     | ![](/images/modelosUML/CdU/Individuales/ConsultarVarios.svg)            | ![ConsultarAsignacionDocente](/images/Prototipar/AsignaciónDocenteTitulacion.png)              |
 | 7     | ![](/images/modelosUML/CdU/Individuales/AsignarValores.svg)    |    ![AsignarValores](/images/Prototipar/AsignarValores.png)      |                                                                                     |
@@ -41,7 +41,7 @@ A continuación se presentan los casos de uso prototipados.
 | 10    | ![](/images/modelosUML/CdU/Individuales/ValidarDatos.svg)              | ![ValidarDatosProfesorado](/images/Prototipar/ValidacionDatosProfesorado.png)                 |
 | 11    | ![](/images/modelosUML/CdU/Individuales/IntroducirDatosAcademicos.svg) | ![DatosAcademicos](/images/Prototipar/DatosAcademicos.png)                                     |
 | 12    | ![](/images/modelosUML/CdU/Individuales/ValidarValores.svg)            |            ![ValidarCumplimientoValores](/images/Prototipar/ValidaciónCumplimientoMemoria.png)                                                                                   |
-| 13    | ![](/images/modelosUML/CdU/Individuales/AsignarSIIUyDGU.svg)           |                                                                                               |
+| 13    | ![](/images/modelosUML/CdU/Individuales/AsignarSIIUyDGU.svg)           |              ![AsignarSIIU](/images/Prototipar/AsignarSIIU.png)                                                                                 |
 | 14    | ![](/images/modelosUML/CdU/Individuales/ConsultarDatosPersonales.svg)  | ![ConsultarDatosyContrato](/images/Prototipar/DatosContratoPersonales.png)                    |
-| 15    | ![](/images/modelosUML/CdU/Individuales/ClaustroDocente.svg)           |                                                                                               |
+| 15    | ![](/images/modelosUML/CdU/Individuales/ClaustroDocente.svg)           |         ![ClaustroDocente](/images/Prototipar/ConsultarClaustroDocente.png)  |                                                                                    |
 | 16    | ![](/images/modelosUML/CdU/Individuales/ConsultarProfesor.svg)         | ![ConsultaAsignacionDocenteProfesor](/images/Prototipar/ConsultaAsignaciónDocenteProfesor.png) |
