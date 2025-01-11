@@ -2,11 +2,7 @@
 
 ## Introducción
 Este es el repositorio de las sesiones de requisitado de la asignatura de Ingeniería del Software I de UNEATLANTICO. Se desarrolla, en un caso real, la disciplina de requisitado, que es la puerta de entrada al desarrollo de una solución basada en software. 
-- [Qué es, problemática, propuesta](/introduccion/introduccion.md)
-
-## Objetivo general del proyecto:
-El cliente quiere una solución para automatizar las guías docentes, con el fin de evitar tener que actualizarlas manualmente cada año. Esto sugiere que el sistema deberá facilitar la actualización de contenidos, reducir el esfuerzo humano y asegurar que la información se mantenga precisa y relevante.
-
+- [¿Qué es? ¿Cuál es la problemática? ¿Cuál es el objetivo de este proyecto?](/introduccion/introduccion.md)
 
 <table>
 <tr>

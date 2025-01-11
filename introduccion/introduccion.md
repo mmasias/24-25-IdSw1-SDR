@@ -19,3 +19,5 @@ El problema de la actualización anual de las guías docentes es un desafío sig
 
 - **Ajustes logísticos**: Cambios en la disponibilidad de aulas, horarios, o incluso en el personal docente, pueden afectar los aspectos logísticos que deben reflejarse en la guía.
 
+## Objetivo general del proyecto:
+El cliente quiere una solución para automatizar las guías docentes, con el fin de evitar tener que actualizarlas manualmente cada año. Esto sugiere que el sistema deberá facilitar la actualización de contenidos, reducir el esfuerzo humano y asegurar que la información se mantenga precisa y relevante.
