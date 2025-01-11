@@ -36,9 +36,10 @@ A continuación se presentan los casos de uso prototipados.
 | 5 | **Emitir** Informe del Profesorado (Global o por Titulación)                                       |   ![Emitir Informe](/images/Prototipar/EmitirInformeProfesorado.png)    |
 | 6 | **Consultar** Asignación Docente (por titulación, curso y semestre)                                |   ![ConsultarAsignacionDocente](/images/Prototipar/AsignaciónDocenteTitulacion.png)    |
 | 7 | **Asignar** valores consignados en Memoria por Titulación                                          |       |
-| 8 | **Obtener** Indicadores para Sistema de Gestión                                                    |  ![Obtener indicadores](/)     |
-| 9 | **Modificar** los Datos introducidos por el Profesorado                                            |![ModificarDatosProfesorado]()       |
-| 10 | **Validar** los Datos introducidos por el Profesorado                                             | ![ValidarDatosProfesorado]()      |
+| 8 | **Obtener** Indicadores para Sistema de Gestión                                                    |  ![Obtener indicadores](/images/Prototipar/IndicadoresSistemaGestion.png)     |
+| 9 | **Modificar** los Datos introducidos por el Profesorado                                            |![ModificarDatosProfesorado](/images/Prototipar/ModificacionDatosProfesorado.png
+)       |
+| 10 | **Validar** los Datos introducidos por el Profesorado                                             | ![ValidarDatosProfesorado](/images/Prototipar/ValidacionDatosProfesorado.png)      |
 | 11 | **Introducir** Datos Académicos (experiencia docente, profesional, investigadora, sexenios, acreditaciones, movilidad y titulación profesional) |   ![DatosAcademicos](/images/Prototipar/DatosAcademicos.png)     |
 | 12 | **Validar** cumplimiento de valores consignados en la Memoria por Titulación                      |        |
 | 13 | **Asignar** valor de Información a SIIU y DGU del PDI                                             |        |
