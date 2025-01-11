@@ -58,9 +58,15 @@
 
 [Ver código](AlumnosContexto.puml)
 
+### Diagrama de Contexto Menu Rutinas y Ejercicios
+
+![Modelo de Contexto Consultar Usuarios](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/DiagramasContexto/DiagramasDeContextoAlumno/DiagramaDeContextoMenuRetosAlumno.svg)
+
+[Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/DiagramasDeContexto/DiagramasDeContextoAlumnos/DiagramDeContextoMenuRetosAlumno.puml)
+
 ---
 
-### Diagrama de Contexto del Profesor
+## Diagrama de Contexto del Profesor
 
 ![Modelo de Contexto Profesor](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/DiagramasContexto/DiagramasDeContextoProfesor/ProfesorContexto.svg)
 
