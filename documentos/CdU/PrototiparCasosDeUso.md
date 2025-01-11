@@ -33,8 +33,8 @@ A continuación se presentan los casos de uso prototipados.
 | 2 | **Asignar** Carga Docente de Asignaturas a Profesores                                              | ![AsignacionAsignaturasProfesor](/images/Prototipar/AsignacióndeCargaDocente.png)      |
 | 3 | **Revisar** listado de Profesores cuya Carga Docente no se ajusta al Contrato                      | ![RevisarCargaProfesoresNoAjustada](/images/Prototipar/RevisionCargaDocente.png)      |
 | 4 | **Validar** cumplimiento de compromisos de Memoria con los valores de la Titulación                |       |
-| 5 | **Emitir** Informe del Profesorado (Global o por Titulación)                                       |   ![Emitir Informe]()    |
-| 6 | **Consultar** Asignación Docente (por titulación, curso y semestre)                                |   ![ConsultarAsignacionDocente]()    |
+| 5 | **Emitir** Informe del Profesorado (Global o por Titulación)                                       |   ![Emitir Informe](/images/Prototipar/EmitirInformeProfesorado.png)    |
+| 6 | **Consultar** Asignación Docente (por titulación, curso y semestre)                                |   ![ConsultarAsignacionDocente](/images/Prototipar/AsignaciónDocenteTitulacion.png)    |
 | 7 | **Asignar** valores consignados en Memoria por Titulación                                          |       |
 | 8 | **Obtener** Indicadores para Sistema de Gestión                                                    |  ![Obtener indicadores](/)     |
 | 9 | **Modificar** los Datos introducidos por el Profesorado                                            |![ModificarDatosProfesorado]()       |
@@ -42,6 +42,6 @@ A continuación se presentan los casos de uso prototipados.
 | 11 | **Introducir** Datos Académicos (experiencia docente, profesional, investigadora, sexenios, acreditaciones, movilidad y titulación profesional) |   ![DatosAcademicos](/images/Prototipar/DatosAcademicos.png)     |
 | 12 | **Validar** cumplimiento de valores consignados en la Memoria por Titulación                      |        |
 | 13 | **Asignar** valor de Información a SIIU y DGU del PDI                                             |        |
-| 14 | **Consultar** valores asignados de Contrato y otros Datos Personales                              | ![ConsultarDatosyContrato]()       |
+| 14 | **Consultar** valores asignados de Contrato y otros Datos Personales                              | ![ConsultarDatosyContrato](/images/Prototipar/DatosContratoPersonales.png)       |
 | 15 | **Consultar** Claustro Docente (listado PDI asociado a una titulación)                            |        |
 | 16 | **Consultar** Asignación Docente por Profesor (créditos y asignaturas)                            |   ![ConsultaAsignacionDocenteProfesor](/images/Prototipar/ConsultaAsignaciónDocenteProfesor.png)     |
