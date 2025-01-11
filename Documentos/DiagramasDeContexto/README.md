@@ -60,8 +60,14 @@
 
 ---
 
-## Diagrama de Contexto del Profesor
+### Diagrama de Contexto del Profesor
 
-![Modelo de Contexto Profesor](../Imagenes/DiagramasContexto/ProfesorContexto.svg)
+![Modelo de Contexto Profesor](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/DiagramasContexto/DiagramasDeContextoProfesor/ProfesorContexto.svg)
 
-[Ver código](ProfesorContexto.puml)
+[Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/DiagramasDeContexto/DiagramaDeContextoProfesor.puml/ProfesorContexto.puml)
+
+### Diagrama de Contexto Consultar Reportes
+
+![Modelo de Contexto Consultar Usuarios](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/DiagramasContexto/DiagramasDeContextoProfesor/DiagramaDeContextoMenuRutinasyEjerciciosProfesor.svg)
+
+[Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/DiagramasDeContexto/DiagramaDeContextoProfesor.puml/DiagramaDeContextoMenuRutinasyEjerciciosProfesor.puml)
