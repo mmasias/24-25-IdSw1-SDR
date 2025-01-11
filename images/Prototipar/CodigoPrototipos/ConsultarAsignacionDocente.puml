@@ -1,0 +1,49 @@
+@startuml
+
+    [*] --> InicioSesion
+    InicioSesion : Profesor inicia sesión en el sistema
+
+    InicioSesion --> SeleccionarConsulta
+    SeleccionarConsulta : Seleccionar tipo de consulta (Titulación, Curso, Semestre)
+
+    note right of SeleccionarConsulta
+      El profesor selecciona los parámetros específicos
+      para filtrar la asignación docente que desea consultar.
+    end note
+
+    SeleccionarConsulta --> ConsultarAsignacion
+    ConsultarAsignacion : Consultar la asignación docente
+
+    note right of ConsultarAsignacion
+      El sistema muestra la asignación docente basada en 
+      la titulación, el curso y el semestre seleccionados.
+    end note
+
+    ConsultarAsignacion --> RevisarAsignacion
+    RevisarAsignacion : Revisar la información mostrada
+
+    note right of RevisarAsignacion
+      El profesor revisa la asignación docente para verificar
+      su carga lectiva y los detalles de las asignaturas asignadas.
+    end note
+
+    RevisarAsignacion --> Opciones
+    Opciones : Opciones adicionales
+
+    note right of Opciones
+      El profesor puede:
+    end note
+
+    Opciones --> ImprimirAsignacion
+    ImprimirAsignacion : Imprimir la asignación docente
+    ImprimirAsignacion --> Opciones
+
+    Opciones --> ConsultarNuevaAsignacion
+    ConsultarNuevaAsignacion : Consultar otra asignación
+    ConsultarNuevaAsignacion --> SeleccionarConsulta
+
+    Opciones --> CerrarSesion
+    CerrarSesion : Cerrar la sesión y salir del sistema
+    CerrarSesion --> [*]
+
+@enduml

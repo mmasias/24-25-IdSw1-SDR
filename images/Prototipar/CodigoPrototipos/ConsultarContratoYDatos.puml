@@ -1,0 +1,43 @@
+@startuml
+
+    [*] --> InicioSesion
+    InicioSesion : Profesor inicia sesión en el sistema
+
+    InicioSesion --> ConsultarDatos
+    ConsultarDatos : Consultar datos personales y del contrato
+
+    note right of ConsultarDatos
+      Los profesores pueden acceder a:
+      - Información del contrato
+      - Datos personales como dirección y teléfono
+      - Historial académico y profesional
+    end note
+
+    ConsultarDatos --> RevisarInformacion
+    RevisarInformacion : Revisar y verificar la información mostrada
+
+    note right of RevisarInformacion
+      El profesor revisa su información personal y contractual
+      para asegurar que todo está actualizado y correcto.
+    end note
+
+    RevisarInformacion --> Opciones
+    Opciones : Opciones adicionales
+
+    note right of Opciones
+      El profesor puede:
+    end note
+
+    Opciones --> SolicitarActualizacion
+    SolicitarActualizacion : Solicitar actualización de datos
+    SolicitarActualizacion --> Opciones
+
+    Opciones --> ImprimirDatos
+    ImprimirDatos : Imprimir datos personales y del contrato
+    ImprimirDatos --> Opciones
+
+    Opciones --> CerrarSesion
+    CerrarSesion : Cerrar la sesión y salir del sistema
+    CerrarSesion --> [*]
+
+@enduml

@@ -28,8 +28,8 @@ Debido a que este proyecto se divide en direfentes actores, en primer lugar se m
 | 3 | **Asignar** Carga Docente de Asignaturas a Profesores                                              | ![AsignacionAsignaturasProfesor](/images/Prototipar/PrototiparAsignacionAsignaturasProfesor.svg)      |
 | 4 | **Revisar** listado de Profesores cuya Carga Docente no se ajusta al Contrato                      | ![RevisarCargaProfesoresNoAjustada](/images/Prototipar/PrototiparRevisarProfesoresCargaNoAjustada.svg)      |
 | 5 | **Validar** cumplimiento de compromisos de Memoria con los valores de la Titulación                |       |
-| 6 | **Emitir** Informe del Profesorado (Global o por Titulación)                                       |       |
-| 7 | **Consultar** Asignación Docente (por titulación, curso y semestre)                                |       |
+| 6 | **Emitir** Informe del Profesorado (Global o por Titulación)                                       |   ![Emitir Informe](/images/Prototipar/PrototiparEmitirInformeProfesorado.svg)    |
+| 7 | **Consultar** Asignación Docente (por titulación, curso y semestre)                                |   ![ConsultarAsignacionDocente](/images/Prototipar/PrototiparConsultarAsignacionDocente.svg)    |
 | 8 | **Asignar** valores consignados en Memoria por Titulación                                          |       |
 | 9 | **Obtener** Indicadores para Sistema de Gestión                                                    |  ![Obtener indicadores](/images/Prototipar/PrototiparObtenerIndicadores.svg)     |
 | 10 | **Modificar** los Datos introducidos por el Profesorado                                            |![ModificarDatosProfesorado](/images/Prototipar/PrototiparModificarDatosProfesorado.svg)       |
@@ -37,6 +37,6 @@ Debido a que este proyecto se divide en direfentes actores, en primer lugar se m
 | 12 | **Introducir** Datos Académicos (experiencia docente, profesional, investigadora, sexenios, acreditaciones, movilidad y titulación profesional) |        |
 | 13 | **Validar** cumplimiento de valores consignados en la Memoria por Titulación                      |        |
 | 14 | **Asignar** valor de Información a SIIU y DGU del PDI                                             |        |
-| 15 | **Consultar** valores asignados de Contrato y otros Datos Personales                              |        |
+| 15 | **Consultar** valores asignados de Contrato y otros Datos Personales                              | ![ConsultarDatosyContrato](/images/Prototipar/PrototiparConsultarDatosYContrato.svg)       |
 | 16 | **Consultar** Claustro Docente (listado PDI asociado a una titulación)                            |        |
 | 17 | **Consultar** Asignación Docente por Profesor (créditos y asignaturas)                            |        |
