@@ -7,8 +7,6 @@
 
 El objetivo de este paso es **encontrar actores y casos de uso** siguiendo las [pautas teóricas](https://github.com/mmasias/IdSw1/blob/main/temario/contenidos/CdU.eAyCdU.md#c%C3%B3mo) de la asignatura.
 
----
-
 ## 👥 **Actores**  
 
 | **Actor**              | **Descripción**                                                                                                                             |
@@ -18,8 +16,6 @@ El objetivo de este paso es **encontrar actores y casos de uso** siguiendo las [
 | 📚 **Ordenación**      | Asignan y revisan la carga docente, así como el cumplimiento de valores consignados en las memorias.                                        |
 | 📊 **Técnico Calidad** | Gestionan indicadores, asignan valores a sistemas externos y validan compromisos de memoria por titulación.                                 | 
 | 🛠️ **Administrador**   | Ha de pertenecer al departamento de calidad y debe poder asumir las funciones de RRHH, Ordenación y Técnico de Calidad según sea necesario. |
-
----
 
 ## 📋 **Casos de Uso y Actores Involucrados**
 

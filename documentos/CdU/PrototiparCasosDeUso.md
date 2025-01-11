@@ -6,8 +6,6 @@
 ## 🎯 **Objetivo**
 El objetivo de este paso es **prototipar los casos de uso** siguiendo las [pautas teóricas](https://github.com/mmasias/IdSw1/blob/main/temario/contenidos/CdU.ICdU.md) de la asignatura.
 
----
-
 ## 👁️ Vista General por Actores
 
 Debido a que este proyecto tiene direfentes actores, en primer lugar se mostrara las pantallas de inicio correspondientes a cada actor, lo que reflejará las acciones que puede hacer cada uno de ellos.
@@ -20,8 +18,6 @@ Debido a que este proyecto tiene direfentes actores, en primer lugar se mostrara
 | Profesor                 | ![UsuarioProfesor](/images/modelosUML/MockUp/Profesor.png) |
 | Técnico de Calidad       | ![UsuarioCalidad](/images/modelosUML/MockUp/Calidad.png)  |
 | Ordenación Académica     | ![UsuarioOrdenacion](/images/modelosUML/MockUp/Ordenacion.png) |
-
----
 
 ## 🛠️ Casos de Uso
 
@@ -54,7 +50,7 @@ A continuación se presentan los casos de uso prototipados.
 | ![](/images/modelosUML/CdU/Individuales/IntroducirDatosLaborales.svg)  | ![IntroducirDatos](/images/Prototipar/DatosLaborales.png)                                      |
 | ![](/images/modelosUML/CdU/Individuales/IntroducirDatosAcademicos.svg) | ![DatosAcademicos](/images/Prototipar/DatosAcademicos.png)                                     |
 
-******
+---
 
 ### 📚 Gestión de Carga Docente
 
@@ -72,7 +68,7 @@ A continuación se presentan los casos de uso prototipados.
 | ![](/images/modelosUML/CdU/Individuales/AsignarValores.svg)            |    ![AsignarValores](/images/Prototipar/AsignarValores.png)                                    |
 | ![](/images/modelosUML/CdU/Individuales/AsignarSIIUyDGU.svg)           |              ![AsignarSIIU](/images/Prototipar/AsignarSIIU.png)                                |
 
-***
+---
 
 ### 📊 Generación de Indicadores e Informes
 
