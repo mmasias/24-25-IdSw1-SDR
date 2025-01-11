@@ -54,15 +54,27 @@
 
 ## Diagrama de Contexto del Alumno
 
-![Modelo de Contexto Alumno](../Imagenes/DiagramasContexto/AlumnoContexto.svg)
+![Modelo de Contexto Alumno](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/DiagramasContexto/DiagramasDeContextoAlumno/AlumnosContexto.svg)
 
-[Ver código](AlumnosContexto.puml)
+[Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/DiagramasDeContexto/DiagramasDeContextoAlumnos/AlumnosContexto.puml)
 
 ### Diagrama de Contexto Menu Rutinas y Ejercicios
+
+![Modelo de Contexto Consultar Usuarios](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/DiagramasContexto/DiagramasDeContextoAlumno/DiagramaDeContextoMenuRutinasyEjerciciosAlumno.svg)
+
+[Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/DiagramasDeContexto/DiagramasDeContextoAlumnos/DiagramaDeContextoMenuRutinasyEjerciciosAlumno.puml)
+
+### Diagrama de Contexto Menu Retos
 
 ![Modelo de Contexto Consultar Usuarios](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/DiagramasContexto/DiagramasDeContextoAlumno/DiagramaDeContextoMenuRetosAlumno.svg)
 
 [Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/DiagramasDeContexto/DiagramasDeContextoAlumnos/DiagramDeContextoMenuRetosAlumno.puml)
+
+### Diagrama de Contexto Menu Perfil
+
+![Modelo de Contexto Consultar Usuarios](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/DiagramasContexto/DiagramasDeContextoAlumno/DiagramaDeContextoMenuPerfilAlumno.svg)
+
+[Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/DiagramasDeContexto/DiagramasDeContextoAlumnos/DiagramDeContextoMenuPerfilAlumno.puml)
 
 ---
 
