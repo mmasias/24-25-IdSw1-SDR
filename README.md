@@ -33,7 +33,7 @@ El Sistema Alumni es una plataforma que conecta a antiguos alumnos de la univers
 - [Actores y casos de uso](/modelosUML/CasosDeUso/ActoresYCasos.md#actores)
 - [Priorizacion](/modelosUML/CasosDeUso/ActoresYCasos.md#2-priorizar-casos-de-uso)
 - [Detallar casos de uso](/modelosUML/CasosDeUso/ActoresYCasos.md#3-detallar-casos-de-uso)
-- [Prototipado](/modelosUML/CasosDeUso/Fotos/Fotos%20Prototipado/Prototipado.md)
+- [Prototipado](/modelosUML/CasosDeUso/Prototipado.md)
 - [Diagramas de Contexto](/modelosUML/CasosDeUso/ActoresYCasos.md#diagramas-de-contexto)
 
 ---
