@@ -52,7 +52,7 @@ La prioridad debe basarse en su importancia estratégica, valor para el cliente,
    Es una funcionalidad básica, pero no es completamente necesaria para el funcionamiento del sistema.
 
 10. **Ver estadísticas** *(Baja prioridad)*
-    Es una funcionalidad secundaria, no es crítica para el funcionamiento del sistema.
+   Es una funcionalidad secundaria, no es crítica para el funcionamiento del sistema.
 
 ## 3. Detallar casos de uso
 
