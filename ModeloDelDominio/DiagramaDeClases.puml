@@ -12,7 +12,7 @@ class Asignatura
 class Version
 
 Guia --* Titulacion: forma_parte_de
-Guia --* Asignatura: incluye
+Guia o-- Asignatura: incluye
 
 Asignatura <-down- Contenido: pertenece_a
 Asignatura o-down- Titulacion: forma_parte

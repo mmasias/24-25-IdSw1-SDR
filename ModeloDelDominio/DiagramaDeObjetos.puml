@@ -12,7 +12,7 @@ object "programacion : Asignatura" as programacion
 object "version1 : Version" as version1
 
 guia1 --* informatica : "forma_parte_de"
-guia1 --* programacion : "incluye"
+guia1 o-- programacion : "incluye"
 
 programacion <-down- temario : "pertenece_a"
 programacion o-down- informatica : "forma_parte"
