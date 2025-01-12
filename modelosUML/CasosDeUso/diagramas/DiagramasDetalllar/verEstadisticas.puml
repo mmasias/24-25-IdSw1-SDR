@@ -1,0 +1,17 @@
+@startuml
+actor Administrador
+
+rectangle "Ver Estadísticas" {
+    Administrador --> (Solicitar Estadísticas)
+    (Solicitar Estadísticas) --> (Generar Informe de Datos) : «include»
+    (Generar Informe de Datos) --> (Mostrar Datos al Administrador)
+
+    note right of (Solicitar Estadísticas)
+        Las estadísticas incluyen, entre otras cosas:
+        - Número de ofertas publicadas
+        - Ofertas aceptadas/rechazadas
+        - Categorías más solicitadas
+        - Numero de postulaciones
+    end note
+}
+@enduml
