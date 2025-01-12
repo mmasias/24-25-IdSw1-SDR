@@ -4,11 +4,9 @@ hide circle
 
 abstract Remitente
 
-class Accion
+class Notificaciones
 
-abstract Usuario
-
-class Accion
+abstract Gestor
 
 class Mensaje
 
@@ -24,26 +22,29 @@ class Grupo
 
 class Documento
 
-Usuarios -u-|> Administrador
-Usuarios -u-|> Usuario
-Usuarios -u-|> Destinatario
+class Auditoria
 
-Remitente <|-- Administrador
-Remitente <|----- Usuario
-
-Receptor <|-- Destinatario
-Receptor <|-- Usuario
-Receptor <|-- Administrador
-
-Receptor -r- Grupo : pertenece
-
-Usuarios "1"-r-"*" Accion : maneja
-
-Remitente "1"--"*" Mensaje : genera
+class RastreadorAcciones
 
 Mensaje  "1"--"*" RastreadorDocumento : contiene
 
-Mensaje  "1"-r-"*" Receptor : se envía
+Mensaje  "1"-d-"*" Receptor : se envía
+
+Remitente --|> Administrador
+Remitente --|> Gestor
+
+Receptor --|> Destinatario 
+
+Receptor -r- Grupo : pertenece
+
+RastreadorDocumento -- Notificaciones : genera
+
+Remitente "1"-u-"*" Mensaje : genera
+
+Administrador -- Auditoria : realiza
+
+Auditoria --* RastreadorAcciones
+Auditoria -r-* RastreadorDocumento
 
 RastreadorDocumento "1"--"1" Documento: adjunta
 @enduml
