@@ -29,10 +29,9 @@ A continuación se presentan los casos de uso prototipados.
 
 | **Caso de Uso**  | **Prototipo**        |
 |------------------|--------------------|
-| ![](/images/modelosUML/CdU/Individuales/ModificarDatos.svg)            | ![ModificarDatosProfesorado](/images/Prototipar/ModificacionDatosProfesorado.png)              |
-| ![](/images/modelosUML/CdU/Individuales/ValidarDatos.svg)              | ![ValidarDatosProfesorado](/images/Prototipar/ValidacionDatosProfesorado.png)                  |
-| ![](/images/modelosUML/CdU/Individuales/ValidarValores.svg)            |            ![ValidarCumplimientoValores](/images/Prototipar/ValidaciónCumplimientoMemoria.png) |
-| ![](/images/modelosUML/CdU/Individuales/ValidarMemoriaTitulacion.svg)  |  ![ValidaciónMemoria](/images/Prototipar/ValidaciónMemoria.png)                                |
+| ![](/images/modelosUML/CdU/Individuales/ModificarDatos.svg)            | ![ModificarDatosProfesorado](/images/Prototipar/ModificacionDatosProfesorado.png) |
+| ![](/images/modelosUML/CdU/Individuales/ValidarDatos.svg)              | ![ValidarDatosProfesorado](/images/Prototipar/ValidacionDatosProfesorado.png)     |
+| ![](/images/modelosUML/CdU/Individuales/ValidarMemoriaTitulacion.svg)  | ![ValidaciónMemoria](/images/Prototipar/ValidaciónCumplimientoMemoria.png)        |
 
 #### Consulta de Datos
 

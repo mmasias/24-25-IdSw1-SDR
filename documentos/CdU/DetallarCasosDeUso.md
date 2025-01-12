@@ -21,8 +21,7 @@ El objetivo de este paso es **detallar los casos de uso** siguiendo las [pautas 
 |------------------|--------------------|
 | ![Modificar Datos](/images/modelosUML/CdU/Individuales/ModificarDatos.svg) | ![Modificar Datos](/images/modelosUML/CdU/DetallarCasosDeUso/RRHH/ModificarDatos.svg) |
 | ![Validar Datos](/images/modelosUML/CdU/Individuales/ValidarDatos.svg) | ![Validar Datos](/images/modelosUML/CdU/DetallarCasosDeUso/RRHH/ValidarDatos.svg) |
-| ![Validar Cumplimiento](/images/modelosUML/CdU/Individuales/ValidarValores.svg) | ![Validar Cumplimiento](/images/modelosUML/CdU/DetallarCasosDeUso/Ordenacion/ValidarCumplimiento.svg) |
-| ![Validar Cumplimiento](/images/modelosUML/CdU/Individuales/ValidarMemoriaTitulacion.svg) | ![Validar Cumplimiento](/images/modelosUML/CdU/DetallarCasosDeUso/TecnicoCalidad/ValidarCumplimiento.svg) |
+| ![Validar Cumplimiento](/images/modelosUML/CdU/Individuales/ValidarMemoriaTitulacion.svg) | ![Validar Cumplimiento](/images/modelosUML/CdU/DetallarCasosDeUso/Conjunto/ValidarCumplimiento.svg) |
 
 ### Consulta de Datos
 
