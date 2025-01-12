@@ -28,7 +28,7 @@ A continuación se muestra el diagrama de estados del proyecto
 ### Diagrama de Estados del receptor
 
 <p align="center">
-  <img src="/docs/modeloDeDominio/diagramaDeEstados/PrimeraIteracion/diagramaDeEstadosReceptorIteracion1.svg">
+  <img src="/docs/modeloDeDominio/diagramaDeEstados/PrimeraIteracion/diagramaDeEstadosReceptorIteracion1Final.svg">
 </p>
 
 ### Diagrama de Estados del remitente
