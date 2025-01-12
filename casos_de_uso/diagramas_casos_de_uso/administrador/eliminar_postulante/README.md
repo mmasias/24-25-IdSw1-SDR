@@ -1,4 +1,4 @@
 # Caso de Uso - Eliminar Postulante
 
-|![Diagrama de Clases](/documentos/imagenes/casos_de_uso/administrador/eliminar_postulante.svg)|[Código](/casos_de_uso/casos_de_uso/administrador/eliminar_postualnte/eliminar_postulante.puml)|
-|---|---|
+| ![Diagrama de Clases](/casos_de_uso/imagenes/administrador/Eliminar_Postulante.svg) |[Código](/casos_de_uso/diagrama_casos_de_uso/administrador/eliminar_postualnte/eliminar_postulante.puml)|
+|-------------------------------------------------------------------------------------|---|

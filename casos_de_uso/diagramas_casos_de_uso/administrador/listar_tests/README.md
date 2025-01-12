@@ -1,4 +1,4 @@
 # Caso de Uso - Listar Tests
 
-|![Diagrama de Clases](/documentos/imagenes/casos_de_uso/administrador/listar_test.svg)|[Código](/casos_de_uso/casos_de_uso/administrador/listar_tests/listar_test.puml)|
-|---|---|
+| ![Diagrama de Clases](/casos_de_uso/imagenes/administrador/Listar_Test.svg) |[Código](/casos_de_uso/diagrama_casos_de_uso/administrador/listar_tests/listar_test.puml)|
+|-----------------------------------------------------------------------------|---|

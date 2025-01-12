@@ -1,4 +1,4 @@
 # Caso de Uso - Eliminar Test
 
-|![Diagrama de Clases](/documentos/imagenes/casos_de_uso/administrador/eliminar_test.svg)|[Código](/casos_de_uso/casos_de_uso/administrador/eliminar_test/eliminar_test.puml)|
-|---|---|
+| ![Diagrama de Clases](/casos_de_uso/imagenes/administrador/Eliminar_Test.svg) |[Código](/casos_de_uso/diagrama_casos_de_uso/administrador/eliminar_test/eliminar_test.puml)|
+|------------------------------------------------------------------------------------------|---|

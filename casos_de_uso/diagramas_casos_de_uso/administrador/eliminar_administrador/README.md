@@ -1,4 +1,4 @@
 # Caso de Uso - Eliminar Administrador
 
-|![Diagrama de Clases](/documentos/imagenes/casos_de_uso/administrador/eliminar_administrador.svg)|[Código](/casos_de_uso/casos_de_uso/administrador/eliminar_administrador/eliminar_administrador.puml)|
-|---|---|
+| ![Diagrama de Clases](/casos_de_uso/imagenes/administrador/Eliminar_Administrador.svg) |[Código](/casos_de_uso/diagrama_casos_de_uso/administrador/eliminar_administrador/eliminar_administrador.puml)|
+|---------------------------------------------------------------------------------------------------|---|
