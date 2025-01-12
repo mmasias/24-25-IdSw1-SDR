@@ -17,11 +17,11 @@
 <tr>
 <th>
 
-### 🔰 Modelo de Dominio
+### 🔰 Modelo de Dominio.
 </th>
 <th>
 
-### 🔰 Disciplina de Requisitos
+### 🔰 Disciplina de Requisitos.
 
 </th>
 </tr>
