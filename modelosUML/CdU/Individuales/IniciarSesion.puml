@@ -11,10 +11,10 @@ package "Iniciar Sesion" as inicioSesionPackage {
     usecase "Iniciar Sesion" as inicioSesion
 }
 
-ord ---> inicioSesion
+ord --> inicioSesion
 admin ---> inicioSesion
 RRHH ---> inicioSesion
-calidad --> inicioSesion
+calidad ---> inicioSesion
 profesor --> inicioSesion
 
 @enduml
