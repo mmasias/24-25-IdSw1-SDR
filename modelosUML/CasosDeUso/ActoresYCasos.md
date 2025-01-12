@@ -14,7 +14,10 @@
 4. **Postular para la oferta de trabajo** *(Alumni)*: Los alumni pueden enviar su solicitud para una oferta de trabajo específica.
 5. **Cerrar oferta de trabajo** *(Administrador, Empresa)*: Una oferta se finaliza porque ya no está disponible.
 6. **Cancelar oferta de trabajo** *(Administrador)*: El administrador cancela una oferta de trabajo.
-
+7. **Ver ofertas de trabajo**: Los usuarios pueden ver las ofertas disponibles en la plataforma.
+8. **Iniciar sesión**: Los usuarios acceden a la plataforma con sus credenciales.
+9. **Cerrar sesión**: Los usuarios finalizan su sesión en la plataforma.
+10. **Ver estadísticas**: Los administradores pueden ver datos sobre las ofertas publicadas.
 ---
 
 ## 2. Priorizar Casos de Uso
@@ -38,6 +41,18 @@ La prioridad debe basarse en su importancia estratégica, valor para el cliente,
 
 6. **Cancelar oferta de trabajo** *(Baja prioridad)*  
    Este caso de uso se activa en escenarios específicos, pero no es central en el funcionamiento básico del sistema.
+
+7. **Ver ofertas de trabajo** *(Alta prioridad)*
+   Es una funcionalidad básica y esencial que permite a todos los usuarios visualizar el contenido principal de la plataforma. Sin esta capacidad, el sistema perdería su propósito fundamental.
+
+8. **Iniciar sesión** *(Media prioridad)*
+   Es un requisito básico, pero no es un caso de uso crítico ya que se entiende que los usuarios llegan autenticados a la plataforma (a través del panal, por ejemplo).
+
+9. **Cerrar sesión** *(Baja prioridad)*
+   Es una funcionalidad básica, pero no es completamente necesaria para el funcionamiento del sistema.
+
+10. **Ver estadísticas** *(Baja prioridad)*
+    Es una funcionalidad secundaria, no es crítica para el funcionamiento del sistema.
 
 ## 3. Detallar casos de uso
 
