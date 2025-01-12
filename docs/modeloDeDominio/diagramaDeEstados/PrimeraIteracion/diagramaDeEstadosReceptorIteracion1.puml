@@ -6,8 +6,10 @@ LeyendoMensaje --> LeyendoDocumento: Seleccionar documento
 
 
 state confirmandoDocumento <<choice>> 
+state firmandoDocumento <<choice>> 
 confirmandoDocumento --> LeyendoDocumento: - Confirmar vista del documento
-confirmandoDocumento --> LeyendoDocumento: - Confirmar vista y firma del documento
+confirmandoDocumento --> firmandoDocumento: - Confirmar vista y firma del documento
+firmandoDocumento --> LeyendoDocumento
 
 LeyendoDocumento --> confirmandoDocumento : Seleccionar Confirmacion
 
