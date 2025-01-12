@@ -37,4 +37,8 @@ A continuación se muestra el diagrama de estados del proyecto
   <img src="/docs/modeloDeDominio/diagramaDeEstados/PrimeraIteracion/diagramaDeEstadosRemitenteIteracion1Final.svg">
 </p>
 
+### Diagrama de Estados del rastreador de documento
 
+<p align="center">
+  <img src="/docs/modeloDeDominio/diagramaDeEstados/TerceraIteracion/Rastreador documento/diagrama_de_estados_rastreador_documento.svg">
+</p>
