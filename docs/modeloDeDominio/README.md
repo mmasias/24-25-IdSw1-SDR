@@ -34,7 +34,7 @@ A continuación se muestra el diagrama de estados del proyecto
 ### Diagrama de Estados del remitente
 
 <p align="center">
-  <img src="/docs/modeloDeDominio/diagramaDeEstados/PrimeraIteracion/diagramaDeEstadosRemitenteIteracion1.svg">
+  <img src="/docs/modeloDeDominio/diagramaDeEstados/PrimeraIteracion/diagramaDeEstadosRemitenteIteracion1Final.svg">
 </p>
 
 

@@ -8,10 +8,11 @@ Mensaje : - Añadir Documentos
 
 Mensaje --> TipoDocumento: Seleccionar tipo de documento
 
-state TipoDocumento <<Choice>> {
+state TipoDocumento <<Choice>>
+state TipoDocumento2 <<Choice>>
     TipoDocumento --> Mensaje: - Se requiere vista del documento
-    TipoDocumento --> Mensaje: - Se requiere vista y firma del documento
-}
+    TipoDocumento --> TipoDocumento2: - Se requiere vista y firma del documento
+    TipoDocumento2 --> Mensaje
 
 Mensaje --> EnProceso: Enviar Mensaje
 EnProceso --> Finalizado: Se finaliza el proceso
