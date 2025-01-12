@@ -14,10 +14,10 @@ Debido a que este proyecto tiene direfentes actores, en primer lugar se mostrara
 |--------------------------|----------------------------------------------------|
 | Inicio de Sesión         | ![InicioSesion](/images/modelosUML/MockUp/Inicio.png) |
 | Admin                    | ![UsuarioAdmin](/images/modelosUML/MockUp/Admin.png)  |
+| Ordenación Académica     | ![UsuarioOrdenacion](/images/modelosUML/MockUp/Ordenacion.png) |
 | Recursos Humanos         | ![UsuarioRRHH](/images/modelosUML/MockUp/RRHH.png)    |
 | Profesor                 | ![UsuarioProfesor](/images/modelosUML/MockUp/Profesor.png) |
 | Técnico de Calidad       | ![UsuarioCalidad](/images/modelosUML/MockUp/Calidad.png)  |
-| Ordenación Académica     | ![UsuarioOrdenacion](/images/modelosUML/MockUp/Ordenacion.png) |
 
 ## 🛠️ Casos de Uso
 
