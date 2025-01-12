@@ -2,19 +2,17 @@
 
 [*] --> LeyendoMensaje: Abrir Mensaje
 
-LeyendoMensaje --> LeyendoDocumento: Seleccionar documento
+LeyendoMensaje -l-> LeyendoDocumento: Seleccionar documento
 
 
-state confirmandoDocumento <<choice>> 
-state firmandoDocumento <<choice>> 
-confirmandoDocumento --> LeyendoDocumento: - Confirmar vista del documento
-confirmandoDocumento --> firmandoDocumento: - Confirmar vista y firma del documento
-firmandoDocumento --> LeyendoDocumento
+state confirmandoMensaje <<choice>> 
+state firmandoMensaje <<choice>> 
+confirmandoMensaje --> LeyendoMensaje: - Confirmar vista del mensaje
+confirmandoMensaje --> firmandoMensaje: - Confirmar vista y firma del mensaje
+firmandoMensaje --> LeyendoMensaje
 
-LeyendoDocumento --> confirmandoDocumento : Seleccionar Confirmacion
+LeyendoMensaje --> confirmandoMensaje : Seleccionar Confirmación
 
-LeyendoDocumento --> LeyendoMensaje : Elegir documento
-
-LeyendoMensaje --> [*]: Cerrar Mensaje
+LeyendoMensaje -r-> [*]: Cerrar Mensaje
 
 @enduml

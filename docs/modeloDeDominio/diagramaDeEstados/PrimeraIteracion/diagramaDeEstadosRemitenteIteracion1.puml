@@ -1,20 +1,21 @@
 @startuml diagramaDeEstados
 
-[*] --> Mensaje: Crear un nuevo mensaje
+[*] --> CreandoMensaje: Crear un nuevo mensaje
 
-Mensaje : - Añadir Destinatario
-Mensaje : - Añadir Asunto
-Mensaje : - Añadir Documentos
+CreandoMensaje : - Añadir Destinatario
+CreandoMensaje : - Añadir Asunto
+CreandoMensaje : - Añadir Documentos
 
-Mensaje --> TipoDocumento: Seleccionar tipo de documento
+CreandoMensaje --> SeleccionandoConfirmacion: Seleccionar tipo de documento
 
-state TipoDocumento <<Choice>>
-state TipoDocumento2 <<Choice>>
-    TipoDocumento --> Mensaje: - Se requiere vista del documento
-    TipoDocumento --> TipoDocumento2: - Se requiere vista y firma del documento
-    TipoDocumento2 --> Mensaje
+state SeleccionandoConfirmacion <<Choice>>
+state SeleccionandoConfirmacion2 <<Choice>>
+    SeleccionandoConfirmacion --> CreandoMensaje: - Se requiere vista del documento
+    SeleccionandoConfirmacion --> SeleccionandoConfirmacion2: - Se requiere vista y firma del documento
+    SeleccionandoConfirmacion2 --> CreandoMensaje
 
-Mensaje --> EnProceso: Enviar Mensaje
-EnProceso --> Finalizado: Se finaliza el proceso
+CreandoMensaje --> CreandoEnvio
+CreandoEnvio --> EnviandoMensaje
+EnviandoMensaje --> [*]
 
 @enduml

@@ -1,10 +1,8 @@
 @startuml
 
-[*] --> RastreadorDocumento
-
 state Destinatario
 state startDestinatario  <<start>>
-startDestinatario -l-> Destinatario
+startDestinatario -r-> Destinatario
 
 state RastreadorDocumento {
   
@@ -19,5 +17,5 @@ state RastreadorDocumento {
 
 Destinatario -r-> ActualizandoEstadoMensaje
 
-RastreadorDocumento -d-> [*]
+RastreadorDocumento --> [*]
 @enduml
