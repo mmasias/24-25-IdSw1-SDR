@@ -4,20 +4,20 @@
 
 state Destinatario
 state startDestinatario  <<start>>
-startDestinatario --> Destinatario
+startDestinatario -l-> Destinatario
 
 state RastreadorDocumento {
   
-  AccediendoMensaje --> ActualizandoEstadoDocumento
-  ActualizandoEstadoDocumento --> AccediendoMensaje
+  ActualizandoEstadoMensaje --> AccediendoDocumento
+  AccediendoDocumento -r-> ActualizandoEstadoMensaje
   
-  ActualizandoEstadoDocumento --> Pendiente
-  ActualizandoEstadoDocumento --> Leido
-  ActualizandoEstadoDocumento --> Atrasado
-  ActualizandoEstadoDocumento --> Firmado
+  ActualizandoEstadoMensaje --> Pendiente
+  ActualizandoEstadoMensaje --> Leido
+  ActualizandoEstadoMensaje --> Atrasado
+  ActualizandoEstadoMensaje --> Firmado
 }
 
-Destinatario -r-> AccediendoMensaje
+Destinatario -r-> ActualizandoEstadoMensaje
 
 RastreadorDocumento -d-> [*]
 @enduml
