@@ -88,12 +88,6 @@ package "Gestión de Datos del Profesorado" {
                 usecase "Validar Cumplimiento" as valCumpli1
                 note right 
                     Validar cumplimiento de
-                    valores consignados en la
-                    memoria por titulacion
-                end note
-                usecase "Validar Cumplimiento" as valCumpli2
-                note right 
-                    Validar cumplimiento de
                     compromisos de memoria con
                     los valores de la titulación
                 end note
@@ -137,7 +131,7 @@ package "Gestión de Datos del Profesorado" {
 
     tec --> claustroPackage
     tec --> porProfPackage
-    tec --> valCumpli2
+    tec --> valCumpli1
     
     note top of admin
         El Administrador tiene

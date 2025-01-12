@@ -5,9 +5,9 @@ actor "Técnico Calidad" as tec
 actor "Administrador" as admin
 
 package "Indicadores" as indicadores {
-    usecase "Obtener indicadores" as obtenerIndicadores
+    usecase "Obtener Indicadores" as obtenerIndicadores
     note top of obtenerIndicadores
-    Para Sistema de Gestión
+        Para el Sistema de Gestión
     end note
 }
 

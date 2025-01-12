@@ -16,7 +16,7 @@ package "Gestión de Carga Docente" {
             end note
         }
 
-        package "Valores" as valoresPackage {
+        package "Memoria" as valoresPackage {
             usecase "Asignar Valores" as asignarValores
             note top of asignarValores
                 Consignados en Memoria
@@ -40,10 +40,11 @@ package "Gestión de Carga Docente" {
     }
 
     rectangle "Revisión de Cumplimiento" {
-        package "Revision" as revisionPackage {
-            usecase "Revisar Listado de Profesores" as revisarCarga
+        package "Revisión" as revisionPackage {
+            usecase "Revisar Profesores" as revisarCarga
             note top of revisarCarga
-                Cuya Carga Docente no se ajusta
+                Revisar Listado de Profesores
+                cuya Carga Docente no se ajusta
                 a carga supuesta por contrato
             end note
         }

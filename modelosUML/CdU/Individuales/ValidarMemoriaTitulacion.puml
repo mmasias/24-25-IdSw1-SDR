@@ -3,6 +3,7 @@ left to right direction
 
 actor "Técnico Calidad" as tec
 actor "Administrador" as admin
+actor "Ordenación" as ord
 
 package "Validación Memoria" as valMemPackage {
     usecase "Validar Cumplimiento" as valCumpli1
@@ -12,7 +13,7 @@ package "Validación Memoria" as valMemPackage {
         los valores de la titulación
     end note
 }
-
+ord --> valCumpli1
 tec --> valCumpli1
 admin --> valCumpli1
 @enduml

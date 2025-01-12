@@ -1,29 +1,25 @@
 @startuml
 left to right direction
 
-skinparam actor {
-    FontSize 20
-}
-
 skinparam usecase {
-    FontSize 28
-}
-
-skinparam package {
     FontSize 20
 }
 
-skinparam nodesep 350
+skinparam nodesep 170
 
 actor "Técnico Calidad" as tec
 actor "Administrador" as admin
 
 package "Informes" as informes {
-    usecase "Emitir informe del Profesorado" as emitirInforme
+    usecase "Emitir Informe" as emitirInforme
     package "Tipos de Informes" {
         usecase "por Titulación" as titulacion
         usecase "Global" as global
     }
+    note top of emitirInforme
+        Emitir Informe
+        del Profesorado
+    end note
 }
 
 emitirInforme ..> titulacion

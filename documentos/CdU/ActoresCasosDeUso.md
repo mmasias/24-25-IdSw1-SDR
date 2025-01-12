@@ -31,10 +31,9 @@ El objetivo de este paso es **encontrar actores y casos de uso** siguiendo las [
 | **Revisar** listado de Profesores cuya Carga Docente no se ajusta al Contrato       |            | ✅   | ✅         |                 | ✅           |
 | **Consultar** Claustro Docente (listado PDI asociado a una titulación)              |            | ✅   | ✅         | ✅              | ✅           |
 | **Consultar** Asignación Docente por Profesor (créditos y asignaturas)              |            | ✅   | ✅         | ✅              | ✅           |
+| **Validar** cumplimiento de compromisos de Memoria con los valores de la Titulación |            |      | ✅         | ✅              | ✅           |
 | **Asignar** Carga Docente de Asignaturas a Profesores                               |            |      | ✅         |                 | ✅            |
-| **Validar** cumplimiento de valores consignados en la Memoria por Titulación        |            |      | ✅         |                 | ✅            |
 | **Asignar** valores consignados en Memoria por Titulación                           |            |      |            | ✅              | ✅            |
 | **Asignar** valor de Información a SIIU y DGU del PDI                               |            |      |            | ✅              | ✅            |
-| **Validar** cumplimiento de compromisos de Memoria con los valores de la Titulación |            |      |            | ✅              | ✅            |
 | **Obtener** Indicadores para Sistema de Gestión                                     |            |      |            | ✅              | ✅            |
 | **Emitir** Informe del Profesorado (Global o por Titulación)                        |            |      |            | ✅              | ✅            |
