@@ -8,16 +8,16 @@ startDestinatario --> Destinatario
 
 state RastreadorDocumento {
   
-  Mensaje --> Documento
-  Documento --> Mensaje
+  AccediendoMensaje --> ActualizandoEstadoDocumento
+  ActualizandoEstadoDocumento --> AccediendoMensaje
   
-  Documento --> Pendiente
-  Documento --> Leido
-  Documento --> Atrasado
-  Documento --> Firmado
+  ActualizandoEstadoDocumento --> Pendiente
+  ActualizandoEstadoDocumento --> Leido
+  ActualizandoEstadoDocumento --> Atrasado
+  ActualizandoEstadoDocumento --> Firmado
 }
 
-Destinatario -r-> Mensaje
+Destinatario -r-> AccediendoMensaje
 
 RastreadorDocumento -d-> [*]
 @enduml
