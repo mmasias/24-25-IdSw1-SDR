@@ -86,6 +86,25 @@ La prioridad debe basarse en su importancia estratégica, valor para el cliente,
 - **Actor**: Administrador
 - **Descripción**: Administrador cancela una oferta por incumplimiento
 
+### Ver ofertas de trabajo
+![Ver ofertas](svg/Detallar/verOfertaTrabajo.svg)
+- **Actor**: Empresa, Alumni, Administrador
+- **Descripción**: Usuarios visualizan ofertas laborales disponibles
+
+### Iniciar sesión
+![Iniciar sesión](svg/Detallar/iniciarSesion.svg)
+- **Actor**: Empresa, Alumni, Administrador
+- **Descripción**: Usuarios acceden a la plataforma con sus credenciales
+
+### Cerrar sesión
+![Cerrar sesión](svg/Detallar/cerrarSesion.svg)
+- **Actor**: Empresa, Alumni, Administrador
+- **Descripción**: Usuarios finalizan su sesión en la plataforma
+
+### Ver estadísticas
+![Ver estadísticas](svg/Detallar/verEstadisticas.svg)
+- **Actor**: Administrador
+- **Descripción**: Administrador visualiza datos y estadísticas de ofertas
 # Diagramas de Contexto
 
 ### 1. Crear Oferta de Trabajo
