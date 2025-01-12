@@ -28,11 +28,17 @@ A continuación se muestra el diagrama de estados del proyecto
 ### Diagrama de Estados del receptor
 
 <p align="center">
-  <img src="/docs/modeloDeDominio/diagramaDeEstados/PrimeraIteracion/diagramaDeEstadosReceptorIteracion1.svg">
+  <img src="/docs/modeloDeDominio/diagramaDeEstados/PrimeraIteracion/diagramaDeEstadosReceptorIteracion1Final.svg">
 </p>
 
 ### Diagrama de Estados del remitente
 
 <p align="center">
-  <img src="/docs/modeloDeDominio/diagramaDeEstados/PrimeraIteracion/diagramaDeEstadosRemitenteIteracion1.svg">
+  <img src="/docs/modeloDeDominio/diagramaDeEstados/PrimeraIteracion/diagramaDeEstadosRemitenteIteracion1Final.svg">
+</p>
+
+### Diagrama de Estados del rastreador de documento
+
+<p align="center">
+  <img src="/docs/modeloDeDominio/diagramaDeEstados/TerceraIteracion/Rastreador documento/diagrama_de_estados_rastreador_documento.svg">
 </p>
