@@ -36,3 +36,5 @@ A continuación se muestra el diagrama de estados del proyecto
 <p align="center">
   <img src="/docs/modeloDeDominio/diagramaDeEstados/PrimeraIteracion/diagramaDeEstadosRemitenteIteracion1.svg">
 </p>
+
+
