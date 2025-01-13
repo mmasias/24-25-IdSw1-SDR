@@ -6,7 +6,7 @@ Modelo de casos de uso separados por actores.
 
 ## 1. Profesor
 
-![Diagrama de Casos de Uso - Profesor](https://github.com/natiicruuz/24-25-IdSw1-SDR/blob/a99e0406b6ceaab64fc04227db58c438867c2dbb/images/modelosUML/EstructurarModelosDeCasosDeUso/Casos%20de%20Uso%20-%20Profesor.svg)
+![Diagrama de Casos de Uso - Profesor](https://github.com/natiicruuz/24-25-IdSw1-SDR/blob/1629f01a102b4d8a25f061b4817695b41403670e/images/modelosUML/EstructurarModelosDeCasosDeUso/Casos%20de%20Uso%20-%20Profesor.svg)
 
 [Ver Código](/CasosDeUso/diagramasEstructurarModelos/Profesor.puml) 
 ---
