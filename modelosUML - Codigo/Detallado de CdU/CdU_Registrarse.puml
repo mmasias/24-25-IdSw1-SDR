@@ -2,7 +2,6 @@
 title Caso de Uso: Registrarse
 
 actor Usuario_Invitado as Usuario
-
 usecase "Registrarse" as Registrarse
 usecase "Validar correo no registrado" as ValidarCorreo
 usecase "Verificar seguridad de la contraseña" as VerificarContrasena
@@ -11,8 +10,8 @@ usecase "Enviar correo de confirmación" as EnviarCorreo
 
 Usuario --> Registrarse
 Registrarse --> ValidarCorreo
-Registrarse --> VerificarContrasena
-Registrarse --> GuardarDatos
-Registrarse --> EnviarCorreo
+ValidarCorreo --> VerificarContrasena
+VerificarContrasena --> GuardarDatos
+GuardarDatos --> EnviarCorreo
 
 @enduml
