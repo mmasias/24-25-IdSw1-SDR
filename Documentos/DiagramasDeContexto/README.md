@@ -16,94 +16,95 @@
 
 ## Diagrama de Contexto del Administrador
 
-![Modelo de Contexto Administrador](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/DiagramasContexto/DiagramasDeContextoAdministrador/AdministradorContexto.svg)
+![Modelo de Contexto Administrador](../Imagenes/DiagramasContexto/DiagramasDeContextoAdministrador/AdministradorContexto.svg)
 
-[Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/DiagramasDeContexto/DiagramasDeContextoAdministrador/AdministradorContexto.puml)
+[Ver código](DiagramasDeContextoAdministrador/AdministradorContexto.puml)
 
 
 ### Diagrama de Contexto Consultar Usuarios
 
-![Modelo de Contexto Consultar Usuarios](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/DiagramasContexto/DiagramasDeContextoAdministrador/DiagramaDeContextoConsultarUsuariosAdministrador.svg)
+![Modelo de Contexto Consultar Usuarios](../Imagenes/DiagramasContexto/DiagramasDeContextoAdministrador/DiagramaDeContextoConsultarUsuariosAdministrador.svg)
 
-[Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/DiagramasDeContexto/DiagramasDeContextoAdministrador/DiagramaDeContextoConsultarUsuariosAdministrador.puml)
+[Ver código](DiagramasDeContextoAdministrador/DiagramaDeContextoConsultarUsuariosAdministrador.puml)
 
 ### Diagrama de Contexto Consultar Rutinas
 
-![Modelo de Contexto Consultar Usuarios](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/DiagramasContexto/DiagramasDeContextoAdministrador/DiagramaDeContextoConsultarRutinasAdministrador.svg)
+![Modelo de Contexto Consultar Usuarios](../Imagenes/DiagramasContexto/DiagramasDeContextoAdministrador/DiagramaDeContextoConsultarRutinasAdministrador.svg)
 
-[Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/DiagramasDeContexto/DiagramasDeContextoAdministrador/DiagramaDeContextoConsultarRutinasAdministrador.puml)
+[Ver código](DiagramasDeContextoAdministrador/DiagramaDeContextoConsultarRutinasAdministrador.puml)
 
 ### Diagrama de Contexto Consultar Retos
 
-![Modelo de Contexto Consultar Usuarios](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/DiagramasContexto/DiagramasDeContextoAdministrador/DiagramaDeContextoConsultarRetosAdministrador.svg)
+![Modelo de Contexto Consultar Usuarios](../Imagenes/DiagramasContexto/DiagramasDeContextoAdministrador/DiagramaDeContextoConsultarRetosAdministrador.svg)
 
-[Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/DiagramasDeContexto/DiagramasDeContextoAdministrador/DiagramaDeContextoConsultarRetosAdministrador.puml)
+[Ver código](DiagramasDeContextoAdministrador/DiagramaDeContextoConsultarRetosAdministrador.puml)
 
 ### Diagrama de Contexto Consultar Configuracion
 
-![Modelo de Contexto Consultar Usuarios](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/DiagramasContexto/DiagramasDeContextoAdministrador/DiagramaDeContextoConsultarConfiguracionAdministrador.svg)
+![Modelo de Contexto Consultar Usuarios](../Imagenes/DiagramasContexto/DiagramasDeContextoAdministrador/DiagramaDeContextoConsultarConfiguracionAdministrador.svg)
 
-[Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/DiagramasDeContexto/DiagramasDeContextoAdministrador/DiagramaDeContextoConsultarConfiguracionAdministrador.puml)
+[Ver código](DiagramasDeContextoAdministrador/DiagramaDeContextoConsultarConfiguracionAdministrador.puml)
 
 ### Diagrama de Contexto Consultar Reportes
 
-![Modelo de Contexto Consultar Usuarios](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/DiagramasContexto/DiagramasDeContextoAdministrador/DiagramaDeContextoConsultarReportesAdministrador.svg)
+![Modelo de Contexto Consultar Usuarios](../Imagenes/DiagramasContexto/DiagramasDeContextoAdministrador/DiagramaDeContextoConsultarReportesAdministrador.svg)
 
-[Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/DiagramasDeContexto/DiagramasDeContextoAdministrador/DiagramaDeContextoConsultarReportesAdministrador.puml)
+[Ver código](DiagramasDeContextoAdministrador/DiagramaDeContextoConsultarReportesAdministrador.puml)
+
 ---
 
 ## Diagrama de Contexto del Alumno
 
-![Modelo de Contexto Alumno](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/DiagramasContexto/DiagramasDeContextoAlumno/AlumnoContexto.svg)
+![Modelo de Contexto Alumno](../Imagenes/DiagramasContexto/DiagramasDeContextoAlumno/AlumnoContexto.svg)
 
-[Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/DiagramasDeContexto/DiagramasDeContextoAlumnos/AlumnosContexto.puml)
+[Ver código](DiagramasDeContextoAlumnos/AlumnosContexto.puml)
 
 ### Diagrama de Contexto Menu Rutinas y Ejercicios
 
-![Modelo de Contexto Consultar Usuarios](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/DiagramasContexto/DiagramasDeContextoAlumno/DiagramaDeContextoMenuRutinasyEjerciciosAlumno.svg)
+![Modelo de Contexto Consultar Usuarios](../Imagenes/DiagramasContexto/DiagramasDeContextoAlumno/DiagramaDeContextoMenuRutinasyEjerciciosAlumno.svg)
 
-[Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/DiagramasDeContexto/DiagramasDeContextoAlumnos/DiagramaDeContextoMenuRutinasyEjerciciosAlumno.puml)
+[Ver código](DiagramasDeContextoAlumnos/DiagramaDeContextoMenuRutinasyEjerciciosAlumno.puml)
 
 ### Diagrama de Contexto Menu Retos
 
-![Modelo de Contexto Consultar Usuarios](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/DiagramasContexto/DiagramasDeContextoAlumno/DiagramaDeContextoMenuRetosAlumno.svg)
+![Modelo de Contexto Consultar Usuarios](../Imagenes/DiagramasContexto/DiagramasDeContextoAlumno/DiagramaDeContextoMenuRetosAlumno.svg)
 
-[Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/DiagramasDeContexto/DiagramasDeContextoAlumnos/DiagramDeContextoMenuRetosAlumno.puml)
+[Ver código](DiagramasDeContextoAlumnos/DiagramDeContextoMenuRetosAlumno.puml)
 
 ### Diagrama de Contexto Menu Perfil
 
-![Modelo de Contexto Consultar Usuarios](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/DiagramasContexto/DiagramasDeContextoAlumno/DiagramaDeContextoMenuPerfilAlumno.svg)
+![Modelo de Contexto Consultar Usuarios](../Imagenes/DiagramasContexto/DiagramasDeContextoAlumno/DiagramaDeContextoMenuPerfilAlumno.svg)
 
-[Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/DiagramasDeContexto/DiagramasDeContextoAlumnos/DiagramDeContextoMenuPerfilAlumno.puml)
+[Ver código](DiagramasDeContextoAlumnos/DiagramaDeContextoMenuPerfilAlumnos.puml)
 
 ---
 
 ## Diagrama de Contexto del Profesor
 
-![Modelo de Contexto Profesor](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/DiagramasContexto/DiagramasDeContextoProfesor/ProfesorContexto.svg)
+![Modelo de Contexto Profesor](../Imagenes/DiagramasContexto/DiagramasDeContextoProfesor/ProfesorContexto.svg)
 
-[Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/DiagramasDeContexto/DiagramaDeContextoProfesor.puml/ProfesorContexto.puml)
+[Ver código](DiagramaDeContextoProfesor/ProfesorContexto.puml)
 
 ### Diagrama de Contexto Menu Rutinas y Ejercicios
 
-![Modelo de Contexto Consultar Usuarios](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/DiagramasContexto/DiagramasDeContextoProfesor/DiagramaDeContextoMenuRutinasyEjerciciosProfesor.svg)
+![Modelo de Contexto Consultar Usuarios](../Imagenes/DiagramasContexto/DiagramasDeContextoProfesor/DiagramaDeContextoMenuRutinasyEjerciciosProfesor.svg)
 
-[Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/DiagramasDeContexto/DiagramaDeContextoProfesor.puml/DiagramaDeContextoMenuRutinasyEjerciciosProfesor.puml)
+[Ver código](DiagramaDeContextoProfesor/DiagramaDeContextoMenuRutinasyEjerciciosProfesor.puml)
 
 ### Diagrama de Contexto Menu Retos
 
-![Modelo de Contexto Consultar Usuarios](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/DiagramasContexto/DiagramasDeContextoProfesor/DiagramaDeContextoMenuRetosProfesor.svg)
+![Modelo de Contexto Consultar Usuarios](../Imagenes/DiagramasContexto/DiagramasDeContextoProfesor/DiagramaDeContextoMenuRetosProfesor.svg)
 
-[Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/DiagramasDeContexto/DiagramaDeContextoProfesor.puml/DiagramaDeContextoMenuRetosProfesor.puml)
+[Ver código](DiagramaDeContextoProfesor/DiagramaDeContextoMenuRetosProfesor.puml)
 
 ### Diagrama de Contexto Menu Perfil
 
-![Modelo de Contexto Consultar Usuarios](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/DiagramasContexto/DiagramasDeContextoProfesor/DiagramaDeContextoMenuPerfilProfesor.svg)
+![Modelo de Contexto Consultar Usuarios](../Imagenes/DiagramasContexto/DiagramasDeContextoProfesor/DiagramaDeContextoMenuPerfilProfesor.svg)
 
-[Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/DiagramasDeContexto/DiagramaDeContextoProfesor.puml/DiagramaDeContextoMenuPerfilProfesor.puml)
+[Ver código](DiagramaDeContextoProfesor/DiagramaDeContextoMenuPerfilProfesor.puml)
 
 ### Diagrama de Contexto Menu Clasificacion
 
-![Modelo de Contexto Consultar Usuarios](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/Imagenes/DiagramasContexto/DiagramasDeContextoProfesor/DiagramaDeContextoMenuClasificacionProfesor.svg)
+![Modelo de Contexto Consultar Usuarios](../Imagenes/DiagramasContexto/DiagramasDeContextoProfesor/DiagramaDeContextoMenuClasificacionProfesor.svg)
 
-[Ver código](https://github.com/celiabecerril/24-25-IdSw1-SDR/blob/main/Documentos/DiagramasDeContexto/DiagramaDeContextoProfesor.puml/DiagramaDeContextoMenuClasificacionProfesor.puml)
+[Ver código](DiagramaDeContextoProfesor/DiagramaDeContextoMenuClasificacionProfesor.puml)
