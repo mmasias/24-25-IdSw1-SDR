@@ -186,15 +186,16 @@
 ## Prototipo del CdU `IngresarAlSistema`
 
 <div align="center">
-  <img src="" alt="">
+  <img src="https://github.com/user-attachments/assets/def3d9f3-e3d4-4fea-a2c4-61069780f633" alt="Prototipo del CdU Ingresar Al Sistema">
 </div>
+
 
 ---
 
 ## Prototipo del CdU `IniciarSesion`
 
 <div align="center">
-  <img src="" alt="">
+  <img src="https://github.com/user-attachments/assets/7d8212ae-d652-4065-af38-0dfac85bd945" alt="iniciarSesion">
 </div>
 
 ---
@@ -202,7 +203,12 @@
 ## Prototipo del CdU `CambiarMenu`
 
 <div align="center">
-  <img src="" alt="">
+  <table>
+    <tr>
+      <td><img src="https://github.com/user-attachments/assets/4bc8491a-1ea3-4e09-bc70-e4d5c6b6e637" alt="Imagen 1"></td>
+      <td><img src="https://github.com/user-attachments/assets/d0473702-df8f-4885-bd5f-03079aadd50e" alt="Imagen 2"></td>
+    </tr>
+  </table>
 </div>
 
 ---
@@ -210,24 +216,39 @@
 ## Prototipo del CdU `VerRutinasEjercicios`
 
 <div align="center">
-  <img src="" alt="">
+  <table>
+    <tr>
+      <td><img src="https://github.com/user-attachments/assets/fe1f95ba-3ad1-45ed-b93c-e167dbcae3bb" alt="Imagen 1"></td>
+      <td><img src="https://github.com/user-attachments/assets/6775c37b-07fa-4c5c-8b44-7f0f7c96a9d9" alt="Imagen 2"></td>
+    </tr>
+  </table>
 </div>
 
 ---
-
 
 ## Prototipo del CdU `VerRutina`
 
 <div align="center">
-  <img src="" alt="">
+  <table>
+    <tr>
+      <td><img src="https://github.com/user-attachments/assets/f22aa05c-af89-4840-9d94-2f633e263672" alt="imagen1"></td>
+      <td><img src="https://github.com/user-attachments/assets/624185a3-bfbe-4746-a5c1-09112b362f32" alt="imagen2"></td>
+    </tr>
+  </table>
 </div>
 
 ---
 
+
 ## Prototipo del CdU `EditarRutina`
 
 <div align="center">
-  <img src="" alt="">
+  <table>
+    <tr>
+      <td><img src="https://github.com/user-attachments/assets/5e831b97-ec66-421c-98de-12b162aaef91" alt="editar"></td>
+      <td><img src="https://github.com/user-attachments/assets/a312102b-e4f7-4dd6-b534-ebc668595549" alt="editar"></td>
+    </tr>
+  </table>
 </div>
 
 ---
@@ -235,7 +256,12 @@
 ## Prototipo del CdU `CrearRutina`
 
 <div align="center">
-  <img src="" alt="">
+  <table>
+    <tr>
+      <td><img src="https://github.com/user-attachments/assets/76a72b75-afac-4c72-a212-2d984b34bb00" alt="crear"></td>
+      <td><img src="https://github.com/user-attachments/assets/25b7c23f-0c1c-408e-9638-068b2d4737ee" alt="crear2"></td>
+    </tr>
+  </table>
 </div>
 
 ---
@@ -243,25 +269,38 @@
 ## Prototipo del CdU `VerEjercicio`
 
 <div align="center">
-  <img src="" alt="">
+  <table>
+    <tr>
+      <td><img src="https://github.com/user-attachments/assets/6cdac8da-304b-48eb-9d9c-52b75b8ec811" alt="ejercicio1"></td>
+      <td><img src="https://github.com/user-attachments/assets/c73c4cf3-a5d9-4dfc-836b-7b5102db9cf5" alt="ejercicio2"></td>
+    </tr>
+  </table>
 </div>
 
 ---
-
 
 ## Prototipo del CdU `EditarEjercicio`
 
 <div align="center">
-  <img src="" alt="">
+  <table>
+    <tr>
+      <td><img src="https://github.com/user-attachments/assets/66a11043-893b-40a5-9d58-e76f25376c95" alt="editarejer"></td>
+      <td><img src="https://github.com/user-attachments/assets/fcb8d111-9387-4045-9e6f-c3c2ef38338d" alt="editarejer"></td>
+    </tr>
+  </table>
 </div>
 
 ---
 
-
 ## Prototipo del CdU `CrearEjercicio`
 
 <div align="center">
-  <img src="" alt="">
+  <table>
+    <tr>
+      <td><img src="https://github.com/user-attachments/assets/0adaa4d0-91d5-46cf-a700-b026fbbbe3e5" alt="CrearEjercicio"></td>
+      <td><img src="https://github.com/user-attachments/assets/8c4a4a75-1bc0-4145-8d65-5b1879444b2b" alt="CrearEjercicio2"></td>
+    </tr>
+  </table>
 </div>
 
 ---
