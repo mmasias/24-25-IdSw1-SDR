@@ -3,6 +3,8 @@ left to right direction
 
 actor Admin
 
+usecase "Ingresar al Sistema" as IngresarAlSistema
+usecase "Cambiar Menu" as CambiarMenu
 package "Gestión de Usuarios" {
     usecase "Crear Usuario" as CrearUsuario
     usecase "Modificar Usuario" as ModificarUsuario
@@ -82,6 +84,8 @@ Admin --> AjustesGenerales
 Admin --> ConsultarReportes
 Admin --> DescargarEstadisticas
 Admin --> CerrarSesion
+Admin --> CambiarMenu
+Admin --> IngresarAlSistema
 
 @enduml
 
