@@ -13,10 +13,6 @@
 | ![Casos de uso](../Imagenes/DetallarCasosDeUso/Registrarse.svg) | [Ver código](Registrarse.puml) |
 
 ## Profesor
-### Ingresar Al Sistema
-| Diagrama | Código Fuente |
-|----------|---------------|
-| ![Casos de uso](../Imagenes/DetallarCasosDeUso/Profesor/MenuPrincipalProfesor.svg) | [Ver código](Profesor/IngresarAlSistema.puml) |
 
 ### Cambiar a Rutinas y Ejercicios
 | Diagrama | Código Fuente |
@@ -119,10 +115,6 @@
 | ![Casos de uso](../Imagenes/DetallarCasosDeUso/Profesor/Evaluar_Retos.svg) | [Ver código](Profesor/Evaluar_Retos.puml) |
 
 ## Alumno
-### Ingresar Al Sistema
-| Diagrama | Código Fuente |
-|----------|---------------|
-| ![Casos de uso](../Imagenes/DetallarCasosDeUso/Alumno/MenuPrincipalAlumno.svg) | [Ver código](Alumno/MenuPrincipalAlumno.puml) |
 
 ### Cambiar a Rutinas y Ejercicios
 | Diagrama | Código Fuente |
@@ -195,6 +187,11 @@
 | Diagrama | Código Fuente |
 |----------|---------------|
 | ![Casos de uso](../Imagenes/DetallarCasosDeUso/IniciarSesion.svg) | [Ver código](IniciarSesion.puml) |
+
+### Ingresar Al Sistema
+| Diagrama | Código Fuente |
+|----------|---------------|
+| ![Casos de uso](../Imagenes/DetallarCasosDeUso/Profesor/MenuPrincipalProfesor.svg) | [Ver código](Profesor/IngresarAlSistema.puml) |
 
 ### Cerrar Sesión 
 | Diagrama | Código Fuente |
