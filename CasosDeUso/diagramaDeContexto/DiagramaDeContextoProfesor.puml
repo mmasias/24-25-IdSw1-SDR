@@ -3,6 +3,7 @@ state "NO_AUTENTICADO" as NoAutenticado
 state "MENU_PRINCIPAL" as MenuPrincipal  
 state "EDITANDO_GUÍA" as EditandoGuia  
 state "VISUALIZANDO_GUÍA" as VisualizandoGuia  
+state "ENVIANDO_GUÍA" as EnviandoGuia  
 
 [*] --> NoAutenticado   
     
@@ -38,9 +39,16 @@ EditandoGuia --> EditandoGuia
         Ajustar contenido editable  
     end note  
 
-EditandoGuia --> MenuPrincipal  
+EditandoGuia --> EnviandoGuia  
     note on link  
-        Guardar cambios y cerrar edición  
+        Finalizar edición y enviar guía  
+        al Director de Grado  
+    end note  
+
+EnviandoGuia --> MenuPrincipal  
+    note on link  
+        Confirmar envío y regresar  
+        al menú principal  
     end note  
 
 @enduml  
