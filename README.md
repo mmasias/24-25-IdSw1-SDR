@@ -1,6 +1,8 @@
 # Tablón de Anuncios Uneat 
 
-<img src="https://github.com/miguelgomez75/24-25-IdSw1-SDR/blob/main/images/Logo.png" alt="Alt text" width="500" height="500">
+<div align="center">
+  <img src="https://github.com/miguelgomez75/24-25-IdSw1-SDR/blob/main/images/Logo.png" alt="Alt text" width="300" height="300">
+</div>
 
 ## 📋[Seguimento del proyecto](https://github.com/users/miguelgomez75/projects/3/views/1)📋
 
