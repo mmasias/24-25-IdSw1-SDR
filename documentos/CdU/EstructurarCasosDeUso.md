@@ -10,68 +10,18 @@ El objetivo de este paso es **estructurar los casos de uso** siguiendo las [paut
 
 ---
 
-## 🔍 **Identificar descripciones de funcionalidad compartida**
+# 🛠️ **Diagramas de Casos de Uso**
 
-Para reducir la redundancia, debemos identificar acciones o partes de acciones comunes compartidas por varios casos de uso. Esto incluye:
-
-1. **Generalización de Casos de Uso**:
-   - Un caso de uso `A` generaliza a un caso de uso `B` cuando una instancia de `A` incluye el comportamiento especificado por `B`.
-   - **Ejemplo**: Si varios casos de uso necesitan mostrar un estado común, este comportamiento puede generalizarse en un caso de uso abstracto.
-
-2. **Casos de Uso Concretos y Abstractos**:
-   - Los **casos de uso concretos** son iniciados por un actor y describen una secuencia completa de acciones realizadas por el sistema.
-   - Los **casos de uso abstractos** no se instancian por sí mismos; existen para ser reutilizados por otros casos de uso.
-
----
-
-## 🧩 **Identificar descripciones opcionales y adicionales de funcionalidad**
-
-Las relaciones de inclusión y extensión ayudan a manejar la funcionalidad opcional y adicional:
-
-1. **Inclusión**:
-   - Proporciona una extensión explícita e incondicional a un caso de uso.
-   - Relación entre dos casos de uso donde uno incluye al otro siempre que se ejecuta.
-
-2. **Extensión**:
-   - Permite añadir comportamiento adicional sujeto a condiciones específicas.
-   - Incluye un punto de extensión en el caso de uso destino donde puede realizarse la extensión.
-
----
-
-## 👥 **Actores y Casos de Uso Relacionados**
-
-| Caso de Uso                                                                         | Profesores | RRHH | Ordenación | Técnico Calidad | Administrador |
-|-------------------------------------------------------------------------------------|------------|------|------------|-----------------|---------------|
-| **Iniciar Sesión** en la plataforma                                                 | ✅         | ✅  | ✅         | ✅              | ✅           |
-| **Introducir** Datos Académicos                                                     | ✅         |      |            |                 |               |
-| **Consultar** valores asignados de Contrato y otros Datos Personales                | ✅         |      |            |                 |               |
-| **Consultar** Asignación Docente (por titulación, curso y semestre)                 | ✅         |      |            |                 |               |
-| **Validar** los Datos introducidos por el Profesorado                               |            | ✅   |            |                 | ✅            |
-| **Modificar** los Datos introducidos por el Profesorado                             |            | ✅   |            |                 | ✅            |
-| **Introducir** Datos Laborales                                                      |            | ✅   |            |                 | ✅            |
-| **Revisar** listado de Profesores cuya Carga Docente no se ajusta al Contrato       |            | ✅   | ✅         |                 | ✅           |
-| **Consultar** Claustro Docente (listado PDI asociado a una titulación)              |            | ✅   | ✅         | ✅              | ✅           |
-| **Consultar** Asignación Docente por Profesor (créditos y asignaturas)              |            | ✅   | ✅         | ✅              | ✅           |
-| **Validar** cumplimiento de compromisos de Memoria con los valores de la Titulación |            |      | ✅         | ✅              | ✅           |
-| **Asignar** Carga Docente de Asignaturas a Profesores                               |            |      | ✅         |                 | ✅            |
-| **Asignar** valores consignados en Memoria por Titulación                           |            |      |            | ✅              | ✅            |
-| **Asignar** valor de Información a SIIU y DGU del PDI                               |            |      |            | ✅              | ✅            |
-| **Obtener** Indicadores para Sistema de Gestión                                     |            |      |            | ✅              | ✅            |
-| **Emitir** Informe del Profesorado (Global o por Titulación)                        |            |      |            | ✅              | ✅            |
-
----
-
-## 🖼️ **Diagramas de Casos de Uso**
-
-
----
-
-## 📌 **Notas Adicionales**
-
-1. Los casos de uso **abstractos** y las relaciones de **inclusión/extensión** mejoran la reusabilidad y claridad del modelo.
-2. Es importante identificar los puntos de extensión y las condiciones asociadas.
-3. Los diagramas ilustrados deben complementarse con documentación textual detallada.
-
----
-
-Este contenido ha sido generado para estructurar tus casos de uso siguiendo las mejores prácticas y las pautas teóricas proporcionadas.
+| **Caso de Uso**                                  | **Actores Involucrados**         | **Diagrama**             |
+|--------------------------------------------------|-----------------------------------|--------------------------|
+| **Modificación de Datos del Profesorado**        | RRHH, Administrador              | ![Diagrama 1](/images/modelosUML/EstructurarCdU/modificarDatos.svg) |
+| **Validación de Datos del Profesorado**          | RRHH, Administrador              | ![Diagrama 2](/images/modelosUML/EstructurarCdU/validarDatos.svg) |
+| **Validación de Cumplimiento de Memoria**        | Técnico de Calidad, Administrador, Ordenación | ![Diagrama 3](/images/modelosUML/EstructurarCdU/validarCumplimiento.svg) |
+| **Consulta del Claustro Docente**                | RRHH, Administrador, Ordenación, Técnico de Calidad | ![Diagrama 4](/images/modelosUML/EstructurarCdU/consultaClaustro.svg) |
+| **Consulta de Asignación Docente**               | Profesor, RRHH, Administrador, Ordenación, Técnico de Calidad | ![Diagrama 5](/images/modelosUML/EstructurarCdU/consultarAsignacion.svg) |
+| **Datos Personales y Contrato**                  | Profesor                          | ![Diagrama 6](/images/modelosUML/EstructurarCdU/datosPersonales.svg) |
+| **Introducción de Datos Laborales**              | RRHH, Administrador              | ![Diagrama 7](/images/modelosUML/EstructurarCdU/introducirDatos.svg) |
+| **Introducción de Datos Académicos**             | Profesor                          | ![Diagrama 8](/images/modelosUML/EstructurarCdU/introAcademicos.svg) |
+| **Revisión de Cumplimiento de Carga Docente**    | Ordenación, RRHH, Administrador  | ![Diagrama 9](/images/modelosUML/EstructurarCdU/revisionCumplimiento.svg) |
+| **Asignación de Carga Docente**                  | Ordenación, Administrador         | ![Diagrama 10](/images/modelosUML/EstructurarCdU/asignarCarga.svg) |
+| **Asignación de Valores de Memoria e Información** | Técnico de Calidad, Administrador | ![Diagrama 11](/images/modelosUML/EstructurarCdU/asignarValores.svg) |
