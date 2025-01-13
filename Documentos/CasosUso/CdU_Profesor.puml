@@ -3,7 +3,7 @@ left to right direction
 actor Profesor
 
 package "Rutinas y Ejercicios" {
-    usecase "Cambiar a Rutinas y Ejercicios" as CambiarARutinasYEjercicios
+    usecase "Ver Rutinas y Ejercicios" as CambiarARutinasYEjercicios
 
    
         usecase "Mostrar Rutina" as MostrarRutina
@@ -19,18 +19,18 @@ package "Rutinas y Ejercicios" {
 }
 
 package "Retos" {
-    usecase "Cambiar a Retos" as CambiarARetos
+    usecase "Ver Retos" as CambiarARetos
     usecase "Crear Reto" as CrearReto
     usecase "Editar Reto" as EditarReto
 }
 
 package "Clasificación" {
-    usecase "Cambiar a Clasificación" as CambiarAClasificacion
+    usecase "Ver Clasificación" as CambiarAClasificacion
     usecase "Ver alumnos dentro  de clase" as VerAlumnosDentroDeClase
 }
 
 package "Perfil" {
-    usecase "Cambiar a Perfil" as CambiarAPerfil
+    usecase "Ver Perfil" as CambiarAPerfil
     usecase "Mostrar QR en centro deportivo" as MostrarQR
 
   
