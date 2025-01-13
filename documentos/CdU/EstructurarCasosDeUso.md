@@ -6,7 +6,7 @@
 
 ## 🎯 **Objetivo**
 
-El objetivo de este paso es **estructurar los casos de uso** para reducir redundancias, identificar funcionalidades compartidas y opcionales, y aplicar las relaciones de inclusión/extensión según las pautas establecidas.
+El objetivo de este paso es **estructurar los casos de uso** siguiendo las [pautas teóricas](https://github.com/mmasias/IdSw1/blob/main/temario/contenidos/CdU.ICdU.md) de la asignatura para reducir redundancias, identificar funcionalidades compartidas y opcionales, y aplicar las relaciones de inclusión/extensión según las pautas establecidas. 
 
 ---
 
