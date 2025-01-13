@@ -12,11 +12,6 @@
 |----------|---------------|
 | ![Casos de uso](../Imagenes/DetallarCasosDeUso/Registrarse.svg) | [Ver código](Registrarse.puml) |
 
-### Iniciar Sesión 
-| Diagrama | Código Fuente |
-|----------|---------------|
-| ![Casos de uso](../Imagenes/DetallarCasosDeUso/IniciarSesion.svg) | [Ver código](IniciarSesion.puml) |
-
 ## Profesor
 ### Ingresar Al Sistema
 | Diagrama | Código Fuente |
@@ -123,11 +118,6 @@
 |----------|---------------|
 | ![Casos de uso](../Imagenes/DetallarCasosDeUso/Profesor/Evaluar_Retos.svg) | [Ver código](Profesor/Evaluar_Retos.puml) |
 
-### Cerrar Sesión 
-| Diagrama | Código Fuente |
-|----------|---------------|
-| ![Casos de uso](../Imagenes/DetallarCasosDeUso/CerrarSesion.svg) | [Ver código](CerrarSesion.puml) |
-
 ## Alumno
 ### Ingresar Al Sistema
 | Diagrama | Código Fuente |
@@ -200,6 +190,11 @@
 | ![Casos de uso](../Imagenes/DetallarCasosDeUso/Alumno/MostrarQR.svg) | [Ver código](Alumno/MostrarQR.puml) |
 
 ## Profesor y Alumno 
+
+### Iniciar Sesión 
+| Diagrama | Código Fuente |
+|----------|---------------|
+| ![Casos de uso](../Imagenes/DetallarCasosDeUso/IniciarSesion.svg) | [Ver código](IniciarSesion.puml) |
 
 ### Cerrar Sesión 
 | Diagrama | Código Fuente |

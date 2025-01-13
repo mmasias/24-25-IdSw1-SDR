@@ -1,26 +1,51 @@
-@startuml
+@startuml CerrarSesion
 
-state " " as Estado1
-state " " as Estado2
+hide empty description
 
-[*] --> Estado1
+state choice <<choice>>
+
+Alumno --> choice
+Profesor --> choice
+choice --> CerrarSesion
+
+state CerrarSesion {
+    state " " as Inicio
+    state " " as Confirmacion
+    state " " as Fin
+
+    [*] --> Inicio
     note on link
-        El usuario solicita cerrar sesión
+        El alumno introduce la opción "Cerrar sesión".
     end note
-Estado1 --> Estado2
+
+    Inicio --> Confirmacion
     note on link
-        El Sistema muestra la confirmación 
-        de la operación
+        El sistema muestra un mensaje de confirmación
+        para cerrar sesión.
     end note
-state rombo <<choice>>
-Estado2 --> rombo
-note on link
-    El usuario confirma la operación
-end note
-rombo --> [*] 
-  note on link
-    EL usuario cancela la operación
+
+    state Decisión <<choice>>
+    Confirmacion --> Decisión
+    note on link
+        El alumno introduce su decisión: confirmar o cancelar.
     end note
-rombo --> Registrarse
-    
+
+    Decisión --> Fin
+    note on link
+        El alumno introduce "Confirmar".
+    end note
+
+    Decisión --> Inicio
+    note on link
+        El alumno introduce "Cancelar".
+    end note
+
+    Fin --> [*]
+    note on link
+        El sistema muestra el cierre de la sesión y redirige
+        al inicio de sesión.
+    end note
+}
+
+CerrarSesion --> Usuario
 @enduml
