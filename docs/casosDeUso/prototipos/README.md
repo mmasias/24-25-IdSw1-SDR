@@ -93,7 +93,14 @@
 
 ## Notificaciones
 
-![](./prototipadoNotificaciones/notificaciones.png)
+### Listar Notificaciones
+
+![](./prototipadoNotificaciones/listarNotificaciones.png)
+
+### Ver Notificaciones
+
+![](./prototipadoMenuPrincipal/prototipoMenuPrincipal-notificaciones.png)
+
 
 ## Usuarios
 
