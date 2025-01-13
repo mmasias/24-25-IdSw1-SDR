@@ -84,6 +84,15 @@
 
 ---
 
+## Prototipo del CdU `BuscarRutina`
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/2ba1a6c3-e584-40b0-b115-b659ce5a41fc" alt="BuscarRutina">
+</div>
+
+---
+
+
 ## Prototipo del CdU `VerEjercicio`
 
 <div align="center">
@@ -97,6 +106,12 @@
 
 ---
 
+## Prototipo del CdU `BuscarEjercicio`
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/f1052237-da08-4114-9834-b01fe2989412" alt="BuscarEjercicio">
+</div>
+---
 
 ## Prototipo del CdU `VerReto`
 
@@ -252,6 +267,13 @@
 </div>
 
 ---
+## Prototipo del CdU `BuscarRutina`
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/2ba1a6c3-e584-40b0-b115-b659ce5a41fc" alt="BuscarRutina">
+</div>
+
+---
 
 ## Prototipo del CdU `CrearRutina`
 
@@ -304,6 +326,14 @@
 </div>
 
 ---
+
+## Prototipo del CdU `BuscarEjercicio`
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/f1052237-da08-4114-9834-b01fe2989412" alt="BuscarEjercicio">
+</div>
+---
+
 ## Prototipo del CdU `VerRetos`
 
 <div align="center">
