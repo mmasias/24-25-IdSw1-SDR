@@ -3,24 +3,81 @@
 | [⬅️ Prototipar Casos de Uso](PrototiparCasosDeUso.md) |
 |:--|
 
+# 📝 Estructurar Casos de Uso
+
 ## 🎯 **Objetivo**
-El objetivo de este paso es **estructurar el modelo de casos de uso**, organizando las clases necesarias y estableciendo las relaciones entre ellas, según el diagrama conceptual previamente definido.
 
-## 📋 **Clases y Relaciones en el Modelo**  
+El objetivo de este paso es **estructurar los casos de uso** para reducir redundancias, identificar funcionalidades compartidas y opcionales, y aplicar las relaciones de inclusión/extensión según las pautas establecidas.
 
-| **#** | **Clase**                     | **Descripción**                                                                                                                                                                                                                                   |  
-|-------|-------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|  
-| 1     | 🏫 **Sin Asignacion**         | Representa el estado inicial del proceso, en el que no hay carga asignada. <br> - Esta clase solo tiene un atributo que indica el estado actual del flujo.                                                                                      |  
-| 2     | 📜 **Propuesta Carga**        | Encapsula la lógica para crear una propuesta inicial de carga docente basada en docencia, gestión e investigación. <br> - Atributos: <br> -- Profesor. <br> -- Materias. <br> -- Horas planificadas.                                             |  
-| 3     | 📋 **Asignacion Inicial**     | Valida y registra la asignación inicial. <br> - Se asegura de que la propuesta inicial cumpla con los requisitos del contrato y del programa académico. <br> - Depende de la clase **Verificar Contrato** para continuar el flujo.               |  
-| 4     | ⚖️ **Verificar Contrato**    | Verifica la compatibilidad del contrato del profesor con la carga propuesta. <br> - Atributos clave: <br> -- Tipo de contrato. <br> -- Estado de compatibilidad.                                                                                |  
-| 5     | 🔍 **Revisión EQ TC**         | Compara la EQ TC (Equivalencia de Tiempo Completo) real con la registrada en el contrato para verificar si se respetan los límites.                                                                                                              |  
-| 6     | 📊 **Revisión Carga**         | Revisa la proporción de carga docente asignada en docencia, gestión e investigación, validando que cumpla con las proporciones definidas.                                                                                                        |  
-| 7     | ✔️ **Verificar Memoria**      | Confirma si la carga asignada es compatible con la memoria académica aprobada del programa. <br> - Si hay desbalances, envía el flujo a **Ajuste Carga**.                                                                                       |  
-| 8     | 🛠️ **Ajuste Carga**           | Permite realizar modificaciones a la carga docente según las necesidades del programa y las restricciones legales.                                                                                                                               |  
-| 9     | ✅ **Asignada**                | Representa el estado final en el que la carga ha sido aprobada y asignada. <br> - Incluye detalles finales del contrato y la proporción de carga asignada en cada actividad.                                                                     |  
-| 10    | 🏛️ **Cumplimiento Legal**     | Opcionalmente, valida la conformidad legal de la asignación final con las normativas vigentes. <br> - Si no cumple, retorna el flujo a **Ajuste Carga** para realizar las modificaciones necesarias.                                              |  
+---
 
-### ✏️ **Notas**
-- Cada clase en este modelo representa un estado o proceso específico dentro del flujo de asignación de carga docente.
-- Las relaciones entre clases están diseñadas para garantizar un proceso coherente y verificable.
+## 🔍 **Identificar descripciones de funcionalidad compartida**
+
+Para reducir la redundancia, debemos identificar acciones o partes de acciones comunes compartidas por varios casos de uso. Esto incluye:
+
+1. **Generalización de Casos de Uso**:
+   - Un caso de uso `A` generaliza a un caso de uso `B` cuando una instancia de `A` incluye el comportamiento especificado por `B`.
+   - **Ejemplo**: Si varios casos de uso necesitan mostrar un estado común, este comportamiento puede generalizarse en un caso de uso abstracto.
+
+2. **Casos de Uso Concretos y Abstractos**:
+   - Los **casos de uso concretos** son iniciados por un actor y describen una secuencia completa de acciones realizadas por el sistema.
+   - Los **casos de uso abstractos** no se instancian por sí mismos; existen para ser reutilizados por otros casos de uso.
+
+---
+
+## 🧩 **Identificar descripciones opcionales y adicionales de funcionalidad**
+
+Las relaciones de inclusión y extensión ayudan a manejar la funcionalidad opcional y adicional:
+
+1. **Inclusión**:
+   - Proporciona una extensión explícita e incondicional a un caso de uso.
+   - Relación entre dos casos de uso donde uno incluye al otro siempre que se ejecuta.
+
+2. **Extensión**:
+   - Permite añadir comportamiento adicional sujeto a condiciones específicas.
+   - Incluye un punto de extensión en el caso de uso destino donde puede realizarse la extensión.
+
+---
+
+## 👥 **Actores y Casos de Uso Relacionados**
+
+| Caso de Uso                                                                         | Profesores | RRHH | Ordenación | Técnico Calidad | Administrador |
+|-------------------------------------------------------------------------------------|------------|------|------------|-----------------|---------------|
+| **Iniciar Sesión** en la plataforma                                                 | ✅         | ✅  | ✅         | ✅              | ✅           |
+| **Introducir** Datos Académicos                                                     | ✅         |      |            |                 |               |
+| **Consultar** valores asignados de Contrato y otros Datos Personales                | ✅         |      |            |                 |               |
+| **Consultar** Asignación Docente (por titulación, curso y semestre)                 | ✅         |      |            |                 |               |
+| **Validar** los Datos introducidos por el Profesorado                               |            | ✅   |            |                 | ✅            |
+| **Modificar** los Datos introducidos por el Profesorado                             |            | ✅   |            |                 | ✅            |
+| **Introducir** Datos Laborales                                                      |            | ✅   |            |                 | ✅            |
+| **Revisar** listado de Profesores cuya Carga Docente no se ajusta al Contrato       |            | ✅   | ✅         |                 | ✅           |
+| **Consultar** Claustro Docente (listado PDI asociado a una titulación)              |            | ✅   | ✅         | ✅              | ✅           |
+| **Consultar** Asignación Docente por Profesor (créditos y asignaturas)              |            | ✅   | ✅         | ✅              | ✅           |
+| **Validar** cumplimiento de compromisos de Memoria con los valores de la Titulación |            |      | ✅         | ✅              | ✅           |
+| **Asignar** Carga Docente de Asignaturas a Profesores                               |            |      | ✅         |                 | ✅            |
+| **Asignar** valores consignados en Memoria por Titulación                           |            |      |            | ✅              | ✅            |
+| **Asignar** valor de Información a SIIU y DGU del PDI                               |            |      |            | ✅              | ✅            |
+| **Obtener** Indicadores para Sistema de Gestión                                     |            |      |            | ✅              | ✅            |
+| **Emitir** Informe del Profesorado (Global o por Titulación)                        |            |      |            | ✅              | ✅            |
+
+---
+
+## 🖼️ **Diagramas de Casos de Uso**
+
+### Caso 1: Casos de Uso Básicos
+![Casos de Uso Básicos](attachment:image1)
+
+### Caso 2: Casos de Uso con Relaciones de Inclusión/Extensión
+![Casos de Uso Avanzados](attachment:image2)
+
+---
+
+## 📌 **Notas Adicionales**
+
+1. Los casos de uso **abstractos** y las relaciones de **inclusión/extensión** mejoran la reusabilidad y claridad del modelo.
+2. Es importante identificar los puntos de extensión y las condiciones asociadas.
+3. Los diagramas ilustrados deben complementarse con documentación textual detallada.
+
+---
+
+Este contenido ha sido generado para estructurar tus casos de uso siguiendo las mejores prácticas y las pautas teóricas proporcionadas.
