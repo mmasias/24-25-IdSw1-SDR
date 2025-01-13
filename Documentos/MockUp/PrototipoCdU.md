@@ -24,31 +24,31 @@
 
 ---
 
+## Prototipo del CdU `IngresarAlSistema`
+
+<div align="center">
+  <img src="" alt="">
+</div>
+
+---
+
+## Prototipo del CdU `CambiarMenu`
+
+<div align="center">
+  <img src="" alt="">
+</div>
+
+---
+
+## Prototipo del CdU `VerRutinasYejercicios`
+
+<div align="center">
+  <img src="" alt="">
+</div>
+
+---
+
 ## Prototipo del CdU `VerRutina`
-
-<div align="center">
-  <img src="" alt="">
-</div>
-
----
-
-## Prototipo del CdU `VerEjerciciosEnRutina`
-
-<div align="center">
-  <img src="" alt="">
-</div>
-
----
-
-## Prototipo del CdU `BuscarEjercicioEnRutina`
-
-<div align="center">
-  <img src="" alt="">
-</div>
-
----
-
-## Prototipo del CdU `EditarRutina`
 
 <div align="center">
   <img src="" alt="">
@@ -58,7 +58,7 @@
 
 ---
 
-## Prototipo del CdU `VerEjercicio`
+## Prototipo del CdU `CrearRutina`
 
 <div align="center">
   <table>
@@ -71,7 +71,7 @@
 
 ---
 
-## Prototipo del CdU `VerDescripcionYVideoEjercicio`
+## Prototipo del CdU `EditarRutina`
 
 <div align="center">
   <img src="" alt="">
@@ -79,7 +79,7 @@
 
 ---
 
-## Prototipo del CdU `VerRetoOpcional`
+## Prototipo del CdU `VerEjercicio`
 
 <div align="center">
   <img src="" alt="">
@@ -89,7 +89,7 @@
 
 ---
 
-## Prototipo del CdU `VerRetoObligatorio`
+## Prototipo del CdU `VerReto`
 
 <div align="center">
   <img src="" alt="">
@@ -117,7 +117,16 @@
 
 ---
 
-## Prototipo del CdU `CerrarSesion`
+
+## Prototipo del CdU `VerPerfil`
+
+<div align="center">
+  <img src="" alt="">
+</div>
+
+---
+
+## Prototipo del CdU `InscribirClase`
 
 <div align="center">
   <img src="" alt="">
@@ -137,22 +146,25 @@
 </div>
 
 ---
+## Prototipo del CdU `VerInsignias`
+
+<div align="center">
+  <img src="" alt="">
+</div>
 
 ---
 
-### **Prototipo del CdU MostrarInsignia**  
-<p align="center">  
-  <img src="" alt=""/>  
-</p>  
+## Prototipo del CdU `CerrarSesion`
+
+<div align="center">
+  <img src="" alt="">
+</div>
 
 ---
 
-### **Prototipo del CdU InscribirClase**  
-<p align="center">  
-  <img src="" alt=""/>  
-</p>  
-
 ---
+
+
 
 ## **Profesor**  
 
