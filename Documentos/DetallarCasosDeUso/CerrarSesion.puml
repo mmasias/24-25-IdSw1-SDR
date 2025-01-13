@@ -15,7 +15,7 @@ state CerrarSesion {
 
     [*] --> Inicio
     note on link
-        El alumno introduce la opción "Cerrar sesión".
+        El alumno/profesor introduce la opción "Cerrar sesión".
     end note
 
     Inicio --> Confirmacion
@@ -27,17 +27,17 @@ state CerrarSesion {
     state Decisión <<choice>>
     Confirmacion --> Decisión
     note on link
-        El alumno introduce su decisión: confirmar o cancelar.
+        El alumno/profesor introduce su decisión: confirmar o cancelar.
     end note
 
     Decisión --> Fin
     note on link
-        El alumno introduce "Confirmar".
+        El alumno/profesor introduce "Confirmar".
     end note
 
     Decisión --> Inicio
     note on link
-        El alumno introduce "Cancelar".
+        El alumno/profesor introduce "Cancelar".
     end note
 
     Fin --> [*]

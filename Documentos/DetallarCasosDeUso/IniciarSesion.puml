@@ -3,41 +3,42 @@
 hide empty description
 
 state Usuario
-state IniciarSesion{
+state IniciarSesion {
     state " " as Estado1
     state " " as Estado2
     state " " as Estado3
 
     [*] --> Estado1
     note on link
-        El Usuario solicita iniciar sesión
+        El usuario introduce la opción "Iniciar sesión".
     end note
     Estado1 -[#green]-> Estado2
     note on link
-        El Sistema solicita
+        El sistema muestra un formulario para
         - Correo
-        - Contraseña
+        - Contraseña.
     end note
     Estado2 -[#green]-> Estado3
     note on link
-        El Usuario introduce
+        El usuario introduce
         - Correo
-        - Contraseña
+        - Contraseña.
     end note
     Estado3 --> [*]
     note on link
-        El sistema identifica si es alumno o profesor
+        El sistema muestra el tipo de usuario: 
+        alumno o profesor.
     end note
 
     Estado3 -[#red]-> Estado1
     note on link
-        Datos incorrectos
+        El sistema muestra un mensaje de error: 
+        "Datos incorrectos".
     end note
 }
 state rombo <<choice>>
 state Profesor
 state Alumno
-
 
 Usuario --> IniciarSesion
 IniciarSesion --> rombo
