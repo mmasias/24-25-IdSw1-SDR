@@ -62,6 +62,7 @@
 - **Descripción**: Pede visualizar los estados en los que se encuentran las guías docentes de su grado correspondiente (aprobado o devuelto para modificación)
 - **Objetivo**: Revisar los estados de las guías docentes de su grado para mantener la trazabilidad en los procesos.
 
-
-
-
+## 13. Enviar Guía Docente para Revisión
+- **Actor**: Profesor
+- **Descripción**: El profesor envía la guía docente editada al Director de Grado para su revisión y posterior aprobación o rechazo.
+- **Objetivo**: Garantizar que las guías docentes sean revisadas para verificar su cumplimiento con los estándares de calidad y requisitos académicos.

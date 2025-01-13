@@ -10,6 +10,8 @@ actor "Técnico de Calidad" as TecnicoCalidad
 actor "Dirección de Calidad" as DireccionCalidad
 
 usecase "Editar Contenido de la Guía" as EditarGuia
+usecase "Enviar Guía Docente para Revisión" as EnviarGuia
+
 usecase "Revisar Contenido" as RevisarContenido
 usecase "Auditar Guías Docentes" as AuditarGuias
 usecase "Generar Nueva Versión de la Guía" as GenerarVersion
@@ -23,6 +25,8 @@ usecase "Ver Listado de Estados de las Guías Docentes" as VerEstadosGuias
 usecase "Ver Listado de Estados de las Guías Docentes de un Grado" as VerEstadosGuiasGrado
 
 Profesor --> EditarGuia
+Profesor --> EnviarGuia
+
 DirectorGrado --> RevisarContenido
 DirectorGrado --> PublicarGuia
 DirectorGrado --> VerEstadosGuiasGrado
