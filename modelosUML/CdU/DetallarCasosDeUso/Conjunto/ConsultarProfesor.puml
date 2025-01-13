@@ -7,9 +7,9 @@ start
 :Buscar asignaciones asociadas al profesor;
 
 if (¿Asignación encontrada?) then (sí)
-  :Mostrar asignaturas y créditos asignados al profesor;
+  :Mostrar asignaturas y créditos asignados;
 else (no)
-  :Notificar que no hay asignaciones registradas;
+  :Notificar que no hay asignaciones;
 endif
 
 if (¿Realizar otra consulta?) then (sí)

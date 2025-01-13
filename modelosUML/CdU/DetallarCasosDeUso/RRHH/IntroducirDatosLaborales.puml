@@ -16,28 +16,10 @@ endif
 :Seleccionar tipo de dato laboral a introducir;
 
 split
-  if (Selecciona "Contrato"?) then (sí)
-    :Introducir datos de Contrato;
+  if (Selecciona "Contrato/Horas/Temporalidad/Categoría Profesional"?) then (sí)
+    :Introducir datos de la categoría seleccionada;
   else (no)
-    :Ignorar Contrato;
-  endif
-split again
-  if (Selecciona "Horas"?) then (sí)
-    :Introducir datos de Horas;
-  else (no)
-    :Ignorar Horas;
-  endif
-split again
-  if (Selecciona "Temporalidad"?) then (sí)
-    :Introducir datos de Temporalidad;
-  else (no)
-    :Ignorar Temporalidad;
-  endif
-split again
-  if (Selecciona "Categoría Profesional"?) then (sí)
-    :Introducir datos de Categoría Profesional;
-  else (no)
-    :Ignorar Categoría Profesional;
+    :Ignorar;
   endif
 endsplit
 

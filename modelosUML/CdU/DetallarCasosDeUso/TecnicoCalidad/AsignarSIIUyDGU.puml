@@ -20,16 +20,16 @@ endsplit
 if (¿Validar información asignada?) then (sí)
   :Realizar validación según reglas del sistema;
   if (¿La información es válida?) then (sí)
-    :Guardar información asignada en el sistema;
+    :Guardar información asignada;
     -> "Confirmar asignación exitosa";
   else (no)
-    :Detectar errores en los valores asignados;
+    :Detectar errores en valores asignados;
     -> "Notificar inconsistencias al usuario";
     :Solicitar corrección de la información;
     -> "Reintentar asignación";
   endif
 else (no)
-  :Guardar valores sin validación previa (bajo responsabilidad del usuario);
+  :Guardar valores sin validación previa;
   -> "Confirmar asignación no validada";
 endif
 

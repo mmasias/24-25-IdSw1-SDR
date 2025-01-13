@@ -13,9 +13,9 @@ if (¿Validar datos del año anterior?) then (sí)
   :Cargar datos del año anterior para la titulación seleccionada;
   :Comparar valores del año anterior con los actuales;
   if (¿Los datos del año anterior son válidos?) then (sí)
-    :Confirmar validez de los datos previos;
+    :Confirmar validez;
   else (no)
-    :Detectar inconsistencias en los datos anteriores;
+    :Detectar inconsistencias;
     :Notificar ajustes necesarios al usuario;
   endif
 else (no)

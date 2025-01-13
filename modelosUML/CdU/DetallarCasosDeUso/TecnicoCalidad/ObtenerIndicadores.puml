@@ -8,11 +8,11 @@ start
 :Solicitar criterios de indicadores a generar;
 
 split
-  :Seleccionar criterios generales del sistema de gestión;
-  -> "Procesar datos globales desde el sistema de gestión";
+  :Seleccionar criterios generales;
+  -> "Procesar datos globales";
 split again
-  :Seleccionar criterios específicos de una sección o área;
-  -> "Procesar datos específicos según criterios seleccionados";
+  :Seleccionar criterios específicos;
+  -> "Procesar datos específicos según criterios";
 endsplit
 
 :Procesar información desde el sistema de gestión;

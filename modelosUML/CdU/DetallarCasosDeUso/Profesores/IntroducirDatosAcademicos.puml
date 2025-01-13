@@ -24,19 +24,19 @@ endif
 -> "Seleccionar los tipos de datos académicos a rellenar";
 
 fork
-  :de Sexenios;
+  :Sexenios;
 fork again
-  :de Experiencia Investigadora;
+  :Exp. Investigadora;
 fork again
-  :de Experiencia Profesional;
+  :Exp. Profesional;
 fork again
-  :de Experiencia Docente;
+  :Exp. Docente;
 fork again
-  :de Titulación Profesional;
+  :Tit. Profesional;
 fork again
-  :de Movilidad;
+  :Movilidad;
 fork again
-  :de Acreditaciones;
+  :Acreditaciones;
 end fork
 
 -> "Sistema valida la información completa";
