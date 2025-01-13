@@ -23,11 +23,11 @@
 
 ![](./manejoGrupos/manejoGrupo.svg)
 
-## Envío de Documentos
+## Envío de Mensajes
 
 ![](./envioDocumentos/envioDocumentos.svg)
 
-## Visualización y Confirmación de Documentos
+## Visualización y Confirmación de Mensajes
 
 ![](./visualizacionConfirmacionDocumentos/visualizacionConfirmacionDocumentos.svg)
 

@@ -1,13 +1,17 @@
 @startuml ManejoUsuario
 left to right direction
 actor "Administrador" as Administrador
-actor "Usuario" as Usuario
+actor "Gestor" as Usuario
 
 package "CRUD de Usuarios" {
-    usecase "Crear Usuario" as CU1
-    usecase "Ver Usuario" as CU2
-    usecase "Actualizar Usuario" as CU3
-    usecase "Borrar Usuario" as CU4
+    usecase "Crear Destinatario" as CU1
+    usecase "Ver Destinatario" as CU2
+    usecase "Actualizar Destinatario" as CU3
+    usecase "Borrar Destinatario" as CU4
+    usecase "Crear Gestor" as CU5
+    usecase "Ver Gestor" as CU6
+    usecase "Actualizar Gestor" as CU7
+    usecase "Borrar Gestor" as CU8
 }
 
 Administrador --|> Usuario
@@ -15,4 +19,8 @@ Usuario --> CU1
 Usuario --> CU2
 Usuario --> CU3
 Usuario --> CU4
+Administrador --> CU5
+Administrador --> CU6
+Administrador --> CU7
+Administrador --> CU8
 @enduml

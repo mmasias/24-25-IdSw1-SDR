@@ -1,9 +1,9 @@
 @startuml EnvioDocumentos
 left to right direction
-actor "Usuario" as Usuario
+actor "Gestor" as Usuario
 actor "Administrador" as Administrador
 
-package "Envío de Documentos" {
+package "Envío de Mensajes" {
     usecase "Crear Envío" as ED1
     usecase "Crear/Redactar Mensaje" as ED2
     usecase "Descargar Informe de Envío" as ED3
