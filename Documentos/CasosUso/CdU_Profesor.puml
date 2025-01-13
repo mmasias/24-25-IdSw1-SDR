@@ -9,12 +9,15 @@ package "Rutinas y Ejercicios" {
         usecase "Mostrar Rutina" as MostrarRutina
         usecase "Editar Rutina" as EditarRutina
         usecase "Crear Rutina" as CrearRutina
+        usecase "Buscar Rutina" as BuscarRutina
     
 
    
         usecase "Mostrar Ejercicio" as MostrarEjercicio
         usecase "Editar Ejercicio" as EditarEjercicio
         usecase "Crear Ejercicio" as CrearEjercicio
+        usecase "Buscar Ejercicio" as BuscarEjercicio
+        
     
 }
 
@@ -60,7 +63,8 @@ Profesor --> CrearRutina
 Profesor --> MostrarEjercicio
 Profesor --> EditarEjercicio
 Profesor --> CrearEjercicio
-
+Profesor --> BuscarEjercicio
+Profesor --> BuscarRutina
 Profesor --> CambiarARetos
 Profesor --> CrearReto
 Profesor --> EditarReto
