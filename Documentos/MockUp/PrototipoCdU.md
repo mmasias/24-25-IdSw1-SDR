@@ -23,19 +23,24 @@
 </div>
 
 ---
-
 ## Prototipo del CdU `IngresarAlSistema`
 
 <div align="center">
-  <img src="" alt="">
+  <img src="https://github.com/user-attachments/assets/def3d9f3-e3d4-4fea-a2c4-61069780f633" alt="Prototipo del CdU Ingresar Al Sistema">
 </div>
 
 ---
 
+
 ## Prototipo del CdU `CambiarMenu`
 
 <div align="center">
-  <img src="" alt="">
+  <table>
+    <tr>
+      <td><img src="https://github.com/user-attachments/assets/4bc8491a-1ea3-4e09-bc70-e4d5c6b6e637" alt="Imagen 1"></td>
+      <td><img src="https://github.com/user-attachments/assets/d0473702-df8f-4885-bd5f-03079aadd50e" alt="Imagen 2"></td>
+    </tr>
+  </table>
 </div>
 
 ---
@@ -43,7 +48,12 @@
 ## Prototipo del CdU `VerRutinasYejercicios`
 
 <div align="center">
-  <img src="" alt="">
+  <table>
+    <tr>
+      <td><img src="https://github.com/user-attachments/assets/0dff8819-b172-4ea9-ba3b-dcead3fad6b1" alt="img1"></td>
+      <td><img src="https://github.com/user-attachments/assets/be25845a-af57-4b9b-a371-6e74713190d9" alt="img2"></td>
+    </tr>
+  </table>
 </div>
 
 ---
@@ -51,20 +61,10 @@
 ## Prototipo del CdU `VerRutina`
 
 <div align="center">
-  <img src="" alt="">
-  <br><br>
-  <img src="" alt="">
-</div>
-
----
-
-## Prototipo del CdU `CrearRutina`
-
-<div align="center">
   <table>
     <tr>
-      <td><img src="" alt=""></td>
-      <td><img src="" alt=""></td>
+      <td><img src="https://github.com/user-attachments/assets/b72e4a2c-e49c-4175-8321-e09537c1ed4a" alt="Imagen 1"></td>
+      <td><img src="https://github.com/user-attachments/assets/d01a595a-35b9-4c10-beb0-80c0538d7aa6" alt="Imagen 2"></td>
     </tr>
   </table>
 </div>
@@ -74,7 +74,12 @@
 ## Prototipo del CdU `EditarRutina`
 
 <div align="center">
-  <img src="" alt="">
+  <table>
+    <tr>
+      <td><img src="https://github.com/user-attachments/assets/f776f154-fb67-4f25-bfb5-da9f87e71624" alt="img1"></td>
+      <td><img src="https://github.com/user-attachments/assets/b65c947e-3036-4733-8198-c6b17d857afc" alt="img2"></td>
+    </tr>
+  </table>
 </div>
 
 ---
@@ -82,12 +87,16 @@
 ## Prototipo del CdU `VerEjercicio`
 
 <div align="center">
-  <img src="" alt="">
-  <br><br>
-  <img src="" alt="">
+  <table>
+    <tr>
+      <td><img src="https://github.com/user-attachments/assets/2d5e1dff-e93d-4b2e-abd0-b303e5692b76" alt="img1"></td>
+      <td><img src="https://github.com/user-attachments/assets/19752705-8256-450b-a51f-605a30d7067b" alt="img2"></td>
+    </tr>
+  </table>
 </div>
 
 ---
+
 
 ## Prototipo del CdU `VerReto`
 
