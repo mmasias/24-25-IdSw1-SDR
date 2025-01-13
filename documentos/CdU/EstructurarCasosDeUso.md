@@ -3,7 +3,6 @@
 | [⬅️ Prototipar Casos de Uso](PrototiparCasosDeUso.md) |
 |:--|
 
-# 📝 Estructurar Casos de Uso
 
 ## 🎯 **Objetivo**
 
