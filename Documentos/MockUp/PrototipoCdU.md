@@ -168,214 +168,213 @@
 
 ## **Profesor**  
 
-### **Prototipo del CdU IniciarSesion**  
-<p align="center">  
-  <img src="https://github.com/user-attachments/assets/412beb22-6f7b-479b-b3cc-ec95630ef03a" alt="IniciarSesion"/>  
-</p>  
+
+## Prototipo del CdU `IngresarAlSistema`
+
+<div align="center">
+  <img src="" alt="">
+</div>
 
 ---
 
-### **Prototipo del CdU VerRutinasDisponibles**  
-<p align="center">  
-  <img src="" alt=""/>  
-</p>  
+## Prototipo del CdU `IniciarSesion`
+
+<div align="center">
+  <img src="" alt="">
+</div>
 
 ---
 
-### **Prototipo del CdU BuscarRutina**  
-<p align="center">  
-  <img src="" alt=""/>  
-</p>  
+## Prototipo del CdU `CambiarMenu`
+
+<div align="center">
+  <img src="" alt="">
+</div>
 
 ---
 
-### **Prototipo del CdU CrearRutina**  
-<p align="center">  
-  <img src="" alt=""/>  
-  <img src="" alt=""/>  
-</p>  
+## Prototipo del CdU `VerRutinasEjercicios`
+
+<div align="center">
+  <img src="" alt="">
+</div>
 
 ---
 
-### **Prototipo del CdU VerRutinaEspecífica**  
-<p align="center">  
-  <img src="" alt=""/>  
-</p>  
+
+## Prototipo del CdU `VerRutina`
+
+<div align="center">
+  <img src="" alt="">
+</div>
 
 ---
 
-### **Prototipo del CdU BuscarEjercicioEnRutina**  
-<p align="center">  
-  <img src="" alt=""/>  
-</p>  
+## Prototipo del CdU `EditarRutina`
+
+<div align="center">
+  <img src="" alt="">
+</div>
 
 ---
 
-### **Prototipo del CdU VerEjerciciosEnRutina**  
-<p align="center">  
-  <img src="" alt=""/>  
-</p>  
+## Prototipo del CdU `CrearRutina`
+
+<div align="center">
+  <img src="" alt="">
+</div>
 
 ---
 
-### **Prototipo del CdU EditarRutina**  
-<p align="center">  
-  <img src="" alt=""/>  
-</p>  
+## Prototipo del CdU `VerEjercicio`
+
+<div align="center">
+  <img src="" alt="">
+</div>
 
 ---
 
-### **Prototipo del CdU BuscarEjercicio**  
-<p align="center">  
-  <img src="" alt=""/>  
-</p>  
+
+## Prototipo del CdU `EditarEjercicio`
+
+<div align="center">
+  <img src="" alt="">
+</div>
 
 ---
 
-### **Prototipo del CdU CrearEjercicio**  
-<p align="center">  
-  <img src="" alt=""/>  
-</p>  
+
+## Prototipo del CdU `CrearEjercicio`
+
+<div align="center">
+  <img src="" alt="">
+</div>
 
 ---
 
-### **Prototipo del CdU VerEjerciciosDisponibles**  
-<p align="center">  
-  <img src="" alt=""/>  
-</p>  
+## Prototipo del CdU `VerRetos`
+
+<div align="center">
+  <img src="" alt="">
+</div>
 
 ---
 
-### **Prototipo del CdU VerEjercicioEspecífico**  
-<p align="center">  
-  <img src="" alt=""/>  
-</p>  
+
+## Prototipo del CdU `CrerReto`
+
+<div align="center">
+  <img src="" alt="">
+</div>
 
 ---
 
-### **Prototipo del CdU EditarEjercicio**  
-<p align="center">  
-  <img src="" alt=""/>  
-</p>  
+
+## Prototipo del CdU `EditarReto`
+
+<div align="center">
+  <img src="" alt="">
+</div>
 
 ---
 
-### **Prototipo del CdU VerRetosObligatorios**  
-<p align="center">  
-  <img src="" alt=""/>  
-</p>  
+
+## Prototipo del CdU `VerClasificacion`
+
+<div align="center">
+  <img src="" alt="">
+</div>
 
 ---
 
-### **Prototipo del CdU CrearRetoObligatorio**  
-<p align="center">  
-  <img src="" alt=""/>  
-  <img src="" alt=""/>  
-</p>  
+
+## Prototipo del CdU `VerAlumnosDentroDeClase`
+
+<div align="center">
+  <img src="" alt="">
+</div>
 
 ---
 
-### **Prototipo del CdU EditarRetoObligatorio**  
-<p align="center">  
-  <img src="" alt=""/>  
-  <img src=" alt=""/>  
-</p>  
+
+## Prototipo del CdU `VerPerfil`
+
+<div align="center">
+  <img src="" alt="">
+</div>
 
 ---
 
-### **Prototipo del CdU VerRetosOpcionales**  
-<p align="center">  
-  <img src="" alt=""/>  
-</p>  
+## Prototipo del CdU `MostrarQRCentros`
+
+<div align="center">
+  <img src="" alt="">
+</div>
 
 ---
 
-### **Prototipo del CdU CrearRetoOpcional**  
-<p align="center">  
-  <img src="" alt=""/>  
-  <img src="" alt=""/>  
-</p>  
+
+## Prototipo del CdU `CrearClase`
+
+<div align="center">
+  <img src="" alt="">
+</div>
 
 ---
 
-### **Prototipo del CdU EditarRetoOpcional**  
-<p align="center">  
-  <img src="" alt=""/>  
-  <img src="" alt=""/>  
-</p>  
+
+## Prototipo del CdU `VerMisClases`
+
+<div align="center">
+  <img src="" alt="">
+</div>
 
 ---
 
-### **Prototipo del CdU AsignarRetoAClase**  
-<p align="center">  
-  <img src="" alt=""/>  
-</p>  
+## Prototipo del CdU `VerAlumnos`
+
+<div align="center">
+  <img src="" alt="">
+</div>
 
 ---
 
-### **Prototipo del CdU VerClasificacionDeClases**  
-<p align="center">  
-  <img src="" alt=""/>  
-</p>  
+
+## Prototipo del CdU `VerRetosAlumnos`
+
+<div align="center">
+  <img src="" alt="">
+</div>
 
 ---
 
-### **Prototipo del CdU VerClasificacionDeAlumnos**  
-<p align="center">  
-  <img src="" alt=""/>  
-</p>  
+
+## Prototipo del CdU `EvaluarRetos`
+
+<div align="center">
+  <img src="" alt="">
+</div>
 
 ---
 
-### **Prototipo del CdU CerrarSesion**  
-<p align="center">  
-  <img src="" alt=""/>  
-</p>  
+
+## Prototipo del CdU `CerrarSesion`
+
+<div align="center">
+  <img src="" alt="">
+</div>
 
 ---
 
-### **Prototipo del CdU CrearClase**  
-<p align="center">  
-  <img src="" alt=""/>  
-  <img src="" alt=""/>  
-</p>  
 
----
 
-### **Prototipo del CdU MostrarQR**  
-<p align="center">  
-  <img src="" alt=""/>  
-  <img src="" alt=""/>  
-</p>  
 
----
 
-### **Prototipo del CdU VerMisClases**  
-<p align="center">  
-  <img src="" alt=""/>  
-  <img src="" alt=""/>  
-</p>  
 
----
 
-### **Prototipo del CdU VerAlumnos**  
-<p align="center">  
-  <img src="" alt=""/>  
-</p>  
 
----
 
-### **Prototipo del CdU VerRetosAlumno**  
-<p align="center">  
-  <img src="" alt=""/>  
-</p>  
 
----
 
-### **Prototipo del CdU EvaluarReto**  
-<p align="center">  
-  <img src="" alt=""/>  
-</p>  
 
----
 
