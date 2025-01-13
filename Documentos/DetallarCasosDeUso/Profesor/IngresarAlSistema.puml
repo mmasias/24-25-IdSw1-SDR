@@ -3,15 +3,18 @@
 hide empty description
 
 state Profesor 
+state choice <<choice>>
 state Pagina_Principal
 state IngresarAlSistema{
     [*] --> [*]
     note on link
-        El sistema muestra la página principal del profesor
+        El sistema muestra la página principal 
     end note
 }
 
-Profesor --> IngresarAlSistema
+Profesor --> choice
+Alumno --> choice
+choice --> IngresarAlSistema
 IngresarAlSistema --> Pagina_Principal
 
 @enduml
