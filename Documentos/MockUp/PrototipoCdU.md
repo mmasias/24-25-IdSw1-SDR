@@ -304,56 +304,64 @@
 </div>
 
 ---
-
 ## Prototipo del CdU `VerRetos`
 
 <div align="center">
-  <img src="" alt="">
+  <table>
+    <tr>
+      <td><img src="https://github.com/user-attachments/assets/79e2f3bd-8822-42d1-ae1a-28d3a21503fe" alt="verretos"></td>
+      <td><img src="https://github.com/user-attachments/assets/be26fce5-9cca-45b2-b522-c6f69d420c10" alt="verretos"></td>
+    </tr>
+  </table>
 </div>
 
 ---
 
-
-## Prototipo del CdU `CrerReto`
+## Prototipo del CdU `CrearReto`
 
 <div align="center">
-  <img src="" alt="">
+  <table>
+    <tr>
+      <td><img src="https://github.com/user-attachments/assets/00bb62ec-bab9-4f25-a96a-a7b807208400" alt="CrearReto"></td>
+      <td><img src="https://github.com/user-attachments/assets/1575c698-2c91-474f-81ec-ec8dd4a33e86" alt="CrearReto"></td>
+    </tr>
+  </table>
 </div>
 
 ---
-
 
 ## Prototipo del CdU `EditarReto`
 
 <div align="center">
-  <img src="" alt="">
+  <table>
+    <tr>
+      <td><img src="https://github.com/user-attachments/assets/02b1e62e-4146-460e-a832-0b8540eb1225" alt="editarReto"></td>
+      <td><img src="https://github.com/user-attachments/assets/524806fc-d84a-4711-85b9-77c265e5121a" alt="editarReto"></td>
+    </tr>
+  </table>
 </div>
 
 ---
-
-
 ## Prototipo del CdU `VerClasificacion`
 
 <div align="center">
-  <img src="" alt="">
+  <img src="https://github.com/user-attachments/assets/e97b3d38-bfb0-49c4-a421-6fad801478c1" alt="VerClasificacion">
 </div>
 
 ---
-
 
 ## Prototipo del CdU `VerAlumnosDentroDeClase`
 
 <div align="center">
-  <img src="" alt="">
+  <img src="https://github.com/user-attachments/assets/986c7f31-8bec-4d9f-b0cd-fe1a365a5252" alt="VerAlumnosDentroDeClase">
 </div>
 
 ---
 
-
 ## Prototipo del CdU `VerPerfil`
 
 <div align="center">
-  <img src="" alt="">
+  <img src="https://github.com/user-attachments/assets/95ff1c53-24ae-497a-a505-feeaa17e475b" alt="VerPerfil">
 </div>
 
 ---
@@ -361,25 +369,38 @@
 ## Prototipo del CdU `MostrarQRCentros`
 
 <div align="center">
-  <img src="" alt="">
+  <table>
+    <tr>
+      <td><img src="https://github.com/user-attachments/assets/3dd60fc7-efc3-418a-86c1-998d3a133bcb" alt="QR"></td>
+      <td><img src="https://github.com/user-attachments/assets/a562eed6-2c41-4668-8117-42f66b07b69c" alt="QR"></td>
+    </tr>
+  </table>
 </div>
 
 ---
-
 
 ## Prototipo del CdU `CrearClase`
 
 <div align="center">
-  <img src="" alt="">
+  <table>
+    <tr>
+      <td><img src="https://github.com/user-attachments/assets/3123601c-71ae-4e7d-894b-4b737c6780f7" alt="CrearClase"></td>
+      <td><img src="https://github.com/user-attachments/assets/b9fdd96e-6df1-40da-875b-a2f407ccd139" alt="CrearClase"></td>
+    </tr>
+  </table>
 </div>
 
 ---
 
-
 ## Prototipo del CdU `VerMisClases`
 
 <div align="center">
-  <img src="" alt="">
+  <table>
+    <tr>
+      <td><img src="https://github.com/user-attachments/assets/ba9db470-36d3-4e34-a748-4bf9b2d5f92b" alt="MisClases"></td>
+      <td><img src="https://github.com/user-attachments/assets/a8a5ec04-e7e1-4776-a25d-e211eb54c522" alt="MisClases2"></td>
+    </tr>
+  </table>
 </div>
 
 ---
@@ -387,34 +408,43 @@
 ## Prototipo del CdU `VerAlumnos`
 
 <div align="center">
-  <img src="" alt="">
+  <img src="https://github.com/user-attachments/assets/ccf5c38b-29f2-493e-bd57-4fa6ae8ce16d" alt="Alumnos">
 </div>
 
 ---
-
 
 ## Prototipo del CdU `VerRetosAlumnos`
 
 <div align="center">
-  <img src="" alt="">
+  <table>
+    <tr>
+      <td><img src="https://github.com/user-attachments/assets/bdf43c36-8b82-45db-b6d1-93e479e4b9f4" alt="AlumnosRetos"></td>
+      <td><img src="https://github.com/user-attachments/assets/95a1b1ee-65da-4699-8904-5a0c962f29ed" alt="AlumnosRetos"></td>
+      <td><img src="https://github.com/user-attachments/assets/0ff71a38-41f5-43fc-9da7-7aefc832e822" alt="AlumnosRetos2"></td>
+    </tr>
+  </table>
 </div>
 
----
 
+---
 
 ## Prototipo del CdU `EvaluarRetos`
 
 <div align="center">
-  <img src="" alt="">
+  <table>
+    <tr>
+      <td><img src="https://github.com/user-attachments/assets/dd409320-85d9-40b6-b077-97e37a7159f9" alt="Evaluar1"></td>
+      <td><img src="https://github.com/user-attachments/assets/f34a55b9-4a75-4e1c-a725-caebf481610e" alt="Evaluar2"></td>
+    </tr>
+  </table>
 </div>
 
 ---
 
-
 ## Prototipo del CdU `CerrarSesion`
 
 <div align="center">
-  <img src="" alt="">
+  <img src="https://github.com/user-attachments/assets/ab8c7e3b-5b47-457c-92d3-438f3986c0e2" alt="CerrarSesion">
 </div>
 
 ---
