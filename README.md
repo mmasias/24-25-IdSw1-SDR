@@ -1,5 +1,7 @@
 # Tablón de Anuncios Uneat 
 
+![Logo](https://github.com/miguelgomez75/24-25-IdSw1-SDR/blob/main/images/Logo.png)
+
 ## 📋[Seguimento del proyecto](https://github.com/users/miguelgomez75/projects/3/views/1)📋
 
 ## 🗃️[Documentación](Documentación)🗃️  
