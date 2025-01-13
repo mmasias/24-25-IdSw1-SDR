@@ -9,11 +9,11 @@ El objetivo de este paso es **estructurar el modelo de los casos de uso** siguie
 
 ## 1️⃣ Primer Paso
 
-![Paso 1](/images/modelosUML/CdU/EstructurarCasosDeUso/paso1.svg)
+![Paso 1](/images/modelosUML/CdU/EstructurarCasosDeUso/Paso1.svg)
 
 ## 2️⃣ Segundo Paso
 
-![Paso 2](/images/modelosUML/CdU/EstructurarCasosDeUso/paso2.svg)
+![Paso 2](/images/modelosUML/CdU/EstructurarCasosDeUso/Paso2.svg)
 
 ## 🛠️ **Diagramas de Casos de Uso**
 
