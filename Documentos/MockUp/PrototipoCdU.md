@@ -101,9 +101,12 @@
 ## Prototipo del CdU `VerReto`
 
 <div align="center">
-  <img src="" alt="">
-  <br><br>
-  <img src="" alt="">
+  <table>
+    <tr>
+      <td><img src="https://github.com/user-attachments/assets/c40e4019-7a7b-41b9-855e-05a69d94121b" alt="imagen1"></td>
+      <td><img src="https://github.com/user-attachments/assets/851586e6-7900-4fda-9579-5104500c55cd" alt="imagen2"></td>
+    </tr>
+  </table>
 </div>
 
 ---
@@ -111,9 +114,12 @@
 ## Prototipo del CdU `SubirEvidencia`
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/28fcc55a-1e0f-464b-94f9-ddac095ad297" alt="Subir Evidencia - Parte 1">
-  <br><br>
-  <img src="https://github.com/user-attachments/assets/0d11f4b2-35a3-4f81-aba5-5995ae48311f" alt="Subir Evidencia - Parte 2">
+  <table>
+    <tr>
+      <td><img src="https://github.com/user-attachments/assets/28fcc55a-1e0f-464b-94f9-ddac095ad297" alt="Subir Evidencia - Parte 1"></td>
+      <td><img src="https://github.com/user-attachments/assets/0d11f4b2-35a3-4f81-aba5-5995ae48311f" alt="Subir Evidencia - Parte 2"></td>
+    </tr>
+  </table>
 </div>
 
 ---
@@ -121,7 +127,7 @@
 ## Prototipo del CdU `VerClasificacion`
 
 <div align="center">
-  <img src="" alt="">
+  <img src="https://github.com/user-attachments/assets/31316141-29d9-44e6-8fdf-1c1ad118ee6f" alt="img1">
 </div>
 
 ---
@@ -130,15 +136,14 @@
 ## Prototipo del CdU `VerPerfil`
 
 <div align="center">
-  <img src="" alt="">
+  <img src="https://github.com/user-attachments/assets/cb24da4f-c45e-4034-a58c-f6fac185e930" alt="Perfil">
 </div>
 
 ---
-
 ## Prototipo del CdU `InscribirClase`
 
 <div align="center">
-  <img src="" alt="">
+  <img src="https://github.com/user-attachments/assets/c4790a18-b19d-4bb9-83d2-ed94bafcb81d" alt="imagen">
 </div>
 
 ---
@@ -148,8 +153,8 @@
 <div align="center">
   <table>
     <tr>
-      <td><img src="" alt=""></td>
-      <td><img src="" alt=""></td>
+      <td><img src="https://github.com/user-attachments/assets/99bc86cb-9ec9-4841-a55e-ec371287ea84" alt="imagen1"></td>
+      <td><img src="https://github.com/user-attachments/assets/c54fadc7-0be0-48d5-953d-6e7106b682c0" alt="imagen2"></td>
     </tr>
   </table>
 </div>
@@ -158,7 +163,7 @@
 ## Prototipo del CdU `VerInsignias`
 
 <div align="center">
-  <img src="" alt="">
+  <img src="https://github.com/user-attachments/assets/fb76ccf9-d92e-4528-a333-d686f8831f4f" alt="insignias">
 </div>
 
 ---
@@ -166,7 +171,7 @@
 ## Prototipo del CdU `CerrarSesion`
 
 <div align="center">
-  <img src="" alt="">
+  <img src="https://github.com/user-attachments/assets/6ee22e4e-f3b0-42db-b56e-b36a8af5636d" alt="CerrarSesion">
 </div>
 
 ---
