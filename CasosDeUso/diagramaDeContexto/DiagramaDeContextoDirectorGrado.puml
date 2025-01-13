@@ -1,0 +1,45 @@
+@startuml diagramaContextoDirectorGrado
+
+
+state "MENU_PRINCIPAL" as MenuPrincipal
+state "REVISANDO_CONTENIDO" as RevisandoContenido
+state "APROBANDO_CONTENIDO" as AprobarContenido
+state "PUBLICANDO_GUIA" as PublicarGuia
+
+[*] ----> MenuPrincipal
+    note on link
+        Iniciar sesión
+    end note
+
+MenuPrincipal --> [*]
+    note on link
+        Cerrar sesión
+    end note
+
+MenuPrincipal ----> RevisandoContenido
+    note on link
+        Revisar contenido
+    end note
+
+RevisandoContenido ----> AprobarContenido
+    note on link
+        Aprobar o rechazar contenido
+    end note
+
+AprobarContenido ----> MenuPrincipal
+    note on link
+        Confirmar aprobación o rechazo
+    end note
+
+MenuPrincipal ----> PublicarGuia
+    note on link
+        Accede a publicar guía docente
+    end note
+
+PublicarGuia ----> MenuPrincipal
+    note on link
+        Confirmar publicación
+    end note
+
+
+@enduml
