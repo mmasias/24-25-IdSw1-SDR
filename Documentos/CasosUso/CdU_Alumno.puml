@@ -4,7 +4,7 @@ left to right direction
 actor Alumno
 
 package "Rutinas y Ejercicios" {
-    usecase "Ir a rutinas y ejercicios" as IrARutinasYEjercicios
+    usecase "Ver rutinas y ejercicios" as IrARutinasYEjercicios
 
    
         usecase "Mostar Rutina" as MostrarRutina
@@ -18,16 +18,16 @@ package "Rutinas y Ejercicios" {
 }
 
 package Retos {
-    usecase "Ir a Retos" as IrARetos
+    usecase "Ver Retos" as IrARetos
     usecase "Subir Evidencia de Reto" as SubirEvidencia
 }
 
 package Clasificacion {
-    usecase "Ir a Clasificacion" as IrAClasificacion
+    usecase "Ver Clasificacion" as IrAClasificacion
 }
 
 package Perfil {
-    usecase "Ir a Perfil" as IrAPerfil
+    usecase "Ver Perfil" as IrAPerfil
     usecase "Inscribir en Clase" as InscribirEnClase
     usecase "Mostrar QR en Centro Deportivo" as MostrarQRCentros
     usecase "Ver Insignias" as VerInsignias
