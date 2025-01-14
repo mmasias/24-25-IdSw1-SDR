@@ -17,7 +17,7 @@
 
 ## CRUD de Usuarios
 
-![](./manejoUsuarios/manejoUsuarios.svg)
+![](./manejoUsuarios/manejoUsuario.svg)
 
 ## CRUD de Grupos
 
