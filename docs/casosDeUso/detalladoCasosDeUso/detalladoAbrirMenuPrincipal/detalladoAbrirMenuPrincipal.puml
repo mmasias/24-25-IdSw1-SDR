@@ -17,6 +17,10 @@ state endState as "MENU_PRINCIPAL"
 
 
 startState --> MenuPrincipal
+note on link
+        <b>Usuario solicita</b>
+        * Abrir menú principal
+    end note
 
 state MenuPrincipal {
     state SolicitudAbrirMenu as " "
@@ -24,10 +28,7 @@ state MenuPrincipal {
     state MostrarMensajesEnviados as " "
 
     SolicitudAbrirMenu --> BuscarMensajesEnviados
-    note on link
-        <b>Usuario solicita</b>
-        * Abrir menú principal
-    end note
+    
 
     BuscarMensajesEnviados -[#red]-> MostrarMensajesEnviados
     note on link
