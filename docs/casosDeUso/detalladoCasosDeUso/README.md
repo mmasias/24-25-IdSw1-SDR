@@ -106,7 +106,11 @@
 
 ## Detallado de Notificaciones
 
-### Detallado de Envío de Notificaciones
+### Detallado de Envío de Notificaciones al Remitente
 
-![](./detalladoNotificaciones/detalladoEnvioNotificaciones.svg)
+![](./detalladoNotificaciones/detalladoEnvioNotificacionesRemitente.svg)
+
+### Detallado de Envío de Notificaciones al Destinatario
+
+![](./detalladoNotificaciones/detalladoEnvioNotificacionesDestinatario.svg)
 ---
