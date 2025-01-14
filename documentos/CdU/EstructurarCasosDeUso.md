@@ -28,7 +28,7 @@ El objetivo de este paso es **estructurar el modelo de los casos de uso** siguie
 
 | Profesor                                | Recursos Humanos                                 | Ordenación                               | Técnico de calidad               |
 |------------------------------------------|---------------------------------------|----------------------------------------|-----------------------------------------|
-| ![Diagrama Profesor](/images/modelosUML/CdU/EstructurarCasosDeUso/profesor.svg) [Codigo Profesor](/modelosUML/CdU/EstructurarCasosDeUso/Profesor.puml)| ![Diagrama Recursos Humanos](/images/modelosUML/CdU/EstructurarCasosDeUso/RRHH.svg) | ![Diagrama Ordenacion](/images/modelosUML/CdU/EstructurarCasosDeUso/Ordenacion.svg) | ![Diagrama Tecnico de Calidad](/images/modelosUML/CdU/EstructurarCasosDeUso/TecnicoCalidad.svg) |
+| ![Diagrama Profesor](/images/modelosUML/CdU/EstructurarCasosDeUso/profesor.svg) [Codigo Profesor](/modelosUML/CdU/EstructurarCasosDeUso/Profesor.puml)| [Diagrama Recursos Humanos](/images/modelosUML/CdU/EstructurarCasosDeUso/RRHH.svg) [Codigo RRHH](/modelosUML/CdU/EstructurarCasosDeUso/RRHH.puml)| ![Diagrama Ordenacion](/images/modelosUML/CdU/EstructurarCasosDeUso/Ordenacion.svg) [Codigo Ordenacion](/modelosUML/CdU/EstructurarCasosDeUso/Ordenacion.puml)| ![Diagrama Tecnico de Calidad](/images/modelosUML/CdU/EstructurarCasosDeUso/TecnicoCalidad.svg) [Codigo Tecnico de calidad](/modelosUML/CdU/EstructurarCasosDeUso/TecnicoCalidad.puml)|
 
 ---
 # Decisiones sobre `Include` y `Extend`
@@ -40,7 +40,7 @@ El objetivo de este paso es **estructurar el modelo de los casos de uso** siguie
 
 ---
 
-![](/images/modelosUML/CdU/EstructurarCasosDeUso/esquema.svg)
+![](/images/modelosUML/CdU/EstructurarCasosDeUso/esquema.svg) [Codigo](/modelosUML/CdU/EstructurarCasosDeUso/Sistema.puml)
 
 ---
 
