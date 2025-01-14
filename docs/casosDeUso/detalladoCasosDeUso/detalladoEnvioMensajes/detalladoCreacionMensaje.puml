@@ -29,16 +29,6 @@ state CrearMensaje{
 
     solicitudFiltros --> envioFiltros
     note on link
-        <b>Sistema Solicita</b>
-        * Destinatario/Grupo
-        * Asunto
-        * Título
-        * Cuerpo del mensaje
-        * <b>Opcionales</b>
-            - Documento adjunto
-            - Solicitar confirmación de lectura
-            - Solicitar firma
-            - Fecha límite
         <b>Sistema Permite</b>
         * Crear mensaje
     end note

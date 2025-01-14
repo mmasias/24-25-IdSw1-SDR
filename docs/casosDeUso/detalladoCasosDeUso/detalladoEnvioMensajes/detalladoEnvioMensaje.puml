@@ -13,6 +13,10 @@ state startState as "VER_MENSAJE"
 state endState as "LISTANDO_MENSAJES"
 
 startState --> EnviarMensaje
+note on link
+    <b>Usuario Solicita</b>
+    * Enviar mensaje
+end note
 
 EnviarMensaje--> listarMensajes
 listarMensajes--> endState
@@ -20,9 +24,7 @@ EnviarMensaje -[#red]-> endState
 
 state EnviarMensaje{
     state revisionFiltrosEnviados <<choice>>
-    state usuarioSolicita as "<b>Usuario Solicita:</b> \n Enviar mensaje"
 
-    usuarioSolicita --> revisionFiltrosEnviados 
 
     revisionFiltrosEnviados --> [*]
     note on link
