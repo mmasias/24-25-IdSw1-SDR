@@ -25,9 +25,9 @@
 ## 📋 MODELO DE DOMINIO
 - [Click para ir al modelo del dominio](/Readmes/ModeloDelDominio.md)
 
-- [Diagrama de clases](/Readmes/ModeloDelDominio.md#diagrama-de-clases)
-- [Diagrama de Objetos](/Readmes/ModeloDelDominio.md#diagrama-de-objetos)
-- [Diagrama de Estados](/Readmes/ModeloDelDominio.md#diagrama-de-estados)
+    - [Diagrama de clases](/Readmes/ModeloDelDominio.md#diagrama-de-clases)
+    - [Diagrama de Objetos](/Readmes/ModeloDelDominio.md#diagrama-de-objetos)
+    - [Diagrama de Estados](/Readmes/ModeloDelDominio.md#diagrama-de-estados)
 ---
 ## 🛠️ ACTORES Y CASOS DE USO
 - Actores
