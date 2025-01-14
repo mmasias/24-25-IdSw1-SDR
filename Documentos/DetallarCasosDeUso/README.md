@@ -34,6 +34,11 @@
 |----------|---------------|
 | ![Casos de uso](../Imagenes/DetallarCasosDeUso/Profesor/EditarRutina.svg) | [Ver código](Profesor/EditarRutina.puml) |
 
+### Buscar Rutina
+| Diagrama | Código Fuente |
+|----------|---------------|
+| ![Casos de uso](../Imagenes/DetallarCasosDeUso/Profesor/BuscarRutina.svg) | [Ver código](Profesor/BuscarRutina.puml) |
+
 ### Mostrar Ejercicio
 | Diagrama | Código Fuente |
 |----------|---------------|
@@ -48,6 +53,11 @@
 | Diagrama | Código Fuente |
 |----------|---------------|
 | ![Casos de uso](../Imagenes/DetallarCasosDeUso/Profesor/EditarEjercicio.svg) | [Ver código](Profesor/EditarEjercicio.puml) |
+
+### Buscar Ejercicio
+| Diagrama | Código Fuente |
+|----------|---------------|
+| ![Casos de uso](../Imagenes/DetallarCasosDeUso/Profesor/BuscarEjercicio.svg) | [Ver código](Profesor/BuscarEjercicio.puml) |
 
 ### Cambiar a Retos
 | Diagrama | Código Fuente |
@@ -136,10 +146,20 @@
 |----------|---------------|
 | ![Casos de uso](../Imagenes/DetallarCasosDeUso/Alumno/EditarRutina.svg) | [Ver código](Alumno/EditarRutina.puml) |
 
+### Buscar Rutina
+| Diagrama | Código Fuente |
+|----------|---------------|
+| ![Casos de uso](../Imagenes/DetallarCasosDeUso/Alumno/BuscarRutina.svg) | [Ver código](Alumno/BuscarRutina.puml) |
+
 ### Mostrar Ejercicio
 | Diagrama | Código Fuente |
 |----------|---------------|
 | ![Casos de uso](../Imagenes/DetallarCasosDeUso/Alumno/MostrarEjercicio.svg) | [Ver código](Alumno/MostrarEjercicio.puml) |
+
+### Buscar Ejercicio
+| Diagrama | Código Fuente |
+|----------|---------------|
+| ![Casos de uso](../Imagenes/DetallarCasosDeUso/Alumno/BuscarEjercicio.svg) | [Ver código](Alumno/BuscarEjercicio.puml) |
 
 ### Cambiar a Retos
 | Diagrama | Código Fuente |
