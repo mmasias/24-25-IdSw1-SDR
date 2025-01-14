@@ -14,6 +14,11 @@ state endState as "LEYENDO_MENSAJE"
 
 
 startState --> DescargarInformeEnvio
+note on link
+    <b>Usuario Solicita</b>
+    * Abrir mensaje
+end note
+
 DescargarInformeEnvio --> endState
 DescargarInformeEnvio -[#red]-> endState
 
@@ -21,9 +26,7 @@ state DescargarInformeEnvio {
     state solicitudAbrirMensaje as " "
     state solicitudDescargarInforme as " "
     state descargarInforme <<choice>>
-    state usuarioSolicita as "<b>Usuario Solicita:</b> \n Abrir Mensaje"
     
-    usuarioSolicita --> solicitudAbrirMensaje
     solicitudAbrirMensaje --> solicitudDescargarInforme
     note on link
         <b>Sistema Permite</b>
