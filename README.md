@@ -72,28 +72,6 @@
 
 
 
-
-## MODELO DEL DOMINIO
-
-A continuacion se presentan los enlaces a los distintos diagramas realizados:
-
-### Diagrama de Entidades 
-![Diagrama de Entidades](https://github.com/miguelgomez75/24-25-IdSw1-SDR/blob/main/images/modelosUML%20-%20SVG/4%C2%AA_Iteraci%C3%B3n/DdEntidades.svg)
-### Diagrama de Estados de los Ajustes
-![Diagrama de Estado de los Ajustes](https://github.com/miguelgomez75/24-25-IdSw1-SDR/blob/main/images/modelosUML%20-%20SVG/5%C2%AA_Iteracion/DdEstados_Ajustes.svg)
-
-### Diagrama de Estados de las Comunidades
-![Diagrama de Estados de las Comunidades](https://github.com/miguelgomez75/24-25-IdSw1-SDR/blob/main/images/modelosUML%20-%20SVG/5%C2%AA_Iteracion/DdEstados_Comunidades.svg)
-
-### Diagrama de Estados de las Etiquetas
-![Diagrama de Estados de las Etiquetas](https://github.com/miguelgomez75/24-25-IdSw1-SDR/blob/main/images/modelosUML%20-%20SVG/5%C2%AA_Iteracion/DdEstados_Etiquetas.svg)
-
-### Diagrama de Estados del Perfil
-![Diagrama de Estados del Perfil](https://github.com/miguelgomez75/24-25-IdSw1-SDR/blob/main/images/modelosUML%20-%20SVG/5%C2%AA_Iteracion/DdEstados_Perfil.svg)
-
-### Diagrama de Clases (Reemplazar por un diagrama de objetos?)
-![Diagrama de Clases](https://github.com/miguelgomez75/24-25-IdSw1-SDR/blob/main/images/modelosUML%20-%20SVG/4%C2%AA_Iteraci%C3%B3n/DdClases.svg)
-
 ## CASOS DE USO
 
 ### Jerarquía de actores
@@ -123,12 +101,3 @@ A continuacion se presentan los enlaces a los distintos diagramas realizados:
 ![Diagrama de Contexto del Usuario Registrado](https://github.com/miguelgomez75/24-25-IdSw1-SDR/blob/main/images/modelosUML%20-%20SVG/5%C2%AA_Iteracion/DdContexto_UsuarioR.svg)
 
 ### [Detallado de casos de uso](https://github.com/miguelgomez75/24-25-IdSw1-SDR/blob/main/Documentación/Detallado%20de%20CdU/Detallado_de_CdU.md)
-
-
-Grupo conformado por:
-
-- Alejandro Viñas
-- Miguel Gómez
-- Gabriel Sisacha
-- Adrián Perez
-- José Salceda
