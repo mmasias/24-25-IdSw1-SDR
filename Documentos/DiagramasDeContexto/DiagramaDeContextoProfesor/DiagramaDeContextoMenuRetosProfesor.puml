@@ -1,18 +1,18 @@
-@startuml 
-!define RECTANGLE(x) rectangle x
+@startuml DiagramaDeContextoMenuRetosProfesor
+!define RECTANGLE(x, color) rectangle x #color
 
-RECTANGLE(NAVEGACION_MENUS)
-RECTANGLE(MENU_RETOS) 
+RECTANGLE(NAVEGACION_MENUS, SkyBlue)
+RECTANGLE(MENU_RETOS, LightSalmon) 
 
 ' Submenús de "Retos"
-RECTANGLE(CREANDO_RETOS) 
-RECTANGLE(EDITANDO_RETOS) 
+RECTANGLE(CREANDO_RETOS, LightSalmon) 
+RECTANGLE(EDITANDO_RETOS, LightSalmon) 
 
-CREANDO_RETOS --> NAVEGACION_MENUS : Cambiar menú
-EDITANDO_RETOS --> NAVEGACION_MENUS : Cambiar menú
+CREANDO_RETOS -[#SkyBlue]-> NAVEGACION_MENUS : Cambiar menú
+EDITANDO_RETOS -[#SkyBlue]> NAVEGACION_MENUS : Cambiar menú
 
 ' Menú "Retos"
-MENU_RETOS --> CREANDO_RETOS : Crear retos
-MENU_RETOS --> EDITANDO_RETOS : Editar retos
+MENU_RETOS -[#LightSalmon]-> CREANDO_RETOS : Crear retos
+MENU_RETOS -[#LightSalmon]-> EDITANDO_RETOS : Editar retos
 
 @enduml

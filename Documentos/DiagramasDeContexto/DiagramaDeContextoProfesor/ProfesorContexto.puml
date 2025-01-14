@@ -1,4 +1,4 @@
-@startuml ProfesorCasosDeUso
+@startuml ProfesorContexto
 !define RECTANGLE(x) rectangle x
 
 ' Definición de actores y elementos principales
@@ -25,10 +25,10 @@ NAVEGACION_MENUS -[#Gold]-> MENU_CLASIFICACION : Cambiar a Clasificación
 NAVEGACION_MENUS -[#LightCoral]-> MENU_PERFIL : Cambiar a Perfil
 NAVEGACION_MENUS -[#LightBlue]-> PAGINA_PRINCIPAL : Regresar al inicio
 
-MENU_RUTINAS_y_EJERCICIOS -[#LightBlue]-> PAGINA_PRINCIPAL
-MENU_CLASIFICACION -[#LightBlue]-> PAGINA_PRINCIPAL
-MENU_PERFIL -[#LightBlue]-> PAGINA_PRINCIPAL
-MENU_RETOS -[#LightBlue]-> PAGINA_PRINCIPAL
+MENU_RUTINAS_y_EJERCICIOS -[#LightBlue]-> PAGINA_PRINCIPAL : Cambiar menú
+MENU_CLASIFICACION -[#LightBlue]-> PAGINA_PRINCIPAL : Cambiar menú
+MENU_PERFIL -[#LightBlue]-> PAGINA_PRINCIPAL : Cambiar menú
+MENU_RETOS -[#LightBlue]-> PAGINA_PRINCIPAL : Cambia menú
 ' Leyenda
 legend right
   Leyenda:

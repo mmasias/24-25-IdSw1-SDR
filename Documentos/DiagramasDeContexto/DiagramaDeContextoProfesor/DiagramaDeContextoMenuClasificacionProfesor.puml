@@ -1,15 +1,15 @@
-@startuml
-!define RECTANGLE(x) rectangle x
+@startuml DiagramaDeContextoMenuClasificacionProfesor
+!define RECTANGLE(x, color) rectangle x #color
 
-RECTANGLE(NAVEGACION_MENUS)
-RECTANGLE(MENU_CLASIFICACION)
+RECTANGLE(NAVEGACION_MENUS, SkyBlue)
+RECTANGLE(MENU_CLASIFICACION, Gold)
 
 ' Submenús de "Clasificación"
-RECTANGLE(VIENDO_ALUMNOS_CLASE)
+RECTANGLE(VIENDO_ALUMNOS_CLASE, Gold)
 
-VIENDO_ALUMNOS_CLASE --> NAVEGACION_MENUS : Cambiar menú
+VIENDO_ALUMNOS_CLASE -[#SkyBlue]-> NAVEGACION_MENUS : Cambiar menú
 
 ' Menú "Clasificación"
-MENU_CLASIFICACION -->  VIENDO_ALUMNOS_CLASE : Ver alumnos dentro de clases
+MENU_CLASIFICACION -[#Gold]->  VIENDO_ALUMNOS_CLASE : Ver alumnos dentro de clases
 
 @enduml
