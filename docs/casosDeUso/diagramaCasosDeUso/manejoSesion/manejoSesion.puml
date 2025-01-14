@@ -1,7 +1,7 @@
 @startuml ManejoSesion
 left to right direction
 actor "Administrador" as Administrador
-actor "Usuario" as Usuario
+actor "Gestor" as Usuario
 actor "Destinatario" as Destinatario
 
 package "Manejo de Sesión" {

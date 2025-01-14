@@ -1,6 +1,6 @@
 @startuml manejoGrupo
 left to right direction
-actor "Usuario" as Usuario
+actor "Gestor" as Usuario
 actor "Administrador" as Administrador
 
 package "CRUD de Grupos" {
