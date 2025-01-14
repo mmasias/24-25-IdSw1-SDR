@@ -9,38 +9,34 @@ El objetivo de este paso es **estructurar el modelo de los casos de uso** siguie
 
 ## 1️⃣ Primer Paso
 
-![Paso 1](/images/modelosUML/CdU/EstructurarCasosDeUso/Paso1.svg)
+![Clases y Relaciones](/images/modelosUML/CdU/EstructurarCasosDeUso/ClasesRelaciones.svg)
 
 ## 2️⃣ Segundo Paso
 
-![Paso 2](/images/modelosUML/CdU/EstructurarCasosDeUso/Paso2.svg)
+![Casos de Uso](/images/modelosUML/CdU/EstructurarCasosDeUso/CdU.svg)
 
-# Criterios por Actor
+## Criterios por Actor
 
-| Actor                   | Cohesión funcional                          | Minimización de dependencias                     | Reutilización                                      |
-|-------------------------|---------------------------------------------|------------------------------------------------|--------------------------------------------------|
+| Actor                   | Cohesión funcional | Minimización de dependencias | Reutilización |
+|-------------------------|--------------------|------------------------------|---------------|
 | **Profesor**            | Agrupar las acciones relacionadas con la consulta y modificación de asignaciones. | Minimizar la dependencia de otros sistemas académicos. | Usar operaciones comunes como casos de uso `include`. |
 | **Recursos Humanos**    | Unificar las operaciones de validación y registro de datos académicos y laborales. | Documentar las dependencias con bases de datos externas. | Extender casos de uso para variaciones de validación. |
 | **Ordenación**          | Manejar de forma conjunta la asignación y revisión de carga docente. | Reducir dependencias entre indicadores y métricas. | Reutilizar operaciones comunes como casos de uso `include`. |
 | **Técnico de Calidad**  | Agrupar las acciones relacionadas con memoria, informes y validación de calidad. | Evitar duplicidad en cálculos de indicadores y límites. | Separar variaciones en casos de uso `extend`. |
 
+---
 
-
-| Profesor                                | Recursos Humanos                                 | Ordenación                               | Técnico de calidad               |
-|------------------------------------------|---------------------------------------|----------------------------------------|-----------------------------------------|
+| Profesor | Recursos Humanos | Ordenación | Técnico de calidad |
+|----------|------------------|------------|--------------------|
 | ![Diagrama Profesor](/images/modelosUML/CdU/EstructurarCasosDeUso/profesor.svg) | ![Diagrama Recursos Humanos](/images/modelosUML/CdU/EstructurarCasosDeUso/RRHH.svg) | ![Diagrama Ordenacion](/images/modelosUML/CdU/EstructurarCasosDeUso/Ordenacion.svg) | ![Diagrama Tecnico de Calidad](/images/modelosUML/CdU/EstructurarCasosDeUso/TecnicoCalidad.svg) |
 
----
-# Decisiones sobre `Include` y `Extend`
+## Decisiones sobre `Include` y `Extend`
 
-| Include                                     | Extend                                      |
-|---------------------------------------------|--------------------------------------------|
+| Include | Extend |
+|---------|--------|
 | Representan funcionalidad obligatoria y común en casos de uso como la validación de datos o consulta de indicadores. | Representan comportamiento opcional o alternativo, como extensiones para validar memoria y titulación. |
 | Reducen la duplicación de especificaciones mediante operaciones comunes entre actores del sistema académico. | Permiten la extensibilidad del sistema, manejando variaciones como la asignación específica de memoria. |
 
 ---
 
-![](/images/modelosUML/CdU/EstructurarCasosDeUso/esquema.svg) [Codigo](/modelosUML/CdU/EstructurarCasosDeUso/Sistema.puml)
-
----
-
+![](/images/modelosUML/CdU/EstructurarCasosDeUso/esquema.svg)
