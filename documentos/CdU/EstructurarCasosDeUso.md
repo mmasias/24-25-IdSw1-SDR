@@ -26,3 +26,9 @@ El objetivo de este paso es **estructurar el modelo de los casos de uso** siguie
 
 
 
+| Profesor                                | Recursos Humanos                                 | Ordenación                               | Técnico de calidad               |
+|------------------------------------------|---------------------------------------|----------------------------------------|-----------------------------------------|
+| ![Diagrama Profesor](/images/modelosUML/CdU/EstructurarCasosDeUso/profesor.svg) | ![Diagrama Médico](/images/modelosUML/CdU/EstructurarCasosDeUso/RRHH.svg) | ![Diagrama Paciente](/images/modelosUML/CdU/EstructurarCasosDeUso/Ordenacion.svg) | ![Diagrama Administrativo](/images/modelosUML/CdU/EstructurarCasosDeUso/TecnicoCalidad.svg) |
+
+---
+
