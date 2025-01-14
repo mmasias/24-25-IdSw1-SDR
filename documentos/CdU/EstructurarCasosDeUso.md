@@ -39,3 +39,5 @@ El objetivo de este paso es **estructurar el modelo de los casos de uso** siguie
 | Reducen la duplicación de especificaciones mediante operaciones comunes entre actores del sistema académico. | Permiten la extensibilidad del sistema, manejando variaciones como la asignación específica de memoria. |
 
 ---
+
+!(/images/modelosUML/CdU/EstructurarCasosDeUso/esquema.svg)
