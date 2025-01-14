@@ -8,7 +8,7 @@
 ## Actores
 
 - Administrador
-- Usuario
+- Gestor
 - Destinatario
 - Tiempo
 
