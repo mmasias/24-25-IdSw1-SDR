@@ -44,15 +44,6 @@ El objetivo de este paso es **estructurar el modelo de los casos de uso** siguie
 
 ---
 
-# 👌Beneficios
-
-| Mantenibilidad                                  | Comprensión                                | Escalabilidad                              |
-|------------------------------------------------|--------------------------------------------|-------------------------------------------|
-| Facilita la modificación de funcionalidades específicas de actores como `Profesor` y `RRHH`. | Organización jerárquica clara en paquetes como "Gestión de Profesores" y "Gestión de Calidad". | Estructura preparada para añadir nuevas funcionalidades, como "Gestión de Indicadores". |
-| Permite la evolución independiente de subsistemas como "Gestión de Memorias e Informes". | Separación lógica de funcionalidades en cada paquete. | Patrones claros para la extensión del sistema mediante relaciones `include` y `extend`. |
-
----
-
 # ❓¿Cómo sé si...?
 
 | Completitud                                     | Consistencia                              | Viabilidad                                |
@@ -63,11 +54,3 @@ El objetivo de este paso es **estructurar el modelo de los casos de uso** siguie
 
 ---
 
-# 📒Entregables
-
-1. Diagramas de paquetes de casos de uso.
-2. Diagramas de casos de uso por paquete.
-3. Especificación de relaciones entre casos de uso.
-4. Matriz de trazabilidad de requisitos.
-
----
