@@ -15,6 +15,14 @@ El objetivo de este paso es **estructurar el modelo de los casos de uso** siguie
 
 ![Paso 2](/images/modelosUML/CdU/EstructurarCasosDeUso/Paso2.svg)
 
-## 🛠️ **Diagramas de Casos de Uso**
+# Decisiones & Criterios por Actor
+
+| Actor                   | Cohesión funcional                          | Minimización de dependencias                     | Reutilización                                      |
+|-------------------------|---------------------------------------------|------------------------------------------------|--------------------------------------------------|
+| **Profesor**            | Agrupar las acciones relacionadas con la consulta y modificación de asignaciones. | Minimizar la dependencia de otros sistemas académicos. | Usar operaciones comunes como casos de uso `include`. |
+| **Recursos Humanos**    | Unificar las operaciones de validación y registro de datos académicos y laborales. | Documentar las dependencias con bases de datos externas. | Extender casos de uso para variaciones de validación. |
+| **Ordenación**          | Manejar de forma conjunta la asignación y revisión de carga docente. | Reducir dependencias entre indicadores y métricas. | Reutilizar operaciones comunes como casos de uso `include`. |
+| **Técnico de Calidad**  | Agrupar las acciones relacionadas con memoria, informes y validación de calidad. | Evitar duplicidad en cálculos de indicadores y límites. | Separar variaciones en casos de uso `extend`. |
+
 
 
