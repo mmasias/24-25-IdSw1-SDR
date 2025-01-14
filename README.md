@@ -14,8 +14,6 @@ El Sistema Alumni es una plataforma que conecta a antiguos alumnos de la univers
 
 - [Modelo del dominio (Diagramas de clases, objetos y estados)](/modelosUML/ModeloDominio/ModeloDominio.md)
 
-
-
 ## 📊 Casos de Uso
 
 - [Actores y casos de uso](/modelosUML/CasosDeUso/ActoresYCasos.md#actores)
