@@ -1,12 +1,18 @@
-# Tablón de Anuncios Uneat 
-
 <div align="center">
-  <img src="https://github.com/miguelgomez75/24-25-IdSw1-SDR/blob/main/images/Logo.png" alt="Alt text" width="360" height="360">
+
+# Tablón de Anuncios Uneat 
+<img src="https://github.com/miguelgomez75/24-25-IdSw1-SDR/blob/main/images/Logo.png" alt="Alt text" width="360" height="360">
+
 </div>
 
-## 📋[Seguimento del proyecto](https://github.com/users/miguelgomez75/projects/3/views/1)📋
+<div align="right">
 
-## 🗃️[Documentación](Documentación)🗃️  
+### 📋[Seguimento del proyecto](https://github.com/users/miguelgomez75/projects/3/views/1)📋
+### 🏢[Sesiones de Requisitado](https://github.com/miguelgomez75/24-25-IdSw1-SDR/tree/main/Documentaci%C3%B3n/Sesiones%20de%20Requisitado)🏢 
+
+</div>
+
+---
 ## MODELO DEL DOMINIO
 
 A continuacion se presentan los enlaces a los distintos diagramas realizados:
