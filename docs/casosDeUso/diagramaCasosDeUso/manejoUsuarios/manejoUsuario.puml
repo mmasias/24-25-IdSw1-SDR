@@ -3,24 +3,23 @@ left to right direction
 actor "Administrador" as Administrador
 actor "Gestor" as Usuario
 
-package "CRUD de Usuarios" {
-    usecase "Crear Destinatario" as CU1
-    usecase "Ver Destinatario" as CU2
-    usecase "Actualizar Destinatario" as CU3
-    usecase "Borrar Destinatario" as CU4
-    usecase "Crear Gestor" as CU5
-    usecase "Ver Gestor" as CU6
-    usecase "Actualizar Gestor" as CU7
-    usecase "Borrar Gestor" as CU8
+package "CRUD de Usuarios" as crud{
+    usecase "Crear Usuario" as CU1
+    usecase "Ver Usuario" as CU2
+    usecase "Actualizar Usuario" as CU3
+    usecase "Borrar Usuario" as CU4
 }
+
+note left of crud
+    Los usuarios que se pueden crear son de dos tipos: 
+    Destinatario y Gestor, siendo el destinatario el usuario
+    que solo puede recibir los mensajes y el gestor el que puede
+    enviar mensajes.
+end note
 
 Administrador --|> Usuario
 Usuario --> CU1
 Usuario --> CU2
 Usuario --> CU3
 Usuario --> CU4
-Administrador --> CU5
-Administrador --> CU6
-Administrador --> CU7
-Administrador --> CU8
 @enduml
