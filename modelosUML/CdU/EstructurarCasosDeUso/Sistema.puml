@@ -1,79 +1,80 @@
-
 @startuml
 left to right direction
 
-title Sistema Académico
+package "Sistema Académico" {
+    package "Gestión de Profesores" {
+        usecase "Introducir Datos Académicos" as IntroducirExperiencia
+        usecase "Consultar valores asignados de Contrato" as ConsultarValores
+        usecase "Consultar Asignaciones Docentes" as ConsultarAsignaciones
+    }
 
-package "Gestión de Profesores" {
-    usecase "Introducir Datos de Experiencia y Movilidad" as IntroducirExperiencia
-    usecase "Consultar Valores Asignados de Contrato" as ConsultarValores
-    usecase "Consultar Asignaciones Docentes" as ConsultarAsignaciones
+    package "Gestión de Recursos Humanos" {
+        usecase "Validar Datos del Profesorado" as ValidarDatosRRHH
+        usecase "Modificar Datos del Profesorado" as ModificarDatosRRHH
+        usecase "Introducir Datos Laborales" as IntroducirContrato
+        usecase "Revisar Carga Docente no ajustada" as RevisarCargaRRHH
+        usecase "Consultar Claustro Docente" as ConsultarClaustroRRHH
+        usecase "Consultar Asignación por Profesor" as ConsultarAsignacionRRHH
+    }
+
+    package "Gestión de Ordenación" {
+        usecase "Asignar Carga Docente" as AsignarCargaOrdenacion
+        usecase "Consultar Claustro Docente" as ConsultarClaustroOrdenacion
+        usecase "Consultar Asignación por Profesor" as ConsultarAsignacionOrdenacion
+        usecase "Revisar Profesores CD Excede" as RevisarCargaOrdenacion
+        usecase "Validar cumplimiento de Memoria" as RevisarMemoria
+    }
+
+    package "Gestión de Calidad" {
+        usecase "Consultar Claustro Docente" as ConsultarClaustroCalidad
+        usecase "Consultar Asignacion Docente" as ConsultarAsignacionCalidad
+        usecase "Asignar Valores en Memoria" as AsignarValoresMemoria
+        usecase "Asignar Información a SIIU/DGU" as AsignarInformacion
+        usecase "Validar cumplimiento de Memoria" as ValidarMemoria
+        usecase "Obtener Indicadores" as ObtenerIndicadores
+        usecase "Emitir Informe del Profesorado" as EmitirInforme
+    }
+
+    actor Profesor
+    actor RRHH as RecursosHumanos
+    actor Ordenacion
+    actor TecnicoCalidad as Tecnico
+
+    Profesor --> IntroducirExperiencia
+    Profesor --> ConsultarValores
+    Profesor --> ConsultarAsignaciones
+
+    RecursosHumanos --> ValidarDatosRRHH
+    RecursosHumanos --> ModificarDatosRRHH
+    RecursosHumanos --> IntroducirContrato
+    RecursosHumanos --> RevisarCargaRRHH
+    RecursosHumanos --> ConsultarClaustroRRHH
+    RecursosHumanos --> ConsultarAsignacionRRHH
+
+    Ordenacion --> AsignarCargaOrdenacion
+    Ordenacion --> ConsultarClaustroOrdenacion
+    Ordenacion --> ConsultarAsignacionOrdenacion
+    Ordenacion --> RevisarCargaOrdenacion
+    Ordenacion --> RevisarMemoria
+
+    Tecnico --> AsignarValoresMemoria
+    Tecnico --> AsignarInformacion
+    Tecnico --> ValidarMemoria
+    Tecnico --> ObtenerIndicadores
+    Tecnico --> EmitirInforme
+    Tecnico --> ConsultarClaustroCalidad
+    Tecnico --> ConsultarAsignacionCalidad
+
+    ValidarDatosRRHH ..> ConsultarClaustroRRHH : <<include>>
+    ModificarDatosRRHH ..> ValidarDatosRRHH : <<include>>
+
+    AsignarCargaOrdenacion ..> ConsultarClaustroOrdenacion : <<include>>
+
+    ValidarMemoria ..> ConsultarClaustroCalidad : <<include>>
+    EmitirInforme ..> ObtenerIndicadores : <<include>>
+    ObtenerIndicadores ..> ConsultarAsignacionCalidad : <<include>>
+
+    AsignarInformacion .> ValidarMemoria : <<extend>>
 }
 
-package "Gestión de Recursos Humanos" {
-    usecase "Validar Datos del Profesorado" as ValidarDatosRRHH
-    usecase "Modificar Datos del Profesorado" as ModificarDatosRRHH
-    usecase "Introducir Datos de Contrato y Categoría Profesional" as IntroducirContrato
-    usecase "Revisar Carga Docente No Ajustada" as RevisarCargaRRHH
-    usecase "Consultar Claustro Docente" as ConsultarClaustroRRHH
-    usecase "Consultar Asignación por Profesor" as ConsultarAsignacionRRHH
-}
-
-package "Gestión de Ordenación" {
-    usecase "Asignar Carga Docente" as AsignarCargaOrdenacion
-    usecase "Consultar Claustro Docente" as ConsultarClaustroOrdenacion
-    usecase "Consultar Asignación por Profesor" as ConsultarAsignacionOrdenacion
-    usecase "Revisar listado de profesores" as RevisarCargaOrdenacion
-    usecase "Revisar Cumplimiento de compromisos en Memoria" as RevisarMemoria
-}
-
-package "Gestión de Calidad" {
-    usecase "Consultar Claustro Docente" as ConsultarClaustroCalidad
-    usecase "Consultar Asignacion Docente" as ConsultarAsignacionCalidad
-    usecase "Asignar Valores en Memoria" as AsignarValoresMemoria
-    usecase "Asignar Información a SIIU/DGU" as AsignarInformacion
-    usecase "Validar Valores vs Compromisos de Memoria" as ValidarMemoria
-    usecase "Obtener Indicadores" as ObtenerIndicadores
-    usecase "Emitir Informe del Profesorado" as EmitirInforme
-    
-}
-
-actor Profesor
-actor RRHH as RecursosHumanos
-actor Ordenacion
-actor TecnicoCalidad as Tecnico
-
-Profesor --> IntroducirExperiencia
-Profesor --> ConsultarValores
-Profesor --> ConsultarAsignaciones
-
-RecursosHumanos --> ValidarDatosRRHH
-RecursosHumanos --> ModificarDatosRRHH
-RecursosHumanos --> IntroducirContrato
-RecursosHumanos --> RevisarCargaRRHH
-RecursosHumanos --> ConsultarClaustroRRHH
-RecursosHumanos --> ConsultarAsignacionRRHH
-
-Ordenacion --> AsignarCargaOrdenacion
-Ordenacion --> ConsultarClaustroOrdenacion
-Ordenacion --> ConsultarAsignacionOrdenacion
-Ordenacion --> RevisarCargaOrdenacion
-Ordenacion --> RevisarMemoria
-
-Tecnico --> AsignarValoresMemoria
-Tecnico --> AsignarInformacion
-Tecnico --> ValidarMemoria
-Tecnico --> ObtenerIndicadores
-Tecnico --> EmitirInforme
-Tecnico --> ConsultarClaustroCalidad
-Tecnico --> ConsultarAsignacionCalidad
-
-ConsultarClaustroRRHH <.. ConsultarClaustroOrdenacion : include
-ConsultarAsignacionRRHH <.. ConsultarAsignacionOrdenacion : include
-ValidarMemoria <.. EmitirInforme : extend
-AsignarValoresMemoria <.. RevisarMemoria : include
-ObtenerIndicadores <.. EmitirInforme : include
-RevisarCargaRRHH <.. RevisarCargaOrdenacion : include
-AsignarInformacion <.. AsignarValoresMemoria : include
-EmitirInforme <.. ValidarDatosRRHH : extend
 @enduml
