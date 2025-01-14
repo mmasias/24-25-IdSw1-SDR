@@ -10,5 +10,5 @@ usecase "Enviar Guía Docente para Revisión" as EnviarGuia
 Profesor --> EditarGuia
 Profesor --> EnviarGuia
 
-EnviarGuia --> EditarGuia : <<include>>
+EnviarGuia ..> EditarGuia : <<include>>
 @enduml
