@@ -37,7 +37,7 @@ Este es el repositorio de las sesiones de requisitado de la asignatura de Ingeni
         <li><a href="/CasosDeUso/Actividades/CasosDeUso.md">Diagrama de Casos de Uso</a></li>
         <li><a href="/CasosDeUso/Actividades/Priorizar.md">Priorización de Casos de Uso</a></li>
         <li><a href="/CasosDeUso/Actividades/Detallar.md">Detallado de Casos de Uso</a></li>
-        <li><a href="/CasosDeUso/Actividades/Prototipos.md">Prototipos</a></li>
+        <li><a href="/CasosDeUso/Actividades/Prototipos/README.md">Prototipos</a></li>
         <li><a href="/CasosDeUso/Actividades/Estructurar.md">Estructurar el modelo de casos de uso</a></li>
       </ul>
     </td>
