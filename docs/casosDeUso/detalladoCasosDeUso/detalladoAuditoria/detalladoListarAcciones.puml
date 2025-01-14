@@ -35,13 +35,11 @@ state ListarAcciones{
 
     solicitudFiltros --> envioFiltros
     note on link
-        <b>Sistema Solicita</b>
+        <b>Sistema Permite Filtrar</b>
         * <b> Filtros opcionales </b>
             - Términos de búsqueda
             - Usuario
             - Rango de fechas
-        <b>Sistema Permite</b>
-        * Listar acciones
     end note
 
     envioFiltros --> revisionFiltrosEnviados

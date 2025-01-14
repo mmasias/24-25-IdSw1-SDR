@@ -31,10 +31,6 @@ state DescargarDocumento {
 
     solicitudFiltros --> envioFiltros
     note on link
-        <b>Sistema Solicita</b>
-        * Id de la acción/es
-        * Fecha/s
-        * Usuario/s
         <b>Sistema Permite</b>
         * Descargar documento
     end note
