@@ -4,15 +4,15 @@ left to right direction
 package "Sistema Académico" {
     package "Gestión de Profesores" {
         usecase "Introducir Datos Académicos" as IntroducirExperiencia
-        usecase "Consultar valores asignados de Contrato" as ConsultarValores
-        usecase "Consultar Asignaciones Docentes" as ConsultarAsignaciones
+        usecase "Consultar Datos Personales y Contrato" as ConsultarDatosPersonales
+        usecase "Consultar Asignación Docente" as ConsultarAsignaciones
     }
 
     package "Gestión de Recursos Humanos" {
         usecase "Validar Datos del Profesorado" as ValidarDatosRRHH
         usecase "Modificar Datos del Profesorado" as ModificarDatosRRHH
         usecase "Introducir Datos Laborales" as IntroducirContrato
-        usecase "Revisar Carga Docente no ajustada" as RevisarCargaRRHH
+        usecase "Revisar Carga Docente" as RevisarCargaRRHH
         usecase "Consultar Claustro Docente" as ConsultarClaustroRRHH
         usecase "Consultar Asignación por Profesor" as ConsultarAsignacionRRHH
     }
@@ -21,8 +21,8 @@ package "Sistema Académico" {
         usecase "Asignar Carga Docente" as AsignarCargaOrdenacion
         usecase "Consultar Claustro Docente" as ConsultarClaustroOrdenacion
         usecase "Consultar Asignación por Profesor" as ConsultarAsignacionOrdenacion
-        usecase "Revisar Profesores CD Excede" as RevisarCargaOrdenacion
-        usecase "Validar cumplimiento de Memoria" as RevisarMemoria
+        usecase "Revisar Carga Docente" as RevisarCargaOrdenacion
+        usecase "Validar Memoria y Titulación" as RevisarMemoria
     }
 
     package "Gestión de Calidad" {
@@ -30,7 +30,7 @@ package "Sistema Académico" {
         usecase "Consultar Asignacion Docente" as ConsultarAsignacionCalidad
         usecase "Asignar Valores en Memoria" as AsignarValoresMemoria
         usecase "Asignar Información a SIIU/DGU" as AsignarInformacion
-        usecase "Validar cumplimiento de Memoria" as ValidarMemoria
+        usecase "Validar Memoria y Titulación" as ValidarMemoria
         usecase "Obtener Indicadores" as ObtenerIndicadores
         usecase "Emitir Informe del Profesorado" as EmitirInforme
     }
@@ -41,7 +41,7 @@ package "Sistema Académico" {
     actor TecnicoCalidad as Tecnico
 
     Profesor --> IntroducirExperiencia
-    Profesor --> ConsultarValores
+    Profesor --> ConsultarDatosPersonales
     Profesor --> ConsultarAsignaciones
 
     RecursosHumanos --> ValidarDatosRRHH
