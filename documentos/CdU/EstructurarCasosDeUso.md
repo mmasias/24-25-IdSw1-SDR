@@ -1,4 +1,4 @@
-📒# 📝 Estructurar el Modelo de Casos de Uso
+# 📝 Estructurar el Modelo de Casos de Uso
 
 | [⬅️ Prototipar Casos de Uso](PrototiparCasosDeUso.md) |
 |:--|
@@ -44,7 +44,7 @@ El objetivo de este paso es **estructurar el modelo de los casos de uso** siguie
 
 ---
 
-# Beneficios
+# 👌Beneficios
 
 | Mantenibilidad                                  | Comprensión                                | Escalabilidad                              |
 |------------------------------------------------|--------------------------------------------|-------------------------------------------|
@@ -53,7 +53,7 @@ El objetivo de este paso es **estructurar el modelo de los casos de uso** siguie
 
 ---
 
-# ¿Cómo sé si...?
+# ❓¿Cómo sé si...?
 
 | Completitud                                     | Consistencia                              | Viabilidad                                |
 |------------------------------------------------|-------------------------------------------|-------------------------------------------|
