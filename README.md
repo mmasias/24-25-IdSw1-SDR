@@ -40,7 +40,7 @@
 
 ---
 ## 📸 PROTOTIPOS
-- [Blabla](https://github.com/miguelgomez75/24-25-IdSw1-SDR/tree/main/images/interfaz)
+- [Prototipos](https://github.com/miguelgomez75/24-25-IdSw1-SDR/blob/main/Readmes/Prototipos.md) de diseño de la app
 
 
 
