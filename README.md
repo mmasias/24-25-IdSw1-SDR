@@ -13,6 +13,59 @@
 </div>
 
 ---
+## 🧩 DESCRIPCION GENERAL
+-Blabla
+
+---
+## 📣 CARACTERISTICAS PRINCIPALES
+-Blabla
+
+---
+## 📋 MODELO DE DOMINIO
+-Blabla
+-(Insertar link a otro readme donde se vean los 3 diagramas)
+
+---
+## 🛠️ Actores y Casos de Uso
+-Actores
+-Casos de Uso Detallados
+-Diagrama Casos de Uso
+-Diagrama de Contexto
+-Prototipos
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## MODELO DEL DOMINIO
 
 A continuacion se presentan los enlaces a los distintos diagramas realizados:
