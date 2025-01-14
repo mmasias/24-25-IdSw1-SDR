@@ -14,7 +14,7 @@
 
 ## Profesor
 
-### Cambiar a Rutinas y Ejercicios
+### Ver Rutinas y Ejercicios
 | Diagrama | Código Fuente |
 |----------|---------------|
 | ![Casos de uso](../Imagenes/DetallarCasosDeUso/Profesor/Menu_Rutinas_Profesor.svg) | [Ver código](Profesor/CambiarARutinasYEjercicios.puml) |
@@ -54,12 +54,12 @@
 |----------|---------------|
 | ![Casos de uso](../Imagenes/DetallarCasosDeUso/Profesor/MenuRetos.svg) | [Ver código](Profesor/CambiarARetos.puml) |
 
-### Mostrar Reto
+### Ver Reto
 | Diagrama | Código Fuente |
 |----------|---------------|
 | ![Casos de uso](../Imagenes/DetallarCasosDeUso/Profesor/MostrarReto.svg) | [Ver código](Profesor/MostrarReto.puml) |
 
-### Crear Retos 
+### Crear Reto
 | Diagrama | Código Fuente |
 |----------|---------------|
 | ![Casos de uso](../Imagenes/DetallarCasosDeUso/Profesor/CrearRetos.svg) | [Ver código](Profesor/CrearRetos.puml) |
@@ -69,7 +69,7 @@
 |----------|---------------|
 | ![Casos de uso](../Imagenes/DetallarCasosDeUso/Profesor/EditarReto.svg) | [Ver código](Profesor/EditarReto.puml) |
 
-### Cambiar a Clasificación
+### Ver Clasificación
 | Diagrama | Código Fuente |
 |----------|---------------|
 | ![Casos de uso](../Imagenes/DetallarCasosDeUso/Profesor/MenuClasificacion.svg) | [Ver código](Profesor/CambiarAClasificacion.puml) |
@@ -79,7 +79,7 @@
 |----------|---------------|
 | ![Casos de uso](../Imagenes/DetallarCasosDeUso/Profesor/Ver_Alumnos_Clase.svg) | [Ver código](Profesor/Ver_Alumnos_Clase.puml) |
 
-### Cambiar a Perfil
+### Ver Perfil
 | Diagrama | Código Fuente |
 |----------|---------------|
 | ![Casos de uso](../Imagenes/DetallarCasosDeUso/Profesor/Menu_Perfil_Profesor.svg) | [Ver código](Profesor/CambiarAPerfil.puml) |
