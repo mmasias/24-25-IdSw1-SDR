@@ -54,10 +54,19 @@
 
 ### Técnico de Calidad - Assignar Guía a Titulación
 ![](/CasosDeUso/Actividades/Prototipos/PrototipadosTecnicoCalidad/Técnico-%20Ver%20Listado%20de%20Estados%20de%20Guías%20Docentes.svg)
+![](/CasosDeUso/Actividades/Prototipos/PrototipadosTecnicoCalidad/guiatit.svg)
+![](/CasosDeUso/Actividades/Prototipos/PrototipadosTecnicoCalidad/guiatit2.svg)
 
 ### Técnico de Calidad - Assignar Guía a Profesor
+![](/CasosDeUso/Actividades/Prototipos/PrototipadosTecnicoCalidad/Técnico-%20Ver%20Listado%20de%20Estados%20de%20Guías%20Docentes.svg)
+![](/CasosDeUso/Actividades/Prototipos/PrototipadosTecnicoCalidad/Técnico-%20%20Asignar%20Guías%20Docentes%20a%20Profesor%20(2).svg)
+![](/CasosDeUso/Actividades/Prototipos/PrototipadosTecnicoCalidad/Técnico-%20%20Asignar%20Guías%20Docentes%20a%20Profesor%20(1).svg)
+
 
 ### Técnico de Calidad - Generar Nueva Versión
+![](/CasosDeUso/Actividades/Prototipos/PrototipadosTecnicoCalidad/Tecnico%20de%20Calidad%20-%20Generar%20Version%201.svg)
+![](/CasosDeUso/Actividades/Prototipos/PrototipadosTecnicoCalidad/Tecnico%20de%20Calidad%20-%20Generar%20Version%202.svg)
+![](/CasosDeUso/Actividades/Prototipos/PrototipadosTecnicoCalidad/Tecnico%20de%20Calidad%20-%20Generar%20Version%203.svg)
 
 ### Dirección de Calidad - Dashboard
 ![](/CasosDeUso/Actividades/Prototipos/PrototipadosDashboard/Director%20Calidad%20-%20dashboard.svg)
