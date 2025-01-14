@@ -28,7 +28,7 @@ El objetivo de este paso es **estructurar el modelo de los casos de uso** siguie
 
 | Profesor                                | Recursos Humanos                                 | Ordenación                               | Técnico de calidad               |
 |------------------------------------------|---------------------------------------|----------------------------------------|-----------------------------------------|
-| ![Diagrama Profesor](/images/modelosUML/CdU/EstructurarCasosDeUso/profesor.svg) ![Codigo Profesor](/modelosUML/CdU/EstructurarCasosDeUso/Profesor.puml)| ![Diagrama Recursos Humanos](/images/modelosUML/CdU/EstructurarCasosDeUso/RRHH.svg) | ![Diagrama Ordenacion](/images/modelosUML/CdU/EstructurarCasosDeUso/Ordenacion.svg) | ![Diagrama Tecnico de Calidad](/images/modelosUML/CdU/EstructurarCasosDeUso/TecnicoCalidad.svg) |
+| ![Diagrama Profesor](/images/modelosUML/CdU/EstructurarCasosDeUso/profesor.svg) [Codigo Profesor](/modelosUML/CdU/EstructurarCasosDeUso/Profesor.puml)| ![Diagrama Recursos Humanos](/images/modelosUML/CdU/EstructurarCasosDeUso/RRHH.svg) | ![Diagrama Ordenacion](/images/modelosUML/CdU/EstructurarCasosDeUso/Ordenacion.svg) | ![Diagrama Tecnico de Calidad](/images/modelosUML/CdU/EstructurarCasosDeUso/TecnicoCalidad.svg) |
 
 ---
 # Decisiones sobre `Include` y `Extend`
