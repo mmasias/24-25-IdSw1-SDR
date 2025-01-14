@@ -40,11 +40,16 @@
 ![](/CasosDeUso/Actividades/Prototipos/PrototipadosDashboard/TecnicoCalidadDashboard.svg)
 
 ### Técnico de Calidad - Ver Listado de Estado de Guías
-
+![](/CasosDeUso/Actividades/Prototipos/PrototipadosTecnicoCalidad/Técnico-%20Ver%20Listado%20de%20Estados%20de%20Guías%20Docentes.svg)
 
 ### Técnico de Calidad - Editar Plantilla
+![](/CasosDeUso/Actividades/Prototipos/PrototipadosTecnicoCalidad/Director%20de%20Calidad-Editar%20plantilla%20de%20la%20guía%20docente.svg)
+![](/CasosDeUso/Actividades/Prototipos/PrototipadosTecnicoCalidad/Director%20de%20Calidad-Editar%20plantilla%20de%20la%20guía%20docente%20(1).svg)
 
 ### Técnico de Calidad - Assignar Asignatura a Titulación
+![](/CasosDeUso/Actividades/Prototipos/PrototipadosTecnicoCalidad/Director%20de%20Calidad-%20%20Asignar%20Asignatura%20a%20Titulación.svg)
+![](/CasosDeUso/Actividades/Prototipos/PrototipadosTecnicoCalidad/Director%20de%20Calidad-%20%20Asignar%20Asignatura%20a%20Titulación%20(2).svg)
+![](/CasosDeUso/Actividades/Prototipos/PrototipadosTecnicoCalidad/image%2018.svg)
 
 ### Técnico de Calidad - Assignar Guía a Titulación
 
@@ -56,5 +61,10 @@
 ![](/CasosDeUso/Actividades/Prototipos/PrototipadosDashboard/Director%20Calidad%20-%20dashboard.svg)
 
 ### Dirección de Calidad - Auditar Guías Docentes
+![](/CasosDeUso/Actividades/Prototipos/PrototipadosDirectorCalidad/Listado%20Guías.svg)
+![](/CasosDeUso/Actividades/Prototipos/PrototipadosDirectorCalidad/AuditarGuia1.svg)
+![](/CasosDeUso/Actividades/Prototipos/PrototipadosDirectorCalidad/AuditarGuia2.svg)
 
 ### Dirección de Calidad - Verificar Cumplimiento con Memoria Verificada
+![](/CasosDeUso/Actividades/Prototipos/PrototipadosDirectorCalidad/VerificaIA1.svg)
+![](/CasosDeUso/Actividades/Prototipos/PrototipadosDirectorCalidad/VerificaIA2.svg)
