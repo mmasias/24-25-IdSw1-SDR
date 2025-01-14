@@ -24,7 +24,14 @@ BorrarGrupo --> listarGrupos
 listarGrupos --> endState
 
 state BorrarGrupo {
+    state solicitudFiltros as " "
     state revisionFiltrosEnviados <<choice>>
+
+    solicitudFiltros --> revisionFiltrosEnviados
+    note on link
+        <b>Sistema permite</b>
+        * Borrar grupo
+    end note
 
     revisionFiltrosEnviados -[#red]-> [*]
     note on link

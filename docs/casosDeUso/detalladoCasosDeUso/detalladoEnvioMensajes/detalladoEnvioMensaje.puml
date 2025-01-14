@@ -23,9 +23,15 @@ listarMensajes--> endState
 EnviarMensaje -[#red]-> endState
 
 state EnviarMensaje{
+    state solicitudFiltros as " "
     state revisionFiltrosEnviados <<choice>>
 
-
+    solicitudFiltros --> revisionFiltrosEnviados
+    note on link
+        <b>Sistema Permite</b>
+        Enviar Mensaje
+    end note
+    
     revisionFiltrosEnviados --> [*]
     note on link
         <b>Sistema Muestra</b>
