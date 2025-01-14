@@ -6,10 +6,7 @@
 
 Este documento presenta los diagramas principales del modelo de dominio: el **diagrama de clases**, **diagrama de objetos**, y **diagrama de estados**. Para cada uno, se muestra una representación visual en SVG y un enlace al código fuente en formato `.puml`.
 
----
-
 ## 1. Diagrama de Clases
-
 
 | **Diagrama** | **Código Fuente** |
 |--------------|--------------------|
@@ -24,12 +21,7 @@ Este documento presenta los diagramas principales del modelo de dominio: el **di
 
   - [`Profesor`](/documentos/glosario.md#-pdi-personal-docente-e-investigador) imparte las `Asignaturas` relacionadas y contribuye a los datos que evalúan los [`Indicadores`](/documentos/glosario.md#-indicador).
 
-
----
-
 ## 2. Diagrama de Objetos
-
-
 
 | **Diagrama** | **Código Fuente** |
 |--------------|--------------------|
@@ -45,10 +37,6 @@ Este documento presenta los diagramas principales del modelo de dominio: el **di
   - [`Profesor`](/documentos/glosario.md#-pdi-personal-docente-e-investigador) (id_profesor = 001) imparte las `Asignaturas` relacionadas y contribuye a los datos que evalúan los [`Indicadores`](/documentos/glosario.md#-indicador). Además, cumple con las validaciones de movilidad y mantiene destinos de movilidad establecidos.
 
   - La `Asignatura` (codigo = "INF101", nombre = "Programación I") pertenece a la `Titulación` (nombre = "Grado en Ingeniería Informática") y tiene asignado un porcentaje del 50% de carga académica para el curso "2023/2024".
-
-
-
----
 
 ## 3. Diagramas de Estados
 
@@ -67,6 +55,8 @@ Este documento presenta los diagramas principales del modelo de dominio: el **di
 
   - Finalmente, una vez validada la carga, se verifica el `Cumplimiento Normativo`. Si no cumple, el proceso termina sin asignación; si cumple, se registra la `Asignación Completa`, concluyendo el flujo.
 
+---
+
 ### 3.2 Diagrama de Estado para Gestión de Asignaturas
 
 | **Diagrama** | **Código Fuente** |
@@ -79,6 +69,8 @@ Este documento presenta los diagramas principales del modelo de dominio: el **di
   - Tras asignar al profesor, se valida la asignatura en el estado de `Asignatura Validada`, comprobando que todos los grupos están cubiertos y los balances de carga son correctos. Si existen desbalances, el sistema entra a `Ajuste Profesor`, donde se reasignan profesores o grupos antes de volver a validar.  
 
   - Al concluir esta validación, se realiza una `Revisión Legal`. Si cumple con los requisitos normativos, se registra como una `Asignación Completada`. En caso contrario, el flujo finaliza sin asignación válida.
+
+---
 
 ### 3.3 Diagrama de Estado para Validación de Indicadores e Informes
 

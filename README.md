@@ -27,7 +27,6 @@ Este proyecto consiste en la mejora (y posible migración) de la base de datos d
 > [!NOTE]
 > Por la sensibilidad de los datos, la hoja de cálculo original está protegida al igual que este repositorio.
 
-
 ## 📂 Índice de Contenidos
 - [📝 Actas](documentos/actas/README.md)
 - 🎨 Artefactos
