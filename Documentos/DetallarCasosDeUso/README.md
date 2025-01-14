@@ -116,7 +116,7 @@
 
 ## Alumno
 
-### Cambiar a Rutinas y Ejercicios
+### Ver Rutinas y Ejercicios
 | Diagrama | Código Fuente |
 |----------|---------------|
 | ![Casos de uso](../Imagenes/DetallarCasosDeUso/Alumno/Menu_Rutinas_Alumno.svg) | [Ver código](Alumno/Menu_Rutinas_Alumno.puml) |
@@ -146,7 +146,7 @@
 |----------|---------------|
 | ![Casos de uso](../Imagenes/DetallarCasosDeUso/Alumno/MenuRetos.svg) | [Ver código](Alumno/MenuRetos.puml) |
 
-### Mostrar Reto
+### Ver Reto
 | Diagrama | Código Fuente |
 |----------|---------------|
 | ![Casos de uso](../Imagenes/DetallarCasosDeUso/Alumno/MostrarReto.svg) | [Ver código](Alumno/MostrarReto.puml) |
@@ -156,12 +156,12 @@
 |----------|---------------|
 | ![Casos de uso](../Imagenes/DetallarCasosDeUso/Alumno/SubirEvidencia.svg) | [Ver código](Alumno/SubirEvidencia.puml) |
 
-### Cambiar a Clasificación
+### Ver Clasificación
 | Diagrama | Código Fuente |
 |----------|---------------|
 | ![Casos de uso](../Imagenes/DetallarCasosDeUso/Alumno/MenuClasificacion.svg) | [Ver código](Alumno/MenuClasificacion.puml) |
 
-### Cambiar a Perfil
+### Ver Perfil
 | Diagrama | Código Fuente |
 |----------|---------------|
 | ![Casos de uso](../Imagenes/DetallarCasosDeUso/Alumno/MenuPerfilAlumno.svg) | [Ver código](Alumno/MenuPerfilAlumno.puml) |
