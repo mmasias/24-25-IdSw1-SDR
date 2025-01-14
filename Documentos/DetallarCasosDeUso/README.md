@@ -72,7 +72,7 @@
 ### Ver Clasificación
 | Diagrama | Código Fuente |
 |----------|---------------|
-| ![Casos de uso](../Imagenes/DetallarCasosDeUso/Profesor/MenuClasificacion.svg) | [Ver código](Documentos/DetallarCasosDeUso/Profesor/VerClasificacion.puml) |
+| ![Casos de uso](../Imagenes/DetallarCasosDeUso/Profesor/MenuClasificacion.svg) | [Ver código](Profesor/VerClasificacion.puml) |
 
 ### Ver Clasificacion de una clase
 | Diagrama | Código Fuente |
