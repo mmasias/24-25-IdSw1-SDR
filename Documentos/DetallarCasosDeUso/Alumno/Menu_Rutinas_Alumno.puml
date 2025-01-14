@@ -1,21 +1,21 @@
-@startuml CambiarARutinasYEjercicios
+@startuml VerRutinasYEjercicios
 hide empty description
 
 state Navegacion_Menus
 state Menu_Rutinas_y_Ejercicios
 
-state CambiarARutinasYEjercicios{
-    state Cambiar as "Cambiar a Rutinas y Ejercicios"
-    [*] --> Cambiar
+state VerRutinasYEjercicios{
+    state Ver as "Ver Rutinas y Ejercicios"
+    [*] --> Ver
     note on link
         El alumno introduce que quiere ir a Rutinas y Ejercicios
     end note
-    Cambiar --> [*]
+    Ver --> [*]
     note on link
         El sistema muestra Rutinas y Ejercicios
     end note
 }
 
-Navegacion_Menus --> CambiarARutinasYEjercicios
-CambiarARutinasYEjercicios --> Menu_Rutinas_y_Ejercicios
+Navegacion_Menus --> VerRutinasYEjercicios
+VerRutinasYEjercicios --> Menu_Rutinas_y_Ejercicios
 @enduml
