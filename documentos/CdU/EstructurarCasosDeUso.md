@@ -1,4 +1,4 @@
-# 📝 Estructurar el Modelo de Casos de Uso
+📒# 📝 Estructurar el Modelo de Casos de Uso
 
 | [⬅️ Prototipar Casos de Uso](PrototiparCasosDeUso.md) |
 |:--|
@@ -63,7 +63,7 @@ El objetivo de este paso es **estructurar el modelo de los casos de uso** siguie
 
 ---
 
-# Entregables
+# 📒Entregables
 
 1. Diagramas de paquetes de casos de uso.
 2. Diagramas de casos de uso por paquete.
