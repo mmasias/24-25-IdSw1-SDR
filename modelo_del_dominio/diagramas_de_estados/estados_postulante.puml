@@ -15,7 +15,6 @@ state NoBecario {
   Logueado --> RealizaPrueba : se ve su nivel
   Logueado --> RealizaCapacitación : se le prepara para el trabajo en PROFER
   RealizaPrueba --> Resultados
-  RealizaCapacitación --> Resultados
   RealizaCapacitación --> RealizaPrueba : se evalúa su desempeño / evolución
   state acción <<choice>>
   Resultados --> acción : pasa a ser becario
