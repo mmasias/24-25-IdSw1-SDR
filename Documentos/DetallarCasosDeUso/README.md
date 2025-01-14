@@ -82,7 +82,7 @@
 ### Ver Perfil
 | Diagrama | Código Fuente |
 |----------|---------------|
-| ![Casos de uso](../Imagenes/DetallarCasosDeUso/Profesor/Menu_Perfil_Profesor.svg) | [Ver código](Profesor/CambiarAPerfil.puml) |
+| ![Casos de uso](../Imagenes/DetallarCasosDeUso/Profesor/Menu_Perfil_Profesor.svg) | [Ver código](Profesor/VerPerfil.puml) |
 
 ### Crear Clase
 | Diagrama | Código Fuente |
