@@ -1,11 +1,11 @@
-@startuml CambiarAPerfil
+@startuml VerPerfil
 
 hide empty description
 
 state NavegacionMenus
 state MenuPerfil
-state CambiarAPerfil{
-    state Cambiar as "Cambiar a Perfil"
+state VerPerfil{
+    state Cambiar as "Ver Perfil"
     [*] --> Cambiar
     note on link
         El profesor introduce que quiere ir a su perfil
@@ -16,6 +16,6 @@ state CambiarAPerfil{
     end note
 }
 
-NavegacionMenus --> CambiarAPerfil
-CambiarAPerfil --> MenuPerfil
+NavegacionMenus --> VerPerfil
+VerPerfil --> MenuPerfil
 @enduml
