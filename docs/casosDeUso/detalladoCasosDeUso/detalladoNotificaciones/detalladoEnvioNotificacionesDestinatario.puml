@@ -1,0 +1,31 @@
+@startuml enviar_notificacion
+
+skinparam {
+  NoteBackgroundColor #whiteSmoke
+  ArrowColor #green
+  NoteBorderColor #green
+  linetype polyline
+}
+
+hide empty description
+
+state startState as "VISTAS"
+state endState as "VISTAS"
+
+startState --> EnviarNotificacion
+note on link
+    <b>Tiempo Solicita</b>
+    * Enviar Notificación
+end note
+
+EnviarNotificacion--> endState
+
+state EnviarNotificacion{
+    [*] --> [*]
+  note on link
+  <b>Sistema permite</b>
+  Enviar notificación de acción pendiente al destinatario
+  end note
+}
+
+@enduml
