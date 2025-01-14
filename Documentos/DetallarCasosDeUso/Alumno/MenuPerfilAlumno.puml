@@ -1,21 +1,21 @@
-@startuml CambiarAPerfil
+@startuml VerPerfil
 
 hide empty description
 
 state NavegacionMenus
 state MenuPerfil
-state CambiarAPerfil{
-    state Cambiar as "Cambiar a Perfil"
-    [*] --> Cambiar
+state VerPerfil{
+    state Ver as "Ver Perfil"
+    [*] --> Ver
     note on link
         El alumno introduce que quiere ir a su perfil
     end note
-    Cambiar --> [*]
+    Ver --> [*]
     note on link
         El sistema muestra el perfil del profesor
     end note
 }
 
-NavegacionMenus --> CambiarAPerfil
-CambiarAPerfil --> MenuPerfil
+NavegacionMenus --> VerPerfil
+VerPerfil --> MenuPerfil
 @enduml
