@@ -1,11 +1,11 @@
-@startuml CambiarAClasificacion
+@startuml VerClasificacion
 
 hide empty description
 
 state Navegacion_Menus
 state Menu_Clasificacion
-state CambiarAClasificacion{
-    state Cambiar as "Cambiar a Clasificación"
+state VerClasificacion{
+    state Cambiar as "Ver Clasificación"
     [*] --> Cambiar
     note on link
         El profesor introduce que quiere ir a Clasificación
@@ -16,7 +16,7 @@ state CambiarAClasificacion{
     end note
 }
 
-Navegacion_Menus --> CambiarAClasificacion
-CambiarAClasificacion --> Menu_Clasificacion
+Navegacion_Menus --> VerClasificacion
+VerClasificacion --> Menu_Clasificacion
 
 @enduml
