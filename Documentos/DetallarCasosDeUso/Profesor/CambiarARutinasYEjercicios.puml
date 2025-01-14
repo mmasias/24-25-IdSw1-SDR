@@ -1,10 +1,10 @@
-@startuml CambiarARutinasYEjercicios
+@startuml VerRutinasYEjercicios
 hide empty description
 
 state Navegacion_Menus
 state Menu_Rutinas_y_Ejercicios
 
-state CambiarARutinasYEjercicios{
+state VerRutinasYEjercicios{
     state Cambiar as "Cambiar a Rutinas y Ejercicios"
     [*] --> Cambiar
     note on link
@@ -16,6 +16,6 @@ state CambiarARutinasYEjercicios{
     end note
 }
 
-Navegacion_Menus --> CambiarARutinasYEjercicios
-CambiarARutinasYEjercicios --> Menu_Rutinas_y_Ejercicios
+Navegacion_Menus --> VerRutinasYEjercicios
+VerRutinasYEjercicios --> Menu_Rutinas_y_Ejercicios
 @enduml
