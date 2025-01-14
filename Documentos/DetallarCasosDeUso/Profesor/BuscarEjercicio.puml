@@ -1,0 +1,32 @@
+@startuml
+
+hide empty description
+
+state Menu_Rutinas_y_Ejercicios
+state BuscandoEjercicio
+state BuscarEjercicio {
+  [*] --> MostrarBuscador
+  note on link
+      El sistema muestra: buscador.
+  end note
+
+  MostrarBuscador --> IntroducirNombre
+  note on link
+      El profesor introduce: nombre del ejercicio.
+  end note
+
+  IntroducirNombre --> ConfirmarBusqueda
+  note on link
+      El profesor introduce: confirmación presionando "Buscar".
+  end note
+
+  ConfirmarBusqueda --> [*]
+  note on link
+      El sistema muestra: mensaje de rutina buscada con éxito.
+  end note
+}
+
+Menu_Rutinas_y_Ejercicios --> BuscarEjercicio
+BuscarEjercicio --> BuscandoEjercicio
+
+@enduml
