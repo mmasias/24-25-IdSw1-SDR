@@ -26,6 +26,7 @@ Este es el repositorio de las sesiones de requisitado de la asignatura de Ingeni
         <li>Diagrama de Objetos</li>
         <li>Diagrama de Estados</li>
       </ul>
+      <p><a href="/ModeloDelDominio/EvolucioneModeloDelDominio.md">Evolución del modelo de dominio a lo largo del semestre </a></p>
     </td>
 <td valign=top>
       <p>En esta sección se describen los actores principales que interactúan con el sistema y los casos de uso que representan las funcionalidades clave del proyecto.</p>
