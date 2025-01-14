@@ -5,8 +5,6 @@ En esta carpeta se irán registrando **todas las actas** de nuestras reuniones c
 > [!NOTE]
 > Este archivo README se actualizará con **cada nueva acta** que añadamos a la carpeta.  
 
----
-
 ## 📑 **Actas Disponibles**
 
 | Fecha       | Enlace                               |
@@ -16,8 +14,6 @@ En esta carpeta se irán registrando **todas las actas** de nuestras reuniones c
 | 21/11/2024  | [Acta 3](/documentos/actas/acta3.md) |
 | 7/1/2024    | [Acta 4](/documentos/actas/acta4.md) |
 | ...         | ...                                  |
-
----
 
 ## 📝 **¿Qué incluye un Acta?**
 Cada acta incluirá:

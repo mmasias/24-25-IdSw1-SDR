@@ -3,8 +3,6 @@
 **Hora**: 11:30 PM  
 **[Presencial] 🏢**
 
----
-
 ## 📋 **Resumen del Acta**  
 En el día de hoy tuvimos nuestra segunda reunión con **Susana Gutierrez** en donde nos indicó su evaluación a nuestro trabajo realizado hasta entonces, en donde se encontraba de acuerdo con gran parte de nuestro trabajo pero también nos indicó algunas mejoras e implenentaciones que tendremos que llevar a cabo. Estas implementaciones consta de las siguientes:
 
@@ -13,8 +11,6 @@ En el día de hoy tuvimos nuestra segunda reunión con **Susana Gutierrez** en d
 - Realizar ajustes en el diagrama de clases
 - Nos ha priorizado los casos de uso y hecho alguna modificación sobre los que propusimos
 - Continuar con los apartados establecidos recibiendo feedback cuando sea necesario
-
----
 
 ## 👥 **Integrantes del Acta** 
 - Susana Gutierrez 

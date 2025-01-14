@@ -3,8 +3,6 @@
 **Hora**: 16:30 PM  
 **[Presencial] 🏢**
 
----
-
 ## 📋 **Resumen del Acta**  
 Hoy hemos tenido nuestra segunda reunión con **Manuel Masías**, quien nos ha puntualizado la abstracción del modelo de dominio y el mapeo del excel al dominio, es decir, los aspectos clave en cada uno de los diagramas y la esencia del mismo (clases, objetos y estados).
 Para concluir, podemos decir que de cara a próximos cambios debemos concretar cuestiones para definir el vocabulario y signficados del Excel; de esta manera se abre un lenguaje común para entender la información esencial del proyecto a desarrollar.
@@ -12,8 +10,6 @@ Para concluir, podemos decir que de cara a próximos cambios debemos concretar c
 - Definir el **vocabulario** del proyecto.
 - **Aclarar** los **significados** del Excel.
 - Establecer un **lenguaje común** para entender la información esencial del proyecto.
-
----
 
 ## 👥 **Integrantes del Acta**  
 - Manuel Masías

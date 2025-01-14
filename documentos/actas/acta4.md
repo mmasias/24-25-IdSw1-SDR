@@ -2,8 +2,6 @@
 **Fecha**: 7/1/2025  
 **[Virtual] 💻**
 
----
-
 ## 📋 **Resumen del Acta**  
 
 Gracias al correo de Susana recibido hoy, hemos podido concretar mejor las funciones de los **actores** y sus **casos de uso**. Se destacan los siguientes cambios clave:
@@ -25,8 +23,6 @@ Este enfoque ha permitido tener una visión más clara y estructurada de cómo s
 | **Antes** | **Después** |
 |-----------|-------------|
 | ![Antes](/images/actas/antes.png) | ![Después](/images/actas/despues.png) |
-
----
 
 ## 👥 **Integrantes del Acta** 
 - Susana Gutierrez 
