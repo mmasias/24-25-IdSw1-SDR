@@ -4,17 +4,17 @@ hide empty description
 
 state Menu_Rutinas_y_Ejercicios
 
-state MostrarReto{
-    state VerReto as "Mostrar Reto"
-    [*] --> VerReto
+state VerReto{
+    state Ver as "Ver Reto"
+    [*] --> Ver
     note on link
         El alumno introduce que quiere ver el reto
     end note
-    VerReto --> [*]
+    Ver --> [*]
     note on link
         El sistema muestra el reto
     end note
 }
-Menu_Rutinas_y_Ejercicios --> MostrarReto
-MostrarReto --> MostrandoReto
+Menu_Rutinas_y_Ejercicios --> VerReto
+VerReto --> MostrandoReto
 @enduml
