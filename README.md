@@ -1,9 +1,9 @@
-# Alumni 
+# 📚 Alumni 
 ## 🎓 Sistema de gestion de ofertas de trabajo
 El Sistema Alumni es una plataforma que conecta a antiguos alumnos de la universidad con oportunidades laborales ofrecidas por empresas asociadas. Facilita la búsqueda de empleo para los egresados y permite a las empresas acceder a talentos cualificados de la universidad.
 
 ---
-## Características principales
+## 🛠️ Características principales
 
 - **Acceso a ofertas de empleo**: Los antiguos alumnos pueden explorar y postularse a las ofertas publicadas por empresas asociadas.
 - **Publicación de ofertas por empresas**: Las empresas tienen la capacidad de crear y gestionar sus ofertas de trabajo.
@@ -12,21 +12,9 @@ El Sistema Alumni es una plataforma que conecta a antiguos alumnos de la univers
 
 ## 🧩 Modelo del Dominio:
 
-<div align=center>
+- [Modelo del dominio (Diagramas de clases, objetos y estados)](/modelosUML/ModeloDominio/ModeloDominio.md)
 
-### Diagrama de Clases:
 
-![Diagrama Clases](modelosUML/ModeloDominio/svg/diagramaClases.svg)
-
-### Diagrama de Objetos:
-
-![Diagrama Objetos](modelosUML/ModeloDominio/svg/diagramaObjetos.svg)
-
-### Diagrama de Estados:
-
-![Diagrama Estados](modelosUML/ModeloDominio/svg/diagramaEstados.svg)
-
-</div>
 
 ## 📊 Casos de Uso
 
