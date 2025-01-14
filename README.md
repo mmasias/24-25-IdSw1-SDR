@@ -14,27 +14,27 @@
 
 ---
 ## 🧩 DESCRIPCION GENERAL
--Blabla
+- Blabla
 
 ---
 ## 📣 CARACTERISTICAS PRINCIPALES
--Blabla
+- Blabla
 
 ---
 ## 📋 MODELO DE DOMINIO
--Blabla
--(Insertar link a otro readme donde se vean los 3 diagramas)
+- Blabla
+- (Insertar link a otro readme donde se vean los 3 diagramas)
 
 ---
 ## 🛠️ ACTORES Y CASOS DE USO
--Actores
--Casos de Uso Detallados
--Diagrama Casos de Uso
--Diagrama de Contexto
+- Actores
+- Casos de Uso Detallados
+- Diagrama Casos de Uso
+- Diagrama de Contexto
 
 ---
 ## 📸 PROTOTIPOS
--[Blabla](https://github.com/miguelgomez75/24-25-IdSw1-SDR/tree/main/images/interfaz)
+- [Blabla](https://github.com/miguelgomez75/24-25-IdSw1-SDR/tree/main/images/interfaz)
 
 
 
