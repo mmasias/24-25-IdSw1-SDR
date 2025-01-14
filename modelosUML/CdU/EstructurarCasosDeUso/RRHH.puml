@@ -1,0 +1,20 @@
+@startuml
+left to right direction
+
+actor RRHH
+package "Sistema Académico" {
+    usecase "Introducir Datos Académicos" as IntroducirDatosAcademicos
+    usecase "Validar los Datos introducidos por el Profesorado" as ValidarDatos
+    usecase "Modificar los Datos introducidos por el Profesorado" as ModificarDatos
+    usecase "Consultar Claustro Docente (listado PDI asociado a una titulación)" as ConsultarClaustro
+    usecase "Consultar Asignación Docente por Profesor (créditos y asignaturas)" as ConsultarAsignacion
+    usecase "Introducir Datos Laborables" as IntroducirDatosLaborables
+
+}
+RRHH --> IntroducirDatosAcademicos
+RRHH --> ValidarDatos
+RRHH --> ModificarDatos
+RRHH --> ConsultarClaustro
+RRHH --> ConsultarAsignacion
+RRHH --> IntroducirDatosLaborables
+@enduml

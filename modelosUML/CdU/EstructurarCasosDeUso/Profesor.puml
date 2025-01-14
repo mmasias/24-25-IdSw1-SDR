@@ -1,0 +1,12 @@
+@startuml
+left to right direction
+actor Profesor
+package "Sistema Académico" {
+    usecase "Introducir Datos Académicos" as IntroducirDatosAcademicos
+    usecase "Consultar valores asignados de Contrato y otros Datos Personales" as ConsultarValores
+    usecase "Consultar Asignación Docente (por titulación, curso y semestre)" as ConsultarAsignaciones
+}
+Profesor --> IntroducirDatosAcademicos
+Profesor --> ConsultarValores
+Profesor --> ConsultarAsignaciones
+@enduml

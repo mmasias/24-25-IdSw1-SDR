@@ -1,0 +1,21 @@
+@startuml
+left to right direction
+actor TecnicoCalidad
+package "Sistema Académico" {
+    usecase "Asignar valores consignados en Memoria por Titulación" as AsignarMemoria
+    usecase "Asignar valor de Información a SIIU y DGU del PDI" as AsignarInformacion
+    usecase "Obtener Indicadores para Sistema de Gestión" as ObtenerIndicadores
+    usecase "Consultar Claustro Docente (listado PDI asociado a una titulación)" as ConsultarClaustro
+    usecase "Consultar Asignacion Docente por profesor" as ConsultarAsignacion
+    usecase "Validar cumplimiento de compromisos de memoria" as ValidarCumplimiento
+    usecase "Emitir Informe del Profesorado (Global o por Titulación)" as EmitirInforme
+}
+TecnicoCalidad --> AsignarMemoria
+TecnicoCalidad --> AsignarInformacion
+TecnicoCalidad --> ObtenerIndicadores
+TecnicoCalidad --> EmitirInforme
+TecnicoCalidad --> ConsultarClaustro
+TecnicoCalidad --> ConsultarAsignacion
+TecnicoCalidad --> ValidarCumplimiento
+
+@enduml
