@@ -111,6 +111,7 @@
 <div align="center">
   <img src="https://github.com/user-attachments/assets/f1052237-da08-4114-9834-b01fe2989412" alt="BuscarEjercicio">
 </div>
+
 ---
 
 ## Prototipo del CdU `VerReto`
