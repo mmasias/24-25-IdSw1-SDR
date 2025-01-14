@@ -15,7 +15,7 @@ El objetivo de este paso es **estructurar el modelo de los casos de uso** siguie
 
 ![Paso 2](/images/modelosUML/CdU/EstructurarCasosDeUso/Paso2.svg)
 
-# Decisiones & Criterios por Actor
+# Criterios por Actor
 
 | Actor                   | Cohesión funcional                          | Minimización de dependencias                     | Reutilización                                      |
 |-------------------------|---------------------------------------------|------------------------------------------------|--------------------------------------------------|
@@ -44,13 +44,10 @@ El objetivo de este paso es **estructurar el modelo de los casos de uso** siguie
 
 ---
 
-# ❓¿Cómo sé si...?
+# Evaluación de la Solución
 
-| Completitud                                     | Consistencia                              | Viabilidad                                |
-|------------------------------------------------|-------------------------------------------|-------------------------------------------|
-| Todos los requisitos funcionales están cubiertos, incluyendo la gestión de datos académicos y laborales. | No hay redundancia en la funcionalidad entre actores como `Ordenación` y `Técnico de Calidad`. | La estructura es implementable con casos de uso claros por paquete. |
-| Cada caso de uso tiene un propósito claro, como "Consultar Claustro Docente" y "Emitir Informe del Profesorado". | Las dependencias son bidireccionales donde es necesario, como entre "Gestión de Calidad" y "Gestión de Ordenación". | Las interfaces entre paquetes, como "Gestión de Profesores" y "Gestión de Recursos Humanos", son claras. |
-| Las relaciones están completamente especificadas con relaciones `include` y `extend`. | Los nombres son consistentes y significativos en todos los diagramas. | Los patrones de comunicación entre subsistemas son eficientes. |
+La solución propuesta asegura una cobertura completa de los requisitos funcionales, organizando los casos de uso de manera clara y coherente. Las funcionalidades están estructuradas sin redundancias, permitiendo dependencias bidireccionales donde son necesarias y garantizando la claridad en las interfaces entre paquetes. Las relaciones `include` y `extend` están correctamente especificadas, y los nombres utilizados en los diagramas son consistentes y significativos, lo que contribuye a una implementación eficiente y a la comunicación fluida entre los subsistemas.
+
 
 ---
 
