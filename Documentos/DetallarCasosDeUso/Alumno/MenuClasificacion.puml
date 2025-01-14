@@ -4,19 +4,19 @@ hide empty description
 
 state Navegacion_Menus
 state Menu_Clasificacion
-state CambiarAClasificacion{
-    state Cambiar as "Cambiar a Clasificación"
-    [*] --> Cambiar
+state VerClasificacion{
+    state Ver as "Ver Clasificación"
+    [*] --> Ver
     note on link
         El alumno introduce que quiere ir a Clasificación
     end note
-    Cambiar --> [*]
+    Ver --> [*]
     note on link
         El sistema muestra Clasificación
     end note
 }
 
-Navegacion_Menus --> CambiarAClasificacion
-CambiarAClasificacion --> Menu_Clasificacion
+Navegacion_Menus --> VerClasificacion
+VerClasificacion --> Menu_Clasificacion
 
 @enduml
