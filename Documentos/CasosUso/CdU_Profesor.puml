@@ -3,47 +3,37 @@ left to right direction
 actor Profesor
 
 package "Rutinas y Ejercicios" {
-    usecase "Ver Rutinas y Ejercicios" as CambiarARutinasYEjercicios
-
-   
-        usecase "Mostrar Rutina" as MostrarRutina
-        usecase "Editar Rutina" as EditarRutina
-        usecase "Crear Rutina" as CrearRutina
-        usecase "Buscar Rutina" as BuscarRutina
-    
-
-   
-        usecase "Mostrar Ejercicio" as MostrarEjercicio
-        usecase "Editar Ejercicio" as EditarEjercicio
-        usecase "Crear Ejercicio" as CrearEjercicio
-        usecase "Buscar Ejercicio" as BuscarEjercicio
-        
-    
+    usecase "Cambiar a Rutinas y Ejercicios" as CambiarARutinasYEjercicios
+    usecase "Mostrar Rutina" as MostrarRutina
+    usecase "Editar Rutina" as EditarRutina
+    usecase "Crear Rutina" as CrearRutina
+    usecase "Buscar Rutina" as BuscarRutina
+    usecase "Mostrar Ejercicio" as MostrarEjercicio
+    usecase "Editar Ejercicio" as EditarEjercicio
+    usecase "Crear Ejercicio" as CrearEjercicio
+    usecase "Buscar Ejercicio" as BuscarEjercicio
 }
 
 package "Retos" {
-    usecase "Ver Retos" as CambiarARetos
+    usecase "Cambiar a Retos" as CambiarARetos
     usecase "Crear Reto" as CrearReto
     usecase "Editar Reto" as EditarReto
 }
 
 package "Clasificación" {
-    usecase "Ver Clasificación" as CambiarAClasificacion
+    usecase "Cambiar a Clasificación" as CambiarAClasificacion
     usecase "Ver alumnos dentro  de clase" as VerAlumnosDentroDeClase
 }
 
 package "Perfil" {
-    usecase "Ver Perfil" as CambiarAPerfil
+    usecase "Cambiar a Perfil" as CambiarAPerfil
     usecase "Mostrar QR" as MostrarQR
-
-  
-        usecase "Crear Clase" as CrearClase
-        usecase "Ver mis clases" as VerMisClases
-        usecase "Ver alumnos" as VerAlumnos
-        usecase "Ver retos alumnos" as VerRetosAlumnos
-        usecase "Evaluar retos" as EvaluarRetos
-        usecase "Cerrar Sesión" as CerrarSesion
-    
+    usecase "Crear Clase" as CrearClase
+    usecase "Ver mis clases" as VerMisClases
+    usecase "Ver alumnos" as VerAlumnos
+    usecase "Ver retos alumnos" as VerRetosAlumnos
+    usecase "Evaluar retos" as EvaluarRetos
+    usecase "Cerrar Sesión" as CerrarSesion
 }
 
 

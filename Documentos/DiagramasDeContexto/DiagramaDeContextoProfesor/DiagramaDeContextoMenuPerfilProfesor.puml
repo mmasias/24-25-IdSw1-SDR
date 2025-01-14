@@ -12,6 +12,7 @@ RECTANGLE(VIENDO_MIS_CLASES, LightCoral)
 RECTANGLE(VIENDO_ALUMNOS, LightCoral) 
 RECTANGLE(VIENDO_RETOS_ALUMNOS, LightCoral) 
 RECTANGLE(EVALUANDO_RETOS, LightCoral)
+RECTANGLE(CERRANDO_SESION, LightCoral)
 
 ' Conexiones entre submenús y navegación
 CREANDO_CLASE -[#SkyBlue]-> NAVEGACION_MENUS : Cambiar menú
@@ -20,6 +21,7 @@ VIENDO_MIS_CLASES -[#SkyBlue]-> NAVEGACION_MENUS : Cambiar menú
 VIENDO_ALUMNOS -[#SkyBlue]-> NAVEGACION_MENUS : Cambiar menú
 VIENDO_RETOS_ALUMNOS -[#SkyBlue]-> NAVEGACION_MENUS : Cambiar menú
 EVALUANDO_RETOS -[#SkyBlue]-> NAVEGACION_MENUS : Cambiar menú
+CERRANDO_SESION -[#SkyBlue]-> NAVEGACION_MENUS : Cambiar menú
 
 ' Conexiones en el menú "Perfil"
 MENU_PERFIL -[#LightCoral]-> CREANDO_CLASE : Crear clase
@@ -28,5 +30,6 @@ MENU_PERFIL -[#LightCoral]-> VIENDO_MIS_CLASES : Ver mis clases
 VIENDO_MIS_CLASES -[#LightCoral]-> VIENDO_ALUMNOS : Ver alumnos
 VIENDO_ALUMNOS -[#LightCoral]-> VIENDO_RETOS_ALUMNOS : Ver retos alumnos
 VIENDO_RETOS_ALUMNOS -[#LightCoral]-> EVALUANDO_RETOS : Evaluar retos
+MENU_PERFIL -[#LightCoral]-> CERRANDO_SESION : Cerrar sesión
 
 @enduml
