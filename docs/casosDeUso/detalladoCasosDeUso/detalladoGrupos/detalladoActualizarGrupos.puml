@@ -14,6 +14,10 @@ state endState as "LISTANDO_GRUPOS"
 state listarGrupos as "listarGrupos"
 
 startState --> ActualizarGrupo
+note on link
+    <b>Usuario Solicita</b>
+    * Actualizar Grupo
+end note
 
 ActualizarGrupo -[#red]-> endState
 ActualizarGrupo --> listarGrupos
@@ -23,19 +27,9 @@ state ActualizarGrupo {
     state solicitudFiltros as " "
     state envioFiltros as " "
     state revisionFiltrosEnviados <<choice>>
-    state usuarioSolicita as "<b>Usuario Solicita:</b> \n Actualizar grupo"
-
-    usuarioSolicita --> solicitudFiltros
+    
     solicitudFiltros --> envioFiltros
     note on link
-        <b>Sistema Solicita</b>
-        * Campos a actualizar
-        * <b>Campos</b>
-            - Nombre del grupo
-            - Incorporar nuevo usuario
-            - Quitar un usuario
-            - Estado del grupo
-
         <b>Sistema Permite</b>
         * Actualizar grupo
     end note

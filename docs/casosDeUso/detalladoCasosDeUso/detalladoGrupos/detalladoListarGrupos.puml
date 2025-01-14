@@ -12,6 +12,10 @@ state startState as "MENU_PRINCIPAL"
 state endState as "LISTANDO_GRUPOS"
 
 startState --> ListarGrupos
+note on link
+    <b>Usuario Solicita</b>
+    * Listar Grupos
+end note
 
 ListarGrupos --> endState
 ListarGrupos -[#red]-> endState
@@ -20,9 +24,6 @@ state ListarGrupos {
     state solicitudFiltros as " "
     state envioFiltros as " "
     state revisionFiltrosEnviados <<choice>>
-    state usuarioSolicita as "<b>Usuario Solicita:</b> \n Listar grupos"
-
-    usuarioSolicita -> solicitudFiltros
     [*] --> solicitudFiltros
     note on link
         <b>Sistema Muestra</b>
@@ -33,13 +34,8 @@ state ListarGrupos {
 
     solicitudFiltros --> envioFiltros
     note on link
-        <b>Sistema Solicita</b>
-        * <b> Filtros opcionales </b>
-            - Términos de búsqueda
-            - Nombre del grupo
-            - Usuario del grupo
         <b>Sistema Permite</b>
-        * Listar grupos
+        Filtros opcionales
     end note
 
     envioFiltros --> revisionFiltrosEnviados
