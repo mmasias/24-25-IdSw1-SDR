@@ -15,11 +15,13 @@
 
 ---
 ## 🧩 DESCRIPCION GENERAL
-- Blabla
+- Este proyecto contiene el modelo del dominio, los actores y casos de uso de la aplicación de tablón de anuncios de UNEAT. La aplicación es un tablón de anuncios para poner en contacto a los alumnos de la universidad.
 
 ---
 ## 📣 CARACTERISTICAS PRINCIPALES
-- Blabla
+- Ayuda a poner en contacto a los alumnos.
+- Permite la compra-venta de objetos y servicios entre alumnos.
+- ¡No más no encontrar aparcamiento! La app pone en contacto a los alumnos para que puedan ir juntos a clase (¡o fuera!).
 
 ---
 ## 📋 MODELO DE DOMINIO
