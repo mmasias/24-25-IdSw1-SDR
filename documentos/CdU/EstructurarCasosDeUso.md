@@ -40,4 +40,4 @@ El objetivo de este paso es **estructurar el modelo de los casos de uso** siguie
 
 ---
 
-!(/images/modelosUML/CdU/EstructurarCasosDeUso/esquema.svg)
+![](/images/modelosUML/CdU/EstructurarCasosDeUso/esquema.svg)
