@@ -14,62 +14,52 @@
 
 ## Profesor
 
-### Ver Rutinas y Ejercicios
+### Cambiar a Rutinas y Ejercicios
 | Diagrama | Código Fuente |
 |----------|---------------|
-| ![Casos de uso](../Imagenes/DetallarCasosDeUso/Profesor/Menu_Rutinas_Profesor.svg) | [Ver código](Profesor/CambiarARutinasYEjercicios.puml) |
+| ![Casos de uso](../Imagenes/DetallarCasosDeUso/Profesor/MenuClasificacion.svg) | [Ver código](Profesor/CambiarAClasificacion.puml) |
 
-### Mostrar Rutina
+### Cambiar a Perfil
 | Diagrama | Código Fuente |
 |----------|---------------|
-| ![Casos de uso](../Imagenes/DetallarCasosDeUso/Profesor/MostrarRutina.svg) | [Ver código](Profesor/MostrarRutina.puml) |
-
-### Crear Rutina
-| Diagrama | Código Fuente |
-|----------|---------------|
-| ![Casos de uso](../Imagenes/DetallarCasosDeUso/Profesor/CrearRutina.svg) | [Ver código](Profesor/CrearRutina.puml) |
-
-### Editar Rutina
-| Diagrama | Código Fuente |
-|----------|---------------|
-| ![Casos de uso](../Imagenes/DetallarCasosDeUso/Profesor/EditarRutina.svg) | [Ver código](Profesor/EditarRutina.puml) |
-
-### Buscar Rutina
-| Diagrama | Código Fuente |
-|----------|---------------|
-| ![Casos de uso](../Imagenes/DetallarCasosDeUso/Profesor/BuscarRutina.svg) | [Ver código](Profesor/BuscarRutina.puml) |
-
-### Mostrar Ejercicio
-| Diagrama | Código Fuente |
-|----------|---------------|
-| ![Casos de uso](../Imagenes/DetallarCasosDeUso/Profesor/MostrarEjercicio.svg) | [Ver código](Profesor/MostrarEjercicio.puml) |
-
-### Crear Ejercicio
-| Diagrama | Código Fuente |
-|----------|---------------|
-| ![Casos de uso](../Imagenes/DetallarCasosDeUso/Profesor/CrearEjercicio.svg) | [Ver código](Profesor/CrearEjercicio.puml) |
-
-### Editar Ejercicio
-| Diagrama | Código Fuente |
-|----------|---------------|
-| ![Casos de uso](../Imagenes/DetallarCasosDeUso/Profesor/EditarEjercicio.svg) | [Ver código](Profesor/EditarEjercicio.puml) |
-
-### Buscar Ejercicio
-| Diagrama | Código Fuente |
-|----------|---------------|
-| ![Casos de uso](../Imagenes/DetallarCasosDeUso/Profesor/BuscarEjercicio.svg) | [Ver código](Profesor/BuscarEjercicio.puml) |
+| ![Casos de uso](../Imagenes/DetallarCasosDeUso/Profesor/Menu_Perfil_Profesor.svg) | [Ver código](Profesor/CambiarAPerfil.puml) |
 
 ### Cambiar a Retos
 | Diagrama | Código Fuente |
 |----------|---------------|
 | ![Casos de uso](../Imagenes/DetallarCasosDeUso/Profesor/MenuRetos.svg) | [Ver código](Profesor/CambiarARetos.puml) |
 
-### Ver Reto
+### Cambiar a Rutinas y Ejercicios
 | Diagrama | Código Fuente |
 |----------|---------------|
-| ![Casos de uso](../Imagenes/DetallarCasosDeUso/Profesor/VerReto.svg) | [Ver código](Profesor/MostrarReto.puml) |
+| ![Casos de uso](../Imagenes/DetallarCasosDeUso/Profesor/EditarRutina.svg) | [Ver código](Profesor/EditarRutina.puml) |
 
-### Crear Reto
+### Crear Clase
+| Diagrama | Código Fuente |
+|----------|---------------|
+| ![Casos de uso](../Imagenes/DetallarCasosDeUso/Profesor/CrearClase.svg) | [Ver código](Profesor/CrearClase.puml) |
+
+### Crear Ejercicio
+| Diagrama | Código Fuente |
+|----------|---------------|
+| ![Casos de uso](../Imagenes/DetallarCasosDeUso/Profesor/CrearEjercicio.svg) | [Ver código](Profesor/CrearEjercicio.puml) |
+
+### Crear Retos
+| Diagrama | Código Fuente |
+|----------|---------------|
+| ![Casos de uso](../Imagenes/DetallarCasosDeUso/Profesor/EditarEjercicio.svg) | [Ver código](Profesor/EditarEjercicio.puml) |
+
+### Crear Rutina
+| Diagrama | Código Fuente |
+|----------|---------------|
+| ![Casos de uso](../Imagenes/DetallarCasosDeUso/Profesor/CrearRutina.svg) | [Ver código](Profesor/CrearRutina.puml) |
+
+### Mostrar Reto
+| Diagrama | Código Fuente |
+|----------|---------------|
+| ![Casos de uso](../Imagenes/DetallarCasosDeUso/Profesor/MostrarReto.svg) | [Ver código](Profesor/MostrarReto.puml) |
+
+### Crear Retos 
 | Diagrama | Código Fuente |
 |----------|---------------|
 | ![Casos de uso](../Imagenes/DetallarCasosDeUso/Profesor/CrearRetos.svg) | [Ver código](Profesor/CrearRetos.puml) |
@@ -79,20 +69,20 @@
 |----------|---------------|
 | ![Casos de uso](../Imagenes/DetallarCasosDeUso/Profesor/EditarReto.svg) | [Ver código](Profesor/EditarReto.puml) |
 
-### Ver Clasificación
+### Cambiar a Clasificación
 | Diagrama | Código Fuente |
 |----------|---------------|
-| ![Casos de uso](../Imagenes/DetallarCasosDeUso/Profesor/MenuClasificacion.svg) | [Ver código](Profesor/VerClasificacion.puml) |
+| ![Casos de uso](../Imagenes/DetallarCasosDeUso/Profesor/MenuClasificacion.svg) | [Ver código](Profesor/CambiarAClasificacion.puml) |
 
-### Ver Clasificacion de una clase
+### Evaluar Retos
 | Diagrama | Código Fuente |
 |----------|---------------|
-| ![Casos de uso](../Imagenes/DetallarCasosDeUso/Profesor/Ver_Alumnos_Clase.svg) | [Ver código](Profesor/Ver_Alumnos_Clase.puml) |
+| ![Casos de uso](../Imagenes/DetallarCasosDeUso/Profesor/Evaluar_Retos.svg) | [Ver código](Profesor/Evaluar_Retos.puml) |
 
-### Ver Perfil
+### Cambiar a Perfil
 | Diagrama | Código Fuente |
 |----------|---------------|
-| ![Casos de uso](../Imagenes/DetallarCasosDeUso/Profesor/Menu_Perfil_Profesor.svg) | [Ver código](Profesor/VerPerfil.puml) |
+| ![Casos de uso](../Imagenes/DetallarCasosDeUso/Profesor/Menu_Perfil_Profesor.svg) | [Ver código](Profesor/CambiarAPerfil.puml) |
 
 ### Crear Clase
 | Diagrama | Código Fuente |
@@ -104,37 +94,57 @@
 |----------|---------------|
 | ![Casos de uso](../Imagenes/DetallarCasosDeUso/Profesor/Mostrar_QR.svg) | [Ver código](Profesor/Mostrar_QR.puml) |
 
-### Ver Mis Clases
+### Mostrar Reto
 | Diagrama | Código Fuente |
 |----------|---------------|
-| ![Casos de uso](../Imagenes/DetallarCasosDeUso/Profesor/Ver_Mis_Clases.svg) | [Ver código](Profesor/Ver_Mis_Clases.puml) |
+| ![Casos de uso](../Imagenes/DetallarCasosDeUso/Profesor/MostrarReto.svg) | [Ver código](Profesor/MostrarReto.puml) |
+
+### Mostrar Rutina
+| Diagrama | Código Fuente |
+|----------|---------------|
+| ![Casos de uso](../Imagenes/DetallarCasosDeUso/Profesor/MostrarRutina.svg) | [Ver código](Profesor/MostrarRutina.puml) |
 
 ### Ver Alumnos
 | Diagrama | Código Fuente |
 |----------|---------------|
 | ![Casos de uso](../Imagenes/DetallarCasosDeUso/Profesor/Ver_Alumnos.svg) | [Ver código](Profesor/Ver_Alumnos.puml) |
 
+### Ver Clasificación de una clase
+| Diagrama | Código Fuente |
+|----------|---------------|
+| ![Casos de uso](../Imagenes/DetallarCasosDeUso/Profesor/Ver_Alumnos_Clase.svg) | [Ver código](Profesor/Ver_Alumnos_Clase.puml) |
+
+### Ver Mis Clases
+| Diagrama | Código Fuente |
+|----------|---------------|
+| ![Casos de uso](../Imagenes/DetallarCasosDeUso/Profesor/Ver_Mis_Clases.svg) | [Ver código](Profesor/Ver_Mis_Clases.puml) |
+
 ### Ver Retos Alumnos
 | Diagrama | Código Fuente |
 |----------|---------------|
 | ![Casos de uso](../Imagenes/DetallarCasosDeUso/Profesor/Ver_Retos_Alumnos.svg) | [Ver código](Profesor/Ver_Retos_Alumnos.puml) |
 
-### Evaluar Retos
+## Alumno
+
+### Cambiar a Clasificación
 | Diagrama | Código Fuente |
 |----------|---------------|
-| ![Casos de uso](../Imagenes/DetallarCasosDeUso/Profesor/Evaluar_Retos.svg) | [Ver código](Profesor/Evaluar_Retos.puml) |
+| ![Casos de uso](../Imagenes/DetallarCasosDeUso/Alumno/MenuClasificacion.svg) | [Ver código](Alumno/MenuClasificacion.puml) |
 
-## Alumno
+### Cambiar a Perfil
+| Diagrama | Código Fuente |
+|----------|---------------|
+| ![Casos de uso](../Imagenes/DetallarCasosDeUso/Alumno/MenuPerfilAlumno.svg) | [Ver código](Alumno/MenuPerfilAlumno.puml) |
+
+### Cambiar a Retos
+| Diagrama | Código Fuente |
+|----------|---------------|
+| ![Casos de uso](../Imagenes/DetallarCasosDeUso/Alumno/MenuRetos.svg) | [Ver código](Alumno/MenuRetos.puml) |
 
 ### Ver Rutinas y Ejercicios
 | Diagrama | Código Fuente |
 |----------|---------------|
 | ![Casos de uso](../Imagenes/DetallarCasosDeUso/Alumno/Menu_Rutinas_Alumno.svg) | [Ver código](Alumno/Menu_Rutinas_Alumno.puml) |
-
-### Mostrar Rutina
-| Diagrama | Código Fuente |
-|----------|---------------|
-| ![Casos de uso](../Imagenes/DetallarCasosDeUso/Alumno/MostrarRutina.svg) | [Ver código](Alumno/MostrarRutina.puml) |
 
 ### Crear Rutina
 | Diagrama | Código Fuente |
@@ -146,11 +156,6 @@
 |----------|---------------|
 | ![Casos de uso](../Imagenes/DetallarCasosDeUso/Alumno/EditarRutina.svg) | [Ver código](Alumno/EditarRutina.puml) |
 
-### Buscar Rutina
-| Diagrama | Código Fuente |
-|----------|---------------|
-| ![Casos de uso](../Imagenes/DetallarCasosDeUso/Alumno/BuscarRutina.svg) | [Ver código](Alumno/BuscarRutina.puml) |
-
 ### Mostrar Ejercicio
 | Diagrama | Código Fuente |
 |----------|---------------|
@@ -161,27 +166,32 @@
 |----------|---------------|
 | ![Casos de uso](../Imagenes/DetallarCasosDeUso/Alumno/BuscarEjercicio.svg) | [Ver código](Alumno/BuscarEjercicio.puml) |
 
-### Cambiar a Retos
+### Mostrar QR
 | Diagrama | Código Fuente |
 |----------|---------------|
-| ![Casos de uso](../Imagenes/DetallarCasosDeUso/Alumno/MenuRetos.svg) | [Ver código](Alumno/MenuRetos.puml) |
+| ![Casos de uso](../Imagenes/DetallarCasosDeUso/Alumno/MostrarQR.svg) | [Ver código](Alumno/MostrarQR.puml) |
 
 ### Ver Reto
 | Diagrama | Código Fuente |
 |----------|---------------|
 | ![Casos de uso](../Imagenes/DetallarCasosDeUso/Alumno/MostrarReto.svg) | [Ver código](Alumno/MostrarReto.puml) |
 
+### Mostrar Rutina
+| Diagrama | Código Fuente |
+|----------|---------------|
+| ![Casos de uso](../Imagenes/DetallarCasosDeUso/Alumno/MostrarRutina.svg) | [Ver código](Alumno/MostrarRutina.puml) |
+
 ### Subir Evidencia
 | Diagrama | Código Fuente |
 |----------|---------------|
 | ![Casos de uso](../Imagenes/DetallarCasosDeUso/Alumno/SubirEvidencia.svg) | [Ver código](Alumno/SubirEvidencia.puml) |
 
-### Ver Clasificación
+### Cambiar a Clasificación
 | Diagrama | Código Fuente |
 |----------|---------------|
 | ![Casos de uso](../Imagenes/DetallarCasosDeUso/Alumno/MenuClasificacion.svg) | [Ver código](Alumno/MenuClasificacion.puml) |
 
-### Ver Perfil
+### Cambiar a Perfil
 | Diagrama | Código Fuente |
 |----------|---------------|
 | ![Casos de uso](../Imagenes/DetallarCasosDeUso/Alumno/MenuPerfilAlumno.svg) | [Ver código](Alumno/MenuPerfilAlumno.puml) |
@@ -195,11 +205,6 @@
 | Diagrama | Código Fuente |
 |----------|---------------|
 | ![Casos de uso](../Imagenes/DetallarCasosDeUso/Alumno/VerInsignias.svg) | [Ver código](Alumno/VerInsignias.puml) |
-
-### Mostrar QR
-| Diagrama | Código Fuente |
-|----------|---------------|
-| ![Casos de uso](../Imagenes/DetallarCasosDeUso/Alumno/MostrarQR.svg) | [Ver código](Alumno/MostrarQR.puml) |
 
 ## Profesor y Alumno 
 
@@ -217,5 +222,3 @@
 | Diagrama | Código Fuente |
 |----------|---------------|
 | ![Casos de uso](../Imagenes/DetallarCasosDeUso/CerrarSesion.svg) | [Ver código](CerrarSesion.puml) |
-
-
