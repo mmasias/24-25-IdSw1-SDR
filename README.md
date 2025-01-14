@@ -40,6 +40,6 @@
 
 ### 📋[Seguimento del proyecto](https://github.com/users/miguelgomez75/projects/3/views/1)📋
 ### 🏢[Sesiones de Requisitado](https://github.com/miguelgomez75/24-25-IdSw1-SDR/tree/main/Documentaci%C3%B3n/Sesiones%20de%20Requisitado)🏢 
-### 👥[Equipo de trabajo](https://github.com/miguelgomez75/24-25-IdSw1-SDR/tree/main/Documentaci%C3%B3n/Sesiones%20de%20Requisitado)👥 
+### 👥[Equipo de trabajo](https://github.com/miguelgomez75/24-25-IdSw1-SDR/tree/4bb7527370d4986cec958658da9f81fc16de6cde/Documentaci%C3%B3n/Equipo%20de%20Trabajo)👥 
 
 </div>
