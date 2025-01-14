@@ -26,14 +26,15 @@
 -(Insertar link a otro readme donde se vean los 3 diagramas)
 
 ---
-## 🛠️ Actores y Casos de Uso
+## 🛠️ ACTORES Y CASOS DE USO
 -Actores
 -Casos de Uso Detallados
 -Diagrama Casos de Uso
 -Diagrama de Contexto
--Prototipos
 
-
+---
+## 📸 PROTOTIPOS
+-[Blabla](https://github.com/miguelgomez75/24-25-IdSw1-SDR/tree/main/images/interfaz)
 
 
 
