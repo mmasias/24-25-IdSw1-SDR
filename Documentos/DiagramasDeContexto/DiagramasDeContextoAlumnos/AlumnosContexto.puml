@@ -1,4 +1,4 @@
-@startuml AlumnosCasosDeUso
+@startuml AlumnosContexto   
 !define RECTANGLE(x, color) rectangle x #color
 
 ' === ACTORES Y ELEMENTOS PRINCIPALES ===
@@ -20,10 +20,10 @@ ALUMNO -[#YellowGreen]-> PAGINA_PRINCIPAL : Ingresar al sistema
 PAGINA_PRINCIPAL -[#SkyBlue]-> NAVEGACION_MENUS : Navegar por menús
 
 ' === ESTADO INTERMEDIO: NAVEGACIÓN ENTRE MENÚS ===
-NAVEGACION_MENUS -[#PaleGreen]-> MENU_RUTINAS_y_EJERCICIOS : Ir a rutinas y ejercicios
-NAVEGACION_MENUS -[#LightSalmon]-> MENU_RETOS : Ir a retos
-NAVEGACION_MENUS -[#Gold]-> MENU_CLASIFICACION : Ir a clasificación
-NAVEGACION_MENUS -[#LightCoral]-> MENU_PERFIL : Ir a perfil
+NAVEGACION_MENUS -[#PaleGreen]-> MENU_RUTINAS_y_EJERCICIOS : Ver rutinas y ejercicios
+NAVEGACION_MENUS -[#LightSalmon]-> MENU_RETOS : Ver retos
+NAVEGACION_MENUS -[#Gold]-> MENU_CLASIFICACION : Ver clasificación
+NAVEGACION_MENUS -[#LightCoral]-> MENU_PERFIL : Ver perfil
 NAVEGACION_MENUS -[#LightBlue]-> PAGINA_PRINCIPAL : Regresar al inicio
 
 ' === CONEXIONES ENTRE ACCIONES Y MENÚS PRINCIPALES ===

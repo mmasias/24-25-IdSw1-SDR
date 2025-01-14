@@ -34,7 +34,7 @@ package "Clasificación" {
 
 package "Perfil" {
     usecase "Ver Perfil" as CambiarAPerfil
-    usecase "Mostrar QR en centro deportivo" as MostrarQR
+    usecase "Mostrar QR" as MostrarQR
 
   
         usecase "Crear Clase" as CrearClase

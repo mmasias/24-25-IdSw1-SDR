@@ -28,7 +28,7 @@ package Clasificacion {
 package Perfil {
     usecase "Ver Perfil" as IrAPerfil
     usecase "Inscribir en Clase" as InscribirEnClase
-    usecase "Mostrar QR en Centro Deportivo" as MostrarQRCentros
+    usecase "Mostrar QR" as MostrarQRCentros
     usecase "Ver Insignias" as VerInsignias
     usecase "Cerrar Sesion" as CerrarSesion
 }

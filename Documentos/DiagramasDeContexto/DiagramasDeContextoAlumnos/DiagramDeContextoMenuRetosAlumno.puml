@@ -1,13 +1,13 @@
-@startuml AlumnosCasosDeUso
-!define RECTANGLE(x) rectangle x
+@startuml DiagramaDeContextoMenuRetosAlumno
+!define RECTANGLE(x, color) rectangle x #color
 
-RECTANGLE(NAVEGACION_MENUS)
-RECTANGLE(MENU_RETOS)
+RECTANGLE(NAVEGACION_MENUS, SkyBlue)
+RECTANGLE(MENU_RETOS, LightSalmon)
 
-RECTANGLE(SUBIENDO_EVIDENCIA_RETO)
+RECTANGLE(SUBIENDO_EVIDENCIA_RETO, LightSalmon)
 
 ' === MENÚ RETOS ===
-MENU_RETOS --> SUBIENDO_EVIDENCIA_RETO : Subir evidencia de reto
-SUBIENDO_EVIDENCIA_RETO --> NAVEGACION_MENUS : Cambiar menú
+MENU_RETOS -[#LightSalmon]-> SUBIENDO_EVIDENCIA_RETO : Subir evidencia de reto
+SUBIENDO_EVIDENCIA_RETO -[#SkyBlue]-> NAVEGACION_MENUS : Cambiar menú
 
 @enduml
