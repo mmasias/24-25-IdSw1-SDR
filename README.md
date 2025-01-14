@@ -23,7 +23,7 @@
 
 ---
 ## 📋 MODELO DE DOMINIO
-- [Click para ir al modelo del dominio](/Readmes/ModeloDelDominio.md)
+- Click para ir al [Modelo Del Dominio](/Readmes/ModeloDelDominio.md), donde indicamos con varios diagramas las entidades principales y sus relaciones
 
     - [Diagrama de clases](/Readmes/ModeloDelDominio.md#diagrama-de-clases)
     - [Diagrama de Objetos](/Readmes/ModeloDelDominio.md#diagrama-de-objetos)
