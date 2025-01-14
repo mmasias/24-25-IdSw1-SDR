@@ -22,6 +22,7 @@
 - Ayuda a poner en contacto a los alumnos.
 - Permite la compra-venta de objetos y servicios entre alumnos.
 - ¡No más no encontrar aparcamiento! La app pone en contacto a los alumnos para que puedan ir juntos a clase (¡o fuera!).
+- Permite a los alumnos a crear y encontrar comunidades para juntarse con otra gente de mismos intereses.
 
 ---
 ## 📋 MODELO DE DOMINIO
