@@ -41,3 +41,33 @@ El objetivo de este paso es **estructurar el modelo de los casos de uso** siguie
 ---
 
 ![](/images/modelosUML/CdU/EstructurarCasosDeUso/esquema.svg)
+
+---
+
+# Beneficios
+
+| Mantenibilidad                                  | Comprensión                                | Escalabilidad                              |
+|------------------------------------------------|--------------------------------------------|-------------------------------------------|
+| Facilita la modificación de funcionalidades específicas de actores como `Profesor` y `RRHH`. | Organización jerárquica clara en paquetes como "Gestión de Profesores" y "Gestión de Calidad". | Estructura preparada para añadir nuevas funcionalidades, como "Gestión de Indicadores". |
+| Permite la evolución independiente de subsistemas como "Gestión de Memorias e Informes". | Separación lógica de funcionalidades en cada paquete. | Patrones claros para la extensión del sistema mediante relaciones `include` y `extend`. |
+
+---
+
+# ¿Cómo sé si...?
+
+| Completitud                                     | Consistencia                              | Viabilidad                                |
+|------------------------------------------------|-------------------------------------------|-------------------------------------------|
+| Todos los requisitos funcionales están cubiertos, incluyendo la gestión de datos académicos y laborales. | No hay redundancia en la funcionalidad entre actores como `Ordenación` y `Técnico de Calidad`. | La estructura es implementable con casos de uso claros por paquete. |
+| Cada caso de uso tiene un propósito claro, como "Consultar Claustro Docente" y "Emitir Informe del Profesorado". | Las dependencias son bidireccionales donde es necesario, como entre "Gestión de Calidad" y "Gestión de Ordenación". | Las interfaces entre paquetes, como "Gestión de Profesores" y "Gestión de Recursos Humanos", son claras. |
+| Las relaciones están completamente especificadas con relaciones `include` y `extend`. | Los nombres son consistentes y significativos en todos los diagramas. | Los patrones de comunicación entre subsistemas son eficientes. |
+
+---
+
+# Entregables
+
+1. Diagramas de paquetes de casos de uso.
+2. Diagramas de casos de uso por paquete.
+3. Especificación de relaciones entre casos de uso.
+4. Matriz de trazabilidad de requisitos.
+
+---
