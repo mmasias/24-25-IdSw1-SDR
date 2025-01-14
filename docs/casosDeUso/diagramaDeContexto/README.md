@@ -11,7 +11,7 @@
 
 ![](./DiagramaDeContextoAdministrador/diagramaContextoAdministrador.svg)
 
-## Diagrama de Contexto de Usuario
+## Diagrama de Contexto de Gestor
 
 ![](./DiagramaDeContextoUsuario/diagramaContextoUsuario.svg)
 

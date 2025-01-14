@@ -2,8 +2,10 @@
 actor "Tiempo" as Tiempo
 
 package "Recordatorios" {
-    usecase "Enviar recordatorio de acción pendiente" as R1
+    usecase "Enviar recordatorio de acción pendiente al destinatario" as R1
+    usecase "Enviar recordatorio de destinatarios pendientes al remitente" as R2
 }
 
 Tiempo --> R1
+Tiempo --> R2
 @enduml

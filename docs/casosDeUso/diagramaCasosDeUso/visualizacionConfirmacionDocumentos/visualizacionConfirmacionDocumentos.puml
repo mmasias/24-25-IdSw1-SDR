@@ -1,22 +1,20 @@
 @startuml visualizacionConfirmacionDocumentos
 left to right direction
-actor "Usuario" as Usuario
+actor "Gestor" as Usuario
 actor "Destinatario" as Destinatario
 
-package "Visualización y Confirmación de Documentos" {
+package "Visualización y Confirmación de Mensajes" {
     usecase "Listar Mensajes" as VCD1
     usecase "Abrir Mensaje" as VCD2
-    VCD2 .> VCD1 : <<extend>>
     usecase "Abrir Documento" as VCD3
-    VCD3 .> VCD2 : <<extend>>
-    usecase "Confirmar Lectura/firmar Documento" as VCD4
-    VCD4 .> VCD3 : <<extend>>
+    usecase "Confirmar Lectura/firmar Mensaje" as VCD4
+    VCD4 .> VCD2 : <<include>>
 }
 
-Usuario <|- Destinatario
-Destinatario <|- Administrador
-Usuario -u-> VCD1
-Usuario --> VCD2
-Usuario --> VCD3
-Usuario --> VCD4
+Destinatario <|- Usuario
+Usuario <|- Administrador
+Destinatario -u-> VCD1
+Destinatario --> VCD2
+Destinatario --> VCD3
+Destinatario --> VCD4
 @enduml

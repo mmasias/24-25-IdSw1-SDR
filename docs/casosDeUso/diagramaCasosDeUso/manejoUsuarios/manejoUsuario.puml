@@ -1,14 +1,21 @@
 @startuml ManejoUsuario
 left to right direction
 actor "Administrador" as Administrador
-actor "Usuario" as Usuario
+actor "Gestor" as Usuario
 
-package "CRUD de Usuarios" {
+package "CRUD de Usuarios" as crud{
     usecase "Crear Usuario" as CU1
     usecase "Ver Usuario" as CU2
     usecase "Actualizar Usuario" as CU3
     usecase "Borrar Usuario" as CU4
 }
+
+note left of crud
+    Los usuarios que se pueden crear son de dos tipos: 
+    Destinatario y Gestor, siendo el destinatario el usuario
+    que solo puede recibir los mensajes y el gestor el que puede
+    enviar mensajes.
+end note
 
 Administrador --|> Usuario
 Usuario --> CU1
