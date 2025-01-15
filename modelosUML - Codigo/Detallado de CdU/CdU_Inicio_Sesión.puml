@@ -1,0 +1,47 @@
+@startuml Inicio_Sesión
+skinparam {
+    NoteBackgroundColor #whiteSmoke
+    NoteBorderColor #black
+    linetype polyline
+}
+
+skinparam state {
+    BackgroundColor #whiteSmoke
+}
+
+hide empty description
+
+state startState as "Interfaz de Registro"
+state endState as "Tablón de Anuncios"
+
+
+startState --> Inicio_Sesión
+
+state Inicio_Sesión {
+    state IngresoCredenciales as " "
+    state ValidarCredenciales <<choice>>
+    state InicioSesionCorrecto as " "
+
+    IngresoCredenciales -[#green]-> ValidarCredenciales
+    note on link
+        <b>Usuario introduce</b>
+        * Nombre de usuario/Correo Electrónico
+        * Contraseña
+    end note
+
+    ValidarCredenciales -[#red]-> IngresoCredenciales
+    note on link
+        <b>Sistema muestra:</b>
+        * Error: "Usuario o Contraseña incorrectos"
+    end note
+
+    ValidarCredenciales -[#green]-> InicioSesionCorrecto
+    note on link
+        <b>Sistema redirige</b>
+        * A la pantalla principal
+    end note
+}
+
+Inicio_Sesión --> endState
+
+@enduml
