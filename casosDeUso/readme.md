@@ -16,6 +16,10 @@
 
 ### Diagrama de Contexto
 ![Diagrama de Contexto](/casosDeUso/diagramaDeContexto/DiagramaDeContexto.svg)
+> 🌐 **Contexto del Sistema:**
+> Este diagrama presenta una vista general de las interacciones entre el sistema y los actores externos, resaltando las principales funcionalidades administradas por el usuario clave: el administrador.
+
+---
 
 ## 🛠️ Casos de Uso Representados mediante Diagramas (Ordenados)
 
