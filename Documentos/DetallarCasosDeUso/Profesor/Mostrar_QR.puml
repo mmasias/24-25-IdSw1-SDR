@@ -8,7 +8,7 @@ state Mostrar_QR{
     state Mostrar as "Mostrar QR"
     [*] --> Mostrar
     note on link
-        El profesor introduce ver el QR
+        El profesor introduce: Mostrar QR   
     end note
     Mostrar --> [*]
     note on link
