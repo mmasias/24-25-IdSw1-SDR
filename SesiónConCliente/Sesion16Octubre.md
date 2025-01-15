@@ -1,4 +1,4 @@
-# Sesión De Requisado 16 de Octubre
+# Sesión De Requisitado 16 de Octubre
 ---
 
 ## Asistentes:
