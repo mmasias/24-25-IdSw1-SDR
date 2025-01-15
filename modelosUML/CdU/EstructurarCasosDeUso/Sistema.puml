@@ -37,21 +37,17 @@ package "Sistema Académico" {
 
     ValidarDatosRRHH ..> ConsultarClaustroRRHH : <<include>>
     ModificarDatosRRHH ..> ValidarDatosRRHH : <<include>>
-    IntroducirContrato ..> ConsultarClaustroRRHH : <<include>>
-    ConsultarAsignacionRRHH ..> ConsultarClaustroRRHH : <<include>>
     RevisarCargaRRHH ..> ConsultarClaustroRRHH : <<include>>
     ValidarDatosRRHH .> IntroducirExperiencia : <<include>>
 
     AsignarCargaOrdenacion ..> ConsultarClaustroOrdenacion : <<include>>
     RevisarMemoria ..> ConsultarClaustroOrdenacion : <<include>>
-    ConsultarAsignacionOrdenacion ..> ConsultarClaustroOrdenacion : <<include>>
     RevisarCargaOrdenacion ..> ConsultarClaustroOrdenacion : <<include>>
 
     ValidarMemoria ..> ConsultarClaustroCalidad : <<include>>
     EmitirInforme ..> ObtenerIndicadores : <<include>>
     ObtenerIndicadores ..> ConsultarAsignacionCalidad : <<include>>
     AsignarValoresMemoria ..> ValidarMemoria : <<include>>
-    ConsultarAsignacionCalidad ..> ConsultarClaustroCalidad : <<include>>
 
     AsignarInformacion .> ValidarMemoria : <<extend>>
 }
