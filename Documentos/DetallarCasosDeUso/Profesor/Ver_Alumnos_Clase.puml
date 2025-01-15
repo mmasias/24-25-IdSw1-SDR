@@ -13,7 +13,7 @@ state Ver_Alumnos_Clase {
   end note
     Ver_Alumnos --> [*]
     note on link
-    El sistema muestra los alumnos de la clase
+    El sistema muestra los alumnos de la clase en orden de la clasificacion
     end note
 }
 
