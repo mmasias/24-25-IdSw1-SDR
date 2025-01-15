@@ -5,19 +5,22 @@ hide empty description
 state Viendo_Alumnos
 state Viendo_Retos_Alumnos
 state Ver_Retos_Alumnos {
-    [*] --> VerDetalles
+    [*] --> SeleccionarAlumno
     note on link
-        El sistema muestra el estado del reto
+        El profesor introduce ver retos de un alumno
     end note
-    VerDetalles --> RevisarReto
+    SeleccionarAlumno --> EstadoRetos
     note on link
-        El profesor introduce evaluar retos
+        El sistema muestra los retos del alumno y su estado
     end note
-    VerDetalles --> [*]
+    EstadoRetos --> RevisarReto
     note on link
-        El profesor introduce salir
+        El profesor introduce un reto para revisar
     end note
-
+    RevisarReto --> [*]
+    note on link
+        El sistema muestra el reto y la evidencia del alumno
+    end note
 }
 
 Viendo_Alumnos --> Ver_Retos_Alumnos
