@@ -15,7 +15,7 @@ TecnicoCalidad --> GenerarVersion
 TecnicoCalidad --> AsignarGuias
 TecnicoCalidad --> AsignarAsignaturaTitulacion
 TecnicoCalidad --> EditarPlantilla
-TecnicoCalidad --> VerEstados
+
 
 AsignarGuias <|-- AsignarGuiaProfesor
 AsignarGuias <|-- AsignarGuiaTitulacion
