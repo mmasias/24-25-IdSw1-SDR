@@ -73,6 +73,13 @@
 
 ### Editar Asignación
 ![Editar Asignación](/casosDeUso/imagenes/EditarAsignación.svg)
+> ✏️ **Edición de Asignaciones:**
+> Proceso que permite:
+> - Modificar día, hora o aula.
+> - Manejar errores si no hay aulas disponibles.
+> - Confirmar los cambios realizados.
+
+---
 
 ### Vincular Asignatura Horario
 ![Vincular Asignatura Horario](/casosDeUso/imagenes/VincularAsignaturaHorario.svg)
