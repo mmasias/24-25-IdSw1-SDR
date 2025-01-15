@@ -16,6 +16,7 @@ package "Rutinas y Ejercicios" {
 
 package "Retos" {
     usecase "Cambiar a Retos" as CambiarARetos
+    usecase "Mostrar Reto" as MostrarReto
     usecase "Crear Reto" as CrearReto
     usecase "Editar Reto" as EditarReto
 }
