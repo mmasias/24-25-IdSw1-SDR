@@ -25,7 +25,7 @@
 
 ### Inicio de Sesión
 ![Inicio de Sesión](/casosDeUso/imagenes/IniciarSesión.svg)
-> 🔒 **Proceso:**
+> 🔒 **Ingreso:**
 > Este diagrama ilustra el flujo de inicio de sesión:
 > - El usuario ingresa sus credenciales.
 > - El sistema valida la información:
