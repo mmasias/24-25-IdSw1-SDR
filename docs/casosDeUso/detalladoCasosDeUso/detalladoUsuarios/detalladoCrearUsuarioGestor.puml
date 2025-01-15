@@ -13,6 +13,11 @@ state startState as "LISTANDO_USUARIOS"
 state endState as "LISTANDO_USUARIOS"
 
 startState --> CrearUsuario
+note on link
+    <b>Usuario Solicita</b>
+    * Crear Usuario De Tipo Gestor
+end note
+
 CrearUsuario --> listarUsuarios
 listarUsuarios --> endState
 CrearUsuario -[#red]> endState
@@ -21,20 +26,11 @@ state CrearUsuario {
     state solicitudCrearUsuario as " "
     state envioCrearUsuario as " "
     state revisionCrearUsuario <<choice>>
-    state usuarioSolicita as "<b>Usuario Solicita:</b> \n Crear usuario"
-
-    usuarioSolicita --> solicitudCrearUsuario
+    
     solicitudCrearUsuario --> envioCrearUsuario
     note on link
-        <b>Sistema Solicita</b>
-        * Campos a crear
-        * <b>Campos:</b>
-            - Nombre del usuario
-            - Correo del usuario
-            - Contraseña del usuario
-
         <b>Sistema Permite</b>
-        * Crear usuario
+        * Crear Usuario De Tipo Gestor
     end note
 
     envioCrearUsuario --> revisionCrearUsuario
