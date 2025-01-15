@@ -6,14 +6,19 @@ state Mostrando_Rutina
 state EditandoRutina
 
 state EditarRutina {
-  [*] --> SolicitarEdicion
+  [*] --> SeleccionarEdicion
+    note on link
+        El profesor introduce: "Editar rutina".
+    end note
+  
+  SeleccionarEdicion --> SolicitarEdicion
   note on link
-      El sistema muestra: nombre y objetivo actuales para edición.
+      El sistema muestra: formulario para editar los datos de la rutina.
   end note
 
   SolicitarEdicion --> ModificarEjercicios
   note on link
-      El profesor introduce: actualizaciones a la lista de ejercicios.
+      El profesor introduce: actualizaciones a el nombre, objetivo y/o la lista de ejercicios.
   end note
 
   ModificarEjercicios --> ConfirmarEdicion
