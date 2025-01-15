@@ -28,7 +28,10 @@ state MenuPrincipal {
     state MostrarMensajesEnviados as " "
 
     SolicitudAbrirMenu --> BuscarMensajesEnviados
-    
+    note on link
+        <b>Sistena Permite</b>
+        * Abrir menú principal
+    end note
 
     BuscarMensajesEnviados -[#red]-> MostrarMensajesEnviados
     note on link
