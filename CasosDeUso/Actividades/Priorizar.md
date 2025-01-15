@@ -17,3 +17,5 @@ En este apartado se muestran los casos de uso en una lista donde el número 1 ti
 | 10    | Asignar Guía a Titulación                           | Técnico de Calidad      | Bajo               | Bajo                                | Bajo             | Bajo                | Bajo                      | Bajo            | Baja          |
 | 11    | Asignar Asignatura a Titulación                     | Técnico de Calidad      | Bajo               | Bajo                                | Bajo             | Bajo                | Bajo                      | Bajo            | Baja          |
 | 12    | Asignar Guías Docentes a Profesor                   | Técnico de Calidad      | Bajo               | Bajo                                | Bajo             | Bajo                | Bajo                      | Medio           | Baja          |
+| 13    | Enviar Guía Docente para Revisión                   | Profesor                | Bajo               | Bajo                                | Bajo             | Bajo                | Bajo                      | Bajo            | Baja          |
+
