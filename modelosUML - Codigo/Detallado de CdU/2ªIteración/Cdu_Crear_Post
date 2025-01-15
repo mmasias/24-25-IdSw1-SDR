@@ -1,0 +1,54 @@
+@startuml Creación_de_Posts
+skinparam {
+    NoteBackgroundColor #whiteSmoke
+    NoteBorderColor #black
+    linetype polyline
+}
+
+skinparam state {
+    BackgroundColor #whiteSmoke
+}
+
+hide empty description
+
+state startState as "Interfaz de Creación de Post"
+state endState as "Post Creado"
+
+
+startState --> CreacióndelPost
+
+state CreacióndelPost {
+    state IngresoCredenciales as " "
+    state ValidarCredenciales <<choice>>
+    state CreacióndelPostCorrecta as " "
+
+    IngresoCredenciales -[#green]-> ValidarCredenciales
+    note on link
+        <b>Usuario introduce</b>
+        * Mensaje
+        * Plazo
+        * Etiqueta/s
+    end note
+
+    ValidarCredenciales -[#red]-> IngresoCredenciales
+    note on link
+        <b>Sistema muestra:</b>
+        * Error: "Usuario o Contraseña incorrectos"
+    end note
+
+    ValidarCredenciales -[#green]-> CreacióndelPostCorrecta
+    note on link
+        <b>Sistema asigna al post:</b>
+        * Usuario Creador (Recoge los datos del usuario)
+        * Fecha de Creación
+        
+        <b>Sistema Crea el post</b>
+  
+        <b>Sistema Redirige</b>
+        * A la dirección del post tras crearse
+    end note
+}
+
+CreacióndelPost --> endState
+
+@enduml
