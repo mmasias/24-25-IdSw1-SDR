@@ -5,14 +5,19 @@ state Mostrando_Reto
 state EditandoReto
 
 state EditarReto {
-  [*] --> SolicitarEdicion
+  [*] --> SeleccionarEdicion
+    note on link
+        El profesor introduce: "Editar reto".
+    end note
+  
+  SeleccionarEdicion --> SolicitarEdicion
   note on link
-      El sistema muestra: los datos actuales del reto y solicita los cambios a realizar.
+      El sistema muestra: el formulario para editar los datos del reto.
   end note
 
   SolicitarEdicion --> EditarDatos
   note on link
-      El profesor introduce: cambios en el nombre, tipo y/o descripción.
+      El profesor introduce: cambios en el nombre, tipo, clases y/o descripción.
   end note
 
   EditarDatos --> ConfirmarEdicion
