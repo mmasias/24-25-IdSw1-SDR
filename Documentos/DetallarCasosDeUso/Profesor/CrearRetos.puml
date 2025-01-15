@@ -10,25 +10,18 @@ state CrearRetos {
     state IniciarRetos as "Crear Retos"
     [*] --> IniciarRetos
     note on link
-        El profesor introduce: acceso a CrearRetos.
+        El profesor introduce: Crear Reto.
     end note
 
     IniciarRetos --> NombreReto
     note on link
         El profesor introduce: nombre del reto.
     end note
-
-    NombreReto --> OpcionReto
+    state reto <<choice>>
+    NombreReto --> reto
     note on link
         El profesor introduce: tipo de reto.
     end note
-
-    state reto <<choice>>
-    OpcionReto --> reto
-    note on link
-        El sistema muestra: opciones de tipo de reto.
-    end note
-
     reto --> RetoObligatorio
     note on link
         El profesor introduce: selección de RetoObligatorio.
