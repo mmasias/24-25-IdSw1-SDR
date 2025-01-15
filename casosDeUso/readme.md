@@ -64,6 +64,12 @@
 
 ### Consultar Horario de Profesor
 ![Consultar Horario de Profesor](/casosDeUso/imagenes/ConsultarHorarioProfesor.svg)
+> 📅 **Consulta de Horario:**
+> Permite visualizar el horario semanal de un profesor:
+> - Detalles como asignaturas, horas y aulas ocupadas.
+> - Presentación en un formato tabla claro y organizado.
+
+---
 
 ### Editar Asignación
 ![Editar Asignación](/casosDeUso/imagenes/EditarAsignación.svg)
