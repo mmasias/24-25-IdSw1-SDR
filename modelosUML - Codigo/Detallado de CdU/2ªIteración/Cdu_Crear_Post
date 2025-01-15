@@ -17,7 +17,7 @@ state endState as "Post Creado"
 
 startState --> CreacióndelPost
 
-state CreacióndelPost {
+state CreacióndelPost as "Creación del Post" {
     state IngresoCredenciales as " "
     state ValidarCredenciales <<choice>>
     state CreacióndelPostCorrecta as " "
@@ -33,7 +33,7 @@ state CreacióndelPost {
     ValidarCredenciales -[#red]-> IngresoCredenciales
     note on link
         <b>Sistema muestra:</b>
-        * Error: "Usuario o Contraseña incorrectos"
+        * Error: "Campo sin rellenar"
     end note
 
     ValidarCredenciales -[#green]-> CreacióndelPostCorrecta
