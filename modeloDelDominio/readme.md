@@ -7,6 +7,10 @@ Usamos las siguientes herramientas para definir las entidades principales de nue
 
 ### Diagrama de Clases
 ![Diagrama de Clases](/modeloDelDominio/imagenes/DiagramaDeClases.svg)
+> **Descripción:**
+> - A cada `Asignatura` se le asigna un `Grado` en `AsignaturaGrado`.
+> - A esa `AsignaturaGrado` se le asigna un `Profesor` para que sea impartida en `AsignaturaGradoProfesor`.
+> - `AsignaturaGradoProfesor` se vincula a un `Horario` y más tarde se asigna un `Aula`, todo ello reflejado en `HorarioAsignaturaAula`.
 
 ### Diagrama de Objetos
 ![Diagrama de Objetos](/modeloDelDominio/imagenes/DiagramaDeObjetos.svg)
