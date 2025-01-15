@@ -27,7 +27,7 @@ package "Sistema Académico" {
 
     package "Gestión de Calidad" {
         usecase "Consultar Claustro Docente" as ConsultarClaustroCalidad
-        usecase "Consultar Asignacion Docente" as ConsultarAsignacionCalidad
+        usecase "Consultar Asignacion por Profesor" as ConsultarAsignacionCalidad
         usecase "Asignar Valores en Memoria" as AsignarValoresMemoria
         usecase "Asignar Información a SIIU/DGU" as AsignarInformacion
         usecase "Validar Memoria y Titulación" as ValidarMemoria
@@ -35,44 +35,23 @@ package "Sistema Académico" {
         usecase "Emitir Informe del Profesorado" as EmitirInforme
     }
 
-    actor Profesor
-    actor RRHH as RecursosHumanos
-    actor Ordenacion
-    actor TecnicoCalidad as Tecnico
-
-    Profesor --> IntroducirExperiencia
-    Profesor --> ConsultarDatosPersonales
-    Profesor --> ConsultarAsignaciones
-
-    RecursosHumanos --> ValidarDatosRRHH
-    RecursosHumanos --> ModificarDatosRRHH
-    RecursosHumanos --> IntroducirContrato
-    RecursosHumanos --> RevisarCargaRRHH
-    RecursosHumanos --> ConsultarClaustroRRHH
-    RecursosHumanos --> ConsultarAsignacionRRHH
-
-    Ordenacion --> AsignarCargaOrdenacion
-    Ordenacion --> ConsultarClaustroOrdenacion
-    Ordenacion --> ConsultarAsignacionOrdenacion
-    Ordenacion --> RevisarCargaOrdenacion
-    Ordenacion --> RevisarMemoria
-
-    Tecnico --> AsignarValoresMemoria
-    Tecnico --> AsignarInformacion
-    Tecnico --> ValidarMemoria
-    Tecnico --> ObtenerIndicadores
-    Tecnico --> EmitirInforme
-    Tecnico --> ConsultarClaustroCalidad
-    Tecnico --> ConsultarAsignacionCalidad
-
     ValidarDatosRRHH ..> ConsultarClaustroRRHH : <<include>>
     ModificarDatosRRHH ..> ValidarDatosRRHH : <<include>>
+    IntroducirContrato ..> ConsultarClaustroRRHH : <<include>>
+    ConsultarAsignacionRRHH ..> ConsultarClaustroRRHH : <<include>>
+    RevisarCargaRRHH ..> ConsultarClaustroRRHH : <<include>>
+    ValidarDatosRRHH .> IntroducirExperiencia : <<icnlude>>
 
     AsignarCargaOrdenacion ..> ConsultarClaustroOrdenacion : <<include>>
+    RevisarMemoria ..> ConsultarClaustroOrdenacion : <<include>>
+    ConsultarAsignacionOrdenacion ..> ConsultarClaustroOrdenacion : <<include>>
+    RevisarCargaOrdenacion ..> ConsultarClaustroOrdenacion : <<include>>
 
     ValidarMemoria ..> ConsultarClaustroCalidad : <<include>>
     EmitirInforme ..> ObtenerIndicadores : <<include>>
     ObtenerIndicadores ..> ConsultarAsignacionCalidad : <<include>>
+    AsignarValoresMemoria ..> ValidarMemoria : <<include>>
+    ConsultarAsignacionCalidad ..> ConsultarClaustroCalidad : <<include>>
 
     AsignarInformacion .> ValidarMemoria : <<extend>>
 }
