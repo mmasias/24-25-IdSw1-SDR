@@ -1,0 +1,66 @@
+@startuml Interacciones_Con_Posts
+skinparam {
+    NoteBackgroundColor #whiteSmoke
+    NoteBorderColor #black
+    linetype polyline
+}
+
+skinparam state {
+    BackgroundColor #whiteSmoke
+}
+
+hide empty description
+
+state startState as "Pantalla de Post"
+state endState as "Post Actualizado"
+
+startState --> InteraccionesConPost
+
+state InteraccionesConPost as "Interacciones con Post" {
+    state SeleccionarInteracción as " "
+    state ValidarInteracción <<choice>>
+    state AgregarComentario as " "
+    state RegistrarLike as " "
+    state InteracciónExitosa as " "
+
+    SeleccionarInteracción -[#green]-> ValidarInteracción
+    note on link
+        <b>Usuario selecciona acción</b>
+        * Comentar
+        * Dar Like
+    end note
+
+    ValidarInteracción -[#green]-> AgregarComentario
+    note on link
+        <b>Si usuario selecciona comentar</b>
+        * Sistema permite escribir y enviar comentario
+    end note
+
+    ValidarInteracción -[#green]-> RegistrarLike
+    note on link
+        <b>Si usuario selecciona dar Like</b>
+        * Sistema registra el "Me gusta"
+    end note
+
+    AgregarComentario -[#green]-> InteracciónExitosa
+    note on link
+        <b>Comentario agregado con éxito</b>
+        * Se muestra en la lista de comentarios
+    end note
+
+    RegistrarLike -[#green]-> InteracciónExitosa
+    note on link
+        <b>"Me gusta" registrado</b>
+        * Sistema actualiza contador de Likes
+    end note
+
+    ValidarInteracción -[#red]-> SeleccionarInteracción
+    note on link
+        <b>Acción inválida o error detectado</b>
+        * Sistema regresa a la selección de acción
+    end note
+}
+
+InteraccionesConPost --> endState
+
+@enduml
