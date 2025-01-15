@@ -86,23 +86,43 @@
 ![](./detalladoDescargarInformeEnvio/detalladoDescargarInforme.svg)
 
 
-## Detallado de Usuarios
+## Detallado de Usuarios de tipo Gestor
 
-### Detallado de Crear Usuario
+### Detallado de Crear Usuario de tipo Gestor
 
-![](./detalladoUsuarios/detalladoCrearUsuario.svg)
+![](./detalladoUsuarios/detalladoCrearUsuarioGestor.svg)
 
-### Detallado de Actualizar Usuario
+### Detallado de Actualizar Usuario de tipo Gestor
 
-![](./detalladoUsuarios/detalladoActualizarUsuario.svg)
+![](./detalladoUsuarios/detalladoActualizarUsuarioGestor.svg)
 
-### Detallado de Borar Usuario
+### Detallado de Borar Usuario  de tipo Gestor
 
-![](./detalladoUsuarios/detalladoBorrarUsuario.svg)
+![](./detalladoUsuarios/detalladoBorrarUsuarioGestor.svg)
 
-### Detallado de Listar Usuarios
+### Detallado de Listar Usuarios  de tipo Gestor
 
-![](./detalladoUsuarios/detalladoListarUsuario.svg)
+![](./detalladoUsuarios/detalladoListarUsuarioGestor.svg)
+
+
+## Detallado de Usuarios de tipo Destinatario
+
+### Detallado de Crear Usuario de tipo Destinatario
+
+![](./detalladoUsuarios/detalladoCrearUsuarioDestinatario.svg)
+
+### Detallado de Actualizar Usuario de tipo Destinatario
+
+![](./detalladoUsuarios/detalladoActualizarUsuarioDestinatario.svg)
+
+### Detallado de Borar Usuario  de tipo Destinatario
+
+![](./detalladoUsuarios/detalladoBorrarUsuarioDestinatario.svg)
+
+### Detallado de Listar Usuarios  de tipo Destinatario
+
+![](./detalladoUsuarios/detalladoListarUsuarioDestinatario.svg)
+
 
 ## Detallado de Notificaciones
 
