@@ -83,6 +83,12 @@
 
 ### Vincular Asignatura Horario
 ![Vincular Asignatura Horario](/casosDeUso/imagenes/VincularAsignaturaHorario.svg)
+> 🔗 **Vinculación:**
+> Este diagrama detalla cómo vincular una asignatura a un horario, evitando:
+> - Conflictos de asignaciones.
+> - Duplicidades en las horas asignadas.
+
+---
 
 ### Mostrar Asignaturas
 ![Mostrar Asignaturas](/casosDeUso/imagenes/MostrarAsignaturas.svg)
