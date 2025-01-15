@@ -24,5 +24,5 @@ Usamos las siguientes herramientas para definir las entidades principales de nue
 > **Descripción:**
 > - Partes de cero en el estado `SinAsignar` y asignas un `Grado` a la `Asignatura`(AsignaturaGrado), creando el estado `GrupoDefinido`.
 > - Se le asigna un `Profesor`(AsignaturaGradoProfesor) para completar el estado `ProfesorAsignado`.
-> - Se le asigna un `Aula` en el estado `AulaAsignada`. Hasta este momento existe la opción de cancelar asignación que nos llevará al estado de `Cancelación`.
-> - Confirmamos la asignación para llegar al estado de `Confirmación` para completar la operación.
+> - Se le asigna un `Aula` en el estado `AulaAsignada`. Hasta este momento existe la opción de cancelar asignación que nos llevará al estado de `Cancelado`.
+> - Confirmamos la asignación para llegar al estado `Confirmado` para completar la operación.
