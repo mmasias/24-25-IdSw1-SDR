@@ -5,19 +5,19 @@ hide empty description
 state Menu_Clasificacion
 state Viendo_Alumnos_Clase
 
-state Ver_Alumnos_Clase {
+state VerClasificacionDentroDeClase {
   state Ver_Alumnos as "Ver Alumnos"
   [*] --> Ver_Alumnos
   note on link
-    El profesor introduce ver los alumnos de la clase
+    El profesor introduce: una clase 
   end note
     Ver_Alumnos --> [*]
     note on link
-    El sistema muestra los alumnos de la clase en orden de la clasificacion
+    El sistema muestra la clasificación de la clase seleccionada
     end note
 }
 
-Menu_Clasificacion --> Ver_Alumnos_Clase
-Ver_Alumnos_Clase --> Viendo_Alumnos_Clase
+Menu_Clasificacion --> VerClasificacionDentroDeClase
+VerClasificacionDentroDeClase --> Viendo_Alumnos_Clase
 
 @enduml
