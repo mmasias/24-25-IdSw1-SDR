@@ -32,16 +32,6 @@ ASIGNANDO_PROFESOR --> MENU_PRINCIPAL
         Ver menu
     end note
 
-MENU_PRINCIPAL --> BUSCANDO_GRADO
-    note on link
-        Buscar grado
-    end note
-
-BUSCANDO_GRADO --> MENU_PRINCIPAL
-    note on link
-        Ver menu
-    end note
-
 MENU_PRINCIPAL --> CONSULTANDO_HORARIO_PROFESOR
     note on link
         Consultar 
