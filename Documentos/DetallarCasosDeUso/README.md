@@ -87,7 +87,7 @@
 ### Mostrar Reto
 | Diagrama | Código Fuente |
 |----------|---------------|
-| ![Casos de uso](../Imagenes/DetallarCasosDeUso/Profesor/MostrarReto.svg) | [Ver código](Profesor/MostrarReto.puml) |
+| ![Casos de uso](../Imagenes/DetallarCasosDeUso/Profesor/VerReto.svg) | [Ver código](Profesor/MostrarReto.puml) |
 
 ### Mostrar Rutina
 | Diagrama | Código Fuente |
