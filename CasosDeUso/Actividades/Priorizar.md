@@ -1,5 +1,5 @@
 # Priorizar Casos de Uso
-En este apartado se muestran los casos de uso en una lista donde el número 1 tiene más prioridad.
+En este apartado se muestran los casos de uso en una lista donde el número 1 tiene más prioridad.  Esta matriz presenta un análisis detallado de los casos de uso de un sistema, evaluados en función de diversos criterios como el riesgo técnico, la contribución a la arquitectura, las dependencias, el costo/esfuerzo, el valor para el negocio y la visibilidad. El objetivo de esta matriz es identificar y priorizar los casos de uso que son más críticos para el éxito del proyecto. La columna de prioridad refleja la importancia de cada caso de uso, ordenando las tareas desde las de mayor prioridad hasta las de menor.
 
 ## Matriz de Priorización de Casos de Uso
 
