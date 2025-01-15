@@ -2,7 +2,8 @@
 !define RECTANGLE(x) rectangle x
 
 ' Colores para categorías
-!define COLOR_USUARIOS #LightBlue
+!define COLOR_  PAGINAPRINCIPAL #LightBlue
+!define COLOR_USUARIOS #Yellow
 !define COLOR_RUTINAS #PaleGreen
 !define COLOR_RETOS #LightSalmon
 !define COLOR_CONFIGURACION #Gold
@@ -11,40 +12,45 @@
 
 ' Definición de actores y elementos principales
 RECTANGLE(ADMINISTRADOR) #YellowGreen
-RECTANGLE(PAGINA_PRINCIPAL) #LightGray
-
+RECTANGLE(PAGINA_PRINCIPAL) #LightBlue
+RECTANGLE(NAVEGACION_MENUS) #SkyBlue
 ' Menús principales
-RECTANGLE(CONSULTAR_USUARIOS) #LightBlue
-RECTANGLE(CONSULTAR_RUTINAS) #PaleGreen
-RECTANGLE(CONSULTAR_RETOS) #LightSalmon
-RECTANGLE(CONSULTAR_CONFIGURACION) #Gold
-RECTANGLE(CONSULTAR_REPORTES) #LightCoral
+RECTANGLE(MENU_USUARIOS) #Yellow
+RECTANGLE(MENU_RUTINAS) #PaleGreen
+RECTANGLE(MENU_RETOS) #LightSalmon
+RECTANGLE(MENU_CONFIGURACION) #Gold
+RECTANGLE(MENU_REPORTES) #LightCoral
 
 ' Relaciones principales
 ADMINISTRADOR -[#Black]-> PAGINA_PRINCIPAL : Ingresar al sistema
 PAGINA_PRINCIPAL -[#Black]-> ADMINISTRADOR : Cerrar sesión
 
 ' Conexiones entre menús principales
-PAGINA_PRINCIPAL -[#LightBlue]-> CONSULTAR_USUARIOS : Administrar Usuarios
-CONSULTAR_USUARIOS -[#SkyBlue]-> PAGINA_PRINCIPAL : Ir al inicio
+PAGINA_PRINCIPAL -[#SkyBlue]-> NAVEGACION_MENUS : Navegar por menús
+NAVEGACION_MENUS -[#LightBlue]-> PAGINA_PRINCIPAL : Regresar al inicio
 
-PAGINA_PRINCIPAL -[#PaleGreen]-> CONSULTAR_RUTINAS : Gestionar Rutinas
-CONSULTAR_RUTINAS -[#SkyBlue]-> PAGINA_PRINCIPAL : Ir al inicio
 
-PAGINA_PRINCIPAL -[#LightSalmon]-> CONSULTAR_RETOS : Gestionar Retos
-CONSULTAR_RETOS -[#SkyBlue]-> PAGINA_PRINCIPAL : Ir al inicio
 
-PAGINA_PRINCIPAL -[#Gold]-> CONSULTAR_CONFIGURACION : Configurar el Sistema
-CONSULTAR_CONFIGURACION -[#SkyBlue]-> PAGINA_PRINCIPAL : Ir al inicio
+NAVEGACION_MENUS -[#Yellow]-> MENU_USUARIOS : Administrar Usuarios
+MENU_USUARIOS -[#SkyBlue]-> NAVEGACION_MENUS : Cambiar Menú
 
-PAGINA_PRINCIPAL -[#LightCoral]-> CONSULTAR_REPORTES : Ver Reportes y Estadísticas
-CONSULTAR_REPORTES -[#SkyBlue]-> PAGINA_PRINCIPAL : Ir al inicio
+NAVEGACION_MENUS -[#PaleGreen]-> MENU_RUTINAS : Gestionar Rutinas
+MENU_RUTINAS -[#SkyBlue]-> NAVEGACION_MENUS : Cambiar Menú
+
+NAVEGACION_MENUS -[#LightSalmon]-> MENU_RETOS : Gestionar Retos
+MENU_RETOS -[#SkyBlue]-> NAVEGACION_MENUS : Cambiar Menú
+
+NAVEGACION_MENUS -[#Gold]-> MENU_CONFIGURACION : Configurar el Sistema
+MENU_CONFIGURACION -[#SkyBlue]-> NAVEGACION_MENUS : Cambiar Menú
+
+NAVEGACION_MENUS -[#LightCoral]-> MENU_REPORTES : Ver Reportes y Estadísticas
+MENU_REPORTES -[#SkyBlue]-> NAVEGACION_MENUS : Cambiar Menú
 
 
 ' Leyenda
 legend right
   Leyenda:
-  - Color azul claro (COLOR_USUARIOS): Menús y funciones relacionadas con usuarios.
+  - Color amarillo (COLOR_USUARIOS): Menús y funciones relacionadas con usuarios.
   - Color verde claro (COLOR_RUTINAS): Menús y funciones relacionadas con rutinas.
   - Color salmón claro (COLOR_RETOS): Menús y funciones relacionadas con retos.
   - Color dorado (COLOR_CONFIGURACION): Menús y funciones relacionadas con configuración.
