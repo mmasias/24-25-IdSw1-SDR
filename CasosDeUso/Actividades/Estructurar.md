@@ -20,7 +20,7 @@ Modelo de casos de uso separados por actores.
 
 ## 3. Técnico de Calidad
 
-![Diagrama de Casos de Uso - Técnico de Calidad](https://github.com/natiicruuz/24-25-IdSw1-SDR/blob/6bbf4a75797379aaa062ab2038a9e6e286b48f5f/images/modelosUML/EstructurarModelosDeCasosDeUso/Casos%20de%20Uso%20-%20T%C3%A9cnico%20de%20Calidad.svg)
+![Diagrama de Casos de Uso - Técnico de Calidad](https://github.com/natiicruuz/24-25-IdSw1-SDR/blob/cd03dee9cf7f237d4d30ec9c7550d4f124348608/images/modelosUML/EstructurarModelosDeCasosDeUso/Casos%20de%20Uso%20-%20T%C3%A9cnico%20de%20Calidad.svg)
 
 [Ver Código](/CasosDeUso/diagramasEstructurarModelos/TecnicoCalidad.puml)
 ---
