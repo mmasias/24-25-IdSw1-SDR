@@ -394,7 +394,7 @@
 
 ---
 
-## Prototipo del CdU `VerAlumnosDentroDeClase`
+## Prototipo del CdU `VerClasificaciónDentroDeClase`
 
 <div align="center">
   <img src="https://github.com/user-attachments/assets/986c7f31-8bec-4d9f-b0cd-fe1a365a5252" alt="VerAlumnosDentroDeClase">
