@@ -10,7 +10,7 @@
 
 ### Oferta Aceptada
 
-![Oferta Aceptada](Fotos/FotosPrototipado/VistaAdmin/VistaAprobarOfertas/OfertaAceptadaPorAdmin.png)
+![Oferta Aceptada](Fotos/FotosPrototipado/VistaAdmin/VistaAprobarOfertas/ofertaAceptadaPorAdmin.png)
 
 ### Oferta Rechazada
 
@@ -34,7 +34,7 @@
 
 ### Ver Ofertas
 
-![Ver Ofertas](Fotos/FotosPrototipado/VistaAdmin/verOferta/verOfertaAdmin.png)
+![Ver Ofertas](Fotos/FotosPrototipado/VistaAdmin/VerOferta/verOfertaAdmin.png)
 
 ## Empresa:
 
@@ -58,7 +58,7 @@
 
 ### Ver ofertas
 
-![Ver Ofertas](Fotos/FotosPrototipado/VistaEmpresa/verOferta/verOfertaEmpresa.png)
+![Ver Ofertas](Fotos/FotosPrototipado/VistaEmpresa/VerOferta/verOfertaEmpresa.png)
 
 ### Cierre de sesión
 
@@ -71,7 +71,7 @@
 
 ### Buscar Oferta
 
-![Bucar Oferta](Fotos/FotosPrototipado/VistaAlumno/BuscarOfertaTrabajo/BuscarOfertaFiltros.png)
+![Bucar Oferta](Fotos/FotosPrototipado/VistaAlumno/BuscarOfertaTrabajo/buscarOfertaFiltros.png)
 
 ![Detalles Oferta](Fotos/FotosPrototipado/VistaAlumno/BuscarOfertaTrabajo/detallesOferta.png)
 
@@ -82,7 +82,7 @@
 
 ### Ver ofertas
 
-![Ver Ofertas](Fotos/FotosPrototipado/VistaAlumno/verOferta/verOfertaAlumno.png)
+![Ver Ofertas](Fotos/FotosPrototipado/VistaAlumno/VerOferta/verOfertaAlumno.png)
 
 ### Cierre de sesión
 
