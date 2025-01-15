@@ -7,6 +7,9 @@
 ### Actores
 ![Actores](https://github.com/srgiom/24-25-IdSw1-SDR/raw/main/casosDeUso/actores/actores.png)
 
+Descripción: 
+El diagrama de contexto detalla las interacciones entre el sistema y los actores externos, mostrando las principales funcionalidades gestionadas por el administrador.
+
 ### Diagrama de Contexto
 ![Diagrama de Contexto](/casosDeUso/diagramaDeContexto/DiagramaDeContexto.svg)
 
