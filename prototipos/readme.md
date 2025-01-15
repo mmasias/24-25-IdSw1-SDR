@@ -23,7 +23,7 @@
 ![Vincular Asignatura Horario](/prototipos/imagenes/VincularAsignaturaHorario.png)
 
 ### Ver Asignaturas
-![Vincular Asignatura Horario](/prototipos/imagenes/VerAsignaturas.png)
+![Vincular Asignatura Horario](/prototipos/imagenes/EditarAsignacion.png)
 
 ### Ver Disponibilidad de Aulas
 ![Ver Disponibilidad de Aulas](/prototipos/imagenes/VerDisponibilidadDeAulas.png)
