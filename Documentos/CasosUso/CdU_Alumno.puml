@@ -18,6 +18,7 @@ package "Rutinas y Ejercicios" {
 
 package Retos {
     usecase "Ver Retos" as IrARetos
+    usecase "Mostrar Reto" as MostrarReto
     usecase "Subir Evidencia de Reto" as SubirEvidencia
 }
 
