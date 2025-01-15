@@ -1,4 +1,5 @@
 @startuml diagramaContextoTecnicoCalidad
+left to right direction
 state "NO_AUTENTICADO" as NoAutenticado
 state "MENU_PRINCIPAL" as MenuPrincipal
 state "ASIGNANDO_GUÍAS" as AsignandoGuias
@@ -25,35 +26,63 @@ MenuPrincipal --> AsignandoGuias
 note on link
     Asignar Guías Docentes a Profesor
 end note
+AsignandoGuias --> MenuPrincipal
+note on link
+    Regresar al menú principal
+end note
 
 MenuPrincipal --> UtilizandoPlantilla
 note on link
     Utilizar Plantilla Multititulación
+end note
+UtilizandoPlantilla --> MenuPrincipal
+note on link
+    Regresar al menú principal
 end note
 
 MenuPrincipal --> CreandoVersion
 note on link
     Crear Nueva Versión de la Guía
 end note
+CreandoVersion --> MenuPrincipal
+note on link
+    Regresar al menú principal
+end note
 
 MenuPrincipal --> EditandoPlantilla
 note on link
     Editar plantilla de la guía docente
+end note
+EditandoPlantilla --> MenuPrincipal
+note on link
+    Regresar al menú principal
 end note
 
 MenuPrincipal --> AsignandoGuiaTitulacion
 note on link
     Asignar Guía a Titulación
 end note
+AsignandoGuiaTitulacion --> MenuPrincipal
+note on link
+    Regresar al menú principal
+end note
 
 MenuPrincipal --> AsignandoAsignaturaTitulacion
 note on link
     Asignar Asignatura a Titulación
 end note
+AsignandoAsignaturaTitulacion --> MenuPrincipal
+note on link
+    Regresar al menú principal
+end note
 
 MenuPrincipal --> ViendoEstadosGuias
 note on link
-    Ver listado de los estados de las guías docentes
+    Mirar listado de los estados de las guías docentes
+end note
+ViendoEstadosGuias --> MenuPrincipal
+note on link
+    Regresar al menú principal
 end note
 
 @enduml
