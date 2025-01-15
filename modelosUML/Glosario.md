@@ -1,11 +1,8 @@
 # Glosario del Proyecto
 
-Este glosario incluye los términos clave utilizados en el sistema de gestión de ofertas de trabajo. 
-
 ## Actores
 
-- **Alumni**: Exalumnos que buscan ofertas de trabajo y se postulan a ellas.
-- **Alumno**: Estudiantes actuales con acceso limitado al sistema.
+- **Alumni**: Perfil principal de la plataforma, se trata de los exalumnos y estudiantes de la Universidad del Atlantico.
 - **Empresa**: Publican y gestionan ofertas de empleo.
 - **Administrador**: Valida ofertas y gestiona usuarios y estadísticas.
 
@@ -25,7 +22,3 @@ Este glosario incluye los términos clave utilizados en el sistema de gestión d
 - **Oferta de Trabajo**: Publicación con título, descripción, requisitos y estado (Pendiente, Aprobada, Rechazada).
 - **Perfil de Usuario**: Información del usuario, incluyendo CV y preferencias.
 - **Postulación**: Relación entre Alumni y oferta, con estados como Pendiente o Aceptada.
-
----
-
-Este glosario está diseñado para proporcionar una descripción rápida y precisa de los componentes principales del sistema.
