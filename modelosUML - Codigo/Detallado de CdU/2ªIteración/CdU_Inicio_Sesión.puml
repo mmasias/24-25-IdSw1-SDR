@@ -17,7 +17,7 @@ state endState as "Tablón de Anuncios"
 
 startState --> Inicio_Sesión
 
-state Inicio_Sesión {
+state Inicio_Sesión as "Inicio de Sesión" {
     state IngresoCredenciales as " "
     state ValidarCredenciales <<choice>>
     state InicioSesionCorrecto as " "
