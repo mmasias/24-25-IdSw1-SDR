@@ -17,7 +17,7 @@ state endState as "Tablón de Anuncios"
 
 startState --> RegistroUsuario
 
-state RegistroUsuario {
+state RegistroUsuario as "Registro de Usuario" {
     state IngresoCredenciales as " "
     state ValidarCredenciales <<choice>>
     state InicioSesionCorrecto as " "
