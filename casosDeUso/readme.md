@@ -111,3 +111,7 @@
 
 ### Seleccionar Aula Automáticamente
 ![Seleccionar Aula Automáticamente](/casosDeUso/imagenes/SeleccionarAulaAutomaticamente.svg)
+> 🤖 **Automatización:**
+> Detalla cómo se selecciona automáticamente un aula basada en:
+> - Preferencias del usuario.
+> - Disponibilidad general en el sistema.
