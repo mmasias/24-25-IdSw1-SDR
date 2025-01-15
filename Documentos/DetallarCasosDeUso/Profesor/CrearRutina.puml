@@ -5,25 +5,26 @@ hide empty description
 state Menu_Rutinas_y_Ejercicios
 state CreandoRutina
 state CrearRutina {
-  [*] --> SolicitarDatosRutina
+  [*] --> RegistrarRutina
   note on link
-      El sistema muestra: solicitud de nombre y objetivo de la rutina.
+      El profesor introduce: Crear Rutina.
   end note
-
-  SolicitarDatosRutina --> SeleccionarEjercicios
-  note on link
-      El profesor introduce: selección de ejercicios de la lista.
-  end note
-
-  SeleccionarEjercicios --> ConfirmarCreacion
-  note on link
-      El profesor introduce: confirmación presionando "Crear".
-  end note
-
-  ConfirmarCreacion --> [*]
-  note on link
-      El sistema muestra: mensaje de rutina creada con éxito.
-  end note
+  RegistrarRutina --> SolicitarDatos
+    note on link
+        El sistema muestra: formulario para crear la rutina con los campos: Nombre de la rutina, Descripción de la rutina.
+    end note
+    SolicitarDatos --> AdjuntarDatos
+    note on link
+        El profesor introduce el nombre, objetivo, y los ejercicios
+    end note
+    AdjuntarDatos --> ConfirmarCreacion
+    note on link
+        El profesor introduce "Crear"
+    end note
+    ConfirmarCreacion --> [*]
+    note on link
+        El sistema muestra "Rutina creada con éxito"
+    end note
 }
 
 Menu_Rutinas_y_Ejercicios --> CrearRutina
