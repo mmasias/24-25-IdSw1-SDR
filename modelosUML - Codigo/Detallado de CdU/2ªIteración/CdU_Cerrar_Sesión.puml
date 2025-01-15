@@ -1,0 +1,47 @@
+@startuml Inicio_Sesión
+skinparam {
+    NoteBackgroundColor #whiteSmoke
+    NoteBorderColor #black
+    linetype polyline
+}
+
+skinparam state {
+    BackgroundColor #whiteSmoke
+}
+
+hide empty description
+
+state startState as " "
+state endState as "Tablón de Anuncios"
+
+
+startState --> Cerrado_Sesión
+
+state Cerrado_Sesión as "Cerrado de Sesión" {
+    state IngresoCredenciales as " "
+    state ValidarCredenciales <<choice>>
+    state InicioSesionCorrecto as " "
+
+    IngresoCredenciales -[#green]-> ValidarCredenciales
+    note on link
+        <b>Usuario Clickea el botón de cerrar sesión</b>
+        <b>Sistema pide confirmación</b>
+    end note
+
+    ValidarCredenciales -[#red]-> IngresoCredenciales
+    note on link
+        <b>Usuario indica que no:</b>
+        <b>Sistema devuelve a donde estuviese el usuario antes de pedir el Cerrado de Sesión</b>
+    end note
+
+    ValidarCredenciales -[#green]-> InicioSesionCorrecto
+    note on link
+        <b>Usuario Confirma</b>
+        <b>Sistema convierte al usuario en usuario no registrado</b>
+        <b>Sistema te dirige a la pantalla principal </b>
+    end note
+}
+
+Cerrado_Sesión --> endState
+
+@enduml
