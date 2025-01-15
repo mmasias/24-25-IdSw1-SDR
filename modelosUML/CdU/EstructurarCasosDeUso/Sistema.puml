@@ -40,7 +40,7 @@ package "Sistema Académico" {
     IntroducirContrato ..> ConsultarClaustroRRHH : <<include>>
     ConsultarAsignacionRRHH ..> ConsultarClaustroRRHH : <<include>>
     RevisarCargaRRHH ..> ConsultarClaustroRRHH : <<include>>
-    ValidarDatosRRHH .> IntroducirExperiencia : <<icnlude>>
+    ValidarDatosRRHH .> IntroducirExperiencia : <<include>>
 
     AsignarCargaOrdenacion ..> ConsultarClaustroOrdenacion : <<include>>
     RevisarMemoria ..> ConsultarClaustroOrdenacion : <<include>>
