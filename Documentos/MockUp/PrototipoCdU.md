@@ -58,13 +58,26 @@
 
 ---
 
-## Prototipo del CdU `VerRutina`
+## Prototipo del CdU `MostrarRutina`
 
 <div align="center">
   <table>
     <tr>
       <td><img src="https://github.com/user-attachments/assets/b72e4a2c-e49c-4175-8321-e09537c1ed4a" alt="Imagen 1"></td>
       <td><img src="https://github.com/user-attachments/assets/d01a595a-35b9-4c10-beb0-80c0538d7aa6" alt="Imagen 2"></td>
+    </tr>
+  </table>
+</div>
+
+---
+
+## Prototipo del CdU `CrearRutina`
+
+<div align="center">
+  <table>
+    <tr>
+      <td><img src="https://github.com/user-attachments/assets/76a72b75-afac-4c72-a212-2d984b34bb00" alt="crear"></td>
+      <td><img src="https://github.com/user-attachments/assets/25b7c23f-0c1c-408e-9638-068b2d4737ee" alt="crear2"></td>
     </tr>
   </table>
 </div>
@@ -93,7 +106,7 @@
 ---
 
 
-## Prototipo del CdU `VerEjercicio`
+## Prototipo del CdU `MostrarEjercicio`
 
 <div align="center">
   <table>
@@ -114,7 +127,7 @@
 
 ---
 
-## Prototipo del CdU `VerReto`
+## Prototipo del CdU `VerRetos`
 
 <div align="center">
   <table>
@@ -164,7 +177,7 @@
 
 ---
 
-## Prototipo del CdU `mostrarQRCentros`
+## Prototipo del CdU `MostrarQR`
 
 <div align="center">
   <table>
@@ -196,7 +209,7 @@
 
 
 
-## **Profesor**  
+# **Profesor**  
 
 
 ## Prototipo del CdU `IngresarAlSistema`
@@ -229,7 +242,7 @@
 
 ---
 
-## Prototipo del CdU `VerRutinasEjercicios`
+## Prototipo del CdU `CambiarARutinasEjercicios`
 
 <div align="center">
   <table>
@@ -242,7 +255,7 @@
 
 ---
 
-## Prototipo del CdU `VerRutina`
+## Prototipo del CdU `MostrarRutina`
 
 <div align="center">
   <table>
@@ -289,7 +302,7 @@
 
 ---
 
-## Prototipo del CdU `VerEjercicio`
+## Prototipo del CdU `MostrarEjercicio`
 
 <div align="center">
   <table>
@@ -335,7 +348,7 @@
 </div>
 ---
 
-## Prototipo del CdU `VerRetos`
+## Prototipo del CdU `CambiarARetos`
 
 <div align="center">
   <table>
@@ -373,7 +386,7 @@
 </div>
 
 ---
-## Prototipo del CdU `VerClasificacion`
+## Prototipo del CdU `CambiarAClasificacion`
 
 <div align="center">
   <img src="https://github.com/user-attachments/assets/e97b3d38-bfb0-49c4-a421-6fad801478c1" alt="VerClasificacion">
@@ -389,7 +402,7 @@
 
 ---
 
-## Prototipo del CdU `VerPerfil`
+## Prototipo del CdU `CambiarAPerfil`
 
 <div align="center">
   <img src="https://github.com/user-attachments/assets/95ff1c53-24ae-497a-a505-feeaa17e475b" alt="VerPerfil">
@@ -397,7 +410,7 @@
 
 ---
 
-## Prototipo del CdU `MostrarQRCentros`
+## Prototipo del CdU `MostrarQR`
 
 <div align="center">
   <table>
