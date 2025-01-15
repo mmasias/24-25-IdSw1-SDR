@@ -92,6 +92,12 @@
 
 ### Mostrar Asignaturas
 ![Mostrar Asignaturas](/casosDeUso/imagenes/MostrarAsignaturas.svg)
+> 📋 **Visualización:**
+> Proporciona una lista filtrable de asignaturas:
+> - Permite buscar por grado, profesor o nombre.
+> - Opciones para visualizar todo o aplicar filtros.
+
+---
 
 ### Ver Disponibilidad de Aulas
 ![Ver Disponibilidad de Aulas](/casosDeUso/imagenes/VerDisponibilidadDeAulas.svg)
