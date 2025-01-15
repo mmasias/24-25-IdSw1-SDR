@@ -101,6 +101,13 @@
 
 ### Ver Disponibilidad de Aulas
 ![Ver Disponibilidad de Aulas](/casosDeUso/imagenes/VerDisponibilidadDeAulas.svg)
+> 🏫 **Consulta de Aulas:**
+> El sistema permite consultar aulas disponibles aplicando filtros como:
+> - Día y hora.
+> - Tamaño (grande/pequeña).
+> - Especificaciones (con computadoras).
+
+---
 
 ### Seleccionar Aula Automáticamente
 ![Seleccionar Aula Automáticamente](/casosDeUso/imagenes/SeleccionarAulaAutomaticamente.svg)
