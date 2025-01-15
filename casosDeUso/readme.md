@@ -55,6 +55,12 @@
 
 ### Asignar Profesor
 ![Asignar Profesor](/casosDeUso/imagenes/AsignarProfesor.svg)
+> 👨‍🏫 **Asignación de Profesor:**
+> Muestra el flujo para asignar un profesor a una asignatura. Incluye:
+> - Verificación de que el profesor no exceda el límite de 8 asignaturas.
+> - Confirmación o cancelación según corresponda.
+
+---
 
 ### Consultar Horario de Profesor
 ![Consultar Horario de Profesor](/casosDeUso/imagenes/ConsultarHorarioProfesor.svg)
