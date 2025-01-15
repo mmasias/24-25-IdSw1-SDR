@@ -1,0 +1,52 @@
+@startuml Registro_Usuario
+skinparam {
+    NoteBackgroundColor #whiteSmoke
+    NoteBorderColor #black
+    linetype polyline
+}
+
+skinparam state {
+    BackgroundColor #whiteSmoke
+}
+
+hide empty description
+
+state startState as "Interfaz de Registro"
+state endState as "Tablón de Anuncios"
+
+
+startState --> RegistroUsuario
+
+state RegistroUsuario {
+    state IngresoCredenciales as " "
+    state ValidarCredenciales <<choice>>
+    state InicioSesionCorrecto as " "
+
+    IngresoCredenciales -[#green]-> ValidarCredenciales
+    note on link
+        <b>Usuario introduce</b>
+        * Nombre de usuario
+        * Contraseña
+        * Confirmar Contraseña
+    end note
+
+    ValidarCredenciales -[#red]-> IngresoCredenciales
+    note on link
+        <b>Sistema muestra uno de:</b>
+        * Error: "Correo en uso (ya existe cuenta para el correo)"
+        * Error: "Correo o Contraseña incorrectos (Motivos abajo:)"
+            * Contraseña repetida
+            * Correo incorrecto
+            * Contraseña y Confirmar Contraseña no tienen el mismo texto
+    end note
+
+    ValidarCredenciales -[#green]-> InicioSesionCorrecto
+    note on link
+        <b>Sistema redirige</b>
+        * A la pantalla principal
+    end note
+}
+
+RegistroUsuario --> endState
+
+@enduml
