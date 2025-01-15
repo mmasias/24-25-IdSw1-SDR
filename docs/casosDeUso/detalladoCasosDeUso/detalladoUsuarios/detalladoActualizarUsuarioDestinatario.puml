@@ -1,0 +1,60 @@
+@startuml actualizar_usuario
+
+skinparam {
+  NoteBackgroundColor #whiteSmoke
+  ArrowColor #green
+  NoteBorderColor #green
+  linetype polyline
+}
+
+hide empty description
+
+state startState as "LISTANDO_USUARIOS"
+state endState as "LISTANDO_USUARIOS"
+
+startState --> ActualizarUsuario
+note on link
+    <b>Usuario Solicita</b>
+    * Actualizar Usuario De Tipo Destinatario
+end note
+
+ActualizarUsuario --> listarUsuarios
+listarUsuarios --> endState
+ActualizarUsuario -[#red]-> endState
+
+state ActualizarUsuario {
+    state solicitudActualizarUsuario as " "
+    state envioActualizarUsuario as " "
+    state revisionActualizarUsuario <<choice>>
+    
+    solicitudActualizarUsuario --> envioActualizarUsuario
+    note on link
+        <b>Sistema Permite</b>
+        * Actualizar Usuario De Tipo Destinatario
+    end note
+
+    envioActualizarUsuario --> revisionActualizarUsuario
+    note on link
+        <b>Usuario introduce</b>
+        * Campos a actualizar
+        * <b>Campos</b>
+            - Nombre del usuario
+            - Correo del usuario
+            - Generar contraseña del usuario
+    end note
+
+    revisionActualizarUsuario -[#red]-> [*]
+    note on link
+        <b>Sistema Muestra</b>
+        Mensaje de error
+    end note
+
+   revisionActualizarUsuario --> [*]
+    note on link
+        <b>Sistema Muestra</b>
+        Usuario actualizado correctamente
+    end note
+
+}
+
+@enduml
