@@ -14,6 +14,10 @@ Usamos las siguientes herramientas para definir las entidades principales de nue
 
 ### Diagrama de Objetos
 ![Diagrama de Objetos](/modeloDelDominio/imagenes/DiagramaDeObjetos.svg)
+> **Descripción:**
+> - La `Asignatura`(Programación Avanzada) es asignada al `Grado` de Ingeniería Informática en `AsignaturaGrado`.
+> - A `AsignaturaGrado` se le asigna un `Profesor`(María López) para que sea impartida en `AsignaturaGradoProfesor`.
+> - Se vincula a un `Horario`(Lunes de 10:00 a 12:00) y más tarde se asigna el `Aula` 501, todo ello reflejado en `HorarioAsignaturaAula`.
 
 ### Estados de Asignatura
 ![Diagrama de Estados](/modeloDelDominio/imagenes/DiagramaDeEstados.svg)
