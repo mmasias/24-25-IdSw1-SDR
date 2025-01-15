@@ -1,47 +1,38 @@
 @startuml diagramaDeEstados1
-[*] --> Profesor_Seleccionado
+state Asignar_Asignatura_a_Profesor {
+    
+    [*] --> Profesor_Seleccionado
 
-state Profesor_Seleccionado {
-    Profesor_Seleccionado: Profesor disponible y verificado
+    state Profesor_Seleccionado {
+        Profesor_Seleccionado: Profesor disponible y verificado
+    }
+
+    Profesor_Seleccionado --> Asignatura_Asignada: Asignar asignatura
+
+    state Asignatura_Asignada {
+        Asignatura_Asignada: Grupos y compatibilidad revisados
+    }
+
+    Asignatura_Asignada --> Carga_Validada: Carga registrada
+
+    Carga_Validada --> Ajuste_Necesario: Carga incorrecta
+    Carga_Validada --> Revisión_Legal: Carga correcta
+
+    Ajuste_Necesario --> Carga_Validada
+
+    state Revisión_Legal {
+        Revisión_Legal: Verificar normativas
+    }
+
+    Revisión_Legal --> No_Valido: No cumple requisitos
+    Revisión_Legal --> Asignacion_Completa: Cumple normativas
+
+    state No_Valido {
+        No_Valido: Realizar ajustes necesarios
+    }
+
+    No_Valido --> Revisión_Legal: Reenviar a revisión
+
+    Asignacion_Completa --> [*]
 }
-
-Profesor_Seleccionado --> Asignatura_Asignada: Asignar asignatura
-
-state Asignatura_Asignada {
-    Asignatura_Asignada: Grupos y compatibilidad revisados
-}
-
-Asignatura_Asignada --> Carga_Validada: Carga registrada
-
-state Carga_Validada {
-    Carga_Validada: EQ TC y balance revisados
-}
-
-Carga_Validada --> Ajuste_Necesario: Carga incorrecta
-Carga_Validada --> Revisión_Legal: Carga correcta
-
-state Ajuste_Necesario {
-    Ajuste_Necesario: Ajustar proporciones
-}
-
-Ajuste_Necesario --> Carga_Validada
-
-state Revisión_Legal {
-    Revisión_Legal: Verificar normativas
-}
-
-Revisión_Legal --> No_Valido: No cumple requisitos
-Revisión_Legal --> Asignacion_Completa: Cumple normativas
-
-state No_Valido {
-    No_Valido: Realizar ajustes necesarios
-}
-
-No_Valido --> Revisión_Legal: Reenviar a revisión
-
-state Asignacion_Completa {
-    Asignacion_Completa: Registro final
-}
-
-Asignacion_Completa --> [*]
 @enduml

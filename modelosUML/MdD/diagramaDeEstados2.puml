@@ -1,47 +1,38 @@
 @startuml diagramaDeEstados2
-[*] --> Asignatura_Seleccionada
+state Asignar_Profesor_a_Asignatura {
 
-state Asignatura_Seleccionada {
-    Asignatura_Seleccionada: Requisitos y grupos revisados
+    [*] --> Asignatura_Seleccionada
+
+    state Asignatura_Seleccionada {
+        Asignatura_Seleccionada: Requisitos y grupos revisados
+    }
+
+    Asignatura_Seleccionada --> Profesor_Asignado: Asignar profesor
+
+    state Profesor_Asignado {
+        Profesor_Asignado: Profesor disponible y compatible
+    }
+
+    Profesor_Asignado --> Asignatura_Validada: Asignatura cubierta
+
+    Asignatura_Validada --> Ajuste_Profesor: Reasignación necesaria
+    Asignatura_Validada --> Revisión_Legal: Balance correcto
+
+    Ajuste_Profesor --> Asignatura_Validada
+
+    state Revisión_Legal {
+        Revisión_Legal: Cumplimiento normativo
+    }
+
+    Revisión_Legal --> No_Valido: No cumple requisitos
+    Revisión_Legal --> Asignacion_Completada: Cumple normativas
+
+    state No_Valido {
+        No_Valido: Realizar ajustes necesarios
+    }
+
+    No_Valido --> Revisión_Legal: Reenviar a revisión
+
+    Asignacion_Completada --> [*]
 }
-
-Asignatura_Seleccionada --> Profesor_Asignado: Asignar profesor
-
-state Profesor_Asignado {
-    Profesor_Asignado: Profesor disponible y compatible
-}
-
-Profesor_Asignado --> Asignatura_Validada: Asignatura cubierta
-
-state Asignatura_Validada {
-    Asignatura_Validada: Proporción y balance revisados
-}
-
-Asignatura_Validada --> Ajuste_Profesor: Reasignación necesaria
-Asignatura_Validada --> Revisión_Legal: Balance correcto
-
-state Ajuste_Profesor {
-    Ajuste_Profesor: Ajustar asignaciones
-}
-
-Ajuste_Profesor --> Asignatura_Validada
-
-state Revisión_Legal {
-    Revisión_Legal: Cumplimiento normativo
-}
-
-Revisión_Legal --> No_Valido: No cumple requisitos
-Revisión_Legal --> Asignacion_Completada: Cumple normativas
-
-state No_Valido {
-    No_Valido: Realizar ajustes necesarios
-}
-
-No_Valido --> Revisión_Legal: Reenviar a revisión
-
-state Asignacion_Completada {
-    Asignacion_Completada: Registro final
-}
-
-Asignacion_Completada --> [*]
 @enduml
