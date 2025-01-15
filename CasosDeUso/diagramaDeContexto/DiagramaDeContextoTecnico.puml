@@ -2,9 +2,8 @@
 left to right direction
 state "NO_AUTENTICADO" as NoAutenticado
 state "MENU_PRINCIPAL" as MenuPrincipal
-state "ASIGNANDO_GUÍAS" as AsignandoGuias
-state "UTILIZANDO_PLANTILLA" as UtilizandoPlantilla
-state "CREANDO_VERSION" as CreandoVersion
+state "ASIGNANDO_GUÍAS_PROFESOR" as AsignandoGuias
+state "GENERANDO_VERSION" as CreandoVersion
 state "EDITANDO_PLANTILLA" as EditandoPlantilla
 state "ASIGNANDO_GUIA_TITULACION" as AsignandoGuiaTitulacion
 state "ASIGNANDO_ASIGNATURA_TITULACION" as AsignandoAsignaturaTitulacion
@@ -31,18 +30,11 @@ note on link
     Regresar al menú principal
 end note
 
-MenuPrincipal --> UtilizandoPlantilla
-note on link
-    Utilizar Plantilla Multititulación
-end note
-UtilizandoPlantilla --> MenuPrincipal
-note on link
-    Regresar al menú principal
-end note
+
 
 MenuPrincipal --> CreandoVersion
 note on link
-    Crear Nueva Versión de la Guía
+    Generar Nueva Versión de la Guía
 end note
 CreandoVersion --> MenuPrincipal
 note on link
