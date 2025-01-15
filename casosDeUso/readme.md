@@ -36,6 +36,12 @@
 
 ### Elegir Grado
 ![Elegir Grado](/casosDeUso/imagenes/ElegirGrado.svg)
+> 🎓 **Selección de Grado:**
+> Representa cómo el usuario elige un grado específico:
+> - Se muestran todos los grados disponibles.
+> - El usuario realiza su selección final.
+
+---
 
 ### Registrar Asignatura
 ![Registrar Asignatura](/casosDeUso/imagenes/RegistrarAsignatura.svg)
