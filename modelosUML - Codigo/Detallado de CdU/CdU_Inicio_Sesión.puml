@@ -11,7 +11,7 @@ skinparam state {
 
 hide empty description
 
-state startState as "Interfaz de Registro"
+state startState as "Interfaz de Inicio de Sesión"
 state endState as "Tablón de Anuncios"
 
 
