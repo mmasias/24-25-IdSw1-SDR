@@ -26,6 +26,7 @@ state RegistroUsuario {
     note on link
         <b>Usuario introduce</b>
         * Nombre de usuario
+        * Correo Electrónico
         * Contraseña
         * Confirmar Contraseña
     end note
@@ -35,7 +36,7 @@ state RegistroUsuario {
         <b>Sistema muestra uno de:</b>
         * Error: "Correo en uso (ya existe cuenta para el correo)"
         * Error: "Correo o Contraseña incorrectos (Motivos abajo:)"
-            * Contraseña repetida
+            * Nombre oContraseña repetidos (usados por otro usuario)
             * Correo incorrecto
             * Contraseña y Confirmar Contraseña no tienen el mismo texto
     end note
