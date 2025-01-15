@@ -25,6 +25,14 @@
 
 ### Inicio de Sesión
 ![Inicio de Sesión](/casosDeUso/imagenes/IniciarSesión.svg)
+> 🔒 **Proceso:**
+> Este diagrama ilustra el flujo de inicio de sesión:
+> - El usuario ingresa sus credenciales.
+> - El sistema valida la información:
+>   - Si es válida, se muestra un mensaje de bienvenida.
+>   - Si no, se notifica un error de "Credenciales incorrectas".
+
+---
 
 ### Elegir Grado
 ![Elegir Grado](/casosDeUso/imagenes/ElegirGrado.svg)
