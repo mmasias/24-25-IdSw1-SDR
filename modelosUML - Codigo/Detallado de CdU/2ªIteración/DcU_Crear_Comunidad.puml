@@ -1,0 +1,54 @@
+@startuml Creación_de_Comunidades
+skinparam {
+    NoteBackgroundColor #whiteSmoke
+    NoteBorderColor #black
+    linetype polyline
+}
+
+skinparam state {
+    BackgroundColor #whiteSmoke
+}
+
+hide empty description
+
+state startState as "Interfaz de Creación de Comunidad"
+state endState as "Comunidad Creada"
+
+
+startState --> CreacióndelPost
+
+state CreacióndelPost as "Creación de la Comunidad" {
+    state IngresoCredenciales as " "
+    state ValidarCredenciales <<choice>>
+    state CreacióndelaComunidadCorrecta as " "
+
+    IngresoCredenciales -[#green]-> ValidarCredenciales
+    note on link
+        <b>Usuario introduce</b>
+        * Nombre
+        * Descripción
+        * Miembro/s (el usuarios creador está por defecto)
+    end note
+
+    ValidarCredenciales -[#red]-> IngresoCredenciales
+    note on link
+        <b>Sistema muestra:</b>
+        * Error: "Campo sin rellenar"
+    end note
+
+    ValidarCredenciales -[#green]-> CreacióndelaComunidadCorrecta
+    note on link
+        <b>Sistema asigna al post:</b>
+        * Usuario Creador (Recoge los datos del usuario)
+        * Fecha de Creación
+        
+        <b>Sistema Crea la Comunidad</b>
+  
+        <b>Sistema Redirige</b>
+        * A la dirección de la Comunidad tras crearse
+    end note
+}
+
+CreacióndelPost --> endState
+
+@enduml
