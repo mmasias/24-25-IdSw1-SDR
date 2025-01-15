@@ -7,7 +7,7 @@
 
 # Casos de Uso Detallados
 
-### 1. Verificar Cumplimiento con Memoria Verificada
+### 1. [Verificar Cumplimiento con Memoria Verificada](/CasosDeUso/Actividades/Prototipos/README.md#dirección-de-calidad---verificar-cumplimiento-con-memoria-verificada)
 -------------
 | **Identificación de actores**      | Dirección de Calidad |
 |------------------------------------|----------------------|
@@ -19,7 +19,7 @@
 
 ![](/images/modelosUML/VerificarGD.svg)
 
-### 2. Auditar Guías Docentes
+### 2. [Auditar Guías Docentes](/CasosDeUso/Actividades/Prototipos/README.md#dirección-de-calidad---auditar-guías-docentes)
 -------------
 | **Identificación de actores**      | Dirección de Calidad |
 |------------------------------------|----------------------|
@@ -32,7 +32,7 @@
 
 ![](/images/modelosUML/AuditarGD.svg)
 
-### 3. Publicar Guía Docente
+### 3. [Publicar Guía Docente](/CasosDeUso/Actividades/Prototipos/README.md#director-de-grado---publicar-guía-docente)
 -------------
 | **Identificación de actores**      | Director de Grado |
 |------------------------------------|-------------------|
@@ -45,7 +45,7 @@
 
 ![](/images/modelosUML/PublicarGD.svg) 
 
-### 4. Editar Contenido de la Guía
+### 4. [Editar Contenido de la Guía](/CasosDeUso/Actividades/Prototipos/README.md#profesor---editar-guía)
 | **Identificación de actores**      | Profesor |
 |------------------------------------|----------|
 | **Escenario**                      | El profesor accede al sistema para actualizar el contenido de la guía docente de una asignatura, con el fin de reflejar cambios en el temario, bibliografía, o metodologías de evaluación. |
@@ -57,7 +57,7 @@
 
 ![](/images/modelosUML/EditarContenidoGD.svg)
 
-### 5. Revisar Contenido
+### 5. [Revisar Contenido](/CasosDeUso/Actividades/Prototipos/README.md#director-de-grado---revisar-contenido)
 
 | **Identificación de actores**                          | **Director de Grado**                                                                 |
 |--------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -69,7 +69,7 @@
 
 ![](/images/modelosUML/RevisarContenidoGD.svg)
 
-### 6. Generar Nueva Versión de la Guía
+### 6. [Generar Nueva Versión de la Guía](/CasosDeUso/Actividades/Prototipos/README.md#técnico-de-calidad---generar-nueva-versión)
 | **Identificación de actores**      | Técnico de Calidad |
 |------------------------------------|--------------------|
 | **Escenario**                      | El Técnico de Calidad solicita al sistema la creación de una nueva versión de una guía docente para registrar cambios recientes en el contenido y mantener un historial de versiones. |
@@ -81,7 +81,7 @@
 
 ![](/images/modelosUML/GenerarVersiónGD.svg)
 
-### 7. Ver listado de los estados de las guías docentes
+### 7.[Ver listado de los estados de las guías docentes](/CasosDeUso/Actividades/Prototipos/README.md#técnico-de-calidad---ver-listado-de-estado-de-guías)
 | **Identificación de actores**      | Técnico de Calidad |
 |------------------------------------|--------------------|
 | **Escenario**                      | El Técnico de Calidad solicita al sistema visualizar los estados en los que se encuentran las guías docentes, para mantener la trazabilidad de los procesos y tomar decisiones informadas. |
@@ -93,7 +93,7 @@
 ![](/images/modelosUML/VerListadoEstadosGD.svg)
 
 
-### 8. Ver listado de los estados de las guías por grado
+### 8. [Ver listado de los estados de las guías por grado](/CasosDeUso/Actividades/Prototipos/README.md#director-de-grado---ver-listado-de-guías)
 | **Identificación de actores**      | Director de Grado |
 |------------------------------------|--------------------|
 | **Escenario**                      | El Director de Grado solicita al sistema visualizar los estados en los que se encuentran las guías docentes de su grado, para asegurar la trazabilidad y gestionar adecuadamente el proceso de aprobación. |
@@ -105,7 +105,7 @@
 ![](/images/modelosUML/VerListadoEstadosGradoGD.svg)
 
 
-### 9. Editar plantilla de la guía docente
+### 9.[Editar plantilla de la guía docente](/CasosDeUso/Actividades/Prototipos/README.md#técnico-de-calidad---editar-plantilla)
 | **Identificación de actores**      | Técnico de Calidad |
 |------------------------------------|--------------------|
 | **Escenario**                      | El Técnico de Calidad solicita al sistema realizar modificaciones en el formato de la plantilla de una guía docente para garantizar que se ajusta a las normas académicas y organizativas. |
@@ -117,7 +117,7 @@
 ![](/images/modelosUML/EditarPlantillaGD.svg)
 
 
-### 10. Asignar Guía a Titulación
+### 10. [Asignar Guía a Titulación](/CasosDeUso/Actividades/Prototipos/README.md#técnico-de-calidad---asignar-guía-a-titulación)
 | **Identificación de actores**      | Técnico de Calidad |
 |------------------------------------|--------------------|
 | **Escenario**                      | El Técnico de Calidad asigna una guía docente a una titulación específica para facilitar su organización en el sistema. |
@@ -129,7 +129,7 @@
 ![](/images/modelosUML/AsignarATitulacionGD.svg)
 
 ---
-### 11. Asignar Asignatura a Titulación
+### 11. [Asignar Asignatura a Titulación](/CasosDeUso/Actividades/Prototipos/README.md#técnico-de-calidad---asignar-asignatura-a-titulación)
 | **Identificación de actores**      | Técnico de Calidad |
 |------------------------------------|--------------------|
 | **Escenario**                      | El Técnico de Calidad asocia una asignatura con su titulación correspondiente en el sistema, asegurando una correcta organización del plan académico. |
@@ -141,7 +141,7 @@
 ![](/images/modelosUML/AsignarAsignaturaTitulacionGD.svg)
 
 
-### 12. Asignar Guías Docentes a Profesor
+### 12. [Asignar Guías Docentes a Profesor](/CasosDeUso/Actividades/Prototipos/README.md#técnico-de-calidad---asignar-guía-a-profesor)
 | **Identificación de actores**      | Técnico de Calidad |
 |------------------------------------|--------------------|
 | **Escenario**                      | El Técnico de Calidad solicita al sistema asignar una guía docente a un profesor para garantizar que este pueda trabajar en su contenido. |
@@ -152,7 +152,7 @@
 
 ![](/images/modelosUML/AsignarProfesorGD.svg)
 
-## 13. Enviar Guía Docente para Revisión
+## 13. [Enviar Guía Docente para Revisión](/CasosDeUso/Actividades/Prototipos/README.md#profesor---enviar-guía)
 | **Identificación de actores**      | Profesor |
 |------------------------------------|----------|
 | **Escenario**                      | El profesor envía la guía docente editada al Director de Grado para su revisión y posterior aprobación o rechazo, asegurándose de que cumpla con los estándares académicos y de calidad. |

@@ -53,18 +53,18 @@
 ![](/CasosDeUso/Actividades/Prototipos/PrototipadosTecnicoCalidad/Director%20de%20Calidad-Editar%20plantilla%20de%20la%20guía%20docente.svg)
 ![](/CasosDeUso/Actividades/Prototipos/PrototipadosTecnicoCalidad/Director%20de%20Calidad-Editar%20plantilla%20de%20la%20guía%20docente%20(1).svg)
 
-### Técnico de Calidad - Assignar Asignatura a Titulación
+### Técnico de Calidad - Asignar Asignatura a Titulación
 ![](/CasosDeUso/Actividades/Prototipos/PrototipadosTecnicoCalidad/Director%20de%20Calidad-%20%20Asignar%20Asignatura%20a%20Titulación.svg)
 ![](/CasosDeUso/Actividades/Prototipos/PrototipadosTecnicoCalidad/Director%20de%20Calidad-%20%20Asignar%20Asignatura%20a%20Titulación%20(2).svg)
 ![](/CasosDeUso/Actividades/Prototipos/PrototipadosTecnicoCalidad/asignaturatit.svg)
 
 
-### Técnico de Calidad - Assignar Guía a Titulación
+### Técnico de Calidad - Asignar Guía a Titulación
 ![](/CasosDeUso/Actividades/Prototipos/PrototipadosTecnicoCalidad/Técnico-%20Ver%20Listado%20de%20Estados%20de%20Guías%20Docentes.svg)
 ![](/CasosDeUso/Actividades/Prototipos/PrototipadosTecnicoCalidad/guiatit.svg)
 ![](/CasosDeUso/Actividades/Prototipos/PrototipadosTecnicoCalidad/guiatit2.svg)
 
-### Técnico de Calidad - Assignar Guía a Profesor
+### Técnico de Calidad - Asignar Guía a Profesor
 ![](/CasosDeUso/Actividades/Prototipos/PrototipadosTecnicoCalidad/Técnico-%20Ver%20Listado%20de%20Estados%20de%20Guías%20Docentes.svg)
 ![](/CasosDeUso/Actividades/Prototipos/PrototipadosTecnicoCalidad/Técnico-%20%20Asignar%20Guías%20Docentes%20a%20Profesor%20(2).svg)
 ![](/CasosDeUso/Actividades/Prototipos/PrototipadosTecnicoCalidad/Técnico-%20%20Asignar%20Guías%20Docentes%20a%20Profesor%20(1).svg)
