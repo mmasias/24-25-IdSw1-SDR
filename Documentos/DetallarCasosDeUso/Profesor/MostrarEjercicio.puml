@@ -5,18 +5,16 @@ hide empty description
 state Menu_Rutinas_y_Ejercicios
 state MostrandoEjercicio
 state MostrarEjercicio {
-  [*] --> VerDetalles
+  [*] --> SeleccionarEjercicio
+  note on link
+    El profesor selecciona un ejercicio
+  end note
+
+  SeleccionarEjercicio --> VerDetalles
   note on link
     El sistema muestra los detalles del ejercicio
   end note
-  VerDetalles --> EditarEjercicio
-  note on link
-    El profesor introduce "Editar ejercicio"
-  end note
   VerDetalles --> [*]
-  note on link
-    Finaliza visualización
-  end note
 }
 
 Menu_Rutinas_y_Ejercicios --> MostrarEjercicio
