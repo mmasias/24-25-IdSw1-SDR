@@ -26,9 +26,9 @@ El Sistema Alumni es una plataforma que conecta a antiguos alumnos de la univers
 
 ## 📅 Sesiones
 
-- [10/16](sesiones/1016.md)
+- [Sesion 16 Octubre](SesiónConCliente/Sesion16Octubre.md)
 
-- [11/13](sesiones/1113.md)
+- [Sesion 13 Noviembre](SesiónConCliente/Sesion13Noviembre.md)
 ---
 
 ## 👨‍💻 Equipo de Desarrollo

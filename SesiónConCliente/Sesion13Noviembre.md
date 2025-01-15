@@ -1,4 +1,4 @@
-# Sesión De Requisado 11/13
+# Sesión De Requisitado 13 de Noviembre
 ---
 
 ## Asistentes:
