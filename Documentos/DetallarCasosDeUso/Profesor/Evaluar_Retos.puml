@@ -4,45 +4,20 @@ hide empty description
 state Viendo_Retos_Alumnos
 state Evaluando_Reto
 state EvaluarReto {
-    [*] --> Evaluar_Reto
+    [*] --> PuntuarReto
     note on link
-        El sistema muestra: inicio de la evaluación del reto.
+        El profesor introduce: Una puntuacion de 1 a 5 (estrellas).
+    end note
+    state " " as Estado
+    PuntuarReto --> Estado
+    note on link
+        El profesor introduce enviar
+    end note
+    Estado --> [*]
+    note on link
+        El sistema muestra: Un tick en el reto evaluado
     end note
 
-    Evaluar_Reto --> DescripcionReto
-    note on link
-        El sistema muestra: la descripción del reto.
-    end note
-
-    DescripcionReto --> MostrarEvidencia
-    note on link
-        El sistema muestra: la evidencia del reto.
-    end note
-
-    MostrarEvidencia --> ValidarEvidencia
-    note on link
-        El profesor introduce: calificación y comentarios sobre el reto.
-    end note
-
-    ValidarEvidencia --> Aprobado
-    note on link
-        El sistema muestra: confirmación de reto aprobado.
-    end note
-
-    ValidarEvidencia --> Rechazado
-    note on link
-        El sistema muestra: notificación de reto rechazado.
-    end note
-
-    Aprobado --> [*]
-    note on link
-        El sistema muestra: evaluación finalizada con éxito.
-    end note
-
-    Rechazado --> [*]
-    note on link
-        El sistema muestra: evaluación finalizada con rechazo.
-    end note
 }
 
 Viendo_Retos_Alumnos --> EvaluarReto
