@@ -5,6 +5,8 @@ actor Admin
 
 usecase "Ingresar al Sistema" as IngresarAlSistema
 usecase "Cambiar Menu" as CambiarMenu
+usecase "Cerrar Sesión" as CerrarSesion
+
 package "Gestión de Usuarios" {
     usecase "Crear Usuario" as CrearUsuario
     usecase "Modificar Usuario" as ModificarUsuario
@@ -15,6 +17,7 @@ package "Gestión de Rutinas" {
     usecase "Crear Rutina" as CrearRutina
     usecase "Modificar Rutina" as ModificarRutina
     usecase "Batería de Ejercicios" as BateriaEjercicios
+    usecase "Eliminar Rutina" as EliminarRutina
 }
 
 package "Gestión de Retos" {
@@ -31,10 +34,7 @@ package "Configuración del Sistema" {
 
 package "Reportes" {
     usecase "Consultar Reportes Detallados" as ConsultarReportes
-    usecase "Descargar Estadísticas" as DescargarEstadisticas@startuml CdU_Admin
-left to right direction
-
-actor Admin
+    usecase "Descargar Estadísticas" as DescargarEstadisticas
 
 package "Gestión de Usuarios" {
     usecase "Crear Usuario" as CrearUsuario
@@ -66,7 +66,6 @@ package "Reportes" {
 }
 
 
-usecase "Cerrar Sesión" as CerrarSesion
 
 
 Admin --> CrearUsuario
@@ -75,6 +74,7 @@ Admin --> EliminarUsuario
 Admin --> CrearRutina
 Admin --> ModificarRutina
 Admin --> BateriaEjercicios
+Admin --> EliminarRutina
 Admin --> CrearReto
 Admin --> ModificarReto
 Admin --> EliminarReto
@@ -92,9 +92,3 @@ Admin --> IngresarAlSistema
 }
 
 
-usecase "Cerrar Sesión" as CerrarSesion
-
-
-
-
-@enduml
