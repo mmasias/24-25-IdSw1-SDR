@@ -45,6 +45,13 @@
 
 ### Registrar Asignatura
 ![Registrar Asignatura](/casosDeUso/imagenes/RegistrarAsignatura.svg)
+> 📝 **Registro de Asignaturas:**
+> Este diagrama detalla el registro manual o importación masiva de asignaturas mediante:
+> - Introducción de datos manual.
+> - Carga de archivos (Excel o CSV).
+> - Validación de datos y confirmación.
+
+---
 
 ### Asignar Profesor
 ![Asignar Profesor](/casosDeUso/imagenes/AsignarProfesor.svg)
