@@ -9,11 +9,19 @@ state MostrarRutina {
   state VerRutina as "Mostar Rutina"
   [*] --> VerRutina
   note on link
-    El profesor introduce ver la rutina
+    El profesor introduce ver una rutina
   end note
-  VerRutina --> [*]
+  VerRutina --> Ejercicios
   note on link
-    El sistema muestra la rutina
+    El sistema muestra los ejercicios de la rutina
+  end note
+  Ejercicios --> SeleccionEjercicio
+  note on link
+    El profesor selecciona un ejercicio
+  end note
+  SeleccionEjercicio --> [*]
+  note on link
+    El sistema muestra los detalles del ejercicio
   end note
 }
 
