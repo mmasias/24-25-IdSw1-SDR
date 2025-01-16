@@ -103,6 +103,8 @@
 
 ![](./prototipadoNotificaciones/listarNotificaciones.png)
 
+[Ver Detallado](../prototipos/README.md/#DetalladoNotificaciones)
+
 ### Ver Notificaciones
 
 ![](./prototipadoMenuPrincipal/prototipoMenuPrincipal-notificaciones.png)

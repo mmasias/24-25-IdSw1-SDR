@@ -123,11 +123,13 @@
 
 ## Detallado de Notificaciones
 
+<a name="DetalladoNotificaciones"></a>
+
 ### Detallado de Envío de Notificaciones al Remitente
 
 ![](./detalladoNotificaciones/detalladoEnvioNotificacionesRemitente.svg)
 
-[Ver Prototipo](../prototipos/README.md/#PrototipoNotificaciones)
+[Ver Prototipo](../prototipos/README.md/#PrototipoListarNotificaciones)
 
 ### Detallado de Envío de Notificaciones al Destinatario
 
