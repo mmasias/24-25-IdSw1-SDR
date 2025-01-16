@@ -17,6 +17,13 @@ El objetivo de este paso es **encontrar actores y casos de uso** siguiendo las [
 | 📊 **Técnico Calidad** | Gestionan indicadores, asignan valores a sistemas externos y validan compromisos de memoria por titulación.                                 | 
 | 🛠️ **Administrador**   | Ha de pertenecer al departamento de calidad y debe poder asumir las funciones de RRHH, Ordenación y Técnico de Calidad según sea necesario. |
 
+
+### **Diagrama de herencia de Actores**  
+![DiagramaDeActores](/images/modelosUML/CdU/Individuales/Actores.svg) 
+ 
+ 
+ 
+
 ## 📋 **Casos de Uso y Actores Involucrados**
 
 | Caso de Uso                                                                         | Profesores | RRHH | Ordenación | Técnico Calidad | Administrador |
@@ -37,3 +44,9 @@ El objetivo de este paso es **encontrar actores y casos de uso** siguiendo las [
 | **Asignar** valor de Información a SIIU y DGU del PDI                               |            |      |            | ✅              | ✅            |
 | **Obtener** Indicadores para Sistema de Gestión                                     |            |      |            | ✅              | ✅            |
 | **Emitir** Informe del Profesorado (Global o por Titulación)                        |            |      |            | ✅              | ✅            |
+
+## Casos de Uso por Actor
+
+| Profesor | Recursos Humanos | Ordenación | Técnico de calidad |
+|----------|------------------|------------|--------------------|
+| ![Diagrama Profesor](/images/modelosUML/CdU/EstructurarCasosDeUso/profesor.svg) | ![Diagrama Recursos Humanos](/images/modelosUML/CdU/EstructurarCasosDeUso/RRHH.svg) | ![Diagrama Ordenacion](/images/modelosUML/CdU/EstructurarCasosDeUso/Ordenacion.svg) | ![Diagrama Tecnico de Calidad](/images/modelosUML/CdU/EstructurarCasosDeUso/TecnicoCalidad.svg) |
