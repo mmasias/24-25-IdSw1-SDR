@@ -45,9 +45,13 @@
 
 ![](./prototipoMensajes/prototipoMensajesEnviados.png)
 
+<a name="PrototipoCrearMensaje"></a>
+
 ### Crear Mensaje
 
 ![](./prototipoMensajes/prototipoCrearMensaje.png)
+
+[Ver Detallado](../detalladoCasosDeUso/README.md/#DetalladoCrearMensaje)
 
 #### Ver Mensaje Enviado
 

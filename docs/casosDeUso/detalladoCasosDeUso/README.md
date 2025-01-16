@@ -99,6 +99,8 @@
 
 ![](./detalladoEnvioMensajes/detalladoCreacionMensaje.svg)
 
+[Ver Prototipo](../prototipos/README.md/#PrototipoCrearMensaje)
+
 <a name="DetalladoActualizarMensaje"></a>
 
 ### Detallado de Actualizar un Mensaje
