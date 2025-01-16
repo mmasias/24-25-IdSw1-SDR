@@ -23,18 +23,18 @@
 
 # Diagramas de contexto de los casos de uso
 
-## Diagrama de contexto de Manejo de Mensajes
+## Manejo de Mensajes
 
 ![](./DiagramaDeContextoManejoMensajes/diagramaContextoMensajes.svg)
 
-## Diagrama de contexto de Manejo de Grupos
+## Manejo de Grupos
 
 ![](./DiagramaDeContextoManejoGrupos/diagramaContextoGrupos.svg)
 
-## Diagrama de contexto de Manejo de Usuarios
+## Manejo de Usuarios
 
 ![](./DiagramaDeContextoManejoUsuarios/diagramaContextoUsuarios.svg)
 
-## Diagrama de contexto de Manejo de Acciones
+## Manejo de Acciones
 
 ![](./DiagramadeContextoManejoAcciones/diagramaContextoManejoAcciones.svg)
