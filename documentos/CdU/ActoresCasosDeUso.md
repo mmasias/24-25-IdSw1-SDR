@@ -18,7 +18,7 @@ El objetivo de este paso es **encontrar actores y casos de uso** siguiendo las [
 
 | Caso de Uso                                  | Profesores | RRHH | Ordenación | Técnico Calidad | Administrador | Enlaces |
 |----------------------------------------------|------------|------|------------|-----------------|---------------|
-| **Iniciar Sesión**                           | ✅         | ✅  | ✅         | ✅              | ✅           | [📝](DetallarCasosDeUso.md#inicio-de-sesión)|
+| **Iniciar Sesión**                           | ✅         | ✅  | ✅         | ✅              | ✅           | 📝|
 | **Introducir** Datos Académicos              | ✅         |      |            |                 |               | 📝|
 | **Consultar** Datos Personales               | ✅         |      |            |                 |               | 📝|
 | **Consultar** Asignación Docente             | ✅         |      |            |                 |               | 📝|
