@@ -1,0 +1,59 @@
+@startuml Enviar_Advertencias
+skinparam {
+    NoteBackgroundColor #whiteSmoke
+    NoteBorderColor #black
+    linetype polyline
+}
+
+skinparam state {
+    BackgroundColor #whiteSmoke
+}
+
+hide empty description
+
+state startState as "Panel de Moderación"
+state endState as "Advertencia Enviada"
+
+startState --> ProcesoDeEnvioDeAdvertencia
+
+state ProcesoDeEnvioDeAdvertencia as "Envío de Advertencias" {
+    state SeleccionarUsuario as " "
+    state IdentificarRazónAdvertencia <<choice>>
+    state EscribirAdvertencia as " "
+    state ConfirmarEnvio as " "
+    state AdvertenciaEnviada as " "
+
+    SeleccionarUsuario -[#green]-> IdentificarRazónAdvertencia
+    note on link
+        <b>Moderador selecciona un usuario</b>
+        * Sistema carga su perfil y actividades recientes
+    end note
+
+    IdentificarRazónAdvertencia -[#green]-> EscribirAdvertencia
+    note on link
+        <b>Razón válida para advertencia</b>
+        * Ejemplo: comportamiento inapropiado
+    end note
+
+    IdentificarRazónAdvertencia -[#red]-> SeleccionarUsuario
+    note on link
+        <b>Razón no válida</b>
+        * Moderador regresa al listado de usuarios
+    end note
+
+    EscribirAdvertencia -[#green]-> ConfirmarEnvio
+    note on link
+        <b>Mensaje de advertencia redactado</b>
+        * Sistema solicita confirmación del envío
+    end note
+
+    ConfirmarEnvio -[#green]-> AdvertenciaEnviada
+    note on link
+        <b>Advertencia enviada con éxito</b>
+        * Sistema registra el envío y notifica al usuario
+    end note
+}
+
+ProcesoDeEnvioDeAdvertencia --> endState
+
+@enduml
