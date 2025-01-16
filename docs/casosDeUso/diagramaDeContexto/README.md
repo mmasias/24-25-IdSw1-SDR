@@ -7,15 +7,15 @@
 
 # Diagramas de Contexto de los Actores
 
-## Diagrama de Contexto de Administrador
+## Administrador
 
 ![](./DiagramaDeContextoAdministrador/diagramaContextoAdministrador.svg)
 
-## Diagrama de Contexto de Gestor
+## Gestor
 
 ![](./DiagramaDeContextoUsuario/diagramaContextoUsuario.svg)
 
-## Diagrama de Contexto Destinatario
+## Destinatario
 
 ![](./DiagramaDeContextoDestinatario/diagramaContextoDestinatario.svg)
 
