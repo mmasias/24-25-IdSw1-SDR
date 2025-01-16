@@ -10,13 +10,13 @@ Aquí se muestran los diagramas que componen el modelo del dominio: El diagrama 
 
 | **Diagrama** | **Código Fuente** |
 |--------------|--------------------|
-| ![Diagrama de Clases](/images/modelosUML%20-%20SVG/4ª_Iteración/DdClases.svg) | [Ver código](/modelosUML%20-%20Codigo/4ª_Iteración/DdClases.puml) |
+| ![Diagrama de Clases](/MdD/DdClases/4ª_Iteración/DdClases.svg) | [Ver código](/MdD/DdClases/4ª_Iteración/DdClases.puml) |
 
 ## Diagrama de Objetos
 
 | **Diagrama** | **Código Fuente** |
 |--------------|--------------------|
-| ![Diagrama de Objetos](/images/modelosUML%20-%20SVG/4ª_Iteración/DdEntidades.svg) | [Ver código](/modelosUML%20-%20Codigo/4ª_Iteración/DdEntidades.puml) |
+| ![Diagrama de Objetos](/MdD/DdObjetos/4ª_Iteración/DdEntidades.svg) | [Ver código](/MdD/DdObjetos/4ª_Iteración/DdEntidades.puml) |
 
 ## Diagrama de Estados
 
@@ -24,22 +24,22 @@ Aquí se muestran los diagramas que componen el modelo del dominio: El diagrama 
 
 | **Diagrama** | **Código Fuente** |
 |--------------|--------------------|
-| ![Diagrama de Estados](/images/modelosUML%20-%20SVG/5ª_Iteracion/DdEstados_Perfil.svg) | [Ver código](/images/modelosUML%20-%20SVG/5ª_Iteracion/DdEstados_Perfil.svg) |
+| ![Diagrama de Estados](/MdD/DdEstados_Perfil/DdEstados_Perfil.svg) | [Ver código](/MdD/DdEstados_Perfil/1ª_Iteración/DdEstados_Perfil.puml) |
 
 ### Etiqueta
 
 | **Diagrama** | **Código Fuente** |
 |--------------|--------------------|
-| ![Diagrama de Objetos](/images/modelosUML%20-%20SVG/5ª_Iteracion/DdEstados_Etiquetas.svg) | [Ver código](/images/modelosUML%20-%20SVG/5ª_Iteracion/DdEstados_Etiquetas.svg) |
+| ![Diagrama de Objetos](/MdD/DdEstados_Etiqueta/1ª_Iteración/DdEstados_Etiquetas.svg) | [Ver código](/MdD/DdEstados_Etiqueta/1ª_Iteración/DdEstados_Etiqueta.puml) |
 
 ### Comunidades
 
 | **Diagrama** | **Código Fuente** |
 |--------------|--------------------|
-| ![Diagrama de Objetos](/images/modelosUML%20-%20SVG/5ª_Iteracion/DdEstados_Comunidades.svg) | [Ver código](/images/modelosUML%20-%20SVG/5ª_Iteracion/DdEstados_Comunidades.svg) |
+| ![Diagrama de Objetos](/MdD/DdEstados_Comunidades/DdEstados_Comunidades.svg) | [Ver código](/MdD/DdEstados_Comunidades/1ª_Iteración/DdEstados_Comunidades.puml) |
 
 ### Ajustes
 
 | **Diagrama** | **Código Fuente** |
 |--------------|--------------------|
-| ![Diagrama de Objetos](/images/modelosUML%20-%20SVG/5ª_Iteracion/DdEstados_Ajustes.svg) | [Ver código](/images/modelosUML%20-%20SVG/5ª_Iteracion/DdEstados_Ajustes.svg) |
+| ![Diagrama de Objetos](/MdD/DdEstados_Ajustes/1ª_Iteración/DdEstados_Ajustes.svg) | [Ver código](/MdD/DdEstados_Ajustes/1ª_Iteración/DdEstados_Ajustes.puml) |
