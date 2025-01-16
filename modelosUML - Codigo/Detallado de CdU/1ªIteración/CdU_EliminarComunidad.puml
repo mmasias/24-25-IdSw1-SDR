@@ -1,0 +1,60 @@
+@startuml Eliminar_Comunidad
+skinparam {
+    NoteBackgroundColor #whiteSmoke
+    NoteBorderColor #black
+    linetype polyline
+}
+
+skinparam state {
+    BackgroundColor #whiteSmoke
+}
+
+hide empty description
+
+state startState as "Panel de Moderación"
+state endState as "Comunidad Eliminada"
+
+
+startState --> ProcesoDeEliminaciónComunidad
+
+state ProcesoDeEliminaciónComunidad as "Eliminación de Comunidad" {
+    state SeleccionarComunidad as " "
+    state ValidarRazónEliminación <<choice>>
+    state ConfirmarEliminación as " "
+    state NotificarComunidadEliminada as " "
+    state ComunidadEliminada as " "
+
+    SeleccionarComunidad -[#green]-> ValidarRazónEliminación
+    note on link
+        <b>Moderador selecciona una comunidad</b>
+        * Sistema muestra detalles y actividades recientes
+    end note
+
+    ValidarRazónEliminación -[#green]-> ConfirmarEliminación
+    note on link
+        <b>Razón válida para eliminar comunidad</b>
+        * Ejemplo: violación grave de normas o abandono prolongado
+    end note
+
+    ValidarRazónEliminación -[#red]-> SeleccionarComunidad
+    note on link
+        <b>Razón no válida</b>
+        * Moderador regresa a seleccionar otra comunidad
+    end note
+
+    ConfirmarEliminación -[#green]-> NotificarComunidadEliminada
+    note on link
+        <b>Comunidad eliminada</b>
+        * Sistema registra la eliminación
+    end note
+
+    NotificarComunidadEliminada -[#green]-> ComunidadEliminada
+    note on link
+        <b>Miembros notificados</b>
+        * Notificación enviada a los miembros sobre la eliminación
+    end note
+}
+
+ProcesoDeEliminaciónComunidad --> endState
+
+@enduml
