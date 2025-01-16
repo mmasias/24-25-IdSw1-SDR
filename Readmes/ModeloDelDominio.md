@@ -4,20 +4,23 @@
 
 Aquí se muestran los diagramas que componen el modelo del dominio: El diagrama de clases, el de objetos y el de estados
 
-</div>
 
+
+---
 ## Diagrama de Clases
 
 | **Diagrama** | **Código Fuente** |
 |--------------|--------------------|
 | ![Diagrama de Clases](/MdD/DdClases/4ª_Iteración/DdClases.svg) | [Ver código](/MdD/DdClases/4ª_Iteración/DdClases.puml) |
 
+---
 ## Diagrama de Objetos
 
 | **Diagrama** | **Código Fuente** |
 |--------------|--------------------|
 | ![Diagrama de Objetos](/MdD/DdObjetos/4ª_Iteración/DdEntidades.svg) | [Ver código](/MdD/DdObjetos/4ª_Iteración/DdEntidades.puml) |
 
+---
 ## Diagrama de Estados
 
 ### Perfil
@@ -43,3 +46,5 @@ Aquí se muestran los diagramas que componen el modelo del dominio: El diagrama 
 | **Diagrama** | **Código Fuente** |
 |--------------|--------------------|
 | ![Diagrama de Objetos](/MdD/DdEstados_Ajustes/1ª_Iteración/DdEstados_Ajustes.svg) | [Ver código](/MdD/DdEstados_Ajustes/1ª_Iteración/DdEstados_Ajustes.puml) |
+
+</div>
