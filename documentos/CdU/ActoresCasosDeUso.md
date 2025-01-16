@@ -3,7 +3,7 @@
 [Priorizar Casos de Uso ➡️](PriorizarCasosDeUso.md) |
 |--:|
 
-## 🎯 **Objetivo**
+## 🎯 Objetivo
 
 El objetivo de este paso es **encontrar actores y casos de uso** siguiendo las [pautas teóricas](https://github.com/mmasias/IdSw1/blob/main/temario/contenidos/CdU.eAyCdU.md#c%C3%B3mo) de la asignatura.
 
@@ -11,12 +11,9 @@ El objetivo de este paso es **encontrar actores y casos de uso** siguiendo las [
 
 ![DiagramaDeActores](/images/modelosUML/CdU/Individuales/Actores.svg) 
 
- 
- 
+## 📋 Casos de Uso y Actores Involucrados
 
-## 📋 **Casos de Uso y Actores Involucrados**
-
-| Caso de Uso                                  | Profesores | RRHH | Ordenación | Técnico Calidad | Administrador | Detallar | Prototipar |
+| Caso de Uso                                  | Profesor   | RRHH | Ordenación | Técnico Calidad | Administrador | Detallar | Prototipar |
 |----------------------------------------------|------------|------|------------|-----------------|---------------|----------|------------|
 | **Iniciar Sesión**                           | ✅         | ✅  | ✅         | ✅              | ✅           |          |            |
 | **Introducir** Datos Académicos              | ✅         |      |            |                 |               |          |            |
@@ -35,10 +32,34 @@ El objetivo de este paso es **encontrar actores y casos de uso** siguiendo las [
 | **Obtener** Indicadores                      |            |      |            | ✅              | ✅            |          |            |
 | **Emitir** Informe                           |            |      |            | ✅              | ✅            |          |     
 
-
-
 ## 🎭 Casos de Uso por Actor
 
 | Profesor | Recursos Humanos | Ordenación | Técnico de calidad |
 |----------|------------------|------------|--------------------|
 | ![Diagrama Profesor](/images/modelosUML/CdU/EstructurarCasosDeUso/profesor.svg) | ![Diagrama Recursos Humanos](/images/modelosUML/CdU/EstructurarCasosDeUso/RRHH.svg) | ![Diagrama Ordenacion](/images/modelosUML/CdU/EstructurarCasosDeUso/Ordenacion.svg) | ![Diagrama Tecnico de Calidad](/images/modelosUML/CdU/EstructurarCasosDeUso/TecnicoCalidad.svg) |
+
+## 🗺️ Diagramas de Contexto
+
+### Profesor
+
+||
+|-:|
+![](/images/modelosUML/CdU/DiagramaDeContexto/Profesor.svg)
+
+### Recursos Humanos
+
+||
+|-:|
+![](/images/modelosUML/CdU/DiagramaDeContexto/RRHH.svg)
+
+### Ordenación
+
+||
+|-:|
+![](/images/modelosUML/CdU/DiagramaDeContexto/Ordenacion.svg)
+
+### Técnico de Calidad
+
+||
+|-:|
+![](/images/modelosUML/CdU/DiagramaDeContexto/TecnicoCalidad.svg)
