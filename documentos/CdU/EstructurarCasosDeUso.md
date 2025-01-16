@@ -7,40 +7,36 @@
 
 El objetivo de este paso es **estructurar el modelo de los casos de uso** siguiendo las [pautas teóricas](https://github.com/mmasias/IdSw1/blob/main/temario/contenidos/eCdU.md) de la asignatura para reducir redundancias, identificar funcionalidades compartidas y opcionales, y aplicar las relaciones de inclusión/extensión según las pautas establecidas. 
 
-## 1️⃣ Primer Paso
+## Añadir `Include` y `Extend`
 
-![Paso 1](/images/modelosUML/CdU/EstructurarCasosDeUso/Paso1.svg)
-
-## 2️⃣ Segundo Paso
-
-![Paso 2](/images/modelosUML/CdU/EstructurarCasosDeUso/Paso2.svg)
-
-# Criterios por Actor
-
-| Actor                   | Cohesión funcional                          | Minimización de dependencias                     | Reutilización                                      |
-|-------------------------|---------------------------------------------|------------------------------------------------|--------------------------------------------------|
-| **Profesor**            | Agrupar las acciones relacionadas con la consulta y modificación de asignaciones. | Minimizar la dependencia de otros sistemas académicos. | Usar operaciones comunes como casos de uso `include`. |
-| **Recursos Humanos**    | Unificar las operaciones de validación y registro de datos académicos y laborales. | Documentar las dependencias con bases de datos externas. | Extender casos de uso para variaciones de validación. |
-| **Ordenación**          | Manejar de forma conjunta la asignación y revisión de carga docente. | Reducir dependencias entre indicadores y métricas. | Reutilizar operaciones comunes como casos de uso `include`. |
-| **Técnico de Calidad**  | Agrupar las acciones relacionadas con memoria, informes y validación de calidad. | Evitar duplicidad en cálculos de indicadores y límites. | Separar variaciones en casos de uso `extend`. |
-
-
-
-| Profesor                                | Recursos Humanos                                 | Ordenación                               | Técnico de calidad               |
-|------------------------------------------|---------------------------------------|----------------------------------------|-----------------------------------------|
-| ![Diagrama Profesor](/images/modelosUML/CdU/EstructurarCasosDeUso/profesor.svg) [Codigo Profesor](/modelosUML/CdU/EstructurarCasosDeUso/Profesor.puml)| [Diagrama Recursos Humanos](/images/modelosUML/CdU/EstructurarCasosDeUso/RRHH.svg) [Codigo RRHH](/modelosUML/CdU/EstructurarCasosDeUso/RRHH.puml)| ![Diagrama Ordenacion](/images/modelosUML/CdU/EstructurarCasosDeUso/Ordenacion.svg) [Codigo Ordenacion](/modelosUML/CdU/EstructurarCasosDeUso/Ordenacion.puml)| ![Diagrama Tecnico de Calidad](/images/modelosUML/CdU/EstructurarCasosDeUso/TecnicoCalidad.svg) [Codigo Tecnico de calidad](/modelosUML/CdU/EstructurarCasosDeUso/TecnicoCalidad.puml)|
-
----
-# Decisiones sobre `Include` y `Extend`
-
-| Include                                     | Extend                                      |
-|---------------------------------------------|--------------------------------------------|
-| Representan funcionalidad obligatoria y común en casos de uso como la validación de datos o consulta de indicadores. | Representan comportamiento opcional o alternativo, como extensiones para validar memoria y titulación. |
-| Reducen la duplicación de especificaciones mediante operaciones comunes entre actores del sistema académico. | Permiten la extensibilidad del sistema, manejando variaciones como la asignación específica de memoria. |
+|Include|Extend
+|-|-
+|Representan funcionalidad obligatoria y común|Representan comportamiento opcional o alternativo
+|Reducen la duplicación de especificaciones|Permiten la extensibilidad del sistema
 
 ---
 
-![](/images/modelosUML/CdU/EstructurarCasosDeUso/esquema.svg) [Codigo](/modelosUML/CdU/EstructurarCasosDeUso/Sistema.puml)
+![](/images/modelosUML/CdU/EstructurarCasosDeUso/Sistema.svg)
 
 ---
 
+### Relación `<<include>>`
+
+| Caso de Uso Principal                 | Caso de Uso Incluido              | Explicación                                                                            |
+|---------------------------------------|-----------------------------------|----------------------------------------------------------------------------------------|
+| **Emitir Informe del Profesorado**    | Obtener Indicadores               | Los indicadores se obtienen antes de emitir el informe.                                |
+| **Obtener Indicadores**               | Consultar Asignación por Profesor | Los indicadores dependen de la asignación por profesor.                                |
+| **Asignar Valores en Memoria**        | Validar Memoria y Titulación      | Es necesario validar la memoria y titulación antes de asignar valores.                 |
+| **Validar Memoria y Titulación**      | Consultar Claustro Docente        | Se revisa la memoria y titulación con la consulta al claustro docente.                 |
+| **Revisar Carga Docente**             | Consultar Claustro Docente        | La revisión de la carga docente depende de la consulta al claustro docente.            |
+| **Validar Datos del Profesorado**     | Consultar Claustro Docente        | Se consulta el claustro para validar los datos del profesorado.                        |
+| **Modificar Datos del Profesorado**   | Validar Datos del Profesorado     | Modificar los datos requiere la validación previa de los mismos.                       |
+| **Validar Datos del Profesorado**     | Introducir Datos Académicos       | La validación de datos del profesorado requiere introducir datos académicos del mismo. |
+
+---
+
+### Relación `<<extend>>`
+
+| Caso de Uso Principal              | Caso de Uso Extendido        | Explicación                                                                  |
+|------------------------------------|------------------------------|------------------------------------------------------------------------------|
+| **Asignar Información a SIIU/DGU** | Validar Memoria y Titulación | La asignación de información se extiende si es necesario validar la memoria. |

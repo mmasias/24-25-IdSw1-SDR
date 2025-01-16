@@ -1,0 +1,54 @@
+@startuml
+left to right direction
+
+package "Sistema Académico" {
+    package "Gestión de Profesores" {
+        usecase "Introducir Datos Académicos" as IntroducirExperiencia
+        usecase "Consultar Datos Personales y Contrato" as ConsultarDatosPersonales
+        usecase "Consultar Asignación Docente" as ConsultarAsignaciones
+    }
+
+    package "Gestión de Recursos Humanos" {
+        usecase "Validar Datos del Profesorado" as ValidarDatosRRHH
+        usecase "Modificar Datos del Profesorado" as ModificarDatosRRHH
+        usecase "Introducir Datos Laborales" as IntroducirContrato
+        usecase "Revisar Carga Docente" as RevisarCargaRRHH
+        usecase "Consultar Claustro Docente" as ConsultarClaustroRRHH
+        usecase "Consultar Asignación por Profesor" as ConsultarAsignacionRRHH
+    }
+
+    package "Gestión de Ordenación" {
+        usecase "Asignar Carga Docente" as AsignarCargaOrdenacion
+        usecase "Consultar Claustro Docente" as ConsultarClaustroOrdenacion
+        usecase "Consultar Asignación por Profesor" as ConsultarAsignacionOrdenacion
+        usecase "Revisar Carga Docente" as RevisarCargaOrdenacion
+        usecase "Validar Memoria y Titulación" as RevisarMemoria
+    }
+
+    package "Gestión de Calidad" {
+        usecase "Consultar Claustro Docente" as ConsultarClaustroCalidad
+        usecase "Consultar Asignacion por Profesor" as ConsultarAsignacionCalidad
+        usecase "Asignar Valores en Memoria" as AsignarValoresMemoria
+        usecase "Asignar Información a SIIU/DGU" as AsignarInformacion
+        usecase "Validar Memoria y Titulación" as ValidarMemoria
+        usecase "Obtener Indicadores" as ObtenerIndicadores
+        usecase "Emitir Informe del Profesorado" as EmitirInforme
+    }
+
+    ValidarDatosRRHH ..> ConsultarClaustroRRHH : <<include>>
+    ModificarDatosRRHH ..> ValidarDatosRRHH : <<include>>
+    RevisarCargaRRHH ..> ConsultarClaustroRRHH : <<include>>
+    ValidarDatosRRHH .> IntroducirExperiencia : <<include>>
+
+    AsignarCargaOrdenacion ..> ConsultarClaustroOrdenacion : <<include>>
+    RevisarMemoria ..> ConsultarClaustroOrdenacion : <<include>>
+    RevisarCargaOrdenacion ..> ConsultarClaustroOrdenacion : <<include>>
+
+    ValidarMemoria ..> ConsultarClaustroCalidad : <<include>>
+    EmitirInforme ..> ObtenerIndicadores : <<include>>
+    AsignarValoresMemoria ..> ValidarMemoria : <<include>>
+
+    AsignarInformacion .> ValidarMemoria : <<extend>>
+}
+
+@enduml
