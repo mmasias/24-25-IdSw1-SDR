@@ -5,6 +5,8 @@
 
 </div>
 
+<a name="Navbar"></a>
+
 ## Prototipos
 
 [![](https://img.shields.io/badge/-Login-FFF?style=flat&logo=openstreetmap&logoColor=black)](#PrototipoLogin) [![](https://img.shields.io/badge/-Menú_Principal-FFF?style=flat&logo=openstreetmap&logoColor=black)](#PrototipoMenuPrincipal) [![](https://img.shields.io/badge/-Mensajes-FFF?style=flat&logo=openstreetmap&logoColor=black)](#Mensajes) [![](https://img.shields.io/badge/-Grupos-FFF?style=flat&logo=openstreetmap&logoColor=black)](#Grupos) [![](https://img.shields.io/badge/-Acciones-FFF?style=flat&logo=openstreetmap&logoColor=black)](#Acciones) [![](https://img.shields.io/badge/-Notificaciones-FFF?style=flat&logo=openstreetmap&logoColor=black)](#Notificaciones) [![](https://img.shields.io/badge/-Usuarios-FFF?style=flat&logo=openstreetmap&logoColor=black)](#Usuarios)
@@ -15,7 +17,7 @@
 
 ![](./prototipoLogin/prototipoLogin.png)
 
-[![](https://img.shields.io/badge/-Ver_Detallado-FFF?style=flat&logo=openstreetmap&logoColor=black)](../detalladoCasosDeUso/README.md/#DetalladoLogin)
+[![](https://img.shields.io/badge/-Ver_Detallado-FFF?style=flat&logo=openstreetmap&logoColor=black)](../detalladoCasosDeUso/README.md/#DetalladoLogin) [![](https://img.shields.io/badge/-Regresar_al_Navbar-FFF?style=flat&logo=openstreetmap&logoColor=black)](#Navbar)
 
 <a name="PrototipoMenuPrincipal"></a>
 
