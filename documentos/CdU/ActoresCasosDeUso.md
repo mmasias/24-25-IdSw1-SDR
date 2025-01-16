@@ -9,11 +9,8 @@ El objetivo de este paso es **encontrar actores y casos de uso** siguiendo las [
 
 ## 👥 **Actores**  
 
-<div style="width: 50%; margin: 0 auto;">
-
 ![DiagramaDeActores](/images/modelosUML/CdU/Individuales/Actores.svg) 
 
-</div>
  
  
 
