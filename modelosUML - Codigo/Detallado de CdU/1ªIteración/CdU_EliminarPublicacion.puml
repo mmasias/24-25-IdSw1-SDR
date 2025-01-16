@@ -1,0 +1,58 @@
+@startuml Eliminar_Publicaciones
+skinparam {
+    NoteBackgroundColor #whiteSmoke
+    NoteBorderColor #black
+    linetype polyline
+}
+
+skinparam state {
+    BackgroundColor #whiteSmoke
+}
+
+hide empty description
+
+state startState as "Panel de Moderación"
+state endState as "Publicación Eliminada"
+
+startState --> ProcesoDeEliminación
+
+state ProcesoDeEliminación as "Eliminación de Publicaciones" {
+    state SeleccionarPublicación as " "
+    state ValidarRazónEliminación <<choice>>
+    state ConfirmarEliminación as " "
+    state NotificarUsuario as " "
+
+    SeleccionarPublicación -[#green]-> ValidarRazónEliminación
+    note on link
+        <b>Moderador selecciona una publicación</b>
+        * Sistema carga los detalles de la publicación
+    end note
+
+    ValidarRazónEliminación -[#green]-> ConfirmarEliminación
+    note on link
+        <b>Razón válida para eliminar</b>
+        * Ejemplo: incumplimiento de normas
+    end note
+
+    ValidarRazónEliminación -[#red]-> SeleccionarPublicación
+    note on link
+        <b>Razón no válida</b>
+        * Moderador regresa a seleccionar otra publicación
+    end note
+
+    ConfirmarEliminación -[#green]-> NotificarUsuario
+    note on link
+        <b>Publicación eliminada</b>
+        * Sistema registra la acción
+    end note
+
+    NotificarUsuario -[#green]-> PublicaciónEliminada
+    note on link
+        <b>Usuario notificado</b>
+        * Mensaje enviado sobre la eliminación
+    end note
+}
+
+ProcesoDeEliminación --> endState
+
+@enduml
