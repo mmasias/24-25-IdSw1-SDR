@@ -2,7 +2,6 @@
 left to right direction
 
 actor "Ordenación" as ord
-actor "Administrador" as admin
 
 usecase "Asignar Carga Docente" as asignarCarga
 note top of asignarCarga
@@ -11,5 +10,4 @@ note top of asignarCarga
 end note
 
 ord --> asignarCarga
-admin --> asignarCarga
 @enduml

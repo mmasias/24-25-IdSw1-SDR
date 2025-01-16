@@ -3,7 +3,6 @@ left to right direction
 
 actor "Ordenación" as ord
 actor "RRHH" as rrhh
-actor "Administrador" as admin
 
 usecase "Revisar Profesores con Carga no ajustada" as revisarCarga
 note top of revisarCarga
@@ -14,5 +13,4 @@ end note
 
 ord --> revisarCarga
 rrhh --> revisarCarga
-admin --> revisarCarga
 @enduml

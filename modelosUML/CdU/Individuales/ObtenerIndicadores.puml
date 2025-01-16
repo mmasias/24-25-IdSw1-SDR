@@ -2,7 +2,6 @@
 left to right direction
 
 actor "Técnico Calidad" as tec
-actor "Administrador" as admin
 
 usecase "Obtener Indicadores" as obtenerIndicadores
 note top of obtenerIndicadores
@@ -10,5 +9,4 @@ note top of obtenerIndicadores
 end note
 
 tec --> obtenerIndicadores
-admin --> obtenerIndicadores
 @enduml

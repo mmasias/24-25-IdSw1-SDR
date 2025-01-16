@@ -2,7 +2,6 @@
 left to right direction
 
 actor "Técnico Calidad" as tec
-actor "Administrador" as admin
 actor "Ordenación" as ord
 
 usecase "Validar Cumplimiento de Memoria" as valCumpli1
@@ -14,5 +13,4 @@ end note
 
 ord --> valCumpli1
 tec --> valCumpli1
-admin --> valCumpli1
 @enduml

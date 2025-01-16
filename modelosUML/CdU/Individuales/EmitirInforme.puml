@@ -2,7 +2,6 @@
 left to right direction
 
 actor "Técnico Calidad" as tec
-actor "Administrador" as admin
 
 usecase "Emitir Informe" as emitirInforme
 note top of emitirInforme
@@ -12,5 +11,4 @@ note top of emitirInforme
 end note
 
 tec --> emitirInforme
-admin --> emitirInforme
 @enduml

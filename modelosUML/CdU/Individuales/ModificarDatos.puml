@@ -2,7 +2,6 @@
 left to right direction
 
 actor "RRHH" as rrhh
-actor "Administrador" as admin
 
 usecase "Modificar Datos del Profesorado" as modDatos
 note top of modDatos
@@ -11,5 +10,4 @@ note top of modDatos
 end note
 
 rrhh --> modDatos
-admin --> modDatos
 @enduml

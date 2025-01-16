@@ -2,7 +2,6 @@
 left to right direction
 
 actor "RRHH" as rrhh
-actor "Administrador" as admin
 
 usecase "Introducir Datos Laborales" as datosLab
 note top of datosLab
@@ -14,5 +13,4 @@ end note
 note "Permitir heredar datos\ndel año anterior" as notaDatosLab
 
 rrhh --> datosLab
-admin --> datosLab
 @enduml

@@ -1,12 +1,11 @@
 @startuml
 left to right direction
 
-actor "Administrador" as admin
 actor "Profesor" as profesor
+actor "Administrador" as administrador
 
 usecase "Iniciar Sesión" as inicioSesion
 
-admin --> inicioSesion
 profesor --> inicioSesion
-
+administrador --> inicioSesion
 @enduml

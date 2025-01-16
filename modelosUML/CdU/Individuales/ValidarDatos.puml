@@ -2,7 +2,6 @@
 left to right direction
 
 actor "RRHH" as rrhh
-actor "Administrador" as admin
 
 usecase "Validar Datos del Profesorado" as valDatos
 note top of valDatos
@@ -11,5 +10,4 @@ note top of valDatos
 end note
 
 rrhh --> valDatos
-admin --> valDatos
 @enduml

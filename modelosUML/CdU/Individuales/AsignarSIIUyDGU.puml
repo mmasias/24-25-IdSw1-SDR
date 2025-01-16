@@ -2,10 +2,8 @@
 left to right direction
 
 actor "Técnico Calidad" as tec
-actor "Administrador" as admin
 
 usecase "Asignar Información SIIU/DGU" as asignarValor
 
 tec --> asignarValor
-admin --> asignarValor
 @enduml
