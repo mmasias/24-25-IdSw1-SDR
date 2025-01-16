@@ -15,19 +15,19 @@
 
 ![](./DiagramaDeContextoManejoMensajes/diagramaContextoMensajes.svg)
 
-> AVISO: Este diagrama también lo tiene el Gestor
+> AVISO: En este contexto también participa el Gestor
 
 #### Manejo de Grupos
 
 ![](./DiagramaDeContextoManejoGrupos/diagramaContextoGrupos.svg)
 
-> AVISO: Este diagrama también lo tiene el Gestor
+> AVISO: En este contexto también participa el Gestor
 
 #### Manejo de Usuarios
 
 ![](./DiagramaDeContextoManejoUsuarios/diagramaContextoUsuarios.svg)
 
-> AVISO: Este diagrama también lo tiene el Gestor
+> AVISO: En este contexto también participa el Gestor
 
 #### Manejo de Acciones
 
