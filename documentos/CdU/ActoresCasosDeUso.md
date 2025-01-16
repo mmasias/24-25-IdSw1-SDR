@@ -9,18 +9,11 @@ El objetivo de este paso es **encontrar actores y casos de uso** siguiendo las [
 
 ## 👥 **Actores**  
 
-| **Actor**              | **Descripción**                                                                                                                             |
-|------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| 👩‍🏫 **Profesores**      | Introducen y consultan información personal, académica, y asignaciones docentes.                                                            |
-| 🏢 **RRHH**            | Gestionan y validan datos de contratos, cargas docentes y categorías profesionales de los profesores.                                       |
-| 📚 **Ordenación**      | Asignan y revisan la carga docente, así como el cumplimiento de valores consignados en las memorias.                                        |
-| 📊 **Técnico Calidad** | Gestionan indicadores, asignan valores a sistemas externos y validan compromisos de memoria por titulación.                                 | 
-| 🛠️ **Administrador**   | Ha de pertenecer al departamento de calidad y debe poder asumir las funciones de RRHH, Ordenación y Técnico de Calidad según sea necesario. |
+<div style="width: 50%; margin: 0 auto;">
 
-
-### **Diagrama de herencia de Actores**  
 ![DiagramaDeActores](/images/modelosUML/CdU/Individuales/Actores.svg) 
- 
+
+</div>
  
  
 
