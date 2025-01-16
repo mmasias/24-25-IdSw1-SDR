@@ -7,9 +7,9 @@ Aquí se muestran los Casos de Uso detallados
 
 | **Diagrama**                                      | **Código Fuente** |
 |---------------------------------------------------|--------------------|
-| ![Detallado  la Creacion de un Post]()            | [Ver código]() |
+| ![Detallado  de la Creacion de un Post]()            | [Ver código]() |
 | ![Detallado del Inicio de Sesion]()               | [Ver código]() |
-| ![Detallado el Registro]()                        | [Ver código]() |
+| ![Detallado del Registro]()                        | [Ver código]() |
 | ![Detallado de la Creacion de una Comunidad]()    | [Ver código]() |
 | ![Detallado del Bloqueo de Palabras o Expresiones]() | [Ver código]() |
 | ![Detallado del Cerrado de Sesion]()              | [Ver código]() |
