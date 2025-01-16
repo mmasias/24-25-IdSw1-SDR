@@ -4,7 +4,7 @@
 
 Aquí se muestran los diagramas que componen el modelo del dominio: El diagrama de clases, el de objetos y el de estados
 
-</div>
+
 
 ---
 ## Diagrama de Clases
@@ -49,3 +49,5 @@ Aquí se muestran los diagramas que componen el modelo del dominio: El diagrama 
 | **Diagrama** | **Código Fuente** |
 |--------------|--------------------|
 | ![Diagrama de Objetos](/MdD/DdEstados_Ajustes/1ª_Iteración/DdEstados_Ajustes.svg) | [Ver código](/MdD/DdEstados_Ajustes/1ª_Iteración/DdEstados_Ajustes.puml) |
+
+</div>
