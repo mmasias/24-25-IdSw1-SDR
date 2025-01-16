@@ -1,0 +1,58 @@
+@startuml Suspender_Usuarios
+skinparam {
+    NoteBackgroundColor #whiteSmoke
+    NoteBorderColor #black
+    linetype polyline
+}
+
+skinparam state {
+    BackgroundColor #whiteSmoke
+}
+
+hide empty description
+
+state startState as "Panel de Moderación"
+state endState as "Usuario Suspendido"
+
+startState --> ProcesoDeSuspensión
+
+state ProcesoDeSuspensión as "Proceso de Suspensión" {
+    state SeleccionarUsuario as " "
+    state ValidarRazónSuspensión <<choice>>
+    state ConfirmarSuspensión as " "
+    state NotificarUsuario as " "
+
+    SeleccionarUsuario -[#green]-> ValidarRazónSuspensión
+    note on link
+        <b>Moderador selecciona un usuario</b>
+        * Sistema carga el perfil y actividades
+    end note
+
+    ValidarRazónSuspensión -[#green]-> ConfirmarSuspensión
+    note on link
+        <b>Razón válida para suspensión</b>
+        * Ejemplo: actividad abusiva o reiteración de faltas
+    end note
+
+    ValidarRazónSuspensión -[#red]-> SeleccionarUsuario
+    note on link
+        <b>Razón no válida</b>
+        * Moderador regresa al listado de usuarios
+    end note
+
+    ConfirmarSuspensión -[#green]-> NotificarUsuario
+    note on link
+        <b>Cuenta suspendida</b>
+        * Sistema registra la acción
+    end note
+
+    NotificarUsuario -[#green]-> UsuarioSuspendido
+    note on link
+        <b>Usuario notificado</b>
+        * Mensaje enviado explicando la suspensión
+    end note
+}
+
+ProcesoDeSuspensión --> endState
+
+@enduml
