@@ -10,7 +10,7 @@ Este documento presenta los diagramas principales del modelo de dominio: el **di
 
 | **Diagrama** | **Código Fuente** |
 |--------------|--------------------|
-| ![Diagrama de Clases](/images/modelosUML/MdD/DiagramaDeClases.svg) | [Ver código](/modelosUML/MdD/DiagramaDeClases.puml) |
+| ![Diagrama de Clases](/images/modelosUML/MdD/DiagramaClases.svg) | [Ver código](/modelosUML/MdD/DiagramaClases.puml) |
 
 - La `Asignación` asigna a un [`Profesor`](/documentos/glosario.md#-pdi-personal-docente-e-investigador), quien imparte una `Asignatura` que pertenece a una `Titulación`.
 - La `Asignación` también corresponde a una `Asignatura` y cumple con la [`Memoria Académica`](/documentos/glosario.md#-memoria-académica).
@@ -21,7 +21,7 @@ Este documento presenta los diagramas principales del modelo de dominio: el **di
 
 | **Diagrama** | **Código Fuente** |
 |--------------|--------------------|
-| ![Diagrama de Objetos](/images/modelosUML/MdD/DiagramaDeObjetos.svg) | [Ver código](/modelosUML/MdD/DiagramaDeObjetos.puml) |
+| ![Diagrama de Objetos](/images/modelosUML/MdD/DiagramaObjetos.svg) | [Ver código](/modelosUML/MdD/DiagramaObjetos.puml) |
 
 - La `Asignación` (id_asignacion = 1001) asigna a un [`Profesor`](/documentos/glosario.md#-pdi-personal-docente-e-investigador), quien imparte una `Asignatura` que pertenece a una `Titulación`.
 - La `Asignación` también corresponde a una `Asignatura` y cumple con la [`Memoria Académica`](/documentos/glosario.md#-memoria-académica), asegurándose de que los valores comprometidos se alcancen.
@@ -35,7 +35,7 @@ Este documento presenta los diagramas principales del modelo de dominio: el **di
 
 | **Diagrama** | **Código Fuente** |
 |--------------|--------------------|
-| ![Diagrama de Estados 1](/images/modelosUML/MdD/DiagramaDeEstadosProfesor.svg) | [Ver código](/modelosUML/MdD/DiagramaDeEstadosProfesor.puml) |
+| ![Diagrama de Estados 1](/images/modelosUML/MdD/DiagramaEstadosProfesor.svg) | [Ver código](/modelosUML/MdD/DiagramaEstadosProfesor.puml) |
 
 
 ---
@@ -44,4 +44,4 @@ Este documento presenta los diagramas principales del modelo de dominio: el **di
 
 | **Diagrama** | **Código Fuente** |
 |--------------|--------------------|
-| ![Diagrama de Estados 2](/images/modelosUML/MdD/DiagramaDeEstadosAsignatura.svg) | [Ver código](/modelosUML/MdD/DiagramaDeEstadosAsignatura.puml) |
+| ![Diagrama de Estados 2](/images/modelosUML/MdD/DiagramaEstadosAsignatura.svg) | [Ver código](/modelosUML/MdD/DiagramaEstadosAsignatura.puml) |
