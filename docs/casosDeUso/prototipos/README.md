@@ -17,7 +17,11 @@
 
 ## Menú Principal
 
+<a name="PrototipoMenuPrincipal"></a>
+
 ![](./prototipadoMenuPrincipal/prototipoMenuPrincipal.png)
+
+[Ver Detallado](../detalladoCasosDeUso/README.md/#DetalladoMenuPrincipal)
 
 ## Mensajes
 
@@ -61,7 +65,11 @@
 
 ### Crear Grupo
 
+<a name="PrototipoCrearGrupo"></a>
+
 ![](./prototipadoGrupos/prototipoCrearGrupo.png)
+
+[Ver Detallado](../detalladoCasosDeUso/README.md/#DetalladoCrearGrupo)
 
 ### Ver Grupo
 
