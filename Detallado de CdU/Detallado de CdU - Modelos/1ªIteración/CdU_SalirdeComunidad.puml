@@ -1,0 +1,68 @@
+@startuml Salir_De_Comunidad
+skinparam {
+    NoteBackgroundColor #whiteSmoke
+    NoteBorderColor #black
+    linetype polyline
+}
+
+skinparam state {
+    BackgroundColor #whiteSmoke
+    ArrowColor black
+}
+
+hide empty description
+
+state PantallaPrincipal as "Pantalla Principal" {
+    state Comunidades
+    Comunidades -down-> PantallaComunidad
+    note on link
+        <b>Usuario selecciona una comunidad a la que pertenece</b>
+    end note
+}
+
+PantallaPrincipal --> PantallaComunidad
+
+state PantallaComunidad as "Pantalla Comunidad" {
+    state VerDetallesComunidad as "Ver Detalles"
+    note right of VerDetallesComunidad
+        <b>Se muestra:</b>
+        * Informacion de la comunidad
+        * Botón "Salir de Comunidad"
+    end note
+
+    state PresionarSalir as "Presionar 'Salir de Comunidad'"
+    state ConfirmarSalida <<choice>>
+    state SalidaExitosa as "Salida Exitosa"
+
+    VerDetallesComunidad -down-> PresionarSalir
+    note on link
+        <b>Usuario pulsa 'Salir de Comunidad'</b>
+    end note
+
+    PresionarSalir -down-> ConfirmarSalida
+    note on link
+        <b>Sistema valida:</b>
+        * Confirmacion del usuario
+    end note
+
+    ConfirmarSalida -down-> SalidaExitosa : Confirmacion aceptada
+    note on link
+        <b>Resultado:</b>
+        * Usuario eliminado de la comunidad
+        * Ya no recibe notificaciones de la comunidad
+    end note
+
+    ConfirmarSalida -up-> VerDetallesComunidad : Confirmacion rechazada
+    note on link
+        <b>Accion cancelada por el usuario</b>
+    end note
+
+    SalidaExitosa -down-> PantallaPrincipal
+    note on link
+        <b>Vista actualizada:</b>
+        * Comunidad ya no aparece en la lista del usuario
+    end note
+}
+
+
+@enduml
