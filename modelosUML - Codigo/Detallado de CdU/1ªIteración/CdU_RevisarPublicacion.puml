@@ -1,0 +1,49 @@
+@startuml Revisar_Publicaciones
+skinparam {
+    NoteBackgroundColor #whiteSmoke
+    NoteBorderColor #black
+    linetype polyline
+}
+
+skinparam state {
+    BackgroundColor #whiteSmoke
+}
+
+hide empty description
+
+state startState as "Panel de Moderación"
+state endState as "Publicación Revisada"
+
+startState --> ProcesoDeRevisión
+
+state ProcesoDeRevisión as "Revisión de Publicaciones" {
+    state SeleccionarPublicación as " "
+    state ValidarPublicación <<choice>>
+    state AprobarPublicación as " "
+    state RechazarPublicación as " "
+
+    SeleccionarPublicación -[#green]-> ValidarPublicación
+    note on link
+        <b>Moderador selecciona una publicación</b>
+        * Sistema carga los detalles de la publicación
+    end note
+
+    ValidarPublicación -[#green]-> AprobarPublicación
+    note on link
+        <b>Si publicación cumple las normas</b>
+        * Se aprueba y pasa a estar visible
+    end note
+
+    ValidarPublicación -[#red]-> RechazarPublicación
+    note on link
+        <b>Si publicación viola las normas</b>
+        * Se rechaza y el usuario es notificado
+    end note
+
+    AprobarPublicación -[#green]-> PublicaciónRevisada
+    RechazarPublicación -[#red]-> PublicaciónRevisada
+}
+
+ProcesoDeRevisión --> endState
+
+@enduml
