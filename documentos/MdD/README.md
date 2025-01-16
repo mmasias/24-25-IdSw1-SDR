@@ -10,7 +10,7 @@ Este documento presenta los diagramas principales del modelo de dominio: el **di
 
 | **Diagrama** | **Código Fuente** |
 |--------------|--------------------|
-| ![Diagrama de Clases](/images/modelosUML/MdD/diagramaDeClases.svg) | [Ver código](/modelosUML/MdD/diagramaDeClases.puml) |
+| ![Diagrama de Clases](/images/modelosUML/MdD/DiagramaDeClases.svg) | [Ver código](/modelosUML/MdD/DiagramaDeClases.puml) |
 
 - La `Asignación` asigna a un [`Profesor`](/documentos/glosario.md#-pdi-personal-docente-e-investigador), quien imparte una `Asignatura` que pertenece a una `Titulación`.
 - La `Asignación` también corresponde a una `Asignatura` y cumple con la [`Memoria Académica`](/documentos/glosario.md#-memoria-académica).
@@ -21,7 +21,7 @@ Este documento presenta los diagramas principales del modelo de dominio: el **di
 
 | **Diagrama** | **Código Fuente** |
 |--------------|--------------------|
-| ![Diagrama de Objetos](/images/modelosUML/MdD/diagramaDeObjetos.svg) | [Ver código](/modelosUML/MdD/diagramaDeObjetos.puml) |
+| ![Diagrama de Objetos](/images/modelosUML/MdD/DiagramaDeObjetos.svg) | [Ver código](/modelosUML/MdD/DiagramaDeObjetos.puml) |
 
 - La `Asignación` (id_asignacion = 1001) asigna a un [`Profesor`](/documentos/glosario.md#-pdi-personal-docente-e-investigador), quien imparte una `Asignatura` que pertenece a una `Titulación`.
 - La `Asignación` también corresponde a una `Asignatura` y cumple con la [`Memoria Académica`](/documentos/glosario.md#-memoria-académica), asegurándose de que los valores comprometidos se alcancen.
@@ -31,46 +31,17 @@ Este documento presenta los diagramas principales del modelo de dominio: el **di
 
 ## 3. Diagramas de Estados
 
-### 3.1 Diagrama de Estado para Gestión de Profesores
+### 3.1 Diagrama de Estado de Profesor
 
 | **Diagrama** | **Código Fuente** |
 |--------------|--------------------|
-| ![Diagrama de Estados 1](/images/modelosUML/MdD/diagramaDeEstados1.svg) | [Ver código](/modelosUML/MdD/diagramaDeEstados1.puml) |
-
-- **`Profesor_Seleccionado`**: Verifica que el profesor esté disponible y cumpla los requisitos iniciales.  
-- **`Asignatura_Asignada`**: Evalúa la compatibilidad de grupos y carga asignada al profesor.  
-- **`Carga_Validada`**: Revisa el balance de carga académica para garantizar su distribución adecuada.  
-- **`Ajuste_Necesario`**: Realiza ajustes en caso de que la carga esté incorrectamente distribuida.  
-- **`Revisión_Legal`**: Asegura el cumplimiento de normativas educativas antes de finalizar la asignación.  
-- **`Asignacion_Completa`**: Representa el registro final del proceso exitoso.
+| ![Diagrama de Estados 1](/images/modelosUML/MdD/DiagramaDeEstadosProfesor.svg) | [Ver código](/modelosUML/MdD/DiagramaDeEstadosProfesor.puml) |
 
 
 ---
 
-### 3.2 Diagrama de Estado para Gestión de Asignaturas
+### 3.2 Diagrama de Estado de Asignatura
 
 | **Diagrama** | **Código Fuente** |
 |--------------|--------------------|
-| ![Diagrama de Estados 2](/images/modelosUML/MdD/diagramaDeEstados2.svg) | [Ver código](/modelosUML/MdD/diagramaDeEstados2.puml) |
-
-- **`Asignatura_Seleccionada`**: Revisa los requisitos y compatibilidad de los grupos para la asignatura.  
-- **`Profesor_Asignado`**: Confirma que el profesor seleccionado sea adecuado para la asignatura.  
-- **`Asignatura_Validada`**: Verifica la proporción y balance de carga para asegurar que la asignación sea correcta.  
-- **`Ajuste_Profesor`**: Permite reasignar profesores en caso de problemas detectados en la validación.  
-- **`Revisión_Legal`**: Valida el cumplimiento normativo para proceder con la asignación final.  
-- **`Asignacion_Completada`**: Marca la finalización del proceso con todos los requisitos cumplidos.
-
----
-
-### 3.3 Diagrama de Estado para Validación de Indicadores e Informes
-
-| **Diagrama** | **Código Fuente** |
-|--------------|--------------------|
-| ![Diagrama de Estados 3](/images/modelosUML/MdD/diagramaDeEstados3.svg) | [Ver código](/modelosUML/MdD/diagramaDeEstados3.puml) |
-
-- **`Entradas_Preparadas`**: Comprueba que las memorias y asignaciones iniciales estén listas para el proceso.  
-- **`Entradas_Validadas`**: Asegura la consistencia y corrección de los datos iniciales antes de avanzar.  
-- **`Indicadores_Generados`**: Calcula los indicadores a utilizar, como información de memorias y cargas académicas.
-- **`Informe_Generado`**: Crea el informe con los datos e indicadores revisados.  
-- **`Informe_Ajustado`**: Permite modificar el informe si se detectan errores o necesidades de mejora.  
-- **`Informe_Validado`**: Representa el informe final validado y listo para exportación.
+| ![Diagrama de Estados 2](/images/modelosUML/MdD/DiagramaDeEstadosAsignatura.svg) | [Ver código](/modelosUML/MdD/DiagramaDeEstadosAsignatura.puml) |

@@ -1,0 +1,15 @@
+@startuml
+state "Asignatura" as Asignatura {
+    [*] --> Libre
+    Libre : Asignatura sin asignar.
+
+    Libre --> EnProceso : Asignación iniciada
+    EnProceso : En proceso de ser asignada.
+
+    EnProceso --> Completa : Asignación completada
+    Completa : Totalmente asignada.
+
+    Completa --> Libre : Desasignada por revisión
+    EnProceso --> Libre : Cancelada la asignación
+}
+@enduml
