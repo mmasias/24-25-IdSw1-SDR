@@ -21,15 +21,15 @@ El objetivo de este paso es **detallar los casos de uso** siguiendo las [pautas 
 |------------------|--------------------|
 | ![Modificar Datos](/images/modelosUML/CdU/Individuales/ModificarDatos.svg) | ![Modificar Datos](/images/modelosUML/CdU/DetallarCasosDeUso/RRHH/ModificarDatos.svg) |
 | ![Validar Datos](/images/modelosUML/CdU/Individuales/ValidarDatos.svg) | ![Validar Datos](/images/modelosUML/CdU/DetallarCasosDeUso/RRHH/ValidarDatos.svg) |
-| ![Validar Cumplimiento](/images/modelosUML/CdU/Individuales/ValidarMemoriaTitulacion.svg) | ![Validar Cumplimiento](/images/modelosUML/CdU/DetallarCasosDeUso/Conjunto/ValidarCumplimiento.svg) |
+| ![Validar Cumplimiento](/images/modelosUML/CdU/Individuales/ValidarMemoriaTitulacion.svg) | ![Validar Cumplimiento](/images/modelosUML/CdU/DetallarCasosDeUso/Conjunto/ValidarMemoria.svg) |
 
 ### Consulta de Datos
 
 | **Caso de Uso**   | **Detalle**    |                                      
 |-------------------|----------------|
 | ![Claustro Docente](/images/modelosUML/CdU/Individuales/ClaustroDocente.svg) | ![Claustro Docente](/images/modelosUML/CdU/DetallarCasosDeUso/Conjunto/ClaustroDocente.svg) |
-| ![Consultar Profesor](/images/modelosUML/CdU/Individuales/ConsultarProfesor.svg) | ![Consultar Profesor](/images/modelosUML/CdU/DetallarCasosDeUso/Conjunto/ConsultarProfesor.svg) |
-| ![Consultar Varios](/images/modelosUML/CdU/Individuales/ConsultarVarios.svg) | ![Consultar Varios](/images/modelosUML/CdU/DetallarCasosDeUso/Profesores/ConsultarAsignacionVarios.svg) |
+| ![Consultar Profesor](/images/modelosUML/CdU/Individuales/ConsultarProfesor.svg) | ![Consultar Profesor](/images/modelosUML/CdU/DetallarCasosDeUso/Conjunto/ConsultarAsignacion.svg) |
+| ![Consultar Varios](/images/modelosUML/CdU/Individuales/ConsultarVarios.svg) | ![Consultar Varios](/images/modelosUML/CdU/DetallarCasosDeUso/Profesores/ConsultarAsignacionFiltros.svg) |
 | ![Consultar Datos Personales](/images/modelosUML/CdU/Individuales/ConsultarDatosPersonales.svg) | ![Consultar Datos Personales](/images/modelosUML/CdU/DetallarCasosDeUso/Profesores/ConsultarValores.svg) |
 
 ### Introducción de Datos
