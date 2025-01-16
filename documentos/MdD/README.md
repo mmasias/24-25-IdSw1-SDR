@@ -31,17 +31,7 @@ Este documento presenta los diagramas principales del modelo de dominio: el **di
 
 ## 3. Diagramas de Estados
 
-### 3.1 Diagrama de Estado de Profesor
-
 | **Diagrama** | **Código Fuente** |
 |--------------|--------------------|
 | ![Diagrama de Estados 1](/images/modelosUML/MdD/DiagramaEstadosProfesor.svg) | [Ver código](/modelosUML/MdD/DiagramaEstadosProfesor.puml) |
-
-
----
-
-### 3.2 Diagrama de Estado de Asignatura
-
-| **Diagrama** | **Código Fuente** |
-|--------------|--------------------|
 | ![Diagrama de Estados 2](/images/modelosUML/MdD/DiagramaEstadosAsignatura.svg) | [Ver código](/modelosUML/MdD/DiagramaEstadosAsignatura.puml) |

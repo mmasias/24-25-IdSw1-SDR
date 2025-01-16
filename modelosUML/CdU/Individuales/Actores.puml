@@ -1,0 +1,7 @@
+@startuml
+left to right direction
+actor Profesor
+:Administrador: --> :Recursos Humanos:
+:Administrador: --> :Ordenación Académica:
+:Administrador: --> :Técnico de Calidad:
+@enduml
