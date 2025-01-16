@@ -11,30 +11,42 @@
 
 ![](./DiagramaDeContextoAdministrador/diagramaContextoAdministrador.svg)
 
+#### Manejo de Mensajes
+
+![](./DiagramaDeContextoManejoMensajes/diagramaContextoMensajes.svg)
+
+#### Manejo de Grupos
+
+![](./DiagramaDeContextoManejoGrupos/diagramaContextoGrupos.svg)
+
+#### Manejo de Usuarios
+
+![](./DiagramaDeContextoManejoUsuarios/diagramaContextoUsuarios.svg)
+
+#### Manejo de Acciones
+
+![](./DiagramadeContextoManejoAcciones/diagramaContextoManejoAcciones.svg)
+
+---
+
 ## Gestor
 
 ![](./DiagramaDeContextoUsuario/diagramaContextoUsuario.svg)
+
+#### Manejo de Mensajes
+
+![](./DiagramaDeContextoManejoMensajes/diagramaContextoMensajes.svg)
+
+#### Manejo de Grupos
+
+![](./DiagramaDeContextoManejoGrupos/diagramaContextoGrupos.svg)
+
+#### Manejo de Usuarios
+
+![](./DiagramaDeContextoManejoUsuarios/diagramaContextoUsuarios.svg)
 
 ## Destinatario
 
 ![](./DiagramaDeContextoDestinatario/diagramaContextoDestinatario.svg)
 
 ---
-
-# Diagramas de contexto de los casos de uso
-
-## Manejo de Mensajes
-
-![](./DiagramaDeContextoManejoMensajes/diagramaContextoMensajes.svg)
-
-## Manejo de Grupos
-
-![](./DiagramaDeContextoManejoGrupos/diagramaContextoGrupos.svg)
-
-## Manejo de Usuarios
-
-![](./DiagramaDeContextoManejoUsuarios/diagramaContextoUsuarios.svg)
-
-## Manejo de Acciones
-
-![](./DiagramadeContextoManejoAcciones/diagramaContextoManejoAcciones.svg)
