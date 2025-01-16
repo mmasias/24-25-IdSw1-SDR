@@ -1,5 +1,5 @@
 
-**¿Qué es unp guía docente?**
+**¿Qué es una guía docente?**
 
 La Guía Docente de una asignatura es un documento público dirigido, fundamentalmente, a los estudiantes y escrito con un lenguaje muy claro, en el que se concreta, para un determinado curso académico, la planificación docente de una asignatura y toda la información necesaria para su seguimiento.
 
