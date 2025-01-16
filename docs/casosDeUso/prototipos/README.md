@@ -7,13 +7,15 @@
 
 ## Prototipos
 
+[![](https://img.shields.io/badge/-Login-FFF?style=flat&logo=openstreetmap&logoColor=black)](#PrototipoLogin) [![](https://img.shields.io/badge/-Menú_Principal-FFF?style=flat&logo=openstreetmap&logoColor=black)](#PrototipoMenuPrincipal) [![](https://img.shields.io/badge/-Mensajes-FFF?style=flat&logo=openstreetmap&logoColor=black)](#Mensajes) [![](https://img.shields.io/badge/-Grupos-FFF?style=flat&logo=openstreetmap&logoColor=black)](#Grupos) [![](https://img.shields.io/badge/-Acciones-FFF?style=flat&logo=openstreetmap&logoColor=black)](#Acciones) [![](https://img.shields.io/badge/-Notificaciones-FFF?style=flat&logo=openstreetmap&logoColor=black)](#Notificaciones) [![](https://img.shields.io/badge/-Usuarios-FFF?style=flat&logo=openstreetmap&logoColor=black)](#Usuarios)
+
 <a name="PrototipoLogin"></a>
 
 ## Login
 
 ![](./prototipoLogin/prototipoLogin.png)
 
-[Ver Detallado](../detalladoCasosDeUso/README.md/#DetalladoLogin)
+[![](https://img.shields.io/badge/-Ver_Detallado-FFF?style=flat&logo=openstreetmap&logoColor=black)](../detalladoCasosDeUso/README.md/#DetalladoLogin)
 
 <a name="PrototipoMenuPrincipal"></a>
 
@@ -21,7 +23,9 @@
 
 ![](./prototipadoMenuPrincipal/prototipoMenuPrincipal.png)
 
-[Ver Detallado](../detalladoCasosDeUso/README.md/#DetalladoMenuPrincipal)
+[![](https://img.shields.io/badge/-Ver_Detallado-FFF?style=flat&logo=openstreetmap&logoColor=black)](../detalladoCasosDeUso/README.md/#DetalladoMenuPrincipal)
+
+<a name="Mensajes"></a>
 
 ## Mensajes
 
@@ -31,7 +35,7 @@
 
 ![](./prototipoMensajes/prototipoMensajesRecibidos.png)
 
-[Ver Detallado](../detalladoCasosDeUso/README.md/#DetalladoListarMensajes)
+[![](https://img.shields.io/badge/-Ver_Detallado-FFF?style=flat&logo=openstreetmap&logoColor=black)](../detalladoCasosDeUso/README.md/#DetalladoListarMensajes)
 
 #### Ver Mensaje
 
@@ -47,7 +51,7 @@
 
 ![](./prototipoMensajes/prototipoConfirmarMensaje.png)
 
-[Ver Detallado](../detalladoCasosDeUso/README.md/#DetalladoLecturaYConfirmacionDocumentos)
+[![](https://img.shields.io/badge/-Ver_Detallado-FFF?style=flat&logo=openstreetmap&logoColor=black)](../detalladoCasosDeUso/README.md/#DetalladoLecturaYConfirmacionDocumentos)
 
 ### Ver Mensajes Enviados
 
@@ -59,7 +63,7 @@
 
 ![](./prototipoMensajes/prototipoCrearMensaje.png)
 
-[Ver Detallado](../detalladoCasosDeUso/README.md/#DetalladoCrearMensaje)
+[![](https://img.shields.io/badge/-Ver_Detallado-FFF?style=flat&logo=openstreetmap&logoColor=black)](../detalladoCasosDeUso/README.md/#DetalladoCrearMensaje)
 
 #### Ver Mensaje Enviado
 
@@ -71,7 +75,9 @@
 
 ![](./prototipoMensajes/prototipoInformeEnvio.png)
 
-[Ver Detallado](../detalladoCasosDeUso/README.md/#DetalladoDescargarInforme)
+[![](https://img.shields.io/badge/-Ver_Detallado-FFF?style=flat&logo=openstreetmap&logoColor=black)](../detalladoCasosDeUso/README.md/#DetalladoDescargarInforme)
+
+<a name="Grupos"></a>
 
 ## Grupos
 
@@ -81,7 +87,7 @@
 
 ![](./prototipadoGrupos/prototipoListarGrupos.png)
 
-[Ver Detallado](../detalladoCasosDeUso/README.md/#DetalladoListarGrupo)
+[![](https://img.shields.io/badge/-Ver_Detallado-FFF?style=flat&logo=openstreetmap&logoColor=black)](../detalladoCasosDeUso/README.md/#DetalladoListarGrupo)
 
 ### Crear Grupo
 
@@ -89,7 +95,7 @@
 
 ![](./prototipadoGrupos/prototipoCrearGrupo.png)
 
-[Ver Detallado](../detalladoCasosDeUso/README.md/#DetalladoCrearGrupo)
+[![](https://img.shields.io/badge/-Ver_Detallado-FFF?style=flat&logo=openstreetmap&logoColor=black)](../detalladoCasosDeUso/README.md/#DetalladoCrearGrupo)
 
 ### Ver Grupo
 
@@ -101,7 +107,7 @@
 
 ![](./prototipadoGrupos/prototipoActualizarGrupo.png)
 
-[Ver Detallado](../detalladoCasosDeUso/README.md/#DetalladoActualizarGrupo)
+[![](https://img.shields.io/badge/-Ver_Detallado-FFF?style=flat&logo=openstreetmap&logoColor=black)](../detalladoCasosDeUso/README.md/#DetalladoActualizarGrupo)
 
 #### Actualizar Grupo - Añadir Miembro
 
@@ -117,7 +123,9 @@
 
 ![](./prototipadoGrupos/prototipoBorrarGrupo.png)
 
-[Ver Detallado](../detalladoCasosDeUso/README.md/#DetalladoBorrarGrupo)
+[![](https://img.shields.io/badge/-Ver_Detallado-FFF?style=flat&logo=openstreetmap&logoColor=black)](../detalladoCasosDeUso/README.md/#DetalladoBorrarGrupo)
+
+<a name="Acciones"></a>
 
 ## Acciones
 
@@ -125,7 +133,7 @@
 
 ![](./prototipoAcciones/prototipoListarAcciones.png)
 
-[Ver Detallado](../detalladoCasosDeUso/README.md/#DetalladoListarAcciones)
+[![](https://img.shields.io/badge/-Ver_Detallado-FFF?style=flat&logo=openstreetmap&logoColor=black)](../detalladoCasosDeUso/README.md/#DetalladoListarAcciones)
 
 <a name="PrototipoAcciones"></a>
 
@@ -133,7 +141,7 @@
 
 ![](./prototipoAcciones/prototipoDetallarAccion.png)
 
-[Ver Detallado](../detalladoCasosDeUso/README.md/#DetalladoVerAccion)
+[![](https://img.shields.io/badge/-Ver_Detallado-FFF?style=flat&logo=openstreetmap&logoColor=black)](../detalladoCasosDeUso/README.md/#DetalladoVerAccion)
 
 <a name="PrototipoDescargarAuditoria"></a>
 
@@ -141,7 +149,9 @@
 
 ![](./prototipoAcciones/prototipoDescargaPDFAuditoria.png)
 
-[Ver Detallado](../detalladoCasosDeUso/README.md/#DetalladoDescargarAuditoria)
+[![](https://img.shields.io/badge/-Ver_Detallado-FFF?style=flat&logo=openstreetmap&logoColor=black)](../detalladoCasosDeUso/README.md/#DetalladoDescargarAuditoria)
+
+<a name="Notificaciones"></a>
 
 ## Notificaciones
 
@@ -151,11 +161,13 @@
 
 ![](./prototipadoNotificaciones/listarNotificaciones.png)
 
-[Ver Detallado](../detalladoCasosDeUso//README.md/#DetalladoNotificaciones)
+[![](https://img.shields.io/badge/-Ver_Detallado-FFF?style=flat&logo=openstreetmap&logoColor=black)](../detalladoCasosDeUso//README.md/#DetalladoNotificaciones)
 
 ### Ver Notificaciones
 
 ![](./prototipadoMenuPrincipal/prototipoMenuPrincipal-notificaciones.png)
+
+<a name="Usuarios"></a>
 
 ## Usuarios
 
@@ -165,7 +177,7 @@
 
 ![](./prototipadoUsuarios/listarUsuarios.png)
 
-[Ver Detallado](../detalladoCasosDeUso/README.md/#DetalladoListarUsuarioGestor)
+[![](https://img.shields.io/badge/-Ver_Detallado-FFF?style=flat&logo=openstreetmap&logoColor=black)](../detalladoCasosDeUso/README.md/#DetalladoListarUsuarioGestor)
 
 <a name="PrototipoCrearUsuario"></a>
 
@@ -173,7 +185,7 @@
 
 ![](./prototipadoUsuarios/crearUsuario.png)
 
-[Ver Detallado](../detalladoCasosDeUso/README.md/#DetalladoCrearUsuarioGestor)
+[![](https://img.shields.io/badge/-Ver_Detallado-FFF?style=flat&logo=openstreetmap&logoColor=black)](../detalladoCasosDeUso/README.md/#DetalladoCrearUsuarioGestor)
 
 ### Ver Usuario
 
@@ -185,7 +197,7 @@
 
 ![](./prototipadoUsuarios/actualizarUsuario.png)
 
-[Ver Detallado](../detalladoCasosDeUso/README.md/#DetalladoActualizarUsuarioGestor)
+[![](https://img.shields.io/badge/-Ver_Detallado-FFF?style=flat&logo=openstreetmap&logoColor=black)](../detalladoCasosDeUso/README.md/#DetalladoActualizarUsuarioGestor)
 
 <a name="PrototipoBorrarUsuario"></a>
 
@@ -193,7 +205,7 @@
 
 ![](./prototipadoUsuarios/borrarUsuario.png)
 
-[Ver Detallado](../detalladoCasosDeUso/README.md/#DetalladoBorrarUsuarioGestor)
+[![](https://img.shields.io/badge/-Ver_Detallado-FFF?style=flat&logo=openstreetmap&logoColor=black)](../detalladoCasosDeUso/README.md/#DetalladoBorrarUsuarioGestor)
 
 ---
 
