@@ -19,7 +19,7 @@
 
 ![](./detalladoManejoSesion/detalladoLogin.svg)
 
-[![](https://img.shields.io/badge/-Ver_Prototipo-FFF?style=flat&logo=Emlakjet&logoColor=black)](../prototipos/README.md/#PrototipoLogin)
+[![](https://img.shields.io/badge/-Ver_Prototipo-FFF?style=flat&logo=openstreetmap&logoColor=black)](../prototipos/README.md/#PrototipoLogin)
 
 <a name="DetalladoLogout"></a>
 
@@ -33,7 +33,7 @@
 
 ![](./detalladoAbrirMenuPrincipal/detalladoAbrirMenuPrincipal.svg)
 
-[![](https://img.shields.io/badge/-Ver_Prototipo-FFF?style=flat&logo=Emlakjet&logoColor=black)](../prototipos/README.md/#PrototipoMenuPrincipal)
+[![](https://img.shields.io/badge/-Ver_Prototipo-FFF?style=flat&logo=openstreetmap&logoColor=black)](../prototipos/README.md/#PrototipoMenuPrincipal)
 
 <a name="Grupos"></a>
 
@@ -45,7 +45,7 @@
 
 ![](./detalladoGrupos/detalladoCrearGrupos.svg)
 
-[![](https://img.shields.io/badge/-Ver_Prototipo-FFF?style=flat&logo=Emlakjet&logoColor=black)](../prototipos/README.md/#PrototipoCrearGrupo)
+[![](https://img.shields.io/badge/-Ver_Prototipo-FFF?style=flat&logo=openstreetmap&logoColor=black)](../prototipos/README.md/#PrototipoCrearGrupo)
 
 <a name="DetalladoListarGrupo"></a>
 
@@ -53,7 +53,7 @@
 
 ![](./detalladoGrupos/detalladoListarGrupos.svg)
 
-[![](https://img.shields.io/badge/-Ver_Prototipo-FFF?style=flat&logo=Emlakjet&logoColor=black)](../prototipos/README.md/#PrototipoListarGrupos)
+[![](https://img.shields.io/badge/-Ver_Prototipo-FFF?style=flat&logo=openstreetmap&logoColor=black)](../prototipos/README.md/#PrototipoListarGrupos)
 
 <a name="DetalladoActualizarGrupo"></a>
 
@@ -61,7 +61,7 @@
 
 ![](./detalladoGrupos/detalladoActualizarGrupos.svg)
 
-[![](https://img.shields.io/badge/-Ver_Prototipo-FFF?style=flat&logo=Emlakjet&logoColor=black)](../prototipos/README.md/#PrototipoActualizarGrupo)
+[![](https://img.shields.io/badge/-Ver_Prototipo-FFF?style=flat&logo=openstreetmap&logoColor=black)](../prototipos/README.md/#PrototipoActualizarGrupo)
 
 <a name="DetalladoBorrarGrupo"></a>
 
@@ -69,7 +69,7 @@
 
 ![](./detalladoGrupos/detalladoBorrarGrupos.svg)
 
-[![](https://img.shields.io/badge/-Ver_Prototipo-FFF?style=flat&logo=Emlakjet&logoColor=black)](../prototipos/README.md/#PrototipoBorrarGrupo)
+[![](https://img.shields.io/badge/-Ver_Prototipo-FFF?style=flat&logo=openstreetmap&logoColor=black)](../prototipos/README.md/#PrototipoBorrarGrupo)
 
 <a name="Auditoria"></a>
 
@@ -81,7 +81,7 @@
 
 ![](./detalladoAuditoria/detalladoListarAcciones.svg)
 
-[![](https://img.shields.io/badge/-Ver_Prototipo-FFF?style=flat&logo=Emlakjet&logoColor=black)](../prototipos/README.md/#PrototipoListarAcciones)
+[![](https://img.shields.io/badge/-Ver_Prototipo-FFF?style=flat&logo=openstreetmap&logoColor=black)](../prototipos/README.md/#PrototipoListarAcciones)
 
 <a name="DetalladoVerAccion"></a>
 
@@ -89,7 +89,7 @@
 
 ![](./detalladoAuditoria/detalladoVerAccion.svg)
 
-[![](https://img.shields.io/badge/-Ver_Prototipo-FFF?style=flat&logo=Emlakjet&logoColor=black)](../prototipos/README.md/#PrototipoAcciones)
+[![](https://img.shields.io/badge/-Ver_Prototipo-FFF?style=flat&logo=openstreetmap&logoColor=black)](../prototipos/README.md/#PrototipoAcciones)
 
 <a name="DetalladoDescargarAuditoria"></a>
 
@@ -97,7 +97,7 @@
 
 ![](./detalladoAuditoria/detalladoDescargarDocumento.svg)
 
-[![](https://img.shields.io/badge/-Ver_Prototipo-FFF?style=flat&logo=Emlakjet&logoColor=black)](../prototipos/README.md/#PrototipoDescargarAuditoria)
+[![](https://img.shields.io/badge/-Ver_Prototipo-FFF?style=flat&logo=openstreetmap&logoColor=black)](../prototipos/README.md/#PrototipoDescargarAuditoria)
 
 <a name="Mensajes"></a>
 
@@ -109,7 +109,7 @@
 
 ![](./detalladoEnvioMensajes/detalladoCreacionMensaje.svg)
 
-[![](https://img.shields.io/badge/-Ver_Prototipo-FFF?style=flat&logo=Emlakjet&logoColor=black)](../prototipos/README.md/#PrototipoCrearMensaje)
+[![](https://img.shields.io/badge/-Ver_Prototipo-FFF?style=flat&logo=openstreetmap&logoColor=black)](../prototipos/README.md/#PrototipoCrearMensaje)
 
 <a name="DetalladoActualizarMensaje"></a>
 
@@ -131,7 +131,7 @@
 
 ![](./detalladoVisualizacionConfirmacion/detalladoListarMensajes.svg)
 
-[![](https://img.shields.io/badge/-Ver_Prototipo-FFF?style=flat&logo=Emlakjet&logoColor=black)](../prototipos/README.md/#PrototipoListarMensajes)
+[![](https://img.shields.io/badge/-Ver_Prototipo-FFF?style=flat&logo=openstreetmap&logoColor=black)](../prototipos/README.md/#PrototipoListarMensajes)
 
 <a name="DetalladoLecturaYConfirmacionDocumentos"></a>
 
@@ -139,7 +139,7 @@
 
 ![](./detalladoVisualizacionConfirmacion/detalladoVisualizacionConfirmacion.svg)
 
-[![](https://img.shields.io/badge/-Ver_Prototipo-FFF?style=flat&logo=Emlakjet&logoColor=black)](../prototipos/README.md/#PrototipoConfirmarFirmar)
+[![](https://img.shields.io/badge/-Ver_Prototipo-FFF?style=flat&logo=openstreetmap&logoColor=black)](../prototipos/README.md/#PrototipoConfirmarFirmar)
 
 <a name="DetalladoDescargarInforme"></a>
 
@@ -147,7 +147,7 @@
 
 ![](./detalladoDescargarInformeEnvio/detalladoDescargarInforme.svg)
 
-[![](https://img.shields.io/badge/-Ver_Prototipo-FFF?style=flat&logo=Emlakjet&logoColor=black)](../prototipos/README.md/#PrototipoDescargarInforme)
+[![](https://img.shields.io/badge/-Ver_Prototipo-FFF?style=flat&logo=openstreetmap&logoColor=black)](../prototipos/README.md/#PrototipoDescargarInforme)
 
 <a name="Usuarios"></a>
 
@@ -159,7 +159,7 @@
 
 ![](./detalladoUsuarios/detalladoCrearUsuarioGestor.svg)
 
-[![](https://img.shields.io/badge/-Ver_Prototipo-FFF?style=flat&logo=Emlakjet&logoColor=black)](../prototipos/README.md/#PrototipoCrearUsuario)
+[![](https://img.shields.io/badge/-Ver_Prototipo-FFF?style=flat&logo=openstreetmap&logoColor=black)](../prototipos/README.md/#PrototipoCrearUsuario)
 
 <a name="DetalladoActualizarUsuarioGestor"></a>
 
@@ -167,7 +167,7 @@
 
 ![](./detalladoUsuarios/detalladoActualizarUsuarioGestor.svg)
 
-[![](https://img.shields.io/badge/-Ver_Prototipo-FFF?style=flat&logo=Emlakjet&logoColor=black)](../prototipos/README.md/#PrototipoActualizarUsuario)
+[![](https://img.shields.io/badge/-Ver_Prototipo-FFF?style=flat&logo=openstreetmap&logoColor=black)](../prototipos/README.md/#PrototipoActualizarUsuario)
 
 <a name="DetalladoBorrarUsuarioGestor"></a>
 
@@ -175,7 +175,7 @@
 
 ![](./detalladoUsuarios/detalladoBorrarUsuarioGestor.svg)
 
-[![](https://img.shields.io/badge/-Ver_Prototipo-FFF?style=flat&logo=Emlakjet&logoColor=black)](../prototipos/README.md/#PrototipoBorrarUsuario)
+[![](https://img.shields.io/badge/-Ver_Prototipo-FFF?style=flat&logo=openstreetmap&logoColor=black)](../prototipos/README.md/#PrototipoBorrarUsuario)
 
 <a name="DetalladoListarUsuarioGestor"></a>
 
@@ -183,7 +183,7 @@
 
 ![](./detalladoUsuarios/detalladoListarUsuarioGestor.svg)
 
-[![](https://img.shields.io/badge/-Ver_Prototipo-FFF?style=flat&logo=Emlakjet&logoColor=black)](../prototipos/README.md/#PrototipoListarUsuarios)
+[![](https://img.shields.io/badge/-Ver_Prototipo-FFF?style=flat&logo=openstreetmap&logoColor=black)](../prototipos/README.md/#PrototipoListarUsuarios)
 
 ## Detallado de Usuarios de tipo Destinatario
 
@@ -193,7 +193,7 @@
 
 ![](./detalladoUsuarios/detalladoCrearUsuarioDestinatario.svg)
 
-[![](https://img.shields.io/badge/-Ver_Prototipo-FFF?style=flat&logo=Emlakjet&logoColor=black)](../prototipos/README.md/#PrototipoCrearUsuario)
+[![](https://img.shields.io/badge/-Ver_Prototipo-FFF?style=flat&logo=openstreetmap&logoColor=black)](../prototipos/README.md/#PrototipoCrearUsuario)
 
 <a name="DetalladoActualizarUsuarioDestinatario"></a>
 
@@ -201,7 +201,7 @@
 
 ![](./detalladoUsuarios/detalladoActualizarUsuarioDestinatario.svg)
 
-[![](https://img.shields.io/badge/-Ver_Prototipo-FFF?style=flat&logo=Emlakjet&logoColor=black)](../prototipos/README.md/#PrototipoActualizarUsuario)
+[![](https://img.shields.io/badge/-Ver_Prototipo-FFF?style=flat&logo=openstreetmap&logoColor=black)](../prototipos/README.md/#PrototipoActualizarUsuario)
 
 <a name="DetalladoBorrarUsuarioDestinatario"></a>
 
@@ -209,7 +209,7 @@
 
 ![](./detalladoUsuarios/detalladoBorrarUsuarioDestinatario.svg)
 
-[![](https://img.shields.io/badge/-Ver_Prototipo-FFF?style=flat&logo=Emlakjet&logoColor=black)](../prototipos/README.md/#PrototipoBorrarUsuario)
+[![](https://img.shields.io/badge/-Ver_Prototipo-FFF?style=flat&logo=openstreetmap&logoColor=black)](../prototipos/README.md/#PrototipoBorrarUsuario)
 
 <a name="DetalladoListarUsuarioDestinatario"></a>
 
@@ -217,7 +217,7 @@
 
 ![](./detalladoUsuarios/detalladoListarUsuarioDestinatario.svg)
 
-[![](https://img.shields.io/badge/-Ver_Prototipo-FFF?style=flat&logo=Emlakjet&logoColor=black)](../prototipos/README.md/#PrototipoListarUsuarios)
+[![](https://img.shields.io/badge/-Ver_Prototipo-FFF?style=flat&logo=openstreetmap&logoColor=black)](../prototipos/README.md/#PrototipoListarUsuarios)
 
 <a name="DetalladoNotificaciones"></a>
 
@@ -227,13 +227,13 @@
 
 ![](./detalladoNotificaciones/detalladoEnvioNotificacionesRemitente.svg)
 
-[![](https://img.shields.io/badge/-Ver_Prototipo-FFF?style=flat&logo=Emlakjet&logoColor=black)](../prototipos/README.md/#PrototipoListarNotificaciones)
+[![](https://img.shields.io/badge/-Ver_Prototipo-FFF?style=flat&logo=openstreetmap&logoColor=black)](../prototipos/README.md/#PrototipoListarNotificaciones)
 
 ### Detallado de Envío de Notificaciones al Destinatario
 
 ## ![](./detalladoNotificaciones/detalladoEnvioNotificacionesDestinatario.svg)
 
-[![](https://img.shields.io/badge/-Ver_Prototipo-FFF?style=flat&logo=Emlakjet&logoColor=black)](../prototipos/README.md/#PrototipoListarNotificaciones)
+[![](https://img.shields.io/badge/-Ver_Prototipo-FFF?style=flat&logo=openstreetmap&logoColor=black)](../prototipos/README.md/#PrototipoListarNotificaciones)
 
 | [![](https://img.shields.io/badge/-Inicio-FFF?style=flat&logo=Emlakjet&logoColor=black)](/README.md) [![](https://img.shields.io/badge/-Modelo_de_Dominio-FFF?style=flat&logo=LiveChat&logoColor=black)](/docs/modeloDeDominio/) [![](https://img.shields.io/badge/-Actores-FFF?style=flat&logo=openstreetmap&logoColor=black)](/docs/casosDeUso/actores/README.md/) [![](https://img.shields.io/badge/-Casos_De_Uso-FFF?style=flat&logo=openstreetmap&logoColor=black)](/docs/casosDeUso/diagramaCasosDeUso/README.md/) [![](https://img.shields.io/badge/-Detallado_Casos_De_Uso-FFF?style=flat&logo=openstreetmap&logoColor=black)](/docs/casosDeUso/detalladoCasosDeUso/README.md) [![](https://img.shields.io/badge/-Diagrama_De_Contexto-FFF?style=flat&logo=openstreetmap&logoColor=black)](/docs/casosDeUso/diagramaDeContexto/README.md) [![](https://img.shields.io/badge/-Prototipos-FFF?style=flat&logo=openstreetmap&logoColor=black)](/docs/casosDeUso/prototipos/README.md) [![](https://img.shields.io/badge/-Sesiones_de_Requisitado-FFF?style=flat&logo=Proton&logoColor=black)](/docs/sesiones/) [![](https://img.shields.io/badge/-Recursos_Adicionales-FFF?style=flat&logo=Proton&logoColor=black)](/docs/recursos/) |
 | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
