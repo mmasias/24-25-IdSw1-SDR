@@ -1,0 +1,54 @@
+@startuml Bloquear_Palabras_Expresiones
+skinparam {
+    NoteBackgroundColor #whiteSmoke
+    NoteBorderColor #black
+    linetype polyline
+}
+
+skinparam state {
+    BackgroundColor #whiteSmoke
+}
+
+hide empty description
+
+state startState as "Panel de Moderación"
+state endState as "Palabra o Expresión Bloqueada"
+
+startState --> ProcesoDeBloqueo
+
+state ProcesoDeBloqueo as "Bloqueo de Palabras o Expresiones" {
+    state SeleccionarPalabra as " "
+    state ValidarBloqueo <<choice>>
+    state ConfirmarBloqueo as " "
+    state BloqueoCompletado as " "
+
+    SeleccionarPalabra -[#green]-> ValidarBloqueo
+    note on link
+        <b>Moderador selecciona una palabra o expresión</b>
+        * Sistema carga el historial de uso y contexto
+    end note
+
+    ValidarBloqueo -[#green]-> ConfirmarBloqueo
+    note on link
+        <b>Razón válida para bloquear</b>
+        * Ejemplo: lenguaje ofensivo o inapropiado
+    end note
+
+    ValidarBloqueo -[#red]-> SeleccionarPalabra
+    note on link
+        <b>Razón no válida</b>
+        * Moderador regresa a seleccionar otra palabra o expresión
+    end note
+
+    ConfirmarBloqueo -[#green]-> BloqueoCompletado
+    note on link
+        <b>Palabra o expresión bloqueada</b>
+        * Sistema la añade a la lista de bloqueos
+    end note
+}
+
+state BloqueoCompletado as " "
+
+ProcesoDeBloqueo --> endState
+
+@enduml
