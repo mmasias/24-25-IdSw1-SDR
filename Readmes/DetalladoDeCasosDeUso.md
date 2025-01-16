@@ -4,7 +4,7 @@
 
 Aquí se muestran los Casos de Uso detallados
 
-Usuario Invitado
+## Usuario Invitado
 
 | **Diagrama**                                                                                                                                                       | **Código Fuente** |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------|
@@ -13,7 +13,7 @@ Usuario Invitado
 | ![Detallado de la Visualizacion de un Post](/Detallado%20de%20CdU/Detallado%20de%20CdU%20-%20Imagenes/1ªIteración/CdU_VerPost.svg)     | [Ver código](/Detallado%20de%20CdU/Detallado%20de%20CdU%20-%20Modelos/1ªIteración/CdU_VerPost.puml)        |
 | ![Detallado del Inicio de Sesion](/Detallado%20de%20CdU/Detallado%20de%20CdU%20-%20Imagenes/2ªIteración/DcU_Inicio_Sesión.svg)               | [Ver código](/Detallado%20de%20CdU/Detallado%20de%20CdU%20-%20Modelos/2ªIteración/CdU_Inicio_Sesión.puml)        |
 
-### Usuario Registrado
+## Usuario Registrado
 
 
 | **Diagrama**                                                                                                                                                       | **Código Fuente** |
@@ -25,7 +25,7 @@ Usuario Invitado
 | ![Detallado  de la Creacion de un Post](/Detallado%20de%20CdU/Detallado%20de%20CdU%20-%20Imagenes/1ªIteración/CdU_Crear_Post.svg)            | [Ver código](/Detallado%20de%20CdU/Detallado%20de%20CdU%20-%20Modelos/1ªIteración/CdU_Crear_Post.puml) |
 | ![Detallado de la Creacion de una Comunidad](/Detallado%20de%20CdU/Detallado%20de%20CdU%20-%20Imagenes/2ªIteración/DcU_Crear_Comunidad.svg)    | [Ver código](/Detallado%20de%20CdU/Detallado%20de%20CdU%20-%20Modelos/2ªIteración/DcU_Crear_Comunidad.puml)        |
 
-### Moderador
+## Moderador
 
 
 | **Diagrama**                                                                                                                                                       | **Código Fuente** |
