@@ -1,0 +1,54 @@
+@startuml Filtrar_Contenido
+skinparam {
+    NoteBackgroundColor #whiteSmoke
+    NoteBorderColor #black
+    linetype polyline
+}
+
+skinparam state {
+    BackgroundColor #whiteSmoke
+}
+
+hide empty description
+
+state startState as "Vista Principal"
+state endState as "Posts Filtrados"
+
+startState --> ProcesoDeFiltrado
+
+state ProcesoDeFiltrado as "Filtrado de Contenido" {
+    state SeleccionarEtiqueta as " "
+    state ValidarEtiqueta <<choice>>
+    state ConfirmarFiltrado as " "
+    state FiltradoCompletado as " "
+
+    SeleccionarEtiqueta -[#green]-> ValidarEtiqueta
+    note on link
+        <b>Usuario selecciona etiquetas para buscar posts</b>
+        * Ejemplo: transporte, vivienda, estudios
+    end note
+
+    ValidarEtiqueta -[#green]-> ConfirmarFiltrado
+    note on link
+        <b>Búsqueda válida para buscar</b>
+        * Sistema encuentra posts relacionados con las etiquetas
+    end note
+
+    ValidarEtiqueta -[#red]-> SeleccionarEtiqueta
+    note on link
+        <b>Búsqueda vacía o Etiqueta no deseada</b>
+        * Usuario regresa a ajustar las etiquetas seleccionadas
+    end note
+
+    ConfirmarFiltrado -[#green]-> FiltradoCompletado
+    note on link
+        <b>Posts encontrados</b>
+        * Sistema muestra los posts que coinciden con las etiquetas seleccionadas
+    end note
+}
+
+state FiltradoCompletado as " "
+
+ProcesoDeFiltrado --> endState
+
+@enduml
