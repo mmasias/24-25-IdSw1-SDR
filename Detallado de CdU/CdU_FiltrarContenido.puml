@@ -1,0 +1,54 @@
+@startuml Filtrar_Contenido
+skinparam {
+    NoteBackgroundColor #whiteSmoke
+    NoteBorderColor #black
+    linetype polyline
+}
+
+skinparam state {
+    BackgroundColor #whiteSmoke
+}
+
+hide empty description
+
+state startState as "Panel de Moderación"
+state endState as "Contenido Filtrado"
+
+startState --> ProcesoDeFiltrado
+
+state ProcesoDeFiltrado as "Filtrado de Contenido" {
+    state SeleccionarCriterio as " "
+    state ValidarCriterio <<choice>>
+    state ConfirmarFiltrado as " "
+    state FiltradoCompletado as " "
+
+    SeleccionarCriterio -[#green]-> ValidarCriterio
+    note on link
+        <b>Moderador selecciona criterios de filtrado</b>
+        * Sistema muestra opciones como palabras clave, categorías, etc.
+    end note
+
+    ValidarCriterio -[#green]-> ConfirmarFiltrado
+    note on link
+        <b>Criterio válido para filtrar</b>
+        * Ejemplo: contenido inapropiado o no deseado
+    end note
+
+    ValidarCriterio -[#red]-> SeleccionarCriterio
+    note on link
+        <b>Criterio no válido</b>
+        * Moderador regresa a ajustar los criterios
+    end note
+
+    ConfirmarFiltrado -[#green]-> FiltradoCompletado
+    note on link
+        <b>Contenido filtrado</b>
+        * Sistema aplica los criterios seleccionados
+    end note
+}
+
+state FiltradoCompletado as " "
+
+ProcesoDeFiltrado --> endState
+
+@enduml
