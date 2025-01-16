@@ -14,23 +14,31 @@ Este documento describe los casos de uso del **modelo de dominio**, enfocados en
 4. [Prototipar Casos de Uso](PrototiparCasosDeUso.md)
 5. [Estructurar el Modelo de Caso de Uso](EstructurarCasosDeUso.md)
 
-## 📖 **Diagramas de Contexto**
+## 🗺️ **Diagramas de Contexto**
 
 ### Diagrama de Contexto Administrador
 
 ![](/images/modelosUML/CdU/DiagramaDeContexto/Administrador.svg)
 
+---
+
 ### Diagrama de Contexto Técnico de Calidad
 
 ![](/images/modelosUML/CdU/DiagramaDeContexto/TecnicoCalidad.svg)
+
+---
 
 ### Diagrama de Contexto Ordenanción
 
 ![](/images/modelosUML/CdU/DiagramaDeContexto/Ordenacion.svg)
 
+---
+
 ### Diagrama de Contexto RRHH
 
 ![](/images/modelosUML/CdU/DiagramaDeContexto/RRHH.svg)
+
+---
 
 ### Diagrama de Contexto Profesor
 
