@@ -27,9 +27,9 @@ El objetivo de este paso es **detallar los casos de uso** siguiendo las [pautas 
 
 | **Caso de Uso**   | **Detalle**    |                                      
 |-------------------|----------------|
-| ![Claustro Docente](/images/modelosUML/CdU/Individuales/ClaustroDocente.svg) | ![Claustro Docente](/images/modelosUML/CdU/DetallarCasosDeUso/Conjunto/ClaustroDocente.svg) |
+| ![Claustro Docente](/images/modelosUML/CdU/Individuales/ClaustroDocente.svg) | ![Claustro Docente](/images/modelosUML/CdU/DetallarCasosDeUso/Conjunto/ConsultarClaustroDocente.svg) |
 | ![Consultar Profesor](/images/modelosUML/CdU/Individuales/ConsultarProfesor.svg) | ![Consultar Profesor](/images/modelosUML/CdU/DetallarCasosDeUso/Conjunto/ConsultarAsignacion.svg) |
-| ![Consultar Varios](/images/modelosUML/CdU/Individuales/ConsultarVarios.svg) | ![Consultar Varios](/images/modelosUML/CdU/DetallarCasosDeUso/Profesores/ConsultaAsignacionFiltros.svg) |
+| ![Consultar Varios](/images/modelosUML/CdU/Individuales/ConsultarVarios.svg) | ![Consultar Varios](/images/modelosUML/CdU/DetallarCasosDeUso/Profesores/ConsultarAsignacionFiltros.svg) |
 | ![Consultar Datos Personales](/images/modelosUML/CdU/Individuales/ConsultarDatosPersonales.svg) | ![Consultar Datos Personales](/images/modelosUML/CdU/DetallarCasosDeUso/Profesores/ConsultarValores.svg) |
 
 ### Introducción de Datos
@@ -46,7 +46,7 @@ El objetivo de este paso es **detallar los casos de uso** siguiendo las [pautas 
 
 | **Caso de Uso**     | **Detalle**   |   
 |---------------------|---------------|
-| ![Revisar Listado Profesores](/images/modelosUML/CdU/Individuales/RevisarListadoProfesores.svg) | ![Revisar Listado Profesores](/images/modelosUML/CdU/DetallarCasosDeUso/Conjunto/RevisarListadoProfesores.svg) |
+| ![Revisar Listado Profesores](/images/modelosUML/CdU/Individuales/RevisarListadoProfesores.svg) | ![Revisar Listado Profesores](/images/modelosUML/CdU/DetallarCasosDeUso/Conjunto/RevisarProfesores.svg) |
 
 ### Asignaciones
 
