@@ -1,0 +1,62 @@
+@startuml
+
+state "NO_AUTENTICADO" as NoAuth
+state "MENU_PRINCIPAL" as Menu
+state "DATOS_ACADEMICOS" as Acad
+state "PERSONAL_DOCENTE" as Pers
+state "DATOS_LABORALES" as Lab
+state "CONSULTAS_Y_REPORTES" as Cons
+state "ASIGNACIONES" as Asig
+
+[*] --> NoAuth
+
+NoAuth --> Menu
+    note on link
+        Iniciar sesión
+    end note
+
+Menu --> Acad
+    note on link
+        Consultar Asignación por Profesor
+    end note
+
+Menu --> Pers
+    note on link
+        Consultar Claustro Docente
+        Asignar Carga Docente
+        Asignar Información SIIU/DGU
+    end note
+
+Menu --> Lab
+    note on link
+        Introducir Datos Laborales
+        Modificar Datos del Profesorado
+    end note
+
+Menu --> Cons
+    note on link
+        Emitir Informe
+    end note
+
+Menu --> Asig
+    note on link
+        Asignar Valores en Memoria
+    end note
+
+Acad --> Acad
+    note on link
+        Validar Datos del Profesorado
+    end note
+
+Cons --> Cons
+    note on link
+        Validar Cumplimiento de Memoria
+        Obtener Indicadores
+    end note
+
+Pers --> Pers
+    note on link
+        Revisar Profesores con Carga no ajustada
+    end note
+
+@enduml

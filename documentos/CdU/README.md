@@ -14,12 +14,6 @@ Este documento describe los casos de uso del **modelo de dominio**, enfocados en
 4. [Prototipar Casos de Uso](PrototiparCasosDeUso.md)
 5. [Estructurar el Modelo de Caso de Uso](EstructurarCasosDeUso.md)
 
-### 📖 **Glosario**
+## 📖 **Diagramas de Contexto**
 
-Estas palabras tienen definiciones en el [Glosario](/documentos/glosario.md):
-
-- [Carga Académica](/documentos/glosario.md#-carga-académica)
-- [PDI](/documentos/glosario.md#-pdi-personal-docente-e-investigador)
-- [Memoria Académica](/documentos/glosario.md#-memoria-académica)
-- [Indicador](/documentos/glosario.md#-indicador)
-- [Sexenios](/documentos/glosario.md#-sexenio)
+### Diagrama de Contexto Administrador
