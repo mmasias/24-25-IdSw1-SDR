@@ -1,0 +1,54 @@
+@startuml Desbloquear_Usuarios
+skinparam {
+    NoteBackgroundColor #whiteSmoke
+    NoteBorderColor #black
+    linetype polyline
+}
+
+skinparam state {
+    BackgroundColor #whiteSmoke
+}
+
+hide empty description
+
+state startState as "Panel de Moderación"
+state endState as "Usuario Desbloqueado"
+
+startState --> ProcesoDeDesbloqueo
+
+state ProcesoDeDesbloqueo as "Desbloqueo de Usuarios" {
+    state SeleccionarUsuario as " "
+    state ValidarDesbloqueo <<choice>>
+    state ConfirmarDesbloqueo as " "
+    state DesbloqueoCompletado as " "
+
+    SeleccionarUsuario -[#green]-> ValidarDesbloqueo
+    note on link
+        <b>Moderador selecciona un usuario bloqueado</b>
+        * Sistema muestra el motivo del bloqueo
+    end note
+
+    ValidarDesbloqueo -[#green]-> ConfirmarDesbloqueo
+    note on link
+        <b>Razón válida para desbloquear</b>
+        * Ejemplo: finalización de periodo de suspensión
+    end note
+
+    ValidarDesbloqueo -[#red]-> SeleccionarUsuario
+    note on link
+        <b>Razón no válida</b>
+        * Moderador regresa al listado de usuarios bloqueados
+    end note
+
+    ConfirmarDesbloqueo -[#green]-> DesbloqueoCompletado
+    note on link
+        <b>Usuario desbloqueado</b>
+        * Sistema registra la acción y notifica al usuario
+    end note
+}
+
+state DesbloqueoCompletado as " "
+
+ProcesoDeDesbloqueo --> endState
+
+@enduml
