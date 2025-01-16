@@ -23,28 +23,28 @@ Aquí se muestran los diagramas que componen el modelo del dominio: El diagrama 
 ---
 ## Diagrama de Estados
 
-### Perfil
+## Perfil
 
 | **Diagrama** | **Código Fuente** |
 |--------------|--------------------|
 | ![Diagrama de Estados](/MdD/DdEstados_Perfil/DdEstados_Perfil.svg) | [Ver código](/MdD/DdEstados_Perfil/1ª_Iteración/DdEstados_Perfil.puml) |
 
 ---
-### Etiqueta
+## Etiqueta
 
 | **Diagrama** | **Código Fuente** |
 |--------------|--------------------|
 | ![Diagrama de Objetos](/MdD/DdEstados_Etiqueta/1ª_Iteración/DdEstados_Etiquetas.svg) | [Ver código](/MdD/DdEstados_Etiqueta/1ª_Iteración/DdEstados_Etiqueta.puml) |
 
 ---
-### Comunidades
+## Comunidades
 
 | **Diagrama** | **Código Fuente** |
 |--------------|--------------------|
 | ![Diagrama de Objetos](/MdD/DdEstados_Comunidades/DdEstados_Comunidades.svg) | [Ver código](/MdD/DdEstados_Comunidades/1ª_Iteración/DdEstados_Comunidades.puml) |
 
 ---
-### Ajustes
+## Ajustes
 
 | **Diagrama** | **Código Fuente** |
 |--------------|--------------------|
