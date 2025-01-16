@@ -2,7 +2,7 @@
 
 # Actores y Casos de Uso
 
-Aquí se muestran los diagramas que componen el modelo del dominio: El diagrama de clases, el de objetos y el de estados
+Aquí se muestran los actores principales y los casos de uso de la aplicación
 
 ---
 
