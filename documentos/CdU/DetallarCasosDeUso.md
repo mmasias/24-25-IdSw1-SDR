@@ -12,52 +12,40 @@ El objetivo de este paso es **detallar los casos de uso** siguiendo las [pautas 
 |-----------------|-------------|
 | ![Iniciar Sesion](/images/modelosUML/CdU/Individuales/IniciarSesion.svg) | ![Iniciar Sesion](/images/modelosUML/CdU/DetallarCasosDeUso/Conjunto/IniciarSesion.svg) |
 
+## 📚 Gestión de Carga Docente
 
-## 📂 Gestión de Datos del Profesorado
+| **Caso de Uso**        | **Detalle**    |
+|------------------------|----------------|
+| ![Asignar Carga](/images/modelosUML/CdU/Individuales/AsignarCargaDocente.svg) | ![Asignar Carga](/images/modelosUML/CdU/DetallarCasosDeUso/Ordenacion/AsignarCargaDocente.svg) |
+| ![Revisar Listado Profesores](/images/modelosUML/CdU/Individuales/RevisarListadoProfesores.svg) | ![Revisar Listado Profesores](/images/modelosUML/CdU/DetallarCasosDeUso/Conjunto/RevisarProfesores.svg) |
 
-### Modificación y Validación
+## ✅ Validación y Cumpimiento
 
-| **Caso de Uso**  | **Detalle**        |
-|------------------|--------------------|
-| ![Modificar Datos](/images/modelosUML/CdU/Individuales/ModificarDatos.svg) | ![Modificar Datos](/images/modelosUML/CdU/DetallarCasosDeUso/RRHH/ModificarDatos.svg) |
-| ![Validar Datos](/images/modelosUML/CdU/Individuales/ValidarDatos.svg) | ![Validar Datos](/images/modelosUML/CdU/DetallarCasosDeUso/RRHH/ValidarDatos.svg) |
+| **Caso de Uso**        | **Detalle**    |
+|------------------------|----------------|
+| ![Asignar SIIU y DGU](/images/modelosUML/CdU/Individuales/AsignarSIIUyDGU.svg) | ![Asignar SIIU y DGU](/images/modelosUML/CdU/DetallarCasosDeUso/TecnicoCalidad/AsignarSIIUyDGU.svg) |
+| ![Asignar Valores](/images/modelosUML/CdU/Individuales/AsignarValores.svg) | ![Asignar Valores](/images/modelosUML/CdU/DetallarCasosDeUso/TecnicoCalidad/AsignarValores.svg) |
 | ![Validar Cumplimiento](/images/modelosUML/CdU/Individuales/ValidarMemoriaTitulacion.svg) | ![Validar Cumplimiento](/images/modelosUML/CdU/DetallarCasosDeUso/Conjunto/ValidarMemoria.svg) |
+| ![Validar Datos](/images/modelosUML/CdU/Individuales/ValidarDatos.svg) | ![Validar Datos](/images/modelosUML/CdU/DetallarCasosDeUso/RRHH/ValidarDatos.svg) |
 
-### Consulta de Datos
+## 🔍 Consulta de Información
 
-| **Caso de Uso**   | **Detalle**    |                                      
-|-------------------|----------------|
+| **Caso de Uso**        | **Detalle**    |
+|------------------------|----------------|
 | ![Claustro Docente](/images/modelosUML/CdU/Individuales/ClaustroDocente.svg) | ![Claustro Docente](/images/modelosUML/CdU/DetallarCasosDeUso/Conjunto/ConsultarClaustroDocente.svg) |
 | ![Consultar Profesor](/images/modelosUML/CdU/Individuales/ConsultarProfesor.svg) | ![Consultar Profesor](/images/modelosUML/CdU/DetallarCasosDeUso/Conjunto/ConsultarAsignacion.svg) |
 | ![Consultar Varios](/images/modelosUML/CdU/Individuales/ConsultarVarios.svg) | ![Consultar Varios](/images/modelosUML/CdU/DetallarCasosDeUso/Profesores/ConsultarAsignacionFiltros.svg) |
 | ![Consultar Datos Personales](/images/modelosUML/CdU/Individuales/ConsultarDatosPersonales.svg) | ![Consultar Datos Personales](/images/modelosUML/CdU/DetallarCasosDeUso/Profesores/ConsultarValores.svg) |
 
-### Introducción de Datos
+## 📝 Gestión de Datos
 
-| **Caso de Uso**    | **Detalle**  |
-|--------------------|--------------|
-| ![Introducir Datos Laborales](/images/modelosUML/CdU/Individuales/IntroducirDatosLaborales.svg) | ![Introducir Datos Laborales](/images/modelosUML/CdU/DetallarCasosDeUso/RRHH/IntroducirDatosLaborales.svg) |
+| **Caso de Uso**        | **Detalle**    |
+|------------------------|----------------|
 | ![Introducir Datos Académicos](/images/modelosUML/CdU/Individuales/IntroducirDatosAcademicos.svg) | ![Introducir Datos Académicos](/images/modelosUML/CdU/DetallarCasosDeUso/Profesores/IntroducirDatosAcademicos.svg) |
+| ![Introducir Datos Laborales](/images/modelosUML/CdU/Individuales/IntroducirDatosLaborales.svg) | ![Introducir Datos Laborales](/images/modelosUML/CdU/DetallarCasosDeUso/RRHH/IntroducirDatosLaborales.svg) |
+| ![Modificar Datos](/images/modelosUML/CdU/Individuales/ModificarDatos.svg) | ![Modificar Datos](/images/modelosUML/CdU/DetallarCasosDeUso/RRHH/ModificarDatos.svg) |
 
-
-## 📚 Gestión de Carga Docente
-
-### Revisión de Cumplimiento
-
-| **Caso de Uso**     | **Detalle**   |   
-|---------------------|---------------|
-| ![Revisar Listado Profesores](/images/modelosUML/CdU/Individuales/RevisarListadoProfesores.svg) | ![Revisar Listado Profesores](/images/modelosUML/CdU/DetallarCasosDeUso/Conjunto/RevisarProfesores.svg) |
-
-### Asignaciones
-
-| **Caso de Uso**    | **Detalle**   |
-|--------------------|---------------|
-| ![Asignar Carga](/images/modelosUML/CdU/Individuales/AsignarCargaDocente.svg) | ![Asignar Carga](/images/modelosUML/CdU/DetallarCasosDeUso/Ordenacion/AsignarCargaDocente.svg) |
-| ![Asignar Valores](/images/modelosUML/CdU/Individuales/AsignarValores.svg) | ![Asignar Valores](/images/modelosUML/CdU/DetallarCasosDeUso/TecnicoCalidad/AsignarValores.svg) |
-| ![Asignar SIIU y DGU](/images/modelosUML/CdU/Individuales/AsignarSIIUyDGU.svg) | ![Asignar SIIU y DGU](/images/modelosUML/CdU/DetallarCasosDeUso/TecnicoCalidad/AsignarSIIUyDGU.svg) |
-
-
-## 📊 Generación de Indicadores e Informes
+## 📊 Indicadores y Reportes
 
 | **Caso de Uso**        | **Detalle**    |
 |------------------------|----------------|

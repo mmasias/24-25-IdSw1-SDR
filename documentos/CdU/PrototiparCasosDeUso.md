@@ -23,55 +23,46 @@ Debido a que este proyecto tiene direfentes actores, en primer lugar se mostrara
 
 A continuación se presentan los casos de uso prototipados.
 
-### 📂 Gestión de Datos del Profesorado
-
-#### Modificación y Validación
-
-| **Caso de Uso**  | **Prototipo**        |
-|------------------|--------------------|
-| ![](/images/modelosUML/CdU/Individuales/ModificarDatos.svg)            | ![ModificarDatosProfesorado](/images/Prototipar/ModificacionDatosProfesorado.png) |
-| ![](/images/modelosUML/CdU/Individuales/ValidarDatos.svg)              | ![ValidarDatosProfesorado](/images/Prototipar/ValidacionDatosProfesorado.png)     |
-| ![](/images/modelosUML/CdU/Individuales/ValidarMemoriaTitulacion.svg)  | ![ValidaciónMemoria](/images/Prototipar/ValidaciónCumplimientoMemoria.png)        |
-
-#### Consulta de Datos
-
-| **Caso de Uso**   | **Prototipo**    |                                      
-|-------------------|----------------|
-| ![](/images/modelosUML/CdU/Individuales/ClaustroDocente.svg)           |         ![ClaustroDocente](/images/Prototipar/ConsultarClaustroDocente.png)                    |
-| ![](/images/modelosUML/CdU/Individuales/ConsultarProfesor.svg)         | ![ConsultaAsignacionDocenteProfesor](/images/Prototipar/ConsultaAsignaciónDocenteProfesor.png) |
-| ![](/images/modelosUML/CdU/Individuales/ConsultarVarios.svg)           | ![ConsultarAsignacionDocente](/images/Prototipar/AsignaciónDocenteTitulacion.png)              |
-| ![](/images/modelosUML/CdU/Individuales/ConsultarDatosPersonales.svg)  | ![ConsultarDatosyContrato](/images/Prototipar/DatosContratoPersonales.png)                     |
-
-#### Introducción de Datos
-
-| **Caso de Uso**    | **Prototipo**  |
-|--------------------|--------------|
-| ![](/images/modelosUML/CdU/Individuales/IntroducirDatosLaborales.svg)  | ![IntroducirDatos](/images/Prototipar/DatosLaborales.png)                                      |
-| ![](/images/modelosUML/CdU/Individuales/IntroducirDatosAcademicos.svg) | ![DatosAcademicos](/images/Prototipar/DatosAcademicos.png)                                     |
-
----
-
 ### 📚 Gestión de Carga Docente
 
-#### Revisión de Cumplimiento
-
-| **Caso de Uso**     | **Prototipo**   |   
-|---------------------|---------------|
-| ![](/images/modelosUML/CdU/Individuales/RevisarListadoProfesores.svg)  | ![RevisarCargaProfesoresNoAjustada](/images/Prototipar/RevisionCargaDocente.png)               |
-
-#### Asignaciones
-
-| **Caso de Uso**    | **Prototipo**   |
-|--------------------|---------------|
-| ![](/images/modelosUML/CdU/Individuales/AsignarCargaDocente.svg)       | ![AsignacionAsignaturasProfesor](/images/Prototipar/AsignacióndeCargaDocente.png)              |
-| ![](/images/modelosUML/CdU/Individuales/AsignarValores.svg)            |    ![AsignarValores](/images/Prototipar/AsignarValores.png)                                    |
-| ![](/images/modelosUML/CdU/Individuales/AsignarSIIUyDGU.svg)           |              ![AsignarSIIU](/images/Prototipar/AsignarSIIU.png)                                |
+| **Caso de Uso**        | **Detalle**    |
+|------------------------|----------------|
+| ![](/images/modelosUML/CdU/Individuales/AsignarCargaDocente.svg) | ![AsignacionAsignaturasProfesor](/images/Prototipar/AsignacióndeCargaDocente.png) |
 
 ---
 
-### 📊 Generación de Indicadores e Informes
+### ✅ Validación y Cumpimiento
 
-| **Caso de Uso**        | **Prototipo**    |
+| **Caso de Uso**        | **Detalle**    |
 |------------------------|----------------|
-| ![](/images/modelosUML/CdU/Individuales/EmitirInforme.svg)             | ![Emitir Informe](/images/Prototipar/EmitirInformeProfesorado.png)                             |
-| ![](/images/modelosUML/CdU/Individuales/ObtenerIndicadores.svg)        | ![Obtener indicadores](/images/Prototipar/IndicadoresSistemaGestion.png)                       |
+| ![](/images/modelosUML/CdU/Individuales/AsignarSIIUyDGU.svg) | ![AsignarSIIUyDGU](/images/Prototipar/AsignarSIIU.png)   |
+| ![](/images/modelosUML/CdU/Individuales/AsignarValores.svg)  | ![AsignarValores](/images/Prototipar/AsignarValores.png) |
+
+---
+
+### 🔍 Consulta de Información
+
+| **Caso de Uso**        | **Detalle**    |
+|------------------------|----------------|
+| ![](/images/modelosUML/CdU/Individuales/ClaustroDocente.svg)          | ![ClaustroDocente](/images/Prototipar/ConsultarClaustroDocente.png)            |
+| ![](/images/modelosUML/CdU/Individuales/ConsultarProfesor.svg)        | ![ConsultarProfesor](/images/Prototipar/ConsultaAsignaciónDocenteProfesor.png) |
+| ![](/images/modelosUML/CdU/Individuales/ConsultarVarios.svg)          | ![ConsultarVarios](/images/Prototipar/AsignaciónDocenteTitulacion.png)         |
+| ![](/images/modelosUML/CdU/Individuales/ConsultarDatosPersonales.svg) | ![ConsultarDatosPersonales](/images/Prototipar/DatosContratoPersonales.png)    |
+
+---
+
+### 📝 Gestión de Datos
+
+| **Caso de Uso**        | **Detalle**    |
+|------------------------|----------------|
+| ![](/images/modelosUML/CdU/Individuales/IntroducirDatosAcademicos.svg) | ![IntroducirDatosAcademicos](/images/Prototipar/DatosAcademicos.png)   |
+| ![](/images/modelosUML/CdU/Individuales/IntroducirDatosLaborales.svg)  | ![IntroducirDatosLaborales](/images/Prototipar/DatosLaborales.png)     |
+| ![](/images/modelosUML/CdU/Individuales/ModificarDatos.svg)            | ![ModificarDatos](/images/Prototipar/ModificacionDatosProfesorado.png) |
+
+---
+
+### 📊 Indicadores y Reportes
+
+| **Caso de Uso**        | **Detalle**    |
+|------------------------|----------------|
+| ![](/images/modelosUML/CdU/Individuales/EmitirInforme.svg) | ![EmitirInforme](/images/Prototipar/EmitirInformeProfesorado.png) |

@@ -7,10 +7,6 @@
 
 El objetivo de este paso es **estructurar el modelo de los casos de uso** siguiendo las [pautas teóricas](https://github.com/mmasias/IdSw1/blob/main/temario/contenidos/eCdU.md) de la asignatura para reducir redundancias, identificar funcionalidades compartidas y opcionales, y aplicar las relaciones de inclusión/extensión según las pautas establecidas. 
 
-## Modelo de Clases y Relaciones
-
-![Diagrama de Clases](/images/modelosUML/MdD/DiagramaClases.svg)
-
 ## Añadir `Include` y `Extend`
 
 |Include|Extend
