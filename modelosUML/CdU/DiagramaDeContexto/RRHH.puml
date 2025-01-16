@@ -9,34 +9,34 @@ state "DATOS_LABORALES" as Lab
 [*] --> NoAuth
 
 NoAuth --> Menu
-    note on link
-        Iniciar sesión
-    end note
+note on link
+    Iniciar sesión
+end note
 
 Menu --> Acad
-    note on link
-        Consultar Asignación por Profesor
-    end note
+note on link
+    Consultar Asignación por Profesor
+    Modificar Datos del Profesorado
+end note
 
 Menu --> Pers
-    note on link
-        Consultar Claustro Docente
-    end note
+note on link
+    Consultar Claustro Docente
+end note
 
 Menu --> Lab
-    note on link
-        Introducir Datos Laborales
-        Modificar Datos del Profesorado
-    end note
+note on link
+    Introducir Datos Laborales
+end note
 
 Acad --> Acad
-    note on link
-        Validar Datos del Profesorado
-    end note
+note on link
+    Validar Datos del Profesorado
+end note
 
 Pers --> Pers
-    note on link
-        Revisar Profesores con Carga no ajustada
-    end note
+note on link
+    Revisar Profesores con Carga no ajustada
+end note
 
 @enduml

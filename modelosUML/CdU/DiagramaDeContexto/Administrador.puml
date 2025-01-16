@@ -11,52 +11,52 @@ state "ASIGNACIONES" as Asig
 [*] --> NoAuth
 
 NoAuth --> Menu
-    note on link
-        Iniciar sesión
-    end note
+note on link
+    Iniciar sesión
+end note
 
 Menu --> Acad
-    note on link
-        Consultar Asignación por Profesor
-    end note
+note on link
+    Consultar Asignación por Profesor
+    Modificar Datos del Profesorado
+end note
 
 Menu --> Pers
-    note on link
-        Consultar Claustro Docente
-        Asignar Carga Docente
-        Asignar Información SIIU/DGU
-    end note
+note on link
+    Consultar Claustro Docente
+    Asignar Carga Docente
+    Asignar Información SIIU/DGU
+end note
 
 Menu --> Lab
-    note on link
-        Introducir Datos Laborales
-        Modificar Datos del Profesorado
-    end note
+note on link
+    Introducir Datos Laborales
+end note
 
 Menu --> Cons
-    note on link
-        Emitir Informe
-    end note
+note on link
+    Emitir Informe
+end note
 
 Menu --> Asig
-    note on link
-        Asignar Valores en Memoria
-    end note
+note on link
+    Asignar Valores en Memoria
+end note
 
 Acad --> Acad
-    note on link
-        Validar Datos del Profesorado
-    end note
+note on link
+    Validar Datos del Profesorado
+end note
 
 Cons --> Cons
-    note on link
-        Validar Cumplimiento de Memoria
-        Obtener Indicadores
-    end note
+note on link
+    Validar Cumplimiento de Memoria
+    Obtener Indicadores
+end note
 
 Pers --> Pers
-    note on link
-        Revisar Profesores con Carga no ajustada
-    end note
+note on link
+    Revisar Profesores con Carga no ajustada
+end note
 
 @enduml

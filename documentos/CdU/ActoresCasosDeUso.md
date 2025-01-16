@@ -18,10 +18,10 @@ El objetivo de este paso es **encontrar actores y casos de uso** siguiendo las [
 
 | Caso de Uso                                                                         | Profesores | RRHH | Ordenación | Técnico Calidad | Administrador |
 |-------------------------------------------------------------------------------------|------------|------|------------|-----------------|---------------|
-| **Iniciar Sesión** en la plataforma                                                 | ✅         | ✅  | ✅         | ✅              | ✅           |
+| **Iniciar Sesión**                                                                  | ✅         | ✅  | ✅         | ✅              | ✅           |
 | **Introducir** Datos Académicos                                                     | ✅         |      |            |                 |               |
-| **Consultar** valores asignados de Contrato y otros Datos Personales                | ✅         |      |            |                 |               |
-| **Consultar** Asignación Docente (por titulación, curso y semestre)                 | ✅         |      |            |                 |               |
+| **Consultar** Datos Personales                                                      | ✅         |      |            |                 |               |
+| **Consultar** Asignación Docente                                                    | ✅         |      |            |                 |               |
 | **Validar** los Datos introducidos por el Profesorado                               |            | ✅   |            |                 | ✅            |
 | **Modificar** los Datos introducidos por el Profesorado                             |            | ✅   |            |                 | ✅            |
 | **Introducir** Datos Laborales                                                      |            | ✅   |            |                 | ✅            |
