@@ -13,6 +13,8 @@
 
 ![](./prototipoLogin/prototipoLogin.png)
 
+[Ver Detallado](../detalladoCasosDeUso/README.md/#DetalladoLogin)
+
 ## Menú Principal
 
 ![](./prototipadoMenuPrincipal/prototipoMenuPrincipal.png)

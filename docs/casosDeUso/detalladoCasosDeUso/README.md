@@ -9,6 +9,8 @@
 
 ## Diagrama Detallado de Manejo de Sesión
 
+<a name="DetalladoLogin"></a>
+
 ### Detallado del Login
 
 ![](./detalladoManejoSesion/detalladoLogin.svg)
