@@ -7,6 +7,10 @@
 
 ## Detallado de Casos de Uso
 
+[![](https://img.shields.io/badge/-Manejo_de_Sesión-FFF?style=flat&logo=openstreetmap&logoColor=black)](#DetalladoManejoSesion) [![](https://img.shields.io/badge/-Menú_Principal-FFF?style=flat&logo=openstreetmap&logoColor=black)](#DetalladoMenuPrincipal) [![](https://img.shields.io/badge/-Grupos-FFF?style=flat&logo=openstreetmap&logoColor=black)](#Grupos) [![](https://img.shields.io/badge/-Auditoría-FFF?style=flat&logo=openstreetmap&logoColor=black)](#Auditoria) [![](https://img.shields.io/badge/-Mensajes-FFF?style=flat&logo=openstreetmap&logoColor=black)](#Mensajes) [![](https://img.shields.io/badge/-Usuarios-FFF?style=flat&logo=openstreetmap&logoColor=black)](#Usuarios) [![](https://img.shields.io/badge/-Notificaciones-FFF?style=flat&logo=openstreetmap&logoColor=black)](#DetalladoNotificaciones)
+
+<a name="DetalladoManejoSesion"></a>
+
 ## Diagrama Detallado de Manejo de Sesión
 
 <a name="DetalladoLogin"></a>
@@ -30,6 +34,8 @@
 ![](./detalladoAbrirMenuPrincipal/detalladoAbrirMenuPrincipal.svg)
 
 [Ver Prototipo](../prototipos/README.md/#PrototipoMenuPrincipal)
+
+<a name="Grupos"></a>
 
 ## Diagrama Detallado de Grupos
 
@@ -65,6 +71,8 @@
 
 [Ver Prototipo](../prototipos/README.md/#PrototipoBorrarGrupo)
 
+<a name="Auditoria"></a>
+
 ## Diagrama Detallado de Auditoría
 
 <a name="DetalladoListarAcciones"></a>
@@ -90,6 +98,8 @@
 ![](./detalladoAuditoria/detalladoDescargarDocumento.svg)
 
 [Ver Prototipo](../prototipos/README.md/#PrototipoDescargarAuditoria)
+
+<a name="Mensajes"></a>
 
 ## Diagrama Detallado de Envío de Mensajes
 
@@ -138,6 +148,8 @@
 ![](./detalladoDescargarInformeEnvio/detalladoDescargarInforme.svg)
 
 [Ver Prototipo](../prototipos/README.md/#PrototipoDescargarInforme)
+
+<a name="Usuarios"></a>
 
 ## Detallado de Usuarios de tipo Gestor
 
