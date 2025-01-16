@@ -113,7 +113,7 @@
 
 ![](./detalladoUsuarios/detalladoActualizarUsuarioDestinatario.svg)
 
-### Detallado de Borar Usuario de tipo Destinatario
+### Detallado de Borrar Usuario de tipo Destinatario
 
 ![](./detalladoUsuarios/detalladoBorrarUsuarioDestinatario.svg)
 
@@ -126,6 +126,8 @@
 ### Detallado de Envío de Notificaciones al Remitente
 
 ![](./detalladoNotificaciones/detalladoEnvioNotificacionesRemitente.svg)
+
+[Ver Prototipo](../prototipos/README.md/#PrototipoNotificaciones)
 
 ### Detallado de Envío de Notificaciones al Destinatario
 

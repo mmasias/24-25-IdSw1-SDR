@@ -97,6 +97,8 @@
 
 ## Notificaciones
 
+<a name="PrototipoListarNotificaciones"></a>
+
 ### Listar Notificaciones
 
 ![](./prototipadoNotificaciones/listarNotificaciones.png)
