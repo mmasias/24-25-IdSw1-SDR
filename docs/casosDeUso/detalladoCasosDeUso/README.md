@@ -121,17 +121,23 @@
 
 ![](./detalladoVisualizacionConfirmacion/detalladoListarMensajes.svg)
 
-<a name="DetalladoListarMensajes"></a>
+[Ver Prototipo](../prototipos/README.md/#PrototipoListarMensajes)
+
+<a name="DetalladoLecturaYConfirmacionDocumentos"></a>
 
 ### Diagrama Detallado de Lectura y Confirmación de Documentos
 
 ![](./detalladoVisualizacionConfirmacion/detalladoVisualizacionConfirmacion.svg)
+
+[Ver Prototipo](../prototipos/README.md/#PrototipoConfirmarFirmar)
 
 <a name="DetalladoDescargarInforme"></a>
 
 ## Diagrama Detallado de Descargar Informe del Envío
 
 ![](./detalladoDescargarInformeEnvio/detalladoDescargarInforme.svg)
+
+[Ver Prototipo](../prototipos/README.md/#PrototipoDescargarInforme)
 
 ## Detallado de Usuarios de tipo Gestor
 
@@ -141,11 +147,15 @@
 
 ![](./detalladoUsuarios/detalladoCrearUsuarioGestor.svg)
 
+[Ver Prototipo](../prototipos/README.md/#PrototipoCrearUsuario)
+
 <a name="DetalladoActualizarUsuarioGestor"></a>
 
 ### Detallado de Actualizar Usuario de tipo Gestor
 
 ![](./detalladoUsuarios/detalladoActualizarUsuarioGestor.svg)
+
+[Ver Prototipo](../prototipos/README.md/#PrototipoActualizarUsuario)
 
 <a name="DetalladoBorrarUsuarioGestor"></a>
 
@@ -153,11 +163,15 @@
 
 ![](./detalladoUsuarios/detalladoBorrarUsuarioGestor.svg)
 
+[Ver Prototipo](../prototipos/README.md/#PrototipoBorrarUsuario)
+
 <a name="DetalladoListarUsuarioGestor"></a>
 
 ### Detallado de Listar Usuarios de tipo Gestor
 
 ![](./detalladoUsuarios/detalladoListarUsuarioGestor.svg)
+
+[Ver Prototipo](../prototipos/README.md/#PrototipoListarUsuarios)
 
 ## Detallado de Usuarios de tipo Destinatario
 
@@ -167,11 +181,15 @@
 
 ![](./detalladoUsuarios/detalladoCrearUsuarioDestinatario.svg)
 
+[Ver Prototipo](../prototipos/README.md/#PrototipoCrearUsuario)
+
 <a name="DetalladoActualizarUsuarioDestinatario"></a>
 
 ### Detallado de Actualizar Usuario de tipo Destinatario
 
 ![](./detalladoUsuarios/detalladoActualizarUsuarioDestinatario.svg)
+
+[Ver Prototipo](../prototipos/README.md/#PrototipoActualizarUsuario)
 
 <a name="DetalladoBorrarUsuarioDestinatario"></a>
 
@@ -179,11 +197,15 @@
 
 ![](./detalladoUsuarios/detalladoBorrarUsuarioDestinatario.svg)
 
+[Ver Prototipo](../prototipos/README.md/#PrototipoBorrarUsuario)
+
 <a name="DetalladoListarUsuarioDestinatario"></a>
 
 ### Detallado de Listar Usuarios de tipo Destinatario
 
 ![](./detalladoUsuarios/detalladoListarUsuarioDestinatario.svg)
+
+[Ver Prototipo](../prototipos/README.md/#PrototipoListarUsuarios)
 
 <a name="DetalladoNotificaciones"></a>
 
@@ -198,6 +220,8 @@
 ### Detallado de Envío de Notificaciones al Destinatario
 
 ## ![](./detalladoNotificaciones/detalladoEnvioNotificacionesDestinatario.svg)
+
+[Ver Prototipo](../prototipos/README.md/#PrototipoListarNotificaciones)
 
 | [![](https://img.shields.io/badge/-Inicio-FFF?style=flat&logo=Emlakjet&logoColor=black)](/README.md) [![](https://img.shields.io/badge/-Modelo_de_Dominio-FFF?style=flat&logo=LiveChat&logoColor=black)](/docs/modeloDeDominio/) [![](https://img.shields.io/badge/-Actores-FFF?style=flat&logo=openstreetmap&logoColor=black)](/docs/casosDeUso/actores/README.md/) [![](https://img.shields.io/badge/-Casos_De_Uso-FFF?style=flat&logo=openstreetmap&logoColor=black)](/docs/casosDeUso/diagramaCasosDeUso/README.md/) [![](https://img.shields.io/badge/-Detallado_Casos_De_Uso-FFF?style=flat&logo=openstreetmap&logoColor=black)](/docs/casosDeUso/detalladoCasosDeUso/README.md) [![](https://img.shields.io/badge/-Diagrama_De_Contexto-FFF?style=flat&logo=openstreetmap&logoColor=black)](/docs/casosDeUso/diagramaDeContexto/README.md) [![](https://img.shields.io/badge/-Prototipos-FFF?style=flat&logo=openstreetmap&logoColor=black)](/docs/casosDeUso/prototipos/README.md) [![](https://img.shields.io/badge/-Sesiones_de_Requisitado-FFF?style=flat&logo=Proton&logoColor=black)](/docs/sesiones/) [![](https://img.shields.io/badge/-Recursos_Adicionales-FFF?style=flat&logo=Proton&logoColor=black)](/docs/recursos/) |
 | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
