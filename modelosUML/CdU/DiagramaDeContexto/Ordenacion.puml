@@ -1,39 +1,57 @@
 @startuml
-
 state "NO_AUTENTICADO" as NoAuth
 state "MENU_PRINCIPAL" as Menu
-state "DATOS_ACADEMICOS" as Acad
-state "PERSONAL_DOCENTE" as Pers
-state "CONSULTAS_Y_REPORTES" as Cons
+state "GESTION_CARGA_DOCENTE" as Car
+state "VALIDACION_Y_CUMPLIMIENTO" as Val
+state "CONSULTA_DE_INFORMACION" as Inf
 
 [*] --> NoAuth
 
 NoAuth --> Menu
-    note on link
-        Iniciar sesión
-    end note
+note on link
+    Iniciar sesión
+end note
 
-Menu --> Acad
-    note on link
-        Consultar Asignación por Profesor
-    end note
+Menu --> Car
+note on link
+  Asignar Carga Docente
+end note
 
-Menu --> Pers
-    note on link
-        Consultar Claustro Docente
-        Asignar Carga Docente
-    end note
+Menu --> Val
 
-Menu --> Cons
+Menu --> Inf
+note on link
+  Consultar Claustro
+  Consultar Asignación por Profesor
+end note
 
-Cons --> Cons
-    note on link
-        Validar Cumplimiento de Memoria
-    end note
+Car --> Car
+note on link
+  Revisar Profesores con Carga no ajustada
+end note
 
-Pers --> Pers
-    note on link
-        Revisar Profesores con Carga no ajustada
-    end note
+Val --> Val
+note on link
+  Validar Cumplimiento de Memoria
+end note
 
+Car --> Menu
+note on link
+    Volver al menú
+end note
+
+Val --> Menu
+note on link
+    Volver al menú
+end note
+
+Inf --> Menu
+note on link
+    Volver al menú
+end note
+
+Menu --> NoAuth
+note on link
+    Cerrar sesión
+end note
 @enduml

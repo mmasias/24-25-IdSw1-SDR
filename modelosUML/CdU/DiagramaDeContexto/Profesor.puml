@@ -1,26 +1,39 @@
 @startuml
-
 state "NO_AUTENTICADO" as NoAuth
 state "MENU_PRINCIPAL" as Menu
-state "DATOS_ACADEMICOS" as Acad
-state "CONSULTAS_Y_REPORTES" as Cons
+state "GESTION_DATOS" as Dat
+state "CONSULTA_DE_INFORMACION" as Inf
 
 [*] --> NoAuth
 
 NoAuth --> Menu
-    note on link
-        Iniciar sesión
-    end note
+note on link
+    Iniciar sesión
+end note
 
-Menu --> Acad
-    note on link
-        Introducir Datos Académicos
-        Consultar Asignación Docente
-    end note
+Menu --> Dat
+note on link
+  Introducir Datos Académicos
+end note
 
-Menu --> Cons
-    note on link
-       Consultar Datos Personales
-    end note
+Menu --> Inf
+note on link
+  Consultar Asignación Docente
+  Consultar Datos Personales
+end note
 
+Dat --> Menu
+note on link
+    Volver al menú
+end note
+
+Inf --> Menu
+note on link
+    Volver al menú
+end note
+
+Menu --> NoAuth
+note on link
+    Cerrar sesión
+end note
 @enduml

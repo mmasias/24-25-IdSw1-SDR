@@ -1,12 +1,11 @@
 @startuml
-
 state "NO_AUTENTICADO" as NoAuth
 state "MENU_PRINCIPAL" as Menu
-state "DATOS_ACADEMICOS" as Acad
-state "PERSONAL_DOCENTE" as Pers
-state "DATOS_LABORALES" as Lab
-state "CONSULTAS_Y_REPORTES" as Cons
-state "ASIGNACIONES" as Asig
+state "GESTION_CARGA_DOCENTE" as Car
+state "GESTION_DATOS" as Dat
+state "VALIDACION_Y_CUMPLIMIENTO" as Val
+state "CONSULTA_DE_INFORMACION" as Inf
+state "INDICADORES_Y_REPORTES" as Ind
 
 [*] --> NoAuth
 
@@ -15,48 +14,77 @@ note on link
     Iniciar sesión
 end note
 
-Menu --> Acad
+Menu --> Car
 note on link
-    Consultar Asignación por Profesor
-    Modificar Datos del Profesorado
+  Asignar Carga Docente
 end note
 
-Menu --> Pers
+Menu --> Dat
 note on link
-    Consultar Claustro Docente
-    Asignar Carga Docente
-    Asignar Información SIIU/DGU
+  Introducir Datos Laborales
+  Modificar Datos del Profesorado
 end note
 
-Menu --> Lab
+Menu --> Val
 note on link
-    Introducir Datos Laborales
+  Asignar Información SIIU/DGU
+  Asignar Valores en Memoria
 end note
 
-Menu --> Cons
+Menu --> Inf
 note on link
-    Emitir Informe
+  Consultar Claustro
+  Consultar Asignación por Profesor
 end note
 
-Menu --> Asig
+Menu --> Ind
 note on link
-    Asignar Valores en Memoria
+  Emitir Informe
 end note
 
-Acad --> Acad
+Car --> Car
 note on link
-    Validar Datos del Profesorado
+  Revisar Profesores con Carga no ajustada
 end note
 
-Cons --> Cons
+Val --> Val
 note on link
-    Validar Cumplimiento de Memoria
-    Obtener Indicadores
+  Validar Datos del Profesorado
+  Validar Cumplimiento de Memoria
 end note
 
-Pers --> Pers
+Ind --> Ind
 note on link
-    Revisar Profesores con Carga no ajustada
+  Obtener Indicadores
 end note
 
+Car --> Menu
+note on link
+    Volver al menú
+end note
+
+Dat --> Menu
+note on link
+    Volver al menú
+end note
+
+Val --> Menu
+note on link
+    Volver al menú
+end note
+
+Inf --> Menu
+note on link
+    Volver al menú
+end note
+
+Ind --> Menu
+note on link
+    Volver al menú
+end note
+
+Menu --> NoAuth
+note on link
+    Cerrar sesión
+end note
 @enduml
