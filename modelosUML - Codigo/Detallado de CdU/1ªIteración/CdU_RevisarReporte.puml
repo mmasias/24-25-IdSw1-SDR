@@ -1,0 +1,59 @@
+@startuml Revisar_Reportes_De_Contenido
+skinparam {
+    NoteBackgroundColor #whiteSmoke
+    NoteBorderColor #black
+    linetype polyline
+}
+
+skinparam state {
+    BackgroundColor #whiteSmoke
+}
+
+hide empty description
+
+state startState as "Panel de Reportes"
+state endState as "Reporte Gestionado"
+
+startState --> ProcesoDeRevisiónReporte
+
+state ProcesoDeRevisiónReporte as "Revisión de Reportes" {
+    state SeleccionarReporte as " "
+    state ValidarReporte <<choice>>
+    state TomarAcción as " "
+    state NotificarReporteResuelto as " "
+    state ReporteGestionado as " "
+
+    SeleccionarReporte -[#green]-> ValidarReporte
+    note on link
+        <b>Moderador selecciona un reporte</b>
+        * Sistema muestra detalles del contenido reportado
+    end note
+
+    ValidarReporte -[#green]-> TomarAcción
+    note on link
+        <b>Reporte válido</b>
+        * Moderador decide qué acción tomar
+    end note
+
+    ValidarReporte -[#red]-> SeleccionarReporte
+    note on link
+        <b>Reporte inválido o sin fundamento</b>
+        * Moderador descarta el reporte
+    end note
+
+    TomarAcción -[#green]-> NotificarReporteResuelto
+    note on link
+        <b>Acción tomada</b>
+        * Ejemplo: eliminar contenido o advertir al usuario
+    end note
+
+    NotificarReporteResuelto -[#green]-> ReporteGestionado
+    note on link
+        <b>Reporte marcado como resuelto</b>
+        * Sistema registra la resolución y notifica al usuario reportante
+    end note
+}
+
+ProcesoDeRevisiónReporte --> endState
+
+@enduml
