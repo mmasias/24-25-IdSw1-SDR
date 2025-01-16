@@ -36,7 +36,7 @@ El objetivo de este paso es **encontrar actores y casos de uso** siguiendo las [
 
 | Profesor | Recursos Humanos | Ordenación | Técnico de calidad |
 |----------|------------------|------------|--------------------|
-| ![Diagrama Profesor](/images/modelosUML/CdU/EstructurarCasosDeUso/profesor.svg) | ![Diagrama Recursos Humanos](/images/modelosUML/CdU/EstructurarCasosDeUso/RRHH.svg) | ![Diagrama Ordenacion](/images/modelosUML/CdU/EstructurarCasosDeUso/Ordenacion.svg) | ![Diagrama Tecnico de Calidad](/images/modelosUML/CdU/EstructurarCasosDeUso/TecnicoCalidad.svg) |
+| ![Diagrama Profesor](/images/modelosUML/CdU/PorActor/profesor.svg) | ![Diagrama Recursos Humanos](/images/modelosUML/CdU/PorActor/RRHH.svg) | ![Diagrama Ordenacion](/images/modelosUML/CdU/PorActor/Ordenacion.svg) | ![Diagrama Tecnico de Calidad](/images/modelosUML/CdU/PorActor/TecnicoCalidad.svg) |
 
 ## 🗺️ Diagramas de Contexto
 

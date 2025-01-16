@@ -1,0 +1,21 @@
+@startuml
+left to right direction
+actor TecnicoCalidad
+package "Sistema Académico" {
+    usecase "Asignar Valores en Memoria" as AsignarMemoria
+    usecase "Asignar Información SIIU/DGU" as AsignarInformacion
+    usecase "Obtener Indicadores" as ObtenerIndicadores
+    usecase "Consultar Claustro Docente" as ConsultarClaustro
+    usecase "Consultar Asignacion por Profesor" as ConsultarAsignacion
+    usecase "Validar Cumplimiento de Memoria" as ValidarCumplimiento
+    usecase "Emitir Informe" as EmitirInforme
+}
+TecnicoCalidad --> AsignarMemoria
+TecnicoCalidad --> AsignarInformacion
+TecnicoCalidad --> ObtenerIndicadores
+TecnicoCalidad --> EmitirInforme
+TecnicoCalidad --> ConsultarClaustro
+TecnicoCalidad --> ConsultarAsignacion
+TecnicoCalidad --> ValidarCumplimiento
+
+@enduml

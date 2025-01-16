@@ -1,0 +1,16 @@
+@startuml
+left to right direction
+actor Ordenacion
+package "Sistema Académico" {
+    usecase "Revisar Profesores con Carga no ajustada" as RevisarCarga
+    usecase "Consultar Claustro Docente" as ConsultarClaustro
+    usecase "Consultar Asignación por Profesor" as ConsultarAsignacion
+    usecase "Validar Cumplimiento de Memoria" as ValidarCumplimiento
+    usecase "Asignar Carga Docente" as AsignarCarga
+}
+Ordenacion --> RevisarCarga
+Ordenacion --> ConsultarClaustro
+Ordenacion --> AsignarCarga
+Ordenacion --> ValidarCumplimiento
+Ordenacion --> ConsultarAsignacion
+@enduml
