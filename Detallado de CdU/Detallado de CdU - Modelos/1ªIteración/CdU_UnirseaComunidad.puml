@@ -1,0 +1,72 @@
+@startuml Unirse_Comunidad
+skinparam {
+    NoteBackgroundColor #whiteSmoke
+    NoteBorderColor #black
+    linetype polyline
+}
+
+skinparam state {
+    BackgroundColor #whiteSmoke
+    ArrowColor black
+}
+
+hide empty description
+
+
+state PantallaPrincipal as "Pantalla Principal"{
+    state Comunidades as "Comunidades"
+    Comunidades -down-> PantallaComunidad
+    note on link
+        <b>Usuario selecciona una comunidad</b>
+        * Puede buscar por nombre o categoría
+    end note
+}
+
+
+state PantallaComunidad as "Pantalla Comunidad" {
+    state VerDetallesComunidad as "Ver Detalles"
+    note right of VerDetallesComunidad
+        <b>Se muestra:</b>
+        * Nombre, descripción, y reglas
+        * Número de miembros
+    end note
+
+    state UnirseComunidad as "Unirse a Comunidad"
+    state ConfirmarUnión <<choice>>
+    state ExitoUnion as "Union Exitosa"
+
+    VerDetallesComunidad -down-> UnirseComunidad
+    note on link
+        <b>Usuario pulsa 'Unirse'</b>
+    end note
+
+    UnirseComunidad -down-> ConfirmarUnión
+    note on link
+        <b>Sistema valida:</b>
+        * Usuario no es miembro
+        * Comunidad acepta nuevos miembros
+    end note
+
+    ConfirmarUnión -down-> ExitoUnion : Union permitida
+    note on link
+        <b>Resultado:</b>
+        * Usuario añadido como miembro
+        * Pantalla principal de la comunidad desbloqueada
+    end note
+
+    ConfirmarUnión -up-> VerDetallesComunidad : Union denegada
+    note on link
+        <b>Errores posibles:</b>
+        * Usuario ya es miembro
+        * Comunidad cerrada temporalmente
+    end note
+
+    ExitoUnion -up-> Comunidades
+    note on link 
+        <b>Vista actualizada:</b>
+        * Comunidad ahora aparece en la lista de comunidades del usuario
+    end note
+}
+
+
+@enduml
