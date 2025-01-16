@@ -15,9 +15,9 @@
 
 [Ver Detallado](../detalladoCasosDeUso/README.md/#DetalladoLogin)
 
-## Menú Principal
-
 <a name="PrototipoMenuPrincipal"></a>
+
+## Menú Principal
 
 ![](./prototipadoMenuPrincipal/prototipoMenuPrincipal.png)
 
@@ -59,9 +59,13 @@
 
 ## Grupos
 
+<a name="PrototipoListarGrupos"></a>
+
 ### Listar Grupos
 
 ![](./prototipadoGrupos/prototipoListarGrupos.png)
+
+[Ver Detallado](../detalladoCasosDeUso/README.md/#DetalladoListarGrupo)
 
 ### Crear Grupo
 
@@ -75,9 +79,13 @@
 
 ![](./prototipadoGrupos/prototipoVerGrupo.png)
 
+<a name="PrototipoActualizarGrupo"></a>
+
 ### Actualizar Grupo
 
 ![](./prototipadoGrupos/prototipoActualizarGrupo.png)
+
+[Ver Detallado](../detalladoCasosDeUso/README.md/#DetalladoActualizarGrupo)
 
 #### Actualizar Grupo - Añadir Miembro
 
@@ -87,21 +95,37 @@
 
 ![](./prototipadoGrupos/prototipoActualizarGrupoEliminarMiembro.png)
 
+<a name="PrototipoBorrarGrupo"></a>
+
 ### Borrar Grupo
 
 ![](./prototipadoGrupos/prototipoBorrarGrupo.png)
 
+[Ver Detallado](../detalladoCasosDeUso/README.md/#DetalladoBorrarGrupo)
+
 ## Acciones
 
+<a name="PrototipoListarAcciones"></a>
+
 ![](./prototipoAcciones/prototipoListarAcciones.png)
+
+[Ver Detallado](../detalladoCasosDeUso/README.md/#DetalladoListarAcciones)
+
+<a name="PrototipoAcciones"></a>
 
 ### Detallar Acciones
 
 ![](./prototipoAcciones/prototipoDetallarAccion.png)
 
+[Ver Detallado](../detalladoCasosDeUso/README.md/#DetalladoVerAccion)
+
+<a name="PrototipoDescargarAuditoria"></a>
+
 ### Descargar PDF Informe de Acciones
 
 ![](./prototipoAcciones/prototipoDescargaPDFAuditoria.png)
+
+[Ver Detallado](../detalladoCasosDeUso/README.md/#DetalladoDescargarAuditoria)
 
 ## Notificaciones
 

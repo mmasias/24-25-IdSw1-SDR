@@ -17,15 +17,15 @@
 
 [Ver Prototipo](../prototipos/README.md/#PrototipoLogin)
 
-### Detallado del Logout
-
 <a name="DetalladoLogout"></a>
+
+### Detallado del Logout
 
 ![](./detalladoManejoSesion/detalladoLogout.svg)
 
-## Diagrama Detallado de Abrir Menú Principal
-
 <a name="DetalladoMenuPrincipal"></a>
+
+## Diagrama Detallado de Abrir Menú Principal
 
 ![](./detalladoAbrirMenuPrincipal/detalladoAbrirMenuPrincipal.svg)
 
@@ -33,147 +33,159 @@
 
 ## Diagrama Detallado de Grupos
 
-### Detallado de Crear Grupo
-
 <a name="DetalladoCrearGrupo"></a>
+
+### Detallado de Crear Grupo
 
 ![](./detalladoGrupos/detalladoCrearGrupos.svg)
 
-[Ver Prototipo](../prototipos//README.md/#PrototipoCrearGrupo)
-
-### Detallado de Listar Grupos
+[Ver Prototipo](../prototipos/README.md/#PrototipoCrearGrupo)
 
 <a name="DetalladoListarGrupo"></a>
 
+### Detallado de Listar Grupos
+
 ![](./detalladoGrupos/detalladoListarGrupos.svg)
 
-### Detallado de Actualizar Grupo
+[Ver Prototipo](../prototipos/README.md/#PrototipoListarGrupos)
 
 <a name="DetalladoActualizarGrupo"></a>
 
+### Detallado de Actualizar Grupo
+
 ![](./detalladoGrupos/detalladoActualizarGrupos.svg)
 
-### Detallado de Borrar Grupo
+[Ver Prototipo](../prototipos/README.md/#PrototipoActualizarGrupo)
 
 <a name="DetalladoBorrarGrupo"></a>
 
+### Detallado de Borrar Grupo
+
 ![](./detalladoGrupos/detalladoBorrarGrupos.svg)
+
+[Ver Prototipo](../prototipos/README.md/#PrototipoBorrarGrupo)
 
 ## Diagrama Detallado de Auditoría
 
-### Detallado de Listar Acciones
-
 <a name="DetalladoListarAcciones"></a>
+
+### Detallado de Listar Acciones
 
 ![](./detalladoAuditoria/detalladoListarAcciones.svg)
 
-### Detallado de Ver Acción
+[Ver Prototipo](../prototipos/README.md/#PrototipoListarAcciones)
 
 <a name="DetalladoVerAccion"></a>
 
+### Detallado de Ver Acción
+
 ![](./detalladoAuditoria/detalladoVerAccion.svg)
 
-### Detallado de Descargar Documento de Auditoría
+[Ver Prototipo](../prototipos/README.md/#PrototipoAcciones)
 
 <a name="DetalladoDescargarAuditoria"></a>
 
+### Detallado de Descargar Documento de Auditoría
+
 ![](./detalladoAuditoria/detalladoDescargarDocumento.svg)
+
+[Ver Prototipo](../prototipos/README.md/#PrototipoDescargarAuditoria)
 
 ## Diagrama Detallado de Envío de Mensajes
 
-### Detallado de Crear un Mensaje
-
 <a name="DetalladoCrearMensaje"></a>
+
+### Detallado de Crear un Mensaje
 
 ![](./detalladoEnvioMensajes/detalladoCreacionMensaje.svg)
 
-### Detallado de Actualizar un Mensaje
-
 <a name="DetalladoActualizarMensaje"></a>
+
+### Detallado de Actualizar un Mensaje
 
 ![](./detalladoEnvioMensajes/detalladoActualizarMensaje.svg)
 
-### Detallado de Envío de un Mensaje
-
 <a name="DetalladoEnviarMensaje"></a>
+
+### Detallado de Envío de un Mensaje
 
 ![](./detalladoEnvioMensajes/detalladoEnvioMensaje.svg)
 
 ## Detallado de Mensajes Recibidos
 
-### Diagrama Detallado de Listar Mensajes
-
 <a name="DetalladoListarMensajes"></a>
+
+### Diagrama Detallado de Listar Mensajes
 
 ![](./detalladoVisualizacionConfirmacion/detalladoListarMensajes.svg)
 
-### Diagrama Detallado de Lectura y Confirmación de Documentos
-
 <a name="DetalladoListarMensajes"></a>
+
+### Diagrama Detallado de Lectura y Confirmación de Documentos
 
 ![](./detalladoVisualizacionConfirmacion/detalladoVisualizacionConfirmacion.svg)
 
-## Diagrama Detallado de Descargar Informe del Envío
-
 <a name="DetalladoDescargarInforme"></a>
+
+## Diagrama Detallado de Descargar Informe del Envío
 
 ![](./detalladoDescargarInformeEnvio/detalladoDescargarInforme.svg)
 
 ## Detallado de Usuarios de tipo Gestor
 
-### Detallado de Crear Usuario de tipo Gestor
-
 <a name="DetalladoCrearUsuarioGestor"></a>
+
+### Detallado de Crear Usuario de tipo Gestor
 
 ![](./detalladoUsuarios/detalladoCrearUsuarioGestor.svg)
 
-### Detallado de Actualizar Usuario de tipo Gestor
-
 <a name="DetalladoActualizarUsuarioGestor"></a>
+
+### Detallado de Actualizar Usuario de tipo Gestor
 
 ![](./detalladoUsuarios/detalladoActualizarUsuarioGestor.svg)
 
-### Detallado de Borrar Usuario de tipo Gestor
-
 <a name="DetalladoBorrarUsuarioGestor"></a>
+
+### Detallado de Borrar Usuario de tipo Gestor
 
 ![](./detalladoUsuarios/detalladoBorrarUsuarioGestor.svg)
 
-### Detallado de Listar Usuarios de tipo Gestor
-
 <a name="DetalladoListarUsuarioGestor"></a>
+
+### Detallado de Listar Usuarios de tipo Gestor
 
 ![](./detalladoUsuarios/detalladoListarUsuarioGestor.svg)
 
 ## Detallado de Usuarios de tipo Destinatario
 
-### Detallado de Crear Usuario de tipo Destinatario
-
 <a name="DetalladoCrearUsuarioDestinatario"></a>
+
+### Detallado de Crear Usuario de tipo Destinatario
 
 ![](./detalladoUsuarios/detalladoCrearUsuarioDestinatario.svg)
 
-### Detallado de Actualizar Usuario de tipo Destinatario
-
 <a name="DetalladoActualizarUsuarioDestinatario"></a>
+
+### Detallado de Actualizar Usuario de tipo Destinatario
 
 ![](./detalladoUsuarios/detalladoActualizarUsuarioDestinatario.svg)
 
-### Detallado de Borrar Usuario de tipo Destinatario
-
 <a name="DetalladoBorrarUsuarioDestinatario"></a>
+
+### Detallado de Borrar Usuario de tipo Destinatario
 
 ![](./detalladoUsuarios/detalladoBorrarUsuarioDestinatario.svg)
 
-### Detallado de Listar Usuarios de tipo Destinatario
-
 <a name="DetalladoListarUsuarioDestinatario"></a>
+
+### Detallado de Listar Usuarios de tipo Destinatario
 
 ![](./detalladoUsuarios/detalladoListarUsuarioDestinatario.svg)
 
-## Detallado de Notificaciones
-
 <a name="DetalladoNotificaciones"></a>
+
+## Detallado de Notificaciones
 
 ### Detallado de Envío de Notificaciones al Remitente
 
