@@ -1,0 +1,54 @@
+@startuml Reportar_Post
+skinparam {
+    NoteBackgroundColor #whiteSmoke
+    NoteBorderColor #black
+    linetype polyline
+}
+
+skinparam state {
+    BackgroundColor #whiteSmoke
+}
+
+hide empty description
+
+state startState as "Vista del Post"
+state endState as "Post Reportado"
+
+startState --> ProcesoDeReporte
+
+state ProcesoDeReporte as "Reporte de Post" {
+    state SeleccionarMotivo as " "
+    state ValidarMotivo <<choice>>
+    state ConfirmarReporte as " "
+    state ReporteCompletado as " "
+
+    SeleccionarMotivo -[#green]-> ValidarMotivo
+    note on link
+        <b>Usuario selecciona un motivo para el reporte</b>
+        * Ejemplo: contenido ofensivo, spam, etc.
+    end note
+
+    ValidarMotivo -[#green]-> ConfirmarReporte
+    note on link
+        <b>Motivo válido para reportar</b>
+        * Sistema verifica que el motivo cumple con las políticas
+    end note
+
+    ValidarMotivo -[#red]-> SeleccionarMotivo
+    note on link
+        <b>Motivo no válido</b>
+        * Usuario regresa a seleccionar un motivo
+    end note
+
+    ConfirmarReporte -[#green]-> ReporteCompletado
+    note on link
+        <b>Reporte enviado exitosamente</b>
+        * Sistema registra el reporte para revisión
+    end note
+}
+
+state ReporteCompletado as " "
+
+ProcesoDeReporte --> endState
+
+@enduml
