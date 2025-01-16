@@ -13,6 +13,11 @@ state startState as "LISTANDO_USUARIOS"
 state endState as "LISTANDO_USUARIOS"
 
 startState --> BorrarUsuario
+note on link
+    <b>Usuario Solicita</b>
+    * Borrar Usuario De Tipo Destinatario
+end note
+
 BorrarUsuario --> listarUsuarios
 BorrarUsuario -[#red]-> endState
 listarUsuarios --> endState
@@ -20,13 +25,11 @@ listarUsuarios --> endState
 state BorrarUsuario {
     state solicitudBorrarUsuario as " "
     state revisionBorrarUsuario <<choice>>
-    state usuarioSolicita as "<b>Usuario Solicita:</b> \n Borrar usuario"
-
-    usuarioSolicita --> solicitudBorrarUsuario
+    
     solicitudBorrarUsuario --> revisionBorrarUsuario
     note on link
         <b>Sistema permite</b>
-        * Borrar usuario
+        * Borrar Usuario De Tipo Destinatario
     end note
 
     revisionBorrarUsuario -[#red]-> [*]

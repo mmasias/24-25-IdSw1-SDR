@@ -30,11 +30,6 @@ state CrearGrupo {
 
     solicitudFiltros --> envioFiltros
     note on link
-        <b>Sistema Solicita</b>
-        * Nombre del grupo
-        * Usuarios a incorporar al grupo
-        * Estado del grupo
-
         <b>Sistema Permite</b>
         * Crear grupo
     end note

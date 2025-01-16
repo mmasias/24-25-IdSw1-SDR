@@ -14,6 +14,11 @@ state endState as "LEYENDO_MENSAJE"
 
 
 startState --> LeerMensaje
+note on link
+    <b>Usuario Solicita</b>
+    * Leer Mensaje
+end note
+
 LeerMensaje --> endState
 LeerMensaje -[#red]-> endState
 
@@ -22,9 +27,6 @@ state LeerMensaje {
     state solicitudAbrirDocumento as " "
     state solicitudConfirmacionLecturaFirma as " "
     state revisionConfirmacionLecturaFirma <<choice>>
-    state usuarioSolicita as "<b>Usuario Solicita:</b> \n Leer Mensaje"
-    
-    usuarioSolicita --> solicitudAbrirMensaje
     solicitudAbrirMensaje --> solicitudAbrirDocumento
     note on link
         <b>Sistema Permite</b>
@@ -44,7 +46,7 @@ state LeerMensaje {
     solicitudConfirmacionLecturaFirma --> revisionConfirmacionLecturaFirma
     note on link
       <b>Opcional</b>
-          <b>Sistema Solicita</b>
+          <b>Sistema Permite</b>
           * Confirmar Lectura
           * Confirmar Firma
           

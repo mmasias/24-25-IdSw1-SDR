@@ -1,0 +1,48 @@
+@startuml borrar_usuario
+
+skinparam {
+  NoteBackgroundColor #whiteSmoke
+  ArrowColor #green
+  NoteBorderColor #green
+  linetype polyline
+}
+
+hide empty description
+
+state startState as "LISTANDO_USUARIOS"
+state endState as "LISTANDO_USUARIOS"
+
+startState --> BorrarUsuario
+note on link
+    <b>Usuario Solicita</b>
+    * Borrar Usuario De Tipo Gestor
+end note
+
+BorrarUsuario --> listarUsuarios
+BorrarUsuario -[#red]-> endState
+listarUsuarios --> endState
+
+state BorrarUsuario {
+    state solicitudBorrarUsuario as " "
+    state revisionBorrarUsuario <<choice>>
+    
+    solicitudBorrarUsuario --> revisionBorrarUsuario
+    note on link
+        <b>Sistema permite</b>
+        * Borrar Usuario De Tipo Gestor
+    end note
+
+    revisionBorrarUsuario -[#red]-> [*]
+    note on link
+        <b>Sistema Muestra</b>
+        Mensaje de error
+    end note
+
+   revisionBorrarUsuario --> [*]
+    note on link
+        <b>Sistema Muestra</b>
+        Usuario borrado correctamente
+    end note
+}
+
+@enduml

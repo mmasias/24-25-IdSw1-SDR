@@ -13,6 +13,11 @@ state startState as "LISTANDO_USUARIOS"
 state endState as "LISTANDO_USUARIOS"
 
 startState --> ActualizarUsuario
+note on link
+    <b>Usuario Solicita</b>
+    * Actualizar Usuario De Tipo Destinatario
+end note
+
 ActualizarUsuario --> listarUsuarios
 listarUsuarios --> endState
 ActualizarUsuario -[#red]-> endState
@@ -21,20 +26,11 @@ state ActualizarUsuario {
     state solicitudActualizarUsuario as " "
     state envioActualizarUsuario as " "
     state revisionActualizarUsuario <<choice>>
-    state usuarioSolicita as "<b>Usuario Solicita:</b> \n Actualizar usuario"
-
-    usuarioSolicita --> solicitudActualizarUsuario
+    
     solicitudActualizarUsuario --> envioActualizarUsuario
     note on link
-        <b>Sistema Solicita</b>
-        * Campos a actualizar
-        * <b>Campos:</b>
-            - Nombre del usuario
-            - Correo del usuario
-            - Contraseña del usuario
-
         <b>Sistema Permite</b>
-        * Actualizar usuario
+        * Actualizar Usuario De Tipo Destinatario
     end note
 
     envioActualizarUsuario --> revisionActualizarUsuario

@@ -1,4 +1,4 @@
-@startuml descargar_documento_auditoria
+@startuml listar_usuarios
 skinparam {
     NoteBackgroundColor #whiteSmoke
     ArrowColor #green
@@ -6,46 +6,51 @@ skinparam {
     linetype polyline
 }
 
-skinparam state {
-  BackgroundColor #whiteSmoke
-}
-
 hide empty description
 
-state startState as "VISTA_ACCION"
-state endState as "VISTA_ACCION"
+state startState as "MENU_PRINCIPAL"
+state endState as "LISTANDO_USUARIOS"
 
-startState --> DescargarDocumento
+startState --> ListarUsuarios
 note on link
     <b>Usuario Solicita</b>
-    * Descargar documento de auditoría
+    * Listar Usuarios De Tipo Destinatario
 end note
 
-DescargarDocumento --> endState
-DescargarDocumento  -[#red]-> endState
+ListarUsuarios --> endState
 
-state DescargarDocumento {
+ListarUsuarios -[#red]-> endState
+
+state ListarUsuarios {
     state solicitudFiltros as " "
     state envioFiltros as " "
     state revisionFiltrosEnviados <<choice>>
+    
+    [*] --> solicitudFiltros
+    note on link
+        <b>Sistema Muestra</b>
+        Lista de Usuarios De Tipo Destinatario
+    end note
 
+    solicitudFiltros -r-> [*]
+    
+  
     solicitudFiltros --> envioFiltros
     note on link
         <b>Sistema Permite</b>
-        * Descargar documento
+        * Filtrar Usuarios De Tipo Destinatario
     end note
 
     envioFiltros --> revisionFiltrosEnviados
     note on link
-        <b>Usuario introduce</b>
-        * Id de la reserva
-        * Fecha
-        * Tipo de documento
-        * Idioma
+        <b>Usuario Introduce</b>
+        * <b> Filtros opcionales </b>
+            - Términos de búsqueda
+            - Nombre del usuario
+            - Email del usuario
     end note
 
     revisionFiltrosEnviados -[#red]-> [*]
-
     note on link
         <b>Sistema Muestra</b>
         Mensaje de error
@@ -54,8 +59,8 @@ state DescargarDocumento {
     revisionFiltrosEnviados --> [*]
     note on link
         <b>Sistema Muestra</b>
-        Documento de auditoría
+        Lista de usuarios filtrada
+
     end note
 }
-
 @enduml

@@ -12,6 +12,11 @@ state startState as "MENU_PRINCIPAL"
 state endState as "LISTANDO_MENSAJES"
 
 startState --> ListarMensajes
+note on link
+    <b>Usuario Solicita</b>
+    * Listar Mensajes
+end note
+
 
 ListarMensajes--> endState
 ListarMensajes-[#red]-> endState
@@ -20,9 +25,6 @@ state ListarMensajes{
     state solicitudFiltros as " "
     state envioFiltros as " "
     state revisionFiltrosEnviados <<choice>>
-    state usuarioSolicita as "<b>Usuario Solicita:</b> \n Listar mensajes"
-
-    usuarioSolicita -> solicitudFiltros
     [*] --> solicitudFiltros
     note on link
         <b>Sistema Muestra</b>
@@ -32,15 +34,9 @@ state ListarMensajes{
     solicitudFiltros -r-> [*]
 
     solicitudFiltros --> envioFiltros
-    note on link
-        <b>Sistema Solicita</b>
-        * <b> Filtros opcionales </b>
-            - Términos de búsqueda
-            - Rango de fechas
-            - Usuario
-            - Estado
+    note on link  
         <b>Sistema Permite</b>
-        * Listar mensajes
+        * Filtrar Mensajes 
     end note
 
     envioFiltros --> revisionFiltrosEnviados

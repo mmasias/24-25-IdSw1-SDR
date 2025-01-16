@@ -24,7 +24,7 @@ state EnviarNotificacion{
     [*] --> [*]
   note on link
   <b>Sistema permite</b>
-  Enviar notificación de acción pendiente al remitente y al destinatario
+  Enviar notificación de acción pendiente al remitente 
   end note
 }
 
