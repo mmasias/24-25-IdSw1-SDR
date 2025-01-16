@@ -1,0 +1,60 @@
+@startuml Ver_Post
+skinparam {
+    NoteBackgroundColor #whiteSmoke
+    NoteBorderColor #black
+    linetype polyline
+}
+
+skinparam state {
+    BackgroundColor #whiteSmoke
+}
+
+hide empty description
+
+state startState as "Pantalla de Feed"
+state endState as "Pantalla de Post"
+
+startState --> VerPost
+
+state VerPost as "Ver Post" {
+    state CargarPost as " "
+    state MostrarPost <<choice>>
+    state MostrarComentarios as " "
+    state VerMásComentarios as " "
+
+    CargarPost -[#green]-> MostrarPost
+    note on link
+        <b>Sistema carga el post seleccionado</b>
+        * Texto del post
+        * Imagen o video (si aplica)
+        * Etiquetas
+        * Nombre del autor
+        * Fecha de publicación
+    end note
+
+    MostrarPost -[#green]-> MostrarComentarios
+    note on link
+        <b>Sistema muestra el post completo</b>
+        * Visualización del contenido
+        * Opciones de interacción: Me gusta, Comentar, Compartir
+    end note
+
+    MostrarPost -[#red]-> CargarPost
+    note on link
+        <b>Sistema muestra error si hay problemas cargando el post</b>
+    end note
+
+    MostrarComentarios -[#green]-> VerMásComentarios
+    note on link
+        <b>Usuario puede ver más comentarios</b>
+    end note
+
+    VerMásComentarios -[#green]-> MostrarComentarios
+    note on link
+        <b>Más comentarios cargados</b>
+    end note
+}
+
+VerPost --> endState
+
+@enduml
