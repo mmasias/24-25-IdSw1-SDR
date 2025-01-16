@@ -3,8 +3,8 @@ actor "Destinatario" as Destinatario
 actor "Gestor" as Usuario
 actor "Administrador" as Administrador
 
-Destinatario <|-- Usuario : Puede crear destinatarios y enviar documentos
-Usuario <|-- Administrador : Puede crear gestores y destinatarios, y enviar documentos
+Destinatario --|> Usuario : Puede crear destinatarios y enviar documentos
+Usuario --|> Administrador : Puede crear gestores y destinatarios, y enviar documentos
 
 note right of Administrador
     Puede hacer todo lo que hace un Gestor

@@ -1,0 +1,42 @@
+@startuml
+
+state Destinatario
+state Remitente
+state startDestinatario  <<start>>
+startDestinatario -r-> Destinatario
+startDestinatario --> Remitente
+state RastreadorDocumento
+state ActualizandoEstadoMensaje
+state DocumentosFaltantes <<Choice>>
+state ActualizandoEstadoMensaje {
+
+state Pendiente
+state Leído
+state Atrasado
+state Firmado
+state Creado
+state Enviado
+
+}
+
+
+Destinatario -r-> RastreadorDocumento : Accede al documento
+Remitente --> ActualizandoEstadoMensaje : Crea un mensaje
+RastreadorDocumento --> DocumentosFaltantes
+DocumentosFaltantes ---> RastreadorDocumento : Aún quedan documentos por leer
+DocumentosFaltantes -r-> ActualizandoEstadoMensaje
+
+
+Creado --> Enviado
+Enviado --> Pendiente
+Pendiente --> Leído
+Pendiente --> Firmado
+Pendiente --> Atrasado
+Atrasado --> Leído
+Atrasado --> Firmado
+
+Leído --> [*]
+Firmado --> [*]
+
+
+@enduml

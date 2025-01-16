@@ -25,6 +25,12 @@ A continuación se muestra el diagrama de objetos del proyecto
 
 A continuación se muestra el diagrama de estados del proyecto
 
+### Diagrama de Estados del mensaje
+
+<p align="center">
+  <img src="/docs/modeloDeDominio/diagramaDeEstados/TerceraIteracion/Mensaje/diagramaEstadosMensaje.svg">
+</p>
+
 ### Diagrama de Estados del receptor
 
 <p align="center">
