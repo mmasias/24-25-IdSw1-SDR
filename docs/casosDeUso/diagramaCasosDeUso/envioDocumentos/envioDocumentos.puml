@@ -10,7 +10,7 @@ package "Envío de Mensajes" {
     usecase "Actualizar Mensaje" as ED4
 }
 
-Administrador --|> Usuario
+Administrador <|-- Usuario
 Usuario --> ED1
 Usuario --> ED2
 Usuario --> ED3

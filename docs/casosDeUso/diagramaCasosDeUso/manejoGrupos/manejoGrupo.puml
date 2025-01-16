@@ -10,7 +10,7 @@ package "CRUD de Grupos" {
     usecase "Borrar Grupo" as CC4
 }
 
-Administrador --|> Usuario
+Administrador <|-- Usuario
 Usuario --> CC1
 Usuario --> CC2
 Usuario --> CC3

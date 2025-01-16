@@ -7,6 +7,6 @@ package "Menú Principal" {
     usecase "Abrir Menú Principal" as MS1
 }
 
-Administrador --|> Usuario
+Administrador <|-- Usuario
 Usuario --> MS1
 @enduml

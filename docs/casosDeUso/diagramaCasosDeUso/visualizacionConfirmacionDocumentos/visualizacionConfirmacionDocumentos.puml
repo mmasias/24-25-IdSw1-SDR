@@ -11,8 +11,8 @@ package "Visualización y Confirmación de Mensajes" {
     VCD4 .> VCD2 : <<include>>
 }
 
-Destinatario <|- Usuario
-Usuario <|- Administrador
+Destinatario -|> Usuario
+Usuario -|> Administrador
 Destinatario -u-> VCD1
 Destinatario --> VCD2
 Destinatario --> VCD3

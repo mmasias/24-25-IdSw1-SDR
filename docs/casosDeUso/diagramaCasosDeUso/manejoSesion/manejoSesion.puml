@@ -9,7 +9,7 @@ package "Manejo de Sesión" {
     usecase "Cerrar Sesión" as MS2
 }
 
-Administrador --|> Usuario
+Administrador <|-- Usuario
 Usuario <|- Destinatario
 Usuario --> MS1
 Usuario --> MS2

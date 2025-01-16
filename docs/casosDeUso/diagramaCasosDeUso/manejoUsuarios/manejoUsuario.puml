@@ -17,7 +17,7 @@ note left of crud
     enviar mensajes.
 end note
 
-Administrador --|> Usuario
+Administrador <|-- Usuario
 Usuario --> CU1
 Usuario --> CU2
 Usuario --> CU3
