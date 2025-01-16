@@ -1,0 +1,42 @@
+@startuml
+
+state "NO_AUTENTICADO" as NoAuth
+state "MENU_PRINCIPAL" as Menu
+state "DATOS_ACADEMICOS" as Acad
+state "PERSONAL_DOCENTE" as Pers
+state "DATOS_LABORALES" as Lab
+
+[*] --> NoAuth
+
+NoAuth --> Menu
+    note on link
+        Iniciar sesión
+    end note
+
+Menu --> Acad
+    note on link
+        Consultar Asignación por Profesor
+    end note
+
+Menu --> Pers
+    note on link
+        Consultar Claustro Docente
+    end note
+
+Menu --> Lab
+    note on link
+        Introducir Datos Laborales
+        Modificar Datos del Profesorado
+    end note
+
+Acad --> Acad
+    note on link
+        Validar Datos del Profesorado
+    end note
+
+Pers --> Pers
+    note on link
+        Revisar Profesores con Carga no ajustada
+    end note
+
+@enduml

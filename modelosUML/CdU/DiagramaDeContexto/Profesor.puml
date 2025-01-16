@@ -1,0 +1,26 @@
+@startuml
+
+state "NO_AUTENTICADO" as NoAuth
+state "MENU_PRINCIPAL" as Menu
+state "DATOS_ACADEMICOS" as Acad
+state "CONSULTAS_Y_REPORTES" as Cons
+
+[*] --> NoAuth
+
+NoAuth --> Menu
+    note on link
+        Iniciar sesión
+    end note
+
+Menu --> Acad
+    note on link
+        Introducir Datos Académicos
+        Consultar Asignación Docente
+    end note
+
+Menu --> Cons
+    note on link
+       Consultar Datos Personales
+    end note
+
+@enduml
