@@ -41,7 +41,7 @@
 
 ![](./prototipoMensajes/prototipoMensajesRecibidos.png)
 
-[![](https://img.shields.io/badge/-Ver_Caso_de_Uso-FFF?style=flat&logo=openstreetmap&logoColor=black)](../diagramaCasosDeUso/README.md/#VisualizacionConfirmacion)
+[![](https://img.shields.io/badge/-Ver_Caso_de_Uso-FFF?style=flat&logo=openstreetmap&logoColor=black)](../diagramaCasosDeUso/README.md/#Mensajes)
 [![](https://img.shields.io/badge/-Ver_Detallado-FFF?style=flat&logo=openstreetmap&logoColor=black)](../detalladoCasosDeUso/README.md/#DetalladoListarMensajes)
 [![](https://img.shields.io/badge/-Navbar-FFF?style=flat&logo=openstreetmap&logoColor=black)](#Navbar)
 
@@ -49,7 +49,7 @@
 
 ![](./prototipoMensajes/prototipoVerMensaje.png)
 
-[![](https://img.shields.io/badge/-Ver_Caso_de_Uso-FFF?style=flat&logo=openstreetmap&logoColor=black)](../diagramaCasosDeUso/README.md/#VisualizacionConfirmacion)
+[![](https://img.shields.io/badge/-Ver_Caso_de_Uso-FFF?style=flat&logo=openstreetmap&logoColor=black)](../diagramaCasosDeUso/README.md/#Mensajes)
 [![](https://img.shields.io/badge/-Navbar-FFF?style=flat&logo=openstreetmap&logoColor=black)](#Navbar)
 
 #### Ver Adjunto en un Mensaje
@@ -57,6 +57,7 @@
 ![](./prototipoMensajes/prototipoAdjunto.png)
 
 [![](https://img.shields.io/badge/-Ver_Caso_de_Uso-FFF?style=flat&logo=openstreetmap&logoColor=black)](../diagramaCasosDeUso/README.md/#VisualizacionConfirmacion)
+[![](https://img.shields.io/badge/-Navbar-FFF?style=flat&logo=openstreetmap&logoColor=black)](#Navbar)
 
 <a name="PrototipoConfirmarFirmar"></a>
 
