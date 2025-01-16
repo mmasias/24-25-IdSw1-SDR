@@ -1,0 +1,63 @@
+@startuml Dar_Like_Post
+skinparam {
+    NoteBackgroundColor #whiteSmoke
+    NoteBorderColor #black
+    linetype polyline
+}
+
+skinparam state {
+    BackgroundColor #whiteSmoke
+    ArrowColor black
+}
+
+hide empty description
+
+
+state PantallaFeed as "Pantalla Feed"
+PantallaFeed -down-> VerPost
+    note on link
+        <b>Usuario selecciona un post</b>
+        * Se muestra el contenido completo
+    end note
+
+
+
+state PantallaPost {
+    note right of VerPost
+        <b>Se muestra:</b>
+        * Contenido del post
+        * Estado actual de los likes
+    end note
+
+    state PresionarLike as "Presionar Botón de Like"
+    state ValidarLike as "Validar Like"
+    state ActualizarLike as "Like Actualizado"
+
+
+    VerPost -down-> PresionarLike
+  
+
+    PresionarLike -down-> ValidarLike
+    note on link
+        <b>Sistema verifica:</b>
+        * Estado actual del like
+    end note
+
+    ValidarLike -down-> ActualizarLike
+
+ 
+    note on link
+        <b>Resultado:</b>
+        * Contador de likes incrementado o decrementado
+        * Botón cambia a estado "like" o "no like"
+    end note
+
+    ActualizarLike -up-> VerPost
+    note on link
+        <b>Vista del post actualizada</b>
+        * Estado reflejado
+    end note
+}
+
+
+@enduml
