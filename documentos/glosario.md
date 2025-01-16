@@ -72,7 +72,9 @@ Sistema de Información e Innovación Universitaria es una plataforma que recopi
 
 ### 👨‍🏫 DGU
 Dirección General de Universidades
+
 ---
+
 ### 🌍 Espacio Europeo de Educación Superior (EEES) 
 Iniciativa internacional que busca armonizar los sistemas de educación superior de los países europeos, facilitando la comparabilidad y compatibilidad de títulos académicos, la movilidad de estudiantes y profesores, y el reconocimiento de cualificaciones en toda Europa, creado a partir del Proceso de Bolonia (1999). Tiene como objetivos principales: Promover la calidad, la competitividad y la internacionalización de las universidades, implantar un sistema basado en tres ciclos de estudio: Grado, Máster y Doctorado; fomentar el uso de los créditos ECTS como medida estándar del trabajo académico e impulsar la empleabilidad y el aprendizaje permanente.
 
