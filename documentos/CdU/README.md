@@ -14,35 +14,6 @@ Este documento describe los casos de uso del **modelo de dominio**, enfocados en
 4. [Prototipar Casos de Uso](PrototiparCasosDeUso.md)
 5. [Estructurar el Modelo de Caso de Uso](EstructurarCasosDeUso.md)
 
-## 📊 **Diagramas de Casos de Uso**
-
-### Gestión de Datos del Profesorado
-
-| **Diagrama**                                                                            |
-|-----------------------------------------------------------------------------------------|
-| ![Gestión de Datos del Profesorado](/images/modelosUML/CdU/DatosProfesorado.svg)        |
-| [Ver código](/modelosUML/CdU/DatosProfesorado.puml)                                     |
-
----
-
-### Gestión de Carga docente
-
-| **Diagrama**                                                                            |
-|-----------------------------------------------------------------------------------------|
-| ![Gestión de Carga Docente](/images/modelosUML/CdU/CargaDocente.svg)                    |
-| [Ver código](/modelosUML/CdU/CargaDocente.puml)                                         |
-
----
-
-### Generación de Indicadores e Informes
-
-| **Diagrama**                                                                            |
-|-----------------------------------------------------------------------------------------|
-| ![Generación de Indicadores e Informes](/images/modelosUML/CdU/IndicadoresInformes.svg) |
-| [Ver código](/modelosUML/CdU/IndicadoresInformes.puml)                                  |
-
----
-
 ### 📖 **Glosario**
 
 Estas palabras tienen definiciones en el [Glosario](/documentos/glosario.md):
