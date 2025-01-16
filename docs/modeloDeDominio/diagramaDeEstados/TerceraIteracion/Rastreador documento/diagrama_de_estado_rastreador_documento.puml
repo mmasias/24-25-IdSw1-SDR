@@ -3,19 +3,23 @@
 state Destinatario
 state startDestinatario  <<start>>
 startDestinatario -r-> Destinatario
+Destinatario --> RastreadorDocumento : Accede al documento
 
 state RastreadorDocumento {
-  
-  ActualizandoEstadoMensaje --> AccediendoDocumento
-  AccediendoDocumento -r-> ActualizandoEstadoMensaje
-  
-  ActualizandoEstadoMensaje --> Pendiente
-  ActualizandoEstadoMensaje --> Leido
-  ActualizandoEstadoMensaje --> Atrasado
-  ActualizandoEstadoMensaje --> Firmado
+
+state Pendiente
+
+state Leído 
+
 }
 
-Destinatario -r-> ActualizandoEstadoMensaje
+Pendiente --> Leído
 
-RastreadorDocumento --> [*]
+Leído --> [*]
+
+note on link
+Al finalizar transiciona a la 
+actualización de los estados del mensaje.
+end note
+
 @enduml
