@@ -1,0 +1,54 @@
+@startuml Modificar_Datos_Usuario
+skinparam {
+    NoteBackgroundColor #whiteSmoke
+    NoteBorderColor #black
+    linetype polyline
+}
+
+skinparam state {
+    BackgroundColor #whiteSmoke
+}
+
+hide empty description
+
+state startState as "Perfil del Usuario"
+state endState as "Datos Modificados"
+
+startState --> ProcesoDeModificacion
+
+state ProcesoDeModificacion as "Modificación de Datos de Usuario" {
+    state SeleccionarDato as " "
+    state ValidarDato <<choice>>
+    state ConfirmarModificacion as " "
+    state ModificacionCompletada as " "
+
+    SeleccionarDato -[#green]-> ValidarDato
+    note on link
+        <b>Usuario selecciona un dato a modificar</b>
+        * Ejemplo: nombre, correo electrónico, contraseña
+    end note
+
+    ValidarDato -[#green]-> ConfirmarModificacion
+    note on link
+        <b>Dato válido para modificar</b>
+        * Sistema verifica formato y consistencia
+    end note
+
+    ValidarDato -[#red]-> SeleccionarDato
+    note on link
+        <b>Dato no válido</b>
+        * Usuario debe corregir el dato ingresado
+    end note
+
+    ConfirmarModificacion -[#green]-> ModificacionCompletada
+    note on link
+        <b>Dato modificado exitosamente</b>
+        * Sistema guarda los cambios realizados
+    end note
+}
+
+state ModificacionCompletada as " "
+
+ProcesoDeModificacion --> endState
+
+@enduml
