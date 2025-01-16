@@ -27,9 +27,9 @@
 ---
 ## 🛠️ ACTORES Y CASOS DE USO
 - [Actores](/Readmes/ActoresYCasosDeUsos.md#jerarqu%C3%ADa-de-actores-primarios)
-- [Casos de Uso Detallados](/Readmes/DetalladoDeCasosDeUso.md)
 - [Diagrama Casos de Uso](/Readmes/ActoresYCasosDeUsos.md#actores-primarios)
 - [Diagrama de Contexto](/Readmes/DiagramaDeContexto.md)
+- [Casos de Uso Detallados](/Readmes/DetalladoDeCasosDeUso.md)
 
 ---
 ## 📸 PROTOTIPOS
