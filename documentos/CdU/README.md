@@ -26,7 +26,7 @@ Este documento describe los casos de uso del **modelo de dominio**, enfocados en
 
 ### Diagrama de Contexto Ordenanción
 
-![](/images/modelosUML/CdU/DiagramaDeContexto/Ordenancion.svg)
+![](/images/modelosUML/CdU/DiagramaDeContexto/Ordenacion.svg)
 
 ### Diagrama de Contexto RRHH
 
