@@ -1,0 +1,48 @@
+@startuml Revisar_Comentarios
+skinparam {
+    NoteBackgroundColor #whiteSmoke
+    NoteBorderColor #black
+    linetype polyline
+}
+
+skinparam state {
+    BackgroundColor #whiteSmoke
+}
+
+hide empty description
+
+state startState as "Panel de Moderación"
+state endState as "Comentario Gestionado"
+
+startState --> ProcesoDeRevisiónComentarios
+
+state ProcesoDeRevisiónComentarios as "Revisión de Comentarios" {
+    state SeleccionarComentario as " "
+    state ValidarComentario <<choice>>
+    state AprobarComentario as " "
+    state EliminarComentario as " "
+    state ComentarioGestionado as " "
+
+    SeleccionarComentario -[#green]-> ValidarComentario
+    note on link
+        <b>Moderador selecciona un comentario</b>
+        * Sistema carga el contenido del comentario
+    end note
+
+    ValidarComentario -[#green]-> AprobarComentario
+    note on link
+        <b>Si comentario cumple las normas</b>
+        * Se aprueba y queda visible en la publicación
+    end note
+
+    ValidarComentario -[#red]-> EliminarComentario
+    note on link
+        <b>Si comentario viola las normas</b>
+        * Moderador decide eliminarlo
+    end note
+
+    AprobarComentario -[#green]-> ComentarioGestionado
+    EliminarComentario -[#red]-> ComentarioGestionado
+}
+
+ProcesoDeRevisiónComentarios --> endState
