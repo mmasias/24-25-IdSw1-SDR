@@ -4,14 +4,12 @@ left to right direction
 actor "Ordenación" as ord
 actor "Administrador" as admin
 
-package "Carga Docente" as cargaDocentePackage {
-    usecase "Asignar Carga" as asignarCarga
-    note top of asignarCarga
-        De asignaturas
-        a profesores
-    end note
-}
+usecase "Asignar Carga Docente" as asignarCarga
+note top of asignarCarga
+    De asignaturas
+    a profesores
+end note
 
-ord ---> asignarCarga
-admin ---> asignarCarga
+ord --> asignarCarga
+admin --> asignarCarga
 @enduml

@@ -11,24 +11,24 @@ El orden ha sido establecido por el cliente según la importancia y necesidad de
 ## 📋 **Casos de Uso y Priorización**
 
 
-| **#** | **Caso de Uso**                                    | **Prioridad** |  
-|-------|----------------------------------------------------|---------------|  
-| 1 | **Introducir** Datos Laborales                         |    🔴 Alta    |
-| 2 | **Asignar** Carga Docente                              |    🔴 Alta    |
-| 3 | **Revisar** Profesores con Carga no ajustada           |    🔴 Alta    |
-| 4 | **Validar** Cumplimiento de Memoria                    |    🔴 Alta    |
-| 5 | **Emitir** Informe                                     |    🔴 Alta    |
-| 6 | **Consultar** Asignación Docente                       |    🟠 Media   |
-| 7 | **Asignar** Valores en Memoria                         |    🟠 Media   |
-| 8 | **Obtener** Indicadores                                |    🟠 Media   |
-| 9 | **Modificar** Datos del Profesorado                    |    🟠 Media   |
-| 10 | **Validar** los Datos introducidos por el Profesorado |    🟠 Media   |
-| 11 | **Iniciar Sesión**                                    |    🟠Media    |
-| 12 | **Introducir** Datos Académicos                       |    🟢 Baja    |
-| 13 | **Asignar** Información SIIU/DGU                      |    🟢 Baja    |
-| 14 | **Consultar** Datos Personales                        |    🟢 Baja    |
-| 15 | **Consultar** Claustro Docente                        |    🟢 Baja    |
-| 16 | **Consultar** Asignación por Profesor                 |    🟢 Baja    |
+| **#** | **Caso de Uso**                          | **Prioridad** |  
+|-------|------------------------------------------|---------------|  
+| 1 | **Introducir** Datos Laborales               |    🔴 Alta    |
+| 2 | **Asignar** Carga Docente                    |    🔴 Alta    |
+| 3 | **Revisar** Profesores con Carga no ajustada |    🔴 Alta    |
+| 4 | **Validar** Cumplimiento de Memoria          |    🔴 Alta    |
+| 5 | **Emitir** Informe                           |    🔴 Alta    |
+| 6 | **Consultar** Asignación Docente             |    🟠 Media   |
+| 7 | **Asignar** Valores en Memoria               |    🟠 Media   |
+| 8 | **Obtener** Indicadores                      |    🟠 Media   |
+| 9 | **Modificar** Datos del Profesorado          |    🟠 Media   |
+| 10 | **Validar** Datos del Profesorado           |    🟠 Media   |
+| 11 | **Iniciar Sesión**                          |    🟠Media    |
+| 12 | **Introducir** Datos Académicos             |    🟢 Baja    |
+| 13 | **Asignar** Información SIIU/DGU            |    🟢 Baja    |
+| 14 | **Consultar** Datos Personales              |    🟢 Baja    |
+| 15 | **Consultar** Claustro Docente              |    🟢 Baja    |
+| 16 | **Consultar** Asignación por Profesor       |    🟢 Baja    |
  
 
 ---

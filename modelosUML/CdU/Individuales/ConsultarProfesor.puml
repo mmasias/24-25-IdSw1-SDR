@@ -1,21 +1,14 @@
 @startuml
 left to right direction
 
-actor "RRHH" as rrhh
 actor "Administrador" as admin
-actor "Ordenación" as ord
-actor "Técnico Calidad" as tec
 
-package "Asignacion Docente" as porProfPackage {
-    usecase "Consultar Asignación" as consProf
-    note top of consProf
-        Consultar asignación docente por
-        profesor (créditos y asignaturas)
-    end note
-}
+usecase "Consultar Asignación por Profesor" as consProf
+note top of consProf
+    Consultar asignación
+    docente por profesor
+    (créditos y asignaturas)
+end note
 
-rrhh --> consProf
 admin --> consProf
-ord --> consProf
-tec --> consProf
 @enduml

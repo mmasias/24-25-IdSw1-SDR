@@ -4,12 +4,10 @@ left to right direction
 actor "Técnico Calidad" as tec
 actor "Administrador" as admin
 
-package "Indicadores" as indicadores {
-    usecase "Obtener Indicadores" as obtenerIndicadores
-    note top of obtenerIndicadores
-        Para el Sistema de Gestión
-    end note
-}
+usecase "Obtener Indicadores" as obtenerIndicadores
+note top of obtenerIndicadores
+    Para el Sistema de Gestión
+end note
 
 tec --> obtenerIndicadores
 admin --> obtenerIndicadores

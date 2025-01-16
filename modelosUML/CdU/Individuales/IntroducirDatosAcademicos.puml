@@ -1,34 +1,16 @@
 @startuml
 left to right direction
 
-skinparam usecase {
-    FontSize 20
-}
-
 actor "Profesores" as prof
 
-package "Datos Académicos" as datosAcadPackage {
-    usecase "Introducir Datos Académicos" as datosAcad
+usecase "Introducir Datos Académicos" as datosAcad
+note top of datosAcad
+    Experiencia docente, profesional,
+    investigadora, sexenios, acreditaciones,
+    y movilidad y titulación profesional
+end note
 
-    package "Tipos Académicos" {
-        usecase "de Experiencia Docente" as expDoc
-        usecase "de Experiencia Profesional" as expProf
-        usecase "de Experiencia Investigadora" as expInv
-        usecase "de Sexenios" as sexenios
-        usecase "de Acreditaciones" as acred
-        usecase "de Movilidad" as mov
-        usecase "de Titulación Profesional" as titProf
-    }
-    note "Permitir heredar datos\ndel año anterior" as notaDatosAcad
-}
-
-datosAcad ..> expDoc
-datosAcad ..> expProf
-datosAcad ..> expInv
-datosAcad ..> sexenios
-datosAcad ..> acred
-datosAcad ..> mov
-datosAcad ..> titProf
+note "Permitir heredar datos\ndel año anterior" as notaDatosAcad
 
 prof --> datosAcad
 @enduml

@@ -4,10 +4,11 @@ left to right direction
 actor "RRHH" as rrhh
 actor "Administrador" as admin
 
-package "Gestión Datos" as gestDatosPackage {
-    usecase "Modificar Datos" as modDatos
-    note "Datos introducidos previamente\npor el profesorado" as notaGestDatos
-}
+usecase "Modificar Datos del Profesorado" as modDatos
+note top of modDatos
+    Datos introducidos previamente
+    por el profesorado
+end note
 
 rrhh --> modDatos
 admin --> modDatos

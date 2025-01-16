@@ -1,20 +1,12 @@
 @startuml
 left to right direction
 
-actor "Ordenación" as ord
 actor "Administrador" as admin
-actor "RRHH" as RRHH
-actor "Calidad" as calidad
 actor "Profesor" as profesor
 
-package "Iniciar Sesion" as inicioSesionPackage {
-    usecase "Iniciar Sesion" as inicioSesion
-}
+usecase "Iniciar Sesión" as inicioSesion
 
-ord --> inicioSesion
-admin ---> inicioSesion
-RRHH ---> inicioSesion
-calidad ---> inicioSesion
+admin --> inicioSesion
 profesor --> inicioSesion
 
 @enduml

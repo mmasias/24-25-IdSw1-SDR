@@ -1,31 +1,10 @@
 @startuml
 left to right direction
 
-skinparam usecase {
-    FontSize 20
-}
-
-skinparam nodesep 300
-
 actor "Técnico Calidad" as tec
 actor "Administrador" as admin
 
-package "SIIU y DGU" as SIIUyDGUPackage {
-    usecase "Asignar Valor de Información" as asignarValor
-
-    package "Tipos" {
-        usecase "a SIIU" as SIIU
-        usecase "a DGU" as DGU
-    }
-
-    usecase "del PDI" as PDI
-
-}
-
-asignarValor ..> SIIU
-asignarValor ..> DGU
-SIIU ..> PDI
-DGU ..> PDI
+usecase "Asignar Información SIIU/DGU" as asignarValor
 
 tec --> asignarValor
 admin --> asignarValor

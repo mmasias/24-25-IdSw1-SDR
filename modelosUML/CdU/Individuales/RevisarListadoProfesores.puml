@@ -5,14 +5,12 @@ actor "Ordenación" as ord
 actor "RRHH" as rrhh
 actor "Administrador" as admin
 
-package "Revisión" as revisionPackage {
-    usecase "Revisar Profesores" as revisarCarga
-    note top of revisarCarga
-        Revisar Listado de Profesores
-        cuya Carga Docente no se ajusta
-        a carga supuesta por contrato
-    end note
-}
+usecase "Revisar Profesores con Carga no ajustada" as revisarCarga
+note top of revisarCarga
+    Revisar Listado de Profesores
+    cuya Carga Docente no se ajusta
+    a carga supuesta por contrato
+end note
 
 ord --> revisarCarga
 rrhh --> revisarCarga

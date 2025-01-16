@@ -1,22 +1,14 @@
 @startuml
 left to right direction
 
-actor "RRHH" as rrhh
 actor "Administrador" as admin
-actor "Ordenación" as ord
-actor "Técnico Calidad" as tec
 
-package "Claustro Docente" as claustroPackage {
-    usecase "Consultar Claustro" as consClaustro
-    note top of consClaustro
-        Listado PDI asociado
-        a una titulación, anual,
-        por semestre
-    end note
-}
+usecase "Consultar Claustro" as consClaustro
+note top of consClaustro
+    Listado PDI asociado
+    a una titulación, anual,
+    por semestre
+end note
 
-rrhh --> consClaustro
 admin --> consClaustro
-ord --> consClaustro
-tec --> consClaustro
 @enduml

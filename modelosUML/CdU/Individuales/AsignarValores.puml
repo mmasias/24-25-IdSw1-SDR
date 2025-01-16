@@ -4,15 +4,13 @@ left to right direction
 actor "Técnico Calidad" as tec
 actor "Administrador" as admin
 
-package "Valores" as valoresPackage {
-    usecase "Asignar Valores" as asignarValores
-    note top of asignarValores
-        Consignados en Memoria
-        por Titulación
-    end note
+usecase "Asignar Valores en Memoria" as asignarValores
+note top of asignarValores
+    Valores consignados en
+    Memoria por Titulación
+end note
 
-    note "Permitir validar datos\ndel año anterior" as valoresDef
-}
+note "Permitir validar datos\ndel año anterior" as valoresDef
 
 tec ---> asignarValores
 admin ---> asignarValores

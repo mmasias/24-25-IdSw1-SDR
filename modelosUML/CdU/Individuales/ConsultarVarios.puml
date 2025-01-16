@@ -1,24 +1,14 @@
 @startuml
 left to right direction
 
-skinparam usecase {
-    FontSize 20
-}
-
-skinparam nodesep 160
-
 actor "Profesores" as prof
 
-package "Asignacion docente" as porVarPackage {
-    usecase "Consultar Asignación" as consAsig
-    usecase "por Titulación" as porTit
-    usecase "por Curso" as porCurso
-    usecase "por Semestre" as porSem
-}
-
-consAsig ..> porTit
-consAsig ..> porCurso
-consAsig ..> porSem
+usecase "Consultar Asignación Docente" as consAsig
+note top of consAsig
+    Consulta de sus asignaciones
+    docentes (por titulación,
+    por curso y por semestre) 
+end note
 
 prof --> consAsig
 @enduml
