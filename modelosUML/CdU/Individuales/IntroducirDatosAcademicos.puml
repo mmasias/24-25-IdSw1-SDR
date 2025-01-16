@@ -1,7 +1,7 @@
 @startuml
 left to right direction
 
-actor "Profesores" as prof
+actor "Profesor" as prof
 
 usecase "Introducir Datos Académicos" as datosAcad
 note top of datosAcad

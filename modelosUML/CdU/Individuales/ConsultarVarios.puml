@@ -1,7 +1,7 @@
 @startuml
 left to right direction
 
-actor "Profesores" as prof
+actor "Profesor" as prof
 
 usecase "Consultar Asignación Docente" as consAsig
 note top of consAsig
