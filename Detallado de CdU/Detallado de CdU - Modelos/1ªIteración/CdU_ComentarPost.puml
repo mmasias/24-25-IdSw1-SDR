@@ -1,0 +1,65 @@
+@startuml Dejar_Comentario_Post
+skinparam {
+    NoteBackgroundColor #whiteSmoke
+    NoteBorderColor #black
+    linetype polyline
+}
+
+skinparam state {
+    BackgroundColor #whiteSmoke
+    ArrowColor black
+}
+
+hide empty description
+
+state PantallaFeed
+state VerPost as "Ver Post"
+PantallaFeed -down-> VerPost
+VerPost -down-> PantallaPost
+note on link
+<b>Usuario selecciona un post</b>
+   * Se muestra el contenido completo
+   * Se despliegan los comentarios
+    end note
+
+
+
+state PantallaPost {
+    state VerComentarios as "Ver Comentarios"
+    state EscribirComentario as "Escribir Comentario"
+    state ValidarComentario <<choice>>
+    state PublicarComentario as "Comentario Publicado"
+
+    VerComentarios -down-> EscribirComentario
+    note on link
+        <b>Usuario decide comentar</b>
+        * Campo de texto activado
+    end note
+
+    EscribirComentario -down-> ValidarComentario
+    note on link
+        <b>Usuario escribe un comentario</b>
+    end note
+
+    ValidarComentario -down-> PublicarComentario : Comentario válido
+    note on link
+        <b>Sistema valida:</b>
+        * No vacío
+        * Dentro del límite de caracteres
+        * Cumple políticas
+    end note
+
+    ValidarComentario -up-> EscribirComentario : Comentario inválido
+    note on link
+        <b>Errores:</b>
+        * Campo vacío
+        * Texto demasiado largo
+        * Lenguaje inapropiado
+    end note
+
+    
+}
+
+PublicarComentario -up-> VerPost
+
+@enduml
