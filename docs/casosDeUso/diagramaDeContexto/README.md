@@ -15,13 +15,19 @@
 
 ![](./DiagramaDeContextoManejoMensajes/diagramaContextoMensajes.svg)
 
+> AVISO: Este diagrama también lo tiene el Gestor
+
 #### Manejo de Grupos
 
 ![](./DiagramaDeContextoManejoGrupos/diagramaContextoGrupos.svg)
 
+> AVISO: Este diagrama también lo tiene el Gestor
+
 #### Manejo de Usuarios
 
 ![](./DiagramaDeContextoManejoUsuarios/diagramaContextoUsuarios.svg)
+
+> AVISO: Este diagrama también lo tiene el Gestor
 
 #### Manejo de Acciones
 
@@ -32,18 +38,6 @@
 ## Gestor
 
 ![](./DiagramaDeContextoUsuario/diagramaContextoUsuario.svg)
-
-#### Manejo de Mensajes
-
-![](./DiagramaDeContextoManejoMensajes/diagramaContextoMensajes.svg)
-
-#### Manejo de Grupos
-
-![](./DiagramaDeContextoManejoGrupos/diagramaContextoGrupos.svg)
-
-#### Manejo de Usuarios
-
-![](./DiagramaDeContextoManejoUsuarios/diagramaContextoUsuarios.svg)
 
 ## Destinatario
 
