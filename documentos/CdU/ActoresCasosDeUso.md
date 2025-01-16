@@ -16,24 +16,24 @@ El objetivo de este paso es **encontrar actores y casos de uso** siguiendo las [
 
 ## 📋 **Casos de Uso y Actores Involucrados**
 
-| Caso de Uso                                  | Profesores | RRHH | Ordenación | Técnico Calidad | Administrador | Enlaces |
+| Caso de Uso                                  | Profesores | RRHH | Ordenación | Técnico Calidad | Administrador | 
 |----------------------------------------------|------------|------|------------|-----------------|---------------|
-| **Iniciar Sesión**                           | ✅         | ✅  | ✅         | ✅              | ✅           | 📝|
-| **Introducir** Datos Académicos              | ✅         |      |            |                 |               | 📝|
-| **Consultar** Datos Personales               | ✅         |      |            |                 |               | 📝|
-| **Consultar** Asignación Docente             | ✅         |      |            |                 |               | 📝|
-| **Validar** Datos del Profesorado            |            | ✅   |            |                 | ✅            | 📝|
-| **Modificar** Datos del Profesorado          |            | ✅   |            |                 | ✅            | 📝|
-| **Introducir** Datos Laborales               |            | ✅   |            |                 | ✅            | 📝|
-| **Revisar** Profesores con Carga no ajustada |            | ✅   | ✅         |                 | ✅           | 📝|
-| **Consultar** Claustro Docente               |            | ✅   | ✅         | ✅              | ✅           | 📝|
-| **Consultar** Asignación por Profesor        |            | ✅   | ✅         | ✅              | ✅           | 📝|
-| **Validar** Cumplimiento de Memoria          |            |      | ✅         | ✅              | ✅           | 📝|
-| **Asignar** Carga Docente                    |            |      | ✅         |                 | ✅            | 📝|
-| **Asignar** Valores en Memoria               |            |      |            | ✅              | ✅            | 📝|
-| **Asignar** Información SIIU/DGU             |            |      |            | ✅              | ✅            | 📝|
-| **Obtener** Indicadores                      |            |      |            | ✅              | ✅            | 📝|
-| **Emitir** Informe                           |            |      |            | ✅              | ✅            | 📝|
+| **Iniciar Sesión**                           | ✅         | ✅  | ✅         | ✅              | ✅           |
+| **Introducir** Datos Académicos              | ✅         |      |            |                 |               | 
+| **Consultar** Datos Personales               | ✅         |      |            |                 |               |
+| **Consultar** Asignación Docente             | ✅         |      |            |                 |               | 
+| **Validar** Datos del Profesorado            |            | ✅   |            |                 | ✅            |
+| **Modificar** Datos del Profesorado          |            | ✅   |            |                 | ✅            | 
+| **Introducir** Datos Laborales               |            | ✅   |            |                 | ✅            | 
+| **Revisar** Profesores con Carga no ajustada |            | ✅   | ✅         |                 | ✅           | 
+| **Consultar** Claustro Docente               |            | ✅   | ✅         | ✅              | ✅           | 
+| **Consultar** Asignación por Profesor        |            | ✅   | ✅         | ✅              | ✅           | 
+| **Validar** Cumplimiento de Memoria          |            |      | ✅         | ✅              | ✅           | 
+| **Asignar** Carga Docente                    |            |      | ✅         |                 | ✅            | 
+| **Asignar** Valores en Memoria               |            |      |            | ✅              | ✅            | 
+| **Asignar** Información SIIU/DGU             |            |      |            | ✅              | ✅            | 
+| **Obtener** Indicadores                      |            |      |            | ✅              | ✅            | 
+| **Emitir** Informe                           |            |      |            | ✅              | ✅            | 
 
 ## Casos de Uso por Actor
 
