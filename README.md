@@ -26,10 +26,10 @@
 
 ---
 ## 🛠️ ACTORES Y CASOS DE USO
-- Actores
-- Casos de Uso Detallados
-- Diagrama Casos de Uso
-- Diagrama de Contexto
+- [Actores](/Readmes/ActoresYCasosDeUsos.md#jerarqu%C3%ADa-de-actores-primarios)
+- [Casos de Uso Detallados](/Readmes/DetalladoDeCasosDeUso.md)
+- [Diagrama Casos de Uso](/Readmes/ActoresYCasosDeUsos.md#actores-primarios)
+- [Diagrama de Contexto](/Readmes/DiagramaDeContexto.md)
 
 ---
 ## 📸 PROTOTIPOS
