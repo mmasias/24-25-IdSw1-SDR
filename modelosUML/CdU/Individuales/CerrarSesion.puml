@@ -1,0 +1,11 @@
+@startuml
+left to right direction
+
+actor "Profesor" as profesor
+actor "Administrador" as administrador
+
+usecase "Cerrar Sesión" as CerrarSesion
+
+profesor --> CerrarSesion
+administrador --> CerrarSesion
+@enduml

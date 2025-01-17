@@ -51,3 +51,8 @@ El objetivo de este paso es **detallar los casos de uso** siguiendo las [pautas 
 |------------------------|----------------|
 | ![Emitir Informe](/images/modelosUML/CdU/Individuales/EmitirInforme.svg) | ![Emitir Informe](/images/modelosUML/CdU/DetallarCasosDeUso/TecnicoCalidad/EmitirInforme.svg) |
 | ![Obtener Indicadores](/images/modelosUML/CdU/Individuales/ObtenerIndicadores.svg) | ![Obtener Indicadores](/images/modelosUML/CdU/DetallarCasosDeUso/TecnicoCalidad/ObtenerIndicadores.svg) |
+
+## 🔒 Cierre de Sesión
+| **Caso de Uso** | **Detalle** |
+|-----------------|-------------|
+| ![Cerrar Sesion](/images/modelosUML/CdU/Individuales/CerrarSesion.svg) | ![Cerrar Sesion](/images/modelosUML/CdU/DetallarCasosDeUso/Conjunto/CerrarSesion.svg) |

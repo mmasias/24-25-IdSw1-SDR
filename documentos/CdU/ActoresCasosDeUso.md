@@ -31,6 +31,7 @@ El objetivo de este paso es **encontrar actores y casos de uso** siguiendo las [
 | **Asignar** Información SIIU/DGU             |    |    |    | ✅ | ✅ | [Ver](/images/modelosUML/CdU/DetallarCasosDeUso/TecnicoCalidad/AsignarSIIUyDGU.svg) | [Ver](/images/Prototipar/AsignarSIIU.png) |
 | **Obtener** Indicadores                      |    |    |    | ✅ | ✅ | [Ver](/images/modelosUML/CdU/DetallarCasosDeUso/TecnicoCalidad/ObtenerIndicadores.svg) | ---    |
 | **Emitir** Informe                           |    |    |    | ✅ | ✅ | [Ver](/images/modelosUML/CdU/DetallarCasosDeUso/TecnicoCalidad/EmitirInforme.svg) | [Ver](/images/Prototipar/EmitirInformeProfesorado.png) |
+| **Cerrar Sesión**                           | ✅ | ✅ | ✅ | ✅ | ✅ | [Ver](/images/modelosUML/CdU/DetallarCasosDeUso/Conjunto/CerrarSesion.svg) | [Ver](/images/Prototipar/CerrarSesion.png) |
 
 
 ## 🎭 Casos de Uso por Actor
