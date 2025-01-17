@@ -12,20 +12,19 @@ state Alumni_Postula {
 state Empresa_Crea {
     [*] --> Creada : Decide crear una oferta
     Creada --> PendienteValidacion : Envía oferta para validación
-    PendienteValidacion --> Disponible : Administrador valida la oferta
-    PendienteValidacion --> Cancelada : Cancela oferta
+
+    state Administrador_Valida {
+        PendienteValidacion --> Revisando : Administrador recibe oferta
+        Revisando --> Validada : Valida la oferta
+        Revisando --> Rechazada : Invalida la oferta
+    }
+
+    Validada --> Disponible : Oferta disponible
+    Rechazada --> Cancelada : Oferta cancelada
     Disponible --> Cerrada : Cierra oferta
     Disponible --> Cancelada : Cancela oferta
     Cerrada --> [*]
     Cancelada --> [*]
-}
-
-state Administrador_Valida {
-    [*] --> Revisando : Recibe oferta
-    Revisando --> Validada : Valida la oferta
-    Revisando --> Rechazada : Invalida la oferta
-    Validada --> [*]
-    Rechazada --> [*]
 }
 
 state Estado_Usuario {
