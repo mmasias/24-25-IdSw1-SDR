@@ -3,14 +3,14 @@ state Profesor {
     [*] --> Libre
 
     state Libre {
-        [*] --> VerificandoCarga
-        VerificandoCarga --> [*]: No está lleno
+        [*] --> CargaVerificada
+        CargaVerificada --> [*]: No está lleno
     }
 
     state EnProceso {
-        [*] --> ValidandoDisponibilidad
-        ValidandoDisponibilidad --> AsignandoAsignaturas: Asignatura compatible
-        AsignandoAsignaturas --> [*]: Asignatura asignada
+        [*] --> AsignaturaValidada
+        AsignaturaValidada --> AsignaturaAsignada
+        AsignaturaAsignada --> [*]
     }
 
     Libre --> EnProceso: Iniciar asignaciones
