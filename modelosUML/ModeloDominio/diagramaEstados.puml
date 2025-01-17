@@ -28,7 +28,7 @@ state Administrador_Valida {
     Rechazada --> [*]
 }
 
-state Autenticacion_Plataforma_Acceso {
+state Estado_Usuario {
     [*] --> Autenticado : Usuario inicia sesión
     Autenticado --> NoAutenticado : Usuario cierra sesión
     NoAutenticado --> [*]
