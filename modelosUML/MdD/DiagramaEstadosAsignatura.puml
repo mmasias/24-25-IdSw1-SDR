@@ -1,15 +1,21 @@
 @startuml
-state "Asignatura" as Asignatura {
+state Asignatura {
     [*] --> Libre
-    Libre : Asignatura sin asignar.
 
-    Libre --> EnProceso : Asignación iniciada
-    EnProceso : En proceso de ser asignada.
+    state Libre {
+        [*] --> VerificandoCapacidad
+        VerificandoCapacidad --> [*]: No está llena
+    }
 
-    EnProceso --> Completa : Asignación completada
-    Completa : Totalmente asignada.
+    state EnProceso {
+        [*] --> ValidandoDisponibilidad
+        ValidandoDisponibilidad --> AsignandoProfesores: Profesor disponible
+        AsignandoProfesores --> [*]: Profesor asignado
+    }
 
-    Completa --> Libre : Desasignada por revisión
-    EnProceso --> Libre : Cancelada la asignación
+    Libre --> EnProceso: Iniciar asignación
+    EnProceso --> Completa: Todas las horas cubiertas
+    Completa --> Libre: Reset
+    EnProceso --> Libre: Cancelar proceso
 }
 @enduml

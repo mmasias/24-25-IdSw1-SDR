@@ -1,15 +1,21 @@
 @startuml
-state "Profesor" as Profesor {
+state Profesor {
     [*] --> Libre
-    Libre : Profesor sin asignaturas asignadas.
 
-    Libre --> EnProceso : Iniciada asignación
-    EnProceso : En proceso de asignar asignaturas.
+    state Libre {
+        [*] --> VerificandoCarga
+        VerificandoCarga --> [*]: No está lleno
+    }
 
-    EnProceso --> Lleno : Asignación completa alcanzada
-    Lleno : Profesor con asignaciones máximas cumplidas.
+    state EnProceso {
+        [*] --> ValidandoDisponibilidad
+        ValidandoDisponibilidad --> AsignandoAsignaturas: Asignatura compatible
+        AsignandoAsignaturas --> [*]: Asignatura asignada
+    }
 
-    Lleno --> Libre : Liberado por cambio o revisión
-    EnProceso --> Libre : Cancelada la asignación
+    Libre --> EnProceso: Iniciar asignaciones
+    EnProceso --> Lleno: Carga máxima alcanzada
+    Lleno --> Libre: Liberar carga
+    EnProceso --> Libre: Cancelar asignaciones
 }
 @enduml

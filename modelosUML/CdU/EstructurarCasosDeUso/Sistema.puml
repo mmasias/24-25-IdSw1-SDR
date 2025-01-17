@@ -19,10 +19,11 @@ package "Sistema Académico" {
 
     package "Gestión de Ordenación" {
         usecase "Asignar Carga Docente" as AsignarCargaOrdenacion
-        usecase "Consultar Claustro Docente" as ConsultarClaustroOrdenacion
         usecase "Consultar Asignación por Profesor" as ConsultarAsignacionOrdenacion
         usecase "Revisar Carga Docente" as RevisarCargaOrdenacion
         usecase "Validar Memoria y Titulación" as RevisarMemoria
+        usecase "Consultar Claustro Docente" as ConsultarClaustroOrdenacion
+
     }
 
     package "Gestión de Calidad" {
@@ -41,10 +42,8 @@ package "Sistema Académico" {
     ValidarDatosRRHH .> IntroducirExperiencia : <<include>>
 
     AsignarCargaOrdenacion ..> ConsultarClaustroOrdenacion : <<include>>
-    RevisarMemoria ..> ConsultarClaustroOrdenacion : <<include>>
     RevisarCargaOrdenacion ..> ConsultarClaustroOrdenacion : <<include>>
 
-    ValidarMemoria ..> ConsultarClaustroCalidad : <<include>>
     EmitirInforme ..> ObtenerIndicadores : <<include>>
     AsignarValoresMemoria ..> ValidarMemoria : <<include>>
 
