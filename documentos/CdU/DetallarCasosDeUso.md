@@ -6,11 +6,12 @@
 ## 🎯 **Objetivo**
 El objetivo de este paso es **detallar los casos de uso** siguiendo las [pautas teóricas](https://github.com/mmasias/IdSw1/blob/main/temario/contenidos/Cdu.dCdU.md#c%C3%B3mo) de la asignatura.
 
-## 🗝️ Inicio de Sesión
+## 🗝️ Gestión de Sesión
 
 | **Caso de Uso** | **Detalle** |
 |-----------------|-------------|
 | ![Iniciar Sesion](/images/modelosUML/CdU/Individuales/IniciarSesion.svg) | ![Iniciar Sesion](/images/modelosUML/CdU/DetallarCasosDeUso/Conjunto/IniciarSesion.svg) |
+| ![Cerrar Sesion](/images/modelosUML/CdU/Individuales/CerrarSesion.svg) | ![Cerrar Sesion](/images/modelosUML/CdU/DetallarCasosDeUso/Conjunto/CerrarSesion.svg) |
 
 ## 📚 Gestión de Carga Docente
 
@@ -51,8 +52,3 @@ El objetivo de este paso es **detallar los casos de uso** siguiendo las [pautas 
 |------------------------|----------------|
 | ![Emitir Informe](/images/modelosUML/CdU/Individuales/EmitirInforme.svg) | ![Emitir Informe](/images/modelosUML/CdU/DetallarCasosDeUso/TecnicoCalidad/EmitirInforme.svg) |
 | ![Obtener Indicadores](/images/modelosUML/CdU/Individuales/ObtenerIndicadores.svg) | ![Obtener Indicadores](/images/modelosUML/CdU/DetallarCasosDeUso/TecnicoCalidad/ObtenerIndicadores.svg) |
-
-## 🔒 Cierre de Sesión
-| **Caso de Uso** | **Detalle** |
-|-----------------|-------------|
-| ![Cerrar Sesion](/images/modelosUML/CdU/Individuales/CerrarSesion.svg) | ![Cerrar Sesion](/images/modelosUML/CdU/DetallarCasosDeUso/Conjunto/CerrarSesion.svg) |

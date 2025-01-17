@@ -10,7 +10,6 @@ El orden ha sido establecido por el cliente según la importancia y necesidad de
 
 ## 📋 **Casos de Uso y Priorización**
 
-
 | **#** | **Caso de Uso**                          | **Prioridad** |  
 |-------|------------------------------------------|---------------|  
 | 1 | **Introducir** Datos Laborales               |    🔴 Alta    |
@@ -24,14 +23,13 @@ El orden ha sido establecido por el cliente según la importancia y necesidad de
 | 9 | **Modificar** Datos del Profesorado          |    🟠 Media   |
 | 10 | **Validar** Datos del Profesorado           |    🟠 Media   |
 | 11 | **Iniciar Sesión**                          |    🟠Media    |
-| 12 | **Introducir** Datos Académicos             |    🟢 Baja    |
-| 13 | **Asignar** Información SIIU/DGU            |    🟢 Baja    |
-| 14 | **Consultar** Datos Personales              |    🟢 Baja    |
-| 15 | **Consultar** Claustro Docente              |    🟢 Baja    |
-| 16 | **Consultar** Asignación por Profesor       |    🟢 Baja    |
-| 17 | **Cerrar Sesión**                           |    🟢 Baja    |
+| 12 | **Cerrar Sesión**                           |    🟢 Baja    |
+| 13 | **Introducir** Datos Académicos             |    🟢 Baja    |
+| 14 | **Asignar** Información SIIU/DGU            |    🟢 Baja    |
+| 15 | **Consultar** Datos Personales              |    🟢 Baja    |
+| 16 | **Consultar** Claustro Docente              |    🟢 Baja    |
+| 17 | **Consultar** Asignación por Profesor       |    🟢 Baja    |
  
-
 ---
 
 ### 🪧 Descripción de la Priorización

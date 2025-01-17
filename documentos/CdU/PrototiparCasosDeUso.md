@@ -13,12 +13,12 @@ Debido a que este proyecto tiene direfentes actores, en primer lugar se mostrara
 | **Actor**                | **Prototipo**                                      |
 |--------------------------|----------------------------------------------------|
 | Inicio de Sesión         | ![InicioSesion](/images/Prototipar/Inicio.png) |
+| Cierre de Sesión         | ![InicioSesion](/images/Prototipar/CerrarSesion.png) |
 | Admin                    | ![UsuarioAdmin](/images/Prototipar/Admin.png)  |
 | Ordenación Académica     | ![UsuarioOrdenacion](/images/Prototipar/Ordenacion.png) |
 | Recursos Humanos         | ![UsuarioRRHH](/images/Prototipar/RRHH.png)    |
 | Profesor                 | ![UsuarioProfesor](/images/Prototipar/Profesor.png) |
 | Técnico de Calidad       | ![UsuarioCalidad](/images/Prototipar/Calidad.png)  |
-| Cierre de Sesión         | ![InicioSesion](/images/Prototipar/CerrarSesion.png) |
 
 ## 🛠️ Casos de Uso
 

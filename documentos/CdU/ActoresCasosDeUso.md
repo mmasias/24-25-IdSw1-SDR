@@ -14,8 +14,9 @@ El objetivo de este paso es **encontrar actores y casos de uso** siguiendo las [
 ## 📋 Casos de Uso y Actores Involucrados
 
 | Caso de Uso                                  | [Profesor](/images/Prototipar/Profesor.png) | [RRHH](/images/Prototipar/RRHH.png) | [Ordenación](/images/Prototipar/Ordenacion.png) | [Técnico Calidad](/images/Prototipar/Calidad.png) | [Administrador](/images/Prototipar/Admin.png) | Detalle | Prototipo |
-|----------------------------------------------|----|-----|----|----|-----|---------|-----------|
+|----------------------------------------------|----|-----|----|----|-----|-----------------------------------------------------------------------------|--------------------------------------|
 | **Iniciar Sesión**                           | ✅ | ✅ | ✅ | ✅ | ✅ | [Ver](/images/modelosUML/CdU/DetallarCasosDeUso/Conjunto/IniciarSesion.svg) | [Ver](/images/Prototipar/Inicio.png) |
+| **Cerrar Sesión**                            | ✅ | ✅ | ✅ | ✅ | ✅ | [Ver](/images/modelosUML/CdU/DetallarCasosDeUso/Conjunto/CerrarSesion.svg) | [Ver](/images/Prototipar/CerrarSesion.png) |
 | **Introducir** Datos Académicos              | ✅ |    |    |     |     | [Ver](/images/modelosUML/CdU/DetallarCasosDeUso/Profesores/IntroducirDatosAcademicos.svg) | [Ver](/images/Prototipar/DatosAcademicos.png) |
 | **Consultar** Datos Personales               | ✅ |    |    |     |     | [Ver](/images/modelosUML/CdU/DetallarCasosDeUso/Profesores/ConsultarValores.svg) | [Ver](/images/Prototipar/DatosContratoPersonales.png) |
 | **Consultar** Asignación Docente             | ✅ |    |    |     |     | [Ver](/images/modelosUML/CdU/DetallarCasosDeUso/Profesores/ConsultarAsignacionFiltros.svg) | [Ver](/images/Prototipar/AsignaciónDocenteTitulacion.png) |
@@ -31,8 +32,6 @@ El objetivo de este paso es **encontrar actores y casos de uso** siguiendo las [
 | **Asignar** Información SIIU/DGU             |    |    |    | ✅ | ✅ | [Ver](/images/modelosUML/CdU/DetallarCasosDeUso/TecnicoCalidad/AsignarSIIUyDGU.svg) | [Ver](/images/Prototipar/AsignarSIIU.png) |
 | **Obtener** Indicadores                      |    |    |    | ✅ | ✅ | [Ver](/images/modelosUML/CdU/DetallarCasosDeUso/TecnicoCalidad/ObtenerIndicadores.svg) | ---    |
 | **Emitir** Informe                           |    |    |    | ✅ | ✅ | [Ver](/images/modelosUML/CdU/DetallarCasosDeUso/TecnicoCalidad/EmitirInforme.svg) | [Ver](/images/Prototipar/EmitirInformeProfesorado.png) |
-| **Cerrar Sesión**                           | ✅ | ✅ | ✅ | ✅ | ✅ | [Ver](/images/modelosUML/CdU/DetallarCasosDeUso/Conjunto/CerrarSesion.svg) | [Ver](/images/Prototipar/CerrarSesion.png) |
-
 
 ## 🎭 Casos de Uso por Actor
 
