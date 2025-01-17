@@ -47,16 +47,4 @@ Aquí se muestran los diagramas que componen el modelo del dominio: El diagrama 
 |--------------|--------------------|
 | ![Diagrama de Objetos](/MdD/DdEstados_Ajustes/1ª_Iteración/DdEstados_Ajustes.svg) | [Ver código](/MdD/DdEstados_Ajustes/1ª_Iteración/DdEstados_Ajustes.puml) |
 
----
-### Estado Inicial
-
-| **Diagrama** | **Código Fuente** |
-|--------------|--------------------|
-| ![Diagrama de Objetos](/Documentación/Diagramas_Estados_casos_concretos/Inicial/Diagrama_estado_inicial.svg) | [Ver código](/Documentación/Diagramas_Estados_casos_concretos/Inicial/Diagrama_estado_inicial.puml) |
-
-### Estado Final
-
-| **Diagrama** | **Código Fuente** |
-|--------------|--------------------|
-| ![Diagrama de Objetos](/Documentación/Diagramas_Estados_casos_concretos/Final/Diagrama_estado_final.svg) | [Ver código](/Documentación/Diagramas_Estados_casos_concretos/Final/Diagrama_estado_final.puml) |
 </div>
