@@ -2,7 +2,6 @@
 start
 :El usuario solicita introducir edición de una asignación;
 :Sistema presenta la asignatura previamente seleccionada y su información actual;
-
 :Usuario introduce selección del día y la fecha;
 :Sistema solicita introducir aulas disponibles;
 if (¿Existen aulas disponibles?) then (Sí)
