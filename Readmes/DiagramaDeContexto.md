@@ -12,6 +12,19 @@ Aquí se muestran los Diagramas de contexto.
 | ![App](/CdU/DdContexto_app/1ª_Iteración/DdContexto_App.svg) | [Ver código](/CdU/DdContexto_app/1ª_Iteración/DdContexto_app.puml) |
 
 ---
+### Estado Inicial
+
+| **Diagrama** | **Código Fuente** |
+|--------------|--------------------|
+| ![Diagrama de Objetos](/Documentación/Diagramas_Estados_casos_concretos/Inicial/Diagrama_estado_inicial.svg) | [Ver código](/Documentación/Diagramas_Estados_casos_concretos/Inicial/Diagrama_estado_inicial.puml) |
+
+### Estado Final
+
+| **Diagrama** | **Código Fuente** |
+|--------------|--------------------|
+| ![Diagrama de Objetos](/Documentación/Diagramas_Estados_casos_concretos/Final/Diagrama_estado_final.svg) | [Ver código](/Documentación/Diagramas_Estados_casos_concretos/Final/Diagrama_estado_final.puml) |
+
+---
 ## Moderador
 
 | **Diagrama** | **Código Fuente** |
