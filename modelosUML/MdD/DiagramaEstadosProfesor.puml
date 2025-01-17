@@ -4,18 +4,17 @@ state Profesor {
 
     state Libre {
         [*] --> CargaVerificada
-        CargaVerificada --> [*]: No está lleno
     }
 
     state EnProceso {
         [*] --> AsignaturaValidada
         AsignaturaValidada --> AsignaturaAsignada
-        AsignaturaAsignada --> [*]
     }
 
-    Libre --> EnProceso: Iniciar asignaciones
-    EnProceso --> Lleno: Carga máxima alcanzada
-    Lleno --> Libre: Liberar carga
+    Libre --> EnProceso: No está lleno
+    EnProceso --> Lleno: Asignación completa
+    Lleno --> Libre: Reset
+    Lleno --> [*]: Carga máxima alcanzada
     EnProceso --> Libre: Cancelar asignaciones
 }
 @enduml

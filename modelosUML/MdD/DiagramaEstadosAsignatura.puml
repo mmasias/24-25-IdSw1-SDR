@@ -4,18 +4,17 @@ state Asignatura {
 
     state Libre {
         [*] --> CapacidadVerificada
-        CapacidadVerificada --> [*]: No está llena
     }
 
     state EnProceso {
         [*] --> ProfesorValidado
         ProfesorValidado --> ProfesorAsignado
-        ProfesorAsignado --> [*]
     }
 
-    Libre --> EnProceso: Iniciar asignación
-    EnProceso --> Completa: Todas las horas cubiertas
+    Libre --> EnProceso: No está llena
+    EnProceso --> Completa: Asignacion completa
     Completa --> Libre: Reset
+    Completa --> [*]: Todas las horas cubiertas
     EnProceso --> Libre: Cancelar proceso
 }
 @enduml
