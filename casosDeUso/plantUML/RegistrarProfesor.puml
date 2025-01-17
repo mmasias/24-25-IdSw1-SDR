@@ -1,0 +1,22 @@
+@startuml
+start
+:El usuario solicita introducir registro de un nuevo profesor;
+if (¿Registrar o Importar?) then (Registrar)
+  :Sistema permite introducir datos del profesor;
+  :Sistema permite introducir el registro;
+  :Sistema incorpora al profesor;
+else (Importar)
+  :Sistema permite introducir un archivo para importar profesores (archivo Excel o CSV);
+  :Usuario introduce carga del archivo con los profesores;
+  :Sistema valida el formato y los datos del archivo;
+  if (¿Formato y datos correctos?) then (Sí)
+    :Sistema importa los datos de los profesores del archivo;
+    :Sistema incorpora los profesores al sistema;
+    :Sistema presenta confirmación: "Profesores importados correctamente";
+  else (No)
+    :Sistema presenta mensaje de error: "El archivo no tiene el formato o datos correctos";
+    :Sistema permite introducir corrección del archivo y volver a cargarlo;
+  endif
+endif
+stop
+@enduml

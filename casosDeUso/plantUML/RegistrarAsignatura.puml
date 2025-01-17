@@ -2,7 +2,6 @@
 start
 :El usuario solicita introducir registro de una nueva asignatura;
 if (¿Registrar o Importar?) then (Registrar)
-  :Sistema presenta formulario para registrar asignatura;
   :Sistema permite introducir datos de la asignatura (grado, nombre);
   :Sistema permite introducir el registro;
   :Sistema incorpora la asignatura;
