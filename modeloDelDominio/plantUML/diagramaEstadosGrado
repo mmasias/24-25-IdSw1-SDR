@@ -1,0 +1,18 @@
+@startuml
+' Diagrama de estados para Grado
+state "SinDefinir" as SinDefinir_Grado
+state "Definido" as Definido_Grado
+state "AsignaturasAsignadas" as AsignaturasAsignadas
+state "Confirmado" as Confirmado_Grado
+state "Cancelado" as Cancelado_Grado
+
+[*] --> SinDefinir_Grado
+SinDefinir_Grado --> Definido_Grado : Registrar grado
+Definido_Grado --> AsignaturasAsignadas : Asignar asignaturas
+AsignaturasAsignadas --> Confirmado_Grado : Confirmar grado
+Definido_Grado --> Cancelado_Grado : Cancelar grado
+AsignaturasAsignadas --> Cancelado_Grado : Cancelar grado
+[*] --> Cancelado_Grado : Cancelar grado
+Confirmado_Grado --> [*] : Operación completada
+Cancelado_Grado --> [*] : Grado cancelado
+@enduml
