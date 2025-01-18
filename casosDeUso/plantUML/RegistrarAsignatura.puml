@@ -1,21 +1,22 @@
 @startuml
 start
 :El usuario solicita introducir registro de una nueva asignatura;
+:El sistema permite introduccion de una nueva asignatura;
 if (¿Registrar o Importar?) then (Registrar)
-  :Sistema permite introducir datos de la asignatura (grado, nombre);
-  :Sistema permite introducir el registro;
-  :Sistema incorpora la asignatura;
+  :El sistema permite introducir datos de la asignatura (grado, nombre);
+  :El usuario introduce los datos del registro;
+  :El sistema incorpora la asignatura;
 else (Importar)
-  :Sistema permite introducir un archivo para importar asignaturas (archivo Excel o CSV);
-  :Usuario introduce carga del archivo con las asignaturas;
-  :Sistema valida el formato y los datos del archivo;
+  :El sistema permite introducir un archivo para importar asignaturas (archivo Excel o CSV);
+  :El usuario introduce carga del archivo con las asignaturas;
+  :El sistema valida el formato y los datos del archivo;
   if (¿Formato y datos correctos?) then (Sí)
-    :Sistema importa las asignaturas del archivo;
-    :Sistema incorpora las asignaturas al sistema;
-    :Sistema presenta confirmación: "Asignaturas importadas correctamente";
+    :El sistema importa las asignaturas del archivo;
+    :El sistema incorpora las asignaturas al sistema;
+    :El sistema presenta confirmación: "Asignaturas importadas correctamente";
   else (No)
-    :Sistema presenta mensaje de error: "El archivo no tiene el formato o datos correctos";
-    :Sistema permite introducir corrección del archivo y volver a cargarlo;
+    :El sistema presenta mensaje de error: "El archivo no tiene el formato o datos correctos";
+    :El sistema permite introducir corrección del archivo y volver a cargarlo;
   endif
 endif
 stop

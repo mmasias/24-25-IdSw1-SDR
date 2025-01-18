@@ -1,16 +1,16 @@
 @startuml
 start
 :El usuario solicita introducir edición de una asignación;
-:Sistema presenta la asignatura previamente seleccionada y su información actual;
-:Usuario introduce selección del día y la fecha;
-:Sistema solicita introducir aulas disponibles;
+:El sistema permite la introducción de datos para la edición;
+:El usuario introduce selección del día y la fecha;
+:El sistema presenta las aulas disponibles;
 if (¿Existen aulas disponibles?) then (Sí)
-  :Sistema actualiza los datos de la asignatura con los nuevos seleccionados;
-  :Sistema guarda la información y visualiza el cambio de estatus de la asignatura si es necesario;
-  :Sistema presenta confirmación: "Asignatura actualizada correctamente";
+  :El sistema actualiza los datos de la asignatura con los nuevos seleccionados;
+  :El sistema guarda la información y visualiza el cambio de estatus de la asignatura si es necesario;
+  :El sistema presenta confirmación: "Asignatura actualizada correctamente";
 else (No)
-  :Sistema presenta mensaje de error: "No hay aulas disponibles";
+  :El sistema presenta mensaje de error: "No hay aulas disponibles";
 endif
 stop
 @enduml
-
+  

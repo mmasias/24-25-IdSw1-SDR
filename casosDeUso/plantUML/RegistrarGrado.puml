@@ -1,21 +1,23 @@
 @startuml
 start
 :El usuario solicita introducir registro de un nuevo grado;
+:El sistema permite introduccion un nuevo grado;
+:El usuario introduce "Registrar" o "Importar";
 if (¿Registrar o Importar?) then (Registrar)
-  :Sistema permite introducir datos del grado (nombre, nivel educativo, descripción);
-  :Sistema permite introducir el registro;
-  :Sistema incorpora el grado;
+  :El sistema permite introducir datos del grado (nombre, nivel educativo, descripción);
+  :El usuario introduce los datos del grado;
+  :El sistema incorpora el grado;
 else (Importar)
-  :Sistema permite introducir un archivo para importar grados (archivo Excel o CSV);
-  :Usuario introduce carga del archivo con los grados;
-  :Sistema valida el formato y los datos del archivo;
+  :El sistema permite introducir un archivo para importar grados (archivo Excel o CSV);
+  :El usuario introduce carga del archivo con los grados;
+  :El sistema valida el formato y los datos del archivo;
   if (¿Formato y datos correctos?) then (Sí)
-    :Sistema importa los datos de los grados del archivo;
-    :Sistema incorpora los grados al sistema;
-    :Sistema presenta confirmación: "Grados importados correctamente";
+    :El sistema importa los datos de los grados del archivo;
+    :El sistema incorpora los grados al sistema;
+    :El sistema presenta confirmación: "Grados importados correctamente";
   else (No)
-    :Sistema presenta mensaje de error: "El archivo no tiene el formato o datos correctos";
-    :Sistema permite introducir corrección del archivo y volver a cargarlo;
+    :El sistema presenta mensaje de error: "El archivo no tiene el formato o datos correctos";
+    :El sistema permite introducir corrección del archivo y volver a cargarlo;
   endif
 endif
 stop

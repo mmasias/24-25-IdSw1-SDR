@@ -1,6 +1,8 @@
 @startuml
 start
 :El usuario solicita introducir registro de un nuevo profesor;
+:El Sistema permite introducir un nuevo profesor;
+:El usuario solicita introducir Registrar o Importar;
 if (¿Registrar o Importar?) then (Registrar)
   :Sistema permite introducir datos del profesor;
   :Sistema permite introducir el registro;
