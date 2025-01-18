@@ -36,7 +36,7 @@ Usamos las siguientes herramientas para definir las entidades principales de nue
 ---
 
 ### **Estados de Profesor**  
-![Diagrama de Estados Profesor](/modeloDelDominio/imagenes/DiagramaDeEstadosProfesor.svg)  
+![Diagrama de Estados Profesor](/modeloDelDominio/imagenes/diagramaEstadosProfesor.svg)  
 > **Descripción:**  
 > - Un `Profesor` comienza en el estado `SinAsignar`.  
 > - Se le asigna un `Grupo` de `AsignaturaGrado` para pasar al estado `AsignadoAGrupo`.  
@@ -47,7 +47,7 @@ Usamos las siguientes herramientas para definir las entidades principales de nue
 ---
 
 ### **Estados de Aula**  
-![Diagrama de Estados Aula](/modeloDelDominio/imagenes/DiagramaDeEstadosAula.svg)  
+![Diagrama de Estados Aula](/modeloDelDominio/imagenes/diagramaEstadosAula.svg)  
 > **Descripción:**  
 > - Un `Aula` comienza en el estado `Disponible`.  
 > - Se asigna un aula a un horario reflejado en `HorarioAsignaturaAula`, pasando al estado `Asignada`.  
@@ -57,7 +57,7 @@ Usamos las siguientes herramientas para definir las entidades principales de nue
 ---
 
 ### **Estados de Grado**  
-![Diagrama de Estados Grado](/modeloDelDominio/imagenes/DiagramaDeEstadosGrado.svg)  
+![Diagrama de Estados Grado](/modeloDelDominio/imagenes/diagramaEstadosGrado.svg)  
 > **Descripción:**  
 > - Un `Grado` comienza en el estado `SinDefinir`.  
 > - Se registra el grado en `Definido`.  
