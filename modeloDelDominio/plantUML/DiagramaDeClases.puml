@@ -1,63 +1,38 @@
 @startuml
-package "AsignaturaGradoPorfesor" {
-  class Grado {
-    - idGrado : int
-    - nombre : String
-  }
-
-  class Asignatura {
-    - idAsignatura : int
-    - nombre : String
-    - creditos : float
-  }
-
-  class AsignaturaGrado {
-    - idGrado : int
-    - idAsignatura : int
-    - nombreGrado : String
-  }
-
-  class AsignaturaGradoProfesor {
-    - idAsignaturaGradoProfesor : int
-    - idAsignaturaGrado : int
-    - idProfesor : int
-  }
-
-  class Profesor {
-    - idProfesor : int
-    - nombre : String
-    - apellido : String
-    - email : String
-  }
-  
-  Asignatura -- Profesor
-  Grado -- AsignaturaGrado
-  Asignatura -- AsignaturaGrado
-  AsignaturaGrado -- AsignaturaGradoProfesor
-  Profesor -- AsignaturaGradoProfesor
-}
-
 class Horario {
-  - idHorario : int
-  - dia : String
-  - horaInicio : Time
-  - horaFin : Time
 }
 
 class HorarioAsignaturaAula {
-  - idHorarioAsignaturaAula : int
-  - idAsignaturaGradoProfesor : int
-  - idHorario : int
-  - idAula : int
 }
 
 class Aula {
-  - idAula : int
-  - nombre : String
-  - capacidad : int
 }
 
-AsignaturaGradoProfesor -- Horario
+package "AsignaturaGradoPorfesor" {
+
+  class AsignaturaGradoProfesor {
+  }
+
+  class AsignaturaGrado {
+  }
+
+  class Profesor {
+  }
+
+  class Grado {
+  }
+
+  class Asignatura {
+  }
+  
+  AsignaturaGradoProfesor -- AsignaturaGrado
+  AsignaturaGradoProfesor -- Profesor
+  AsignaturaGrado -- Grado
+  AsignaturaGrado -- Asignatura
+  Asignatura -- Profesor
+}
+
 Horario -- HorarioAsignaturaAula
-Aula -- HorarioAsignaturaAula
+HorarioAsignaturaAula -- Aula
+HorarioAsignaturaAula -- AsignaturaGradoProfesor
 @enduml

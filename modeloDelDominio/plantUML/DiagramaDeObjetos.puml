@@ -1,4 +1,24 @@
 @startuml
+object Horario {
+  idHorario = 401
+  dia = "Lunes"
+  horaInicio = "10:00"
+  horaFin = "12:00"
+}
+
+object HorarioAsignaturaAula {
+  idHorarioAsignaturaAula = 601
+  idAsignaturaGradoProfesor = 301
+  idHorario = 401
+  idAula = 501
+}
+
+object Aula {
+  idAula = 501
+  nombre = "Aula 101"
+  capacidad = 40
+}
+
 package "AsignaturaGradoPorfesor" {
 object Grado {
   idGrado = 1
@@ -30,33 +50,14 @@ object AsignaturaGradoProfesor {
   idProfesor = 201
 }
 }
-object Horario {
-  idHorario = 401
-  dia = "Lunes"
-  horaInicio = "10:00"
-  horaFin = "12:00"
-}
 
-object Aula {
-  idAula = 501
-  nombre = "Aula 101"
-  capacidad = 40
-}
-
-object HorarioAsignaturaAula {
-  idHorarioAsignaturaAula = 601
-  idAsignaturaGradoProfesor = 301
-  idHorario = 401
-  idAula = 501
-}
-
-Grado -- AsignaturaGrado
-Asignatura -- AsignaturaGrado
+AsignaturaGradoProfesor -- AsignaturaGrado
+AsignaturaGradoProfesor -- Profesor
+AsignaturaGrado -- Grado
+AsignaturaGrado -- Asignatura
 Asignatura -- Profesor
-AsignaturaGrado -- AsignaturaGradoProfesor
-Profesor -- AsignaturaGradoProfesor
-AsignaturaGradoProfesor -- Horario
 Horario -- HorarioAsignaturaAula
-Aula -- HorarioAsignaturaAula
+HorarioAsignaturaAula -- Aula
+HorarioAsignaturaAula -- AsignaturaGradoProfesor
 
 @enduml
