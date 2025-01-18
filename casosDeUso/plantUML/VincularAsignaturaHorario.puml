@@ -2,8 +2,8 @@
 start
 :El usuario solicita introducir asignación de una asignatura;
 :Sistema presenta todas las asignaturas disponibles;
-:Usuario introduce selección de la asignatura;
 :Usuario introduce selección del día y la fecha;
+:El Sistema permite introduccion  de seleccion;
 :Usuario introduce selección de preferencias de aula (opcional): 
   - Aula grande 
   - Aula con computadora;

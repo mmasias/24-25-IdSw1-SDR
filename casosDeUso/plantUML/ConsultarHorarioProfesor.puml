@@ -1,21 +1,21 @@
 @startuml
 start
 :El usuario solicita introducir consulta del horario de un profesor específico;
-:Usuario introduce selección del profesor;
-:Sistema solicita introducir datos de asignaturas y profesores;
-:Sistema presenta un calendario semanal;
+:El sistema permite la introducción de datos para la consulta;
+:El usuario introduce selección del profesor;
+:El sistema presenta un calendario semanal;
 note right
 En formato de tabla:
 - Días como columnas
 - Horas como filas
 end note
 if (¿Existen bloques ocupados con asignaturas?) then (Sí)
-  :Sistema presenta en cada bloque ocupado:
+  :El sistema muestra en cada bloque ocupado:
     - Asignatura
     - Hora de inicio
     - Aula;
 else (No)
-  :Sistema visualiza los bloques libres en blanco;
+  :El sistema muestra los bloques libres en blanco;
 endif
 stop
 @enduml
