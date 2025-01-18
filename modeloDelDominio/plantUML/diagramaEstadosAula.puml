@@ -1,0 +1,16 @@
+@startuml
+' Diagrama de estados para Aula
+state "Disponible" as Disponible_Aula
+state "Asignada" as AulaAsignada
+state "Confirmada" as AulaConfirmada
+state "Cancelada" as Cancelada_Aula
+
+[*] --> Disponible_Aula
+Disponible_Aula --> AulaAsignada : Asignar aula a HorarioAsignaturaAula
+AulaAsignada --> AulaConfirmada : Confirmar asignación
+AulaAsignada --> Cancelada_Aula : Cancelar asignación
+Disponible_Aula --> Cancelada_Aula : Cancelar aula
+[*] --> Cancelada_Aula : Cancelar aula
+AulaConfirmada --> [*] : Operación completada
+Cancelada_Aula --> [*] : Aula cancelada
+@enduml
