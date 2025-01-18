@@ -1,0 +1,19 @@
+@startuml
+
+title Eliminar Horario-Asignatura-Aula
+
+start
+:El usuario solicita introducir la eliminación de una asignación;
+:El sistema presenta la lista de asignaciones existentes;
+:El usuario selecciona una asignación para eliminar;
+:El sistema permite la confirmación para eliminar la asignación seleccionada;
+if (¿Confirma la eliminación?) then (Sí)
+:El sistema elimina la asignación seleccionada del sistema;
+:El sistema presenta una confirmación: "Asignación eliminada correctamente";
+else (No)
+:El sistema cancela la operación de eliminación;
+:El sistema presenta un mensaje: "Operación cancelada por el usuario";
+endif
+stop
+
+@enduml

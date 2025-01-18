@@ -1,0 +1,19 @@
+@startuml
+
+title Actualizar Grado
+
+start
+:El usuario solicita introducir cambios en un grado;
+:El sistema permite introducir los datos del grado a modificar;
+:El usuario introduce los nuevos datos del grado;
+if (¿Datos válidos?) then (Sí)
+:El sistema permite guardar los cambios;
+:El sistema actualiza el grado con la nueva información;
+:El sistema presenta una confirmación: "Grado actualizado correctamente";
+else (No)
+:El sistema presenta un mensaje de error: "Los datos introducidos no son válidos";
+:El sistema permite introducir nuevamente los datos;
+endif
+stop
+
+@enduml

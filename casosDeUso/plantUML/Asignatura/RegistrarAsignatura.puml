@@ -1,0 +1,24 @@
+@startuml
+title Registrar Asignatura
+start
+:El usuario solicita introducir registro de una nueva asignatura;
+:El sistema permite introduccion de una nueva asignatura;
+if (¿Registrar o Importar?) then (Registrar)
+  :El sistema permite introducir datos de la asignatura (grado, nombre);
+  :El usuario introduce los datos del registro;
+  :El sistema incorpora la asignatura;
+else (Importar)
+  :El sistema permite introducir un archivo para importar asignaturas (archivo Excel o CSV);
+  :El usuario introduce carga del archivo con las asignaturas;
+  :El sistema valida el formato y los datos del archivo;
+  if (¿Formato y datos correctos?) then (Sí)
+    :El sistema importa las asignaturas del archivo;
+    :El sistema incorpora las asignaturas al sistema;
+    :El sistema presenta confirmación: "Asignaturas importadas correctamente";
+  else (No)
+    :El sistema presenta mensaje de error: "El archivo no tiene el formato o datos correctos";
+    :El sistema permite introducir corrección del archivo y volver a cargarlo;
+  endif
+endif
+stop
+@enduml

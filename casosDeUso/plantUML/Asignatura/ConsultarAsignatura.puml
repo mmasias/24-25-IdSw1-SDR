@@ -1,0 +1,23 @@
+@startuml
+
+title Consultar Asignatura
+
+start
+:El usuario solicita visualizar las asignaturas disponibles;
+:El sistema presenta la lista de asignaturas existentes;
+if (¿Selecciona una asignatura?) then (Sí)
+if (¿Filtros aplicados?) then (Sí)
+  :El sistema presenta las opciones reducidas mostrando:
+    - Asignaturas de un grado seleccionado,
+    - Asignaturas asignadas a un profesor,
+    - O asignaturas que coincidan con el nombre buscado;
+else (No)
+  :El sistema presenta la lista completa sin filtrar;
+endif
+:El usuario selecciona una asignatura específica;
+:El sistema muestra los detalles de la asignatura seleccionada;
+else (No)
+:El sistema presenta un mensaje: "Operación cancelada por el usuario";
+endif
+stop
+@enduml

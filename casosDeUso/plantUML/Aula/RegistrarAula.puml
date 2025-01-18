@@ -1,0 +1,24 @@
+@startuml
+title Registrar Aula
+start
+:El usuario solicita introducir registro de una nueva aula;
+:El sistema permite el  registro de una nueva aula;
+if (¿Registrar o Importar?) then (Registrar)
+  :El usuario introduce los datos del aula;
+  :El sistema permite introducir datos del aula (número, capacidad, recursos como computadoras, etc.);
+  :El sistema incorpora el aula;
+else (Importar)
+  :El usuario introduce carga del archivo con las aulas;
+  :El sistema permite introducir un archivo para importar aulas (archivo Excel o CSV);
+  :El sistema valida el formato y los datos del archivo;
+  if (¿Formato y datos correctos?) then (Sí)
+    :El sistema importa los datos de las aulas del archivo;
+    :El sistema incorpora las aulas al sistema;
+    :El sistema presenta confirmación: "Aulas importadas correctamente";
+  else (No)
+    :El sistema presenta mensaje de error: "El archivo no tiene el formato o datos correctos";
+    :El sistema permite introducir corrección del archivo y volver a cargarlo;
+  endif
+endif
+stop
+@enduml

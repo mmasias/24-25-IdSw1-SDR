@@ -1,0 +1,19 @@
+@startuml
+
+title Eliminar Grado
+
+start
+:El usuario solicita introducir la eliminación de un grado;
+:El sistema presenta la lista de grados existentes;
+:El usuario selecciona un grado para eliminar;
+:El sistema permite la confirmación para eliminar el grado seleccionado;
+if (¿Confirma la eliminación?) then (Sí)
+:El sistema elimina el grado seleccionado del sistema;
+:El sistema presenta una confirmación: "Grado eliminado correctamente";
+else (No)
+:El sistema cancela la operación de eliminación;
+:El sistema presenta un mensaje: "Operación cancelada por el usuario";
+endif
+stop
+
+@enduml
