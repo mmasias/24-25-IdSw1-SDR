@@ -1,0 +1,18 @@
+@startuml
+' Diagrama de estados para Profesor
+state "SinAsignar" as SinAsignar_Profesor
+state "AsignadoAAsignatura" as AsignadoAAsignatura
+state "AsignadoConAula" as AsignadoConAula
+state "Confirmado" as Confirmado_Profesor
+state "Cancelado" as Cancelado_Profesor
+
+[*] --> SinAsignar_Profesor
+SinAsignar_Profesor --> AsignadoAAsignatura: Asignar a asignatura
+AsignadoAAsignatura --> AsignadoConAula : Asignar aula
+AsignadoConAula --> Confirmado_Profesor : Confirmar asignación
+AsignadoAAsignatura --> Cancelado_Profesor : Cancelar asignación
+AsignadoConAula --> Cancelado_Profesor : Cancelar asignación
+[*] --> Cancelado_Profesor : Cancelar asignación
+Confirmado_Profesor --> [*] : Operación completada
+Cancelado_Profesor --> [*] : Asignación cancelada
+@enduml
