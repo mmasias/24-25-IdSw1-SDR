@@ -1,61 +1,76 @@
 @startuml
+[*] --> DatosAcademicos
 
-start
-:Seleccionar 'año académico actual';
--> "El usuario define el periodo";
+state DatosAcademicos {
+  [*] --> Estado1
 
-if (¿Existen datos de años anteriores?) then (Sí)
-  -> "Información previa disponible";
-  :Preguntar si se desea heredar datos;
-  if (¿Heredar datos?) then (Sí)
-    -> "Aprovechar datos guardados";
-    :Cargar datos heredados;
-  else (No)
-    -> "Iniciar desde cero";
-    :Iniciar con datos vacíos;
-  endif
-else (No)
-  -> "No hay datos históricos";
-  :Iniciar con datos vacíos;
-endif
+  state "El Usuario solicita acceder al módulo" as Estado1
+  state "El Sistema permite seleccionar año" as Estado2
 
--> "El usuario procede a introducir detalles";
-:Ingresar o modificar datos académicos;
--> "Seleccionar los tipos de datos académicos a rellenar";
+  Estado1 --> Estado2
 
-fork
-  :Sexenios;
-fork again
-  :Exp. Investigadora;
-fork again
-  :Exp. Profesional;
-fork again
-  :Exp. Docente;
-fork again
-  :Tit. Profesional;
-fork again
-  :Movilidad;
-fork again
-  :Acreditaciones;
-end fork
+  state choice1 <<choice>>
+  Estado2 --> choice1
 
--> "Sistema valida la información completa";
-:Validar datos ingresados;
+  state "El Sistema presenta opción heredar" as Estado3
+  state "El Sistema inicia datos vacíos" as Estado4
 
-if (¿Datos válidos?) then (Sí)
-  -> "Todo correcto";
-  :Guardar datos académicos;
-  :Confirmar registro exitoso;
-  stop
-else (No)
-  -> "Hallamos errores";
-  :Mostrar errores en los datos;
-  :Solicitar corrección de datos;
-  -> "El usuario corrige y reintenta";
-  :Volver a ingresar datos académicos;
-  :Validar datos ingresados;
-endif
+  choice1 --> Estado3: Datos previos
+  choice1 --> Estado4: Sin datos
 
-stop
+  state choice2 <<choice>>
+  Estado3 --> choice2
+
+  state "El Sistema carga datos heredados" as Estado5
+
+  choice2 --> Estado5: Heredar
+  choice2 --> Estado4: No heredar
+
+  state "El Usuario introduce datos académicos" as Estado6
+
+  Estado5 --> Estado6
+  Estado4 --> Estado6
+
+  state fork1 <<fork>>
+  Estado6 --> fork1
+
+  state "Experiencia" as Estado7
+  state "Méritos" as Estado8
+  state "Titulación" as Estado9
+
+  fork1 --> Estado7
+  fork1 --> Estado8
+  fork1 --> Estado9
+
+  state join1 <<join>>
+
+  Estado7 --> join1
+  Estado8 --> join1
+  Estado9 --> join1
+
+  state "El Sistema valida datos" as Estado14
+
+  join1 --> Estado14
+
+  state choice3 <<choice>>
+  Estado14 --> choice3
+
+  state "El Sistema guarda datos" as Estado15
+  state "El Sistema presenta errores" as Estado16
+
+  choice3 --> Estado15: Datos válidos
+  choice3 --> Estado16: Errores
+
+  state "El Sistema confirma registro" as Estado17
+  state "El Usuario corrige datos" as Estado18
+
+  Estado15 --> Estado17
+  Estado16 --> Estado18
+  Estado18 --> Estado14
+
+  Estado17 --> [*]
+}
+
+DatosAcademicos --> [*]
 
 @enduml
