@@ -10,32 +10,36 @@ El objetivo de este paso es **prototipar los casos de uso** siguiendo las [pauta
 
 Debido a que este proyecto tiene direfentes actores, en primer lugar se mostrara las pantallas de inicio correspondientes a cada actor, lo que reflejará las acciones que puede hacer cada uno de ellos.
 
-| **Actor**                | **Prototipo**                                      |
-|--------------------------|----------------------------------------------------|
-| Inicio de Sesión         | ![InicioSesion](/images/Prototipar/Inicio.png) |
-| Cierre de Sesión         | ![InicioSesion](/images/Prototipar/CerrarSesion.png) |
-| Admin                    | ![UsuarioAdmin](/images/Prototipar/Admin.png)  |
-| Ordenación Académica     | ![UsuarioOrdenacion](/images/Prototipar/Ordenacion.png) |
-| Recursos Humanos         | ![UsuarioRRHH](/images/Prototipar/RRHH.png)    |
-| Profesor                 | ![UsuarioProfesor](/images/Prototipar/Profesor.png) |
-| Técnico de Calidad       | ![UsuarioCalidad](/images/Prototipar/Calidad.png)  |
+| **Actor**                    | **Prototipo**                                           |
+|------------------------------|---------------------------------------------------------|
+| **Admin**                    | ![UsuarioAdmin](/images/Prototipar/Admin.png)           |
+| **Ordenación Académica**     | ![UsuarioOrdenacion](/images/Prototipar/Ordenacion.png) |
+| **Recursos Humanos**         | ![UsuarioRRHH](/images/Prototipar/RRHH.png)             |
+| **Profesor**                 | ![UsuarioProfesor](/images/Prototipar/Profesor.png)     |
+| **Técnico de Calidad**       | ![UsuarioCalidad](/images/Prototipar/Calidad.png)       |
 
 ## 🛠️ Casos de Uso
 
 A continuación se presentan los casos de uso prototipados.
 
+### 🗝️ Gestión de Sesión
+
+| **Caso de Uso** | **Prototipo** |
+|-----------------|---------------|
+| ![](/images/modelosUML/CdU/Individuales/IniciarSesion.svg) | ![IniciarSesion](/images/Prototipar/Inicio.png) |
+
 ### 📚 Gestión de Carga Docente
 
-| **Caso de Uso**        | **Detalle**    |
-|------------------------|----------------|
+| **Caso de Uso** | **Prototipo** |
+|-----------------|---------------|
 | ![](/images/modelosUML/CdU/Individuales/AsignarCargaDocente.svg) | ![AsignacionAsignaturasProfesor](/images/Prototipar/AsignacióndeCargaDocente.png) |
 
 ---
 
 ### ✅ Validación y Cumpimiento
 
-| **Caso de Uso**        | **Detalle**    |
-|------------------------|----------------|
+| **Caso de Uso** | **Prototipo** |
+|-----------------|---------------|
 | ![](/images/modelosUML/CdU/Individuales/AsignarSIIUyDGU.svg) | ![AsignarSIIUyDGU](/images/Prototipar/AsignarSIIU.png)   |
 | ![](/images/modelosUML/CdU/Individuales/AsignarValores.svg)  | ![AsignarValores](/images/Prototipar/AsignarValores.png) |
 
@@ -43,8 +47,8 @@ A continuación se presentan los casos de uso prototipados.
 
 ### 🔍 Consulta de Información
 
-| **Caso de Uso**        | **Detalle**    |
-|------------------------|----------------|
+| **Caso de Uso** | **Prototipo** |
+|-----------------|---------------|
 | ![](/images/modelosUML/CdU/Individuales/ClaustroDocente.svg)          | ![ClaustroDocente](/images/Prototipar/ConsultarClaustroDocente.png)            |
 | ![](/images/modelosUML/CdU/Individuales/ConsultarProfesor.svg)        | ![ConsultarProfesor](/images/Prototipar/ConsultaAsignaciónDocenteProfesor.png) |
 | ![](/images/modelosUML/CdU/Individuales/ConsultarVarios.svg)          | ![ConsultarVarios](/images/Prototipar/AsignaciónDocenteTitulacion.png)         |
@@ -54,8 +58,8 @@ A continuación se presentan los casos de uso prototipados.
 
 ### 📝 Gestión de Datos
 
-| **Caso de Uso**        | **Detalle**    |
-|------------------------|----------------|
+| **Caso de Uso** | **Prototipo** |
+|-----------------|---------------|
 | ![](/images/modelosUML/CdU/Individuales/IntroducirDatosAcademicos.svg) | ![IntroducirDatosAcademicos](/images/Prototipar/DatosAcademicos.png)   |
 | ![](/images/modelosUML/CdU/Individuales/IntroducirDatosLaborales.svg)  | ![IntroducirDatosLaborales](/images/Prototipar/DatosLaborales.png)     |
 | ![](/images/modelosUML/CdU/Individuales/ModificarDatos.svg)            | ![ModificarDatos](/images/Prototipar/ModificacionDatosProfesorado.png) |
@@ -64,6 +68,6 @@ A continuación se presentan los casos de uso prototipados.
 
 ### 📊 Indicadores y Reportes
 
-| **Caso de Uso**        | **Detalle**    |
-|------------------------|----------------|
+| **Caso de Uso** | **Prototipo** |
+|-----------------|---------------|
 | ![](/images/modelosUML/CdU/Individuales/EmitirInforme.svg) | ![EmitirInforme](/images/Prototipar/EmitirInformeProfesorado.png) |

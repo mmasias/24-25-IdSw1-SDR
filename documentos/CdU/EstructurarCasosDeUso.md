@@ -22,21 +22,21 @@ El objetivo de este paso es **estructurar el modelo de los casos de uso** siguie
 
 ### Relación `<<include>>`
 
-| Caso de Uso Principal                 | Caso de Uso Incluido              | Explicación                                                                            |
-|---------------------------------------|-----------------------------------|----------------------------------------------------------------------------------------|
-| **Emitir Informe del Profesorado**    | Obtener Indicadores               | Los indicadores se obtienen antes de emitir el informe.                                |
-| **Obtener Indicadores**               | Consultar Asignación por Profesor | Los indicadores dependen de la asignación por profesor.                                |
-| **Asignar Valores en Memoria**        | Validar Memoria y Titulación      | Es necesario validar la memoria y titulación antes de asignar valores.                 |
-| **Validar Memoria y Titulación**      | Consultar Claustro Docente        | Se revisa la memoria y titulación con la consulta al claustro docente.                 |
-| **Revisar Carga Docente**             | Consultar Claustro Docente        | La revisión de la carga docente depende de la consulta al claustro docente.            |
-| **Validar Datos del Profesorado**     | Consultar Claustro Docente        | Se consulta el claustro para validar los datos del profesorado.                        |
-| **Modificar Datos del Profesorado**   | Validar Datos del Profesorado     | Modificar los datos requiere la validación previa de los mismos.                       |
-| **Validar Datos del Profesorado**     | Introducir Datos Académicos       | La validación de datos del profesorado requiere introducir datos académicos del mismo. |
+| Caso de Uso Principal                        | Caso de Uso Incluido            | Explicación                                                                             |
+|----------------------------------------------|---------------------------------|-----------------------------------------------------------------------------------------|
+| **Emitir Informe del Profesorado**           | Obtener Indicadores             | Los indicadores se obtienen antes de emitir el informe.                                 |
+| **Asignar Valores en Memoria**               | Validar Cumplimiento de Memoria | Es necesario validar el cumplimiento de memoria antes de asignar valores.               |
+| **Validar Cumplimiento de Memoria**          | Consultar Claustro Docente      | Se revisa la memoria y titulación con la consulta al claustro docente.                  |
+| **Revisar Profesores con Carga no Ajustada** | Consultar Claustro Docente      | La revisión de la carga docente no ajustada depende de la consulta al claustro docente. |
+| **Asignar Carga Docente**                    | Consultar Claustro Docente      | La asignación de carga docente se realiza tras consultar el claustro docente.           |
+| **Modificar Datos del Profesorado**          | Validar Datos del Profesorado   | Modificar los datos requiere la validación previa de los mismos.                        |
+| **Validar Datos del Profesorado**            | Introducir Datos Académicos     | La validación de datos del profesorado requiere introducir datos académicos del mismo.  |
+| **Validar Datos del Profesorado**            | Consultar Claustro Docente      | Se consulta el claustro para validar los datos del profesorado.                         |
 
 ---
 
 ### Relación `<<extend>>`
 
-| Caso de Uso Principal              | Caso de Uso Extendido        | Explicación                                                                  |
-|------------------------------------|------------------------------|------------------------------------------------------------------------------|
-| **Asignar Información a SIIU/DGU** | Validar Memoria y Titulación | La asignación de información se extiende si es necesario validar la memoria. |
+| Caso de Uso Principal              | Caso de Uso Extendido           | Explicación                                                                  |
+|------------------------------------|---------------------------------|------------------------------------------------------------------------------|
+| **Asignar Información a SIIU/DGU** | Validar Cumplimiento de Memoria | La asignación de información se extiende si es necesario validar la memoria. |
