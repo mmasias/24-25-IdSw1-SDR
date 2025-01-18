@@ -4,10 +4,10 @@ title Diagrama de Estados de Asignatura
 
 SinAsignar : La asignatura, profesor y aula aún no están definidos.
 
-SinAsignar --> GrupoDefinido : Crear grupo en AsignaturaGrado
-GrupoDefinido : Grupo creado, pero aún sin profesor asignado.
+SinAsignar --> AsignaturaGrado : Crear grupo en AsignaturaGrado
+AsignaturaGrado : Grupo creado, pero aún sin profesor asignado.
 
-GrupoDefinido --> ProfesorAsignado : Asignar profesor a grupo (AsignaturaGradoProfesor)
+AsignaturaGrado --> ProfesorAsignado : Asignar profesor a grupo (AsignaturaGradoProfesor)
 ProfesorAsignado : Profesor asignado, pero sin aula.
 
 ProfesorAsignado --> AulaAsignada : Asignar aula
@@ -17,7 +17,7 @@ AulaAsignada --> Confirmado : Confirmar asignación final
 Confirmado : Configuración finalizada y lista para uso.
 
 SinAsignar --> Cancelado : Cancelar asignación
-GrupoDefinido --> Cancelado : Cancelar asignación
+AsignaturaGrado --> Cancelado : Cancelar asignación
 ProfesorAsignado --> Cancelado : Cancelar asignación
 AulaAsignada --> Cancelado : Cancelar asignación
 Confirmado --> [*] : Operación completada
