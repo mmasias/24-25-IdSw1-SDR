@@ -2,7 +2,7 @@
 [![Modelo de Dominio](https://img.shields.io/badge/Modelo%20de%20Dominio-blue?style=for-the-badge)](https://github.com/srgiom/24-25-IdSw1-SDR/tree/main/modeloDelDominio)
 [![Prototipos](https://img.shields.io/badge/Prototipos-blue?style=for-the-badge)](https://github.com/srgiom/24-25-IdSw1-SDR/tree/main/prototipos)
 
-## 🛠️ **Actores y Diagrama de Contexto**
+## 🛠️ **Actores, Casos de Uso, Diagrama de Contexto y Detalle de los Casos de Uso**
 
 ### Actores
 ![Actores](https://github.com/srgiom/24-25-IdSw1-SDR/raw/main/casosDeUso/actores/actores.png)
@@ -13,6 +13,10 @@
 
 ---
 
+### Casos de Uso
+
+
+---
 
 ### Diagrama de Contexto
 ![Diagrama de Contexto](/casosDeUso/diagramaDeContexto/DiagramaDeContexto.svg)
@@ -21,7 +25,7 @@
 
 ---
 
-## 🛠️ Casos de Uso Representados mediante Diagramas (Ordenados)
+## 🛠️ Casos de Uso Detallados
 
 ### Inicio de Sesión
 ![Inicio de Sesión](/casosDeUso/imagenes/IniciarSesión.svg)
