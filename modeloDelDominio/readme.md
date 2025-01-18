@@ -28,7 +28,7 @@ Usamos las siguientes herramientas para definir las entidades principales de nue
 ### **Estados de Asignatura**  
 ![Diagrama de Estados](/modeloDelDominio/imagenes/diagramaEstadosAsignatura.svg)  
 > **Descripción:**  
-> - Partes de cero en el estado `SinAsignar` y asignas un `Grado` a la `Asignatura` (AsignaturaGrado), creando el estado `GrupoDefinido`.  
+> - Partes de cero en el estado `SinAsignar` y asignas un `Grado` a la `Asignatura` (AsignaturaGrado), creando el estado `AsignaturaGrado`.  
 > - Se le asigna un `Profesor` (AsignaturaGradoProfesor) para completar el estado `ProfesorAsignado`.  
 > - Se le asigna un `Aula` en el estado `AulaAsignada`. Hasta este momento existe la opción de cancelar asignación que nos llevará al estado de `Cancelado`.  
 > - Confirmamos la asignación para llegar al estado `Confirmado` para completar la operación.  
@@ -39,7 +39,7 @@ Usamos las siguientes herramientas para definir las entidades principales de nue
 ![Diagrama de Estados Profesor](/modeloDelDominio/imagenes/diagramaEstadosProfesor.png)  
 > **Descripción:**  
 > - Un `Profesor` comienza en el estado `SinAsignar`.  
-> - Se le asigna un `Grupo` de `AsignaturaGrado` para pasar al estado `AsignadoAGrupo`.  
+> - Se le asigna un `Grupo` de `AsignaturaGrado` para pasar al estado `AsignadoAAsignatura`.  
 > - Posteriormente, se asigna un aula en `AsignadoConAula`.  
 > - La asignación puede cancelarse en cualquier momento, llevando al estado `Cancelado`.  
 > - Al confirmar la asignación, el `Profesor` pasa al estado final `Confirmado`.  
