@@ -26,7 +26,7 @@ Usamos las siguientes herramientas para definir las entidades principales de nue
 ---
 
 ### **Estados de Asignatura**  
-![Diagrama de Estados](/modeloDelDominio/imagenes/diagramaEstadosAsignatura.svg)  
+![Diagrama de Estados](/modeloDelDominio/imagenes/diagramaEstadosAsignatura.png)  
 > **Descripción:**  
 > - Partes de cero en el estado `SinAsignar` y asignas un `Grado` a la `Asignatura` (AsignaturaGrado), creando el estado `AsignaturaGrado`.  
 > - Se le asigna un `Profesor` (AsignaturaGradoProfesor) para completar el estado `ProfesorAsignado`.  
