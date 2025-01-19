@@ -1,4 +1,5 @@
 @startuml
+title Consultar Horario Profesor
 start
 :El usuario solicita introducir consulta del horario de un profesor específico;
 :El sistema permite la introducción de datos para la consulta;

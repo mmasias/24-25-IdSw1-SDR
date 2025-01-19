@@ -1,4 +1,5 @@
 @startuml
+title Seleccionar Aula Automáticamente
 start
 :Sistema verifica aulas disponibles;
 if (¿Existen aulas que cumplen las preferencias?) then (Sí)

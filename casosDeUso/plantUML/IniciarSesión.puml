@@ -1,4 +1,5 @@
 @startuml
+title Iniciar Sesión
 start
 :El usuario solicita introducir credenciales;
 :El sistema permite introducir credenciales (usuario y contraseña);

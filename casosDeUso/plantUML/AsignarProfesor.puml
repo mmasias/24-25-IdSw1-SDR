@@ -1,4 +1,5 @@
 @startuml
+title Asignar Profesor
 start
 :El usuario solicita introducir asignación de un profesor a una asignatura;
 :El sistema permite la introducción de datos para la asignación;
