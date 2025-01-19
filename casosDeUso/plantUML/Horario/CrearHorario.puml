@@ -1,0 +1,19 @@
+@startuml
+
+title Crear Horario
+
+start
+:El usuario solicita introducir un nuevo horario;
+:El sistema permite introducir los datos del horario (nombre, fecha, detalles relevantes);
+:El usuario introduce los datos solicitados;
+if (¿Datos válidos?) then (Sí)
+:El sistema permite introducir el registro del horario;
+:El sistema incorpora el nuevo horario al sistema;
+:El sistema presenta una confirmación: "Horario creado correctamente";
+else (No)
+:El sistema presenta un mensaje de error: "Los datos del horario no son válidos";
+:El sistema permite introducir nuevamente los datos del horario;
+endif
+stop
+
+@enduml

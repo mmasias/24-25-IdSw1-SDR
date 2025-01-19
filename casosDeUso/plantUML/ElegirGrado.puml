@@ -1,8 +1,0 @@
-@startuml
-start
-:El usuario solicita introducir elección de un grado;
-:El sistema permite la introducción de datos para seleccionar un grado;
-:El Sistema presenta todos los grados disponibles;
-:El usuario introduce selección de un grado;
-stop
-@enduml

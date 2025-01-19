@@ -1,0 +1,19 @@
+@startuml
+
+title Eliminar Horario
+
+start
+:El usuario solicita introducir la eliminación de un horario;
+:El sistema presenta la lista de horarios existentes;
+:El usuario selecciona un horario para eliminar;
+:El sistema permite la confirmación para eliminar el horario seleccionado;
+if (¿Confirma la eliminación?) then (Sí)
+:El sistema elimina el horario seleccionado del sistema;
+:El sistema presenta una confirmación: "Horario eliminado correctamente";
+else (No)
+:El sistema cancela la operación de eliminación;
+:El sistema presenta un mensaje: "Operación cancelada por el usuario";
+endif
+stop
+
+@enduml

@@ -1,0 +1,16 @@
+@startuml
+
+title Consultar Profesor
+
+start
+:El usuario solicita visualizar los profesores disponibles;
+:El sistema presenta la lista de profesores existentes;
+if (¿Selecciona un profesor?) then (Sí)
+:El usuario selecciona un profesor específico;
+:El sistema muestra los detalles del profesor seleccionado;
+else (No)
+:El sistema presenta un mensaje: "Operación cancelada por el usuario";
+endif
+stop
+
+@enduml

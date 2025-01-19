@@ -1,0 +1,16 @@
+@startuml
+
+title Consultar Asignatura-Grado-Profesor
+
+start
+:El usuario solicita visualizar las asignaciones de profesores a asignaturas en grados;
+:El sistema presenta la lista de asignaciones existentes;
+if (¿Selecciona una asignación?) then (Sí)
+:El usuario selecciona una asignación específica;
+:El sistema muestra los detalles de la asignación seleccionada;
+else (No)
+:El sistema presenta un mensaje: "Operación cancelada por el usuario";
+endif
+stop
+
+@enduml

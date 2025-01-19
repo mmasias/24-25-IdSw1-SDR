@@ -1,0 +1,16 @@
+@startuml
+
+title Consultar Horario
+
+start
+:El usuario solicita visualizar los horarios disponibles;
+:El sistema presenta la lista de horarios existentes;
+if (¿Selecciona un horario?) then (Sí)
+:El usuario selecciona un horario específico;
+:El sistema muestra los detalles del horario seleccionado;
+else (No)
+:El sistema presenta un mensaje: "Operación cancelada por el usuario";
+endif
+stop
+
+@enduml

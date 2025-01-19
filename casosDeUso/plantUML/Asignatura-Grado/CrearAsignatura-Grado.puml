@@ -1,0 +1,19 @@
+@startuml
+
+title Crear Asignatura-Grado
+
+start
+:El usuario solicita introducir una nueva asignación de una asignatura a un grado;
+:El sistema permite introducir los datos del grado y de la asignatura;
+:El usuario introduce los datos solicitados;
+if (¿Datos válidos?) then (Sí)
+:El sistema permite registrar la asignación;
+:El sistema incorpora la nueva asignación al sistema;
+:El sistema presenta una confirmación: "Asignación creada correctamente";
+else (No)
+:El sistema presenta un mensaje de error: "Los datos de la asignación no son válidos";
+:El sistema permite introducir nuevamente los datos;
+endif
+stop
+
+@enduml

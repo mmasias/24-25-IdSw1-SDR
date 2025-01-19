@@ -1,0 +1,19 @@
+@startuml
+
+title Eliminar Profesor
+
+start
+:El usuario solicita introducir la eliminación de un profesor;
+:El sistema presenta la lista de profesores existentes;
+:El usuario selecciona un profesor para eliminar;
+:El sistema permite la confirmación para eliminar el profesor seleccionado;
+if (¿Confirma la eliminación?) then (Sí)
+:El sistema elimina el profesor seleccionado del sistema;
+:El sistema presenta una confirmación: "Profesor eliminado correctamente";
+else (No)
+:El sistema cancela la operación de eliminación;
+:El sistema presenta un mensaje: "Operación cancelada por el usuario";
+endif
+stop
+
+@enduml

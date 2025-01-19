@@ -1,0 +1,16 @@
+@startuml
+
+title Consultar Grado
+
+start
+:El usuario solicita visualizar los grados disponibles;
+:El sistema presenta la lista de grados existentes;
+if (¿Selecciona un grado?) then (Sí)
+:El usuario selecciona un grado específico;
+:El sistema muestra los detalles del grado seleccionado;
+else (No)
+:El sistema presenta un mensaje: "Operación cancelada por el usuario";
+endif
+stop
+
+@enduml

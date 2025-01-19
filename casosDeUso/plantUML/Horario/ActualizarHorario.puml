@@ -1,0 +1,19 @@
+@startuml
+
+title Actualizar Horario
+
+start
+:El usuario solicita introducir cambios en un horario;
+:El sistema permite introducir los datos del horario a modificar;
+:El usuario introduce los nuevos datos del horario;
+if (¿Datos válidos?) then (Sí)
+:El sistema permite guardar los cambios;
+:El sistema actualiza el horario con la nueva información;
+:El sistema presenta una confirmación: "Horario actualizado correctamente";
+else (No)
+:El sistema presenta un mensaje de error: "Los datos introducidos no son válidos";
+:El sistema permite introducir nuevamente los datos del horario;
+endif
+stop
+
+@enduml

@@ -1,0 +1,19 @@
+@startuml
+
+title Actualizar Asignatura
+
+start
+:El usuario solicita introducir cambios en una asignatura;
+:El sistema permite introducir los datos de la asignatura a modificar;
+:El usuario introduce los nuevos datos de la asignatura;
+if (¿Datos válidos?) then (Sí)
+:El sistema permite guardar los cambios;
+:El sistema actualiza la asignatura con la nueva información;
+:El sistema presenta una confirmación: "Asignatura actualizada correctamente";
+else (No)
+:El sistema presenta un mensaje de error: "Los datos introducidos no son válidos";
+:El sistema permite introducir nuevamente los datos;
+endif
+stop
+
+@enduml
