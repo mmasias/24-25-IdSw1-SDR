@@ -12,11 +12,11 @@ INICIANDO_SESION --> MENU_PRINCIPAL
     end note
 
 ' Operaciones de Grado
-MENU_PRINCIPAL --> CREANDO_GRADO
+MENU_PRINCIPAL --> REGISTRANDO_GRADO
     note on link
-        Crear grado
+        Registrar grado
     end note
-CREANDO_GRADO --> MENU_PRINCIPAL
+REGISTRANDO_GRADO --> MENU_PRINCIPAL
     note on link
         Ver menú
     end note
@@ -49,11 +49,11 @@ ELIMINANDO_GRADO --> MENU_PRINCIPAL
     end note
 
 ' Operaciones de Aula
-MENU_PRINCIPAL --> CREANDO_AULA
+MENU_PRINCIPAL --> REGISTRANDO_AULA
     note on link
-        Crear aula
+        Registrar aula
     end note
-CREANDO_AULA --> MENU_PRINCIPAL
+REGISTRANDO_AULA --> MENU_PRINCIPAL
     note on link
         Ver menú
     end note
@@ -86,11 +86,11 @@ ELIMINANDO_AULA --> MENU_PRINCIPAL
     end note
 
 ' Operaciones de Asignatura
-MENU_PRINCIPAL --> CREANDO_ASIGNATURA
+MENU_PRINCIPAL --> REGISTRANDO_ASIGNATURA
     note on link
-        Crear asignatura
+        Registrar asignatura
     end note
-CREANDO_ASIGNATURA --> MENU_PRINCIPAL
+REGISTRANDO_ASIGNATURA --> MENU_PRINCIPAL
     note on link
         Ver menú
     end note
@@ -123,11 +123,11 @@ ELIMINANDO_ASIGNATURA --> MENU_PRINCIPAL
     end note
 
 ' Operaciones de Profesor
-MENU_PRINCIPAL --> CREANDO_PROFESOR
+MENU_PRINCIPAL --> REGISTRANDO_PROFESOR
     note on link
-        Crear profesor
+        Registrar profesor
     end note
-CREANDO_PROFESOR --> MENU_PRINCIPAL
+REGISTRANDO_PROFESOR --> MENU_PRINCIPAL
     note on link
         Ver menú
     end note
