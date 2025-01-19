@@ -1,0 +1,5 @@
+# **GLOSARIO**  
+
+---
+
+### **Términos Generales**
