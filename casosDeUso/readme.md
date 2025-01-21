@@ -38,84 +38,226 @@
 
 ---
 
-### Elegir Grado
-![Elegir Grado](/casosDeUso/imagenes/ElegirGrado.svg)
-> 🎓 **Selección de Grado:**
-> Representa cómo el usuario elige un grado específico:
-> - Se muestran todos los grados disponibles.
-> - El usuario realiza su selección final.
+### Ver Menú
+![Ver Menú](/casosDeUso/imagenes/VerMenu.svg)
+> 📋 **Visualización del Menú:**
+> Muestra las opciones principales del sistema:
+> - El usuario puede navegar hacia las diferentes funcionalidades.
 
 ---
 
-### Registrar Asignatura
-![Registrar Asignatura](/casosDeUso/imagenes/RegistrarAsignatura.svg)
-> 📝 **Registro de Asignaturas:**
-> Este diagrama detalla el registro manual o importación masiva de asignaturas mediante:
-> - Introducción de datos manual.
-> - Carga de archivos (Excel o CSV).
+### Grado
+#### Registrar Grado
+![Registrar Grado](/casosDeUso/imagenes/Grado/RegistrarGrado.svg)
+> 🎓 **Registro de Grado:**
+> Permite al usuario registrar un nuevo grado:
+> - Introducción manual de datos.
+> - Confirmación de creación.
+
+#### Consultar Grado
+![Consultar Grado](/casosDeUso/imagenes/Grado/ConsultarGrado.svg)
+> 📘 **Consulta de Grados:**
+> Presenta una lista de grados disponibles:
+> - Permite seleccionar un grado específico para ver sus detalles.
+
+#### Actualizar Grado
+![Actualizar Grado](/casosDeUso/imagenes/Grado/ActualizarGrado.svg)
+> ✏️ **Edición de Grados:**
+> Permite modificar los datos de un grado existente:
 > - Validación de datos y confirmación.
 
+#### Eliminar Grado
+![Eliminar Grado](/casosDeUso/imagenes/Grado/EliminarGrado.svg)
+> ❌ **Eliminación de Grado:**
+> Elimina un grado seleccionado tras confirmación del usuario.
+
 ---
 
-### Asignar Profesor
+### Aula
+#### Registrar Aula
+![Registrar Aula](/casosDeUso/imagenes/Aula/RegistrarAula.svg)
+> 🏫 **Registro de Aulas:**
+> Permite agregar nuevas aulas al sistema:
+> - Introducción de datos como nombre, capacidad, y ubicación.
+
+#### Consultar Aula
+![Consultar Aula](/casosDeUso/imagenes/Aula/ConsultarAula.svg)
+> 📋 **Consulta de Aulas:**
+> Muestra las aulas disponibles con filtros por ubicación y capacidad.
+
+#### Actualizar Aula
+![Actualizar Aula](/casosDeUso/imagenes/Aula/ActualizarAula.svg)
+> ✏️ **Edición de Aulas:**
+> Permite modificar los datos de una aula específica.
+
+#### Eliminar Aula
+![Eliminar Aula](/casosDeUso/imagenes/Aula/EliminarAula.svg)
+> ❌ **Eliminación de Aulas:**
+> Proceso para eliminar un aula tras confirmación del usuario.
+
+---
+
+### Asignatura
+#### Registrar Asignatura
+![Registrar Asignatura](/casosDeUso/imagenes/Asignatura/RegistrarAsignatura.svg)
+> 📝 **Registro de Asignaturas:**
+> Permite registrar nuevas asignaturas mediante:
+> - Introducción manual o carga de archivo.
+
+#### Consultar Asignatura
+![Consultar Asignatura](/casosDeUso/imagenes/Asignatura/ConsultarAsignatura.svg)
+> 📋 **Consulta de Asignaturas:**
+> Muestra una lista de asignaturas disponibles.
+
+#### Actualizar Asignatura
+![Actualizar Asignatura](/casosDeUso/imagenes/Asignatura/ActualizarAsignatura.svg)
+> ✏️ **Edición de Asignaturas:**
+> Modifica los datos de una asignatura existente.
+
+#### Eliminar Asignatura
+![Eliminar Asignatura](/casosDeUso/imagenes/Asignatura/EliminarAsignatura.svg)
+> ❌ **Eliminación de Asignaturas:**
+> Permite eliminar asignaturas tras confirmación del usuario.
+
+---
+
+### Profesor
+#### Registrar Profesor
+![Registrar Profesor](/casosDeUso/imagenes/Profesor/RegistrarProfesor.svg)
+> 👨‍🏫 **Registro de Profesores:**
+> Agrega nuevos profesores al sistema mediante datos manuales.
+
+#### Consultar Profesor
+![Consultar Profesor](/casosDeUso/imagenes/Profesor/ConsultarProfesor.svg)
+> 📘 **Consulta de Profesores:**
+> Permite ver una lista de profesores registrados.
+
+#### Actualizar Profesor
+![Actualizar Profesor](/casosDeUso/imagenes/Profesor/ActualizarProfesor.svg)
+> ✏️ **Edición de Profesores:**
+> Modifica información sobre profesores existentes.
+
+#### Eliminar Profesor
+![Eliminar Profesor](/casosDeUso/imagenes/Profesor/EliminarProfesor.svg)
+> ❌ **Eliminación de Profesores:**
+> Elimina registros de profesores tras validación.
+
+---
+
+### Asignatura-Grado
+#### Crear Asignatura-Grado
+![Crear Asignatura-Grado](/casosDeUso/imagenes/AsignaturaGrado/CrearAsignaturaGrado.svg)
+> 🔗 **Vinculación:**
+> Permite vincular asignaturas específicas a grados académicos.
+
+#### Consultar Asignatura-Grado
+![Consultar Asignatura-Grado](/casosDeUso/imagenes/AsignaturaGrado/ConsultarAsignaturaGrado.svg)
+> 📘 **Consulta de Vinculaciones:**
+> Permite visualizar las asignaturas vinculadas a un grado.
+
+#### Actualizar Asignatura-Grado
+![Actualizar Asignatura-Grado](/casosDeUso/imagenes/AsignaturaGrado/ActualizarAsignaturaGrado.svg)
+> ✏️ **Edición de Vinculaciones:**
+> Modifica asignaturas asociadas a un grado.
+
+#### Eliminar Asignatura-Grado
+![Eliminar Asignatura-Grado](/casosDeUso/imagenes/AsignaturaGrado/EliminarAsignaturaGrado.svg)
+> ❌ **Eliminación de Vinculaciones:**
+> Permite eliminar la relación entre asignaturas y grados.
+
+---
+
+### Asignatura-Grado-Profesor
+#### Crear Asignatura-Grado-Profesor
+![Crear Asignatura-Grado-Profesor](/casosDeUso/imagenes/AsignaturaGradoProfesor/CrearAsignaturaGradoProfesor.svg)
+> 🔗 **Registro Vinculación:**
+> Permite asociar asignaturas con grados y profesores.
+
+#### Consultar Asignatura-Grado-Profesor
+![Consultar Asignatura-Grado-Profesor](/casosDeUso/imagenes/AsignaturaGradoProfesor/ConsultarAsignaturaGradoProfesor.svg)
+> 📘 **Consulta de Vinculaciones:**
+> Muestra detalles de las asociaciones existentes.
+
+#### Actualizar Asignatura-Grado-Profesor
+![Actualizar Asignatura-Grado-Profesor](/casosDeUso/imagenes/AsignaturaGradoProfesor/ActualizarAsignaturaGradoProfesor.svg)
+> ✏️ **Edición de Asociaciones:**
+> Permite modificar las relaciones ya registradas.
+
+#### Eliminar Asignatura-Grado-Profesor
+![Eliminar Asignatura-Grado-Profesor](/casosDeUso/imagenes/AsignaturaGradoProfesor/EliminarAsignaturaGradoProfesor.svg)
+> ❌ **Eliminación de Vinculaciones:**
+> Elimina las asociaciones tras validación.
+
+---
+
+### Horario-Asignatura-Aula
+#### Crear Horario-Asignatura-Aula
+![Crear Horario-Asignatura-Aula](/casosDeUso/imagenes/HorarioAsignaturaAula/CrearHorarioAsignaturaAula.svg)
+> 🏫 **Registro Vinculaciones:**
+> Permite crear horarios vinculados a aulas y asociaciones específicas.
+
+#### Consultar Horario-Asignatura-Aula
+![Consultar Horario-Asignatura-Aula](/casosDeUso/imagenes/HorarioAsignaturaAula/ConsultarHorarioAsignaturaAula.svg)
+> 📋 **Consulta de Vinculaciones:**
+> Permite revisar asociaciones entre horarios y aulas.
+
+#### Actualizar Horario-Asignatura-Aula
+![Actualizar Horario-Asignatura-Aula](/casosDeUso/imagenes/HorarioAsignaturaAula/ActualizarHorarioAsignaturaAula.svg)
+> ✏️ **Edición de Vinculaciones:**
+> Permite modificar registros ya existentes.
+
+#### Eliminar Horario-Asignatura-Aula
+![Eliminar Horario-Asignatura-Aula](/casosDeUso/imagenes/HorarioAsignaturaAula/EliminarHorarioAsignaturaAula.svg)
+> ❌ **Eliminación de Vinculaciones:**
+> Borra registros tras validación.
+
+---
+
+### Horario
+#### Crear Horario
+![Crear Horario](/casosDeUso/imagenes/Horario/CrearHorario.svg)
+> 📅 **Registro de Horarios:**
+> Permite crear horarios personalizados para asignaturas y profesores.
+
+#### Consultar Horario
+![Consultar Horario](/casosDeUso/imagenes/Horario/ConsultarHorario.svg)
+> 📋 **Consulta de Horarios:**
+> Muestra horarios existentes por asignatura o profesor.
+
+#### Actualizar Horario
+![Actualizar Horario](/casosDeUso/imagenes/Horario/ActualizarHorario.svg)
+> ✏️ **Edición de Horarios:**
+> Permite ajustar detalles en horarios registrados.
+
+#### Eliminar Horario
+![Eliminar Horario](/casosDeUso/imagenes/Horario/EliminarHorario.svg)
+> ❌ **Eliminación de Horarios:**
+> Permite borrar horarios del sistema.
+
+---
+
+### Casos Adicionales
+#### Asignar Profesor
 ![Asignar Profesor](/casosDeUso/imagenes/AsignarProfesor.svg)
 > 👨‍🏫 **Asignación de Profesor:**
-> Muestra el flujo para asignar un profesor a una asignatura. Incluye:
-> - Verificación de que el profesor no exceda el límite de 8 asignaturas.
-> - Confirmación o cancelación según corresponda.
+> Permite asignar profesores a asignaturas específicas.
 
----
-
-### Consultar Horario de Profesor
+#### Consultar Horario de Profesor
 ![Consultar Horario de Profesor](/casosDeUso/imagenes/ConsultarHorarioProfesor.svg)
-> 📅 **Consulta de Horario:**
-> Permite visualizar el horario semanal de un profesor:
-> - Detalles como asignaturas, horas y aulas ocupadas.
-> - Presentación en un formato tabla claro y organizado.
+> 📅 **Consulta del Horario:**
+> Muestra horarios completos para un profesor.
 
----
-
-### Editar Asignación
+#### Editar Asignación
 ![Editar Asignación](/casosDeUso/imagenes/EditarAsignación.svg)
 > ✏️ **Edición de Asignaciones:**
-> Proceso que permite:
-> - Modificar día, hora o aula.
-> - Manejar errores si no hay aulas disponibles.
-> - Confirmar los cambios realizados.
+> Modifica detalles en asignaciones ya creadas.
 
----
-
-### Vincular Asignatura Horario
-![Vincular Asignatura Horario](/casosDeUso/imagenes/VincularAsignaturaHorario.svg)
-> 🔗 **Vinculación:**
-> Este diagrama detalla cómo vincular una asignatura a un horario, evitando:
-> - Conflictos de asignaciones.
-> - Duplicidades en las horas asignadas.
-
----
-
-### Mostrar Asignaturas
-![Mostrar Asignaturas](/casosDeUso/imagenes/MostrarAsignaturas.svg)
-> 📋 **Visualización:**
-> Proporciona una lista filtrable de asignaturas:
-> - Permite buscar por grado, profesor o nombre.
-> - Opciones para visualizar todo o aplicar filtros.
-
----
-
-### Ver Disponibilidad de Aulas
-![Ver Disponibilidad de Aulas](/casosDeUso/imagenes/VerDisponibilidadDeAulas.svg)
-> 🏫 **Consulta de Aulas:**
-> El sistema permite consultar aulas disponibles aplicando filtros como:
-> - Día y hora.
-> - Tamaño (grande/pequeña).
-> - Especificaciones (con computadoras).
-
----
-
-### Seleccionar Aula Automáticamente
+#### Seleccionar Aula Automáticamente
 ![Seleccionar Aula Automáticamente](/casosDeUso/imagenes/SeleccionarAulaAutomaticamente.svg)
 > 🤖 **Automatización:**
-> Detalla cómo se selecciona automáticamente un aula basada en:
-> - Preferencias del usuario.
-> - Disponibilidad general en el sistema.
+> Selecciona automáticamente aulas basadas en disponibilidad y preferencias.
+
+#### Elegir Grado
+![Elegir Grado](/casosDeUso/imagenes/ElegirGrado.svg)
+> 🎓 **Selección de Grado:**
+> Permite al usuario elegir un grado y visualizar sus opciones asociadas.

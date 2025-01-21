@@ -1,0 +1,10 @@
+@startuml
+
+title Ver Menú
+
+start
+:El usuario solicita visualizar el menú principal del sistema;
+:El sistema presenta el menú principal del sistema;
+stop
+
+@enduml
