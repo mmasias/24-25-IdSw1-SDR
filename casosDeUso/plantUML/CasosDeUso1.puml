@@ -1,0 +1,55 @@
+@startuml
+left to right direction
+
+actor Administrador
+
+rectangle "Gestión de Horarios Universitarios" {
+    package "Gestión de Profesores" {
+        usecase "Actualizar Profesor" as UC1
+        usecase "Consultar Profesor" as UC2
+        usecase "Eliminar Profesor" as UC3
+        usecase "Registrar Profesor" as UC4
+    }
+
+    package "Gestión de Aulas" {
+        usecase "Actualizar Aula" as UC5
+        usecase "Consultar Aula" as UC6
+        usecase "Eliminar Aula" as UC7
+        usecase "Registrar Aula" as UC8
+    }
+
+    package "Gestión de Grados" {
+        usecase "Actualizar Grado" as UC9
+        usecase "Consultar Grado" as UC10
+        usecase "Eliminar Grado" as UC11
+        usecase "Registrar Grado" as UC12
+    }
+
+    package "Gestión de Asignaturas" {
+        usecase "Actualizar Asignatura" as UC13
+        usecase "Consultar Asignatura" as UC14
+        usecase "Eliminar Asignatura" as UC15
+        usecase "Registrar Asignatura" as UC16
+    }
+}
+
+
+
+Administrador --> UC1
+Administrador --> UC2
+Administrador --> UC3
+Administrador --> UC4
+Administrador --> UC5
+Administrador --> UC6
+Administrador --> UC7
+Administrador --> UC8
+Administrador --> UC9
+Administrador --> UC10
+Administrador --> UC11
+Administrador --> UC12
+Administrador --> UC13
+Administrador --> UC14
+Administrador --> UC15
+Administrador --> UC16
+
+@enduml

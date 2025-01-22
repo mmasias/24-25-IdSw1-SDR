@@ -14,14 +14,21 @@
 ---
 
 ### Casos de Uso
+<table>
+  <tr>
+    <td align="center">
+      <img src="https://github.com/ikercelaya/24-25-IdSw1-SDR/blob/main/casosDeUso/imagenes/CasosDeUso1.svg" width="600"/>
+      <br/>
+    </td>
+    <td align="center">
+      <img src="https://github.com/ikercelaya/24-25-IdSw1-SDR/blob/main/casosDeUso/imagenes/CasosDeUso2.svg" width="1000"/>
+      <br/>
+    </td>
+  </tr>
+</table>
 
-
----
-
-### Diagrama de Contexto
-![Diagrama de Contexto](/casosDeUso/diagramaDeContexto/DiagramaDeContexto.svg)
-> 🌐 **Contexto del Sistema:**
-> Este diagrama presenta una vista general de las interacciones entre el sistema y los actores externos, resaltando las principales funcionalidades administradas por el usuario clave: el administrador.
+> 🌐 **Casos de Uso:**
+> Este diagrama presenta una vista general de todos los casos de uso que encontramos en nuestro Sistema.
 
 ---
 
@@ -261,3 +268,12 @@
 ![Elegir Grado](/casosDeUso/imagenes/ElegirGrado.svg)
 > 🎓 **Selección de Grado:**
 > Permite al usuario elegir un grado y visualizar sus opciones asociadas.
+
+---
+
+### Diagrama de Contexto
+![Diagrama de Contexto](/casosDeUso/diagramaDeContexto/DiagramaDeContexto.svg)
+> 🌐 **Contexto del Sistema:**
+> Este diagrama presenta una vista general de las interacciones entre el sistema y los actores externos, resaltando las principales funcionalidades administradas por el usuario clave: el administrador.
+
+---

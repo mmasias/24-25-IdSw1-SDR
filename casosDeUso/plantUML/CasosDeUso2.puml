@@ -1,0 +1,67 @@
+@startuml
+left to right direction
+
+actor Administrador
+
+rectangle "Gestión de Horarios Universitarios" {
+
+    usecase "Iniciar Sesión" as UC1
+    usecase "Asignar Profesor" as UC2
+    usecase "Editar Asignación" as UC3
+    usecase "Consultar Horario Profesor" as UC4
+    package "Gestión de AsignaturaGradoProfesor" {
+        usecase "Actualizar AsignaturaGradoProfesor" as UC5
+        usecase "Consultar AsignaturaGradoProfesor" as UC6
+        usecase "Eliminar AsignaturaGradoProfesor" as UC7
+        usecase "Registrar AsignaturaGradoProfesor" as UC8
+    }
+
+    package "Gestión de HorarioAsignaturaAula" {
+        usecase "Actualizar HorarioAsignaturaAula" as UC9
+        usecase "Consultar HorarioAsignaturaAula" as UC10
+        usecase "Eliminar HorarioAsignaturaAula" as UC11
+        usecase "Registrar HorarioAsignaturaAula" as UC12
+        usecase "Asignar Aula Automáticamente" as UC21
+    }
+
+    package "Gestión de Horario" {
+        usecase "Actualizar Horario" as UC13
+        usecase "Consultar Horario" as UC14
+        usecase "Eliminar Horario" as UC15
+        usecase "Registrar Horario" as UC16
+    }
+
+    package "Gestión de AsignaturaGrado" {
+        usecase "Actualizar AsignaturaGrado" as UC17
+        usecase "Consultar AsignaturaGrado" as UC18
+        usecase "Eliminar AsignaturaGrado" as UC19
+        usecase "Registrar AsignaturaGrado" as UC20
+    }
+
+}
+
+
+
+Administrador --> UC1
+Administrador --> UC2
+Administrador --> UC3
+Administrador --> UC4
+Administrador --> UC5
+Administrador --> UC6
+Administrador --> UC7
+Administrador --> UC8
+Administrador --> UC9
+Administrador --> UC10
+Administrador --> UC11
+Administrador --> UC12
+Administrador --> UC13
+Administrador --> UC14
+Administrador --> UC15
+Administrador --> UC16
+Administrador --> UC17
+Administrador --> UC18
+Administrador --> UC19
+Administrador --> UC20
+UC12 --> UC21
+
+@enduml
