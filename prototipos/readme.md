@@ -7,23 +7,47 @@
 ### Login
 ![Login](/prototipos/imagenes/Login.png)
 
+### Menú Principal
+![MenuPrincipal](/prototipos/imagenes/MenuPrincipal.png)
+
+### Registrar Grado
+![RegistrarGrado](/prototipos/imagenes/RegistrarGrado.png)
+
+### Eliminar Grado
+![EliminarGrado](/prototipos/imagenes/EliminarGrado.png)
+
 ### Elegir Grado
-![Elegir Grado](/prototipos/imagenes/ElegirGrado.png)
+![ElegirGrado](/prototipos/imagenes/ElegirGrado.png)
+
+### Registrar Aula
+![RegistrarAula](/prototipos/imagenes/RegistrarAula.png)
+
+### Eliminar Aula
+![EliminarAula](/prototipos/imagenes/EliminarAula.png)
+
+### Consultar Aulas
+![ConsultarAulas](/prototipos/imagenes/ConsultarAulas.png)
+
+### Registrar Profesor
+![RegistrarProfesor](/prototipos/imagenes/RegistrarProfesor.png)
+
+### Eliminar Profesor
+![EliminarProfesor](/prototipos/imagenes/EliminarProfesor.png)
 
 ### Registrar Asignatura
-![Registrar Asignatura](/prototipos/imagenes/RegistrarAsignatura.png)
+![RegistrarAsignatura](/prototipos/imagenes/RegistrarAsignatura.png)
+
+### Eliminar Asignatura
+![EliminarAsignatura](/prototipos/imagenes/EliminarAsignatura.png)
 
 ### Asignar Profesor
-![Asignar Profesor](/prototipos/imagenes/AsignarProfesor.png)
-
-### Consultar Horario de Profesor
-![Consultar Horario de Profesor](/prototipos/imagenes/ConsultarHorarioProfesor.png)
+![AsignarProfesor](/prototipos/imagenes/AsignarProfesor.png)
 
 ### Vincular Asignatura Horario
-![Vincular Asignatura Horario](/prototipos/imagenes/VincularAsignaturaHorario.png)
+![VincularAsignaturaHorario](/prototipos/imagenes/VincularAsignaturaHorario.png)
 
-### Mostrar Asignaturas & Editar Asignación
-![Vincular Asignatura Horario](/prototipos/imagenes/EditarAsignacion.png)
+### Editar Asignación
+![EditarAsignacion](/prototipos/imagenes/EditarAsignacion.png)
 
-### Ver Disponibilidad de Aulas
-![Ver Disponibilidad de Aulas](/prototipos/imagenes/VerDisponibilidadDeAulas.png)
+### Consultar Horario Profesor
+![ConsultarHorarioProfesor](/prototipos/imagenes/ConsultarHorarioProfesor.png)
