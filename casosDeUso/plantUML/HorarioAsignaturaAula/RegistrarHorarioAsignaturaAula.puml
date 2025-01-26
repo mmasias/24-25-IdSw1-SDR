@@ -1,6 +1,6 @@
 @startuml
 
-title Crear Horario-Asignatura-Aula
+title Registrar Horario-Asignatura-Aula
 
 start
 :El usuario solicita introducir asignación de una asignatura;
@@ -20,7 +20,7 @@ else (No)
     :Sistema presenta mensaje de error: "No hay aulas disponibles";
   endif
 endif
-:Sistema guarda la información y visualiza el cambio de estatus de la asignatura a "Asignada";
+:Sistema guarda la información;
 :Sistema presenta confirmación: "Asignatura asignada correctamente";
 stop
 @enduml

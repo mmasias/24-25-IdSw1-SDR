@@ -1,6 +1,6 @@
 @startuml
 
-title Crear Horario
+title Registrar Horario
 
 start
 :El usuario solicita introducir un nuevo horario;
