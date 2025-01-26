@@ -1,5 +1,5 @@
 @startuml
-' Diagrama de estados para Profesor
+title Diagrama de estados de Profesor
 state "SinAsignar" as SinAsignar_Profesor
 state "AsignadoAAsignatura" as AsignadoAAsignatura
 state "AsignadoConAula" as AsignadoConAula

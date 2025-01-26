@@ -32,6 +32,13 @@
 
 ---
 
+### Diagrama de Contexto
+![Diagrama de Contexto](/casosDeUso/diagramaDeContexto/DiagramaDeContexto.svg)
+> 🌐 **Contexto del Sistema:**
+> Este diagrama presenta una vista general de las interacciones entre el sistema y los actores externos, resaltando las principales funcionalidades administradas por el usuario clave: el administrador.
+
+---
+
 ## 🛠️ Casos de Uso Detallados
 
 ### Inicio de Sesión
@@ -268,12 +275,5 @@
 ![Elegir Grado](/casosDeUso/imagenes/ElegirGrado.svg)
 > 🎓 **Selección de Grado:**
 > Permite al usuario elegir un grado y visualizar sus opciones asociadas.
-
----
-
-### Diagrama de Contexto
-![Diagrama de Contexto](/casosDeUso/diagramaDeContexto/DiagramaDeContexto.svg)
-> 🌐 **Contexto del Sistema:**
-> Este diagrama presenta una vista general de las interacciones entre el sistema y los actores externos, resaltando las principales funcionalidades administradas por el usuario clave: el administrador.
 
 ---

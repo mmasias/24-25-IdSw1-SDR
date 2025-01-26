@@ -1,5 +1,5 @@
 @startuml
-' Diagrama de estados para Aula
+title Diagrama de estados de Aula
 state "Disponible" as Disponible_Aula
 state "Asignada" as AulaAsignada
 state "Confirmada" as AulaConfirmada

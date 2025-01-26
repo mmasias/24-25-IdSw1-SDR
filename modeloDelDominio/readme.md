@@ -25,6 +25,16 @@ Usamos las siguientes herramientas para definir las entidades principales de nue
 
 ---
 
+### **Estados de Horario**  
+![Diagrama de Estados](/modeloDelDominio/imagenes/diagramaEstadosHorario.png)  
+> **Descripción:**  
+> - Partes del horario vacío en el estado `HorarioCreado`.  
+> - Se comienzan a vincular las asignaturas hasta tener todas las de ese grado en `AsignaturasVinculadas`.  
+> - Hasta este momento existe la opción de cancelar operación que nos llevará al estado de `Cancelado`.  
+> - Confirmamos el horario para llegar al estado `Confirmado` para completar la operación.  
+
+---
+
 ### **Estados de Asignatura**  
 ![Diagrama de Estados](/modeloDelDominio/imagenes/diagramaEstadosAsignatura.png)  
 > **Descripción:**  
