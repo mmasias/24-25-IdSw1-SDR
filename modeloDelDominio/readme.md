@@ -59,7 +59,8 @@ Usamos las siguientes herramientas para definir las entidades principales de nue
 ### **Estados de Aula**  
 ![Diagrama de Estados Aula](/modeloDelDominio/imagenes/diagramaEstadosAula.png)  
 > **Descripción:**  
-> - Un `Aula` comienza en el estado `Disponible`.  
+> - Un `Aula` comienza en el estado `Disponible`.
+> - Si el `Aula` no está disponible pasa al estado `NoDisponible` y se cancela la operación.  
 > - Se asigna un aula a un horario reflejado en `HorarioAsignaturaAula`, pasando al estado `Asignada`.  
 > - Posteriormente, la asignación se confirma, alcanzando el estado `Confirmada`.  
 > - La asignación puede ser cancelada en cualquier momento, regresando al estado `Cancelada`.  
