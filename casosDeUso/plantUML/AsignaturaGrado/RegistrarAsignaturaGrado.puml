@@ -3,9 +3,11 @@
 title Registrar Asignatura-Grado
 
 start
-:El usuario solicita introducir una nueva asignación de una asignatura a un grado;
-:El sistema permite introducir los datos del grado y de la asignatura;
-:El usuario introduce los datos solicitados;
+:El usuario solicita registrar Asignatura-Grado;
+:El sistema permite elegir un grado;
+:El usuario elige un grado;
+:El sistema le muestra las asignaturas del grado;
+:El usuario elige una asignatura y la asocia al grado;
 if (¿Datos válidos?) then (Sí)
 :El sistema permite registrar la asignación;
 :El sistema incorpora la nueva asignación al sistema;

@@ -1,18 +1,18 @@
 @startuml
 title Asignar Profesor
 start
-:El usuario solicita introducir asignación de un profesor a una asignatura;
-:El sistema permite la introducción de datos para la asignación;
-:El usuario introduce selección de profesor;
-:El sistema muestra las asignaturas disponibles para asignar;
-:El usuario introduce selección de una o múltiples asignaturas;
+:El usuario solicita asignar asignatura profesor;
+:El sistema le muestra la lista de profesores;
+:El usuario selecciona un profesor;
+:El sistema le muestra la lista de asignaturas;
+:El usuario selecciona una o varias asignaturas y la asocia a un profesor;
 :El sistema verifica el número de asignaturas actualmente asignadas al profesor;
-if (¿Excede el límite de 8 asignaturas?) then (Sí)
-  :El sistema presenta mensaje de error: "El profesor ya tiene asignadas el máximo de 8 asignaturas";
-  :El usuario decide no continuar con la asignación;
+if (¿Excede el límite de 8 asignaturas o el usuario decide terminar?) then (Sí)
+  :El sistema presenta mensaje de error: "El profesor ya tiene asignadas el máximo de 8 asignaturas o el usuario ha decidido terminar";
+  :El sistema muestra mensaje: "Asignación terminada";
 else (No)
   :El sistema guarda los cambios;
-  :El sistema actualiza el calendario del profesor con la información correspondiente;
+  :El sistema actualiza la información del profesor;
   :El sistema presenta confirmación: "Profesor asignado correctamente a las asignaturas";
 endif
 stop
