@@ -1,6 +1,6 @@
 @startuml
 
-title Crear Asignatura-Grado-Profesor
+title Registrar Asignatura-Grado-Profesor
 
 start
 :El usuario solicita introducir una nueva asignación de profesor a una asignatura en un grado;

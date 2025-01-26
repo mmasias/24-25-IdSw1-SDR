@@ -159,8 +159,8 @@
 ---
 
 ### Asignatura-Grado
-#### Crear Asignatura-Grado
-![Crear Asignatura-Grado](/casosDeUso/imagenes/AsignaturaGrado/CrearAsignaturaGrado.svg)
+#### Registrar Asignatura-Grado
+![Registrar Asignatura-Grado](/casosDeUso/imagenes/AsignaturaGrado/RegistrarAsignaturaGrado.svg)
 > 🔗 **Vinculación:**
 > Permite vincular asignaturas específicas a grados académicos.
 
@@ -182,8 +182,8 @@
 ---
 
 ### Asignatura-Grado-Profesor
-#### Crear Asignatura-Grado-Profesor
-![Crear Asignatura-Grado-Profesor](/casosDeUso/imagenes/AsignaturaGradoProfesor/CrearAsignaturaGradoProfesor.svg)
+#### Registrar Asignatura-Grado-Profesor
+![Registrar Asignatura-Grado-Profesor](/casosDeUso/imagenes/AsignaturaGradoProfesor/RegistrarAsignaturaGradoProfesor.svg)
 > 🔗 **Registro Vinculación:**
 > Permite asociar asignaturas con grados y profesores.
 
@@ -205,8 +205,8 @@
 ---
 
 ### Horario-Asignatura-Aula
-#### Crear Horario-Asignatura-Aula
-![Crear Horario-Asignatura-Aula](/casosDeUso/imagenes/HorarioAsignaturaAula/CrearHorarioAsignaturaAula.svg)
+#### Registrar Horario-Asignatura-Aula
+![Registrar Horario-Asignatura-Aula](/casosDeUso/imagenes/HorarioAsignaturaAula/RegistrarHorarioAsignaturaAula.svg)
 > 🏫 **Registro Vinculaciones:**
 > Permite crear horarios vinculados a aulas y asociaciones específicas.
 
@@ -228,8 +228,8 @@
 ---
 
 ### Horario
-#### Crear Horario
-![Crear Horario](/casosDeUso/imagenes/Horario/CrearHorario.svg)
+#### Registrar Horario
+![Registrar Horario](/casosDeUso/imagenes/Horario/RegistrarHorario.svg)
 > 📅 **Registro de Horarios:**
 > Permite crear horarios personalizados para asignaturas y profesores.
 

@@ -1,6 +1,6 @@
 @startuml
 
-title Crear Horario-Asignatura-Aula
+title Registrar Horario-Asignatura-Aula
 
 start
 :El usuario solicita introducir asignación de una asignatura;
