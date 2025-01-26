@@ -1,5 +1,5 @@
 @startuml
-' Diagrama de estados para Grado
+title Diagrama de estados de Grado
 state "SinDefinir" as SinDefinir_Grado
 state "Definido" as Definido_Grado
 state "AsignaturasAsignadas" as AsignaturasAsignadas
