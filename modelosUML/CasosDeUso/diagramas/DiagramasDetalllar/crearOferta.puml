@@ -1,0 +1,22 @@
+@startuml
+state " " as Estado1
+state " " as Estado2
+state " " as Estado3
+
+[*] --> Estado1
+    note on link
+        La empresa solicita crear una nueva oferta
+    end note
+Estado1 --> Estado2
+    note on link
+        La plataforma brinda el formulario
+    end note
+Estado2 --> Estado3
+    note on link
+        La empresa rellena el formulario
+    end note
+Estado3 --> [*]
+    note on link
+        La plataforma guarda el formulario y espera para revisión
+    end note
+@enduml

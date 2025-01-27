@@ -1,17 +1,12 @@
 @startuml
-actor Administrador
+state " " as Estado1
 
-rectangle "Ver Estadísticas" {
-    Administrador --> (Solicitar Estadísticas)
-    (Solicitar Estadísticas) --> (Generar Informe de Datos) : «include»
-    (Generar Informe de Datos) --> (Mostrar Datos al Administrador)
-
-    note right of (Solicitar Estadísticas)
-        Las estadísticas incluyen, entre otras cosas:
-        - Número de ofertas publicadas
-        - Ofertas aceptadas/rechazadas
-        - Categorías más solicitadas
-        - Numero de postulaciones
+[*] --> Estado1
+    note on link
+        El administrador solicita ver las estadisticas globales
     end note
-}
+Estado1 --> [*]
+    note on link
+        El sistema muestra las estadisticas de la plataforma
+    end note
 @enduml

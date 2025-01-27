@@ -1,0 +1,17 @@
+@startuml
+state " " as Estado1
+state " " as Estado2
+
+[*] --> Estado1
+    note on link
+        El usuario accede al apartado de ofertas de trabajo
+    end note
+Estado1 --> Estado2
+    note on link
+        El usuario utiliza el buscador para filtrar ofertas (por palabra clave, categoría, ubicación, etc.)
+    end note
+Estado2 --> [*]
+    note on link
+        La plataforma muestra una lista de ofertas que coinciden con los filtros aplicados
+    end note
+@enduml
