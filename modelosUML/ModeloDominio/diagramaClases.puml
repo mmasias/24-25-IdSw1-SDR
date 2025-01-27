@@ -12,16 +12,21 @@ class Alumni {
 class Empresas {
 }
 
+class Postulacion {
+}
+
 class OfertaTrabajo {
 }
 
 class PlataformaAcceso {
 }
 
-OfertaTrabajo <-- Alumni : encuentra & postula
+OfertaTrabajo <-- Alumni : encuentra
 OfertaTrabajo <-- Administrador : aprueba
 OfertaTrabajo <-- Empresas : publican
 Administrador --|> Usuario : hereda
+Postulacion <-- Alumni : Crea
+OfertaTrabajo .. Postulacion : Postula
 Alumni --|> Usuario  : hereda
 Usuario -- PlataformaAcceso: autentica
 
