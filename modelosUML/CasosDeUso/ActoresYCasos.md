@@ -15,9 +15,7 @@
 5. **Cerrar oferta de trabajo** *(Administrador, Empresa)*: Una oferta se finaliza porque ya no está disponible.
 6. **Cancelar oferta de trabajo** *(Administrador)*: El administrador cancela una oferta de trabajo.
 7. **Ver ofertas de trabajo**: Los usuarios pueden ver las ofertas disponibles en la plataforma.
-8. **Iniciar sesión**: Los usuarios acceden a la plataforma con sus credenciales.
-9. **Cerrar sesión**: Los usuarios finalizan su sesión en la plataforma.
-10. **Ver estadísticas**: Los administradores pueden ver datos sobre las ofertas publicadas.
+8. **Ver estadísticas**: Los administradores pueden ver datos sobre las ofertas publicadas.
 ---
 
 ## 2. Priorizar Casos de Uso
@@ -45,61 +43,45 @@ La prioridad debe basarse en su importancia estratégica, valor para el cliente,
 7. **Ver ofertas de trabajo** *(Alta prioridad)*
    Es una funcionalidad básica y esencial que permite a todos los usuarios visualizar el contenido principal de la plataforma. Sin esta capacidad, el sistema perdería su propósito fundamental.
 
-8. **Iniciar sesión** *(Media prioridad)*
-   Es un requisito básico, pero no es un caso de uso crítico ya que se entiende que los usuarios llegan autenticados a la plataforma (a través del panal, por ejemplo).
-
-9. **Cerrar sesión** *(Baja prioridad)*
-   Es una funcionalidad básica, pero no es completamente necesaria para el funcionamiento del sistema.
-
-10. **Ver estadísticas** *(Baja prioridad)*
+8. **Ver estadísticas** *(Baja prioridad)*
    Es una funcionalidad secundaria, no es crítica para el funcionamiento del sistema.
 
 ## 3. Detallar casos de uso
 
 ### Crear oferta de trabajo
-![Crear oferta](svg/Detallar/crearOfertaTrabajo.svg)
+![Crear oferta](svg/Detallar/crearOferta.svg)
 - **Actor**: Empresa
 - **Descripción**: Empresa crea una nueva oferta laboral pendiente de validación
 
 ### Buscar oferta de trabajo
-![Buscar oferta](svg/Detallar/buscarOfertaTrabajo.svg)
+![Buscar oferta](svg/Detallar/buscarOferta.svg)
 - **Actor**: Alumni
 - **Descripción**: Alumni busca y filtra ofertas laborales disponibles
 
 ### Aceptar oferta de trabajo
-![Aceptar oferta](svg/Detallar/aceptarOfertaTrabajo.svg)
+![Aceptar oferta](svg/Detallar/aceptarOferta.svg)
 - **Actor**: Administrador
 - **Descripción**: Administrador revisa y aprueba ofertas pendientes
 
 ### Postular a oferta de trabajo
-![Postular oferta](svg/Detallar/postularOfertaTrabajo.svg)
+![Postular oferta](svg/Detallar/postularOferta.svg)
 - **Actor**: Alumni
 - **Descripción**: Alumni postula a una oferta adjuntando CV y datos
 
 ### Cerrar oferta de trabajo
-![Cerrar oferta](svg/Detallar/cerrarOfertaTrabajo.svg)
+![Cerrar oferta](svg/Detallar/cerrarOferta.svg)
 - **Actor**: Administrador
 - **Descripción**: Administrador cierra una oferta activa 
 
 ### Cancelar oferta de trabajo
-![Cancelar oferta](svg/Detallar/cancelarOfertaTrabajo.svg)
+![Cancelar oferta](svg/Detallar/cancelarOferta.svg)
 - **Actor**: Administrador
 - **Descripción**: Administrador cancela una oferta por incumplimiento
 
 ### Ver ofertas de trabajo
-![Ver ofertas](svg/Detallar/verOfertaTrabajo.svg)
+![Ver ofertas](svg/Detallar/verOferta.svg)
 - **Actor**: Empresa, Alumni, Administrador
 - **Descripción**: Usuarios visualizan ofertas laborales disponibles
-
-### Iniciar sesión
-![Iniciar sesión](svg/Detallar/iniciarSesion.svg)
-- **Actor**: Empresa, Alumni, Administrador
-- **Descripción**: Usuarios acceden a la plataforma con sus credenciales
-
-### Cerrar sesión
-![Cerrar sesión](svg/Detallar/cerrarSesion.svg)
-- **Actor**: Empresa, Alumni, Administrador
-- **Descripción**: Usuarios finalizan su sesión en la plataforma
 
 ### Ver estadísticas
 ![Ver estadísticas](svg/Detallar/verEstadisticas.svg)
