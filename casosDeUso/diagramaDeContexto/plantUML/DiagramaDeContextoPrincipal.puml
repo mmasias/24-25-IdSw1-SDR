@@ -1,0 +1,36 @@
+@startuml
+title Diagrama de Contexto Principal
+
+[*] --> INICIANDO_SESION : Iniciar sesión
+INICIANDO_SESION --> MENU_PRINCIPAL : Ir al menú principal
+
+MENU_PRINCIPAL --> MENU_GRADO : Ir al menú de grado
+MENU_GRADO --> MENU_PRINCIPAL : Regresar al menú principal
+
+MENU_PRINCIPAL --> MENU_AULA : Ir al menú de aula
+MENU_AULA --> MENU_PRINCIPAL : Regresar al menú principal
+
+MENU_PRINCIPAL --> MENU_ASIGNATURA : Ir al menú de asignatura
+MENU_ASIGNATURA --> MENU_PRINCIPAL : Regresar al menú principal
+
+MENU_PRINCIPAL --> MENU_PROFESOR : Ir al menú de profesor
+MENU_PROFESOR --> MENU_PRINCIPAL : Regresar al menú principal
+
+MENU_PRINCIPAL --> MENU_ASIGNATURAGRADO : Ir al menú de asignatura-grado
+MENU_ASIGNATURAGRADO --> MENU_PRINCIPAL : Regresar al menú principal
+
+MENU_PRINCIPAL --> MENU_ASIGNATURAGRADOPROFESOR : Ir al menú de asignatura-grado-profesor
+MENU_ASIGNATURAGRADOPROFESOR --> MENU_PRINCIPAL : Regresar al menú principal
+
+MENU_PRINCIPAL --> MENU_HORARIOASIGNATURAAULA : Ir al menú de horario-asignatura-aula
+MENU_HORARIOASIGNATURAAULA --> MENU_PRINCIPAL : Regresar al menú principal
+
+MENU_PRINCIPAL --> MENU_HORARIO : Ir al menú de horarios
+MENU_HORARIO --> MENU_PRINCIPAL : Regresar al menú principal
+
+MENU_PRINCIPAL --> MENU_CASOSADICIONALES : Ir al menú de casos adicionales
+MENU_CASOSADICIONALES --> MENU_PRINCIPAL : Regresar al menú principal
+
+MENU_PRINCIPAL --> [*] : Cerrar sesión
+
+@enduml

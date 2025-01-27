@@ -26,7 +26,7 @@ Usamos las siguientes herramientas para definir las entidades principales de nue
 ---
 
 ### **Estados de Horario**  
-![Diagrama de Estados](/modeloDelDominio/imagenes/diagramaEstadosHorario.png)  
+![Diagrama de Estados](/modeloDelDominio/imagenes/diagramaEstadosHorario.svg)  
 > **Descripción:**  
 > - Partes del horario vacío en el estado `HorarioCreado`.  
 > - Se comienzan a vincular las asignaturas hasta tener todas las de ese grado en `AsignaturasVinculadas`.  

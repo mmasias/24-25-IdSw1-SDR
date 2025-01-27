@@ -1,15 +1,31 @@
 @startuml
 title Diagrama de estados de Horario
+
+state "ProfesoresAgregados"
+state "AsignaturasAgregadas"
+state "GradosAgregados"
+state "AsignaturasAsociadasAGrados"
+state "AsignaturasAsignadasAProfesores"
+state "AulasAsociadas"
 state "HorarioCreado"
-state "AsignaturasVinculadas"
-state "Confirmado"
 state "Cancelado"
 
-[*] --> HorarioCreado
-HorarioCreado --> AsignaturasVinculadas: Vincular todas las asignaturas
-AsignaturasVinculadas --> Confirmado : Confirmar horario
+[*] --> ProfesoresAgregados : Agregar profesores
+ProfesoresAgregados --> AsignaturasAgregadas : Agregar asignaturas
+AsignaturasAgregadas --> GradosAgregados : Agregar grados
+GradosAgregados --> AsignaturasAsociadasAGrados : Asociar asignaturas con grados
+AsignaturasAsociadasAGrados --> AsignaturasAsignadasAProfesores : Asignar asignaturas a profesores
+AsignaturasAsignadasAProfesores --> AulasAsociadas : Asociar aulas a asignaturas
+AulasAsociadas --> HorarioCreado : Generar horario
+HorarioCreado --> [*] : Operación completada
+
+ProfesoresAgregados --> Cancelado : Cancelar operación
+AsignaturasAgregadas --> Cancelado : Cancelar operación
+GradosAgregados --> Cancelado : Cancelar operación
+AsignaturasAsociadasAGrados --> Cancelado : Cancelar operación
+AsignaturasAsignadasAProfesores --> Cancelado : Cancelar operación
+AulasAsociadas --> Cancelado : Cancelar operación
 HorarioCreado --> Cancelado : Cancelar operación
-AsignaturasVinculadas --> Cancelado : Cancelar operación
-Confirmado --> [*] : Operación completada
 Cancelado --> [*] : Operación cancelada
+
 @enduml

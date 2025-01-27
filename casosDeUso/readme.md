@@ -32,10 +32,75 @@
 
 ---
 
-### Diagrama de Contexto
-![Diagrama de Contexto](/casosDeUso/diagramaDeContexto/DiagramaDeContexto.svg)
+## Diagramas de Contexto
+
+#### Diagrama de Contexto Principal
+![Diagrama de Contexto Principal](/casosDeUso/diagramaDeContexto/imagenes/DiagramaDeContextoPrincipal.svg)
 > 🌐 **Contexto del Sistema:**
-> Este diagrama presenta una vista general de las interacciones entre el sistema y los actores externos, resaltando las principales funcionalidades administradas por el usuario clave: el administrador.
+> Este diagrama presenta una vista general de las interacciones entre el sistema y los diferentes menús, resaltando el flujo principal y las transiciones al menú principal.
+
+---
+
+#### MENU_GRADO
+![Diagrama MENU_GRADO](/casosDeUso/diagramaDeContexto/imagenes/DiagramaMenuGrado.svg)
+> 📚 **Menú de Grado:**
+> En este diagrama se detallan las funcionalidades relacionadas con la gestión de grados, incluyendo registrar, actualizar, consultar y eliminar grados.
+
+---
+
+#### MENU_AULA
+![Diagrama MENU_AULA](/casosDeUso/diagramaDeContexto/imagenes/DiagramaMenuAula.svg)
+> 🏫 **Menú de Aula:**
+> Este diagrama representa las operaciones disponibles para la gestión de aulas, como registrar, actualizar, consultar y eliminar aulas.
+
+---
+
+#### MENU_ASIGNATURA
+![Diagrama MENU_ASIGNATURA](/casosDeUso/diagramaDeContexto/imagenes/DiagramaMenuAsignatura.svg)
+> 📘 **Menú de Asignatura:**
+> Este diagrama ilustra las funcionalidades relacionadas con la gestión de asignaturas, incluyendo registrar, actualizar, consultar y eliminar asignaturas.
+
+---
+
+#### MENU_PROFESOR
+![Diagrama MENU_PROFESOR](/casosDeUso/diagramaDeContexto/imagenes/DiagramaMenuProfesor.svg)
+> 👩‍🏫 **Menú de Profesor:**
+> Este diagrama detalla las operaciones disponibles para la gestión de profesores, como registrar, actualizar, consultar y eliminar profesores.
+
+---
+
+#### MENU_ASIGNATURAGRADO
+![Diagrama MENU_ASIGNATURAGRADO](/casosDeUso/diagramaDeContexto/imagenes/DiagramaMenuAsignaturaGrado.svg)
+> 📚 **Menú de Asignatura-Grado:**
+> En este diagrama se describen las operaciones para gestionar la relación entre asignaturas y grados, incluyendo crear, actualizar, consultar y eliminar estas relaciones.
+
+---
+
+#### MENU_ASIGNATURAGRADOPROFESOR
+![Diagrama MENU_ASIGNATURAGRADOPROFESOR](/casosDeUso/diagramaDeContexto/imagenes/DiagramaMenuAsignaturaGradoProfesor.svg)
+> 🧑‍🏫 **Menú de Asignatura-Grado-Profesor:**
+> Este diagrama ilustra la gestión de relaciones entre asignaturas, grados y profesores, permitiendo crear, actualizar, consultar y eliminar estas asociaciones.
+
+---
+
+#### MENU_HORARIOASIGNATURAAULA
+![Diagrama MENU_HORARIOASIGNATURAAULA](/casosDeUso/diagramaDeContexto/imagenes/DiagramaHorarioAsignaturaAula.svg)
+> ⏰ **Menú de Horario-Asignatura-Aula:**
+> Este diagrama muestra las operaciones disponibles para gestionar horarios en relación con asignaturas y aulas, incluyendo registrar, actualizar, consultar y eliminar.
+
+---
+
+#### MENU_HORARIO
+![Diagrama MENU_HORARIO](/casosDeUso/diagramaDeContexto/imagenes/DiagramaMenuHorario.svg)
+> 🕒 **Menú de Horario:**
+> En este diagrama se representan las funcionalidades de gestión de horarios, como registrar, actualizar, consultar y eliminar horarios.
+
+---
+
+#### MENU_CASOSADICIONALES
+![Diagrama MENU_CASOSADICIONALES](/casosDeUso/diagramaDeContexto/imagenes/DiagramaMenuCasosAdicionales.svg)
+> ➕ **Menú de Casos Adicionales:**
+> Este diagrama incluye las funcionalidades adicionales del sistema, como asignar profesores, consultar horarios de profesores, editar asignaciones y elegir grados.
 
 ---
 
