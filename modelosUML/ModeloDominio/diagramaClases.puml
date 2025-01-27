@@ -1,4 +1,5 @@
 @startuml
+
 class Usuario {
 }
 
@@ -17,10 +18,11 @@ class OfertaTrabajo {
 class PlataformaAcceso {
 }
 
-Usuario <|-- Administrador : hereda
-Usuario <|-- Alumni : hereda
-PlataformaAcceso -- Usuario : autentica
-Empresas --> OfertaTrabajo : publican
-Administrador --> OfertaTrabajo : aprueba
-Alumni --> OfertaTrabajo : encuentra & postula
+OfertaTrabajo <-- Alumni : encuentra & postula
+OfertaTrabajo <-- Administrador : aprueba
+OfertaTrabajo <-- Empresas : publican
+Administrador --|> Usuario : hereda
+Alumni --|> Usuario  : hereda
+Usuario -- PlataformaAcceso: autentica
+
 @enduml

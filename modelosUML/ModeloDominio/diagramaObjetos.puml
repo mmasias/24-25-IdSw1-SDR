@@ -1,33 +1,36 @@
 @startuml
-object Plataforma_acceso_1 {
-}
 
-object Administrador_1 {
-    nombre = "Carlos"
-    email = "carlos@universidad.edu"
-}
-
-object Alumni_1 {
-    nombre = "Mario"
-    email = "MarioDelRio@alumni.edu"
-    tipo = "Antiguo Alumno"
-}
-
-object Empresa_1 {
-    nombre = "Tech Corp"
-    direccion = "Calle 13"
-}
-
-object OfertaTrabajo_1 {
+object OfertaTrabajo {
     titulo = "Desarrollador Junior"
     descripcion = "Puesto de desarrollo en Java"
     salario = "30000€"
 }
 
-Plataforma_acceso_1 -- Alumni_1 : autentica
-Plataforma_acceso_1 -- Administrador_1 : autentica
-Empresa_1 .. OfertaTrabajo_1 : crea
-Administrador_1 -- OfertaTrabajo_1 : valida
-Alumni_1 -- OfertaTrabajo_1 : busca
-Empresa_1 --> Administrador_1 : contacta
+object Administrador {
+    nombre = "Carlos"
+    email = "carlos@universidad.edu"
+}
+
+object Alumni {
+    nombre = "Mario"
+    email = "MarioDelRio@alumni.edu"
+    tipo = "Antiguo Alumno"
+}
+
+object Empresa {
+    nombre = "Tech Corp"
+    direccion = "Calle 13"
+}
+
+object Plataforma_acceso {
+}
+
+
+OfertaTrabajo <-- Alumni : busca
+OfertaTrabajo <--  Administrador: valida
+OfertaTrabajo <.. Empresa : crea
+Alumni <-- Plataforma_acceso : autentica
+Administrador <-- Plataforma_acceso : autentica
+Administrador <-- Empresa : contacta
+
 @enduml
