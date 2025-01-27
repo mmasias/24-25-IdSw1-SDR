@@ -21,7 +21,6 @@ rectangle "Gestión de Horarios Universitarios" {
         usecase "Consultar HorarioAsignaturaAula" as UC10
         usecase "Eliminar HorarioAsignaturaAula" as UC11
         usecase "Registrar HorarioAsignaturaAula" as UC12
-        usecase "Asignar Aula Automáticamente" as UC21
     }
 
     package "Gestión de Horario" {
@@ -62,6 +61,5 @@ Administrador --> UC17
 Administrador --> UC18
 Administrador --> UC19
 Administrador --> UC20
-UC12 --> UC21
 
 @enduml
