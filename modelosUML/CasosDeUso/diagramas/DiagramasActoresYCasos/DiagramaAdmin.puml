@@ -1,0 +1,11 @@
+@startuml
+left to right direction
+
+usecase "Aceptar Oferta" as AceptarOferta
+usecase "Cerrar Oferta" as CerrarOferta
+usecase "Cancelar Oferta" as CancelarOferta
+
+Administrador --> AceptarOferta
+Administrador --> CerrarOferta
+Administrador --> CancelarOferta
+@enduml

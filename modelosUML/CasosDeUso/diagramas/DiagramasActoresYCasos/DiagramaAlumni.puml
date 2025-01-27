@@ -1,0 +1,15 @@
+@startuml
+left to right direction
+
+usecase "Buscar Oferta" as BuscarOferta
+usecase "Postular Oferta" as PostularOferta
+usecase "Ver Ofertas" as VerOfertas
+usecase "Ver Estadísticas" as VerEstadisticas
+
+
+
+Alumni --> BuscarOferta
+Alumni --> PostularOferta
+Alumni --> VerOfertas
+Alumni --> VerEstadisticas
+@enduml
