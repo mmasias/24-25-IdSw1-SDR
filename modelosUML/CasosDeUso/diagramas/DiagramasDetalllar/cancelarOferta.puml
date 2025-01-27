@@ -3,8 +3,6 @@ state " " as Estado1
 state " " as Estado2
 state " " as Estado3
 
-state Condicion1 <<choice>>
-
 [*] --> Estado1
     note on link
         El administrador accede a la sección de ofertas pendientes
@@ -17,7 +15,7 @@ Estado2 --> Estado3
     note on link
         El administrador rechaza la oferta
     end note
-Estado3 --> Condicion1
+Estado3 --> [*]
     note on link
         La plataforma actualiza el estado de la oferta (rechazada)
     end note

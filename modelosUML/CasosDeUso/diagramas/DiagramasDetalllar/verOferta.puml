@@ -2,9 +2,6 @@
 state " " as Estado1
 state " " as Estado2
 
-
-state Condicion1 <<choice>>
-
 [*] --> Estado1
     note on link
         El usuario navega al apartado de ofertas de trabajo
@@ -13,7 +10,7 @@ Estado1 --> Estado2
     note on link
         El usuario selecciona una oferta específica
     end note
-Estado2 --> Condicion1
+Estado2 --> [*]
     note on link
         La plataforma muestra los detalles de la oferta seleccionada
     end note
