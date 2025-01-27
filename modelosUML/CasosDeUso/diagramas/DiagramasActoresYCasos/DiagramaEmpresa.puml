@@ -1,0 +1,7 @@
+@startuml
+left to right direction
+
+usecase "Crear Oferta" as UC1
+
+Empresa --> UC1
+@enduml
