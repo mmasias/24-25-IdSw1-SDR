@@ -4,13 +4,13 @@ start
 :El usuario solicita listar aulas disponibles;
 :El sistema permite listar aulas disponibles;
 :El usuario solicita introducir datos de aulas;
-:Sistema permite introducir datos de aulas;
-:Usuario introduce especificación de filtros:
+:Sistema permite introducir datos de aulas:
   - Día,
   - Hora,
   - Aula grande,
   - Aulas con ordenadores,
   - Ninguno;
+:Usuario introduce especificación de filtros;
 if (¿Existen aulas disponibles con los filtros?) then (Sí)
   :Sistema presenta las aulas disponibles entre los filtros seleccionados;
 else (No)
