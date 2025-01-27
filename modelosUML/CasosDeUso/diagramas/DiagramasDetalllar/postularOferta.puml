@@ -1,0 +1,24 @@
+@startuml
+state " " as Estado1
+state " " as Estado2
+state " " as Estado3
+
+state Condicion1 <<choice>>
+
+[*] --> Estado1
+    note on link
+        El alumni accede a la sección de ofertas de trabajo
+    end note
+Estado1 --> Estado2
+    note on link
+        El alumni selecciona una oferta de trabajo
+    end note
+Estado2 --> Estado3
+    note on link
+        El alumni envía su solicitud para la oferta
+    end note
+Estado3 --> Condicion1
+    note on link
+        La plataforma confirma la solicitud o muestra un mensaje de error
+    end note
+@enduml

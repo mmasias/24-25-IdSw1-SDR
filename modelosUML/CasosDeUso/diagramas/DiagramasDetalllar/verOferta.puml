@@ -2,18 +2,19 @@
 state " " as Estado1
 state " " as Estado2
 
+
 state Condicion1 <<choice>>
 
 [*] --> Estado1
     note on link
-        El administrador solicita ver las estadisticas globales
+        El usuario navega al apartado de ofertas de trabajo
     end note
 Estado1 --> Estado2
     note on link
-        El sistema muestra las estadisticas de la plataforma
+        El usuario selecciona una oferta específica
     end note
 Estado2 --> Condicion1
     note on link
-        El sistema le permite reiniciar estadisticas y volver al menu
+        La plataforma muestra los detalles de la oferta seleccionada
     end note
 @enduml
