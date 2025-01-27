@@ -1,9 +1,8 @@
 @startuml
-actor Administrador
+:Administrador:
 
-note right of Administrador
-  - Gestionar aulas, asignaturas, profesores y estudiantes.
-  - Control total sobre el sistema.
+note right
+- Gestionar aulas, asignaturas, profesores y estudiantes.
+- Control total sobre el sistema.
 end note
 @enduml
-
