@@ -24,7 +24,7 @@ Con una **interfaz intuitiva** y un **calendario interactivo**, la solución mej
 Usamos las siguientes herramientas para definir las entidades principales de nuestro sistema:
 - [Diagrama de Clases](/modeloDelDominio/imagenes/DiagramaDeClases.svg)
 - [Diagrama de Objetos](/modeloDelDominio/imagenes/DiagramaDeObjetos.svg)
-- [Diagrama de Estados de Horario](/modeloDelDominio/imagenes/diagramaEstadosHorario.png)  
+- [Diagrama de Estados de Horario](/modeloDelDominio/imagenes/diagramaEstadosHorario.svg)  
 - [Diagrama de Estados de Asignatura](/modeloDelDominio/imagenes/diagramaEstadosAsignatura.png)
 - [Diagrama de Estados de Profesor](/modeloDelDominio/imagenes/diagramaEstadosProfesor.png)
 - [Diagrama de Estados de Aula](/modeloDelDominio/imagenes/diagramaEstadosAula.png)
