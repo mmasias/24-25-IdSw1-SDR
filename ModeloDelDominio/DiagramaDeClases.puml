@@ -1,36 +1,47 @@
 @startuml Diagrama de Clases
 title Automatización de Guías Docentes - Refinado
 
+class SuperAdmin
 class Profesor
 class DirectorDeGrado
 class TécnicoDeCalidad
-class DirecciónDeCalidad
+class DirectorDeCalidad
 class Guia
-class Contenido
+class Contenido {
+  + ContenidoEstatico
+  + ContenidoDinámico
+}
 class Titulacion
 class Asignatura
 class Version
 
-Guia --* Titulacion: forma_parte_de
-Guia o-- Asignatura: incluye
+Guia -- Asignatura: pertenece_a >
+Guia -- Contenido: está_conformado_por >
 
-Asignatura <-down- Contenido: pertenece_a
-Asignatura o-down- Titulacion: forma_parte
 
-Guia -down- DirecciónDeCalidad: es_auditada_por
-Guia <-down- TécnicoDeCalidad: es_editada_por
-Guia *-down- Version: tiene
+Asignatura -down- Contenido: pertenece_a <
+Asignatura -down- Titulacion: forma_parte_de >
+Asignatura -- TécnicoDeCalidad : asigna_a >
 
-Contenido <-- Titulacion: es_definido_por
+Guia -down- DirectorDeCalidad: es_auditada_por >
+Guia -down- Version: tiene
 
-DirecciónDeCalidad -- TécnicoDeCalidad: supervisa_a
-DirecciónDeCalidad -- Profesor: audita_a
-DirecciónDeCalidad -l-- DirectorDeGrado: audita_a
+Contenido --- Titulacion: es_definido_por >
 
-Profesor o-up-- Titulacion: está_asociado_con
-DirectorDeGrado o-up-- Titulacion: está_asociado_con
+DirectorDeCalidad -- TécnicoDeCalidad: audita_a >
+DirectorDeCalidad -- Profesor: audita_a >
+DirectorDeCalidad -l- DirectorDeGrado: audita_a >
 
-Contenido <- DirectorDeGrado: aprueba_o_rechaza
-Contenido <-- Profesor: edita
+Profesor -up-- Asignatura: está_asociado_con >
 
+Contenido -- Profesor: dinámico_editado_por >
+
+DirectorDeGrado -up- Titulacion: está_asociado_con >
+Contenido -- DirectorDeGrado: aprueba_o_rechaza <
+Contenido -down- TécnicoDeCalidad: estático_editado_por >
+
+SuperAdmin .up.> Profesor: inicializa >
+SuperAdmin .up.> TécnicoDeCalidad: inicializa >
+SuperAdmin .up.> DirectorDeGrado: inicializa >
+SuperAdmin .up.> DirectorDeCalidad: inicializa >
 @enduml
