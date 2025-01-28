@@ -1,7 +1,7 @@
 [![Inicio](https://img.shields.io/badge/Inicio-blue?style=for-the-badge)](https://github.com/srgiom/24-25-IdSw1-SDR/tree/main)
-[![Modelo de Dominio](https://img.shields.io/badge/Modelo%20de%20Dominio-blue?style=for-the-badge)](https://github.com/srgiom/24-25-IdSw1-SDR/tree/main/modeloDelDominio)
-[![Actores, Diagrama de Contexto y Casos de Uso](https://img.shields.io/badge/Casos%20de%20Uso-blue?style=for-the-badge)](https://github.com/srgiom/24-25-IdSw1-SDR/tree/main/casosDeUso)
-[![Prototipos](https://img.shields.io/badge/Prototipos-blue?style=for-the-badge)](https://github.com/srgiom/24-25-IdSw1-SDR/tree/main/prototipos)
+[![Modelo de Dominio](https://img.shields.io/badge/Modelo%20de%20Dominio-blue?style=for-the-badge)](/modeloDelDominio/)
+[![Actores, Diagrama de Contexto y Casos de Uso](https://img.shields.io/badge/Casos%20de%20Uso-blue?style=for-the-badge)](/casosDeUso)
+[![Prototipos](https://img.shields.io/badge/Prototipos-blue?style=for-the-badge)](/prototipos)
 
 # Gestión de Horarios - Sistema Integral de Gestión de Horarios Universitarios 🗓️
 
@@ -24,7 +24,7 @@ Con una **interfaz intuitiva** y un **calendario interactivo**, la solución mej
 Usamos las siguientes herramientas para definir las entidades principales de nuestro sistema:
 - [Diagrama de Clases](/modeloDelDominio/imagenes/DiagramaDeClases.svg)
 - [Diagrama de Objetos](/modeloDelDominio/imagenes/DiagramaDeObjetos.svg)
-- [Diagrama de Estados de Horario](/modeloDelDominio/imagenes/diagramaEstadosHorario.png)  
+- [Diagrama de Estados de Horario](/modeloDelDominio/imagenes/diagramaEstadosHorario.svg)  
 - [Diagrama de Estados de Asignatura](/modeloDelDominio/imagenes/diagramaEstadosAsignatura.png)
 - [Diagrama de Estados de Profesor](/modeloDelDominio/imagenes/diagramaEstadosProfesor.png)
 - [Diagrama de Estados de Aula](/modeloDelDominio/imagenes/diagramaEstadosAula.png)
@@ -33,18 +33,20 @@ Usamos las siguientes herramientas para definir las entidades principales de nue
 ---
 ## 🛠️ **Actores y Casos de Uso**
 Aqui se describen los principales actores que interactúan con el sistema y los casos de uso que se generan.
-- [Actores](/casosDeUso/actores/actores.png)
-- [Diagrama de Contexto](/casosDeUso/diagramaDeContexto/DiagramaDeContexto.svg)
-- [Casos de Uso](/casosDeUso/imagenes)
+- [Actores](/casosDeUso/readme.md#actores)
+- [Casos de Uso](/casosDeUso/readme.md#casos-de-uso)
+- [Diagrama de Contexto](/casosDeUso/readme.md#diagramas-de-contexto)
+- [Casos de Uso Detallados](/casosDeUso/readme.md#%EF%B8%8F-casos-de-uso-detallados)
+
 ---
 ## 🛠️ **Prototipos**
 En este apartado se encuentran los prototipos diseñados para representar la interfaz del sistema:
-- [Prototipos](https://github.com/srgiom/24-25-IdSw1-SDR/tree/main/prototipos)
+- [Prototipos](/prototipos/readme.md)
 
 ---
 ## 🛠️ **Reuniones**
 Explicación de cambios a realizar tras cada reunión con el cliente:
-- [Reuniones](https://github.com/srgiom/24-25-IdSw1-SDR/tree/main/reuniones)
+- [Reuniones](/reuniones)
 ---
 ## 👥 **Miembros del proyecto**
 - **Sergio Moreno Vega**
