@@ -33,18 +33,20 @@ Usamos las siguientes herramientas para definir las entidades principales de nue
 ---
 ## 🛠️ **Actores y Casos de Uso**
 Aqui se describen los principales actores que interactúan con el sistema y los casos de uso que se generan.
-- [Actores](/casosDeUso/actores/actores.png)
-- [Diagrama de Contexto](/casosDeUso/diagramaDeContexto/DiagramaDeContexto.svg)
-- [Casos de Uso](/casosDeUso/imagenes)
+- [Actores](/casosDeUso/readme.md#actores)
+- [Casos de Uso](/casosDeUso/readme.md#casos-de-uso)
+- [Diagrama de Contexto](/casosDeUso/readme.md#diagramas-de-contexto)
+- [Casos de Uso Detallados](/casosDeUso/readme.md#%EF%B8%8F-casos-de-uso-detallados)
+
 ---
 ## 🛠️ **Prototipos**
 En este apartado se encuentran los prototipos diseñados para representar la interfaz del sistema:
-- [Prototipos](https://github.com/srgiom/24-25-IdSw1-SDR/tree/main/prototipos)
+- [Prototipos](/prototipos/readme.md)
 
 ---
 ## 🛠️ **Reuniones**
 Explicación de cambios a realizar tras cada reunión con el cliente:
-- [Reuniones](https://github.com/srgiom/24-25-IdSw1-SDR/tree/main/reuniones)
+- [Reuniones](/reuniones)
 ---
 ## 👥 **Miembros del proyecto**
 - **Sergio Moreno Vega**
