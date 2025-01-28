@@ -28,10 +28,14 @@ Usamos las siguientes herramientas para definir las entidades principales de nue
 ### **Estados de Horario**  
 ![Diagrama de Estados](/modeloDelDominio/imagenes/diagramaEstadosHorario.svg)  
 > **Descripción:**  
-> - Partes del horario vacío en el estado `HorarioCreado`.  
-> - Se comienzan a vincular las asignaturas hasta tener todas las de ese grado en `AsignaturasVinculadas`.  
+> - Primero se agregan los profesores en  `ProfesoresAgregados`.  
+> - Se agregan las asignaturas en `AsignaturasAgregadas`.
+> - Se agregan los grados en `GradosAgregados`.
+> - Se asocian las asignaturas con grados en `AsignaturasAsociadasAGrados`.
+> - Se asignan las asignaturas a profesores en `AsignaturasAsignadasAProfesores`.
+> - Se asocian las aulas a las asignaturas en `AulasAsociadas`.
+> - Se genera el horario en `HorarioCreado` y se completa la operación.
 > - Hasta este momento existe la opción de cancelar operación que nos llevará al estado de `Cancelado`.  
-> - Confirmamos el horario para llegar al estado `Confirmado` para completar la operación.  
 
 ---
 
