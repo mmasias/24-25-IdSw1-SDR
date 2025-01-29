@@ -1,0 +1,19 @@
+@startuml
+left to right direction
+
+actor "Técnico de Calidad" as TecnicoCalidad
+
+usecase "Generar Nueva Versión de la Guía" as GenerarVersion
+usecase "Asignar Guías Docentes a Profesor" as AsignarGuiaProfesor
+usecase "Asignar Guía a Titulación" as AsignarGuiaTitulacion
+usecase "Asignar Asignatura a Titulación" as AsignarAsignaturaTitulacion
+usecase "Editar Contenido Estatico" as EditarContenidoEstatico
+
+TecnicoCalidad --> GenerarVersion
+TecnicoCalidad --> AsignarGuiaProfesor
+TecnicoCalidad --> AsignarGuiaTitulacion
+TecnicoCalidad --> AsignarAsignaturaTitulacion
+TecnicoCalidad --> EditarContenidoEstatico
+
+
+@enduml
