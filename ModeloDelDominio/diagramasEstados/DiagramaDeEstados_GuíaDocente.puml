@@ -1,25 +1,28 @@
 @startuml Diagrama de Estados
 title Ciclo de Vida de una Guía Docente
 
-[*] --> Creación
-Creación : La guía es creada por un Profesor.
-Creación --> Edición : El Profesor comienza a redactar la guía.
-Edición : La guía está en proceso de edición por parte del Profesor.
+[*] --> EnCreación
+EnCreación --> EnPreparación
+EnPreparación: El técnico de calidad comienza a crear la guía \n editando el contenido estático
 
-Edición --> Revisión : El Profesor envía la guía para revisión.
-Revisión : El DirectorDeGrado revisa la guía.
+EnPreparación --> Asignada : La guía es Asignada a un profesor
+Asignada --> EnEdición : El el Profesor comienza a editar el\n contenido dinámico de la guía.
 
-Revisión --> Aprobación : El DirectorDeGrado aprueba o rechaza la guía.
-Aprobación : La guía puede ser aprobada o rechazada.
-Aprobación --> Edición : Si la guía es rechazada, vuelve a la fase de edición.
-Aprobación --> Validación : Si la guía es aprobada, pasa a validación.
+EnEdición --> EnRevisión : El Profesor envía la guía para EnRevisión.
+EnRevisión : El DirectorDeGrado revisa la guía.
 
-Validación : El TécnicoDeCalidad y el SistemaIA validan la guía.
-Validación --> Publicación : Si la guía es validada con éxito.
+EnRevisión --> Aprobada : El DirectorDeGrado aprueba la guía.
+EnRevisión --> Rechazada : El DirectorDeGrado rechaza la guía.
 
-Publicación : La guía se publica y está disponible.
-Publicación --> VersiónArchivada : Se actualiza una nueva versión.
-VersiónArchivada : La versión anterior se archiva.
+Rechazada --> EnEdición : Si la guía es rechazada, el profesor vuelve a\n editar el contenido dinámico
 
-VersiónArchivada --> [*] : Fin del proceso.
+Aprobada --> Publicada : Si la guía es aprobada, pasa a Publicarse.
+
+Publicada : La guía se publica y está disponible.
+
+Publicada --> Archivada : Se actualiza una nueva versión.
+
+Archivada : La versión anterior se archiva.
+
+Archivada --> [*] : Fin del proceso.
 @enduml
