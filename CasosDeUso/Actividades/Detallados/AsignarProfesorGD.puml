@@ -1,0 +1,88 @@
+@startuml
+ListadoGuías -up-> AsignarGuía
+
+
+state AsignarGuía {
+    state SolicitarSelecciónGuía as " "
+    state PermitirSelecciónGuía as " "
+    state SolicitarPresentaciónProfesores as " "
+    state PermitirPresentaciónProfesores as " "
+    state SolicitarSelecciónProfesor as " "
+    state PermitirSelecciónProfesor as " "
+    state ValidarAsignación <<choice>>
+    state MostrarNotificación as " "
+    state MostrarErrorGuíaNoDisponible as " "
+    state MostrarErrorSinProfesores as " "
+
+    [*] --> SolicitarSelecciónGuía
+    note on link
+    <b>Técnico de Calidad Solicita</b>
+    * seleccionnar de una guía docente.
+    end note
+
+    SolicitarSelecciónGuía --> PermitirSelecciónGuía
+    note on link
+    <b>Sistema Permite</b>
+    * introducir la selección de una guía docente.
+    end note
+
+    PermitirSelecciónGuía --> SolicitarPresentaciónProfesores
+    note on link
+    <b>Técnico de Calidad Solicita</b>
+    * presentar una lista de profesores disponibles.
+    end note
+
+    SolicitarPresentaciónProfesores --> PermitirPresentaciónProfesores
+    note on link
+    <b>Sistema Permite</b>
+    * la solicitud y presenta una lista de profesores disponibles.
+    end note
+
+    PermitirPresentaciónProfesores --> SolicitarSelecciónProfesor
+    note on link
+    <b>Técnico de Calidad Solicita</b>
+    * seleccionar un profesor.
+    end note
+
+    SolicitarSelecciónProfesor --> PermitirSelecciónProfesor
+    note on link
+    <b>Sistema Permite</b>
+    * introducir la selección de un profesor.
+    end note
+
+    PermitirSelecciónProfesor --> ValidarAsignación
+    note on link
+    <b>Sistema Valida</b>
+    * la asignación entre el profesor y la guía seleccionados.
+    end note
+
+    ValidarAsignación --> MostrarNotificación : Asignación válida
+    note on link
+    <b>Sistema Presenta</b>
+    * una notificación indicando que la asignación se ha realizado exitosamente.
+    end note
+
+    ValidarAsignación --> MostrarErrorGuíaNoDisponible : Guía ya asignada
+    note on link
+    <b>Sistema Presenta</b>
+    * un mensaje de error indicando que la guía no está disponible para una nueva asignación.
+    end note
+
+    ValidarAsignación --> MostrarErrorSinProfesores : Sin profesores disponibles
+    note on link
+    <b>Sistema Presenta</b>
+    * un mensaje indicando que no hay profesores disponibles para asignar.
+    end note
+
+    MostrarErrorSinProfesores --> [*]
+    note on link
+    <b>Sistema Retorna</b>
+    * al estado inicial.
+    end note
+
+    MostrarNotificación --> [*]
+    MostrarErrorGuíaNoDisponible --> [*]
+}
+
+AsignarGuía -up-> ListadoGuías
+@enduml

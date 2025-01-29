@@ -1,0 +1,79 @@
+@startuml
+ListadoGuías -up-> GenerarNuevaVersión
+
+state GenerarNuevaVersión {
+    state SolicitarGeneración as " "
+    state PermitirGeneración as " "
+    state MostrarPlantillas as " "
+    state SolicitarSelección as " "
+    state PermitirSelección as " "
+    state ValidarSelección <<choice>>
+    state PermitirCreación as " "
+    state MostrarConfirmación as " "
+    state PermitirCancelación as " "
+
+    [*] --> SolicitarGeneración
+    note on link
+    <b>Técnico de Calidad Solicita</b>
+    * la creación de una nueva versión de la guía docente 
+    end note
+
+    SolicitarGeneración --> PermitirGeneración
+    note on link
+    <b>Sistema Permite</b>
+    * la solicitud de una nueva versión
+    end note
+
+    PermitirGeneración --> MostrarPlantillas
+    note on link
+    <b>Sistema Muestra</b>
+    * las plantillas de guía docente disponibles
+    end note
+
+    MostrarPlantillas --> SolicitarSelección
+    note on link
+    <b>Técnico de Calidad Solicita</b>
+    * introducir la selección de una plantilla específica
+    end note
+
+    SolicitarSelección --> PermitirSelección
+    note on link
+    <b>Sistema Permite</b>
+    * la selección de una plantilla
+    end note
+
+    PermitirSelección --> ValidarSelección
+    note on link
+    <b>Sistema Valida</b>
+    * si la plantilla seleccionada es válida
+    end note
+
+    ValidarSelección --> PermitirCreación : Plantilla válida
+    note on link
+    <b>Sistema Permite</b>
+    * la creación de la nueva versión con la plantilla seleccionada
+    end note
+
+    PermitirCreación --> MostrarConfirmación
+    note on link
+    <b>Sistema Muestra</b>
+    * la confirmación de que la nueva versión ha sido creada
+    end note
+
+    ValidarSelección --> PermitirCancelación : Cancelar
+    note on link
+    <b>Técnico de Calidad Solicita</b>
+    * cancelar la operación antes de confirmar la plantilla
+    end note
+
+    PermitirCancelación --> [*]
+    note on link
+    <b>Sistema Retorna</b>
+    * al estado inicial sin generar una nueva versión
+    end note
+
+    MostrarConfirmación --> [*]
+}
+
+GenerarNuevaVersión -up-> ListadoGuías
+@enduml
