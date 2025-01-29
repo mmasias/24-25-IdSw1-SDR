@@ -1,0 +1,21 @@
+@startuml DiagramaDeEstadosDirectorCalidad 
+title Ciclo de Vida de un Director de Calidad 
+
+[*] --> Libre : Sin guías asignadas para auditar
+
+Libre --> VisualizandoGuías : Guías asignadas
+
+VisualizandoGuías -down-> EnAuditoría 
+
+EnAuditoría -up->  VisualizandoGuías
+VisualizandoGuías -right-> [*]
+ 
+state EnAuditoría {
+  [*] --> AuditandoGuía
+  AuditandoGuía --> VerificandoCumplimientoMemoriaVerificada
+  VerificandoCumplimientoMemoriaVerificada: Los contenidos se verifican externamente con la\n memoria verificada de la ANECA
+  VerificandoCumplimientoMemoriaVerificada -->  [*]
+}
+
+
+@enduml
