@@ -10,7 +10,6 @@ package Sistema_de_Automatización_de_Guías_Docentes {
   actor Profesor
 
   DireccionDeCalidad --|> DirectorDeGrado : audita trabajo de
-  DireccionDeCalidad --|> Profesor : audita trabajo de
   DireccionDeCalidad --|> TecnicoDeCalidad : audita trabajo de
 
   DirectorDeGrado --|> Profesor : revisa y aprueba contenido de
