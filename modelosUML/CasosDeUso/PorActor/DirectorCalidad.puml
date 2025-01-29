@@ -1,0 +1,12 @@
+@startuml
+left to right direction
+
+actor "Dirección de Calidad" as DireccionCalidad
+
+usecase "Auditar Guías Docentes" as AuditarGuias
+usecase "Verificar Cumplimiento con Memoria Verificada" as VerificarMemoria
+
+DireccionCalidad --> AuditarGuias
+DireccionCalidad --> VerificarMemoria
+
+@enduml

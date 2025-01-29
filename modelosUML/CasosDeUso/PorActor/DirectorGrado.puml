@@ -1,0 +1,13 @@
+@startuml
+
+left to right direction
+
+actor "Director de Grado" as DirectorGrado
+
+usecase "Revisar Guia" as RevisarGuia
+usecase "Publicar Guía Docente" as PublicarGuia
+
+DirectorGrado --> RevisarGuia
+DirectorGrado --> PublicarGuia
+
+@enduml
