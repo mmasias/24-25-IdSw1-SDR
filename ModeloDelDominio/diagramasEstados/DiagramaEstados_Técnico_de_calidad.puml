@@ -1,0 +1,24 @@
+@startuml DiagramaDeEstadosTécnico
+title Ciclo de Vida de un Técnico de calidad 
+
+[*] --> Libre : Sin guía asignada
+
+Libre --> CreandoGuía
+
+VisualizandoGuías -right-> CreandoGuía
+CreandoGuía -right->  VisualizandoGuías
+
+VisualizandoGuías -left-> [*]
+
+state CreandoGuía {
+  [*] --> GenerandoNuevaVersiónGuía
+  GenerandoNuevaVersiónGuía --> EditandoGuía 
+  EditandoGuía --> GenerandoNuevaVersiónGuía
+  EditandoGuía: Editando contenido estático
+
+}
+
+  CreandoGuía --> AsignandoGuía
+  AsignandoGuía --> VisualizandoGuías
+  VisualizandoGuías --> AsignandoGuía
+@enduml
