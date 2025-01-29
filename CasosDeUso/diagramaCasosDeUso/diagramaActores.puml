@@ -1,0 +1,45 @@
+@startuml
+title Actores - Automatización de Guías Docentes
+
+actor "Super Admin" as SuperAdmin
+
+package Sistema_de_Automatización_de_Guías_Docentes {
+  actor "Director de Calidad" as DireccionDeCalidad
+  actor "Director de Grado" as DirectorDeGrado
+  actor "Técnico de Calidad" as TecnicoDeCalidad
+  actor Profesor
+
+  DireccionDeCalidad --|> DirectorDeGrado : audita trabajo de
+  DireccionDeCalidad --|> TecnicoDeCalidad : audita trabajo de
+
+  DirectorDeGrado --|> Profesor : revisa y aprueba contenido de
+  TecnicoDeCalidad --|> Profesor : prepara guía para
+
+  note bottom of TecnicoDeCalidad
+    **Técnico de Calidad**:
+    - Realiza ediciones del contenido estático.
+    - Asegura estándares de formato.
+    - Prepara guías para el trabajo del Profesor.
+  end note
+
+  note bottom of Profesor
+    **Profesor**:
+    - Edita contenidos dinámicos de la asignatura.
+    - Envía la guía al Director de Grado para revisión.
+  end note
+
+  note bottom of DirectorDeGrado
+    **Director de Grado**:
+    - Revisa y aprueba las guías docentes.
+    - Garantiza alineación con objetivos académicos.
+  end note
+
+  note bottom of DireccionDeCalidad
+    **Director de Calidad**:
+    - Audita guías ya aprobadas.
+    - Supervisa estándares generales.
+  end note
+}
+
+SuperAdmin --> Sistema_de_Automatización_de_Guías_Docentes : Importa bases de datos que usará el sistema.
+@enduml
