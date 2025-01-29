@@ -7,6 +7,6 @@
 
 # Casos de Uso
 ---
-| Tecnido de Calidad | Profesor | Director de Grado | Dirección de Calidad |
+| Técnico de Calidad | Profesor | Director de Grado | Dirección de Calidad |
 |----------|----------|----------|----------|
 | ![](/images/modelosUML/CasosDeUsoActores/CasosDeUsoTecnicoDeCalidad.svg) | ![](/images/modelosUML/CasosDeUsoActores/CasosDeUsoProfesor.svg) | ![](/images/modelosUML/CasosDeUsoActores/CasosDeUsoDirectorDeGrado.svg) | ![](/images/modelosUML/CasosDeUsoActores/CasosDeUsoDirectorDeCalidad.svg) |
