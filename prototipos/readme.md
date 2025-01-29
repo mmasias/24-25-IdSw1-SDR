@@ -14,7 +14,7 @@
 ![RegistrarGrado](/prototipos/imagenes/RegistrarGrado.png)
 
 ### Actualizar Grado
-![EliminarGrado](/prototipos/imagenes/ActualizarGrado.png)
+![ActualizarGrado](/prototipos/imagenes/ActualizarGrado.png)
 
 ### Consultar Grado
 ![EliminarGrado](/prototipos/imagenes/ConsultarGrado.png)
