@@ -1,36 +1,41 @@
-@startuml DiagramaDeObjetos
+@startuml DiagramaDeObjetos 
 title Automatización de Guías Docentes
 
 object "guia1 : Guia" as guia1
-object "ana : DirecciónDeCalidad" as ana
-object "jorge : TécnicoDeCalidad" as jorge
+object "ana : DirectorDeCalidad" as ana
+object "jorge : TecnicoDeCalidad" as jorge
 object "breñosa : Profesor" as breñosa
 object "masias : DirectorDeGrado" as masias
-object "temario : Contenido" as temario
+object "contenido : Contenido" as contenido
 object "informatica : Titulacion" as informatica
 object "programacion : Asignatura" as programacion
 object "version1 : Version" as version1
+object "admin : SuperAdmin" as admin
 
-guia1 --* informatica : "forma_parte_de"
-guia1 o-- programacion : "incluye"
+guia1 -- programacion : "incluye"
 
-programacion <-down- temario : "pertenece_a"
-programacion o-down- informatica : "forma_parte"
-
-guia1 -down- ana : "es_auditada_por"
-guia1 <-down- jorge : "es_editada_por"
-guia1 *-down- version1 : "tiene"
-
-temario <-- informatica : "es_definido_por"
+programacion -down- contenido : "pertenece_a"
+programacion -down- informatica : "forma_parte"
+programacion -down- jorge : "asigna_a"
+programacion -down- breñosa : está_asociado_con
 
 ana -- jorge : "supervisa_a"
 ana -- breñosa : "audita_a"
-ana -l-- masias : "audita_a"
+ana -- masias : "audita_a"
 
-breñosa o-up-- informatica : "está_asociado_con"
-masias o-up-- informatica : "está_asociado_con"
+guia1 -down- ana : "es_auditada_por"
+guia1 -down- version1 : "tiene"
 
-temario <- masias : "aprueba_o_rechaza"
-temario <-- breñosa : "edita"
+contenido -- informatica : "es_definido_por"
+contenido - masias : "aprueba_o_rechaza"
+contenido -- breñosa : "dinámico_editado_por"
+contenido -- jorge : "estático_editado_por"
+contenido -up- guia1 : "está_conformado_por"
 
+masias -up-- informatica : "está_asociado_con"
+
+admin .up.> breñosa : "inicializa"
+admin .up.> jorge : "inicializa"
+admin .up.> masias : "inicializa"
+admin .up.> ana : "inicializa"
 @enduml
