@@ -1,54 +1,43 @@
-@startuml diagramaContextoProfesor  
-state "NO_AUTENTICADO" as NoAutenticado
-state "MENU_PRINCIPAL" as MenuPrincipal  
-state "EDITANDO_GUÍA" as EditandoGuia  
-state "VISUALIZANDO_GUÍA" as VisualizandoGuia  
-state "ENVIANDO_GUÍA" as EnviandoGuia  
+@startuml diagramaContextoProfesor
+state "NO_AUTENTICADO" as NoAutenticado 
+state "LISTADO_GUIAS" as ListadoGuias
+state "EDICIÓN_GUÍA" as EditandoGuia
+state "ENVIANDO_GUÍA" as EnviandoGuia
 
-[*] --> NoAutenticado   
-    
-NoAutenticado --> MenuPrincipal
+[*] --> NoAutenticado    
+
+NoAutenticado --> ListadoGuias
 note on link  
         iniciar sesión  
     end note  
-
-MenuPrincipal -> [*]  
+    
+ListadoGuias --> NoAutenticado  
     note on link  
         cerrar sesión  
-    end note  
+    end note
 
-MenuPrincipal --> VisualizandoGuia  
+ListadoGuias --> EditandoGuia  
     note on link  
-        Visualizar guías asignadas  
-        para consulta  
+        Editar Contenido Dinamico
     end note  
-
-VisualizandoGuia --> MenuPrincipal  
+    
+ListadoGuias --> EnviandoGuia 
     note on link  
-        Regresar al menú principal  
+        Enviar Guia 
     end note  
-
-MenuPrincipal --> EditandoGuia  
+    
+EditandoGuia --> ListadoGuias  
     note on link  
-        Acceder a guías asignadas  
-        para edición  
-    end note  
-
-EditandoGuia --> EditandoGuia  
-    note on link  
-        Ajustar contenido editable  
-    end note  
-
+        Volver al listado
+    end note
+    
 EditandoGuia --> EnviandoGuia  
     note on link  
-        Finalizar edición y enviar guía  
-        al Director de Grado  
+        Enviar Guia 
     end note  
 
-EnviandoGuia --> MenuPrincipal  
+EnviandoGuia --> ListadoGuias  
     note on link  
-        Confirmar envío y regresar  
-        al menú principal  
-    end note  
-
-@enduml  
+        Volver al listado
+    end note 
+@enduml
