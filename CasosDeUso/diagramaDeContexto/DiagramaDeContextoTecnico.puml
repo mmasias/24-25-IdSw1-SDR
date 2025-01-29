@@ -1,80 +1,49 @@
 @startuml diagramaContextoTecnicoCalidad
-left to right direction
 state "NO_AUTENTICADO" as NoAutenticado
-state "MENU_PRINCIPAL" as MenuPrincipal
-state "ASIGNANDO_GUÍAS_PROFESOR" as AsignandoGuias
+state "LISTADO_GUÍAS" as ListadoGuias
+state "ASIGNANDO_GUÍAS" as AsignandoGuias
 state "GENERANDO_VERSION" as CreandoVersion
-state "EDITANDO_PLANTILLA" as EditandoPlantilla
-state "ASIGNANDO_GUIA_TITULACION" as AsignandoGuiaTitulacion
-state "ASIGNANDO_ASIGNATURA_TITULACION" as AsignandoAsignaturaTitulacion
-state "VIENDO_ESTADOS_GUIAS" as ViendoEstadosGuias
+state "EDICIÓN_GUIA" as EditarContenidoEstatico
 
 [*] --> NoAutenticado
 
-NoAutenticado --> MenuPrincipal
+NoAutenticado --> ListadoGuias
 note on link
     iniciar sesión
 end note
 
-MenuPrincipal -> [*]
+ListadoGuias --> NoAutenticado
 note on link
     cerrar sesión
 end note
 
-MenuPrincipal --> AsignandoGuias
+ListadoGuias --> AsignandoGuias
 note on link
     Asignar Guías Docentes a Profesor
 end note
-AsignandoGuias --> MenuPrincipal
+
+AsignandoGuias --> ListadoGuias
 note on link
-    Regresar al menú principal
+    Volver al listado
 end note
 
 
-
-MenuPrincipal --> CreandoVersion
+ListadoGuias --> CreandoVersion
 note on link
     Generar Nueva Versión de la Guía
 end note
-CreandoVersion --> MenuPrincipal
+CreandoVersion --> ListadoGuias
 note on link
-    Regresar al menú principal
+    Volver al listado
 end note
 
-MenuPrincipal --> EditandoPlantilla
+ListadoGuias --> EditarContenidoEstatico
 note on link
-    Editar plantilla de la guía docente
+    Editar Contenido Estatico
 end note
-EditandoPlantilla --> MenuPrincipal
+EditarContenidoEstatico --> ListadoGuias
 note on link
-    Regresar al menú principal
-end note
-
-MenuPrincipal --> AsignandoGuiaTitulacion
-note on link
-    Asignar Guía a Titulación
-end note
-AsignandoGuiaTitulacion --> MenuPrincipal
-note on link
-    Regresar al menú principal
-end note
-
-MenuPrincipal --> AsignandoAsignaturaTitulacion
-note on link
-    Asignar Asignatura a Titulación
-end note
-AsignandoAsignaturaTitulacion --> MenuPrincipal
-note on link
-    Regresar al menú principal
-end note
-
-MenuPrincipal --> ViendoEstadosGuias
-note on link
-    Mirar listado de los estados de las guías docentes
-end note
-ViendoEstadosGuias --> MenuPrincipal
-note on link
-    Regresar al menú principal
+    Volver al listado
 end note
 
 @enduml
