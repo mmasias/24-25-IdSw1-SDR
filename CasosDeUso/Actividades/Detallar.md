@@ -24,26 +24,11 @@
 
 ## Profesor
 
-### 4. [Editar Contenido de la Guía](/CasosDeUso/Actividades/Prototipos/README.md#profesor---editar-guía)
-| **Identificación de actores**      | Profesor |
-|------------------------------------|----------|
-| **Escenario**                      | El profesor accede al sistema para actualizar el contenido de la guía docente de una asignatura, con el fin de reflejar cambios en el temario, bibliografía, o metodologías de evaluación. |
-| **Flujo de eventos principal**     | 1. El profesor inicia sesión en el sistema de gestión de guías.<br> 2. El sistema muestra la lista de guías docentes asignadas al profesor.<br> 3. El profesor selecciona una guía para editar.<br> 4. El sistema despliega el contenido actual de la guía.<br> 5. El profesor realiza las modificaciones necesarias en el contenido.<br> 6. El sistema guarda los cambios realizados y actualiza la guía. |
-| **Flujos alternativos y excepciones** | Si el profesor desea descartar los cambios, el sistema permite cancelar la operación sin guardar.<br> Si se detecta un error en el contenido, el sistema muestra un mensaje indicando el problema antes de guardar. |
-| **Precondiciones**                | El profesor debe tener acceso al sistema y permisos para editar la guía asignada. |
-| **Postcondiciones**               | La guía queda actualizada con los cambios realizados, o se cancela la edición sin que se guarden modificaciones. |
-
+### [Editar Contenido Dinámico](/CasosDeUso/Actividades/Prototipos/README.md#profesor---editar-guía)
 
 ![](/images/modelosUML/EditarContenidoGD.svg)  | [Ver Código](/CasosDeUso/Actividades/Detallados/EditarContenidoGD.puml)
 
-## 13. [Enviar Guía Docente para Revisión](/CasosDeUso/Actividades/Prototipos/README.md#profesor---enviar-guía)
-| **Identificación de actores**      | Profesor |
-|------------------------------------|----------|
-| **Escenario**                      | El profesor envía la guía docente editada al Director de Grado para su revisión y posterior aprobación o rechazo, asegurándose de que cumpla con los estándares académicos y de calidad. |
-| **Flujo de eventos principal**     | 1. El profesor inicia sesión en el sistema de gestión de guías.   <br> 2. El sistema muestra el menú principal con las guías asignadas.  <br>3. El profesor selecciona una guía a enviar.  <br> 4. El sistema despliega la guía seleccionada. <br> 5. El profesor selecciona la opción de enviar la guía para revisión.  <br>6. El sistema solicita confirmación del envío.  <br>7. El profesor confirma el envío.  <br>8. El sistema envía la guía al Director de Grado para revisión y muestra una notificación de éxito. |
-| **Flujos alternativos y excepciones** | Si el profesor cancela el envío, el sistema regresa al menú principal sin enviar la guía.  <br> Si ocurre un error durante el envío (por ejemplo, falla en la conexión), el sistema notifica el error y permite reintentar. |
-| **Precondiciones**                | El profesor debe haber iniciado sesión en el sistema y tener acceso a las guías asignadas.  <br> La guía debe estar completamente editada antes del envío. |
-| **Postcondiciones**               | La guía queda marcada como "enviada para revisión" en el sistema, notificando al Director de Grado. |
+## [Enviar Guía Docente para Revisión](/CasosDeUso/Actividades/Prototipos/README.md#profesor---enviar-guía)
 
 ![](/images/modelosUML/EnviarParaRevisionGD.svg) | [Ver Código](/CasosDeUso/Actividades/Detallados/EnviarParaRevisionGD.puml)
 
