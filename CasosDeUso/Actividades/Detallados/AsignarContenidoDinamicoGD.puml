@@ -1,0 +1,72 @@
+@startuml
+ListadoGuías -up-> EditarContenidoDinamico
+
+state EditarContenidoDinamico {
+    state SeleccionarGuía as " "
+    state MostrarContenido as " "
+    state PermitirEdición as " "
+    state ModificarContenido as " "
+    state ValidarModificaciones <<choice>>
+    state GuardarCambios as " "
+    state MostrarConfirmación as " "
+    state PermitirCancelación as " "
+
+    [*] --> SeleccionarGuía
+    note on link
+    <b>Profesor Selecciona</b>
+    * una guía docente para editar
+    end note
+
+    SeleccionarGuía --> MostrarContenido
+    note on link
+    <b>Sistema Muestra</b>
+    * el contenido actual de la guía
+    end note
+
+    MostrarContenido --> PermitirEdición
+    note on link
+    <b>Sistema Permite</b>
+    * la edición del contenido dinámico de la guía
+    end note
+
+    PermitirEdición --> ModificarContenido
+    note on link
+    <b>Profesor Modifica</b>
+    * el contenido según las necesidades de la asignatura
+    end note
+
+    ModificarContenido --> ValidarModificaciones
+    note on link
+    <b>Sistema Valida</b>
+    * si las modificaciones cumplen con los requisitos
+    end note
+
+    ValidarModificaciones --> GuardarCambios : Modificaciones válidas
+    note on link
+    <b>Sistema Guarda</b>
+    * los cambios realizados en la guía
+    end note
+
+    GuardarCambios --> MostrarConfirmación
+    note on link
+    <b>Sistema Muestra</b>
+    * la confirmación de que los cambios han sido guardados
+    end note
+
+    ValidarModificaciones --> PermitirCancelación : Cancelar
+    note on link
+    <b>Profesor Solicita</b>
+    * cancelar la edición antes de guardar los cambios
+    end note
+
+    PermitirCancelación --> [*]
+    note on link
+    <b>Sistema Retorna</b>
+    * al estado inicial sin aplicar modificaciones
+    end note
+
+    MostrarConfirmación --> [*]
+}
+
+EditarContenidoDinamico -up-> ListadoGuías
+@enduml
