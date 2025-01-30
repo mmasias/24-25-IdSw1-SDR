@@ -26,11 +26,11 @@
 
 ### [Editar Contenido Dinámico](/CasosDeUso/Actividades/Prototipos/README.md#profesor---editar-guía)
 
-![](/images/modelosUML/EditarContenidoGD.svg)  | [Ver Código](/CasosDeUso/Actividades/Detallados/EditarContenidoGD.puml)
+![](/images/modelosUML/EditarContenidoDinamico.svg)  | [Ver Código](/CasosDeUso/Actividades/Detallados/EditarContenidoDinamicoGD.puml)
 
 ## [Enviar Guía Docente para Revisión](/CasosDeUso/Actividades/Prototipos/README.md#profesor---enviar-guía)
 
-![](/images/modelosUML/EnviarParaRevisionGD.svg) | [Ver Código](/CasosDeUso/Actividades/Detallados/EnviarParaRevisionGD.puml)
+![](/images/modelosUML/EnviarParaRevisionGD.svg) | [Ver Código](/CasosDeUso/Actividades/Detallados/EnviarGuiaDocenteParaRevisionGD.puml)
 
 
 ## Director de grado

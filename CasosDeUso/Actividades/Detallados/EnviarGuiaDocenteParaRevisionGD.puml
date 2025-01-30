@@ -2,69 +2,90 @@
 ListadoGuías -up-> EnviarGuiaRevision
 
 state EnviarGuiaRevision {
-    state SolicitaGuía as " "
+    state SolicitarGuía as " "
+    state PermitirSelección as " "
     state MostrarGuía as " "
+    state SolicitarEnvío as " "
     state PermitirEnvío as " "
     state SolicitarConfirmación as " "
+    state PermitirConfirmación as " "
     state ValidarConfirmación <<choice>>
-    state EnviarGuía as " "
+    state PermitirEnvíoFinal as " "
     state MostrarNotificación as " "
     state PermitirCancelación as " "
 
-    [*] --> SolicitaGuía
+    [*] --> SolicitarGuía
     note on link
     <b>Profesor Solicita</b>
-    * una guía docente para enviar a revisión
+    * seleccionar una guía para enviar a revisión
     end note
 
-    SolicitaGuía --> MostrarGuía
+    SolicitarGuía --> PermitirSelección
+    note on link
+    <b>Sistema Permite</b>
+    * la selección de una guía docente
+    end note
+
+    PermitirSelección --> MostrarGuía
     note on link
     <b>Sistema Muestra</b>
     * el contenido de la guía seleccionada
     end note
 
-    MostrarGuía --> PermitirEnvío
+    MostrarGuía --> SolicitarEnvío
+    note on link
+    <b>Profesor Solicita</b>
+    * enviar la guía a revisión
+    end note
+
+    SolicitarEnvío --> PermitirEnvío
     note on link
     <b>Sistema Permite</b>
-    * la opción de enviar la guía a revisión
+    * la solicitud de envío a revisión
     end note
 
     PermitirEnvío --> SolicitarConfirmación
     note on link
     <b>Sistema Solicita</b>
-    * confirmación antes de proceder con el envío
+    * confirmación del envío antes de proceder
     end note
 
-    SolicitarConfirmación --> ValidarConfirmación
+    SolicitarConfirmación --> PermitirConfirmación
     note on link
-    <b>Profesor Confirma</b>
-    * el envío de la guía a revisión
+    <b>Sistema Permite</b>
+    * la confirmación del envío de la guía
     end note
 
-    ValidarConfirmación --> EnviarGuía : Confirmado
+    PermitirConfirmación --> ValidarConfirmación
     note on link
-    <b>Sistema Envía</b>
-    * la guía al Director de Grado para su revisión
+    <b>Profesor Solicita</b>
+    * confirmar el envío de la guía a revisión
     end note
 
-    EnviarGuía --> MostrarNotificación
+    ValidarConfirmación --> PermitirEnvíoFinal : Confirmado
     note on link
-    <b>Sistema Notifica</b>
-    * el éxito del envío y cambia el estado de la guía
+    <b>Sistema Permite</b>
+    * el envío final de la guía al Director de Grado
+    end note
+
+    PermitirEnvíoFinal --> MostrarNotificación
+    note on link
+    <b>Sistema Muestra</b>
+    * notificación de éxito y actualización de estado
     end note
 
     MostrarNotificación --> [*]
 
     ValidarConfirmación --> PermitirCancelación : Cancelar
     note on link
-    <b>Profesor Cancela</b>
-    * el proceso de envío antes de confirmar
+    <b>Profesor Solicita</b>
+    * cancelar el proceso de envío antes de confirmar
     end note
 
     PermitirCancelación --> MostrarGuía
     note on link
-    <b>Sistema Regresa</b>
-    * a la visualización de la guía sin enviarla
+    <b>Sistema Permite</b>
+    * regresar a la visualización de la guía sin enviarla
     end note
 }
 
