@@ -1,27 +1,26 @@
 @startuml AdministradorContextDiagram
 
-' Estilo general
+
 !define RECTANGLE(x) rectangle x
 
-' Actores y elementos principales
+
 RECTANGLE(ADMINISTRADOR) #LightPink
 RECTANGLE(PAGINA_PRINCIPAL) #LightBlue
 RECTANGLE(NAVEGACION_MENUS) #SkyBlue
 
-' Menús y casos de uso
+
 RECTANGLE(MENU_GESTIONAR_OFERTAS) #LightYellow
 RECTANGLE(VER_ESTADISTICAS) #LightYellow
 
-' Relaciones principales (Inicio de sesión y navegación)
 ADMINISTRADOR -[#Black]-> PAGINA_PRINCIPAL : .
 PAGINA_PRINCIPAL -[#SkyBlue]-> NAVEGACION_MENUS : Navegar por menús
 NAVEGACION_MENUS -[#SkyBlue]-> PAGINA_PRINCIPAL : Regresar al inicio
 
-' Acciones específicas del administrador
+
 NAVEGACION_MENUS -[#LightBlue]-> MENU_GESTIONAR_OFERTAS : Gestionar ofertas
 NAVEGACION_MENUS -[#LightBlue]-> VER_ESTADISTICAS : Ver estadísticas
 
-' Navegación entre menús y regreso al inicio
+
 MENU_GESTIONAR_OFERTAS -[#LightBlue]-> NAVEGACION_MENUS : Cambiar menú
 VER_ESTADISTICAS -[#LightBlue]-> NAVEGACION_MENUS : Cambiar menú
 

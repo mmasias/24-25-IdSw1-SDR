@@ -7,22 +7,22 @@ RECTANGLE(ALUMNO) #LightBlue
 RECTANGLE(PAGINA_PRINCIPAL) #LightBlue
 RECTANGLE(NAVEGACION_MENUS) #SkyBlue
 
-' Menús y casos de uso
+
 RECTANGLE(BUSCAR_OFERTAS) #Yellow
 RECTANGLE(POSTULAR_OFERTA) #LightGreen
 RECTANGLE(VER_OFERTAS) #LightCoral
 
-' Relaciones principales (Inicio de sesión y navegación)
+
 ALUMNO -[#Black]-> PAGINA_PRINCIPAL : .
 PAGINA_PRINCIPAL -[#SkyBlue]-> NAVEGACION_MENUS : Navegar por menús
 NAVEGACION_MENUS -[#SkyBlue]-> PAGINA_PRINCIPAL : Regresar al inicio
 
-' Acciones específicas del alumno
+
 NAVEGACION_MENUS -[#Yellow]-> BUSCAR_OFERTAS : Buscar ofertas de trabajo
 NAVEGACION_MENUS -[#LightGreen]-> POSTULAR_OFERTA : Postular a oferta de trabajo
 NAVEGACION_MENUS -[#LightCoral]-> VER_OFERTAS : Ver ofertas disponibles
 
-' Navegación entre menús y regreso al inicio
+
 BUSCAR_OFERTAS -[#LightBlue]-> NAVEGACION_MENUS : Cambiar menú
 POSTULAR_OFERTA -[#LightBlue]-> NAVEGACION_MENUS : Cambiar menú
 VER_OFERTAS -[#LightBlue]-> NAVEGACION_MENUS : Cambiar menú
