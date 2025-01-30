@@ -1,0 +1,99 @@
+@startuml
+ListadoGuías -up-> RevisarContenidoGuia
+
+state RevisarContenidoGuia {
+    state SolicitarGuía as " "
+    state PermitirSelección as " "
+    state MostrarGuía as " "
+    state SolicitarDecisión as " "
+    state PermitirDecisión as " "
+    state ValidarDecisión <<choice>>
+    state AprobarGuía as " "
+    state RechazarGuía as " "
+    state PermitirRetroalimentación as " "
+    state MostrarNotificación as " "
+    state PermitirCancelar as " "
+
+    [*] --> SolicitarGuía
+    note on link
+    <b>Director de Grado Solicita</b>
+    * seleccionar una guía para revisar
+    end note
+
+    SolicitarGuía --> PermitirSelección
+    note on link
+    <b>Sistema Permite</b>
+    * la selección de una guía pendiente de revisión
+    end note
+
+    PermitirSelección --> MostrarGuía
+    note on link
+    <b>Sistema Muestra</b>
+    * el contenido completo de la guía seleccionada
+    end note
+
+    MostrarGuía --> SolicitarDecisión
+    note on link
+    <b>Director de Grado Solicita</b>
+    * tomar una decisión sobre la guía
+    end note
+
+    SolicitarDecisión --> PermitirDecisión
+    note on link
+    <b>Sistema Permite</b>
+    * la opción de aprobar o solicitar modificaciones
+    end note
+
+    PermitirDecisión --> ValidarDecisión
+    note on link
+    <b>Director de Grado Solicita</b>
+    * aprobar o solicitar modificaciones
+    end note
+
+    ValidarDecisión --> AprobarGuía : Aprobar
+    note on link
+    <b>Sistema Permite</b>
+    * marcar la guía como aprobada y lista para publicación
+    end note
+
+    AprobarGuía --> MostrarNotificación
+    note on link
+    <b>Sistema Notifica</b>
+    * éxito en la aprobación y preparación para publicación
+    end note
+
+    ValidarDecisión --> RechazarGuía : Rechazar
+    note on link
+    <b>Sistema Permite</b>
+    * rechazar módulos específicos y solicitar modificaciones
+    end note
+
+    RechazarGuía --> PermitirRetroalimentación
+    note on link
+    <b>Sistema Permite</b>
+    * agregar comentarios de retroalimentación
+    end note
+
+    PermitirRetroalimentación --> MostrarNotificación
+    note on link
+    <b>Sistema Notifica</b>
+    * que la guía requiere revisión por parte del profesor
+    end note
+
+    MostrarNotificación --> [*]
+
+    ValidarDecisión --> PermitirCancelar : Cancelar
+    note on link
+    <b>Director de Grado Solicita</b>
+    * descartar la revisión sin tomar decisión
+    end note
+
+    PermitirCancelar --> MostrarGuía
+    note on link
+    <b>Sistema Permite</b>
+    * regresar a la vista de la guía sin cambios
+    end note
+}
+
+RevisarContenidoGuia -up-> ListadoGuías
+@enduml
