@@ -1,0 +1,59 @@
+@startuml
+hide empty description
+
+state Usuario
+state IniciarSesion {
+    state " " as SolicitarInicio
+    state " " as MostrarFormulario
+    state " " as ValidarCredenciales <<choice>>
+    state " " as AccesoConcedido
+    state " " as AccesoDenegado
+
+    [*] --> SolicitarInicio
+    note on link
+        <b>Usuario Solicita</b>
+        * iniciar sesión en el sistema
+    end note
+
+    SolicitarInicio -[#green]-> MostrarFormulario
+    note on link
+        <b>Sistema Permite</b>
+        * ingresar credenciales: 
+        - Correo Institucional
+        - Contraseña
+    end note
+
+    MostrarFormulario -[#green]-> ValidarCredenciales
+    note on link
+        <b>Usuario Solicita</b>
+        * ingresar y validar credenciales
+    end note
+
+    ValidarCredenciales --> AccesoConcedido : Credenciales Correctas
+    note on link
+        <b>Sistema Permite</b>
+        * acceso según el rol:
+        - Superadmin
+        - Técnico de Calidad
+        - Profesor
+        - Director de Grado
+        - Director de Calidad
+    end note
+
+    ValidarCredenciales --> AccesoDenegado : Credenciales Incorrectas
+    note on link
+        <b>Sistema Notifica</b>
+        * "Usuario o contraseña incorrectos"
+    end note
+
+    AccesoDenegado -[#red]-> MostrarFormulario
+    note on link
+        <b>Usuario Solicita</b>
+        * reintentar inicio de sesión
+    end note
+
+    AccesoConcedido --> [*]
+}
+
+Usuario --> IniciarSesion
+@enduml

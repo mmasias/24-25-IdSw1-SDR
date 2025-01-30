@@ -7,6 +7,10 @@
 
 # Casos de Uso Detallados
 
+## [Iniciar Sesión](/CasosDeUso/Actividades/Prototipos/README.md#login)
+![](/images/modelosUML/IniciarSesion.svg) | [Ver Código](/CasosDeUso/Actividades/Detallados/IniciarSesion.puml)
+
+
 ## Técnico de calidad
 
 
@@ -53,3 +57,5 @@
 ![](/images/modelosUML/VerificarGD.svg) | [Ver Código](/CasosDeUso/Actividades/Detallados/VerificarGD.puml)
 
 
+## [Cerrar Sesión](/CasosDeUso/Actividades/Prototipos/README.md#login)
+![](/images/modelosUML/CerrarSesion.svg) | [Ver Código](/CasosDeUso/Actividades/Detallados/CerrarSesion.puml)
