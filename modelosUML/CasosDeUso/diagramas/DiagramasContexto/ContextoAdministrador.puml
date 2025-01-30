@@ -1,27 +1,31 @@
 @startuml AdministradorContextDiagram
 
-
 !define RECTANGLE(x) rectangle x
-
 
 RECTANGLE(ADMINISTRADOR) #LightPink
 RECTANGLE(PAGINA_PRINCIPAL) #LightBlue
-RECTANGLE(NAVEGACION_MENUS) #SkyBlue
 
-
-RECTANGLE(MENU_GESTIONAR_OFERTAS) #LightYellow
 RECTANGLE(VER_ESTADISTICAS) #LightYellow
+RECTANGLE(VER_OFERTAS) #LightCoral
 
-ADMINISTRADOR -[#Black]-> PAGINA_PRINCIPAL : .
-PAGINA_PRINCIPAL -[#SkyBlue]-> NAVEGACION_MENUS : Navegar por menús
-NAVEGACION_MENUS -[#SkyBlue]-> PAGINA_PRINCIPAL : Regresar al inicio
+RECTANGLE(ACEPTANDO_OFERTA) #Yellow
+RECTANGLE(CERRANDO_OFERTA) #PaleGreen
+RECTANGLE(CANCELANDO_OFERTA) #LightSalmon
 
+ADMINISTRADOR -[#Black]-> PAGINA_PRINCIPAL : Acceder
 
-NAVEGACION_MENUS -[#LightBlue]-> MENU_GESTIONAR_OFERTAS : Gestionar ofertas
-NAVEGACION_MENUS -[#LightBlue]-> VER_ESTADISTICAS : Ver estadísticas
+PAGINA_PRINCIPAL -[#LightBlue]-> VER_OFERTAS : Ver ofertas
+PAGINA_PRINCIPAL -[#LightBlue]-> VER_ESTADISTICAS : Ver estadísticas
 
+VER_OFERTAS -[#Yellow]-> ACEPTANDO_OFERTA : Aceptar Oferta
+VER_OFERTAS -[#PaleGreen]-> CERRANDO_OFERTA : Cerrar Oferta
+VER_OFERTAS -[#LightSalmon]-> CANCELANDO_OFERTA : Cancelar Oferta
 
-MENU_GESTIONAR_OFERTAS -[#LightBlue]-> NAVEGACION_MENUS : Cambiar menú
-VER_ESTADISTICAS -[#LightBlue]-> NAVEGACION_MENUS : Cambiar menú
+ACEPTANDO_OFERTA -[#LightCoral]-> VER_OFERTAS : Ver Ofertas
+CERRANDO_OFERTA -[#LightCoral]-> VER_OFERTAS : Ver Ofertas
+CANCELANDO_OFERTA -[#LightCoral]-> VER_OFERTAS : Ver Ofertas
+
+VER_OFERTAS -[#LightBlue]-> PAGINA_PRINCIPAL : Regresar
+VER_ESTADISTICAS -[#LightBlue]-> PAGINA_PRINCIPAL : Regresar
 
 @enduml
