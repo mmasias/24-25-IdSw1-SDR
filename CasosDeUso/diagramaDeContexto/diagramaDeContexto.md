@@ -23,3 +23,7 @@ Este documento describe el **Diagrama de Contexto** del sistema de Automatizaci�
 
 ## 📘 Diagrama de Contexto - Director de Calidad
 ![Diagrama de Contexto Director de Calidad](/images/modelosUML/DiagramasContexto/DiagramaDeContextoDirectorCalidad.svg) |[ver código](/CasosDeUso/diagramaDeContexto/DiagramaDeContextoDirectorCalidad.puml)
+
+## 📘 Diagrama de Contexto - Super Admin
+![](/images/modelosUML/DiagramasContexto/ImportarBD.svg) | [Ver Código](/CasosDeUso/diagramaDeContexto/ImportadBD.puml)
+
