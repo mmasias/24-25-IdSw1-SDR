@@ -13,7 +13,6 @@
 
 ## Técnico de calidad
 
-
 ### [Generar Nueva Versión de la Guía](/CasosDeUso/Actividades/Prototipos/README.md#técnico-de-calidad---generar-nueva-versión)
 ![](/images/modelosUML/GenerarVersiónGD.svg) | [Ver Código](/CasosDeUso/Actividades/Detallados/GenerarVersionGD.puml)
 
@@ -48,14 +47,19 @@
 ## Director de calidad
 
 
-### 1. [Auditar Guías Docentes](/CasosDeUso/Actividades/Prototipos/README.md#dirección-de-calidad---auditar-guías-docentes)
+### [Auditar Guías Docentes](/CasosDeUso/Actividades/Prototipos/README.md#dirección-de-calidad---auditar-guías-docentes)
 
 ![](/images/modelosUML/AuditarGD.svg) | [Ver Código](/CasosDeUso/Actividades/Detallados/AuditarGD.puml)
 
-### 2. [Verificar Cumplimiento con Memoria Verificada](/CasosDeUso/Actividades/Prototipos/README.md#dirección-de-calidad---verificar-cumplimiento-con-memoria-verificada)
+### [Verificar Cumplimiento con Memoria Verificada](/CasosDeUso/Actividades/Prototipos/README.md#dirección-de-calidad---verificar-cumplimiento-con-memoria-verificada)
 
 ![](/images/modelosUML/VerificarGD.svg) | [Ver Código](/CasosDeUso/Actividades/Detallados/VerificarGD.puml)
 
 
 ## [Cerrar Sesión](/CasosDeUso/Actividades/Prototipos/README.md#login)
 ![](/images/modelosUML/CerrarSesion.svg) | [Ver Código](/CasosDeUso/Actividades/Detallados/CerrarSesion.puml)
+
+## Super Admin
+### Importar bases de datos 
+![](/images/modelosUML/ImportarBD.svg) | [Ver Código](/CasosDeUso/Actividades/Detallados/ImportarBD.puml)
+
