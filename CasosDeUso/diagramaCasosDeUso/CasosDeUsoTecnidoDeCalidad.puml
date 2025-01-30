@@ -3,13 +3,17 @@ left to right direction
 
 actor "Técnico de Calidad" as TecnicoCalidad
 
+usecase "Iniciar sesión" as IniciarSesion
+usecase "Cerrar sesión" as CerrarSesion
 usecase "Generar Nueva Versión de la Guía" as GenerarVersion
-usecase "Asignar Guías Docentes a Profesor" as AsignarGuiaProfesor
+usecase "Asignar Guía a Profesor" as AsignarGuia
 usecase "Editar Contenido Estatico" as EditarContenidoEstatico
 
 TecnicoCalidad --> GenerarVersion
-TecnicoCalidad --> AsignarGuiaProfesor
+TecnicoCalidad --> AsignarGuia
 TecnicoCalidad --> EditarContenidoEstatico
+TecnicoCalidad --> IniciarSesion
+TecnicoCalidad --> CerrarSesion
 
 
 @enduml

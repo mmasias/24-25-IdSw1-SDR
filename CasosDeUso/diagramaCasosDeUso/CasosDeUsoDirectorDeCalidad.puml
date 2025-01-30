@@ -3,9 +3,13 @@ left to right direction
 
 actor "Dirección de Calidad" as DireccionCalidad
 
-usecase "Auditar Guías Docentes" as AuditarGuias
+usecase "Iniciar sesión" as IniciarSesion
+usecase "Cerrar sesión" as CerrarSesion
+usecase "Auditar Guía" as AuditarGuias
 usecase "Verificar Cumplimiento con Memoria Verificada" as VerificarMemoria
 
+DireccionCalidad --> IniciarSesion
+DireccionCalidad --> CerrarSesion
 DireccionCalidad --> AuditarGuias
 DireccionCalidad --> VerificarMemoria
 
