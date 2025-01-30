@@ -1,0 +1,25 @@
+@startuml AdministradorContextDiagram
+
+!define RECTANGLE(x) rectangle x
+
+RECTANGLE(MENU_GESTIONAR_OFERTAS) #Yellow
+' Subfunciones de "Ofertas"
+RECTANGLE(ACEPTANDO_OFERTA) #Yellow
+RECTANGLE(CERRANDO_OFERTA) #PaleGreen
+RECTANGLE(CANCELANDO_OFERTA) #LightSalmon
+RECTANGLE(VER_OFERTAS) #LightCoral
+RECTANGLE(NAVEGACION_MENUS) #SkyBlue
+
+MENU_GESTIONAR_OFERTAS -[#Yellow]-> ACEPTANDO_OFERTA : Aceptar Oferta
+ACEPTANDO_OFERTA -[#SkyBlue]-> NAVEGACION_MENUS : Cambiar Menú
+
+MENU_GESTIONAR_OFERTAS -[#Yellow]-> CERRANDO_OFERTA : Cerrar Oferta
+CERRANDO_OFERTA -[#SkyBlue]-> NAVEGACION_MENUS : Cambiar Menú
+
+MENU_GESTIONAR_OFERTAS -[#Yellow]-> CANCELANDO_OFERTA : Cancelar Oferta
+CANCELANDO_OFERTA -[#SkyBlue]-> NAVEGACION_MENUS : Cambiar Menú
+
+MENU_GESTIONAR_OFERTAS -[#Yellow]-> VER_OFERTAS : Ver Ofertas
+VER_OFERTAS -[#SkyBlue]-> NAVEGACION_MENUS : Cambiar Menú
+
+@enduml
