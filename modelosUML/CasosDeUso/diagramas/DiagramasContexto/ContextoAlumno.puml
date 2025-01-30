@@ -1,21 +1,20 @@
-
 @startuml AlumniContextDiagram
 
 !define RECTANGLE(x) rectangle x
 
 RECTANGLE(ALUMNI) #LightBlue
 RECTANGLE(PAGINA_PRINCIPAL) #LightBlue
-RECTANGLE(BUSCAR_OFERTAS) #Yellow
+RECTANGLE(BUSCAR_OFERTAS) #LightGray
 RECTANGLE(VER_OFERTAS) #LightCoral
 RECTANGLE(POSTULAR_OFERTA) #LightGreen
 
 
 ALUMNI -[#Black]-> PAGINA_PRINCIPAL : Entra a la página principal
-PAGINA_PRINCIPAL -[#Yellow]-> BUSCAR_OFERTAS : Buscar ofertas de trabajo
+PAGINA_PRINCIPAL -[#LightGray]-> BUSCAR_OFERTAS : Buscar ofertas de trabajo
 BUSCAR_OFERTAS -[#LightCoral]-> VER_OFERTAS : Ver ofertas disponibles
-VER_OFERTAS -[#Yellow]-> BUSCAR_OFERTAS : Volver a buscar ofertas
+VER_OFERTAS -[#LightGray]-> BUSCAR_OFERTAS : Volver a buscar ofertas
 VER_OFERTAS -[#LightGreen]-> POSTULAR_OFERTA : Postular a oferta
-POSTULAR_OFERTA -[#Yellow]-> BUSCAR_OFERTAS : Volver a buscar ofertas
+POSTULAR_OFERTA -[#LightGray]-> BUSCAR_OFERTAS : Volver a buscar ofertas
 POSTULAR_OFERTA -[#LightBlue]-> PAGINA_PRINCIPAL : Regresar al inicio
 
 @enduml
