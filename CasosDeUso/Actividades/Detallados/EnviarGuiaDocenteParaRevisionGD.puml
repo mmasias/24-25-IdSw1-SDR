@@ -1,0 +1,72 @@
+@startuml
+ListadoGuías -up-> EnviarGuiaRevision
+
+state EnviarGuiaRevision {
+    state SolicitaGuía as " "
+    state MostrarGuía as " "
+    state PermitirEnvío as " "
+    state SolicitarConfirmación as " "
+    state ValidarConfirmación <<choice>>
+    state EnviarGuía as " "
+    state MostrarNotificación as " "
+    state PermitirCancelación as " "
+
+    [*] --> SolicitaGuía
+    note on link
+    <b>Profesor Solicita</b>
+    * una guía docente para enviar a revisión
+    end note
+
+    SolicitaGuía --> MostrarGuía
+    note on link
+    <b>Sistema Muestra</b>
+    * el contenido de la guía seleccionada
+    end note
+
+    MostrarGuía --> PermitirEnvío
+    note on link
+    <b>Sistema Permite</b>
+    * la opción de enviar la guía a revisión
+    end note
+
+    PermitirEnvío --> SolicitarConfirmación
+    note on link
+    <b>Sistema Solicita</b>
+    * confirmación antes de proceder con el envío
+    end note
+
+    SolicitarConfirmación --> ValidarConfirmación
+    note on link
+    <b>Profesor Confirma</b>
+    * el envío de la guía a revisión
+    end note
+
+    ValidarConfirmación --> EnviarGuía : Confirmado
+    note on link
+    <b>Sistema Envía</b>
+    * la guía al Director de Grado para su revisión
+    end note
+
+    EnviarGuía --> MostrarNotificación
+    note on link
+    <b>Sistema Notifica</b>
+    * el éxito del envío y cambia el estado de la guía
+    end note
+
+    MostrarNotificación --> [*]
+
+    ValidarConfirmación --> PermitirCancelación : Cancelar
+    note on link
+    <b>Profesor Cancela</b>
+    * el proceso de envío antes de confirmar
+    end note
+
+    PermitirCancelación --> MostrarGuía
+    note on link
+    <b>Sistema Regresa</b>
+    * a la visualización de la guía sin enviarla
+    end note
+}
+
+EnviarGuiaRevision -up-> ListadoGuías
+@enduml
