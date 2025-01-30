@@ -7,6 +7,10 @@
 
 # Casos de Uso
 ---
-| Técnico de Calidad | Profesor | Director de Grado | Dirección de Calidad |
-|----------|----------|----------|----------|
-| ![](/images/modelosUML/CasosDeUsoActores/CasosDeUsoTecnicoDeCalidad.svg) | ![](/images/modelosUML/CasosDeUsoActores/CasosDeUsoProfesor.svg) | ![](/images/modelosUML/CasosDeUsoActores/CasosDeUsoDirectorDeGrado.svg) | ![](/images/modelosUML/CasosDeUsoActores/CasosDeUsoDirectorDeCalidad.svg) |
+| Tecnido de Calidad | Profesor |
+|----------|----------|
+| ![](/images/modelosUML/CasosDeUsoActores/TecnicoDeCalidad.svg) | ![](/images/modelosUML/CasosDeUsoActores/DiagramaProfesor.svg) |
+
+| Director de Grado | Dirección de Calidad |
+|----------|----------|
+| ![](/images/modelosUML/CasosDeUsoActores/DirectorDeGrado.svg) | ![](/images/modelosUML/CasosDeUsoActores/DirectorDeCalidad.svg) |
