@@ -6,10 +6,11 @@
 
 # Casos de Uso
 ---
-| Tecnido de Calidad | Profesor |
-|----------|----------|
-| ![](/images/modelosUML/CasosDeUsoActores/TecnicoDeCalidad.svg) | ![](/images/modelosUML/CasosDeUsoActores/DiagramaProfesor.svg) |
+| SuperAdmin | Tecnido de Calidad | Profesor |
+|----------|----------|----------|
+| ![](/images/modelosUML/CasosDeUsoActores/SuperAdmin.svg) |![](/images/modelosUML/CasosDeUsoActores/TecnicoDeCalidad.svg) | ![](/images/modelosUML/CasosDeUsoActores/DiagramaProfesor.svg) |
 
-| Director de Grado | Dirección de Calidad |
+| Director de Grado | Dirección de Calidad | 
 |----------|----------|
 | ![](/images/modelosUML/CasosDeUsoActores/DirectorDeGrado.svg) | ![](/images/modelosUML/CasosDeUsoActores/DirectorDeCalidad.svg) |
+

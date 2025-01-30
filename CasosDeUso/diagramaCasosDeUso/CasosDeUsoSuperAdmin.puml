@@ -1,0 +1,15 @@
+@startuml
+
+left to right direction
+
+actor "Super Admin" as SuperAdmin
+
+usecase "Iniciar sesión" as IniciarSesion
+usecase "Cerrar sesión" as CerrarSesion
+usecase "Importar bases de datos" as ImportarBD
+
+SuperAdmin --> IniciarSesion
+SuperAdmin --> CerrarSesion
+SuperAdmin --> ImportarBD
+
+@enduml
