@@ -30,7 +30,7 @@ state VerificarCumplimientoConMemoriaVerificada {
     ResultadoVerificacion -->  GuiaNoCumpleRequisitos
     note on link
     <b>Se Rechaza la Guía</b>
-    * guía no cmple estandares de calidad
+    * guía no cumple estandares de calidad
     end note
 
      GuiaNoCumpleRequisitos --> [*]
@@ -48,7 +48,7 @@ state VerificarCumplimientoConMemoriaVerificada {
     GuiaCumpleRequisitos --> [*]
     note on link
     <b>Sistema Retorna</b>
-    * Al estado inicial sin seleccionar guía
+    * al estado inicial sin seleccionar guía
     end note
     
 }
