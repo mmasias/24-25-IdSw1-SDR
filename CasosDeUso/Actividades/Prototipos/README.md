@@ -49,7 +49,7 @@
 ### Técnico de Calidad - Ver Listado de Estado de Guías
 ![](/CasosDeUso/Actividades/Prototipos/PrototipadosTecnicoCalidad/Técnico-%20Ver%20Listado%20de%20Estados%20de%20Guías%20Docentes.svg)
 
-### Técnico de Calidad - Editar Plantilla
+### Técnico de Calidad - Editar Contenido Estático de Guía
 ![](/CasosDeUso/Actividades/Prototipos/PrototipadosTecnicoCalidad/Director%20de%20Calidad-Editar%20plantilla%20de%20la%20guía%20docente.svg)
 ![](/CasosDeUso/Actividades/Prototipos/PrototipadosTecnicoCalidad/Director%20de%20Calidad-Editar%20plantilla%20de%20la%20guía%20docente%20(1).svg)
 

@@ -16,7 +16,7 @@
 ### [Asignar Guías Docentes a Profesor](/CasosDeUso/Actividades/Prototipos/README.md#técnico-de-calidad---asignar-guía-a-profesor)
 ![](/images/modelosUML/AsignarProfesorGD.svg) | [Ver Código](/CasosDeUso/Actividades/Detallados/AsignarProfesorGD.puml)
 
-### [Editar contenido estático de guía docente](/CasosDeUso/Actividades/Prototipos/README.md#técnico-de-calidad---editar-plantilla) ** cambiar a editar contenido estatico
+### [Editar contenido estático de guía docente](/CasosDeUso/Actividades/Prototipos/README.md#técnico-de-calidad---editar-Contenido-Estático-de-Guía)
 ![](/images/modelosUML/EditarContenidoEstaticoGD.svg) | [Ver Código](/CasosDeUso/Actividades/Detallados/EditarContenidoEstaticoGD.puml)
 
 
