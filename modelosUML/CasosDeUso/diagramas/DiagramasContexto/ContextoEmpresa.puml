@@ -4,11 +4,11 @@
 
 RECTANGLE(EMPRESA) #Gold
 RECTANGLE(PAGINA_PRINCIPAL) #LightBlue
-RECTANGLE(CREAR_OFERTA) #Yellow
+RECTANGLE(CREAR_OFERTA) #LightGray
 
 
 EMPRESA -[#Black]-> PAGINA_PRINCIPAL : Entra con token
-PAGINA_PRINCIPAL -[#Yellow]-> CREAR_OFERTA : Crear nueva oferta de trabajo
+PAGINA_PRINCIPAL -[#LightGray]-> CREAR_OFERTA : Crear nueva oferta de trabajo
 
 
 CREAR_OFERTA -[#LightBlue]-> PAGINA_PRINCIPAL : Regresar al inicio
