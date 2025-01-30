@@ -44,16 +44,12 @@
 ## Director de calidad
 
 
-### 1. [Verificar Cumplimiento con Memoria Verificada](/CasosDeUso/Actividades/Prototipos/README.md#dirección-de-calidad---verificar-cumplimiento-con-memoria-verificada)
- **Postcondiciones**               | El sistema confirma el cumplimiento de la guía con la memoria verificada o notifica las observaciones para ajustes. |
-
-![](/images/modelosUML/VerificarGD.svg) | [Ver Código](/CasosDeUso/Actividades/Detallados/VerificarGD.puml)
-
-### 2. [Auditar Guías Docentes](/CasosDeUso/Actividades/Prototipos/README.md#dirección-de-calidad---auditar-guías-docentes)
-
+### 1. [Auditar Guías Docentes](/CasosDeUso/Actividades/Prototipos/README.md#dirección-de-calidad---auditar-guías-docentes)
 
 ![](/images/modelosUML/AuditarGD.svg) | [Ver Código](/CasosDeUso/Actividades/Detallados/AuditarGD.puml)
 
+### 2. [Verificar Cumplimiento con Memoria Verificada](/CasosDeUso/Actividades/Prototipos/README.md#dirección-de-calidad---verificar-cumplimiento-con-memoria-verificada)
 
+![](/images/modelosUML/VerificarGD.svg) | [Ver Código](/CasosDeUso/Actividades/Detallados/VerificarGD.puml)
 
 
