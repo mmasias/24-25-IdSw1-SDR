@@ -31,7 +31,7 @@ state EditarContenidoDinamico {
 
     PermitirEdición --> ModificarContenido
     note on link
-    <b>Profesor Modifica</b>
+    <b>Profesor solicita Modificar</b>
     * el contenido según las necesidades de la asignatura
     end note
 

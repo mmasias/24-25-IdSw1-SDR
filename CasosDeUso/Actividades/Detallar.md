@@ -1,9 +1,9 @@
 <div align=right>
 
-| [![](https://img.shields.io/badge/-Inicio-FFF?style=flat&logo=Emlakjet&logoColor=black)](/README.md) [![](https://img.shields.io/badge/-Modelo_de_Dominio-FFF?style=flat&logo=LiveChat&logoColor=black)](/ModeloDelDominio/modeloDelDominio.md) [![](https://img.shields.io/badge/-Actores-FFF?style=flat&logo=openstreetmap&logoColor=black)](/CasosDeUso/Actividades/Actores.md) [![](https://img.shields.io/badge/-Diagrama_De_Contexto-FFF?style=flat&logo=openstreetmap&logoColor=black)](/CasosDeUso/diagramaDeContexto/diagramaDeContexto.md) [![](https://img.shields.io/badge/-Casos_De_Uso-FFF?style=flat&logo=openstreetmap&logoColor=black)](/CasosDeUso/Actividades/CasosDeUso.md) [![](https://img.shields.io/badge/-Detallado_Casos_De_Uso-FFF?style=flat&logo=openstreetmap&logoColor=black)](/CasosDeUso/Actividades/Detallar.md) [![](https://img.shields.io/badge/-Prototipos-FFF?style=flat&logo=openstreetmap&logoColor=black)](/CasosDeUso/Actividades/Prototipos/README.md) [![](https://img.shields.io/badge/-Sesiones_de_Requisitado-FFF?style=flat&logo=Proton&logoColor=black)](/SesionesDeRequisitado)  |
-
+| [![](https://img.shields.io/badge/-Inicio-FFF?style=flat&logo=Emlakjet&logoColor=black)](/README.md) [![](https://img.shields.io/badge/-Modelo_de_Dominio-FFF?style=flat&logo=LiveChat&logoColor=black)](/ModeloDelDominio/modeloDelDominio.md) [![](https://img.shields.io/badge/-Actores-FFF?style=flat&logo=openstreetmap&logoColor=black)](/CasosDeUso/Actividades/Actores.md) [![](https://img.shields.io/badge/-Casos_De_Uso-FFF?style=flat&logo=openstreetmap&logoColor=black)](/CasosDeUso/Actividades/CasosDeUso.md) [![](https://img.shields.io/badge/-Diagrama_De_Contexto-FFF?style=flat&logo=openstreetmap&logoColor=black)](/CasosDeUso/diagramaDeContexto/diagramaDeContexto.md) [![](https://img.shields.io/badge/-Priorización_Casos_De_Uso-FFF?style=flat&logo=openstreetmap&logoColor=black)](/CasosDeUso/Priorizacion.md) [![](https://img.shields.io/badge/-Detallado_Casos_De_Uso-FFF?style=flat&logo=openstreetmap&logoColor=black)](/CasosDeUso/Actividades/Detallar.md) [![](https://img.shields.io/badge/-Prototipos-FFF?style=flat&logo=openstreetmap&logoColor=black)](/CasosDeUso/Actividades/Prototipos/README.md) [![](https://img.shields.io/badge/-Sesiones_de_Requisitado-FFF?style=flat&logo=Proton&logoColor=black)](/SesionesDeRequisitado)  |
 
 </div>
+
 
 # Casos de Uso Detallados
 
@@ -16,9 +16,8 @@
 ### [Asignar Guías Docentes a Profesor](/CasosDeUso/Actividades/Prototipos/README.md#técnico-de-calidad---asignar-guía-a-profesor)
 ![](/images/modelosUML/AsignarProfesorGD.svg) | [Ver Código](/CasosDeUso/Actividades/Detallados/AsignarProfesorGD.puml)
 
-### [Editar contenido estático de guía docente](/CasosDeUso/Actividades/Prototipos/README.md#técnico-de-calidad---editar-plantilla) ** cambiar a editar contenido estatico
+### [Editar contenido estático de guía docente](/CasosDeUso/Actividades/Prototipos/README.md#técnico-de-calidad---editar-Contenido-Estático-de-Guía)
 ![](/images/modelosUML/EditarContenidoEstaticoGD.svg) | [Ver Código](/CasosDeUso/Actividades/Detallados/EditarContenidoEstaticoGD.puml)
-
 
 
 
@@ -26,57 +25,20 @@
 
 ### [Editar Contenido Dinámico](/CasosDeUso/Actividades/Prototipos/README.md#profesor---editar-guía)
 
-![](/images/modelosUML/EditarContenidoGD.svg)  | [Ver Código](/CasosDeUso/Actividades/Detallados/EditarContenidoGD.puml)
+![](/images/modelosUML/EditarContenidoDinamico.svg)  | [Ver Código](/CasosDeUso/Actividades/Detallados/EditarContenidoDinamicoGD.puml)
 
 ## [Enviar Guía Docente para Revisión](/CasosDeUso/Actividades/Prototipos/README.md#profesor---enviar-guía)
 
-![](/images/modelosUML/EnviarParaRevisionGD.svg) | [Ver Código](/CasosDeUso/Actividades/Detallados/EnviarParaRevisionGD.puml)
+![](/images/modelosUML/EnviarParaRevisionGD.svg) | [Ver Código](/CasosDeUso/Actividades/Detallados/EnviarGuiaDocenteParaRevisionGD.puml)
 
 
 ## Director de grado
 
-### 3. [Publicar Guía Docente](/CasosDeUso/Actividades/Prototipos/README.md#director-de-grado---publicar-guía-docente)
--------------
-| **Identificación de actores**      | Director de Grado |
-|------------------------------------|-------------------|
-| **Escenario**                      | El Director de Grado tiene la responsabilidad de autorizar la publicación final de las guías docentes, permitiendo que los estudiantes accedan a una versión oficial y aprobada de la guía. |
-| **Flujo de eventos principal**     | 1. El Director de Grado inicia sesión en el sistema de gestión de guías.<br> 2. El sistema muestra la lista de guías docentes aprobadas y listas para publicación.<br> 3. El Director de Grado selecciona una guía para publicar.<br> 4. El sistema solicita confirmación de la publicación final.<br> 5. El Director de Grado confirma la publicación.<br> 6. El sistema publica la guía, haciéndola accesible para los estudiantes a través del panel universitario. |
-| **Flujos alternativos y excepciones** | Si el Director de Grado cancela la operación, el sistema retorna a la lista de guías sin realizar la publicación. |
-| **Precondiciones**                | Acceso al sistema de gestión de guías docentes. La guía debe estar lista y aprobada para su publicación. |
-| **Postcondiciones**               | La guía se publica y es accesible a los estudiantes, o la operación es cancelada sin cambios. |
-
-
-![](/images/modelosUML/PublicarGD.svg)  | [Ver Código](/CasosDeUso/Actividades/Detallados/PublicarGD.puml)
-
-
-
-### 5. [Revisar Contenido](/CasosDeUso/Actividades/Prototipos/README.md#director-de-grado---revisar-contenido)
-
-| **Identificación de actores**                          | **Director de Grado**                                                                 |
-|--------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Escenario**                        | El Director de Grado revisa el contenido de una guía docente y decide si aprueba o rechaza su publicación, asegurando que cumple estándares académicos. |
-| **Flujo de eventos principal**       | 1. El Director de Grado inicia sesión en el sistema de gestión de guías.<br> 2. El sistema muestra la lista de guías pendientes de aprobación.<br> 3. Selecciona una guía para revisar su contenido.<br> 4. El sistema despliega el contenido completo de la guía.<br> 5. Decide aprobar el contenido.<br> 6. El sistema marca la guía como aprobada y la prepara para publicación. |
-| **Flujos alternativos y excepciones**| - Si el Director de Grado decide rechazar el contenido, el sistema permite registrar comentarios de retroalimentación y marca la guía como "Requiere Revisión".<br> - Si ocurre un error en la carga del contenido, el sistema notifica al Director de Grado y cancela la operación. |
-| **Precondiciones**                   | - Acceso al sistema y a las guías pendientes de aprobación.<br> - El contenido debe estar completo y listo para revisión.                      |
-| **Postcondiciones**                  | - La guía queda aprobada y lista para publicación.<br> - O se marca como "Requiere Revisión" con comentarios para ajustes.                      |
-
+### [Revisar Contenido Guía](/CasosDeUso/Actividades/Prototipos/README.md#director-de-grado---revisar-contenido)
 ![](/images/modelosUML/RevisarContenidoGD.svg) | [Ver Código](/CasosDeUso/Actividades/Detallados/RevisarContenidoGD.puml)
 
-
-### 8. [Ver listado de los estados de las guías por grado](/CasosDeUso/Actividades/Prototipos/README.md#director-de-grado---ver-listado-de-guías)
-| **Identificación de actores**      | Director de Grado |
-|------------------------------------|--------------------|
-| **Escenario**                      | El Director de Grado solicita al sistema visualizar los estados en los que se encuentran las guías docentes de su grado, para asegurar la trazabilidad y gestionar adecuadamente el proceso de aprobación. |
-| **Flujo de eventos principal**     | 1. El Director de Grado accede al sistema de gestión de guías.<br> 2. El sistema presenta el menú principal con las opciones disponibles.<br> 3. El Director de Grado selecciona la opción "Ver listado de estados de las guías de mi grado".<br> 4. El sistema visualiza una tabla con los siguientes datos para cada guía docente del grado:<br>&nbsp;&nbsp;&nbsp;&nbsp;- Título de la guía<br>&nbsp;&nbsp;&nbsp;&nbsp;- Estado actual (aprobado, devuelto para modificación, pendiente, etc.)<br>&nbsp;&nbsp;&nbsp;&nbsp;- Responsable actual<br>&nbsp;&nbsp;&nbsp;&nbsp;- Fecha de última modificación.<br> 5. El Director de Grado filtra o ordena la información según los criterios necesarios. |
-| **Flujos alternativos y excepciones** | Si no hay guías registradas para el grado, el sistema muestra un mensaje indicando que no hay datos disponibles.<br> Si ocurre un error técnico al intentar cargar la información, el sistema notifica al Director de Grado y permite reintentar la operación. |
-| **Precondiciones**                | El Director de Grado debe tener acceso al sistema y permisos para visualizar el listado de estados de las guías docentes de su grado correspondiente. |
-| **Postcondiciones**               | El Director de Grado obtiene información actualizada sobre el estado de las guías docentes de su grado para realizar un seguimiento adecuado. |
-
-![](/images/modelosUML/VerListadoEstadosGradoGD.svg)  | [Ver Código](/CasosDeUso/Actividades/Detallados/VerListadoEstadosGradoGD.puml)
-
-
-
-
+### [Publicar Guía Docente](/CasosDeUso/Actividades/Prototipos/README.md#director-de-grado---publicar-guía-docente)
+![](/images/modelosUML/PublicarGD.svg)  | [Ver Código](/CasosDeUso/Actividades/Detallados/PublicarGD.puml)
 
 
 ## Director de calidad
