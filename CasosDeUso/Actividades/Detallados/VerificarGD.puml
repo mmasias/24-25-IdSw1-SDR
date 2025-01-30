@@ -11,25 +11,25 @@ state VerificarCumplimientoConMemoriaVerificada {
 
     [*] --> SeleccionarGuia
     note on link
-    <b>Selección de Guía</b>
+    <b>Director de Grado Solicita</b>
     * director de calidad selecciona guía
     end note
 
     SeleccionarGuia --> VerificarGuia
     note on link
-    <b>Verificación de la Guía Seleccionada</b>
+    <b>Sistema Permite</b>
     * director de calidad verifica la guía
     end note
 
     VerificarGuia --> ResultadoVerificacion
     note on link
-    <b>Resultado de la Verificación de la Guía</b>
+    <b>Sistema Muestra</b>
     * sistema muestra el resultado de la verificación
     end note
 
     ResultadoVerificacion -->  GuiaNoCumpleRequisitos
     note on link
-    <b>Se Rechaza la Guía</b>
+    <b>Sistema Muestra</b>
     * guía no cumple estandares de calidad
     end note
 
@@ -41,7 +41,7 @@ state VerificarCumplimientoConMemoriaVerificada {
 
     ResultadoVerificacion -->  GuiaCumpleRequisitos
     note on link
-    <b>Se Aprueba la Guía</b>
+    <b>SSistema Muestra</b>
     * guía cumple estandares de calidad
     end note
     
