@@ -1,44 +1,62 @@
 @startuml diagramaContextoDirectorGrado
 
-
-state "MENU_PRINCIPAL" as MenuPrincipal
-state "REVISANDO_CONTENIDO" as RevisandoContenido
-state "APROBANDO_CONTENIDO" as AprobarContenido
+state "NO_AUTENTICADO" as NoAutenticado
+state "LISTADO_GUIAS" as ListadoGuias
+state "REVISIÓN_GUÍA" as RevisandoContenido
+state "APROBANDO_GUÍA" as AprobarContenido
+state "RECHAZANDO_GUÍA" as RechazandoGuia
 state "PUBLICANDO_GUIA" as PublicarGuia
 
-[*] ----> MenuPrincipal
+[*] --> NoAutenticado 
+
+NoAutenticado ---> ListadoGuias
     note on link
         Iniciar sesión
     end note
 
-MenuPrincipal --> [*]
+ListadoGuias ---> NoAutenticado
     note on link
         Cerrar sesión
     end note
 
-MenuPrincipal ----> RevisandoContenido
+ListadoGuias --> RevisandoContenido
     note on link
-        Revisar contenido
+        Revisar Guía
+    end note
+    
+RevisandoContenido --> AprobarContenido
+    note on link
+        Aprobar Guía
+    end note
+    
+AprobarContenido --> PublicarGuia
+    note on link
+        PublicarGuia
+    end note
+    
+RevisandoContenido --> RechazandoGuia
+    note on link
+        Rechazar Guía
     end note
 
-RevisandoContenido ----> AprobarContenido
+RechazandoGuia --> ListadoGuias
     note on link
-        Aprobar o rechazar contenido
+        Volver al listado
     end note
 
-AprobarContenido ----> MenuPrincipal
+RevisandoContenido --> ListadoGuias
     note on link
-        Confirmar aprobación o rechazo
+        Volver al listado
     end note
 
-MenuPrincipal ----> PublicarGuia
+ListadoGuias --> PublicarGuia
     note on link
-        Accede a publicar guía docente
+        Publicar Guía
     end note
 
-PublicarGuia ----> MenuPrincipal
+PublicarGuia --> ListadoGuias
     note on link
-        Confirmar publicación
+        Volver al listado
     end note
 
 

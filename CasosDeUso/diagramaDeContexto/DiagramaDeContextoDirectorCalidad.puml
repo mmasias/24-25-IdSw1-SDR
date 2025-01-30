@@ -1,44 +1,41 @@
 @startuml diagramaContextoDirectorCalidad
 
-state "USUARIO" as Usuario
-state "MENU_PRINCIPAL" as MenuPrincipal
+state "NO_AUTENTICADO" as NoAutenticado
+state "LISTADO_GUIAS" as ListadoGuias
 state "AUDITANDO_GUÍAS" as AuditandoGuias
 state "VERIFICANDO_CUMPLIMIENTO" as VerificandoCumplimiento
 
-[*] -->Usuario
+[*] -->NoAutenticado
    
-Usuario --> MenuPrincipal
+NoAutenticado --> ListadoGuias
      note on link 
        Iniciar Sesión
     end note
 
-MenuPrincipal -> [*]
+ListadoGuias --> NoAutenticado
     note on link
         Cerrar sesión
     end note
 
 
-MenuPrincipal --> AuditandoGuias
+ListadoGuias --> AuditandoGuias
     note on link
-        Acceder al módulo de auditoría /
-        Revisar guías
+        Auditar Guías
     end note
 
-AuditandoGuias --> MenuPrincipal
+AuditandoGuias --> VerificandoCumplimiento
     note on link
-        Finalizar auditoría /
-        Regresar al menú principal
+        Verificar Cumplimiento con Memoria Verificada
     end note
 
-MenuPrincipal --> VerificandoCumplimiento
+ListadoGuias --> VerificandoCumplimiento
     note on link
-        Acceder al módulo de verificación
+        Verificar Cumplimiento con Memoria Verificada
     end note
 
-VerificandoCumplimiento --> MenuPrincipal
+VerificandoCumplimiento --> ListadoGuias
     note on link
-        Finalizar verificación /
-        Regresar al menú principal
+        Volver al listado
     end note
 
 @enduml

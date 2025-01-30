@@ -18,11 +18,8 @@ Este documento describe el **Diagrama de Contexto** del sistema de Automatizaci�
 ## 📘 Diagrama de Contexto - Técnico de calidad
 ![Diagrama de Contexto Técnico de calidad](/images/modelosUML/DiagramasContexto/DiagramaDeContextoTecnidoDeCalidad.svg) |[ver código](/CasosDeUso/diagramaDeContexto/DiagramaDeContextoTecnico.puml)
 
-
 ## 📘 Diagrama de Contexto - Director de Grado
-![Diagrama de Contexto Profesor](/images/modelosUML/DiagramasContexto/DiagramaDeContextoDirectorDeGrado.svg) |[ver código](/CasosDeUso/diagramaDeContexto/DiagramaDeContextoDirectorGrado.puml)
-
+![Diagrama de Contexto Director de Grado](/images/modelosUML/DiagramasContexto/DiagramaDeContextoDirectorDeGrado.svg) |[ver código](/CasosDeUso/diagramaDeContexto/DiagramaDeContextoDirectorGrado.puml)
 
 ## 📘 Diagrama de Contexto - Director de Calidad
-![Diagrama de Contexto Profesor](/images/modelosUML/DiagramasContexto/DiagramaDeContextoDirectorCalidad.svg) |[ver código](/CasosDeUso/diagramaDeContexto/DiagramaDeContextoDirectorCalidad.puml)
-
+![Diagrama de Contexto Director de Calidad](/images/modelosUML/DiagramasContexto/DiagramaDeContextoDirectorCalidad.svg) |[ver código](/CasosDeUso/diagramaDeContexto/DiagramaDeContextoDirectorCalidad.puml)
