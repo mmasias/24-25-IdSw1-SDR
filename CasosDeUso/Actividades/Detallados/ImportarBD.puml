@@ -1,0 +1,57 @@
+@startuml
+
+state ImportarBases {
+    state SolicitarImportarDatos as " "
+    state PermitirSeleccionarFuenteDatos as " "
+    state SolicitarConfirmaciónImportación as " "
+    state PermitirImportación <<choice>>
+    state MostrarProgresoImportación as " "
+    state MostrarResultadoImportación as " "
+
+    [*] --> SolicitarImportarDatos
+    note on link
+    <b>Super Admin Solicita</b>
+    * importar las bases de datos del sistema externo.
+    end note
+
+    SolicitarImportarDatos --> PermitirSeleccionarFuenteDatos
+    note on link
+    <b>Sistema Permite</b>
+    * seleccionar la fuente de los datos a importar.
+    end note
+
+    PermitirSeleccionarFuenteDatos --> SolicitarConfirmaciónImportación
+    note on link
+    <b>Super Admin Solicita</b>
+    * confirmar la importación de los datos seleccionados.
+    end note
+
+    SolicitarConfirmaciónImportación --> PermitirImportación
+    note on link
+    <b>Sistema Valida</b>
+    * y permite importar las bases de datos externas.
+    end note
+
+    PermitirImportación --> MostrarProgresoImportación : Importación válida
+    note on link
+    <b>Sistema Muestra</b>
+    * el progreso de la importación de datos.
+    end note
+
+    MostrarProgresoImportación --> MostrarResultadoImportación
+    note on link
+    <b>Sistema Presenta</b>
+    * el resultado de la importación, incluyendo:
+    - Profesores
+    - Técnicos de calidad
+    - Directores de grado
+    - Directores de calidad
+    - Asignaturas
+    - Titulaciones
+    - Grados.
+    end note
+
+    MostrarResultadoImportación --> [*]
+}
+
+@enduml
