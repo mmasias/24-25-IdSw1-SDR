@@ -1,0 +1,31 @@
+@startuml AdministradorContextDiagram
+
+!define RECTANGLE(x) rectangle x
+
+RECTANGLE(ADMINISTRADOR) #LightPink
+RECTANGLE(PAGINA_PRINCIPAL) #LightBlue
+
+RECTANGLE(VER_ESTADISTICAS) #LightYellow
+RECTANGLE(VER_OFERTAS) #LightCoral
+
+RECTANGLE(ACEPTANDO_OFERTA) #Yellow
+RECTANGLE(CERRANDO_OFERTA) #PaleGreen
+RECTANGLE(CANCELANDO_OFERTA) #LightSalmon
+
+ADMINISTRADOR -[#Black]-> PAGINA_PRINCIPAL : Acceder
+
+PAGINA_PRINCIPAL -[#LightBlue]-> VER_OFERTAS : Ver ofertas
+PAGINA_PRINCIPAL -[#LightBlue]-> VER_ESTADISTICAS : Ver estadísticas
+
+VER_OFERTAS -[#Yellow]-> ACEPTANDO_OFERTA : Aceptar Oferta
+VER_OFERTAS -[#PaleGreen]-> CERRANDO_OFERTA : Cerrar Oferta
+VER_OFERTAS -[#LightSalmon]-> CANCELANDO_OFERTA : Cancelar Oferta
+
+ACEPTANDO_OFERTA -[#LightCoral]-> VER_OFERTAS : Ver Ofertas
+CERRANDO_OFERTA -[#LightCoral]-> VER_OFERTAS : Ver Ofertas
+CANCELANDO_OFERTA -[#LightCoral]-> VER_OFERTAS : Ver Ofertas
+
+VER_OFERTAS -[#LightBlue]-> PAGINA_PRINCIPAL : Regresar
+VER_ESTADISTICAS -[#LightBlue]-> PAGINA_PRINCIPAL : Regresar
+
+@enduml

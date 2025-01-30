@@ -1,0 +1,16 @@
+@startuml EmpresaContextDiagram
+
+!define RECTANGLE(x) rectangle x
+
+RECTANGLE(EMPRESA) #Gold
+RECTANGLE(PAGINA_PRINCIPAL) #LightBlue
+RECTANGLE(CREAR_OFERTA) #Yellow
+
+
+EMPRESA -[#Black]-> PAGINA_PRINCIPAL : Entra con token
+PAGINA_PRINCIPAL -[#Yellow]-> CREAR_OFERTA : Crear nueva oferta de trabajo
+
+
+CREAR_OFERTA -[#LightBlue]-> PAGINA_PRINCIPAL : Regresar al inicio
+
+@enduml
