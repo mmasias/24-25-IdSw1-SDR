@@ -5,18 +5,18 @@ state " " as Estado3
 
 [*] --> Estado1
     note on link
-        El administrador accede a la sección de ofertas pendientes
+        El administrador solicita entrar en una oferta para procesarla
     end note
 Estado1 --> Estado2
     note on link
-        El administrador entra en una oferta para procesarla
+        El sistema muestra la oferta al administrador
     end note
 Estado2 --> Estado3
     note on link
-        El administrador rechaza la oferta
+        El administrador solicita rechazar la oferta
     end note
 Estado3 --> [*]
     note on link
-        La plataforma actualiza el estado de la oferta (rechazada)
+        El sistema permite rechazar la oferta y actualiza su estado (rechazada)
     end note
 @enduml

@@ -2,20 +2,25 @@
 state " " as Estado1
 state " " as Estado2
 state " " as Estado3
+state " " as Estado4
 
 [*] --> Estado1
     note on link
-        El administrador accede a la sección de ofertas activas
+        El administrador solicita acceder a la sección de ofertas activas
     end note
 Estado1 --> Estado2
     note on link
-        El administrador selecciona la oferta que desea cerrar
+        La plataforma muestra una lista de ofertas activas
     end note
 Estado2 --> Estado3
     note on link
-        El administrador marca la oferta como cerrada
+        El administrador solicita cerrar una oferta
     end note
-Estado3 --> [*]
+Estado3 --> Estado4
+    note on link
+        El sistema permite cerrar la oferta
+    end note
+Estado4 --> [*]
     note on link
         La plataforma actualiza el estado de la oferta (cerrada)
     end note
