@@ -2,21 +2,31 @@
 state " " as Estado1
 state " " as Estado2
 state " " as Estado3
+state " " as Estado4
+state " " as Estado5
 
 [*] --> Estado1
     note on link
-        El alumni accede a la sección de ofertas de trabajo
+        El alumni solicita acceder a la sección de ofertas de trabajo
     end note
 Estado1 --> Estado2
     note on link
-        El alumni selecciona una oferta de trabajo
+        El sistema muestra una lista de ofertas de trabajo
     end note
 Estado2 --> Estado3
     note on link
-        El alumni envía su solicitud para la oferta
+        El alumni solicita acceder a una oferta de trabajo
     end note
-Estado3 --> [*]
+Estado3 --> Estado4
     note on link
-        La plataforma confirma la solicitud o muestra un mensaje de error
+        El sistema le permite acceder a la oferta de trabajo
+    end note
+Estado4 --> Estado5
+    note on link
+        El alumni solicita postularse a la oferta
+    end note
+Estado5 --> [*]
+    note on link
+        El sistema confirma la solicitud o muestra un mensaje de error
     end note
 @enduml
