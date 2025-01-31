@@ -5,4 +5,4 @@
 ## Empresa
 ![Empresa](svg/ActoresYCasos/Empresa.svg)
 ## Administrador
-![Administrador](svg/ActoresYCasos/Administrador.svg)
+![Administrador](svg/ActoresYCasos/admin.svg)

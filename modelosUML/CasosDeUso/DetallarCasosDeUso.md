@@ -1,4 +1,4 @@
-# Casos de Uso
+# Detallar Casos de Uso
 ### 1. **Crear oferta de trabajo**
 ![Crear oferta](svg/Detallar/crearOferta.svg)
 ### 2. **Buscar oferta de trabajo**
@@ -13,4 +13,5 @@
 ![Cancelar oferta](svg/Detallar/cancelarOferta.svg)
 ### 7. **Ver ofertas de trabajo**
 ![Ver ofertas](svg/Detallar/verOferta.svg)
- [Ver estadísticas](svg/Detallar/verEstadisticas.svg)
+### 8. **Ver estadísticas**
+![Ver estadísticas](svg/Detallar/verEstadisticas.svg)

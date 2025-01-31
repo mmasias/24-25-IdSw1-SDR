@@ -15,11 +15,11 @@ El Sistema Alumni es una plataforma que conecta a antiguos alumnos de la univers
 - [Modelo del dominio (Diagramas de clases, objetos y estados)](modelosUML/ModeloDominio/ModeloDominio.md)
 
 ## 📊 Disciplina de Requisitos
-- [Actores y casos de uso](modelosUML/CasosDeUso/ActoresYCasos.md#1-identificar-actores-y-casos-de-uso)
-- [Priorizacion](modelosUML/CasosDeUso/ActoresYCasos.md#2-priorizar-casos-de-uso)
-- [Detallar casos de uso](modelosUML/CasosDeUso/ActoresYCasos.md#3-detallar-casos-de-uso)
+- [Actores y casos de uso](modelosUML/CasosDeUso/EncontrarCasos.md)
+- [Priorizacion](modelosUML/CasosDeUso/PriorizarCasos.md)
+- [Detallar casos de uso](modelosUML/CasosDeUso/DetallarCasosDeUso.md)
 - [Prototipado](modelosUML/CasosDeUso/Prototipado.md)
-- [Diagramas de Contexto](modelosUML/CasosDeUso/ActoresYCasos.md#diagramas-de-contexto)
+- [Diagramas de Contexto](modelosUML/CasosDeUso/DiagramaContexto.md)
 - [Glosario del trabajo](modelosUML/Glosario.md)
 ---
 
