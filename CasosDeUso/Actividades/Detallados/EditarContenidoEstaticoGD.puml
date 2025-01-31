@@ -1,0 +1,76 @@
+@startuml
+ListadoGuías -up-> EditarContenidoEstatico
+
+state EditarContenidoEstatico {
+    state SolicitarEdición as " "
+    state PermitirEdición as " "
+    state MostrarContenido as " "
+    state IntroducirModificaciones as " "
+    state ValidarModificaciones <<choice>>
+    state PermitirGuardado as " "
+    state MostrarConfirmación as " "
+    state MostrarErrorFormato as " "
+    state PermitirCorrección as " "
+
+    [*] --> SolicitarEdición
+    note on link
+    <b>Técnico de Calidad Solicita</b>
+    * introducir modificaciones en el contenido estático de la guía docente
+    end note
+
+    SolicitarEdición --> PermitirEdición
+    note on link
+    <b>Sistema Permite</b>
+    * la edición del contenido estático
+    end note
+
+    PermitirEdición --> MostrarContenido
+    note on link
+    <b>Sistema Muestra</b>
+    * el contenido editable de la plantilla
+    * Secciones: DATOS GENERALES DE LA ASIGNATURA, COMPETENCIAS
+    end note
+
+    MostrarContenido --> IntroducirModificaciones
+    note on link
+    <b>Técnico de Calidad Introduce</b>
+    * modificaciones en el contenido estático
+    end note
+
+    IntroducirModificaciones --> ValidarModificaciones
+    note on link
+    <b>Sistema Valida</b>
+    * que los cambios cumplen con los formatos requeridos
+    end note
+
+    ValidarModificaciones --> PermitirGuardado : Formato válido
+    note on link
+    <b>Sistema Permite</b>
+    * guardar los cambios realizados en la plantilla
+    end note
+
+    PermitirGuardado --> MostrarConfirmación
+    note on link
+    <b>Sistema Muestra</b>
+    * confirmación de que los cambios se han guardado correctamente
+    end note
+
+    ValidarModificaciones --> MostrarErrorFormato : Formato inválido
+    note on link
+    <b>Sistema Muestra</b>
+    * un mensaje de error indicando el problema
+    end note
+
+    MostrarErrorFormato --> PermitirCorrección
+    note on link
+    <b>Sistema Permite</b>
+    * corregir el formato antes de guardar
+    end note
+
+    PermitirCorrección --> IntroducirModificaciones : Corregir errores
+
+    MostrarConfirmación --> [*]
+}
+
+EditarContenidoEstatico -up-> ListadoGuías
+@enduml

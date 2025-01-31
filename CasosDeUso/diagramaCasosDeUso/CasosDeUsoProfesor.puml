@@ -1,0 +1,17 @@
+@startuml
+
+left to right direction
+
+actor Profesor
+
+usecase "Iniciar sesión" as IniciarSesion
+usecase "Cerrar sesión" as CerrarSesion
+usecase "Editar Contenido Dinamico" as EditarGuia
+usecase "Enviar Guía para Revisión" as EnviarGuia
+
+Profesor --> IniciarSesion
+Profesor --> CerrarSesion
+Profesor --> EditarGuia
+Profesor --> EnviarGuia
+
+@enduml

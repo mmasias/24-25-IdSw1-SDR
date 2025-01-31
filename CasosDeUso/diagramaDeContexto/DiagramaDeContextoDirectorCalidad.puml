@@ -1,0 +1,41 @@
+@startuml diagramaContextoDirectorCalidad
+
+state "NO_AUTENTICADO" as NoAutenticado
+state "LISTADO_GUIAS" as ListadoGuias
+state "AUDITANDO_GUÍAS" as AuditandoGuias
+state "VERIFICANDO_CUMPLIMIENTO" as VerificandoCumplimiento
+
+[*] -->NoAutenticado
+   
+NoAutenticado --> ListadoGuias
+     note on link 
+       Iniciar Sesión
+    end note
+
+ListadoGuias --> NoAutenticado
+    note on link
+        Cerrar sesión
+    end note
+
+
+ListadoGuias --> AuditandoGuias
+    note on link
+        Auditar Guías
+    end note
+
+AuditandoGuias --> VerificandoCumplimiento
+    note on link
+        Verificar Cumplimiento con Memoria Verificada
+    end note
+
+ListadoGuias --> VerificandoCumplimiento
+    note on link
+        Verificar Cumplimiento con Memoria Verificada
+    end note
+
+VerificandoCumplimiento --> ListadoGuias
+    note on link
+        Volver al listado
+    end note
+
+@enduml

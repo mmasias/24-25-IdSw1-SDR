@@ -1,0 +1,14 @@
+@startuml
+
+title Casos de Uso - Profesor
+
+actor Profesor
+
+usecase "Editar Contenido de la Guía" as EditarGuia
+usecase "Enviar Guía Docente para Revisión" as EnviarGuia
+
+Profesor --> EditarGuia
+Profesor --> EnviarGuia
+
+EnviarGuia ..> EditarGuia : <<include>>
+@enduml

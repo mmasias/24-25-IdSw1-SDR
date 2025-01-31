@@ -1,0 +1,18 @@
+@startuml
+
+title Casos de Uso - Director de Grado
+
+actor "Director de Grado" as DirectorGrado
+
+usecase "Revisar Contenido" as RevisarContenido
+usecase "Publicar Guía Docente" as PublicarGuia
+usecase "Ver Listado de Estados de las Guías Docentes de un Grado" as VerEstadosGuiasGrado
+
+DirectorGrado --> RevisarContenido
+DirectorGrado --> PublicarGuia
+DirectorGrado --> VerEstadosGuiasGrado
+
+PublicarGuia --> RevisarContenido : <<extend>>
+
+@enduml
+

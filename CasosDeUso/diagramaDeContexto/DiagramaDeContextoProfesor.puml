@@ -1,0 +1,43 @@
+@startuml diagramaContextoProfesor
+state "NO_AUTENTICADO" as NoAutenticado 
+state "LISTADO_GUIAS" as ListadoGuias
+state "EDICIÓN_GUÍA" as EditandoGuia
+state "ENVIANDO_GUÍA" as EnviandoGuia
+
+[*] --> NoAutenticado    
+
+NoAutenticado --> ListadoGuias
+note on link  
+        iniciar sesión  
+    end note  
+    
+ListadoGuias --> NoAutenticado  
+    note on link  
+        cerrar sesión  
+    end note
+
+ListadoGuias --> EditandoGuia  
+    note on link  
+        Editar Contenido Dinamico
+    end note  
+    
+ListadoGuias --> EnviandoGuia 
+    note on link  
+        Enviar Guia 
+    end note  
+    
+EditandoGuia --> ListadoGuias  
+    note on link  
+        Volver al listado
+    end note
+    
+EditandoGuia --> EnviandoGuia  
+    note on link  
+        Enviar Guia 
+    end note  
+
+EnviandoGuia --> ListadoGuias  
+    note on link  
+        Volver al listado
+    end note 
+@enduml

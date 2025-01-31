@@ -1,0 +1,49 @@
+@startuml diagramaContextoTecnicoCalidad
+state "NO_AUTENTICADO" as NoAutenticado
+state "LISTADO_GUÍAS" as ListadoGuias
+state "ASIGNANDO_GUÍAS" as AsignandoGuias
+state "GENERANDO_VERSION" as CreandoVersion
+state "EDICIÓN_GUIA" as EditarContenidoEstatico
+
+[*] --> NoAutenticado
+
+NoAutenticado --> ListadoGuias
+note on link
+    iniciar sesión
+end note
+
+ListadoGuias --> NoAutenticado
+note on link
+    cerrar sesión
+end note
+
+ListadoGuias --> AsignandoGuias
+note on link
+    Asignar Guías Docentes a Profesor
+end note
+
+AsignandoGuias --> ListadoGuias
+note on link
+    Volver al listado
+end note
+
+
+ListadoGuias --> CreandoVersion
+note on link
+    Generar Nueva Versión de la Guía
+end note
+CreandoVersion --> ListadoGuias
+note on link
+    Volver al listado
+end note
+
+ListadoGuias --> EditarContenidoEstatico
+note on link
+    Editar Contenido Estatico
+end note
+EditarContenidoEstatico --> ListadoGuias
+note on link
+    Volver al listado
+end note
+
+@enduml

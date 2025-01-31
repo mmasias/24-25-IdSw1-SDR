@@ -1,0 +1,18 @@
+@startuml diagramaContextoSuperAdmin
+state "NO_AUTENTICADO" as NoAutenticado 
+state "IMPORTAR_BASES" as ImportarBases
+ImportarBases:Importar Bases de datos del sistema  
+
+[*] --> NoAutenticado    
+
+NoAutenticado --> ImportarBases
+    note on link  
+        iniciar sesión  
+    end note  
+    
+ImportarBases --> NoAutenticado  
+    note on link  
+        cerrar sesión  
+    end note
+
+@enduml

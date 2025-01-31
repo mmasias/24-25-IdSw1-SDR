@@ -1,0 +1,18 @@
+@startuml DiagramaDeEstadosDirectorGrado
+title Ciclo de Vida de un Director de grado
+
+[*] --> Libre : Sin guía asignada para revision
+
+Libre --> VisualizandoGuías : Guías asignadas
+
+VisualizandoGuías --> RevisandoGuía 
+VisualizandoGuías --> PublicandoGuía 
+  
+RevisandoGuía --> PublicandoGuía : Finaliza revisión y \npublica la guía
+RevisandoGuía-->  VisualizandoGuías
+
+PublicandoGuía -->  VisualizandoGuías
+
+VisualizandoGuías -left-> [*]
+
+@enduml

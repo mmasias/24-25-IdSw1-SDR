@@ -1,0 +1,63 @@
+@startuml diagramaContextoDirectorGrado
+
+state "NO_AUTENTICADO" as NoAutenticado
+state "LISTADO_GUIAS" as ListadoGuias
+state "REVISIÓN_GUÍA" as RevisandoContenido
+state "APROBANDO_GUÍA" as AprobarContenido
+state "RECHAZANDO_GUÍA" as RechazandoGuia
+state "PUBLICANDO_GUIA" as PublicarGuia
+
+[*] --> NoAutenticado 
+
+NoAutenticado ---> ListadoGuias
+    note on link
+        Iniciar sesión
+    end note
+
+ListadoGuias ---> NoAutenticado
+    note on link
+        Cerrar sesión
+    end note
+
+ListadoGuias --> RevisandoContenido
+    note on link
+        Revisar Guía
+    end note
+    
+RevisandoContenido --> AprobarContenido
+    note on link
+        Aprobar Guía
+    end note
+    
+AprobarContenido --> PublicarGuia
+    note on link
+        PublicarGuia
+    end note
+    
+RevisandoContenido --> RechazandoGuia
+    note on link
+        Rechazar Guía
+    end note
+
+RechazandoGuia --> ListadoGuias
+    note on link
+        Volver al listado
+    end note
+
+RevisandoContenido --> ListadoGuias
+    note on link
+        Volver al listado
+    end note
+
+ListadoGuias --> PublicarGuia
+    note on link
+        Publicar Guía
+    end note
+
+PublicarGuia --> ListadoGuias
+    note on link
+        Volver al listado
+    end note
+
+
+@enduml

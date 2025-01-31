@@ -1,0 +1,93 @@
+@startuml
+ListadoGuías -up-> EnviarGuiaRevision
+
+state EnviarGuiaRevision {
+    state SolicitarGuía as " "
+    state PermitirSelección as " "
+    state MostrarGuía as " "
+    state SolicitarEnvío as " "
+    state PermitirEnvío as " "
+    state SolicitarConfirmación as " "
+    state PermitirConfirmación as " "
+    state ValidarConfirmación <<choice>>
+    state PermitirEnvíoFinal as " "
+    state MostrarNotificación as " "
+    state PermitirCancelación as " "
+
+    [*] --> SolicitarGuía
+    note on link
+    <b>Profesor Solicita</b>
+    * seleccionar una guía para enviar a revisión
+    end note
+
+    SolicitarGuía --> PermitirSelección
+    note on link
+    <b>Sistema Permite</b>
+    * la selección de una guía docente
+    end note
+
+    PermitirSelección --> MostrarGuía
+    note on link
+    <b>Sistema Muestra</b>
+    * el contenido de la guía seleccionada
+    end note
+
+    MostrarGuía --> SolicitarEnvío
+    note on link
+    <b>Profesor Solicita</b>
+    * enviar la guía a revisión
+    end note
+
+    SolicitarEnvío --> PermitirEnvío
+    note on link
+    <b>Sistema Permite</b>
+    * la solicitud de envío a revisión
+    end note
+
+    PermitirEnvío --> SolicitarConfirmación
+    note on link
+    <b>Sistema Solicita</b>
+    * confirmación del envío antes de proceder
+    end note
+
+    SolicitarConfirmación --> PermitirConfirmación
+    note on link
+    <b>Sistema Permite</b>
+    * la confirmación del envío de la guía
+    end note
+
+    PermitirConfirmación --> ValidarConfirmación
+    note on link
+    <b>Profesor Solicita</b>
+    * confirmar el envío de la guía a revisión
+    end note
+
+    ValidarConfirmación --> PermitirEnvíoFinal : Confirmado
+    note on link
+    <b>Sistema Permite</b>
+    * el envío final de la guía al Director de Grado
+    end note
+
+    PermitirEnvíoFinal --> MostrarNotificación
+    note on link
+    <b>Sistema Muestra</b>
+    * notificación de éxito y actualización de estado
+    end note
+
+    MostrarNotificación --> [*]
+
+    ValidarConfirmación --> PermitirCancelación : Cancelar
+    note on link
+    <b>Profesor Solicita</b>
+    * cancelar el proceso de envío antes de confirmar
+    end note
+
+    PermitirCancelación --> MostrarGuía
+    note on link
+    <b>Sistema Permite</b>
+    * regresar a la visualización de la guía sin enviarla
+    end note
+}
+
+EnviarGuiaRevision -up-> ListadoGuías
+@enduml

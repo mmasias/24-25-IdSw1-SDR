@@ -1,0 +1,23 @@
+@startuml
+
+title Casos de Uso - Técnico de Calidad
+
+actor "Técnico de Calidad" as TecnicoCalidad
+
+usecase "Generar Nueva Versión de la Guía" as GenerarVersion
+usecase "Asignar Guías Docentes" as AsignarGuias
+usecase "Asignar Guías Docentes a Profesor" as AsignarGuiaProfesor
+usecase "Asignar Guía a Titulación" as AsignarGuiaTitulacion
+usecase "Asignar Asignatura a Titulación" as AsignarAsignaturaTitulacion
+usecase "Editar Plantilla de la Guía Docente" as EditarPlantilla
+
+TecnicoCalidad --> GenerarVersion
+TecnicoCalidad --> AsignarGuias
+TecnicoCalidad --> AsignarAsignaturaTitulacion
+TecnicoCalidad --> EditarPlantilla
+
+
+AsignarGuias <|-- AsignarGuiaProfesor
+AsignarGuias <|-- AsignarGuiaTitulacion
+
+@enduml

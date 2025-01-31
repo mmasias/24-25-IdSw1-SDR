@@ -1,0 +1,65 @@
+@startuml
+ListadoGuías -up-> PublicarGuia
+
+state PublicarGuia {
+    state SeleccionarGuia as " "
+    state PermitirSeleccion as " "
+    state ConfirmarPublicacion as " "
+    state ValidarConfirmacion <<choice>>
+    state Publicar as " "
+    state PermitirCancelar as " "
+    state MostrarNotificacion as " "
+
+    [*] --> SeleccionarGuia
+    note on link
+    <b>Director de Grado Solicita</b>
+    * seleccionar una guía aprobada para publicación
+    end note
+
+    SeleccionarGuia --> PermitirSeleccion
+    note on link
+    <b>Sistema Permite</b>
+    * visualizar las guías aprobadas para su publicación
+    end note
+
+    PermitirSeleccion --> ConfirmarPublicacion
+    note on link
+    <b>Sistema Solicita</b>
+    * confirmación final antes de publicar
+    end note
+
+    ConfirmarPublicacion --> ValidarConfirmacion
+    note on link
+    <b>Director de Grado Solicita</b>
+    * confirmar o cancelar la publicación
+    end note
+
+    ValidarConfirmacion --> Publicar : Confirmar Publicación
+    note on link
+    <b>Sistema Permite</b>
+    * generar el PDF final y publicarlo en el panel universitario
+    end note
+
+    Publicar --> MostrarNotificacion
+    note on link
+    <b>Sistema Notifica</b>
+    * la publicación exitosa de la guía
+    end note
+
+    ValidarConfirmacion --> PermitirCancelar : Cancelar Publicación
+    note on link
+    <b>Director de Grado Solicita</b>
+    * salir sin publicar
+    end note
+
+    PermitirCancelar --> SeleccionarGuia
+    note on link
+    <b>Sistema Retorna</b>
+    * a la lista de guías sin cambios
+    end note
+
+    MostrarNotificacion --> [*]
+}
+
+PublicarGuia -up-> ListadoGuías
+@enduml

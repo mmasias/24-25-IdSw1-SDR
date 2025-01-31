@@ -1,0 +1,28 @@
+@startuml Diagrama de Estados
+title Ciclo de Vida de una Guía Docente
+
+[*] --> EnCreación
+EnCreación --> EnPreparación
+EnPreparación: El técnico de calidad comienza a crear la guía \n editando el contenido estático
+
+EnPreparación --> Asignada : La guía es Asignada a un profesor
+Asignada --> EnEdición : El el Profesor comienza a editar el\n contenido dinámico de la guía.
+
+EnEdición --> EnRevisión : El Profesor envía la guía para EnRevisión.
+EnRevisión : El DirectorDeGrado revisa la guía.
+
+EnRevisión --> Aprobada : El DirectorDeGrado aprueba la guía.
+EnRevisión --> Rechazada : El DirectorDeGrado rechaza la guía.
+
+Rechazada --> EnEdición : Si la guía es rechazada, el profesor vuelve a\n editar el contenido dinámico
+
+Aprobada --> Publicada : Si la guía es aprobada, pasa a Publicarse.
+
+Publicada : La guía se publica y está disponible.
+
+Publicada --> Archivada : Se actualiza una nueva versión.
+
+Archivada : La versión anterior se archiva.
+
+Archivada --> [*] : Fin del proceso.
+@enduml

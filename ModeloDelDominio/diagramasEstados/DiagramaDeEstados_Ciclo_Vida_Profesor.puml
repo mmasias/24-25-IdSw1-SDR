@@ -1,0 +1,21 @@
+@startuml DiagramaDeEstadosProfesor
+title Ciclo de Vida de un Profesor 
+
+[*] --> Libre : Sin guía asignada
+
+Libre --> VisualizandoGuías
+
+VisualizandoGuías --> EditandoGuía 
+VisualizandoGuías --> EnviandoGuía 
+  
+EditandoGuía: Modificando contenido dinámico
+EditandoGuía --> EnviandoGuía : Finaliza edición y \nenvía la guía para revisión
+EditandoGuía-->  VisualizandoGuías
+
+EnviandoGuía: Esperando revisión
+EnviandoGuía -->  VisualizandoGuías
+
+VisualizandoGuías -left-> [*]
+
+
+@enduml

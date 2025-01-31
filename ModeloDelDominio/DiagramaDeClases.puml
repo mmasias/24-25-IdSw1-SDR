@@ -1,0 +1,47 @@
+@startuml Diagrama de Clases
+title Automatización de Guías Docentes - Refinado
+
+class SuperAdmin
+class Profesor
+class DirectorDeGrado
+class TécnicoDeCalidad
+class DirectorDeCalidad
+class Guia
+class Contenido {
+  + ContenidoEstatico
+  + ContenidoDinámico
+}
+class Titulacion
+class Asignatura
+class Version
+
+Guia -- Asignatura: pertenece_a >
+Guia -- Contenido: está_conformado_por >
+
+
+Asignatura -down- Contenido: pertenece_a <
+Asignatura -down- Titulacion: forma_parte_de >
+Asignatura -- TécnicoDeCalidad : asigna_a >
+
+Guia -down- DirectorDeCalidad: es_auditada_por >
+Guia -down- Version: tiene
+
+Contenido --- Titulacion: es_definido_por >
+
+DirectorDeCalidad -- TécnicoDeCalidad: audita_a >
+DirectorDeCalidad -- Profesor: audita_a >
+DirectorDeCalidad -l- DirectorDeGrado: audita_a >
+
+Profesor -up-- Asignatura: está_asociado_con >
+
+Contenido -- Profesor: dinámico_editado_por >
+
+DirectorDeGrado -up- Titulacion: está_asociado_con >
+Contenido -- DirectorDeGrado: aprueba_o_rechaza <
+Contenido -down- TécnicoDeCalidad: estático_editado_por >
+
+SuperAdmin .up.> Profesor: inicializa >
+SuperAdmin .up.> TécnicoDeCalidad: inicializa >
+SuperAdmin .up.> DirectorDeGrado: inicializa >
+SuperAdmin .up.> DirectorDeCalidad: inicializa >
+@enduml

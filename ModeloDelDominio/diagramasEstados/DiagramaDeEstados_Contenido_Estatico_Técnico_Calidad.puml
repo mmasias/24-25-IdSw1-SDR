@@ -1,0 +1,15 @@
+@startuml
+title Edición de Contenido Estático - Técnico de Calidad
+
+[*] --> EdiciónEstática : Inicio de la edición de contenido estático
+EdiciónEstática : Técnico de Calidad edita el contenido estático
+
+EdiciónEstática --> RevisiónInterna : Finaliza la edición inicial
+RevisiónInterna : Revisión interna del contenido estático
+
+RevisiónInterna --> AjustesEstáticos : Requiere ajustes adicionales
+RevisiónInterna --> PreparadaParaRevisión : Listo para la revisión general
+AjustesEstáticos --> RevisiónInterna : Ajustes realizados
+
+PreparadaParaRevisión --> [*] : Fin del flujo inicial de edición estática
+@enduml

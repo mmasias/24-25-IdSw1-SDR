@@ -1,18 +1,51 @@
-# Sesiones de requisitado
+# Sistema de automatización de Guías Docentes
 
-Este es el repositorio de las sesiones de requisitado de la asignatura de Ingeniería del Software I de UNEATLANTICO.
+## Introducción
+Este es el repositorio de las sesiones de requisitado de la asignatura de Ingeniería del Software I de UNEATLANTICO. Se desarrolla, en un caso real, la disciplina de requisitado, que es la puerta de entrada al desarrollo de una solución basada en software. 
+- [¿Qué es? ¿Cuál es la problemática? ¿Cuál es el objetivo de este proyecto?](/introduccion/introduccion.md)
 
-<div align=center>
+### Glosario
+[🔗 Acceso al Glosario](/introduccion/glosario.md)
 
-| |Grupo|Rev|Estadísticas|
-|-|-|:-:|:-:|
-|1|Iván Gonzalez    |16-Ene-25 11:30h|[👁️](https://github.com/celiabecerril/24-25-IdSw1-SDR/graphs/contributors) / [📒](https://github.com/celiabecerril/24-25-IdSw1-SDR)|
-|2|Susana Gutierrez |16-Ene-25 9:30h|[👁️](https://github.com/DavidGarciaCosta/24-25-IdSw1-SDR/graphs/contributors) / [📒](https://github.com/DavidGarciaCosta/24-25-IdSw1-SDR)|
-|3|Lucía Terán      |15-Ene-25 10:00h|[👁️](https://github.com/Dievex/24-25-IdSw1-SDR/graphs/contributors) / [📒](https://github.com/Dievex/24-25-IdSw1-SDR)|
-|4|Alicia Bustamante|20-Dic-24|[👁️](https://github.com/TheMoys/24-25-IdSw1-SDR/graphs/contributors) / [📒](https://github.com/TheMoys/24-25-IdSw1-SDR)|
-|5|Jesús Peña       |15-Ene-25 14:30h|[👁️](https://github.com/0xJVR/24-25-IdSw1-SDR/graphs/contributors) / [📒](https://github.com/0xJVR/24-25-IdSw1-SDR)|
-|6|Josep Alemany    |17-Ene-25 9:30h|[👁️](https://github.com/miguelgomez75/24-25-IdSw1-SDR/graphs/contributors) / [📒](https://github.com/miguelgomez75/24-25-IdSw1-SDR)|
-|7|David García     |17-Ene-25 14:00h|[👁️](https://github.com/srgiom/24-25-IdSw1-SDR/graphs/contributors) / [📒](https://github.com/srgiom/24-25-IdSw1-SDR)|
-|8|Jorge Crespo     |16-Ene-25 13:30h|[👁️](https://github.com/natiicruuz/24-25-IdSw1-SDR/graphs/contributors) / [📒](https://github.com/natiicruuz/24-25-IdSw1-SDR)|
-  
+<table>
+<tr>
+<th>
+
+### Modelo de Dominio
+</th>
+<th>
+
+### Disciplina de Requisitos
+
+</th>
+</tr>
+<tr></tr>
+  <tr>
+    <td valign=top>
+      <p>📌<a href="/ModeloDelDominio/modeloDelDominio.md">Modelo del dominio</a>
+      <p>📌<a href="/ModeloDelDominio/EvolucioneModeloDelDominio.md">Evolución del modelo de dominio a lo largo del semestre </a></p>
+    </td>
+<td valign=top>
+      <ul>
+        <li><a href="/CasosDeUso/Actividades/Actores.md">Actores</a></li>
+        <li><a href="/CasosDeUso/Actividades/CasosDeUso.md">Casos de Uso</a></li>
+        <li><a href="/CasosDeUso/diagramaDeContexto/diagramaDeContexto.md">Diagrama de Contexto</a></li>
+        <li><a href="/CasosDeUso/Actividades/Priorizar.md">Priorización de Casos de Uso</a></li>
+        <li><a href="/CasosDeUso/Actividades/Detallar.md">Detallado de Casos de Uso</a></li>
+        <li><a href="/CasosDeUso/Actividades/Prototipos/README.md">Prototipos</a></li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+
+## Sesiones de requisitado
+<div align="center">
+
+| Índice | Enlace |
+|--------|--------|
+| 1      | [Sesión #1 de requisitado (oficial)👁️](/SesionesDeRequisitado/Sesion1.md) |
+| 2      | [Sesión #2 de requisitado (extra) 👁️](/SesionesDeRequisitado/Sesion2.md) |
+| 3      | [Sesión #3 de requisitado(oficial) 👁️](/SesionesDeRequisitado/Sesion3.md) |
+
 </div>

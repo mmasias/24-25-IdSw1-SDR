@@ -1,0 +1,55 @@
+@startuml CancelarAccion
+
+hide empty description
+
+state choice <<choice>>
+
+Superadmin --> choice
+Profesor --> choice
+TecnicoCalidad --> choice
+DirectorGrado --> choice
+DirectorCalidad --> choice
+choice --> CancelarAccion
+
+state CancelarAccion {
+    state " " as Inicio
+    state " " as Confirmacion
+    state " " as Finalizar
+
+    [*] --> Inicio
+    note on link
+        <b>Usuario Solicita</b>
+        * cancelar una acción en proceso
+    end note
+
+    Inicio --> Confirmacion
+    note on link
+        <b>Sistema Muestra</b>
+        * mensaje de confirmación:
+        "¿Está seguro de cancelar esta acción?"
+    end note
+
+    state Decisión <<choice>>
+    Confirmacion --> Decisión
+    note on link
+        <b>Usuario Solicita</b>
+        * seleccionar entre "Confirmar" o "Cancelar"
+    end note
+
+    Decisión --> Finalizar : Confirmar
+    note on link
+        <b>Sistema Permite</b>
+        * cerrar la sesión y regresar a la página de inicio
+    end note
+
+    Decisión --> Inicio : Cancelar
+    note on link
+        <b>Sistema Permite</b>
+        * continuar con la sesión iniciada
+    end note
+
+    Finalizar --> [*]
+}
+
+CancelarAccion --> [*]
+@enduml

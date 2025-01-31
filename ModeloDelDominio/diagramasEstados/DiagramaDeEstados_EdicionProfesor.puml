@@ -1,0 +1,16 @@
+@startuml Proceso_de_Edicion_Profesor
+title Proceso de Edición de Contenido - Profesor
+
+[*] --> EdicionEnProgreso
+EdicionEnProgreso : El profesor actualiza y guarda cambios
+
+EdicionEnProgreso --> RevisionInterna : Finaliza cambios
+RevisionInterna : Revisión preliminar realizada por el profesor
+
+RevisionInterna --> EnRevision : Enviar al Director de Grado
+EnRevision: Envío para revisión
+
+EnRevision --> EdicionEnProgreso : Rechazada
+EnRevision --> [*] : Aprobada
+
+@enduml
