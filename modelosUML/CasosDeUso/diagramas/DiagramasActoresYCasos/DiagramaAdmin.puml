@@ -4,8 +4,15 @@ left to right direction
 usecase "Aceptar Oferta" as AceptarOferta
 usecase "Cerrar Oferta" as CerrarOferta
 usecase "Cancelar Oferta" as CancelarOferta
+usecase "Ver Estadísticas" as VerEstadisticas
+usecase "Buscar Oferta" as BuscarOferta
+usecase "Ver Oferta" as VerOferta
+
 
 Administrador --> AceptarOferta
 Administrador --> CerrarOferta
 Administrador --> CancelarOferta
+Administrador --> VerEstadisticas
+Administrador --> BuscarOferta
+Administrador --> VerOferta
 @enduml
