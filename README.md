@@ -1,4 +1,4 @@
-# 📚 Alumni 
+# 📚 Alumni
 ## 🎓 Sistema de gestion de ofertas de trabajo
 El Sistema Alumni es una plataforma que conecta a antiguos alumnos de la universidad con oportunidades laborales ofrecidas por empresas asociadas. Facilita la búsqueda de empleo para los egresados y permite a las empresas acceder a talentos cualificados de la universidad.
 
@@ -12,21 +12,20 @@ El Sistema Alumni es una plataforma que conecta a antiguos alumnos de la univers
 
 ## 🧩 Modelo del Dominio:
 
-- [Modelo del dominio (Diagramas de clases, objetos y estados)](/modelosUML/ModeloDominio/ModeloDominio.md)
+- [Modelo del dominio (Diagramas de clases, objetos y estados)](modelosUML/ModeloDominio/ModeloDominio.md)
 
 ## 📊 Disciplina de Requisitos
-- [Actores y casos de uso](/modelosUML/CasosDeUso/EncontrarCasos.md)
-- [Priorizacion](/modelosUML/CasosDeUso/ActoresYCasos.md#2-priorizar-casos-de-uso)
-- [Detallar casos de uso](/modelosUML/CasosDeUso/DetallarCasosDeUso.md)
-- [Prototipado](/modelosUML/CasosDeUso/Prototipado.md)
-- [Diagramas de Contexto](/modelosUML/CasosDeUso/ActoresYCasos.md#diagramas-de-contexto)
-- [Glosario del trabajo](/modelosUML/Glosario.md)
+- [Actores y casos de uso](modelosUML/CasosDeUso/ActoresYCasos.md#1-identificar-actores-y-casos-de-uso)
+- [Priorizacion](modelosUML/CasosDeUso/ActoresYCasos.md#2-priorizar-casos-de-uso)
+- [Detallar casos de uso](modelosUML/CasosDeUso/ActoresYCasos.md#3-detallar-casos-de-uso)
+- [Prototipado](modelosUML/CasosDeUso/Prototipado.md)
+- [Diagramas de Contexto](modelosUML/CasosDeUso/ActoresYCasos.md#diagramas-de-contexto)
+- [Glosario del trabajo](modelosUML/Glosario.md)
 ---
 
 ## 📅 Sesiones
 
 - [Sesion 16 Octubre](SesiónConCliente/Sesion16Octubre.md)
-
 - [Sesion 13 Noviembre](SesiónConCliente/Sesion13Noviembre.md)
 ---
 
@@ -37,4 +36,3 @@ El Sistema Alumni es una plataforma que conecta a antiguos alumnos de la univers
 - César García
 - Neco Martínez
 - Javier Salmerón
-
