@@ -1,4 +1,4 @@
-# Casos de Uso
+# Detallar Casos de Uso
 ### 1. **Crear oferta de trabajo**
 ![Crear oferta](svg/Detallar/crearOferta.svg)
 ### 2. **Buscar oferta de trabajo**
