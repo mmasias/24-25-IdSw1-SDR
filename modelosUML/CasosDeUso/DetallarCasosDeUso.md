@@ -13,4 +13,5 @@
 ![Cancelar oferta](svg/Detallar/cancelarOferta.svg)
 ### 7. **Ver ofertas de trabajo**
 ![Ver ofertas](svg/Detallar/verOferta.svg)
- [Ver estadísticas](svg/Detallar/verEstadisticas.svg)
+### 8. **Ver estadísticas**
+![Ver estadísticas](svg/Detallar/verEstadisticas.svg)
